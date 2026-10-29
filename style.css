@@ -134,6 +134,99 @@ body.dark-theme {
   box-sizing: border-box;
 }
 
+/* ================= TOP RXP PROMO & DOWNLOAD BANNER ================= */
+.rxp-header-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: linear-gradient(135deg, rgba(212, 163, 71, 0.25), rgba(180, 83, 9, 0.35));
+  border: 1px solid var(--accent-gold);
+  color: #fcd34d;
+  padding: 0.35rem 0.85rem;
+  border-radius: 6px;
+  font-family: var(--font-heading);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.rxp-header-btn:hover {
+  background: var(--accent-gold);
+  color: #0b0e14;
+  box-shadow: 0 0 12px rgba(212, 163, 71, 0.5);
+  transform: translateY(-1px);
+}
+
+.rxp-top-banner {
+  background: linear-gradient(90deg, #101726 0%, #172437 100%);
+  border-bottom: 1px solid rgba(212, 163, 71, 0.4);
+  padding: 0.65rem 1.75rem;
+  flex-shrink: 0;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.rxp-top-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+}
+
+.rxp-top-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.rxp-pill-tag {
+  background: rgba(212, 163, 71, 0.2);
+  border: 1px solid var(--accent-gold);
+  color: var(--accent-gold-bright);
+  font-family: var(--font-heading);
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.rxp-title {
+  font-size: 0.88rem;
+  color: var(--text-main);
+}
+
+.rxp-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: linear-gradient(135deg, #d4a347, #b45309);
+  color: #0b0e14 !important;
+  font-family: var(--font-heading);
+  font-size: 0.82rem;
+  font-weight: 900;
+  padding: 0.38rem 0.95rem;
+  border-radius: 6px;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.rxp-download-btn:hover {
+  filter: brightness(1.15);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(212, 163, 71, 0.5);
+}
+
 .disclaimer-content {
   max-width: 1400px;
   margin: 0 auto;

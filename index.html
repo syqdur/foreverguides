@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=4">
+  <link rel="stylesheet" href="style.css?v=6">
 </head>
 <body class="dark-theme">
 
@@ -23,6 +23,9 @@
       <h1 class="header-title">Mauros Guides für WoW Forever</h1>
     </div>
     <div class="header-right">
+      <a href="https://github.com/syqdur/foreverguides/blob/main/RXPGuides.zip" target="_blank" class="rxp-header-btn" title="RXP In-Game Levelguide für Forever herunterladen">
+        <span>🗺️</span> Levelguide (RXP.zip)
+      </a>
       <div class="countdown-badge" id="launchTimer">
         <span class="dot"></span> Launch in ...
       </div>
@@ -36,6 +39,19 @@
         <strong>Beta- & Launch-Hinweis:</strong>
         Aktuell sind von Blizzard und aus den bisherigen Testphasen Inhalte und Anpassungen <strong>verbindlich bis Stufe 30 bestätigt</strong>. Daten für Stufe 31–60 basieren auf Beta-Datamining und bewährten Classic-Mechaniken und werden laufend aktualisiert.
       </div>
+    </div>
+  </div>
+
+  <!-- Top RXP Levelguide Download Banner -->
+  <div class="rxp-top-banner">
+    <div class="rxp-top-content">
+      <div class="rxp-top-left">
+        <span class="rxp-pill-tag">🗺️ In-Game Levelguide Addon</span>
+        <span class="rxp-title"><strong>RXPGuides (1–60):</strong> Das interaktive In-Game Levelguide-Addon – blendet Navigations-Pfeil & Questschritte direkt im Interface ein!</span>
+      </div>
+      <a href="https://github.com/syqdur/foreverguides/blob/main/RXPGuides.zip" target="_blank" class="rxp-download-btn">
+        <span>📥</span> Levelguide RXPGuides.zip laden (GitHub) ↗
+      </a>
     </div>
   </div>
 
@@ -359,6 +375,47 @@
             <p>Erstelle dir direkt zu Beginn einen Alt in Orgrimmar zwischen Bank, Briefkasten und Auktionshaus. Post zwischen eigenen Charakteren kommt in Forever <strong>sofort ohne Wartezeit</strong> an. Stoffe, Erze und Grüne Items einfach rübermailen, damit dein Inventar frei bleibt.</p>
           </div>
         </div>
+
+        <!-- Deep Dive: Rested XP Mechanik -->
+        <div class="guide-chapter" style="margin-top: 1.5rem;">
+          <div class="card highlight-border" style="background: rgba(13, 20, 36, 0.85); border: 1px solid rgba(59, 130, 246, 0.4);">
+            <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem;">
+              <span style="font-size: 1.5rem;">💤</span>
+              <h3 style="color: #60a5fa; margin: 0; font-family: var(--font-heading);">Rested XP (Erholungs-Erfahrung) im Detail erklärt</h3>
+            </div>
+            
+            <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-main);">
+              <strong>Was ist Rested XP?</strong> Wenn du dich in einem Gasthaus, einer Hauptstadt oder am neuen <em>Abenteurer-Zelt</em> aufhältst, sammelt dein Charakter Erholungs-Erfahrung. Dein Erfahrungsbalken färbt sich <strong>blau</strong>.
+            </p>
+
+            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1rem 0;">
+              <div style="background: rgba(0,0,0,0.4); padding: 1rem; border-radius: 6px; border-left: 3px solid #60a5fa;">
+                <h4 style="color: #93c5fd; margin-top: 0;">1. Doppelte Monster-Erfahrung (+100%)</h4>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin: 0;">
+                  Solange dein Balken blau ist, bringt jeder getötete Mob <strong>exakt 200% EP</strong> (normale Kill-XP + 100% Rested-Bonus). Mobs sterben, und dein XP-Balken rast im doppelten Tempo vorwärts!
+                </p>
+              </div>
+
+              <div style="background: rgba(0,0,0,0.4); padding: 1rem; border-radius: 6px; border-left: 3px solid #34d399;">
+                <h4 style="color: #6ee7b7; margin-top: 0;">2. Quests verbrauchen KEINE Rested XP!</h4>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin: 0;">
+                  Ein riesiger Vorteil: Wenn du eine Quest abgibst (z.B. 3.000 XP), wird <strong>kein einziger Punkt Rested XP verbraucht</strong>. Der Rested-Bonus wird rein für Monster-Kills aufgebraucht.
+                </p>
+              </div>
+
+              <div style="background: rgba(0,0,0,0.4); padding: 1rem; border-radius: 6px; border-left: 3px solid #f59e0b;">
+                <h4 style="color: #fcd34d; margin-top: 0;">3. Das Zelt-Wunder in Forever</h4>
+                <p style="font-size: 0.88rem; color: var(--text-muted); margin: 0;">
+                  Normalerweise dauert es <strong>10 Tage</strong> im Gasthaus, um das Maximum von 150% Rested XP aufzubauen. Das <em>Abenteurer-Zelt (Adventurer's Tent)</em> lädt deinen Balken <strong>jede Stunde sofort auf 20% eines Levels</strong> auf – mitten in der offenen Welt!
+                </p>
+              </div>
+            </div>
+
+            <div style="background: rgba(212, 163, 71, 0.1); border: 1px solid rgba(212, 163, 71, 0.3); padding: 0.75rem 1rem; border-radius: 6px; font-size: 0.88rem;">
+              <strong>Speedrunner-Tipp mit RestedXP (RXP):</strong> Nutze das Addon <strong>RXPGuides</strong> (<a href="https://github.com/syqdur/foreverguides/blob/main/RXPGuides.zip" target="_blank" class="accent-link">Download oben</a>). Das Addon erkennt deinen Rested-XP-Status automatisch und berechnet, ob du Mobs auf dem Weg grinden solltest, um zeitraubende Umwege zu skippen!
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- ================= 2. ADDONS & UI ================= -->
@@ -377,6 +434,10 @@
               </tr>
             </thead>
             <tbody>
+              <tr class="highlight-row">
+                <td><strong>RXPGuides (In-Game Levelguide 1–60)</strong><br><a href="https://github.com/syqdur/foreverguides/blob/main/RXPGuides.zip" target="_blank" class="accent-link">📥 RXPGuides.zip (Direktdownload) ↗</a></td>
+                <td><strong>Das führende In-Game Levelguide-Addon:</strong> Zeigt dir mit einem dynamischen 3D-Richtungspfeil und interaktiver Quest-Checkliste direkt im Spiel sekundengenau, welche Quests du annehmen, wo du langlaufen und welche Mobs du töten sollst. Nie wieder Questtexte lesen oder auf der Weltkarte suchen! Enthält alle optimierten Horde-Routen (1–60) für WoW Forever. <em>Einfach die ZIP in deinen <code>World of Warcraft/_forever_/Interface/AddOns</code> Ordner entpacken.</em></td>
+              </tr>
               <tr>
                 <td><strong>Polestar (Leveling Guide)</strong><br><a href="https://github.com/fitzforge/polestar" target="_blank" class="accent-link">GitHub ↗</a></td>
                 <td>Das Open-Source In-Game Speed-Leveling Addon speziell für WoW Forever! Enthält simulierte 1–60 Routen, Waypoint-Navigationspfeil, Travel-Planner und Datenbanken. Unterstützt Deutsch out-of-the-box.</td>
@@ -3062,7 +3123,7 @@
     <span class="fab-text">Leitfäden</span>
   </button>
 
-  <script src="script.js?v=4"></script>
+  <script src="script.js?v=6"></script>
 </body>
 </html>
 
