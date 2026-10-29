@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body class="dark-theme">
 
@@ -64,7 +64,7 @@
           <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_bag_10.jpg" class="wow-icon" alt="Bag"> Schlafsack-Route (Lv 14)
         </button>
         <button class="nav-tab" data-target="tab-buffs">
-          <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_food_15.jpg" class="wow-icon" alt="Food"> Buff-Food & Camps
+          <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_food_15.jpg" class="wow-icon" alt="Food"> Buff-Food, Zelte & Camps
         </button>
       </div>
 
@@ -92,7 +92,7 @@
           <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_druid.jpg" class="wow-icon" alt="Druid"> Druide (Druid)
         </button>
         <button class="nav-tab" data-target="tab-shaman">
-          <span class="tab-icon">⚡</span> Schamane (Shaman)
+          <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_shaman.jpg" class="wow-icon" alt="Shaman"> Schamane (Shaman)
         </button>
       </div>
     </aside>
@@ -246,15 +246,42 @@
 
         <!-- Phase 1: 1-12 -->
         <div class="guide-chapter">
-          <h3>Phase 1: Stufe 1 bis 12 (Startgebiete & Durotar / Tirisfal)</h3>
-          <div class="card">
-            <h4>Durotar (Orks & Trolle)</h4>
-            <ul>
-              <li><strong>Stufe 1–6 (Tal der Prüfungen):</strong> Alle Quests im Kreis annehmen, Mobs für Kochen looten. Bei Stufe 6 mit Kochen + Kürschnerei nach Sen'jin aufbrechen.</li>
-              <li><strong>Stufe 6–10 (Sen'jin & Klingenhügel):</strong> Quests bündeln (Zalazane, Echseneier, Harpyien). Bei Stufe 10 Klassenquests abschließen.</li>
-              <li><strong>Stufe 10–12:</strong> Schädelsteinhöhle erledigen, Quests in Klingenhügel abgeben und Übergang ins Brachland antreten.</li>
-            </ul>
-            <p><em>Untote:</em> Machen Tirisfal Glades bis Stufe 11 (sehr dichte Quests) und nehmen dann den Zeppelin nach Orgrimmar.</p>
+          <h3>Phase 1: Stufe 1 bis 12 (Die drei klassischen Horde-Startgebiete)</h3>
+          <div class="card-grid">
+
+            <!-- Durotar: Orks & Trolle -->
+            <div class="card highlight-border">
+              <h4><img src="https://wow.zamimg.com/images/wow/icons/medium/racial_orc_bloodfury.jpg" class="wow-icon" alt="Orc"> Durotar (Orks & Trolle)</h4>
+              <ul>
+                <li><strong>Stufe 1–6 (Tal der Prüfungen):</strong> Alle Quests kreisförmig annehmen (Borstennacken, Skorpione, Äpfel). Fleisch fürs Kochen looten (+5% Kill-XP aktivieren). Mit Stufe 6 nach Sen'jin aufbrechen.</li>
+                <li><strong>Stufe 6–10 (Sen'jin & Klingenhügel):</strong> Quests bündeln (Zalazane auf den Echoinseln, Echseneier, Harpyien im Norden). Mit Stufe 10 Klassenquests (Pet, Dämon, Stances) abschließen.</li>
+                <li><strong>Stufe 10–12 (Schädelsteinhöhle & Brachland-Tor):</strong> Kultisten in der Schädelsteinhöhle besiegen, Quests in Klingenhügel abgeben und über die südliche Brücke ins Brachland marschieren.</li>
+                <li class="highlight-row"><strong>Übergang zu Stufe 12:</strong> Direkt ins <strong>Wegekreuz (Crossroads)</strong> laufen und Flugpunkt sichern!</li>
+              </ul>
+            </div>
+
+            <!-- Tirisfal: Untote / Verlassene -->
+            <div class="card highlight-border">
+              <h4><img src="https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_raisedead.jpg" class="wow-icon" alt="Undead"> Tirisfal Glades (Untote / Verlassene)</h4>
+              <ul>
+                <li><strong>Stufe 1–6 (Todesend / Deathknell):</strong> Start in der Gruft. Alle Quests kreisförmig um die Kapelle abräumen (Zombies, Nachtweber-Spinnen, Scharlachroter Kreuzzug). Mit Stufe 6 Kochen & Erste Hilfe lernen und nach Brill laufen.</li>
+                <li><strong>Stufe 6–10 (Brill & Umgebung):</strong> Heimatstein im Gasthaus Brill binden. Quests bündeln: Agamand-Mühlen (Schädel sammeln), Garrenspuk (Kürbisse), Scharlachroter Wachturm & Sollidens Bauernhof. Mit Stufe 10 Klassenquests in Brill oder Unterstadt abschließen.</li>
+                <li><strong>Stufe 10–12 (Bollwerk & Zeppelin-Transit):</strong> Letzte Quests am Bollwerk abgreifen. Ab Stufe 11–12 zum <strong>Zeppelinturm vor Unterstadt</strong> laufen $\rightarrow$ Zeppelin nach <strong>Orgrimmar / Durotar</strong> nehmen!</li>
+                <li class="highlight-row"><strong>Übergang zu Stufe 12:</strong> Flugpunkt Orgrimmar holen $\rightarrow$ westlich ins Brachland laufen und direkt ins <strong>Wegekreuz (Crossroads)</strong> einsteigen!</li>
+              </ul>
+            </div>
+
+            <!-- Mulgore: Tauren -->
+            <div class="card highlight-border">
+              <h4><img src="https://wow.zamimg.com/images/wow/icons/medium/ability_warstomp.jpg" class="wow-icon" alt="Tauren"> Mulgore (Tauren)</h4>
+              <ul>
+                <li><strong>Stufe 1–6 (Camp Narache / Rotes Wolkenplateau):</strong> Alle Quests bei Häuptling Hawkwind annehmen. Plateau gegen den Uhrzeigersinn säubern (Stacheleber, Pirscherdrüsen, Schmutzkrallen). Mit Stufe 6 Kochen & Kürschnerei lernen und den Pfad hinab ins Tal nehmen.</li>
+                <li><strong>Stufe 6–10 (Dorf der Bluthufe / Bloodhoof):</strong> Heimatstein im Gasthaus binden. Quests bündeln: Palemane-Gnolle, Winterhuf-Wasserbrunnen reinigen, Wagniskolonie-Minen (Venture Co.) und Swoop-Federn. Mit Stufe 10 Klassenquest (Bärengestalt/Totem) abschließen.</li>
+                <li><strong>Stufe 10–12 (Donnerfels & Hexenberg):</strong> Mit den Aufzügen nach <strong>Donnerfels (Thunder Bluff)</strong> aufsteigen und den Flugpunkt holen! Quests am Hexenberg (Harpyien) und Vorarbeiter der Wagniskolonie abräumen.</li>
+                <li class="highlight-row"><strong>Übergang zu Stufe 12:</strong> Durch das östliche Horde-Tor direkt ins Brachland laufen. Flugpunkt in Camp Taurajo mitnehmen und ab ins <strong>Wegekreuz (Crossroads)</strong>!</li>
+              </ul>
+            </div>
+
           </div>
         </div>
 
@@ -313,8 +340,8 @@
           </div>
 
           <div class="card">
-            <h3>2. +8% Dauerhafter XP-Bonus (Food + Schlafsack)</h3>
-            <p>Gekochtes Essen gibt in Forever <strong>+5% Kill-XP</strong> (15 Minuten Buff). Der Schlafsack gibt <strong>+3% XP</strong> (2 Stunden Buff, 1h Cooldown). Beide Buffs addieren sich sauber auf +8% zusätzliche Erfahrung.</p>
+            <h3>2. Dreifache XP-Verstärker: Food + Schlafsack + Zelt</h3>
+            <p>In Forever kombinierst du drei mächtige Quellen: <strong>+5% Kill-XP</strong> durch gekochtes Essen (15 Min), <strong>+3% XP</strong> durch den Gemütlichen Schlafsack (2 Std) und <strong>bis zu 20% Rested XP pro Stunde</strong> durch das neu überarbeitete <em>Abenteurer-Zelt (Adventurer's Tent)</em> am Lagerfeuer!</p>
           </div>
 
           <div class="card">
@@ -535,29 +562,92 @@
       <!-- ================= 4. BUFF-FOOD & CAMPS ================= -->
       <section id="tab-buffs" class="tab-pane">
         <div class="pane-header">
-          <h2>Buff-Food, Kochen & Lagerfeuer</h2>
-          <p class="pane-subtitle">Jedes gekochte Essen gibt in Forever +5% Kill-XP. Hier sind die einfachsten Rezepte.</p>
+          <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_food_15.jpg" class="wow-icon large" alt="Buffs"> Buff-Food, Zelte (Adventurer's Tent) & Camp-System</h2>
+          <p class="pane-subtitle">Die 3-Pfeiler-XP-Kombination in Forever: +5% Food-XP, +3% Schlafsack-XP und jetzt 20% Rested XP pro Stunde durch das neue Abenteurer-Zelt!</p>
         </div>
 
-        <div class="clean-grid">
-          <div class="card">
-            <h3>Stufe 1 bis 10</h3>
-            <p><strong>Geröstetes Eberfleisch (Roasted Boar Meat)</strong> oder <strong>Glänzender Kleinfisch (Brilliant Smallfish)</strong>. Fleisch droppt direkt von den Ebern in Durotar/Mulgore. Einfach Kochen auf Stufe 1 lernen und beim Händler einfache Gewürze kaufen.</p>
-          </div>
+        <!-- NEW HOTFIX HIGHLIGHT: Adventurer's Tent -->
+        <div class="guide-chapter">
+          <div class="alert-box" style="background: rgba(46, 204, 113, 0.1); border-left: 4px solid #2ecc71; padding: 1.25rem; border-radius: 6px; margin-bottom: 1.5rem;">
+            <h3 style="color: #2ecc71; margin-top: 0; display: flex; align-items: center; gap: 0.5rem; font-size: 1.2rem;">
+              <span>⛺</span> Brandneuer Launch-Hotfix: Das Abenteurer-Zelt (Adventurer's Tent)
+            </h3>
+            <p style="margin-bottom: 0.8rem; font-size: 0.95rem; color: var(--text-main);">
+              Blizzard hat kurz vor dem Launch die Funktionalität des <strong>Adventurer's Tent</strong> komplett überarbeitet! Aus einem rein kosmetischen Spielzeug wurde ein <strong>mächtiges Leveling-Werkzeug für dich und deine gesamte Gruppe</strong>:
+            </p>
 
-          <div class="card">
-            <h3>Stufe 10 bis 20</h3>
-            <p><strong>Gewürztes Wolfsfleisch (Seasoned Wolf Kabob)</strong> oder <strong>Lochkriecher (Longjaw Mud Snapper)</strong>. Wölfe gibt es im Brachland und Silberwald in Massen.</p>
-          </div>
+            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-top: 1rem;">
+              <!-- Before -->
+              <div class="card" style="border: 1px solid rgba(231, 76, 60, 0.4); background: rgba(0,0,0,0.5);">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                  <strong style="color: #e74c3c; font-size: 0.85rem; text-transform: uppercase;">Vorher (Beta)</strong>
+                  <span class="point-tag" style="background: rgba(231,76,60,0.2); color: #e74c3c;">Kosmetisch</span>
+                </div>
+                <h4 style="margin: 0.2rem 0; color: #fff;">Adventurer's Tent</h4>
+                <p style="font-size: 0.82rem; color: var(--text-muted); margin: 0.2rem 0;">Gegenstandsstufe 1 • Beim Aufheben gebunden</p>
+                <p style="font-size: 0.85rem; color: #e74c3c; margin-top: 0.5rem; line-height: 1.4;">
+                  <strong>Benutzen:</strong> Beschwört ein Miniatur-Zelt für 15 Min. Gesetzte Camp-Zelte haben währenddessen das Aussehen des Abenteurer-Zeltes. (15 Min Abklingzeit).
+                </p>
+              </div>
 
-          <div class="card">
-            <h3>Stufe 20 bis 30</h3>
-            <p><strong>Zweifach gewürztes Raptorfleisch (Twice-Spiced Raptor Slice)</strong> – ein Forever-spezifisches Rezept für Raptorfleisch aus dem südlichen Brachland.</p>
+              <!-- Now -->
+              <div class="card highlight-border" style="border: 1px solid rgba(46, 204, 113, 0.6); background: rgba(15, 25, 18, 0.6);">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                  <strong style="color: #2ecc71; font-size: 0.85rem; text-transform: uppercase;">Jetzt (Launch-Stand)</strong>
+                  <span class="point-tag" style="background: rgba(46,204,113,0.2); color: #2ecc71;">+20% Rested XP</span>
+                </div>
+                <h4 style="margin: 0.2rem 0; color: #fff;">Adventurer's Tent</h4>
+                <p style="font-size: 0.82rem; color: var(--text-muted); margin: 0.2rem 0;">Gegenstandsstufe 1 • Beim Aufheben gebunden</p>
+                <p style="font-size: 0.85rem; color: #2ecc71; margin-top: 0.5rem; line-height: 1.4;">
+                  <strong>Benutzen:</strong> Baut ein Zelt auf, das dir und Gruppenmitgliedern in der Nähe erlaubt, die <strong>Erholungs-Erfahrung (Rested XP) sofort auf bis zu 20% einer Stufe zu steigern!</strong> Kein Effekt, wenn Rested XP diesen Wert bereits überschreitet.<br>
+                  <strong style="color: #f1c40f;">Voraussetzung:</strong> Benötigt ein <strong>Lagerfeuer (Campfire)</strong> in unmittelbarer Nähe.<br>
+                  <strong style="color: var(--text-muted);">Abklingzeit:</strong> 1 Stunde Cooldown.
+                </p>
+              </div>
+            </div>
           </div>
+        </div>
 
+        <!-- How to use the Camp Trinity -->
+        <div class="guide-chapter">
+          <h3>🔥 Die 1-Stunden-Camp-Routine für maximale XP</h3>
           <div class="card">
-            <h3>Lagerfeuer-System</h3>
-            <p>Wenn andere Spieler ein Lagerfeuer aufstellen, setze dich kurz mit dem Befehl <code>/sit</code> für etwa eine Minute daneben. Das schaltet bis zu 1 Stunde anhaltende Nebenbuffs frei (z.B. Ausdauer oder Zelt-Boni von Lederern), ohne dass du selbst Berufe brauchst.</p>
+            <h4>Schritt-für-Schritt Ablauf am Lagerfeuer:</h4>
+            <ol style="margin-left: 1.2rem; line-height: 1.7; font-size: 0.95rem;">
+              <li><strong>1. Lagerfeuer aufstellen:</strong> Nutze <em>Einfaches Lagerfeuer</em> (Herstellung: 1x Einfaches Holz + 1x Feuerstein & Zunder beim Gemischtwarenhändler).</li>
+              <li><strong>2. Abenteurer-Zelt platzieren:</strong> Zelt direkt neben das Feuer stellen. Die gesamte Gruppe setzt sich mit <code>/sit</code> hinein $\rightarrow$ <strong>dein Erholungsbalken füllt sich sofort auf 20% Rested XP!</strong> (Doppelte Kill-Erfahrung für das nächste Fünftel deiner Stufe).</li>
+              <li><strong>3. Gemütlichen Schlafsack ausrollen:</strong> Kurz in den Schlafsack legen $\rightarrow$ <strong>+3% XP-Buff für 2 Stunden</strong> aktivieren.</li>
+              <li><strong>4. Gekochtes Fleisch snacken:</strong> Vor dem Weiterlaufen 1 Happen Buff-Food essen $\rightarrow$ <strong>+5% Kill-XP für 15 Minuten</strong> aktivieren.</li>
+            </ol>
+            <p class="highlight-row" style="margin-top: 1rem; padding: 0.6rem 0.8rem; border-radius: 4px;">
+              <strong>Ergebnis:</strong> +8% permanenter XP-Multiplikator <strong>PLUS 20% Rested XP pro Stunde</strong>! Wiederhole dieses 1-Minuten-Camp einmal jede Stunde beim Questen.
+            </p>
+          </div>
+        </div>
+
+        <!-- Buff Food Recipes -->
+        <div class="guide-chapter">
+          <h3>🍲 Einfache Kochen-Rezepte für den +5% Kill-XP Buff</h3>
+          <div class="clean-grid">
+            <div class="card">
+              <h3>Stufe 1 bis 10</h3>
+              <p><strong>Geröstetes Eberfleisch (Roasted Boar Meat)</strong> oder <strong>Glänzender Kleinfisch (Brilliant Smallfish)</strong>. Fleisch droppt direkt von den Ebern in Durotar/Mulgore/Tirisfal. Kochen auf Stufe 1 lernen und beim Händler einfache Gewürze kaufen.</p>
+            </div>
+
+            <div class="card">
+              <h3>Stufe 10 bis 20</h3>
+              <p><strong>Gewürztes Wolfsfleisch (Seasoned Wolf Kabob)</strong> oder <strong>Lochkriecher (Longjaw Mud Snapper)</strong>. Wölfe gibt es im Brachland und Silberwald in Massen.</p>
+            </div>
+
+            <div class="card">
+              <h3>Stufe 20 bis 30</h3>
+              <p><strong>Zweifach gewürztes Raptorfleisch (Twice-Spiced Raptor Slice)</strong> – ein Forever-spezifisches Rezept für Raptorfleisch aus dem südlichen Brachland.</p>
+            </div>
+
+            <div class="card">
+              <h3>Lagerfeuer-Nebenbuff</h3>
+              <p>Wenn du dich etwa eine Minute an ein Lagerfeuer setzt (<code>/sit</code>), erhältst du zusätzlich einen 1-stündigen Willenskraft- und Ausdauer-Buff. Zusammen mit dem Zelt ist jedes Camp ein riesiger Boost!</p>
+            </div>
           </div>
         </div>
       </section>
@@ -878,92 +968,256 @@
       <!-- ================= 5. PRIEST ================= -->
       <section id="tab-priest" class="tab-pane">
         <div class="pane-header">
-          <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_priest.jpg" class="wow-icon large" alt="Priest"> Priester (Priest) Leveling Leitfaden</h2>
-          <p class="pane-subtitle">S-Tier Ausdauer durch Willensentzug. Kein Trinken nötig, wenn der Zauberstab die Arbeit macht.</p>
+          <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_priest.jpg" class="wow-icon large" alt="Priest"> Priester (Priest) – Umfassender Leitfaden (1–60)</h2>
+          <p class="pane-subtitle">S-Tier Ausdauer durch Willensentzug. Mit Zauberstab-Spezialisierung levelst du von 1 bis 60 mit nahezu null Manapausen.</p>
         </div>
 
-        <div class="card">
-          <h3>Die Standard-Pull-Reihenfolge</h3>
-          <p>1. <strong>Heiliges Feuer (Holy Fire)</strong> casten (langer Cast, währenddessen regeneriert Mana).<br>
-          2. <strong>Schattenwort: Schmerz (SW:P)</strong> draufsetzen.<br>
-          3. <strong>Zauberstab (Shoot)</strong> aktivieren und den Mob einfach zu Ende schießen.<br>
-          4. <strong>Willensentzug (Spirit Tap)</strong> aktiviert sich beim Todesstoß → Dein Mana ist beim nächsten Mob wieder voll.</p>
+        <!-- Meta Scoreboard -->
+        <div class="class-meta-rating">
+          <div class="meta-pill"><span class="meta-label">Level-Speed:</span> <span class="meta-val a-tier">A-Tier (Konstant)</span></div>
+          <div class="meta-pill"><span class="meta-label">Solo & Überleben:</span> <span class="meta-val s-tier">S-Tier (Schild & Heal)</span></div>
+          <div class="meta-pill"><span class="meta-label">Downtime (Trinken):</span> <span class="meta-val s-tier">Nahezu Null (Wand)</span></div>
+          <div class="meta-pill"><span class="meta-label">Dungeon-Bedarf:</span> <span class="meta-val s-tier">S-Tier (Immer gesucht)</span></div>
         </div>
 
-        <h3 class="group-title">Wichtige Zauberstäbe (Wand-Progression)</h3>
-        <div class="table-card">
-          <table class="simple-table">
+        <!-- 1. Quick-Start Setup -->
+        <div class="guide-chapter">
+          <h3>⚡ Einloggen & Loslegen: Charakter-Setup</h3>
+          <div class="card-grid">
+            <div class="card highlight-border">
+              <h4>Beste Horde-Rasse: Untot (Undead)</h4>
+              <p><strong>Warum:</strong> <em>Wille der Verlassenen</em> bricht Furcht, Bezauberung und Schlaf (unumgänglich im PvP). Priester-Spezifisch: <strong>Verschlingende Seuche (Devouring Plague)</strong> liefert einen gewaltigen 24s-Schattenschaden-DoT, der dich heilt, und <em>Schattenwache</em> proct zusätzliche Schatten-Treffer. (Troll ist solide für Berserker, aber Untot ist S-Tier).</p>
+            </div>
+            <div class="card highlight-border">
+              <h4>Beste Berufe: Schneiderei & Verzauberkunst</h4>
+              <p><strong>Warum:</strong> <strong>Verzauberkunst (Skill 10):</strong> Ermöglicht es dir, ab Stufe 5 den <em>Geringen Magiezauberstab</em> selbst herzustellen – dein größter Temposprung im gesamten Frühspiel! <strong>Schneiderei:</strong> Craftet Taschen und mächtige Schattenzwirn-Roben auf Stufe 60.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Stat Priority -->
+        <div class="guide-chapter">
+          <h3>📊 Attributs-Gewichtung (Stat Priority)</h3>
+          <div class="stat-prio-bar">
+            <span class="stat-chip">Willenskraft (Spirit)</span>
+            <span class="stat-arrow">&gt;</span>
+            <span class="stat-chip">Zauberschaden / Schatten (Spell Power)</span>
+            <span class="stat-arrow">&gt;</span>
+            <span class="stat-chip">Intelligenz (Intellect)</span>
+            <span class="stat-arrow">&gt;</span>
+            <span class="stat-chip">Ausdauer (Stamina)</span>
+          </div>
+          <p class="card-desc">Willenskraft ist dein absolut wichtigstes Attribut! Durch das Talent <em>Willensentzug (Spirit Tap)</em> verdoppelt sich deine Willenskraft nach jedem Kill und regeneriert dein Mana während des Laufens vollständig auf 100%.</p>
+        </div>
+
+        <!-- 3. Combat Rotation -->
+        <div class="guide-chapter">
+          <h3>🪄 Exakter Kampf-Ablauf (Die 5-Sekunden-Regel)</h3>
+          <div class="card">
+            <h4>Solo Pull & Zero-Downtime Rotation:</h4>
+            <p>1. <strong>Buffs aktiv halten:</strong> <em>Machtwort: Seelenstärke</em> und <em>Inneres Feuer</em> (aktuelle Ränge für massive Rüstung) müssen immer laufen.<br>
+            2. <strong>Eröffnung (Max-Range):</strong> <strong>Heiliges Feuer (Holy Fire)</strong> casten (langer Cast – während du zauberst, verlierst du noch kein Mana!).<br>
+            3. <strong>DoT setzen:</strong> <strong>Schattenwort: Schmerz (SW:P)</strong> sofort hinterherwerfen.<br>
+            4. <strong>Burst:</strong> <strong>Penance (Sühne)</strong> offensiv auf den Mob kanalisieren (3 schnelle Heilig-Treffer).<br>
+            5. <strong>Schild & 5-Sekunden-Regel:</strong> <em>Machtwort: Schild</em> nur setzen, wenn du Schläge einsteckst. Ab ca. 60% Mob-HP <strong>keine Zauber mehr wirken!</strong><br>
+            6. <strong>Zauberstab (Wand):</strong> Den Mob mit dem Zauberstab niederschießen. Nach 5 Sekunden greift die natürliche Manaregeneration $\rightarrow$ Mob stirbt $\rightarrow$ <em>Willensentzug</em> triggert und dein Mana ist wieder voll!</p>
+          </div>
+        </div>
+
+        <!-- 4. Weapon Milestones -->
+        <div class="guide-chapter">
+          <h3>🪄 Wichtige Zauberstäbe (Wand-Progression)</h3>
+          <div class="table-card">
+            <table class="simple-table">
+              <thead>
+                <tr>
+                  <th>Stufe</th>
+                  <th>Name</th>
+                  <th>DPS</th>
+                  <th>Herstellung / Fundort</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="highlight-row">
+                  <td><strong>5</strong></td>
+                  <td><strong>Geringer Magiezauberstab (Lesser Magic Wand)</strong></td>
+                  <td><strong>11.3</strong></td>
+                  <td><strong>Verzauberkunst Skill 10 (1x Geringe Magieessenz + 1x Einfaches Holz). Unbedingt sofort ab Stufe 5 bauen oder kaufen!</strong></td>
+                </tr>
+                <tr class="highlight-row">
+                  <td><strong>13</strong></td>
+                  <td><strong>Großer Magiezauberstab (Greater Magic Wand)</strong></td>
+                  <td><strong>17.5</strong></td>
+                  <td><strong>Verzauberkunst Skill 75 (1x Große Magieessenz + 1x Einfaches Holz). Zweiter großer Powerspike.</strong></td>
+                </tr>
+                <tr>
+                  <td>17</td>
+                  <td>Cookies Rührstab (Cookie's Stirring Wand)</td>
+                  <td>22.3</td>
+                  <td>Todesminen (Deadmines) Questbelohnung.</td>
+                </tr>
+                <tr class="highlight-row">
+                  <td><strong>18+</strong></td>
+                  <td><strong>Grabsteinszepter (Gravestone Scepter)</strong></td>
+                  <td><strong>29.0</strong></td>
+                  <td><strong>Tiefschwarze Grotte (BFD) Questbelohnung. Überragender Schaden bis weit über Stufe 35 hinaus!</strong></td>
+                </tr>
+                <tr>
+                  <td>31</td>
+                  <td>Goblin-Zünder (Goblin Igniter)</td>
+                  <td>32.8</td>
+                  <td>Schlingendorntal (STV) Questbelohnung.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- 5. Point by Point Talents -->
+        <div class="guide-chapter">
+          <h3>🌳 Punkt-für-Punkt Talent-Fahrplan (10–60)</h3>
+          <table class="detailed-talent-table">
             <thead>
               <tr>
                 <th>Stufe</th>
-                <th>Name</th>
-                <th>DPS</th>
-                <th>Herstellung / Fundort</th>
+                <th>Talent & Punkte</th>
+                <th>Baum</th>
+                <th>Effekt & Nutzen</th>
               </tr>
             </thead>
             <tbody>
               <tr class="highlight-row">
-                <td><strong>5</strong></td>
-                <td><strong>Geringer Magiezauberstab (Lesser Magic Wand)</strong></td>
-                <td><strong>11.3</strong></td>
-                <td><strong>Verzauberkunst Skill 10 (1x Geringe Magieessenz + 1x Einfaches Holz). Unbedingt sofort ab Stufe 5 bauen oder kaufen!</strong></td>
+                <td><strong>10 – 14</strong></td>
+                <td><span class="point-tag">5/5</span> Willensentzug (Spirit Tap)</td>
+                <td>Schatten</td>
+                <td><strong>Pflicht-Talent #1!</strong> +100% Willenskraft nach jedem Kill. Macht Trinken überflüssig.</td>
               </tr>
               <tr class="highlight-row">
-                <td><strong>13</strong></td>
-                <td><strong>Großer Magiezauberstab (Greater Magic Wand)</strong></td>
-                <td><strong>17.5</strong></td>
-                <td><strong>Verzauberkunst Skill 75 (1x Große Magieessenz + 1x Einfaches Holz). Zweiter großer Powerspike.</strong></td>
+                <td><strong>15 – 19</strong></td>
+                <td><span class="point-tag">5/5</span> Zauberstab-Spezialisierung</td>
+                <td>Disziplin</td>
+                <td><strong>+25% Zauberstabschaden!</strong> Verwandelt deinen Wand in ein Maschinengewehr ohne Manakosten.</td>
               </tr>
               <tr>
-                <td>17</td>
-                <td>Cookies Rührstab (Cookie's Stirring Wand)</td>
-                <td>22.3</td>
-                <td>Todesminen (Deadmines) Questbelohnung.</td>
+                <td><strong>20 – 21</strong></td>
+                <td><span class="point-tag">2/2</span> Verb. Schattenwort: Schmerz</td>
+                <td>Schatten</td>
+                <td>Verlängert die Dauer von Schmerz um 6 Sekunden für mehr Gesamtschaden.</td>
+              </tr>
+              <tr>
+                <td><strong>22 – 24</strong></td>
+                <td><span class="point-tag">3/5</span> Schattenfokus</td>
+                <td>Schatten</td>
+                <td>Senkt die Manakosten und Widerstandschance deiner Schattenzauber.</td>
               </tr>
               <tr class="highlight-row">
-                <td><strong>18+</strong></td>
-                <td><strong>Grabsteinszepter (Gravestone Scepter)</strong></td>
-                <td><strong>29.0</strong></td>
-                <td><strong>Tiefschwarze Grotte (BFD) Questbelohnung. Überragender Schaden bis weit über Stufe 35 hinaus!</strong></td>
+                <td><strong>25 – 29</strong></td>
+                <td><span class="point-tag">5/5</span> Gedankenschinden (Mind Flay)</td>
+                <td>Schatten</td>
+                <td>Kanalisierter Schattenschaden, der das Ziel um 50% verlangsamt.</td>
               </tr>
               <tr>
-                <td>31</td>
-                <td>Goblin-Zünder (Goblin Igniter)</td>
-                <td>32.8</td>
-                <td>Schlingendorntal (STV) Questbelohnung.</td>
+                <td><strong>30 – 34</strong></td>
+                <td><span class="point-tag">5/5</span> Schattenweben (Shadow Weaving)</td>
+                <td>Schatten</td>
+                <td>Schattenschaden stapelt einen Debuff auf dem Ziel, der erlittenen Schattenschaden um bis zu 15% erhöht.</td>
+              </tr>
+              <tr>
+                <td><strong>35 – 39</strong></td>
+                <td><span class="point-tag">5/5</span> Dunkelheit (Darkness)</td>
+                <td>Schatten</td>
+                <td>+10% Flat Schattenschaden auf all deine Kernzauber.</td>
+              </tr>
+              <tr class="highlight-row">
+                <td><strong>40</strong></td>
+                <td><span class="point-tag">1/1</span> Schattengestalt (Shadowform)</td>
+                <td>Schatten</td>
+                <td><strong>Großer Powerspike!</strong> +15% Schattenschaden, 15% weniger erlittener physischer Schaden.</td>
+              </tr>
+              <tr>
+                <td><strong>41 – 45</strong></td>
+                <td><span class="point-tag">5/5</span> Meditation</td>
+                <td>Disziplin</td>
+                <td>15% Manaregeneration läuft während des Zauberns ununterbrochen weiter.</td>
+              </tr>
+              <tr>
+                <td><strong>46 – 47</strong></td>
+                <td><span class="point-tag">2/2</span> Verb. Machtwort: Schild</td>
+                <td>Disziplin</td>
+                <td>+15% stärkere Schadensabsorption für dein Schild.</td>
+              </tr>
+              <tr>
+                <td><strong>48 – 52</strong></td>
+                <td><span class="point-tag">5/5</span> Mentale Beweglichkeit</td>
+                <td>Disziplin</td>
+                <td>Senkt die Manakosten aller Spontanzauber (SW:P, Schild, Erneuerung) um 10%.</td>
+              </tr>
+              <tr>
+                <td><strong>53 – 57</strong></td>
+                <td><span class="point-tag">5/5</span> Mentale Stärke</td>
+                <td>Disziplin</td>
+                <td>+10% maximales Gesamt-Mana – unverzichtbar für Dungeons und Raids.</td>
+              </tr>
+              <tr class="highlight-row">
+                <td><strong>58 – 60</strong></td>
+                <td><span class="point-tag">3/3</span> Innerer Fokus & Stärke</td>
+                <td>Disziplin</td>
+                <td>Kostenloser Notfall-Heilzauber mit +25% Crit-Chance alle 3 Minuten.</td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <h3 class="group-title">Talente nach Stufen</h3>
-        <div class="talent-steps">
-          <div class="talent-card">
-            <span class="badge-sm">Stufe 10–14</span>
-            <h4>5/5 Willensentzug (Spirit Tap)</h4>
-            <p>Pflicht-Talent! Verdoppelt deinen Willenskraft-Wert nach jedem Todesstoß. Vollständige Manaregeneration im Laufen.</p>
-          </div>
-          <div class="talent-card">
-            <span class="badge-sm">Stufe 15–19</span>
-            <h4>5/5 Zauberstab-Spezialisierung</h4>
-            <p>Erhöht den Schaden deines Zauberstabs um 25% – kostenloser Schaden ohne Manakosten.</p>
-          </div>
-          <div class="talent-card">
-            <span class="badge-sm">Stufe 20–39</span>
-            <h4>Disziplin & Schatten-Mix</h4>
-            <p>Verbessertes Schattenwort: Schmerz (2/2), Verbessertes Schild (3/3) und Meditation (5/5) für Manaregeneration beim Zaubern.</p>
-          </div>
-          <div class="talent-card highlight-border">
-            <span class="badge-sm">Stufe 40</span>
-            <h4>Umskillen auf Schattengestalt</h4>
-            <p>Voller Respec auf Schattenform (+15% Schattenschaden, 15% weniger physischer Schaden genommen, Gedankenschinden).</p>
+        <!-- Trainer Skills to Buy vs Skip -->
+        <div class="guide-chapter">
+          <h3>💰 Trainer-Fähigkeiten: Was kaufen, was sparen?</h3>
+          <div class="skill-split-grid">
+            <div class="skill-buy-box">
+              <h4>✅ Immer auf Maximalrang kaufen:</h4>
+              <ul class="skill-list">
+                <li><strong>Schattenwort: Schmerz (SW:P):</strong> Dein Haupt-DoT für jeden Kill.</li>
+                <li><strong>Machtwort: Seelenstärke:</strong> Pflicht-Ausdauer für dich und Gruppe.</li>
+                <li><strong>Machtwort: Schild:</strong> Notfall-Lebensversicherung.</li>
+                <li><strong>Inneres Feuer:</strong> Immer den höchsten Rang für massive Bonus-Rüstung.</li>
+                <li><strong>Blitzheilung & Erneuerung:</strong> Schnelle Notfall-Heilung.</li>
+                <li><strong>Schattengestalt (Stufe 40):</strong> Sofort freischalten (+15% Dmg)!</li>
+              </ul>
+            </div>
+            <div class="skill-skip-box">
+              <h4>❌ Nicht kaufen (Spart 35+ Gold fürs Mount):</h4>
+              <ul class="skill-list">
+                <li><strong>Göttliche Pein (Smite) Ränge 3+:</strong> Dein Wand macht mehr Schaden ohne Mana!</li>
+                <li><strong>Gedankenkontrolle:</strong> Teure Spielerei beim Leveln.</li>
+                <li><strong>Untote fesseln Ränge 2+:</strong> Rang 1 reicht völlig aus.</li>
+                <li><strong>Manabrand & Heilige Nova:</strong> Extrem manafressend und unnötig.</li>
+                <li><strong>Große Heilung vor Stufe 40:</strong> Zu teuer beim Solo-Leveln.</li>
+              </ul>
+            </div>
           </div>
         </div>
 
-        <h3 class="group-title">Wichtigste Fähigkeiten beim Lehrer</h3>
-        <div class="card">
-          <p><strong>Immer kaufen:</strong> Heiliges Feuer, Schattenwort: Schmerz, Machtwort: Schild, Erneuern, Blitzheilung, Willensstärke.<br>
-          <strong>Sparen:</strong> Gedankenschlag (Mind Blast) nur niedrige Ränge für den Opener nutzen, um Mana zu sparen. Gedankenkontrolle, Schattenschutz und Untote fesseln erst später kaufen.</p>
+        <!-- 6. Macros -->
+        <div class="guide-chapter">
+          <h3>⚙️ Unverzichtbare Priester-Makros</h3>
+          <div class="macro-grid">
+            <div class="macro-box">
+              <div class="macro-title">
+                <span>Zauberstab Start / Stop (Kein Doppelklick-Abbruch)</span>
+                <button class="copy-pill" onclick="copyMacro(this)">Kopieren</button>
+              </div>
+              <div class="macro-code">#showtooltip Shoot
+/cast !Shoot</div>
+            </div>
+
+            <div class="macro-box">
+              <div class="macro-title">
+                <span>Mouseover Machtwort: Schild & Notfall-Flash Heal</span>
+                <button class="copy-pill" onclick="copyMacro(this)">Kopieren</button>
+              </div>
+              <div class="macro-code">#showtooltip Power Word: Shield
+/cast [@mouseover,help,nodead][@player] Power Word: Shield</div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -974,7 +1228,34 @@
           <p class="pane-subtitle">Unangefochtener König der Solo-Level-Geschwindigkeit. Null Downtime, wenn das Pet tankt.</p>
         </div>
 
-        <!-- 1. Stat Priority -->
+        <!-- Meta Scoreboard -->
+        <div class="class-meta-rating">
+          <div class="meta-pill"><span class="meta-label">Level-Speed:</span> <span class="meta-val s-tier">S-Tier (Unangefochten #1)</span></div>
+          <div class="meta-pill"><span class="meta-label">Solo & Überleben:</span> <span class="meta-val s-tier">S-Tier (Pet tankt alles)</span></div>
+          <div class="meta-pill"><span class="meta-label">Downtime (Trinken):</span> <span class="meta-val s-tier">Null (Auto-Shot)</span></div>
+          <div class="meta-pill"><span class="meta-label">Dungeon-Bedarf:</span> <span class="meta-val a-tier">A-Tier (Solide DPS & Pulls)</span></div>
+        </div>
+
+        <!-- 1. Quick-Start Setup -->
+        <div class="guide-chapter">
+          <h3>⚡ Einloggen & Loslegen: Charakter-Setup</h3>
+          <div class="card-grid">
+            <div class="card highlight-border">
+              <h4>Beste Horde-Rasse: Ork (PvE/PvP) oder Troll (PvE)</h4>
+              <p><strong>Ork (S-Tier):</strong> <em>Befehlsgewalt</em> erhöht den Begleiterschaden passiv um +5%! <em>Kochendes Blut</em> liefert Extra-Angriffskraft und <em>Zähigkeit</em> gibt 25% passive Betäubungs-Resistenz.<br><strong>Troll:</strong> +5% Schaden gegen Wildtiere (brutal beim Leveln) + <em>Berserker</em> für massives Angriffstempo.</p>
+            </div>
+            <div class="card highlight-border">
+              <h4>Beste Berufe: Kürschnerei & Lederverarbeitung</h4>
+              <p><strong>Warum:</strong> Du kannst deine eigene Lederrüstung craften, Rüstungssets für mehr Rüstung bauen und eigene <strong>Munitionsbeutel / Köcher</strong> herstellen (+Angriffstempo!). Kürschnerei bringt zusätzlich enormes Händlergold für das Stufe 40 Mount.</p>
+            </div>
+            <div class="card highlight-border">
+              <h4>Frühspiel-Powerspike: Stufe 10 Pet-Quest</h4>
+              <p><strong>Sofort erledigen:</strong> Mit Stufe 10 die 3-teilige Zähmungs-Quest beim Klassenlehrer abschließen. Zähme als erstes ein <strong>Wildschwein (Boar)</strong> – frisst buchstäblich alles (Fleisch, Brot, Äpfel) und hat <em>Sturmangriff</em> für sofortigen Aggro-Aufbau!</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Stat Priority -->
         <div class="guide-chapter">
           <h3>📊 Attributs-Gewichtung (Stat Priority)</h3>
           <div class="stat-prio-bar">
@@ -1241,7 +1522,34 @@
           <p class="pane-subtitle">Kostenloses Essen/Wasser, Portale und unerreichte Frost-Sicherheit beim Leveln.</p>
         </div>
 
-        <!-- 1. Stat Priority -->
+        <!-- Meta Scoreboard -->
+        <div class="class-meta-rating">
+          <div class="meta-pill"><span class="meta-label">Level-Speed:</span> <span class="meta-val s-tier">S-Tier (AoE/Single)</span></div>
+          <div class="meta-pill"><span class="meta-label">Solo & Überleben:</span> <span class="meta-val a-tier">A-Tier (Nova, Slow, Blink)</span></div>
+          <div class="meta-pill"><span class="meta-label">Downtime (Trinken):</span> <span class="meta-val b-tier">Mittel (Aber Essen gratis!)</span></div>
+          <div class="meta-pill"><span class="meta-label">Dungeon-Bedarf:</span> <span class="meta-val s-tier">S-Tier (Wasser & Portale)</span></div>
+        </div>
+
+        <!-- 1. Quick-Start Setup -->
+        <div class="guide-chapter">
+          <h3>⚡ Einloggen & Loslegen: Charakter-Setup</h3>
+          <div class="card-grid">
+            <div class="card highlight-border">
+              <h4>Beste Horde-Rasse: Troll (PvE) oder Untot (PvP)</h4>
+              <p><strong>Troll (S-Tier PvE):</strong> <em>Berserker</em> gewährt bis zu +30% Zaubertempo – der mächtigste DPS-Cooldown für Caster im gesamten Spiel!<br><strong>Untot (S-Tier PvP):</strong> <em>Wille der Verlassenen</em> bricht Furcht-Effekte von Hexern und Priestern sofort.</p>
+            </div>
+            <div class="card highlight-border">
+              <h4>Beste Berufe: Schneiderei & Verzauberkunst</h4>
+              <p><strong>Warum:</strong> Du baust dir ab Stufe 5 den <em>Geringen Magiezauberstab</em> selbst (rettet dein Mana). Auf Stufe 60 stellst du dir die BiS-Roben (z.B. <em>Robe des Erzmagiers</em>) her.</p>
+            </div>
+            <div class="card highlight-border">
+              <h4>Frühspiel-Powerspike: Rang 1 Frostnova & Stufe 5 Wand</h4>
+              <p><strong>Goldene Regel:</strong> Kaufe ab Stufe 5 sofort den Magiezauberstab. Nutze <em>Frostnova</em> <strong>nur auf Rang 1</strong> (friert 8s lang ein, kostet fast kein Mana) und halte dein Essen & Wasser immer aktuell!</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Stat Priority -->
         <div class="guide-chapter">
           <h3>📊 Attributs-Gewichtung (Stat Priority)</h3>
           <div class="stat-prio-bar">
@@ -1343,10 +1651,34 @@
                 <td>Absorbiert hunderte Schadenspunkte und verhindert Zauberzeit-Verzögerung bei Treffern.</td>
               </tr>
               <tr>
-                <td><strong>41 – 50</strong></td>
-                <td><span class="point-tag">Arkan</span> Hellsicht & Arkane Konzentration</td>
+                <td><strong>41 – 45</strong></td>
+                <td><span class="point-tag">5/5</span> Arkane Konzentration</td>
                 <td>Arkan</td>
-                <td>10% Chance auf Freizaubern (Clearcasting = kostenloser Frostblitz!).</td>
+                <td>10% Chance auf Freizaubern (Clearcasting) – nächster Frostblitz kostet 0 Mana!</td>
+              </tr>
+              <tr>
+                <td><strong>46 – 47</strong></td>
+                <td><span class="point-tag">2/2</span> Arkaner Einschlag</td>
+                <td>Arkan</td>
+                <td>+6% zusätzliche Crit-Chance für Explosion und Arkane Geschosse.</td>
+              </tr>
+              <tr>
+                <td><strong>48 – 52</strong></td>
+                <td><span class="point-tag">5/5</span> Arkaner Geist</td>
+                <td>Arkan</td>
+                <td>+10% maximale Intelligenz – vergrößert deinen Manapool für große Kämpfe.</td>
+              </tr>
+              <tr>
+                <td><strong>53 – 55</strong></td>
+                <td><span class="point-tag">3/3</span> Arkane Meditation</td>
+                <td>Arkan</td>
+                <td>15% Manaregeneration läuft während des Zauberns ununterbrochen weiter.</td>
+              </tr>
+              <tr class="highlight-row">
+                <td><strong>56 – 60</strong></td>
+                <td><span class="point-tag">5/5</span> Eisrasur / Eisige Adern</td>
+                <td>Frost</td>
+                <td>Maximiert deinen Frostschaden gegen bewegungsunfähige Ziele im Endgame.</td>
               </tr>
             </tbody>
           </table>
@@ -1395,6 +1727,35 @@
           </div>
         </div>
 
+        <!-- Trainer Skills to Buy vs Skip -->
+        <div class="guide-chapter">
+          <h3>💰 Trainer-Fähigkeiten: Was kaufen, was sparen?</h3>
+          <div class="skill-split-grid">
+            <div class="skill-buy-box">
+              <h4>✅ Immer auf Maximalrang kaufen:</h4>
+              <ul class="skill-list">
+                <li><strong>Frostblitz (Frostbolt):</strong> Dein absoluter Hauptangriff – sofort lernen!</li>
+                <li><strong>Frostnova (NUR Rang 1!):</strong> Friert 8s ein, höhere Ränge kosten nur unnötig Mana und Gold.</li>
+                <li><strong>Blinzeln (Blink):</strong> Ab Stufe 20 der wichtigste Flucht- und Reiseskill.</li>
+                <li><strong>Arkane Intelligenz:</strong> Maximiert deinen Manapool für dich und die Gruppe.</li>
+                <li><strong>Wasser & Brot herbeizaubern:</strong> Neue Ränge lernen, sobald du das Level dafür erreichst.</li>
+                <li><strong>Teleportation (Orgrimmar / Unterstadt):</strong> Spart unendlich viel Flugzeit und Gold!</li>
+                <li><strong>Eisbarriere (Stufe 40):</strong> Absorbiert massiven Schaden.</li>
+              </ul>
+            </div>
+            <div class="skill-skip-box">
+              <h4>❌ Nicht kaufen (Spart 40+ Gold fürs Mount):</h4>
+              <ul class="skill-list">
+                <li><strong>Feuerball ab Stufe 10:</strong> Völlig überflüssig, da du auf Frost geskillt bist.</li>
+                <li><strong>Pyroschlag & Versengen:</strong> Ignorieren beim Frost-Leveln.</li>
+                <li><strong>Arkane Geschosse komplett skippen:</strong> Extrem manaintensiv.</li>
+                <li><strong>Dämpfen & Verstärken von Magie:</strong> Erst im Raid relevant.</li>
+                <li><strong>Flammenstoß-Ränge:</strong> Nur Rang 1 für den Bodeneffekt aufbewahren.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
         <!-- 5. Macros -->
         <div class="guide-chapter">
           <h3>⚙️ Unverzichtbare Magier-Makros</h3>
@@ -1429,7 +1790,34 @@
           <p class="pane-subtitle">Drain-Tanking Engine: Verwandelt Leben in Mana und Mana in Mob-Kills. Null Pausen.</p>
         </div>
 
-        <!-- 1. Stat Priority -->
+        <!-- Meta Scoreboard -->
+        <div class="class-meta-rating">
+          <div class="meta-pill"><span class="meta-label">Level-Speed:</span> <span class="meta-val s-tier">S-Tier (Drain-Tanking)</span></div>
+          <div class="meta-pill"><span class="meta-label">Solo & Überleben:</span> <span class="meta-val s-tier">S-Tier (Leerwandler & Drain)</span></div>
+          <div class="meta-pill"><span class="meta-label">Downtime (Trinken):</span> <span class="meta-val s-tier">Null (Aderlass)</span></div>
+          <div class="meta-pill"><span class="meta-label">40er Mount:</span> <span class="meta-val s-tier">0 Gold (Kostenlos!)</span></div>
+        </div>
+
+        <!-- 1. Quick-Start Setup -->
+        <div class="guide-chapter">
+          <h3>⚡ Einloggen & Loslegen: Charakter-Setup</h3>
+          <div class="card-grid">
+            <div class="card highlight-border">
+              <h4>Beste Horde-Rasse: Ork (PvE/PvP) oder Untot (PvP)</h4>
+              <p><strong>Ork (S-Tier):</strong> <em>Befehlsgewalt</em> bufft den Schaden deiner Dämonen um +5% und <em>Zähigkeit</em> liefert 25% Betäubungs-Resistenz gegen Schurken.<br><strong>Untot:</strong> <em>Wille der Verlassenen</em> verhindert, dass gegnerische Hexer oder Priester dich in Furcht halten.</p>
+            </div>
+            <div class="card highlight-border">
+              <h4>Beste Berufe: Schneiderei & Verzauberkunst (oder Bergbau/Kürschner)</h4>
+              <p><strong>Warum:</strong> Schneider craften die mächtigen Schatten-Roben und Taschen. Da Hexer ihr <strong>Stufe 40 Mount kostenlos</strong> erhalten, kannst du alternativ mit Bergbau & Kürschnerei reich werden!</p>
+            </div>
+            <div class="card highlight-border">
+              <h4>Frühspiel-Powerspike: Stufe 10 Leerwandler & Instant-DoT</h4>
+              <p><strong>Sofort erledigen:</strong> Mit Stufe 10 die Klassenquest für den <strong>Leerwandler (Voidwalker)</strong> machen (tankt ab sofort alle Mobs für dich). Mit Stufe 14 macht <em>Verbesserte Verderbnis</em> deinen Haupt-DoT zum Spontanzauber im Laufen!</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Stat Priority -->
         <div class="guide-chapter">
           <h3>📊 Attributs-Gewichtung (Stat Priority)</h3>
           <div class="stat-prio-bar">
@@ -1526,6 +1914,36 @@
                 <td>Dämonologie</td>
                 <td>+15% maximale Ausdauer (mehr Leben = mehr Mana via Aderlass).</td>
               </tr>
+              <tr>
+                <td><strong>41 – 42</strong></td>
+                <td><span class="point-tag">2/2</span> Verbesserter Gesundheitsstein</td>
+                <td>Dämonologie</td>
+                <td>+20% stärkere Heilung durch deine eigenen Gesundheitssteine.</td>
+              </tr>
+              <tr>
+                <td><strong>43 – 45</strong></td>
+                <td><span class="point-tag">3/3</span> Dämonische Ägide</td>
+                <td>Dämonologie</td>
+                <td>Erhöht die Effekte von Dämonenrüstung um 30%.</td>
+              </tr>
+              <tr>
+                <td><strong>46 – 50</strong></td>
+                <td><span class="point-tag">5/5</span> Teufelsausdauer</td>
+                <td>Dämonologie</td>
+                <td>+15% maximale Ausdauer für deine Dämonen – der Leerwandler stirbt nie.</td>
+              </tr>
+              <tr class="highlight-row">
+                <td><strong>51 – 55</strong></td>
+                <td><span class="point-tag">5/5</span> Meister der Dämonologie</td>
+                <td>Dämonologie</td>
+                <td>Gewährt dir mächtige passive Resistenzen und Schadensboni je nach aktivem Pet.</td>
+              </tr>
+              <tr class="highlight-row">
+                <td><strong>56 – 60</strong></td>
+                <td><span class="point-tag">5/5</span> Schattenbrand & Grimmige Reichweite</td>
+                <td>Zerstörung</td>
+                <td>Spontanzauber-Finisher für PvP und Notfall-Kills mit Seelensplitter.</td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -1567,6 +1985,35 @@
           </div>
         </div>
 
+        <!-- Trainer Skills to Buy vs Skip -->
+        <div class="guide-chapter">
+          <h3>💰 Trainer-Fähigkeiten: Was kaufen, was sparen?</h3>
+          <div class="skill-split-grid">
+            <div class="skill-buy-box">
+              <h4>✅ Immer auf Maximalrang kaufen:</h4>
+              <ul class="skill-list">
+                <li><strong>Verderbnis (Corruption):</strong> Dein mächtigster DoT – immer aktuell halten!</li>
+                <li><strong>Fluch der Pein:</strong> Essenzieller Einzelschaden über Zeit.</li>
+                <li><strong>Blutsauger (Drain Life):</strong> Kern des Drain-Tankings ab Stufe 20.</li>
+                <li><strong>Aderlass (Life Tap):</strong> Verwandelt Gesundheit in Mana – höchste Ränge lernen.</li>
+                <li><strong>Seelendieb (NUR Rang 1!):</strong> Reicht für Splitter & kostet am wenigsten Mana.</li>
+                <li><strong>Dämonenrüstung:</strong> Wichtige Rüstung und Schattenwiderstand.</li>
+                <li><strong>Teufelsross (Mount):</strong> Mit Stufe 40 via Quest kostenlos beim Lehrer abholen!</li>
+              </ul>
+            </div>
+            <div class="skill-skip-box">
+              <h4>❌ Nicht kaufen (Spart 30+ Gold für Gear):</h4>
+              <ul class="skill-list">
+                <li><strong>Schattenblitz ab Stufe 20:</strong> Drain-Tanking nutzt keine Casts im Nahkampf.</li>
+                <li><strong>Feuerbrand höhere Ränge:</strong> Unterbricht Furcht und frisst zu viel Mana.</li>
+                <li><strong>Höllenfeuer & Feuerregen:</strong> Extrem gefährlich und ineffizient beim Leveln.</li>
+                <li><strong>Fluch der Sprachen & Fluch der Schwäche:</strong> Nur im speziellen Raid-PvP nötig.</li>
+                <li><strong>Auge von Kilrogg:</strong> Reine Späh-Spielerei.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
         <!-- 5. Macros -->
         <div class="guide-chapter">
           <h3>⚙️ Unverzichtbare Hexenmeister-Makros</h3>
@@ -1598,6 +2045,33 @@
         <div class="pane-header">
           <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_rogue.jpg" class="wow-icon large" alt="Rogue"> Schurke (Rogue) – Umfassender Leitfaden (1–60)</h2>
           <p class="pane-subtitle">Konstanter Nahkampfschaden und PvP-Dominanz. Massiv abhängig von einer langsamen Haupthandwaffe.</p>
+        </div>
+
+        <!-- Meta Scoreboard -->
+        <div class="class-meta-rating">
+          <div class="meta-pill"><span class="meta-label">Level-Speed:</span> <span class="meta-val a-tier">A-Tier (Sehr stark)</span></div>
+          <div class="meta-pill"><span class="meta-label">Solo & Überleben:</span> <span class="meta-val a-tier">A-Tier (Verschwinden & Stuns)</span></div>
+          <div class="meta-pill"><span class="meta-label">Downtime (Essen):</span> <span class="meta-val b-tier">Mittel (Bandagen wichtig)</span></div>
+          <div class="meta-pill"><span class="meta-label">PvP / Ganking:</span> <span class="meta-val s-tier">S-Tier (König der Open World)</span></div>
+        </div>
+
+        <!-- 1. Quick-Start Setup -->
+        <div class="guide-chapter">
+          <h3>⚡ Einloggen & Loslegen: Charakter-Setup</h3>
+          <div class="card-grid">
+            <div class="card highlight-border">
+              <h4>Beste Horde-Rasse: Ork (PvE/PvP) oder Untot (PvP)</h4>
+              <p><strong>Ork (S-Tier):</strong> <em>Kochendes Blut (Blood Fury)</em> erhöht deine Nahkampf-Angriffskraft um 25% – brutal für Klingenwirbel-Bursts! <em>Zähigkeit</em> gibt 25% Stun-Resistenz.<br><strong>Untot:</strong> <em>Wille der Verlassenen</em> für den ultimativen Furcht-Break im PvP.</p>
+            </div>
+            <div class="card highlight-border">
+              <h4>Beste Berufe: Kürschnerei & Lederverarbeitung (oder Ingenieur)</h4>
+              <p><strong>Warum:</strong> Stelle deine eigene Lederrüstung her. Kürschnerei finanziert das Stufe 40 Mount. Für ambitionierte Raider und PvPler ist <em>Ingenieurskunst</em> (Granaten & Schutzbrillen) unverzichtbar.</p>
+            </div>
+            <div class="card highlight-border">
+              <h4>Frühspiel-Powerspike: Beidhändigkeit & Stufe 20 Gifte</h4>
+              <p><strong>Sofort erledigen:</strong> Ab Stufe 10 sofort <em>Beidhändigkeit (Dual Wield)</em> beim Waffenmeister lernen. Mit Stufe 20 die <strong>Gift-Quest (Zanzils Mixtur)</strong> im Brachland abschließen, um <em>Sofortwirkendes Gift</em> auf deine Klingen zu schmieren!</p>
+            </div>
+          </div>
         </div>
 
         <div class="guide-chapter">
@@ -1701,6 +2175,36 @@
                 <td>Kampf</td>
                 <td>Verdoppelt deine Energieregeneration für 15 Sekunden. Zerschneidet Bosse in Sekunden!</td>
               </tr>
+              <tr>
+                <td><strong>41</strong></td>
+                <td><span class="point-tag">5/5</span> Aggression voll</td>
+                <td>Kampf</td>
+                <td>Schließt Aggression mit dem 5. Punkt ab (+6% Schaden).</td>
+              </tr>
+              <tr>
+                <td><strong>42 – 46</strong></td>
+                <td><span class="point-tag">5/5</span> Tödlichkeit (Lethality)</td>
+                <td>Meucheln</td>
+                <td>+30% Kritischer Schadensbonus für Finsterer Stoß und Ausweiden!</td>
+              </tr>
+              <tr class="highlight-row">
+                <td><strong>47 – 51</strong></td>
+                <td><span class="point-tag">5/5</span> Bosheit (Malice)</td>
+                <td>Meucheln</td>
+                <td>+5% Kritische Trefferchance auf alle deine Nahkampfangriffe.</td>
+              </tr>
+              <tr>
+                <td><strong>52 – 53</strong></td>
+                <td><span class="point-tag">2/2</span> Gnadenlose Angriffe</td>
+                <td>Meucheln</td>
+                <td>+40% Crit-Chance für den nächsten Finsteren Stoß nach dem Töten eines Mobs!</td>
+              </tr>
+              <tr class="highlight-row">
+                <td><strong>54 – 60</strong></td>
+                <td><span class="point-tag">7 Pkt</span> Unerbittliche Stöße & Tödlichkeit</td>
+                <td>Meucheln</td>
+                <td>Todesstoß-Kombination: Finisher geben 20% Chance pro Kombopunkt auf 25 sofortige Energie zurück.</td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -1747,6 +2251,34 @@
           </div>
         </div>
 
+        <!-- Trainer Skills to Buy vs Skip -->
+        <div class="guide-chapter">
+          <h3>💰 Trainer-Fähigkeiten: Was kaufen, was sparen?</h3>
+          <div class="skill-split-grid">
+            <div class="skill-buy-box">
+              <h4>✅ Immer auf Maximalrang kaufen:</h4>
+              <ul class="skill-list">
+                <li><strong>Finsterer Stoß (Sinister Strike):</strong> 90% deines Schadens – immer aktuellen Rang kaufen!</li>
+                <li><strong>Zerhäckseln (Slice and Dice):</strong> Rang 1 & 2 für permanentes Angriffstempo.</li>
+                <li><strong>Ausweiden (Eviscerate):</strong> Dein Haupt-Finisher.</li>
+                <li><strong>Entrinnen, Sprinten & Verschwinden:</strong> Deine unverzichtbaren Lebensretter.</li>
+                <li><strong>Taschendiebstahl (Pickpocket):</strong> Vor JEDEM Mob aus Stealth nutzen – bringt Silber und Dietriche!</li>
+                <li><strong>Sofortwirkendes Gift:</strong> Ab Stufe 20 auf Haupthand auftragen.</li>
+              </ul>
+            </div>
+            <div class="skill-skip-box">
+              <h4>❌ Nicht kaufen (Spart 30+ Gold fürs Mount):</h4>
+              <ul class="skill-list">
+                <li><strong>Meucheln & Hinterhalt:</strong> Du levelst mit Schwertern und Kampf, nicht mit Dolchen!</li>
+                <li><strong>Tritt Ränge 2+:</strong> Rang 1 kickt Zauber genauso zu 100%!</li>
+                <li><strong>Solarplexus Ränge 2+:</strong> Rang 1 reicht für Opener und Bandagen-Pause.</li>
+                <li><strong>Finte (Feint):</strong> Im Solo-Leveln absolut nutzlos.</li>
+                <li><strong>Blenden & Erdrosseln Ränge:</strong> Nur Basisrang reicht.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
         <div class="guide-chapter">
           <h3>⚙️ Unverzichtbare Schurken-Makros</h3>
           <div class="macro-grid">
@@ -1778,6 +2310,33 @@
         <div class="pane-header">
           <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_warrior.jpg" class="wow-icon large" alt="Warrior"> Krieger (Warrior) – Umfassender Leitfaden (1–60)</h2>
           <p class="pane-subtitle">Solo die härteste Klasse im Spiel, in Begleitung eine Naturgewalt. Waffen-Upgrades entscheiden alles.</p>
+        </div>
+
+        <!-- Meta Scoreboard -->
+        <div class="class-meta-rating">
+          <div class="meta-pill"><span class="meta-label">Level-Speed:</span> <span class="meta-val b-tier">B-Tier (Solo langsam, Duo S-Tier)</span></div>
+          <div class="meta-pill"><span class="meta-label">Solo & Überleben:</span> <span class="meta-val b-tier">B-Tier (Sehr zäh, Bandagen Pflicht)</span></div>
+          <div class="meta-pill"><span class="meta-label">Waffen-Abhängigkeit:</span> <span class="meta-val s-tier">Extrem Hoch (Wirbelwindaxt!)</span></div>
+          <div class="meta-pill"><span class="meta-label">Dungeon-Bedarf:</span> <span class="meta-val s-tier">S-Tier (Jede Gruppe sucht Tanks)</span></div>
+        </div>
+
+        <!-- 1. Quick-Start Setup -->
+        <div class="guide-chapter">
+          <h3>⚡ Einloggen & Loslegen: Charakter-Setup</h3>
+          <div class="card-grid">
+            <div class="card highlight-border">
+              <h4>Beste Horde-Rasse: Ork (PvE/PvP) oder Taure (Tank/PvP)</h4>
+              <p><strong>Ork (S-Tier PvE):</strong> <em>Axt-Spezialisierung</em> (+5 Axt-Skill) senkt die Chance auf Streifschläge (Glancing Blows) im Raid massiv! <em>Kochendes Blut</em> für +AP und 25% Stun-Resistenz.<br><strong>Taure:</strong> +5% Gesamtausdauer und <em>Kriegsstampfen</em> (2s AoE-Stun) für Bandagen-Heilung.</p>
+            </div>
+            <div class="card highlight-border">
+              <h4>Beste Berufe: Bergbau & Schmiedekunst (oder Kürschner)</h4>
+              <p><strong>Warum:</strong> Schmiede bauen ihre eigenen Rüstungen und Waffen (z.B. <em>Mondstein-Streitaxt</em>). <strong>Erste Hilfe ist absolut lebensnotwendig:</strong> Krieger können sich nicht heilen – du musst Bandagen immer auf Maximal-Skill halten!</p>
+            </div>
+            <div class="card highlight-border">
+              <h4>Frühspiel-Powerspike: Haltungen & Wirbelwindaxt (Stufe 30)</h4>
+              <p><strong>Klassenquests:</strong> Stufe 10 (Verteidigungshaltung + Spott), Stufe 20 (Berserkerhaltung). <strong>Der Königsschritt mit Stufe 30:</strong> Schließe mit Gilden-Hilfe die Questreihe für die legendäre <strong>Wirbelwindaxt (Whirlwind Axe)</strong> ab – mit Tempo 3.6 zerreißt du Mobs bis Stufe 45 im Alleingang!</p>
+            </div>
+          </div>
         </div>
 
         <div class="guide-chapter">
@@ -1882,6 +2441,24 @@
                 <td>Furor</td>
                 <td>+5% Kritische Trefferchance auf alle Angriffe.</td>
               </tr>
+              <tr>
+                <td><strong>46 – 50</strong></td>
+                <td><span class="point-tag">5/5</span> Entfesselter Zorn</td>
+                <td>Furor</td>
+                <td>Chance auf zusätzliche Wut bei jedem erfolgreichen Nahkampfangriff.</td>
+              </tr>
+              <tr class="highlight-row">
+                <td><strong>51 – 55</strong></td>
+                <td><span class="point-tag">5/5</span> Durchbohrendes Heulen & Schrei</td>
+                <td>Furor</td>
+                <td>Verlangsamt alle Gegner im Umkreis um 50% – perfektes Notfall-Kiting.</td>
+              </tr>
+              <tr class="highlight-row">
+                <td><strong>56 – 60</strong></td>
+                <td><span class="point-tag">5/5</span> Wutanfall (Enrage)</td>
+                <td>Furor</td>
+                <td>Erhöht deinen Nahkampfschaden nach erlittenen kritischen Treffern um gewaltige +25%!</td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -1928,6 +2505,34 @@
           </div>
         </div>
 
+        <!-- Trainer Skills to Buy vs Skip -->
+        <div class="guide-chapter">
+          <h3>💰 Trainer-Fähigkeiten: Was kaufen, was sparen?</h3>
+          <div class="skill-split-grid">
+            <div class="skill-buy-box">
+              <h4>✅ Immer auf Maximalrang kaufen:</h4>
+              <ul class="skill-list">
+                <li><strong>Schlachtruf (Battle Shout):</strong> Massiver AP-Buff – immer aktiv halten!</li>
+                <li><strong>Sturmangriff & Abfangen:</strong> Essenzieller Gap-Closer und Wut-Erzeuger.</li>
+                <li><strong>Verwunden (Rend):</strong> Frühe Ränge für konstanten Blutungsschaden.</li>
+                <li><strong>Überwältigen (Overpower):</strong> Kann nicht ausgewichen werden, trifft fast immer kritisch!</li>
+                <li><strong>Tödlicher Stoß (Mortal Strike):</strong> Ab Stufe 40 dein absoluter Hauptangriff.</li>
+                <li><strong>Hinrichten (Execute):</strong> Beendet Kämpfe unter 20% Boss-HP sofort.</li>
+              </ul>
+            </div>
+            <div class="skill-skip-box">
+              <h4>❌ Nicht kaufen (Spart 35+ Gold fürs Mount):</h4>
+              <ul class="skill-list">
+                <li><strong>Donnerknall Ränge 2+:</strong> Zu hohe Wutkosten beim Solo-Leveln.</li>
+                <li><strong>Spott Ränge:</strong> Spott hat keine Ränge, kostet nur Gold.</li>
+                <li><strong>Schildhieb & Schildblock Ränge:</strong> Nur Rang 1 reicht völlig zum Kicken.</li>
+                <li><strong>Spalten (Cleave):</strong> Frisst die nächste Waffenladung und kostet zu viel Wut.</li>
+                <li><strong>Einschüchternder Ruf höhere Ränge:</strong> Nur Basisrang reicht als Flucht-Knopf.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
         <div class="guide-chapter">
           <h3>⚙️ Unverzichtbare Krieger-Makros</h3>
           <div class="macro-grid">
@@ -1960,6 +2565,33 @@
         <div class="pane-header">
           <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_druid.jpg" class="wow-icon large" alt="Druid"> Druide (Druid) – Umfassender Leitfaden (1–60)</h2>
           <p class="pane-subtitle">Wird ab Katze (Stufe 20) und Reisegestalt (Stufe 30) zur schnellsten und unabhängigsten Hybrid-Klasse.</p>
+        </div>
+
+        <!-- Meta Scoreboard -->
+        <div class="class-meta-rating">
+          <div class="meta-pill"><span class="meta-label">Level-Speed:</span> <span class="meta-val a-tier">A-Tier (Ab Lv 20 extrem schnell)</span></div>
+          <div class="meta-pill"><span class="meta-label">Solo & Überleben:</span> <span class="meta-val s-tier">S-Tier (Heilung & Bären-Tank)</span></div>
+          <div class="meta-pill"><span class="meta-label">Downtime (Trinken):</span> <span class="meta-val s-tier">Null (Mana regeneriert in Gestalt)</span></div>
+          <div class="meta-pill"><span class="meta-label">Flexibilität:</span> <span class="meta-val s-tier">S-Tier (Tank, Heal, DPS in einem)</span></div>
+        </div>
+
+        <!-- 1. Quick-Start Setup -->
+        <div class="guide-chapter">
+          <h3>⚡ Einloggen & Loslegen: Charakter-Setup</h3>
+          <div class="card-grid">
+            <div class="card highlight-border">
+              <h4>Beste Horde-Rasse: Taure (Einzige Option!)</h4>
+              <p><strong>Rassen-Vorteile:</strong> <em>Kriegsstampfen (War Stomp)</em> betäubt Gegner 2 Sekunden lang – genau genug Zeit, um aus der Tiergestalt zu shiften und eine <em>Heilende Berührung</em> durchzucasten! <em>Durchhaltevermögen</em> gibt +5% maximale Basisgesundheit.</p>
+            </div>
+            <div class="card highlight-border">
+              <h4>Beste Berufe: Kürschnerei & Lederverarbeitung (oder Kräuter/Alchi)</h4>
+              <p><strong>Warum:</strong> Stelle deine eigene Lederrüstung und Rüstungssets her. Kürschnerei garantiert reiches Händlergold für spätere Respecs. Kräuterkunde & Alchemie liefert wichtige Manatränke für Dungeon-Heilung.</p>
+            </div>
+            <div class="card highlight-border">
+              <h4>Frühspiel-Powerspike: Bär (10) & Katze (20)</h4>
+              <p><strong>Gestalten-Timing:</strong> Bis Stufe 9 als Caster quälen. Mit Stufe 10 sofort die Bärengestalt-Quest machen. Mit Stufe 20 explodiert dein Schaden durch <strong>Katzengestalt</strong> und das Talent <em>Katzenschnelligkeit</em> (+30% Lauftempo!). <strong>Waffen-DPS zählt in Gestalt NICHT:</strong> Nimm nur Stäbe mit hohen Attributen (+Stärke/+Beweglichkeit)!</p>
+            </div>
+          </div>
         </div>
 
         <div class="guide-chapter">
@@ -2051,6 +2683,36 @@
                 <td>Wilder Kampf</td>
                 <td>Aura: Erhöht die Nahkampf- und Distanz-Critchance aller Gruppenmitglieder um 3%!</td>
               </tr>
+              <tr>
+                <td><strong>41 – 45</strong></td>
+                <td><span class="point-tag">5/5</span> Grimmigkeit (Furor)</td>
+                <td>Wiederherstellung</td>
+                <td><strong>Bestes Druiden-Talent:</strong> Gibt sofort 10 Wut in Bärengestalt oder 40 Energie in Katzengestalt beim Hineinshiften!</td>
+              </tr>
+              <tr>
+                <td><strong>46 – 50</strong></td>
+                <td><span class="point-tag">5/5</span> Naturfokus</td>
+                <td>Wiederherstellung</td>
+                <td>70% Chance, dass Heilzauber durch feindliche Angriffe nicht verzögert werden.</td>
+              </tr>
+              <tr class="highlight-row">
+                <td><strong>51</strong></td>
+                <td><span class="point-tag">1/1</span> Omen der Klarsicht</td>
+                <td>Wiederherstellung</td>
+                <td>Nahkampftreffer gewähren Freizaubern (Clearcasting) – nächste Fähigkeit kostet 0 Energie/Wut!</td>
+              </tr>
+              <tr>
+                <td><strong>52 – 56</strong></td>
+                <td><span class="point-tag">5/5</span> Naturalist</td>
+                <td>Gleichgewicht</td>
+                <td>Erhöht deinen gesamten physischen Nahkampfschaden um +10%!</td>
+              </tr>
+              <tr class="highlight-row">
+                <td><strong>57 – 60</strong></td>
+                <td><span class="point-tag">4 Pkt</span> Schnelligkeit der Natur</td>
+                <td>Wiederherstellung</td>
+                <td>Spontanzauber-Notfallheilung: Nächster Naturzauber wird zum Sofortzauber im Kampf.</td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -2091,6 +2753,34 @@
           </div>
         </div>
 
+        <!-- Trainer Skills to Buy vs Skip -->
+        <div class="guide-chapter">
+          <h3>💰 Trainer-Fähigkeiten: Was kaufen, was sparen?</h3>
+          <div class="skill-split-grid">
+            <div class="skill-buy-box">
+              <h4>✅ Immer auf Maximalrang kaufen:</h4>
+              <ul class="skill-list">
+                <li><strong>Bärengestalt & Zermalmen:</strong> Unverzichtbar für Stufe 10 bis 19 und Notfall-Tanken.</li>
+                <li><strong>Katzengestalt, Klaue & Wilder Biss:</strong> Deine Haupt-DPS ab Stufe 20.</li>
+                <li><strong>Reisegestalt (Stufe 30):</strong> +40% Reisetempo im Freien – spart endlose Laufzeit bis zum Mount!</li>
+                <li><strong>Mal der Wildnis (Mark of the Wild):</strong> Pflicht-Buff für Rüstung und Attribute.</li>
+                <li><strong>Verjüngung & Heilende Berührung:</strong> Effiziente Zwischen-Pull-Heilung.</li>
+                <li><strong>Feenfeuer (Tiergestalt):</strong> Rüstung senken und Adds taggen.</li>
+              </ul>
+            </div>
+            <div class="skill-skip-box">
+              <h4>❌ Nicht kaufen (Spart 35+ Gold fürs Mount):</h4>
+              <ul class="skill-list">
+                <li><strong>Zorn & Mondfeuer ab Stufe 20:</strong> Du kämpfst als Katze/Bär – reine Goldverschwendung.</li>
+                <li><strong>Sternenfeuer & Hurrikan:</strong> Nicht benötigt beim Feral-Leveln.</li>
+                <li><strong>Dornen (Thorns) höhere Ränge:</strong> Nur Basisrang reicht.</li>
+                <li><strong>Winterschlaf & Besänftigen:</strong> Reine Nischenzauber im PvE.</li>
+                <li><strong>Wiedergeburt (Rebirth) Ränge:</strong> Nur Rang 1 reicht im Level-Dungeon.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
         <div class="guide-chapter">
           <h3>⚙️ Unverzichtbare Druiden-Makros</h3>
           <div class="macro-grid">
@@ -2122,6 +2812,33 @@
         <div class="pane-header">
           <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_shaman.jpg" class="wow-icon large" alt="Shaman"> Schamane (Shaman) – Umfassender Leitfaden (1–60)</h2>
           <p class="pane-subtitle">Geisterwolf ab Stufe 20 für schnelles Reisen, mächtige Totems und gigantische Windzorn-Bursts ab Stufe 30.</p>
+        </div>
+
+        <!-- Meta Scoreboard -->
+        <div class="class-meta-rating">
+          <div class="meta-pill"><span class="meta-label">Level-Speed:</span> <span class="meta-val a-tier">A-Tier (Ab Lv 20 Geisterwolf)</span></div>
+          <div class="meta-pill"><span class="meta-label">Solo & Überleben:</span> <span class="meta-val a-tier">A-Tier (Erdelementar, Heal)</span></div>
+          <div class="meta-pill"><span class="meta-label">Downtime (Trinken):</span> <span class="meta-val b-tier">Mittel (Totems bewusst setzen)</span></div>
+          <div class="meta-pill"><span class="meta-label">Burst-Schaden:</span> <span class="meta-val s-tier">S-Tier (Windfury One-Shots!)</span></div>
+        </div>
+
+        <!-- 1. Quick-Start Setup -->
+        <div class="guide-chapter">
+          <h3>⚡ Einloggen & Loslegen: Charakter-Setup</h3>
+          <div class="card-grid">
+            <div class="card highlight-border">
+              <h4>Beste Horde-Rasse: Ork (PvE/PvP) oder Taure (Survival)</h4>
+              <p><strong>Ork (S-Tier PvE):</strong> <em>Axt-Spezialisierung</em> (+5 Axt-Skill) maximiert deine 2-Hand-Axt-Treffer ab Stufe 30! <em>Kochendes Blut</em> bringt extra AP und 25% Stun-Resistenz.<br><strong>Taure:</strong> <em>Kriegsstampfen</em> (2s AoE-Stun) schenkt dir die lebensrettende Zeit für eine freie <em>Welle der Heilung</em>!</p>
+            </div>
+            <div class="card highlight-border">
+              <h4>Beste Berufe: Kürschnerei & Lederverarbeitung</h4>
+              <p><strong>Warum:</strong> Du kannst ab Stufe 40 deine eigene Schwere Rüstung (Mail) herstellen. Kürschnerei generiert enormes Händlergold für das Stufe 40 Mount und Waffen-Upgrades.</p>
+            </div>
+            <div class="card highlight-border">
+              <h4>Frühspiel-Powerspikes: Totems & Geisterwolf (20)</h4>
+              <p><strong>Meilensteine:</strong> Stufe 4 Erdtotem, Stufe 10 Feuertotem, Stufe 20 Wassertotem & <strong>Geisterwolf (+40% Reisetempo im Freien!)</strong>. Mit Stufe 30 schaltest du <strong>Waffe des Windzorns</strong> und 2H-Waffen frei – der größte Burst-Sprung im Spiel!</p>
+            </div>
+          </div>
         </div>
 
         <div class="guide-chapter">
@@ -2212,6 +2929,30 @@
                 <td>Verstärkung</td>
                 <td>Sofortiger Waffenschlag mit beiden Händen + gewährt 20% mehr Naturschaden für den nächsten Schock.</td>
               </tr>
+              <tr>
+                <td><strong>41 – 45</strong></td>
+                <td><span class="point-tag">5/5</span> Konvektion</td>
+                <td>Elementar</td>
+                <td>Senkt die Manakosten deiner Schocks und Blitze um 10%.</td>
+              </tr>
+              <tr class="highlight-row">
+                <td><strong>46 – 50</strong></td>
+                <td><span class="point-tag">5/5</span> Schock-Verwüstung & Reichweite</td>
+                <td>Elementar</td>
+                <td>Erhöht die Reichweite und Trefferchance deiner Elementarzauber.</td>
+              </tr>
+              <tr class="highlight-row">
+                <td><strong>51 – 55</strong></td>
+                <td><span class="point-tag">5/5</span> Elementarer Furor</td>
+                <td>Elementar</td>
+                <td><strong>+100% Kritischer Schadensbonus</strong> für all deine Schockzauber!</td>
+              </tr>
+              <tr>
+                <td><strong>56 – 60</strong></td>
+                <td><span class="point-tag">5/5</span> Ruf des Donners</td>
+                <td>Elementar</td>
+                <td>+6% passive Kritische Trefferchance für deine Schocks und Blitzschläge.</td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -2258,6 +2999,35 @@
           </div>
         </div>
 
+        <!-- Trainer Skills to Buy vs Skip -->
+        <div class="guide-chapter">
+          <h3>💰 Trainer-Fähigkeiten: Was kaufen, was sparen?</h3>
+          <div class="skill-split-grid">
+            <div class="skill-buy-box">
+              <h4>✅ Immer auf Maximalrang kaufen:</h4>
+              <ul class="skill-list">
+                <li><strong>Waffe des Felsbeißers (Rockbiter):</strong> Ränge 1 bis 4 bis Stufe 29 für konstante AP.</li>
+                <li><strong>Waffe des Windzorns (Windfury):</strong> Ab Stufe 30 sofort jeden Rang kaufen!</li>
+                <li><strong>Erdschock (Earth Shock):</strong> Rang 1 für Unterbrechungen behalten, aktuellen Rang für Dmg.</li>
+                <li><strong>Geisterwolf (Ghost Wolf):</strong> Stufe 20 (+40% Tempo – absolute Priorität).</li>
+                <li><strong>Welle der Heilung:</strong> Deine wichtigste Selbstheilung zwischen Kämpfen.</li>
+                <li><strong>Blitzschlagschild:</strong> Gratis passiver Schaden ohne Zauberzeit.</li>
+                <li><strong>Totem des Glühens & Erdstärke:</strong> Standard-Totems für jeden Pull.</li>
+              </ul>
+            </div>
+            <div class="skill-skip-box">
+              <h4>❌ Nicht kaufen (Spart 35+ Gold fürs Mount):</h4>
+              <ul class="skill-list">
+                <li><strong>Blitzschlag & Kettenblitz ab Stufe 20:</strong> Du bist Verstärker und schlägst im Nahkampf zu!</li>
+                <li><strong>Frostschock Ränge 2+:</strong> Rang 1 verlangsamt das Ziel bereits zu 100%.</li>
+                <li><strong>Feuernova-Totem & Magmatotem:</strong> Fressen viel zu viel Mana beim Leveln.</li>
+                <li><strong>Totem des Erdstoßes Ränge:</strong> Nur Rang 1 reicht gegen Furcht.</li>
+                <li><strong>Wasseratmung & Fernsicht:</strong> Reine Spielerei vor Stufe 60.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
         <div class="guide-chapter">
           <h3>⚙️ Unverzichtbare Schamanen-Makros</h3>
           <div class="macro-grid">
@@ -2292,7 +3062,7 @@
     <span class="fab-text">Leitfäden</span>
   </button>
 
-  <script src="script.js?v=3"></script>
+  <script src="script.js?v=4"></script>
 </body>
 </html>
 
