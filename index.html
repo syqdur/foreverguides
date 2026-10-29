@@ -14,6 +14,11 @@
   <!-- Top App Bar -->
   <header class="app-header">
     <div class="header-left">
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menü öffnen">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
       <span class="guild-badge">&lt;TEH CVLT&gt;</span>
       <h1 class="header-title">Mauros Guides für WoW Forever</h1>
     </div>
@@ -36,9 +41,17 @@
 
   <!-- Main Container: Sidebar + Content -->
   <div class="layout-wrapper">
+    <!-- Backdrop for mobile drawer -->
+    <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
+    <!-- Floating Mobile Menu Button -->
+    <button class="mobile-nav-fab" id="mobileNavFab" aria-label="Kategorie öffnen">
+      <span class="fab-icon">📖</span>
+      <span class="fab-text">Leitfäden</span>
+    </button>
     
     <!-- Left Navigation Sidebar -->
-    <aside class="sidebar">
+    <aside class="sidebar" id="sidebarNav">
       <div class="nav-group">
         <span class="nav-heading">Allgemeine Planung</span>
         <button class="nav-tab active" data-target="tab-timeline">
@@ -678,6 +691,195 @@
               <p><strong>Mobs:</strong> Gezeitenkriecher und Krokilisken an den Seen.<br>
               <strong>Loot:</strong> Extrem harmlos zu bekämpfen (reine Nahkämpfer). Droppen Scheren und Fleisch mit hohem Vendor-Wert sowie Schweres/Dickes Leder.</p>
             </div>
+          </div>
+        </div>
+
+        <!-- ================= KERN-SPELLS JEDER KLASSE (TRAINER-SPAREN) ================= -->
+        <div class="guide-chapter">
+          <h3><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_book_07.jpg" class="wow-icon" alt="Book"> Klassen-Leitfaden: Welche Zauber kaufen vs. skippen (1–40)</h3>
+          <p class="card-desc">Die meisten Spieler verarmen, weil sie alle 2 Level jeden angebotenen Spruch beim Lehrer kaufen. Hier ist die exakte Liste für alle 8 Klassen, mit der du <strong>30 bis 50 Gold</strong> auf dem Weg zu Stufe 40 sparst:</p>
+
+          <div class="card-grid">
+
+            <!-- Krieger -->
+            <div class="card">
+              <h4><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_warrior.jpg" class="wow-icon" alt="Warrior"> Krieger (Warrior)</h4>
+              <p><strong>KAUFEN (Must-Haves):</strong></p>
+              <ul>
+                <li><em>Heldenhafter Stoß (Heroic Strike)</em> – aktuelle Ränge</li>
+                <li><em>Hinrichten (Execute)</em> – absolute Top-Priorität für Kills</li>
+                <li><em>Schlachtruf (Battle Shout)</em> – für Angriffskraft</li>
+                <li><em>Kniesehne (Hamstring)</em> – <strong>NUR Rang 1!</strong> (Verlangsamt sofort für Kitestart)</li>
+                <li><em>Wirbelwind (Whirlwind)</em> – ab 36 (riesiger 2H-Burst)</li>
+                <li><em>Tödlicher Stoß (Mortal Strike)</em> – ab 40</li>
+                <li><em>Verteidigungshaltung, Spott, Schildblock</em> – nur Rang 1 für Dungeons</li>
+              </ul>
+              <p style="margin-top: 0.6rem;"><strong>SKIPPEN (Spart ca. 35 Gold):</strong></p>
+              <ul style="color: var(--text-muted);">
+                <li><em>Donnerknall (Thunder Clap)</em> Ränge 2+ (zu hohe Wutkosten, schlechte DPS)</li>
+                <li><em>Demoralisierender Ruf</em> & <em>Spalten</em> höhere Ränge</li>
+                <li><em>Schildschlag / Schildhieb</em> höhere Ränge (Rang 1 reicht zum Kicken)</li>
+                <li><em>Überwältigen</em> höhere Ränge (Schadensplus minimal im Vergleich zu Kosten)</li>
+              </ul>
+            </div>
+
+            <!-- Jäger -->
+            <div class="card">
+              <h4><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_hunter.jpg" class="wow-icon" alt="Hunter"> Jäger (Hunter)</h4>
+              <p><strong>KAUFEN (Must-Haves):</strong></p>
+              <ul>
+                <li><em>Aspekt des Falken (Hawk)</em> – alle Ränge für Fernkampf-AP</li>
+                <li><em>Aspekt des Geparden (Cheetah)</em> – Rang 1 auf Lv 20 (+30% Lauftempo!)</li>
+                <li><em>Schlangenbiss (Serpent Sting)</em> – aktuelle Ränge</li>
+                <li><em>Arkaner Schuss (Arcane Shot)</em> – aktuelle Ränge</li>
+                <li><em>Mehrfachschuss (Multi-Shot)</em> – ab Stufe 18</li>
+                <li><em>Tier heilen (Mend Pet)</em> – immer aktuell halten!</li>
+                <li><em>Zähmen, Füttern, Rufen</em> – Basisfähigkeiten</li>
+                <li><em>Gezielter Schuss (Aimed Shot)</em> – ab 40</li>
+              </ul>
+              <p style="margin-top: 0.6rem;"><strong>SKIPPEN (Spart ca. 30 Gold):</strong></p>
+              <ul style="color: var(--text-muted);">
+                <li>Alle Nahkampfspells (<em>Raptorstoß</em> Ränge 2+, <em>Mungobiss</em> komplett skippen)</li>
+                <li><em>Zurechtstutzen (Wing Clip)</em> Ränge 2+ (Rang 1 slowt genauso!)</li>
+                <li><em>Vipernbiss</em> und <em>Skorpidbiss</em> vor Stufe 40 ignorieren</li>
+                <li><em>Leuchtfeuer</em>, <em>Adlerauge</em>, <em>Wildtier ängstigen</em></li>
+              </ul>
+            </div>
+
+            <!-- Magier -->
+            <div class="card">
+              <h4><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_mage.jpg" class="wow-icon" alt="Mage"> Magier (Mage)</h4>
+              <p><strong>KAUFEN (Must-Haves):</strong></p>
+              <ul>
+                <li><em>Frostblitz (Frostbolt)</em> – dein Hauptzauber, immer aktuellen Rang lernen</li>
+                <li><em>Frostnova (Frost Nova)</em> – <strong>NUR Rang 1!</strong> (Friert 8s ein, höhere Ränge fressen nur Mana und Gold)</li>
+                <li><em>Blinzeln (Blink)</em> – ab Stufe 20 (Rettungsanker)</li>
+                <li><em>Arkane Intelligenz</em> – aktuelle Ränge</li>
+                <li><em>Feuerschlag (Fire Blast)</em> – Rang 1 bis 3 als Sofort-Finisher</li>
+                <li><em>Wasser & Brot herbeizaubern</em> – nur neue Ränge lernen, wenn man sie trinken kann</li>
+                <li><em>Teleportation (Orgrimmar / Unterstadt)</em> – auf Lv 20 (spart endlose Flugkosten!)</li>
+                <li><em>Eisbarriere (Ice Barrier)</em> – ab 40</li>
+              </ul>
+              <p style="margin-top: 0.6rem;"><strong>SKIPPEN (Spart ca. 40 Gold):</strong></p>
+              <ul style="color: var(--text-muted);">
+                <li><em>Feuerball (Fireball)</em> ab Stufe 10 komplett ignorieren (du levelst Frost!)</li>
+                <li><em>Pyroschlag</em>, <em>Versengen</em>, <em>Flammenstoß</em> Ränge</li>
+                <li><em>Arkane Geschosse (Arcane Missiles)</em> komplett skippen</li>
+                <li><em>Dämpfen / Verstärken von Magie</em>, <em>Verlangsamen</em></li>
+              </ul>
+            </div>
+
+            <!-- Hexenmeister -->
+            <div class="card">
+              <h4><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_warlock.jpg" class="wow-icon" alt="Warlock"> Hexenmeister (Warlock)</h4>
+              <p><strong>KAUFEN (Must-Haves):</strong></p>
+              <ul>
+                <li><em>Verderbnis (Corruption)</em> – Haupt-DoT, immer aktuell halten</li>
+                <li><em>Fluch der Pein (Curse of Agony)</em> – aktueller Rang</li>
+                <li><em>Blutsauger (Drain Life)</em> – ab Stufe 20 essenziell für Drain-Tanking</li>
+                <li><em>Aderlass (Life Tap)</em> – Kernskill für 0 Downtime</li>
+                <li><em>Seelendieb (Drain Soul)</em> – <strong>NUR Rang 1!</strong> (Reicht für Splitter & Willensentzug)</li>
+                <li><em>Dämonenrüstung</em> – aktuelle Ränge für Rüstung & Schattenresi</li>
+                <li><em>Furcht (Fear)</em> – Rang 1 bis 2</li>
+                <li><em>Teufelsross (Mount)</em> – ab Stufe 40 via Quest (GRATIS!)</li>
+              </ul>
+              <p style="margin-top: 0.6rem;"><strong>SKIPPEN (Spart ca. 30 Gold):</strong></p>
+              <ul style="color: var(--text-muted);">
+                <li><em>Schattenblitz (Shadow Bolt)</em> ab Lv 20 skippen (Drain-Tanking nutzt keine Casts)</li>
+                <li><em>Feuerbrand (Immolate)</em> höhere Ränge (bricht Furcht, Mana-ineffizient)</li>
+                <li><em>Höllenfeuer (Hellfire)</em>, <em>Feuerregen</em></li>
+                <li><em>Fluch der Schwäche</em>, <em>Fluch der Tollkühnheit</em>, <em>Fluch der Sprachen</em></li>
+              </ul>
+            </div>
+
+            <!-- Priester -->
+            <div class="card">
+              <h4><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_priest.jpg" class="wow-icon" alt="Priest"> Priester (Priest)</h4>
+              <p><strong>KAUFEN (Must-Haves):</strong></p>
+              <ul>
+                <li><em>Schattenwort: Schmerz (SW:P)</em> – immer aktuellen Rang lernen</li>
+                <li><em>Heiliges Feuer / Smite</em> – nur frühe Ränge, bis der Zauberstab übernimmt</li>
+                <li><em>Machtwort: Schild</em> – aktuelle Ränge für Notfälle</li>
+                <li><em>Machtwort: Seelenstärke</em> – für Ausdauer</li>
+                <li><em>Erneuerung (Renew)</em> & <em>Blitzheilung</em> – Notfallheilung</li>
+                <li><em>Inneres Feuer (Inner Fire)</em> – aktuelle Ränge für massive Rüstung</li>
+                <li><em>Penance (Sühne)</em> – Forever-Kernspell für Burst & Heilung</li>
+                <li><em>Schattengestalt (Shadowform)</em> – ab 40</li>
+              </ul>
+              <p style="margin-top: 0.6rem;"><strong>SKIPPEN (Spart ca. 35 Gold):</strong></p>
+              <ul style="color: var(--text-muted);">
+                <li><em>Göttliche Pein (Smite)</em> Ränge 4+ (dein Zauberstab macht den Job kostenlos!)</li>
+                <li><em>Gedankenkontrolle</em>, <em>Gedanken-Vision</em>, <em>Untote fesseln</em> Ränge 2+</li>
+                <li><em>Heilige Nova (Holy Nova)</em>, <em>Manabrand (Mana Burn)</em></li>
+                <li><em>Große Heilung</em> Ränge vor Stufe 40 (zu teuer beim Leveln)</li>
+              </ul>
+            </div>
+
+            <!-- Schurke -->
+            <div class="card">
+              <h4><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_rogue.jpg" class="wow-icon" alt="Rogue"> Schurke (Rogue)</h4>
+              <p><strong>KAUFEN (Must-Haves):</strong></p>
+              <ul>
+                <li><em>Finsterer Stoß (Sinister Strike)</em> – sofort jeden neuen Rang kaufen (90% deines Schadens!)</li>
+                <li><em>Zerhäckseln (Slice and Dice)</em> – Rang 1 und 2 für Attack-Speed</li>
+                <li><em>Ausweiden (Eviscerate)</em> – nur jeden zweiten Rang lernen</li>
+                <li><em>Entrinnen, Sprinten, Verschwinden</em> – Survival-Klassiker</li>
+                <li><em>Taschendiebstahl (Pickpocket)</em> – <strong>IMMER vor dem Opener nutzen</strong> (bringt extra Silber & Kassetten!)</li>
+                <li><em>Sofort wirkendes Gift (Instant Poison)</em> – ab Lv 20 Waffen vergiften</li>
+                <li><em>Klingenwirbel (Blade Flurry)</em> – Talent auf Lv 20</li>
+              </ul>
+              <p style="margin-top: 0.6rem;"><strong>SKIPPEN (Spart ca. 30 Gold):</strong></p>
+              <ul style="color: var(--text-muted);">
+                <li><em>Meucheln (Backstab)</em> & <em>Hinterhalt (Ambush)</em> (du levelst mit Schwertern/Kampf!)</li>
+                <li><em>Tritt (Kick)</em> Ränge 2+ (Rang 1 kickt genauso zu 100%!)</li>
+                <li><em>Solarplexus (Gouge)</em> Ränge 2+ (Rang 1 reicht für Opener & Re-Stealth)</li>
+                <li><em>Finte (Feint)</em> (im Solo-Spiel absolut nutzlos)</li>
+                <li><em>Blenden (Blind)</em>, <em>Erdrosseln</em> höhere Ränge</li>
+              </ul>
+            </div>
+
+            <!-- Druide -->
+            <div class="card">
+              <h4><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_druid.jpg" class="wow-icon" alt="Druid"> Druide (Druid)</h4>
+              <p><strong>KAUFEN (Must-Haves):</strong></p>
+              <ul>
+                <li><em>Bärengestalt</em> (Lv 10) $\rightarrow$ <em>Zermalmen</em>, <em>Prankenhieb</em></li>
+                <li><em>Katzengestalt</em> (Lv 20) $\rightarrow$ <em>Klaue</em>, <em>Zerfetzen</em>, <em>Wilder Biss</em></li>
+                <li><em>Reisegestalt (Travel Form)</em> – auf Lv 30 (+40% Tempo, spart Zeit bis zum Mount!)</li>
+                <li><em>Mal der Wildnis (Mark of the Wild)</em> – aktuelle Ränge</li>
+                <li><em>Verjüngung & Heilende Berührung</em> – Basis-Heilung zwischen Kämpfen</li>
+                <li><em>Feenfeuer (Faerie Fire / Feral)</em> – Rüstungsreduktion</li>
+              </ul>
+              <p style="margin-top: 0.6rem;"><strong>SKIPPEN (Spart ca. 35 Gold):</strong></p>
+              <ul style="color: var(--text-muted);">
+                <li><em>Zorn (Wrath)</em> & <em>Mondfeuer</em> ab Level 10/20 komplett ignorieren (du kämpfst als Katze/Bär!)</li>
+                <li><em>Sternenfeuer</em>, <em>Hurrikan</em>, <em>Besänftigen</em></li>
+                <li><em>Dornen (Thorns)</em> höhere Ränge</li>
+                <li><em>Winterschlaf</em>, <em>Wiedergeburt</em> höhere Ränge</li>
+              </ul>
+            </div>
+
+            <!-- Schamane -->
+            <div class="card">
+              <h4><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_shaman.jpg" class="wow-icon" alt="Shaman"> Schamane (Shaman)</h4>
+              <p><strong>KAUFEN (Must-Haves):</strong></p>
+              <ul>
+                <li><em>Waffe des Felsbeißers</em> (Lv 1–29) / <em>Windfury</em> (ab Lv 30) – immer aktuell halten!</li>
+                <li><em>Erdschock (Earth Shock)</em> – <strong>Rang 1</strong> für Kicks behalten, aktuellen Rang für Schaden</li>
+                <li><em>Geisterwolf (Ghost Wolf)</em> – ab Lv 20 (+40% Tempo, perfekte Mount-Überbrückung!)</li>
+                <li><em>Blitzschlagschild (Lightning Shield)</em> – passive Zusatz-DPS</li>
+                <li><em>Welle der Heilung (Healing Wave)</em> – aktuelle Ränge</li>
+                <li><em>Totem der Steinhaut</em>, <em>Erdstärke-Totem</em>, <em>Totem des Glühens (Searing)</em></li>
+              </ul>
+              <p style="margin-top: 0.6rem;"><strong>SKIPPEN (Spart ca. 35 Gold):</strong></p>
+              <ul style="color: var(--text-muted);">
+                <li><em>Blitzschlag (Lightning Bolt)</em> & <em>Kettenblitz</em> ab Lv 20 skippen (du schlägst im Nahkampf zu)</li>
+                <li><em>Frostschock</em> Ränge 2+ (Rang 1 slowt genauso!)</li>
+                <li><em>Feuernova-Totem</em>, <em>Magmatotem</em> (fressen Unmengen Mana)</li>
+                <li><em>Wasseratmung</em>, <em>Fernsicht</em>, <em>Totem der Feuersbrunst</em></li>
+              </ul>
+            </div>
+
           </div>
         </div>
       </section>
