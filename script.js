@@ -80,7 +80,7 @@ function initCountdown() {
     const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
 
-    timerEl.innerHTML = `<span class="dot"></span> Launch in ${days}d ${hours}h ${minutes}m`;
+    timerEl.innerHTML = `<span class="dot"></span> <span class="countdown-label">Launch in </span>${days}d ${hours}h ${minutes}m`;
   }
 
   update();

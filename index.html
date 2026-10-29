@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body class="dark-theme">
 
@@ -41,15 +41,6 @@
 
   <!-- Main Container: Sidebar + Content -->
   <div class="layout-wrapper">
-    <!-- Backdrop for mobile drawer -->
-    <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
-
-    <!-- Floating Mobile Menu Button -->
-    <button class="mobile-nav-fab" id="mobileNavFab" aria-label="Kategorie öffnen">
-      <span class="fab-icon">📖</span>
-      <span class="fab-text">Leitfäden</span>
-    </button>
-    
     <!-- Left Navigation Sidebar -->
     <aside class="sidebar" id="sidebarNav">
       <div class="nav-group">
@@ -2294,7 +2285,14 @@
     </main>
   </div>
 
-  <script src="script.js"></script>
+  <!-- Mobile Backdrop & Floating Action Button -->
+  <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+  <button class="mobile-nav-fab" id="mobileNavFab" aria-label="Kategorie öffnen">
+    <span class="fab-icon">📖</span>
+    <span class="fab-text">Leitfäden</span>
+  </button>
+
+  <script src="script.js?v=3"></script>
 </body>
 </html>
 
