@@ -2,6 +2,10 @@
 function initTabs() {
   const tabs = document.querySelectorAll('.nav-tab');
   const panes = document.querySelectorAll('.tab-pane');
+  const sidebar = document.getElementById('sidebarNav');
+  const backdrop = document.getElementById('sidebarBackdrop');
+  const menuBtn = document.getElementById('mobileMenuBtn');
+  const contentPanel = document.querySelector('.content-panel');
 
   tabs.forEach(tab => {
     tab.addEventListener('click', () => {
@@ -15,6 +19,18 @@ function initTabs() {
       const targetPane = document.getElementById(targetId);
       if (targetPane) {
         targetPane.classList.add('active');
+      }
+
+      // Close mobile drawer if open
+      if (sidebar && sidebar.classList.contains('open')) {
+        sidebar.classList.remove('open');
+        if (backdrop) backdrop.classList.remove('open');
+        if (menuBtn) menuBtn.classList.remove('open');
+      }
+
+      // Smooth scroll to top of content on mobile / desktop
+      if (contentPanel) {
+        contentPanel.scrollTo({ top: 0, behavior: 'smooth' });
       }
     });
   });
@@ -71,9 +87,35 @@ function initCountdown() {
   setInterval(update, 60000);
 }
 
+function initMobileMenu() {
+  const menuBtn = document.getElementById('mobileMenuBtn');
+  const fabBtn = document.getElementById('mobileNavFab');
+  const sidebar = document.getElementById('sidebarNav');
+  const backdrop = document.getElementById('sidebarBackdrop');
+
+  function toggleMenu() {
+    if (!sidebar) return;
+    const isOpen = sidebar.classList.toggle('open');
+    if (backdrop) backdrop.classList.toggle('open', isOpen);
+    if (menuBtn) menuBtn.classList.toggle('open', isOpen);
+  }
+
+  function closeMenu() {
+    if (!sidebar) return;
+    sidebar.classList.remove('open');
+    if (backdrop) backdrop.classList.remove('open');
+    if (menuBtn) menuBtn.classList.remove('open');
+  }
+
+  if (menuBtn) menuBtn.addEventListener('click', toggleMenu);
+  if (fabBtn) fabBtn.addEventListener('click', toggleMenu);
+  if (backdrop) backdrop.addEventListener('click', closeMenu);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   initTabs();
   initCountdown();
+  initMobileMenu();
 });
 // Function to copy text from macro blocks
 function copyMacro(btn) {
