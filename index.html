@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=8">
+  <link rel="stylesheet" href="style.css?v=9">
 </head>
 <body class="dark-theme">
 
@@ -23,6 +23,12 @@
       <h1 class="header-title">Mauros Guides für WoW Forever</h1>
     </div>
     <div class="header-right">
+      <a href="https://discord.gg/tehcvlt" target="_blank" rel="noopener noreferrer" class="discord-header-btn" title="Gilden-Discord beitreten">
+        <svg class="discord-svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+          <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+        </svg>
+        <span>Gilde Discord</span>
+      </a>
       <a href="https://github.com/syqdur/foreverguides/blob/main/RXPGuides.zip" target="_blank" class="rxp-header-btn" title="RXP In-Game Levelguide für Forever herunterladen">
         <span>🗺️</span> Levelguide (RXP.zip)
       </a>
@@ -51,77 +57,80 @@
   <div class="layout-wrapper">
     <!-- Left Navigation Sidebar -->
     <aside class="sidebar" id="sidebarNav">
-      <div class="nav-group">
-        <span class="nav-heading">Allgemeine Planung</span>
-        <button class="nav-tab active" data-target="tab-timeline">
-          <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_map02.jpg" class="wow-icon" alt="Map"> Stufen-Fahrplan (1–60)
-        </button>
-        <button class="nav-tab" data-target="tab-questing">
-          <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_book_09.jpg" class="wow-icon" alt="Quests"> Questing-Route (1–30)
-        </button>
-        <button class="nav-tab" data-target="tab-gold">
-          <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_coin_02.jpg" class="wow-icon" alt="Gold"> Mount-Gold Guide (Stufe 40)
-        </button>
-        <button class="nav-tab" data-target="tab-rules">
-          <img src="https://wow.zamimg.com/images/wow/icons/medium/spell_lightning_lightningbolt01.jpg" class="wow-icon" alt="Rules"> Wichtige Grundlagen
-        </button>
-        <button class="nav-tab" data-target="tab-addons">
-          <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_enggizmos_17.jpg" class="wow-icon" alt="Addons"> Addons & UI-Codes
-        </button>
-        <button class="nav-tab" data-target="tab-sleepingbag">
-          <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_bag_10.jpg" class="wow-icon" alt="Bag"> Schlafsack-Route (Lv 14)
-        </button>
-        <button class="nav-tab" data-target="tab-buffs">
-          <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_food_15.jpg" class="wow-icon" alt="Food"> Buff-Food, Zelte & Camps
-        </button>
-      </div>
-
-      <div class="nav-group">
-        <span class="nav-heading">Klassen-Leitfäden (Leveling)</span>
-        <button class="nav-tab" data-target="tab-priest">
-          <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_priest.jpg" class="wow-icon" alt="Priest"> Priester (Priest)
-        </button>
-        <button class="nav-tab" data-target="tab-hunter">
-          <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_hunter.jpg" class="wow-icon" alt="Hunter"> Jäger (Hunter)
-        </button>
-        <button class="nav-tab" data-target="tab-mage">
-          <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_mage.jpg" class="wow-icon" alt="Mage"> Magier (Mage)
-        </button>
-        <button class="nav-tab" data-target="tab-warlock">
-          <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_warlock.jpg" class="wow-icon" alt="Warlock"> Hexenmeister (Warlock)
-        </button>
-        <button class="nav-tab" data-target="tab-rogue">
-          <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_rogue.jpg" class="wow-icon" alt="Rogue"> Schurke (Rogue)
-        </button>
-        <button class="nav-tab" data-target="tab-warrior">
-          <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_warrior.jpg" class="wow-icon" alt="Warrior"> Krieger (Warrior)
-        </button>
-        <button class="nav-tab" data-target="tab-druid">
-          <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_druid.jpg" class="wow-icon" alt="Druid"> Druide (Druid)
-        </button>
-        <button class="nav-tab" data-target="tab-shaman">
-          <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_shaman.jpg" class="wow-icon" alt="Shaman"> Schamane (Shaman)
-        </button>
-      </div>
-
-      <!-- Sidebar Bottom: Discord Guild Box (Unten Links) -->
-      <div class="sidebar-discord-box">
-        <div class="discord-box-header">
-          <div class="discord-icon-badge">
-            <svg class="discord-svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-              <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
-            </svg>
-          </div>
-          <div class="discord-info">
-            <span class="discord-guild-tag">&lt;TEH CVLT&gt;</span>
-            <span class="discord-headline">Join der Gilde</span>
-          </div>
+      <div class="sidebar-scrollable">
+        <div class="nav-group">
+          <span class="nav-heading">Allgemeine Planung</span>
+          <button class="nav-tab active" data-target="tab-timeline">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_map02.jpg" class="wow-icon" alt="Map"> Stufen-Fahrplan (1–60)
+          </button>
+          <button class="nav-tab" data-target="tab-questing">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_book_09.jpg" class="wow-icon" alt="Quests"> Questing-Route (1–30)
+          </button>
+          <button class="nav-tab" data-target="tab-gold">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_coin_02.jpg" class="wow-icon" alt="Gold"> Mount-Gold Guide (Stufe 40)
+          </button>
+          <button class="nav-tab" data-target="tab-rules">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/spell_lightning_lightningbolt01.jpg" class="wow-icon" alt="Rules"> Wichtige Grundlagen
+          </button>
+          <button class="nav-tab" data-target="tab-addons">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_enggizmos_17.jpg" class="wow-icon" alt="Addons"> Addons & UI-Codes
+          </button>
+          <button class="nav-tab" data-target="tab-sleepingbag">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_bag_10.jpg" class="wow-icon" alt="Bag"> Schlafsack-Route (Lv 14)
+          </button>
+          <button class="nav-tab" data-target="tab-buffs">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_food_15.jpg" class="wow-icon" alt="Food"> Buff-Food, Zelte & Camps
+          </button>
         </div>
-        <p class="discord-subtext">Leveln, Dungeons & Raids auf Forever:</p>
-        <a href="https://discord.gg/tehcvlt" target="_blank" rel="noopener noreferrer" class="discord-cta-btn" title="Gilden-Discord beitreten">
-          <span>discord.gg/tehcvlt</span>
-          <span class="arrow">↗</span>
-        </a>
+
+        <div class="nav-group">
+          <span class="nav-heading">Klassen-Leitfäden (Leveling)</span>
+          <button class="nav-tab" data-target="tab-priest">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_priest.jpg" class="wow-icon" alt="Priest"> Priester (Priest)
+          </button>
+          <button class="nav-tab" data-target="tab-hunter">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_hunter.jpg" class="wow-icon" alt="Hunter"> Jäger (Hunter)
+          </button>
+          <button class="nav-tab" data-target="tab-mage">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_mage.jpg" class="wow-icon" alt="Mage"> Magier (Mage)
+          </button>
+          <button class="nav-tab" data-target="tab-warlock">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_warlock.jpg" class="wow-icon" alt="Warlock"> Hexenmeister (Warlock)
+          </button>
+          <button class="nav-tab" data-target="tab-rogue">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_rogue.jpg" class="wow-icon" alt="Rogue"> Schurke (Rogue)
+          </button>
+          <button class="nav-tab" data-target="tab-warrior">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_warrior.jpg" class="wow-icon" alt="Warrior"> Krieger (Warrior)
+          </button>
+          <button class="nav-tab" data-target="tab-druid">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_druid.jpg" class="wow-icon" alt="Druid"> Druide (Druid)
+          </button>
+          <button class="nav-tab" data-target="tab-shaman">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_shaman.jpg" class="wow-icon" alt="Shaman"> Schamane (Shaman)
+          </button>
+        </div>
+      </div>
+
+      <!-- Sidebar Bottom: Fixed Discord Guild Box (Unten Links) -->
+      <div class="sidebar-footer">
+        <div class="sidebar-discord-box">
+          <div class="discord-box-header">
+            <div class="discord-icon-badge">
+              <svg class="discord-svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+              </svg>
+            </div>
+            <div class="discord-info">
+              <span class="discord-guild-tag">&lt;TEH CVLT&gt;</span>
+              <span class="discord-headline">Gilde beitreten</span>
+            </div>
+          </div>
+          <a href="https://discord.gg/tehcvlt" target="_blank" rel="noopener noreferrer" class="discord-cta-btn" title="Gilden-Discord beitreten">
+            <span>discord.gg/tehcvlt</span>
+            <span class="arrow">↗</span>
+          </a>
+        </div>
       </div>
     </aside>
 
@@ -3141,7 +3150,7 @@
     <span class="fab-text">Leitfäden</span>
   </button>
 
-  <script src="script.js?v=8"></script>
+  <script src="script.js?v=9"></script>
 </body>
 </html>
 
