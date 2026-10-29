@@ -1,0 +1,1979 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEH CVLT – Mauros Guides für WoW Forever</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+  <!-- Top App Bar -->
+  <header class="app-header">
+    <div class="header-left">
+      <span class="guild-badge">&lt;TEH CVLT&gt;</span>
+      <h1 class="header-title">Mauros Guides für WoW Forever</h1>
+    </div>
+    <div class="header-right">
+      <div class="countdown-badge" id="launchTimer">
+        <span class="dot"></span> Launch in ...
+      </div>
+    </div>
+  </header>
+  <!-- Beta Disclaimer Banner -->
+  <div class="beta-disclaimer-banner">
+    <div class="disclaimer-content">
+      <span class="disclaimer-icon">⚠️</span>
+      <div class="disclaimer-text">
+        <strong>Beta- & Launch-Hinweis:</strong>
+        Aktuell sind von Blizzard und aus den bisherigen Testphasen Inhalte und Anpassungen <strong>verbindlich bis Stufe 30 bestätigt</strong>. Daten für Stufe 31–60 basieren auf Beta-Datamining und bewährten Classic-Mechaniken und werden laufend aktualisiert.
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Container: Sidebar + Content -->
+  <div class="layout-wrapper">
+    
+    <!-- Left Navigation Sidebar -->
+    <aside class="sidebar">
+      <div class="nav-group">
+        <span class="nav-heading">Allgemeine Planung</span>
+        <button class="nav-tab active" data-target="tab-timeline">
+          <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_map02.jpg" class="wow-icon" alt="Map"> Stufen-Fahrplan (1–60)
+        </button>
+        <button class="nav-tab" data-target="tab-questing">
+          <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_book_09.jpg" class="wow-icon" alt="Quests"> Questing-Route (1–30)
+        </button>
+          <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_map02.jpg" class="wow-icon" alt="Map"> Stufen-Fahrplan (1–60)
+        </button>
+        <button class="nav-tab" data-target="tab-rules">
+          <img src="https://wow.zamimg.com/images/wow/icons/medium/spell_lightning_lightningbolt01.jpg" class="wow-icon" alt="Rules"> Wichtige Grundlagen
+        </button>
+        <button class="nav-tab" data-target="tab-addons">
+          <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_enggizmos_17.jpg" class="wow-icon" alt="Addons"> Addons & UI-Codes
+        </button>
+        <button class="nav-tab" data-target="tab-sleepingbag">
+          <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_bag_10.jpg" class="wow-icon" alt="Bag"> Schlafsack-Route (Lv 14)
+        </button>
+        <button class="nav-tab" data-target="tab-buffs">
+          <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_food_15.jpg" class="wow-icon" alt="Food"> Buff-Food & Camps
+        </button>
+      </div>
+
+      <div class="nav-group">
+        <span class="nav-heading">Klassen-Leitfäden (Leveling)</span>
+        <button class="nav-tab" data-target="tab-priest">
+          <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_priest.jpg" class="wow-icon" alt="Priest"> Priester (Priest)
+        </button>
+        <button class="nav-tab" data-target="tab-hunter">
+          <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_hunter.jpg" class="wow-icon" alt="Hunter"> Jäger (Hunter)
+        </button>
+        <button class="nav-tab" data-target="tab-mage">
+          <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_mage.jpg" class="wow-icon" alt="Mage"> Magier (Mage)
+        </button>
+        <button class="nav-tab" data-target="tab-warlock">
+          <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_warlock.jpg" class="wow-icon" alt="Warlock"> Hexenmeister (Warlock)
+        </button>
+        <button class="nav-tab" data-target="tab-rogue">
+          <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_rogue.jpg" class="wow-icon" alt="Rogue"> Schurke (Rogue)
+        </button>
+        <button class="nav-tab" data-target="tab-warrior">
+          <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_warrior.jpg" class="wow-icon" alt="Warrior"> Krieger (Warrior)
+        </button>
+        <button class="nav-tab" data-target="tab-druid">
+          <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_druid.jpg" class="wow-icon" alt="Druid"> Druide (Druid)
+        </button>
+        <button class="nav-tab" data-target="tab-shaman">
+          <span class="tab-icon">⚡</span> Schamane (Shaman)
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="content-panel">
+
+      <!-- ================= 0. LEVEL ROADMAP (1-60) ================= -->
+      <section id="tab-timeline" class="tab-pane active">
+        <div class="pane-header">
+          <h2>Stufen-Fahrplan (Wann du was tun musst)</h2>
+          <p class="pane-subtitle">Die chronologische Checkliste von Stufe 1 bis 60 für alle Klassen.</p>
+        </div>
+
+        <div class="timeline-container">
+          
+          <div class="timeline-block">
+            <div class="level-indicator">Stufe 1 – 5</div>
+            <div class="timeline-body">
+              <h4>Startgebiet & Erste Berufe</h4>
+              <ul>
+                <li><strong>Gruppe bilden:</strong> Direkt mit Spielern in deiner Nähe gruppieren, um Mob-Kill-Aufgaben zu teilen.</li>
+                <li><strong>Kochen lernen (Stufe 1):</strong> Sobald du bei den ersten Händlern bist, Kochen lernen. Fleisch von Ebern/Wölfen nicht verkaufen, sondern braten → <strong>+5% Kill-XP Buff aktivieren!</strong></li>
+                <li><strong>Bank-Alt erstellen:</strong> Vorab oder kurz ausloggen und einen Level-1-Charakter in Orgrimmar/Donnerfels zwischen Bank, Briefkasten und AH parken.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-block highlight-block">
+            <div class="level-indicator">Stufe 5</div>
+            <div class="timeline-body">
+              <h4>Der Zauberstab-Powerspike für Caster (Priester, Hexer, Magier)</h4>
+              <p>Für Caster ist das der wichtigste Moment des gesamten Frühspiels:</p>
+              <ul>
+                <li><strong>Eigenbau via Verzauberkunst (Skill 10):</strong> Grüne Items aus Quests entzaubern → <em>Seltsamer Staub</em> & <em>Geringe Magieessenz</em> gewinnen. Zusammen mit einfachem Holz beim Lehrer den <strong>Geringen Magiezauberstab (11.3 DPS)</strong> herstellen.</li>
+                <li><strong>Oder Auktionshaus / Gilde:</strong> Direkt im Gildenchat oder AH nachfragen. Der Wand verdreifacht deinen Schaden sofort und kostet fast nichts!</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-block">
+            <div class="level-indicator">Stufe 10</div>
+            <div class="timeline-body">
+              <h4>Talente, Klassenquests & Hauptberufe</h4>
+              <ul>
+                <li><strong>Erste Talentpunkte vergeben:</strong> Siehe spezifische Klassen-Reiter für die genaue Reihenfolge.</li>
+                <li><strong>Klassenquests:</strong> Jäger zähmen ihr Pet; Hexenmeister holen den Leerwandler; Krieger Verteidigungshaltung; Druiden Bärengestalt.</li>
+                <li><strong>Sammelberufe lernen:</strong> Kürschnerei + Bergbau oder Kräuterkunde. Materialien im Auktionshaus verkaufen, um Gold fürs 40er Reittier aufzubauen.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-block">
+            <div class="level-indicator">Stufe 13 – 15</div>
+            <div class="timeline-body">
+              <h4>Großer Magiezauberstab & Brachland-Wechsel</h4>
+              <ul>
+                <li><strong>Wand-Upgrade (Stufe 13):</strong> <em>Großer Magiezauberstab (17.5 DPS)</em> via Verzauberkunst (Skill 75) herstellen oder kaufen.</li>
+                <li><strong>Zonenwechsel:</strong> Übergang ins Brachland (The Barrens) oder Silberwald. Heimatstein (Hearthstone) direkt im <em>Wegekreuz (Crossroads)</em> binden!</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-block highlight-block">
+            <div class="level-indicator">Stufe 14 – 16</div>
+            <div class="timeline-body">
+              <h4>Cozy Sleeping Bag (Schlafsack) Questreihe</h4>
+              <p>Der ideale Zeitpunkt für den Schlafsack-Ausflug:</p>
+              <ul>
+                <li><strong>Start im Brachland:</strong> Am abgebrannten Turm südlich von Camp Taurajo (<code>/way 46 74</code>).</li>
+                <li><strong>Dabei einsacken:</strong> <strong>12-Slot Tasche (Old Toolbox)</strong> in Stonetalon + <strong>5x Student Fodder</strong> + <strong>Schlafsack (+3% Dauer-XP)</strong>.</li>
+                <li><strong>Flugpunkte mitnehmen:</strong> Unterwegs in Booty Bay, Grom'gol, Tarren Mill die Flugpunkte einsammeln!</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-block">
+            <div class="level-indicator">Stufe 18 – 24</div>
+            <div class="timeline-body">
+              <h4>Erste Instanz-Quests & Grabsteinszepter</h4>
+              <ul>
+                <li><strong>Tiefschwarze Grotte (BFD):</strong> Klassenquest annehmen und Instanz <strong>genau 1x</strong> für die Quests spielen. Belohnung: <strong>Grabsteinszepter (29.0 DPS Wand)</strong> – trägt dich bis Stufe 35+!</li>
+                <li><strong>Höhlen des Wehklagens (WC) / Burg Schattenfang (SFK):</strong> Vorher alle Quests im Brachland sammeln, einmal durchspielen, Belohnungen abgeben, weiterziehen.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-block">
+            <div class="level-indicator">Stufe 30</div>
+            <div class="timeline-body">
+              <h4>Reisegestalten & Wirbelwindaxt</h4>
+              <ul>
+                <li><strong>Druide & Schamane:</strong> Reisegestalt (Druid) und Geisterwolf (Shaman) lernen (+40% Lauftempo).</li>
+                <li><strong>Krieger:</strong> Klassenquest für die <em>Wirbelwindaxt (Whirlwind Axe)</em> mit Hilfe von Gildenmitgliedern abschließen.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-block highlight-block">
+            <div class="level-indicator">Stufe 40</div>
+            <div class="timeline-body">
+              <h4>Reittier & Klassen-Respec</h4>
+              <ul>
+                <li><strong>Reittier kaufen:</strong> ca. 90 Gold für Reitskill + 60% Mount bereithalten. Da es kein Fliegen gibt, ist das dein größter Temposprung. (Hexer bekommen ihr Pferd kostenlos!).</li>
+                <li><strong>Priester Shadowform:</strong> Auf volle <em>Schattengestalt</em> umskillen (+15% Schattenschaden, Gedankenschinden).</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-block">
+            <div class="level-indicator">Stufe 40 – 60</div>
+            <div class="timeline-body">
+              <h4>Die Zielgerade & Neue Forever-Zonen</h4>
+              <ul>
+                <li><strong>Zonen-Pfad:</strong> Schlingendorntal $\rightarrow$ Tanaris $\rightarrow$ Hinterland $\rightarrow$ <strong>Riverglades (Neue Forever-Zone)</strong> $\rightarrow$ Krater von Un'Goro $\rightarrow$ Östliche Pestländer $\rightarrow$ Winterspring.</li>
+                <li><strong>Instanzen:</strong> Zul'Farrak, Maraudon und BRD jeweils 1x für die Quests mitnehmen.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      
+      <!-- ================= QUESTING LEITFADEN (1-30) ================= -->
+      <section id="tab-questing" class="tab-pane">
+        <div class="pane-header">
+          <h2>Horde Speed-Questing Leitfaden (1–30)</h2>
+          <p class="pane-subtitle">Die mathematisch schnellste Zonen- und Hub-Reihenfolge (basierend auf Joana / RestedXP), optimiert für minimale Laufzeiten.</p>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>📌 Grundregel: Niemals eine Zone zu 100% am Stück leeren</h3>
+          <p class="card-desc">In Classic/Forever laufen Quests in Stufenbändern. Wer stur in einer Zone bleibt, quält sich ab Stufe 16 mit orangenen/roten Mobs herum. Das Geheimnis von Speedrunnern: <strong>Mehrfacher Zonenwechsel zum perfekten Level-Zeitpunkt</strong>, damit dein Questlog immer grün bis gelb bleibt.</p>
+        </div>
+
+                <!-- Skyborne Special Section -->
+        <div class="guide-chapter">
+          <h3><img src="https://wow.zamimg.com/images/wow/icons/medium/spell_nature_cyclone.jpg" class="wow-icon" alt="Skyborne"> Die neue Skyborne-Route: Zephras Isle (Stufe 1–12)</h3>
+          <div class="card highlight-border">
+            <h4>Startgebiet der Himmelsgeborenen (Skyborne / Shen'dorei)</h4>
+            <p>Die Skyborne starten auf der schwebenden Insel <strong>Zephras Isle</strong>. Das Gebiet ist u-förmig angelegt und führt dich nahtlos von Stufe 1 bis Stufe 12:</p>
+            <ul>
+              <li><strong>Stufe 1–4 (Thendal & Schreine):</strong> Erweckung an den elementaren Pylonen. Sammel- und Tötungsaufgaben auf den schwebenden Plattformen erledigen. Erste Berufe direkt bei den Lehrern im Start-Hub lernen!</li>
+              <li><strong>Stufe 4–8 (Dorf Shen'dar):</strong> Entlang des U-Pfads nach Shen'dar vorrücken. Quests drehen sich um versagende Barrieren und Pylone. Sehr hohe Questdichte – kein Grinden nötig.</li>
+              <li><strong>Stufe 8–12 (Valanaar & Fraktions-Wahl):</strong> Letzter Abschnitt bei den Ruinen von Valanaar. Hier triffst du auf die Abgesandten der Horde (Windshapers / Windformer).</li>
+              <li class="highlight-row"><strong>Stufe 12 (Übergang nach Kalimdor):</strong> Mit Erreichen von Stufe 12 nimmst du das <strong>Himmelsboot (Skyboat)</strong> direkt hinab nach Kalimdor. Du landest nahe <strong>Mulgore / Brachland-Grenze</strong> und steigst nahtlos mit Stufe 12 direkt ins <strong>Wegekreuz (Crossroads)</strong> ein!</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Phase 1: 1-12 -->
+        <div class="guide-chapter">
+          <h3>Phase 1: Stufe 1 bis 12 (Startgebiete & Durotar / Tirisfal)</h3>
+          <div class="card">
+            <h4>Durotar (Orks & Trolle)</h4>
+            <ul>
+              <li><strong>Stufe 1–6 (Tal der Prüfungen):</strong> Alle Quests im Kreis annehmen, Mobs für Kochen looten. Bei Stufe 6 mit Kochen + Kürschnerei nach Sen'jin aufbrechen.</li>
+              <li><strong>Stufe 6–10 (Sen'jin & Klingenhügel):</strong> Quests bündeln (Zalazane, Echseneier, Harpyien). Bei Stufe 10 Klassenquests abschließen.</li>
+              <li><strong>Stufe 10–12:</strong> Schädelsteinhöhle erledigen, Quests in Klingenhügel abgeben und Übergang ins Brachland antreten.</li>
+            </ul>
+            <p><em>Untote:</em> Machen Tirisfal Glades bis Stufe 11 (sehr dichte Quests) und nehmen dann den Zeppelin nach Orgrimmar.</p>
+          </div>
+        </div>
+
+        <!-- Phase 2: 12-20 -->
+        <div class="guide-chapter">
+          <h3>Phase 2: Stufe 12 bis 20 (Das Brachland & Silberwald-Split)</h3>
+          <div class="card">
+            <h4>Die Kreuzung (Crossroads) als Haupt-Anker:</h4>
+            <ul>
+              <li><strong>Stufe 12–14:</strong> Sofort den Heimatstein im Wegekreuz binden. Alle Quests für Raptoren, Zhevras, Flachmähnen und Mankriks Frau annehmen. Alles in einem großen südlichen/nördlichen Bogen erledigen.</li>
+              <li class="highlight-row"><strong>Stufe 14 (Meilenstein):</strong> Schlafsack-Quest südlich von Camp Taurajo (<code>/way 46 74</code>) annehmen und den Schlafsack-Trip durchziehen!</li>
+              <li><strong>Stufe 15–17 (Silberwald Abstecher):</strong> Zeppelin nach Unterstadt nehmen und Quests im Silberwald (Grabmal) bis Burg Schattenfang mitnehmen – extrem dicht gepackte XP.</li>
+              <li><strong>Stufe 18–20 (Camp Taurajo & Höhlen des Wehklagens):</strong> Zurück ins Brachland. Bündel-Quests für Taurajo abschließen. Höhlen des Wehklagens <strong>genau 1x</strong> für alle Quests durchlaufen.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Phase 3: 20-25 -->
+        <div class="guide-chapter">
+          <h3>Phase 3: Stufe 20 bis 25 (Steinkrallengebirge & Eschental)</h3>
+          <div class="card">
+            <h4>Steinkrallengebirge (Stonetalon Mountains) & Ashenvale:</h4>
+            <ul>
+              <li><strong>Stufe 20–22:</strong> Vom Brachland nach Sonnenfels (Sun Rock Retreat) reiten. Flugpunkt holen! Quests am Scherenkamm und bei den Spinnen abräumen.</li>
+              <li><strong>Stufe 22–24:</strong> Übergang nach Splitterholzposten (Ashenvale). Aufträge an den Zoram-Strand mitnehmen (Tiefschwarze Grotte Questvorbereitung).</li>
+              <li><strong>Stufe 24–25 (Tiefschwarze Grotte BFD):</strong> Instanz 1x für alle Quests spielen $\rightarrow$ Belohnung: <strong>Grabsteinszepter (29.0 DPS Wand)</strong>!</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Phase 4: 25-30 -->
+        <div class="guide-chapter">
+          <h3>Phase 4: Stufe 25 bis 30 (Hügelland & Tausend Nadeln)</h3>
+          <div class="card">
+            <h4>Der finale Sprint bis Stufe 30:</h4>
+            <ul>
+              <li><strong>Stufe 25–27 (Tarrens Mühle / Hillsbrad):</strong> Zeppelin nach Tirisfal, runter nach Hillsbrad. Quests für Yetis, Syndicate-Menschen und Farm-Felder im Verbund abgeben. <em>Achtung vor Allianz-Gankern!</em></li>
+              <li><strong>Stufe 27–29 (Freiwindposten / Tausend Nadeln):</strong> Zurück nach Kalimdor. Aufzug runter nach Tausend Nadeln. Freiwindposten-Quests sind extrem linear und belohnen mit riesigen XP-Mengen.</li>
+              <li><strong>Stufe 29–30:</strong> Kral von Razorfen (RFK) 1x mit allen Quests für die <em>Wirbelwindaxt</em>-Vorquest oder <em>Leichenmacher</em>-Zweihänder!</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= 1. GRUNDLAGEN ================= -->
+      <section id="tab-rules" class="tab-pane">
+        <div class="pane-header">
+          <h2>Wichtige Grundlagen zum Leveln in Forever</h2>
+          <p class="pane-subtitle">Die wichtigsten Mechaniken, damit du von Stufe 1 an keine unnötige Zeit verlierst.</p>
+        </div>
+
+        <div class="clean-grid">
+          <div class="card">
+            <h3>1. Dungeons: Nur 1x für Quests durchlaufen</h3>
+            <p>Mob-Kill-Erfahrung in Instanzen wurde in Forever spürbar gesenkt. Die XP steckt komplett in den <strong>Dungeon-Quests</strong>. Vor dem Betreten alle Quests einsammeln, einmal durchspielen, Belohnungen abgeben und sofort wieder in die offene Welt zurückkehren. Dungeons zu wiederholen lohnt sich nicht.</p>
+          </div>
+
+          <div class="card">
+            <h3>2. +8% Dauerhafter XP-Bonus (Food + Schlafsack)</h3>
+            <p>Gekochtes Essen gibt in Forever <strong>+5% Kill-XP</strong> (15 Minuten Buff). Der Schlafsack gibt <strong>+3% XP</strong> (2 Stunden Buff, 1h Cooldown). Beide Buffs addieren sich sauber auf +8% zusätzliche Erfahrung.</p>
+          </div>
+
+          <div class="card">
+            <h3>3. 40 Quest-Plätze im Questlog</h3>
+            <p>Forever hat 40 statt 20 Quest-Plätze. Quests in einem Gebiet immer gesammelt annehmen, zusammen erledigen und in einem Schwung abgeben. Niemals für eine einzelne Quest zurücklaufen.</p>
+          </div>
+
+          <div class="card">
+            <h3>4. Reiten ab Stufe 40 hat höchste Priorität</h3>
+            <p>In Forever gibt es keine Flugreittiere. Das Reittier ab Stufe 40 (ca. 90 Gold) ist dein größter Tempovorteil. Sammelberufe (Kürschnerei/Bergbau) in Woche 1 nutzen, um Materialien direkt im Auktionshaus zu Geld zu machen.</p>
+          </div>
+
+          <div class="card">
+            <h3>5. Bank-Charakter auf Stufe 1 parken</h3>
+            <p>Erstelle dir direkt zu Beginn einen Alt in Orgrimmar zwischen Bank, Briefkasten und Auktionshaus. Post zwischen eigenen Charakteren kommt in Forever <strong>sofort ohne Wartezeit</strong> an. Stoffe, Erze und Grüne Items einfach rübermailen, damit dein Inventar frei bleibt.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= 2. ADDONS & UI ================= -->
+      <section id="tab-addons" class="tab-pane">
+        <div class="pane-header">
+          <h2>Empfohlene Addons & Import-Codes</h2>
+          <p class="pane-subtitle">Getestete Addons für den Forever-Client und Dissonances fertige Profile.</p>
+        </div>
+
+        <div class="table-card">
+          <table class="simple-table">
+            <thead>
+              <tr>
+                <th>Addon</th>
+                <th>Wofür es nützlich ist</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Polestar (Leveling Guide)</strong><br><a href="https://github.com/fitzforge/polestar" target="_blank" class="accent-link">GitHub ↗</a></td>
+                <td>Das Open-Source In-Game Speed-Leveling Addon speziell für WoW Forever! Enthält simulierte 1–60 Routen, Waypoint-Navigationspfeil, Travel-Planner und Datenbanken. Unterstützt Deutsch out-of-the-box.</td>
+              </tr>
+              <tr>
+                <td><strong>WowHandbook</strong><br><a href="https://github.com/Arcaneology/WowHandbookAddon" target="_blank" class="accent-link">GitHub ↗</a></td>
+                <td>All-in-One Dungeon & Quest Begleiter für WoW Forever: In-Game Dungeon Guide mit allen Instanz-Quests und Vorquests (für One-and-Done Runs), Boss-Lootfilter nach Klasse und automatische Quest-Annahme/-Abgabe.</td>
+              </tr>
+              <tr>
+                <td><strong>Shortest Path Forever</strong><br><a href="https://github.com/cjber/shortest-path-forever" target="_blank" class="accent-link">GitHub ↗</a></td>
+                <td>Navigations-Addon wie in OSRS: Shift-Klick auf die Karte berechnet automatisch die schnellste Route über Zeppeline, Flugpunkte und Laufwege inkl. Abfahrts-Timern. Befehl: <code>/path</code></td>
+              </tr>
+              <tr>
+                <td><strong>BetterBlizzPlates</strong><br><a href="https://github.com/Bodify/BetterBlizzPlates" target="_blank" class="accent-link">GitHub ↗</a></td>
+                <td>Gegnerbalken, Zauberbalken und CC sauber direkt über den Gegner-Namensplaketten (Dissonance Profil-Import unten verfügbar).</td>
+              </tr>
+              <tr>
+                <td><strong>WoWSims Forever</strong><br><a href="https://github.com/WoWSims/forever" target="_blank" class="accent-link">GitHub ↗</a></td>
+                <td>Das offizielle Simulations-Framework für World of Warcraft: Forever. Webbasierte DPS- und Stat-Simulationen für alle Klassen und Skillungen.</td>
+              </tr>
+              <tr>
+                <td><strong>ForeverAuras</strong></td>
+                <td>Funktionierender WeakAuras-Ersatz für den Forever-Client zum Anzeigen von Procs und Abklingzeiten.</td>
+              </tr>
+              <tr>
+                <td><strong>LootOptimizer Forever</strong></td>
+                <td>Schnelle Übersicht bei vollen Taschen: zeigt das günstigste Item zum Wegwerfen an und vergleicht Ausrüstung.</td>
+              </tr>
+              <tr>
+                <td><strong>ForeverLootSparkles</strong></td>
+                <td>Lässt Quest-Gegenstände, Kräuter und Erzadern immer deutlich glitzern.</td>
+              </tr>
+              <tr>
+                <td><strong>Whisper Messenger</strong></td>
+                <td>Übersichtliches Flüstern im Discord-Stil mit Tabs und Nachrichtenverlauf.</td>
+              </tr>
+              <tr>
+                <td><strong>TEH CVLT</strong></td>
+                <td>Gilden-Addon für gemeinsame Termine, Post-Verwaltung und Gruppensuche.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+                <h3 class="group-title">Screenshots & UI-Vorschau (Dissonance)</h3>
+        
+        <div class="ui-gallery-grid">
+          <div class="ui-img-card">
+            <h4>1. Komplettes Spiel-UI (Edit Mode)</h4>
+            <a href="img/wow-ui-screenshot.jpg" target="_blank">
+              <img src="img/wow-ui-screenshot.jpg" alt="WoW Forever UI Screenshot" class="preview-img">
+            </a>
+            <p class="img-caption">Übersichtliches Interface mit zentrierten Unit-Frames und kompakten Leisten (Klick zum Vergrößern).</p>
+          </div>
+
+          <div class="ui-img-card">
+            <h4>2. BetterBlizzPlates (Gegnerbalken & CC)</h4>
+            <div class="bbp-dual-img">
+              <a href="img/bbp-profile-1.png" target="_blank">
+                <img src="img/bbp-profile-1.png" alt="BBP Fear CC Nameplate" class="preview-img-half">
+              </a>
+              <a href="img/bbp-profile-2.png" target="_blank">
+                <img src="img/bbp-profile-2.png" alt="BBP Castbar Nameplate" class="preview-img-half">
+              </a>
+            </div>
+            <p class="img-caption">Links: Furcht-CC und Debuffs über dem Mob. Rechts: Gegner-Zauberbalken mit Prozentanzeige.</p>
+          </div>
+
+          <div class="ui-img-card">
+            <h4>3. Cooldown Manager Layout</h4>
+            <a href="img/cd-manager-screenshot.png" target="_blank">
+              <img src="img/cd-manager-screenshot.png" alt="Cooldown Manager Layout" class="preview-img">
+            </a>
+            <p class="img-caption">Die roten Pfeile zeigen die Positionen von Buffs, Procs und Cooldown-Balken.</p>
+          </div>
+
+          <div class="ui-img-card">
+            <h4>4. Priester: Rassen- & Berufe-Rangliste</h4>
+            <div class="bbp-dual-img">
+              <a href="img/priest-race-tierlist.png" target="_blank">
+                <img src="img/priest-race-tierlist.png" alt="Priest Race Tierlist" class="preview-img-half">
+              </a>
+              <a href="img/priest-professions-tierlist.png" target="_blank">
+                <img src="img/priest-professions-tierlist.png" alt="Priest Professions Tierlist" class="preview-img-half">
+              </a>
+            </div>
+            <p class="img-caption">Links: Rassen-Tierlist (Untot = S-Tier für Horde). Rechts: Berufe (Schneiderei = S-Tier).</p>
+          </div>
+        </div>
+
+        <h3 class="group-title">UI & Profil-Importe (Dissonance)</h3>
+        <div class="import-stack">
+          <div class="import-card">
+            <div class="import-card-header">
+              <span><strong>1. Edit Mode UI-Layout</strong> (ESC → Bearbeitungsmodus → Layout importieren)</span>
+              <button class="copy-pill" onclick="copyBox('box-ui')">Code Kopieren</button>
+            </div>
+            <textarea id="box-ui" readonly>4 0 59 0 0 0 4 4 UIParent 0.0 -472.5 -1 ##$$%/&('%)$+$,# 0 1 0 0 6 MultiBarBottomRight 0.0 -4.0 -1 ##$$%/&('%(#,# 0 2 0 4 4 UIParent 0.0 -375.5 -1 ##$$%/&('%(#,# 0 3 1 5 5 UIParent -5.0 -77.0 -1 #$$$%/&('%(#,$ 0 4 1 5 5 UIParent -5.0 -77.0 -1 #$$$%/&('%(#,$ 0 5 1 1 4 UIParent 0.0 0.0 -1 ##$$%/&('%(#,$ 0 6 1 1 4 UIParent 0.0 -50.0 -1 ##$$%/&('%(#,$ 0 7 1 1 4 UIParent 0.0 -100.0 -1 ##$$%/&('%(#,$ 0 10 0 7 7 UIParent -360.0 157.0 -1 ##$$&('% 0 11 1 7 7 UIParent 0.0 -4.0 -1 ##$$&('%,# 0 12 1 7 7 UIParent 0.0 -4.0 -1 ##$$&('% 1 -1 0 4 4 UIParent 0.0 -152.5 -1 #'$#%# 2 -1 0 8 8 UIParent -88.0 92.5 -1 ##$#%(&( 3 0 0 1 7 PlayerCastingBarFrame -134.0 -4.2 -1 $#3% 3 1 0 1 7 PlayerCastingBarFrame 127.0 -4.2 -1 %#3% 3 2 1 6 7 UIParent 520.0 265.0 -1 %#&#3# 3 3 0 0 0 UIParent 387.0 -239.0 -1 '$(#)#-k.G/#1$3%5#6-7-7$8&9. 3 4 0 0 0 UIParent 387.0 -326.0 -1 ,#-#.+/#0#1#2(3#5#6(7-7$8(9( 3 5 1 5 5 UIParent 0.0 0.0 -1 &#*$3# 3 6 1 5 5 UIParent 0.0 0.0 -1 -=.+/#4$5#6(7-7$8(9( 3 7 1 4 4 UIParent 0.0 0.0 -1 3# 4 -1 1 7 7 UIParent 0.0 -4.0 -1 # 5 -1 1 7 7 UIParent 0.0 -4.0 -1 # 6 0 0 3 3 UIParent 50.0 85.0 -1 ##$#%#&'())) 6 1 0 3 3 UIParent 231.0 135.0 -1 ##$#%#'&())(-$ 6 2 1 1 1 UIParent 0.0 -25.0 -1 ##$#%$&.(()(+#,-,$ 7 -1 1 7 7 UIParent 0.0 -4.0 -1 # 8 -1 0 6 6 UIParent 34.0 164.0 -1 #&$^%$&l 9 -1 0 7 7 UIParent -376.0 94.0 -1 # 10 -1 0 7 4 UIParent 342.0 2.0 -1 # 11 -1 0 0 0 UIParent 1364.0 -898.0 -1 # 12 -1 0 8 8 UIParent -12.0 54.0 -1 #K$#%# 13 -1 0 8 2 BagsBar -0.1 3.9 -1 ##$#%) 14 -1 0 6 6 UIParent 64.5 24.0 -1 ##$$%' 15 0 0 4 4 UIParent 0.0 -518.5 -1 &# 15 1 0 7 7 UIParent 660.0 2.0 -1 &# 16 -1 0 6 6 UIParent 462.0 138.0 -1 #( 17 -1 1 1 1 UIParent 0.0 -100.0 -1 ## 18 -1 1 5 5 UIParent 0.0 0.0 -1 #- 19 -1 1 7 7 UIParent 0.0 0.0 -1 ## 20 0 0 7 7 UIParent -405.0 224.6 -1 #$$.%$&,'%(-($)#+$,$-$ 20 1 0 4 4 UIParent 398.0 -47.0 -1 ##$*%$&('%(-($)%+$,$-$ 20 2 0 6 0 PlayerFrame 21.8 -13.4 -1 #$$$%$&*'#(-($)#+$,#-# 20 3 0 7 7 UIParent -413.5 45.2 -1 #$$$%#&-'((-($)#*$+#,#-$.# 21 -1 1 7 7 UIParent -410.0 380.0 -1 ##%#&#'((()#*-*$+#,&-#.#/(0#1# 22 0 1 8 7 UIParent -457.0 336.0 -1 #$$$%#&('((#)U*$+%,$-#.#/U0% 22 1 1 1 1 UIParent 0.0 -40.0 -1 &('()U*#+% 22 2 1 1 1 UIParent 0.0 -90.0 -1 &('()U*#+% 22 3 1 1 1 UIParent 0.0 -130.0 -1 &('()U*#+% 23 -1 0 1 1 UIParent 807.0 -2.0 -1 ##$#%$&/&$'z(#)U+$,$-3.(/# 24 -1 1 1 1 UIParent 0.0 -182.0 -1 # 25 -1 0 7 7 UIParent -413.0 42.0 -1 # 26 0 0 8 8 UIParent -410.0 102.0 -1 #$ 26 1 0 7 7 UIParent 431.5 88.0 -1 #$ 27 -1 1 4 4 Minimap -68.0 -68.0 -1 #- 28 -1 1 4 4 UIParent 0.0 0.0 -1 #( 29 0 1 7 7 UIParent 0.0 450.0 -1 #($U%%&D&%'2($)$ 29 1 1 7 7 UIParent 0.0 425.0 -1 #($U%%&D&%'2($)$ 29 2 0 8 2 PlayerCastingBarFrame 0.8 4.8 -1 #($U%$&s'-(#)#</textarea>
+          </div>
+
+          <div class="import-card">
+            <div class="import-card-header">
+              <span><strong>2. BetterBlizzPlates Profil</strong> (Gegnerbalken & CC)</span>
+              <button class="copy-pill" onclick="copyBox('box-bbp')">Code Kopieren</button>
+            </div>
+            <textarea id="box-bbp" readonly>!BBPv23ASrYv25PE4QvJ861IS5BYHZ0AKLIuCYGHCgoZibVql7MShsj(OfzRzwToiQRU7Q7Qmlw1DRQAYHYbb2dIDweeKSwg7pwSa2lew4FfeGmj(hjbzTn3FKyeJ1m0jXtawhdqGKyhB41G)q5HtYMZ5CFu37TksTAbwkoDx36EVN75X351LLELQDDsD(Ad9DokKvTFTOGO4TVF13Ai4)XMTtGtsYAHD974Kgfxp23nSBWH70XjWTXqlCJfzdhY6qJzd)q)2rjjV1qLGbETUrBgLUQFxx5yw11ji1RTt8AHn231JnSh8LB2O2sXUHoBfgCOh7L9GNXnwnD07n349yJHdDL9yPhwlAV2rnI8dtt8ytjEJ4SUJBNOWUoXh2WnnPfBIqN9CzboPUlni2P6GE9OTWqFOd8pPPXJnJ6zAe4COB86oX9DJPNBH5VX9yxTNyLSjdFb19dsHhYnjb35PUENjPenJ9333j4TA8zU5nU1DXFo)cngc(5qS)6DCssRI0aySXdyafQVxa8)H)jn2LJctvFzlwfG20oWDt9vFTbjPr75N4K6hf2InEh6F309rPdIvuBw5LJD6hf2JE5vE1QvB8ASYMNMFPgrjLyx1G0SHFqGFcr8sWDjq7kCFVSBp3We)9DrIRCtbJQH)JCdQgf31fOOJMIKWu1e(E0eoU7JC7mi1v9X8JcwfJfsYkHU7DynxKw42LwkENOXRniHOV35w4px4Eev(UadBViGE00CEf0gw5D8CsP3xLLRlOjti3D1qAd92rQThqSGDfWUTuWbohMSvyZiMhBoxCvTP7G0yNaohjSXLYmVXqdvInM1MMlR8zM)gZFh2mD8Cc7NDCYjuc(VPIc6((DD75miiL49Qd8c74)bUtZg7RmWnj7vUuyhVO4QRVs9MWYKwYnQTY(UXhEGhS7acFuk8lBY66IeUviEiGtr8P4NvnyGR6yQdif5KAXxmBeitUJx0bzSOD3KbuWUrhaclOGZd9a(EGDjL2bjVlduK42TfBywCx8mC7OdwAVObHPplmhgSEIJ8H9yR6IV6DCd6THtOZZZUwg3gF1Z53Amaii42W7OeynTjRtt)u4FXMgwaPUCM9Mh46Slio2pMVogL5eNEiPEaOY1i2QwN4GkCwRlNiUqZTAiuCOZ91mkki1hoWN2KYZ5pyDifKnE2BEJfV5cLgIDfHeWMrH(sHxFyXsp(BGY(3o7hOktCowgKZCsCj(gK9DrIvE(BdlhIXAZb712fOQjUKqzuiOI7kfZENKUruxxVta6(6U9D6C46rr7ISbzCusMPrztsuf1OXr20l2fOLtzEiHkLxL0idVk(AENuNo7IItKO8zoTtIIBRga(ysQyZO(9dCtE)29)y2pP6tr(jPkkUw27pWjURVdS5ojbF5(H9jjFp2lEbJQzuQ7Ea9ysJNHgiPBao4k8B4uXzZ)Dzld2pLX3IebK1OEMLi(s4DbL(OrN8Vl(IRf7kxWgWWMKAKCJvx)cgNApmSKAj)EWSyUxOpQE(AxWRdNqBAvDLayh47gNlUOZTSvVETyJ1jWVZUGXBWKr3qugUU)JAProifa4N3mAD3EPaLY0oIMgOti(o)oR8iwum8KJ3ZPdACtnReXP1rXUPo(b8NQ1X3V8nztKwOM(ZQ552zxsrV0Yhxa1W8ug9IE)Cnrn(S352G96fzxX6vxJuDlMaGtVh8Q6QuASt6HOk2YM2W4g8gtm5aIfpNeFUrMwOW6omq516(HWX0rCbSADrb1JEpNWOqxXIF2cpE4Czan4kMZP0Kjx)giIWfQbBZB7YjRY9)e9h4hqBbUTwLvSsLyvS39sdJ0eXFkuD1TVnyLhxjRdMb4gaA(WhUiO71Ltt1nrcCA2NSO41dJId66DoIlcgEyFoQale7bUXPWOdaIR3teAZ52SMKVQXdjUzB8n1y)vAXMJzVzu4jXndUvUjP)9wlcVM888cnKJ1UFMnmCvg40ho70TZam6zRc5UGFyC8TzZrwVY2OO10mKhWPfAkQgh5b)CAhpFxK8mSGlcFTkmf3C(tP5EhMBhHn1jmS9ZTEUuqG3JLafqT0rX75eScA5ezmKSPgA)vl5rmmhXj0J3nEGF3mAmHdpXZ2mVqt(0ceF7S7GGG321LLzX4mIuJlF58DwVO4oahzFayH39F318q7Lnvuu(ADcZ5zvH9BqTKn4s(6DklpluoD0szzd2fkRBToZz)i)U1EaQXOZUdyGkkG630Fpxbi2rumRadQoeVz1azjf4b8RcrUXnOLzQUNm2XV7EoX7MN8pS9oY7utmjEAq41LCuM0azNxHKrZrVwkSlWE1lfzcwo6Gqpnt1ir5TDpe)pWo2hLAZwVfzvieDQZw(gE0cGBCqK3zbU77gqsQ8D6lZMQllzlsUCZOL63pos5lAjWNsaDIPA0mbHHMhqvLz5zLhbOZRHMNEOF3uVsSRFbEDTsyx8yfFhZZkZLCvFnysZZs)ATAvd8)GpaiTOFSR4j15KhnMMEBYwOl8BGdt8TBmG7eXVFIH3Bhpk7LlcHxbAFbFSTXKjenbV4jUndL6Gx5ej0ePp9iCFVhxxhwM4XrD6Gmh8f92BV29xTjBulHjsI4iP6fU3tJkxfBkCzJogX1GbOCKrevoPzl20T7fa1pOZ(KBxWJqsNw(SsILRhDaQJguVg09ZF2Er7tArf6lbBDDbHl8yrrfPvfciFb205LoeQG9EmAiMFCAk7IA8ad3D9os4SZsahty7ARSzZv2gEw4DSTTmT3hXPM4b1p9ZORdX5rlfaC1Wg(MGdKgRMnJUFa6X14CFhvMT4Wv0dBHoTG2DibVK1dSsyasG7kTwyQljJ5DCKeUjzNGC(wjLwrc8uAgEPU)Sap8EaSdayyIBAjneNYOTKyj0mxbgP0cLILlqBgLUvyDW2XQmp7GyGmF)zpdBsHBoBninapwYC35VYfi8R(muKcuYCkxIIwX0hrHy4UdDc6TB1ayFJE7(JP5MJWgnmtdXgrNZMu9SMvGNuoe)50y4HJ32ob05XX)Z1gW2UjrdatHItQzCvYZiJUtAnswMl9oQLNyCJuxlpRbU5vYjFb2is7oGRa73G)USTvQusaWBjhLzD2yqCqKeWXvSE(TD7wlokjry8)62H1aLaBGlk8mIaqDjyxluxWnXupYvguetdMWieNWh1C11Q92B9UnxFTnxrl2rKE)8SMYJ2AdI5UCtGxVlDaF37DIl5tbmSeW4fBsa29Buz)fUXc3y(kpm6HVrL5VXDaxZprbwrGcjbKocqFO2b)fxHm5NxZ1vCor9jRhf2Fz43rJJCDyuqhAaZyuiiI5eJH)OEmP8CmJnTYHXRyY5xfyhbJKdaB4i73rUCjBqDATATydBAHUAFaPJwC6qvq4)F0ta)y2KjS)K4DQAlkoDFXcThz6l0vYJgd19TbXx1cKlSdh2qSH1Lv4gUkRCujlKWh1Un3gNeH1c3sZHMm8NnDc3v35tH67m1zzIvsqmKa6Y)4SjurSbGPDOgWLreELQSyK4fNSRpJWKoUdPpeNhCLSv42CTXxVatjOapaZpuCEcNVQyokTRlnPNjXUvNobd6cUXH2f2aKDKeonxCOLWJbKeC7Y5dY96(75N(SGyljHINQ4KXfZF1FKc2UqXiSKlGnWJDnn0UCT4RThkj5eMkIECXXwaLzkFZJRIU11ZzxsNaWYKa(rdYioTSWoPuDXnRrPMyABCXk1AVd4bMXPa5QSES4q)8OFUW8SRA(Sez(DzQTbWDluEP0BPBJHvg)zYFJ6BV2x(DA((V)nA2S(XVD55pzqIlpq943JEHZL922LWjPm8OhclziZCz(DA3)JpUQ3X18oEzVJxX746EhFFVJx1741AD8B1643U1XR7D8gEhVzRJ3Y74gWQevNSSBIBGBN0nbLm0r1w77gdQp80IPu(GRVSBBk86hVs5BEMMxMc8Kavyx04BbqYN0urLlyTkm1PVufMg3LG7Dk0931rK)KQUT0DPOaibOISzmXlkSDlEFJBHnFRqmQvTyvS8vaz5v0CkmYff2I7auvGJCoD3vxkfG741msXDzJ4I0JCFhgTIkDcQHG)c3ib05ojGoS4SfPfjboHEmB(mKZ5PL(SS5ubotoVW5lHcJVtM0Y4FMwVk5JeHPBiTRUvZMBTbBe9PqqBnTc9waZSFVdp(3GvgidXPljTtWX7ZtuihtTWMMA16XMoh6Bj4gGAADuXTH(aNGbUGGChIhvnmv8K8K(QLb7qlMuFupNUOykfTdLdr1rvyMoJmDbmDiVYgiX78bCXnj7DQY(pXe8ASr0D(xK1LzYPImlxgModjSNc64JDr03BdB29WTog4)cwOp0jTJhYa364vrfPjUWBtt7pG2SLvw1qjeRarB7NkN(RyOpZc0WOSYMUmWzENwtVHjlgWXCvPkEHBKIVxUqWymLrRvMdbxxE1pzh3frTLCFFulwjCn3I73MESF4lR)xQiQHpMaGXc34w3HnBUeuckTw2TJpCA3I9IxekSSaZDBmmGH7cUeHytS0DICPV(Iy(1vKEfsqnhkM68cclir5qyF0tWUaZJUTZvJI9)aqlcfRukeoLoVG93OggNit42A7BVJejxpbz4EJhSDpe4(eT3J8eWlUt0Eim7lDD)Ux(W)INa)Am)4mzIQPapXDk3Uu5(dvoUuvA(hBd)44O4kRThyUiPYRUb8FETh80sRoXtlTM3tl9w0B6)0UpT0BdFY6zd)PL2Gv(H(bDHHYQ8Qp0bN)DZn0PU08F2Ig7tlTLrIwZPSDcf6Yv1jffghlkKxt7qozOHKxsRXydzGTqZtQjYo)42IfXBGDTmvx4tw3XUwgoRTF)nf5kaztOuhEx2iA2t4C4pT01SSpIUF2guSaYewraMlfvQq1mk)EBDMsFN0rNjkU(q0JNJevdBF3pDqAofPeazq6y6zQtMQ9fXSYksjSoiZ5x9LMQ0383F)p0xcHRfCUFkHbSsuVkpeur69yKBgFvEBt4X4zGDbQynw81FCxHNAxRQp8mtn(l)VOAcqQNFQl9cF59FAP24BSDZdJDqEMUapNl)fCNxh4X6DTNwQ)ux7VZ3)PL8(cWs5pvoc2OKRaaJsAS)UUvOLKX4Lla5l55(E)54l5Y)jPQ3rzKT0pSFLMWoW8vuIEh3ch944OV8D)D4lH)wploC4z24Sh6h2TY2ds8mhkL)dQikU3cCxIHxYlZFjhdVeyN)D(MzRHDsbYtNk1Xmtu0AGg(Nhh(l8l)1OHpe7xagEV5HHFYoG9pAhKB)FR7uIVq7p1xo()gnWsFJy18odWydMEIDcQ0iggmfQ5ZD(RHVMln6xJOG)GVG8TCwnhMthFGFPGfa)a8z5JCdCKPFFjTJnMK0doP46S35oXeD7sVWFaU(V8V3pHA5pYom)y)0kR7hU7ft1g6BvwCY9EQzV86(FLb(DRaAk3Z5Cx60W)j(3DFCU7(Tv75vaDxETXZ(Ch73Lo2xCEfVZxGV7)15NBbNSpNBCJp8br(DpaLEYpV8ZSNV9)s(z2hnSCMFCD3GkRd20op5KH))(E0w9s)h(3i3QFydqzyfSKq0xN36o06K)ZfGHpco86F1Fj(uEZ)jkk1W1cIg0T9aqo7CfqUgNoTmDg9XFw5y)iaDE32Gom34ZBbFPXMGg0KVKAcNaaWbk)RulW1jmjhRnHj91rppFDUCg8QgLtK5l(H(kFvLwfEkbnhAPHGr888r8)egX9V8FYxmtPYoPyQIRoamOeVB(z(1PZ37Ui(Z5VR889Y393LZH93Fc1rvJKd7H6VlyYNMgZ8)RWjFQs)92ktvaXz5gw5HGLHZJ5620((wlQKng9J4N5F8kkft0UaCEk8hHxcDoC)79I8ZHxwXLFFchwEvl0w454ZCFsDWKtlh0rnrW2XFYNyZYh))iXkVEMGztWoaiAguzj)4ZvU(14u9FpAnFVh3dh54RIG9Qu1jnnWf0Q4Gw5ZKukvIVgHP9z)f5kH))9cYP9XnqnjflyrA)h6B(3fhZ)u1awlSNBmGqPGbWf5hBw(I7xGwCtTuqGVdOW98wFek2fwyOSfjXnF5F4LKt5rOgJknbwQy)adzzrQ2hsQX6YZ)DOXU()EP2MNWfemyiT13CPXEoAu)z)YMk66h70Ua2ise4wZtLIzMEUVnx)XV5VOIN(AYmNIWfaM7k1JI7hLMcC5VZax3qt(kIyFPY)aKVaCdYap0A9bCwCNceLNAwSpYCCWJNUirLRUfIalHxjqJrjj1gLMmJtIO7PfrqUDzWTsZk7qMbHIkKtU3UTmtgLEcTl3dycoSbmLbPQi(oPk7Two79RZ9NhJ9QAvTgOteaucOBFca(uuqdaI6zmHVr(qZ9AURr1czfrOJBaoQmtrjPq5zxw(zOpNhQ3ppBCRIqeloe30wwz2Jx(Wb9Wcpq3vjqEO88ygU5(YcKj69(TFb2vScaZwHcFR5y9hgbYcJU6GuorbrUA6z3YrdO4bywRfI6LnxTbiIxUmUg61pID0u2b8AzxoFZHprZfb94oQIwifRzu8yrvfnUSlUt6QCaNhf1Hw9n)p)R(R(B9mpZZS6B(NZ)L8vEX7jkJu7WFONNpQsULXcsgAcyTHrrJN8gSc3WkTIcZkq462MSYs()GE26hs5gjlMClZDSl7G)p8em8MAo5ppw1sZvKWGkIkGiegPsHxzR1tEUntUGoZdZk5oY0gPqpR(JWbobWGKkZ9kfc26(a(eZKYaemGwGCK211MiSXES5SD4cJxhfZCm0i43ltdpVgLro1lkrHCwPjY7BBDqM27uKiCFPUeS(EmJ9JqXYSfN4b6BF2IZNOi2YM7Mg(uQ2BDM1U3oH)VBIRmFY16YZMMzHGMjrasSZ11pbvQiymKJuefFp2lzZ6Wl(AvMq0RkWZYsGpT7(PFMSkDGZkiKdl3du8VpwB3QguO1zA12fvvcNil)zIK88fvvnyPYWgZYLFbFm53)ufOQJ(EqF3ObkRnkBiyHeuuaxBXkFGdOWA9iheb1oDIblDAvCVBGRlvejNQSTio9hrxgwKbZPTsUjvsoYSBMtJawbi6XzK0CKLSvr4X90I1vwPGm1EIYpD(fMN4nYI9(S5ZfNw8JNoxI23sOgK0YJfHwgBuIhUTrDqsduNAgttmylYImLBGtMHIoIcfPQF)SkPbStoRrMbStBwwyOwrwhL8OzAumCiZWihPNUcG8YRtev1dqkh8KitmYAkV4UBHhYu10l4DhpxSBa3Lp8txWByJzgzBzgjkNkcLogk0iGlLLOkr1SdkrqE5vDxvzTU04ZSW9UXTGtCNhrAq3kmRqkrI9NdBgcJ6BAhhMNvsQ225GS8WYkSUTMHxOPcjvr728bI2TzICwJfh0tRQ4jP5uZunCftUr6lvHIqbTvJ4lpbf1AqMcokfFIk4HYj(D0m)LlVX8Eoq2JozOo5PsvdnU4NdjQYduaNYSo3YxzDjAQwf(sOmKGzmRI5WCSW7ocUpuplwyTVUwREifHFE2v6zKTzzvclsUci(AAfGl50mIha8jvTCHn2KsR(MFTHhUcIjPSj(zUIKrukWKhqugUhfyRiHpn2QPnZ(i1pak45yqonlapQeWqiWfLar(MSvUYyubm55SRaxH4PMTnEMA)snC6I6OljoPAut1ioBb63NYgJISdM8Yv5ECcYOM5ANQKfpBxzOGrtNxyZhWY1vxtjllSSCoikhSNWTzk8wHJRYUww01EONBO9fvqRJxg7KyRsHw6UloQKwNP8Bw2AhtydisX4nro7ncwVCTkGqwMoCHDAc(yGfvy46qEhrJ0ZVLh8o1JuFShBv26rjgDIViSvzxeetxK9iXkQSzjVX)WcVjAwjRJM1Qm(jZhLrblDrisKhE6kn0d7CbDIEwvMInpvdGSBWOO5gZKgOzYWIcIs5qzRvT9E5kxATSgjYDeBcTGxBeUb7uzPACv7OJWd4ePWEuS0iTBYtEhkkdNlpbNjPju6EGdXNiwJIG4KX2lcK)tAU6ABk6hOJKz8bF4NZQQgRnigzQQtrlDQZd1FlnT(5qZYnUiIY0QV5)1p()XZq)Y)4RE1Vi)tU03d)e0zkZAiMsUi8plgNlS9WA9TGVHCCG)1Zwup0dmgF5OqqR8W2ZyEfXilS3zIePj1DQ39m3hEh49BdtfzKBbk5SUhGY3CZt2TnDG7MIzTlzB3EymfGJoE)XV2YY0fzeAytUN83gnIWFMlOwsvnMqyjDnvXK9FeZidsIBUh5ZA1gLGVJ38g3Z0LDIr7JY4ZoUTMHqCUeciFX6)8pdWhuYsUmR6Sr9Kfv)ZhF7Ze4EqHBrZ3vKMkol)CwOC2INAav7HjZRd2CwHUbU8i8(gR(M)rx7Aix5qR(MNCYj)r)WF4puRfQ4Xye)TMhYWK1vua1O0mCIkL)IC3zZgYpDpElSdkoVkSv0UFxX(0CTWTri8cKdtvqUkQ2FR2)STSBowLYgJCVY3uBJeRouohmgJiR66qHZqvONJoUl3tI6QalmalTL(kkGw3fBdgrNITnD)KO4XWaLQFFriYtW5sxQUZ6V795vlaVaGtuEQTGM79zT3UOEqovCWRssSDiMrMvbPDC7wwK35cNzj05zKxAKIruTtndDUNOPkjqcK9WsL0V9lmbd9eEVMW7vTPTBY5Lc93ZHx10JBTyuaulcqOQMVWYX58auJl(F3NjRlx0CjQmI7uCDpTdZniadh9lLVHgZ1zC49PfiYUuhChACp0LLSAzFDVSpg4lrR8EiBMe3u8ULyPoyFYInSPNtminrIXtiA5r8bs2zaJbkrtqqmJKdf4tV0x3UbU57mwhq)U19(0PcMuLxlMEnPA7Js5bs9(DhacNrHF6sbySq5MNDhJWfalNXNKfk5rL3co4hx1xuN3xnbttwy)QUPh46gI7GLc7QojkLPAc3PJxyXNZ(0T4zVsXb3rfCsCraljueGhOB8dCJFRsygVU7TFDaLtohEZkp(R4jb(kVs12kCJiWUpwGuEzzGJhchEyogTGgvK6yL7YU(NWLMg5)9mwIvg1O0y2AZfjajxmk5)tLR32nxJS08FzZfRveJKhvOg07TigiTC3vqYwaAUZpcCCuykWxF3FLFLFnW42QV5V9iJa2JVe4QFT)zuPjnU99rNOYuUkp7ncjceLf86paBjs8JWMx1oAXvVVkmOfAPweIABfyzxXL6xGq6Tdsoo2dWlfPpL8S5oejl1FyB)0Euj39lP1gOMDbgHW1pb(MdVt559kFRwLxW4UnZFpwGp8w6IWesQxE(wLVn8yELxW4Imt4ao9qVc(Iwqp(w8BXdwhZzRL41CnZNROfwRCZihJRXsNM0mvaRf2lY(nOx9BcpJfpYdOhb29TkViSfHv1fbvH3iSOb67bg2lkYbzsP3ZUmhiy7iQfp2F1FucySePkf24HvwIfU)elVkeMQqGnavht7NHqP2L9rHrA2Ra2skerFkzlNrEtsA0bUKiM3rsOXCjN5UWahtzhndEkfetkw54DVQYxtbw9IV27mQmmz2rrL64lKWc5PBzktJTvQxf31LlyFLVrN3pE(BCt6)H54ruui8WfNbEerRKfvEEFAZwDOC3zQCW2xjxegLbGcV19uer(dBC3kWVOgfkatezeTv2f)HgKVCf347MKDhpyvSUWxTjGafxwaINx2GgOUxRSBWCGGBvFoIkiRd3hF6Fs)OfV5mbnUVZaeOlLq1rPi(yAoY7d9yRe2DDQs((PUaXiJlwxjwvZcxuD14icW5uynBkV0oOn22yj9LqjlK4jvLz5QmTISuWmYBke11iZIlWRfM5ZUkXWJRpxbrxMibQBt1RxaQxcXTs4grnwqfCsXU9QFsx9kJOL55SqbBdOGZ44vymIXkfvvdzYYEtNhutt30fJuHkMJXnQ7kPZlGlzM6vbrU8o759eT8RONS7QrpIR4mID1Z35aHdcJv09hi82IyP(7b4v6QIkvlviMKkU0QmrUDf0dTupW9K(ETSlHfvDkyxEA61t8mfD7kSZHGNgaX66FYrO07ij20Q49YnLmJ7q59J8CDHHSpnZmimTXuZV9e4C4E2jorWNwhVvMLHsYCpPxF6xVWOEAuMmF7Npls7BYAUDJBjg7Sfiii7zjvZkDwMZxrOCB5BYEXl6c8GKcory88Vwf0fC9RMbUBVCb6nC673rE3bnpvUC3(2dH1HpjUlpsr17Kp7ePgJ2PjFh5(WqwPaG0CFwGuiL2aykGTsGJ2f22Sf2QU8ABgqUweNmDrBcy9TkAjE9iCIXzM3z0n1bSeXLd6qPQf)1VyX5l(whxhiZVKHYurMSTVSboc8eJ0tOd8WqDcD7YwMLpIY)gY7nhBZhZDofTeVu9aCjyrGRcPex7U(Tnfvx8AXinRE5UsXAmurD6kfA)qL6wk5qyujmES7hhDaEzlEaCqLK)ktgPbTtq82UiChdynQIpwfmZSkF52YlVSax3UexkclLA2j6hprGbqGrODBg3SSQycNqKgD2QY)maqjyYtCHrBOUvq5NW(UGtEdWDvBXCZYP)Nrd)n5VVYPmE1HDMYePkmV5UugmUu4MPiCJQ2bAcTvJ2wg4znVwC08iwV0xRuCOaYuv3s4bBbf5JzJlWtnn6QHBGqP2i6nZLWV0PoVvLNUN(NFXJp35r959ddOEvpq1Y77Kcd9lNBzslJnA1(xmpOJ6jIRCwIc1kahvvdPFP)mCgKo1vKAw8p1ZZ0PMc5TkUM(0UAvg2OQ2vvnZ9wSK6I)apV4bjFOvFZ)7)V)l5zZ535B8n(nXGKBcou)pmc41s0S2k1nA3NrYbD07jIgiqCJ(BzMAhgk1c4dxyXcA4l7kFlZDCjcAdL3u5djL3f5pX4oytR6kUgQNVPLcuEuAOY2RvbvKU4o11oAdzhRtA)vKIx3u9l4SCz9uA83aDNsvRvouKZf23fJQF1zRQ5t(fqT9FvhMiVUmrGzSRXfrryyY2jQVx7T3QrjP(bIlwTP0)BeHAQ3w8NhIS44lZmUm4WxF(BkRaCGAjWTXR6JXl06Lq8rQ1HYj)r6)fv45ZWXBgCn8sntwzZcnA5tfRX5GmUEMxku7CGdJHe7kxOWig(XtnLxaui6z6f9)1dyhAvqZNGsdFkJ4WlDX(JkljlJNIm3quaa)QOLXWyWxpIAnO1J67h6DcwxxRlJ2S3PzsK49)E5f4Q5KbuukpCQzN)2kVJ)pyi2usuQ5A0lQboYwSMMsv3x9JON7sUAbrL3RWiC7BFehWVmtSZuqGxbLh8J65ST4A5bYug)H0WOEcYf57mdgtzEtFgCOwG0WASvTnTscTmqAyMON2OYZiHiL3YJRzSMAgfrnzAF3qHNFTmVYw5eLZYqotIuTotlHCOVFFRzQJ3nr)n)hw4Dt0WlfV3HYghFzxNU4fsenGZwSObCAvxyHv5vxLUzyEn5tp1qj)HQhpME8207FumxrEyoVYU8Jud6sJ90IMJpCzWycng1tw6B(VTWL)el7hJD8FIpqA3n3Y6Yy76NFyTx(TRagyYE7jTk8Tpf1E(vwjWfVSOCcQ8Q745SNtO22(N7NVOT9z1DdJpmUiY03VqY0yaqRO9op60q)CpUOrDYQG968ZXLg77v4j3AaIGUoX(v2Xj9W4Sh)V9Ru4MFsW)XbjVQn)rgT9W)IIVXQ2mBD78Bv46EJO(XyNqx5vx(TZw3Lg(BviTzInIc3TYoRuNF7Bv5vVp2RN6J7xRyAQ9422TRgn15OIg1rB68b9J93ZyPD54gfsIMvCd58WOG9XBfSvc9CQyXIC5)J)RlKfSj4)wOgl4x)FqrlNN(zkPTI)Uf9iN2mokiOTJn58sL)Qflr(aW0pfeIIKi)bVtXYz6xngGyad0gMKQZZ97x04EIyy4DNw2(4gVEXNZpeujgRlTr3YAA7)F7c3)KM1903)M)5ZOG)(QP3tVAX2AmRsgIheXymiQ4FhsWWKRHQnRZXinXlagSEIM5uR2ot4zIiMH2vdgMUCB3zbJaw)57yR42yBTyvFuIoLVGwdaa2Rxzz0Y85yZTRRltMhxR4tJGJgj3FIQo3kUMc0YOfGeqacO4)(M0OLvj6Ynj)r8cUG(Ze2vub)Iqed(o0H8nH2cWbXclEg9N0depc5uFIDt3VDwsuK3H5AyzTk0H3b8ixVznYk3k48SLjk8mi6TovsDvU9pIwzOO(WPkQa5iB15QKrTBtu(V(ow3iMI4uzukvz1ta35PRwCqRLrBZZ(p7pCwZkfpk9R)IjuNkYaOiG5CRBm)I2DVQ4(0ipOvWAn3jx(99)Of0F0FoEz1bcgv97JFjvsVaRzp8wOa77IAryeNsDBDQONRKsDpg)RdjMq3N0daw2ioQhOU7))!BBPRhWo0QGMpbLg(ugXHx6I9hvwswgpfzUHOaa(vrlJHXGVEe1AqRh13p07eSUUwxgTzVtZKiXBd(YlWvZjdOOuE4uZo)TvEh)FWqSPKOuZ1OxudCKTynnLQUm7hrp3LC1cIkVxHr423(ioGFzMyNPGaVckp4h1ZzBX1YdKPm(dPHr9eKlY3zgmMY8M(m4qTaPH1yRABALeAzG0WmrpTrLNrcrkVLhxZyn1mkIAY0(UHcp)AzELTYjkNLHCMePADMwc5qF)(wZuhVBI(B(pSW7MOHxkEVdLno(YUoDXlKiAaNTyrd40QUWcRYRUkDZW8AYNEQHs(dvpEm94TP3)OyUI8WCELD5hPg0Lg7PfnhF4YGXeAmQNS038FBHl)jw2pg74)eFG0UBUL1LX21p)WAV8BxbmWK92tAv4BFkQ98RSsGlEzr5eu5v3XZzpNqTT9p3pFrB7ZQ7ggFyCrKPVFHKPXaGwr7DE0PH(5ECrJ6Kvb715NJln23RWtU1aebDDI9RSJt6HXzp(F7xPWn)KG)JdsEvB(JmA7H)ffFJvTz26253QW19gr9JXoHUYRU8BNTUln83QqAZeBefUBLDwPo)23QYREFSxp1h3VwX0u7XTTBxnAQZrfnQJ205d6h7VNXs7YXnkKenR4gY5Hrb7J3kyRe65uXIf5Y)h)xxilytW)TqnwWV()GIwop9ZusBf)Dl6roTzCuqqBhBY5Lk)vlwI8bGPFkiefjr(dENILZ0VAmaXagOnmjvNN73VOX9eXWW7oTS9XnE9IpNFiOsmwxAJUL102))2fU)jnR7PV)n)ZNrb)9vtVNE1IT1ywLmepiIXyquX)oKGHjxdvBwNJrAIxamy9enZPwTDMWZermdTRgmmD52UZcgbS(Z3XwXTX2AXQ(OeDkFbTgaaSxVYYOL5ZXMBxxxMmpUwXNgbhnsU)evDUvCnfOLrlajGaeqX)9nPrlRs0LBs(J4fCb9NjSROc(fHig8DOd5BcTfGdIfw8m6pPhiEeYP(e7MUF7SKOiVdZ1WYAvOdVd4rUEZAKvUvW5zltu4zq0BDQK6QC7FeTYqr9HtvubYr2QZvjJA3MO8F9DSUrmfXPYOuQYQNaUZtxT4GwlJ2MN9FeG4SMvkEu6x)ftOovKbqraZ5w3y(fT7EvX9PrEqRG1AUtU877)rlO)O)C8YQdemQ63h)sQKEbwZE4Tqb23f1IWioL626urpxjL6Em(xhsmHUpPhaSSrCupqD3))p!BBP</textarea>
+          </div>
+
+          <div class="import-card">
+            <div class="import-card-header">
+              <span><strong>3. Cooldown Manager Profil</strong> (Blizzard-Intern)</span>
+              <button class="copy-pill" onclick="copyBox('box-cd')">Code Kopieren</button>
+            </div>
+            <textarea id="box-cd" readonly>1|XdC7agJBGIbhTSRW6xZBQRREwcIiqbQST1ELC0GxsLK1SGWIIR4LVy28BKOVhVeQu/AAgqWljenFU6XvLDtgmod/Z4bl/77+U2fiDOrdYdilWGx+KMAbfIAVYvB9Q13CnM8d/EEdSpDmds30zHRheoEkpCACNWhAE1o83sCKTxU8EIAQKFCEDPh4vGDK3tAcTG3OtkwVqMKesxkc4AhnOHEbhQTE+YsdfoH4GjtrPzCC8fRhYDZghErL3HUZeS1yP/bu9rNVLL1/+yu6KNw3dMkqREduWUpKZm+Z+xsLe2SSlUyimPuLxEZvNZkuYrYgqhUFiMSiI3Wj5/Kf7+Xql/fVawxX</textarea>
+            </div>
+        </div>
+      </section>
+
+      <!-- ================= 3. SCHLAFSACK ================= -->
+      <section id="tab-sleepingbag" class="tab-pane">
+        <div class="pane-header">
+          <h2>Cozy Sleeping Bag (Schlafsack) Route</h2>
+          <p class="pane-subtitle">Ab Stufe 14 freischaltbar. Bringt +3% XP (2h Buff), portables Gasthaus und eine 12er Tasche.</p>
+        </div>
+
+        <div class="route-list">
+          <div class="route-item">
+            <div class="route-badge">Schritt 1 (Ab Stufe 14)</div>
+            <div class="route-info">
+              <h4>Brachland (The Barrens)</h4>
+              <span class="coord-tag">/way 46 74</span>
+              <p>Südlich von Camp Taurajo am abgebrannten Turm die <em>Burned-Out Remains</em> anklicken, um die Quest zu starten.</p>
+            </div>
+          </div>
+
+          <div class="route-item alert">
+            <div class="route-badge">Schritt 2</div>
+            <div class="route-info">
+              <h4>Westfall (Allianz-Gebiet)</h4>
+              <span class="coord-tag">/way 37 50</span>
+              <p>Alexston Farmstead. Am zerstörten Karren abgeben und Folgequest annehmen. (Achtung vor Allianz-Wachen).</p>
+            </div>
+          </div>
+
+          <div class="route-item">
+            <div class="route-badge">Schritt 3</div>
+            <div class="route-info">
+              <h4>Steinkrallengebirge (Stonetalon)</h4>
+              <span class="coord-tag">/way 40.6 52.4</span>
+              <p>Verlassenes Lager nordöstlich von Sonnenfels. Kiste looten → <strong>Belohnung: 12-Slot Tasche (Old Toolbox)!</strong></p>
+            </div>
+          </div>
+
+          <div class="route-item">
+            <div class="route-badge">Schritt 4</div>
+            <div class="route-info">
+              <h4>Stonetalon Sprung-Rätsel</h4>
+              <span class="coord-tag">/way 39.6 49.8</span>
+              <p>Den Hügel hochgehen und über die kleine Felsspalte zum Erdhaufen (Mound of Dirt) springen.</p>
+            </div>
+          </div>
+
+          <div class="route-item alert">
+            <div class="route-badge">Schritt 5</div>
+            <div class="route-info">
+              <h4>Loch Modan Staumauer</h4>
+              <span class="coord-tag">/way 49.4 12.9</span>
+              <p>Auf die geschnitzten Steinköpfe der Staumauer klettern und die Adlerfigur (Eagle Figurine) anklicken.</p>
+            </div>
+          </div>
+
+          <div class="route-item finish">
+            <div class="route-badge">Schritt 6</div>
+            <div class="route-info">
+              <h4>Thoradinswall (Vorgebirge des Hügellands)</h4>
+              <span class="coord-tag">/way 87.3 49.6</span>
+              <p>Auf der Hillsbrad-Seite über den Karren auf die Mauer klettern und den Sack öffnen → <strong>Cozy Sleeping Bag erhalten!</strong></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= 4. BUFF-FOOD & CAMPS ================= -->
+      <section id="tab-buffs" class="tab-pane">
+        <div class="pane-header">
+          <h2>Buff-Food, Kochen & Lagerfeuer</h2>
+          <p class="pane-subtitle">Jedes gekochte Essen gibt in Forever +5% Kill-XP. Hier sind die einfachsten Rezepte.</p>
+        </div>
+
+        <div class="clean-grid">
+          <div class="card">
+            <h3>Stufe 1 bis 10</h3>
+            <p><strong>Geröstetes Eberfleisch (Roasted Boar Meat)</strong> oder <strong>Glänzender Kleinfisch (Brilliant Smallfish)</strong>. Fleisch droppt direkt von den Ebern in Durotar/Mulgore. Einfach Kochen auf Stufe 1 lernen und beim Händler einfache Gewürze kaufen.</p>
+          </div>
+
+          <div class="card">
+            <h3>Stufe 10 bis 20</h3>
+            <p><strong>Gewürztes Wolfsfleisch (Seasoned Wolf Kabob)</strong> oder <strong>Lochkriecher (Longjaw Mud Snapper)</strong>. Wölfe gibt es im Brachland und Silberwald in Massen.</p>
+          </div>
+
+          <div class="card">
+            <h3>Stufe 20 bis 30</h3>
+            <p><strong>Zweifach gewürztes Raptorfleisch (Twice-Spiced Raptor Slice)</strong> – ein Forever-spezifisches Rezept für Raptorfleisch aus dem südlichen Brachland.</p>
+          </div>
+
+          <div class="card">
+            <h3>Lagerfeuer-System</h3>
+            <p>Wenn andere Spieler ein Lagerfeuer aufstellen, setze dich kurz mit dem Befehl <code>/sit</code> für etwa eine Minute daneben. Das schaltet bis zu 1 Stunde anhaltende Nebenbuffs frei (z.B. Ausdauer oder Zelt-Boni von Lederern), ohne dass du selbst Berufe brauchst.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= 5. PRIEST ================= -->
+      <section id="tab-priest" class="tab-pane">
+        <div class="pane-header">
+          <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_priest.jpg" class="wow-icon large" alt="Priest"> Priester (Priest) Leveling Leitfaden</h2>
+          <p class="pane-subtitle">S-Tier Ausdauer durch Willensentzug. Kein Trinken nötig, wenn der Zauberstab die Arbeit macht.</p>
+        </div>
+
+        <div class="card">
+          <h3>Die Standard-Pull-Reihenfolge</h3>
+          <p>1. <strong>Heiliges Feuer (Holy Fire)</strong> casten (langer Cast, währenddessen regeneriert Mana).<br>
+          2. <strong>Schattenwort: Schmerz (SW:P)</strong> draufsetzen.<br>
+          3. <strong>Zauberstab (Shoot)</strong> aktivieren und den Mob einfach zu Ende schießen.<br>
+          4. <strong>Willensentzug (Spirit Tap)</strong> aktiviert sich beim Todesstoß → Dein Mana ist beim nächsten Mob wieder voll.</p>
+        </div>
+
+        <h3 class="group-title">Wichtige Zauberstäbe (Wand-Progression)</h3>
+        <div class="table-card">
+          <table class="simple-table">
+            <thead>
+              <tr>
+                <th>Stufe</th>
+                <th>Name</th>
+                <th>DPS</th>
+                <th>Herstellung / Fundort</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="highlight-row">
+                <td><strong>5</strong></td>
+                <td><strong>Geringer Magiezauberstab (Lesser Magic Wand)</strong></td>
+                <td><strong>11.3</strong></td>
+                <td><strong>Verzauberkunst Skill 10 (1x Geringe Magieessenz + 1x Einfaches Holz). Unbedingt sofort ab Stufe 5 bauen oder kaufen!</strong></td>
+              </tr>
+              <tr class="highlight-row">
+                <td><strong>13</strong></td>
+                <td><strong>Großer Magiezauberstab (Greater Magic Wand)</strong></td>
+                <td><strong>17.5</strong></td>
+                <td><strong>Verzauberkunst Skill 75 (1x Große Magieessenz + 1x Einfaches Holz). Zweiter großer Powerspike.</strong></td>
+              </tr>
+              <tr>
+                <td>17</td>
+                <td>Cookies Rührstab (Cookie's Stirring Wand)</td>
+                <td>22.3</td>
+                <td>Todesminen (Deadmines) Questbelohnung.</td>
+              </tr>
+              <tr class="highlight-row">
+                <td><strong>18+</strong></td>
+                <td><strong>Grabsteinszepter (Gravestone Scepter)</strong></td>
+                <td><strong>29.0</strong></td>
+                <td><strong>Tiefschwarze Grotte (BFD) Questbelohnung. Überragender Schaden bis weit über Stufe 35 hinaus!</strong></td>
+              </tr>
+              <tr>
+                <td>31</td>
+                <td>Goblin-Zünder (Goblin Igniter)</td>
+                <td>32.8</td>
+                <td>Schlingendorntal (STV) Questbelohnung.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="group-title">Talente nach Stufen</h3>
+        <div class="talent-steps">
+          <div class="talent-card">
+            <span class="badge-sm">Stufe 10–14</span>
+            <h4>5/5 Willensentzug (Spirit Tap)</h4>
+            <p>Pflicht-Talent! Verdoppelt deinen Willenskraft-Wert nach jedem Todesstoß. Vollständige Manaregeneration im Laufen.</p>
+          </div>
+          <div class="talent-card">
+            <span class="badge-sm">Stufe 15–19</span>
+            <h4>5/5 Zauberstab-Spezialisierung</h4>
+            <p>Erhöht den Schaden deines Zauberstabs um 25% – kostenloser Schaden ohne Manakosten.</p>
+          </div>
+          <div class="talent-card">
+            <span class="badge-sm">Stufe 20–39</span>
+            <h4>Disziplin & Schatten-Mix</h4>
+            <p>Verbessertes Schattenwort: Schmerz (2/2), Verbessertes Schild (3/3) und Meditation (5/5) für Manaregeneration beim Zaubern.</p>
+          </div>
+          <div class="talent-card highlight-border">
+            <span class="badge-sm">Stufe 40</span>
+            <h4>Umskillen auf Schattengestalt</h4>
+            <p>Voller Respec auf Schattenform (+15% Schattenschaden, 15% weniger physischer Schaden genommen, Gedankenschinden).</p>
+          </div>
+        </div>
+
+        <h3 class="group-title">Wichtigste Fähigkeiten beim Lehrer</h3>
+        <div class="card">
+          <p><strong>Immer kaufen:</strong> Heiliges Feuer, Schattenwort: Schmerz, Machtwort: Schild, Erneuern, Blitzheilung, Willensstärke.<br>
+          <strong>Sparen:</strong> Gedankenschlag (Mind Blast) nur niedrige Ränge für den Opener nutzen, um Mana zu sparen. Gedankenkontrolle, Schattenschutz und Untote fesseln erst später kaufen.</p>
+        </div>
+      </section>
+
+            <!-- ================= 6. HUNTER ================= -->
+      <section id="tab-hunter" class="tab-pane">
+        <div class="pane-header">
+          <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_hunter.jpg" class="wow-icon large" alt="Hunter"> Jäger (Hunter) – Umfassender Leitfaden (1–60)</h2>
+          <p class="pane-subtitle">Unangefochtener König der Solo-Level-Geschwindigkeit. Null Downtime, wenn das Pet tankt.</p>
+        </div>
+
+        <!-- 1. Stat Priority -->
+        <div class="guide-chapter">
+          <h3>📊 Attributs-Gewichtung (Stat Priority)</h3>
+          <div class="stat-prio-bar">
+            <span class="stat-chip">Beweglichkeit (Agility)</span>
+            <span class="stat-arrow">&gt;</span>
+            <span class="stat-chip">Distanz-Angriffskraft (Ranged AP)</span>
+            <span class="stat-arrow">&gt;</span>
+            <span class="stat-chip">Ausdauer (Stamina)</span>
+            <span class="stat-arrow">&gt;</span>
+            <span class="stat-chip">Intelligenz (Intellect)</span>
+            <span class="stat-arrow">&gt;</span>
+            <span class="stat-chip">Willenskraft (Spirit)</span>
+          </div>
+          <p class="card-desc">Beweglichkeit erhöht Ranged Attack Power, Crit-Chance, Ausweichchance und Rüstung. Ausdauer schützt vor Ganks im Open-World-PvP.</p>
+        </div>
+
+        <!-- 2. Combat Rotation -->
+        <div class="guide-chapter">
+          <h3>🏹 Exakter Kampf-Ablauf & Schuss-Timing</h3>
+          <div class="card">
+            <h4>Solo Pull-Reihenfolge (Zero Downtime):</h4>
+            <p>1. <strong>Mal des Jägers (Hunter's Mark):</strong> Auf das Ziel setzen.<br>
+            2. <strong>Pet losschicken:</strong> Knurren (Growl) MUSS auf Autocast stehen.<br>
+            3. <strong>Schlangenbiss (Serpent Sting):</strong> Genau 1x auftragen.<br>
+            4. <strong>Automatischer Schuss (Auto Shot):</strong> Durchlaufen lassen! Schusstimer-Addon beachten. <em>Wichtig:</em> Keinen Mehrfachschuss casten, während der Auto-Shot gerade bereit ist (Schussverzögerung meiden).<br>
+            5. <strong>Nahkampf verhindern:</strong> Kommt der Mob zu nah: <em>Erschütternder Schuss</em> oder <em>Zurechtstutzen</em>, Schritt zurücktreten und finishen.<br>
+            6. <strong>Tier heilen (Mend Pet):</strong> Vor dem nächsten Pull kurz kanalisieren, während du Loot aufhebst.</p>
+          </div>
+        </div>
+
+        <!-- 3. Point by Point Talents -->
+        <div class="guide-chapter">
+          <h3>🌳 Punkt-für-Punkt Talent-Fahrplan (10–60 Beast Mastery)</h3>
+          <table class="detailed-talent-table">
+            <thead>
+              <tr>
+                <th>Stufe</th>
+                <th>Talent & Punkte</th>
+                <th>Baum</th>
+                <th>Warum genau hier?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>10 – 14</strong></td>
+                <td><span class="point-tag">5/5</span> Verbesserter Aspekt des Falken</td>
+                <td>Tierherrschaft</td>
+                <td>Gibt eine Chance auf +30% Distanz-Angriffstempo. Massiver DPS-Schub von Anfang an.</td>
+              </tr>
+              <tr>
+                <td><strong>15 – 16</strong></td>
+                <td><span class="point-tag">2/2</span> Dickfell (Thick Hide)</td>
+                <td>Tierherrschaft</td>
+                <td>Erhöht den Rüstungswert deines Pets spürbar, damit es gegen mehrere Mobs nicht umkippt.</td>
+              </tr>
+              <tr>
+                <td><strong>17 – 18</strong></td>
+                <td><span class="point-tag">2/2</span> Verb. Tier wiederbeleben</td>
+                <td>Tierherrschaft</td>
+                <td>Macht das Wiederbeleben deines Tiers fast instant und spart massiv Mana bei Unfällen.</td>
+              </tr>
+              <tr>
+                <td><strong>19 – 23</strong></td>
+                <td><span class="point-tag">5/5</span> Entfesselter Zorn (Unleashed Fury)</td>
+                <td>Tierherrschaft</td>
+                <td>+15% Schaden für dein Pet. Ab Stufe 20 zerreißt dein Pet Mobs fast alleine.</td>
+              </tr>
+              <tr>
+                <td><strong>24</strong></td>
+                <td><span class="point-tag">1/1</span> Einschüchterung (Intimidation)</td>
+                <td>Tierherrschaft</td>
+                <td>Dein wichtigster Notfall-Knopf: Befiehlt dem Pet, das Ziel für 3 Sek. zu betäuben und massive Aggro aufzubauen.</td>
+              </tr>
+              <tr>
+                <td><strong>25 – 26</strong></td>
+                <td><span class="point-tag">2/2</span> Schnelligkeit des Tiers (Bestial Swiftness)</td>
+                <td>Tierherrschaft</td>
+                <td>+30% Lauftempo für dein Pet im Freien – rennt sofort zu flüchtenden Mobs.</td>
+              </tr>
+              <tr>
+                <td><strong>27 – 31</strong></td>
+                <td><span class="point-tag">5/5</span> Raserei (Frenzy)</td>
+                <td>Tierherrschaft</td>
+                <td>Kern-Talent: Nach jedem kritischen Treffer erhält dein Pet 8 Sekunden lang +30% Angriffstempo!</td>
+              </tr>
+              <tr>
+                <td><strong>32 – 36</strong></td>
+                <td><span class="point-tag">5/5</span> Wildheit (Ferocity)</td>
+                <td>Tierherrschaft</td>
+                <td>+10% Crit-Chance für dein Pet. Triggert permanent das Talent <em>Raserei</em>.</td>
+              </tr>
+              <tr class="highlight-row">
+                <td><strong>37</strong></td>
+                <td><span class="point-tag">1/1</span> Zorn des Wildtiers (Bestial Wrath)</td>
+                <td>Tierherrschaft</td>
+                <td>Der absolute Meilenstein: Pet verursacht 18 Sek. lang +50% Schaden und ist immun gegen CC. Schmilzt Elitemobs!</td>
+              </tr>
+              <tr>
+                <td><strong>38 – 39</strong></td>
+                <td><span class="point-tag">2/2</span> Pfadfinden (Pathfinding)</td>
+                <td>Tierherrschaft</td>
+                <td>+6% Reisetempo mit Aspekt des Geparden – spart bis Stufe 40 etliche Laufminuten.</td>
+              </tr>
+              <tr>
+                <td><strong>40 – 44</strong></td>
+                <td><span class="point-tag">5/5</span> Tödliche Schüsse (Lethal Shots)</td>
+                <td>Treffsicherheit</td>
+                <td>+5% Distanz-Kritische Trefferchance für deinen eigenen Bogen/Gewehr.</td>
+              </tr>
+              <tr>
+                <td><strong>45 – 49</strong></td>
+                <td><span class="point-tag">5/5</span> Effizienz (Efficiency)</td>
+                <td>Treffsicherheit</td>
+                <td>Senkt die Manakosten aller Schüsse um 10% – drastisch weniger Manapausen.</td>
+              </tr>
+              <tr>
+                <td><strong>50 – 54</strong></td>
+                <td><span class="point-tag">5/5</span> Todbringende Schüsse (Mortal Shots)</td>
+                <td>Treffsicherheit</td>
+                <td>+30% kritischer Trefferschaden für deine Fernkampfwaffen.</td>
+              </tr>
+              <tr>
+                <td><strong>55 – 60</strong></td>
+                <td><span class="point-tag">Flex</span> Falkenauge & Gezielter Schuss</td>
+                <td>Treffsicherheit</td>
+                <td>Reichweiten-Vergrößerung und starker Eröffnungsschuss.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 4. Weapon Milestones -->
+        <div class="guide-chapter">
+          <h3>🏹 Fernkampfwaffen-Roadmap (Wichtigste Upgrades)</h3>
+          <div class="table-card">
+            <table class="simple-table">
+              <thead>
+                <tr>
+                  <th>Stufe</th>
+                  <th>Waffe & Typ</th>
+                  <th>Quelle & Fundort</th>
+                  <th>DPS / Effekt</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1 – 10</td>
+                  <td>Geknackter Kurzbogen / Händler-Bogen</td>
+                  <td>Waffenhändler in Klingenhügel / Sen'jin</td>
+                  <td>Basis-DPS</td>
+                </tr>
+                <tr class="highlight-row">
+                  <td><strong>14+</strong></td>
+                  <td><strong>Giftstachel (Venomstrike)</strong></td>
+                  <td><strong>Höhlen des Wehklagens (WC) – Lord Cobrahn Drop</strong></td>
+                  <td><strong>12.5 DPS + Chance auf Giftschaden</strong></td>
+                </tr>
+                <tr>
+                  <td>20+</td>
+                  <td>Silithidenklaue / Bogen aus Eschental</td>
+                  <td>Questbelohnung im Eschental (Ashenvale)</td>
+                  <td>17.0 DPS</td>
+                </tr>
+                <tr class="highlight-row">
+                  <td><strong>30+</strong></td>
+                  <td><strong>Meisterjäger-Gewehr (Master Hunter's Rifle)</strong></td>
+                  <td><strong>Schlingendorntal (Nesingwary Questreihe)</strong></td>
+                  <td><strong>24.5 DPS + Stats (Absoluter Meilenstein)</strong></td>
+                </tr>
+                <tr>
+                  <td>42+</td>
+                  <td>Massive Eisenfeuerbüchse / Grün-Drop</td>
+                  <td>Auktionshaus oder Tanaris Questbelohnung</td>
+                  <td>32.0+ DPS</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- 5. Key Skills to Buy vs Skip -->
+        <div class="guide-chapter">
+          <h3>💰 Trainer-Fähigkeiten: Was kaufen, was sparen?</h3>
+          <div class="skill-split-grid">
+            <div class="skill-buy-box">
+              <h4>✅ Immer auf Maximalrang kaufen:</h4>
+              <ul class="skill-list">
+                <li><strong>Knurren (Growl):</strong> Beim Tiertrainer alle 10 Stufen aktualisieren!</li>
+                <li><strong>Aspekt des Falken (Hawk):</strong> Maximiert Distanz-AP.</li>
+                <li><strong>Schlangenbiss:</strong> Dein Haupt-DoT für jeden Mob.</li>
+                <li><strong>Mehrfachschuss (Multi-Shot):</strong> Starker Burst.</li>
+                <li><strong>Tier heilen (Mend Pet):</strong> Hält dein Pet ohne Fleischkonsum am Leben.</li>
+                <li><strong>Totstellen (Feign Death):</strong> Lebensversicherung auf Stufe 30.</li>
+              </ul>
+            </div>
+            <div class="skill-skip-box">
+              <h4>❌ Nicht kaufen (Gold sparen fürs 40er Mount):</h4>
+              <ul class="skill-list">
+                <li><strong>Adlerauge (Eagle Eye):</strong> Reine Spielerei beim Leveln.</li>
+                <li><strong>Tier ängstigen (Scare Beast):</strong> Fast nie nützlich im PvE.</li>
+                <li><strong>Spurenlesen-Ränge:</strong> Nur Rang 1 für Humanoiden/Wildtiere reicht.</li>
+                <li><strong>Leuchtfeuer (Flare):</strong> Auf PvE-Servern ignorieren, auf PvP nur Rang 1.</li>
+                <li><strong>Gezielter Schuss:</strong> Beim BM-Leveln nicht benötigt.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Essential Hunter Macros -->
+        <div class="guide-chapter">
+          <h3>⚙️ Unverzichtbare Jäger-Makros</h3>
+          <div class="macro-grid">
+            <div class="macro-box">
+              <div class="macro-title">
+                <span>1-Button Pet Attack & Schuss (Kein Zielverlust)</span>
+                <button class="copy-pill" onclick="copyMacro(this)">Kopieren</button>
+              </div>
+              <div class="macro-code">#showtooltip Hunter's Mark
+/petattack
+/cast Hunter's Mark
+/cast !Auto Shot</div>
+            </div>
+
+            <div class="macro-box">
+              <div class="macro-title">
+                <span>Notfall Totstellen & Eisfalle (Instant Trap)</span>
+                <button class="copy-pill" onclick="copyMacro(this)">Kopieren</button>
+              </div>
+              <div class="macro-code">#showtooltip Freezing Trap
+/stopattack
+/cast Feign Death
+/cast Freezing Trap</div>
+            </div>
+
+            <div class="macro-box">
+              <div class="macro-title">
+                <span>Nahkampf-Abstandhalter (Wing Clip & Mongoose)</span>
+                <button class="copy-pill" onclick="copyMacro(this)">Kopieren</button>
+              </div>
+              <div class="macro-code">#showtooltip Wing Clip
+/cast Wing Clip
+/cast Mongoose Bite
+/cast Raptor Strike</div>
+            </div>
+
+            <div class="macro-box">
+              <div class="macro-title">
+                <span>Tier füttern mit 1 Klick (Kein Rucksack-Suchen)</span>
+                <button class="copy-pill" onclick="copyMacro(this)">Kopieren</button>
+              </div>
+              <div class="macro-code">#showtooltip Feed Pet
+/cast Feed Pet
+/use [pet:Wolf/Cat] Geröstetes Eberfleisch; [pet:Boar] Saftiger Apfel</div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+            <!-- ================= 7. MAGE ================= -->
+      <section id="tab-mage" class="tab-pane">
+        <div class="pane-header">
+          <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_mage.jpg" class="wow-icon large" alt="Mage"> Magier (Mage) – Umfassender Leitfaden (1–60)</h2>
+          <p class="pane-subtitle">Kostenloses Essen/Wasser, Portale und unerreichte Frost-Sicherheit beim Leveln.</p>
+        </div>
+
+        <!-- 1. Stat Priority -->
+        <div class="guide-chapter">
+          <h3>📊 Attributs-Gewichtung (Stat Priority)</h3>
+          <div class="stat-prio-bar">
+            <span class="stat-chip">Zauberschaden (Spell Power)</span>
+            <span class="stat-arrow">&gt;</span>
+            <span class="stat-chip">Intelligenz (Intellect)</span>
+            <span class="stat-arrow">&gt;</span>
+            <span class="stat-chip">Ausdauer (Stamina)</span>
+            <span class="stat-arrow">&gt;</span>
+            <span class="stat-chip">Willenskraft (Spirit)</span>
+          </div>
+          <p class="card-desc">Intelligenz vergrößert dein Manapool und erhöht deine Zauberkrit-Chance. Zauberschaden beschleunigt die Kills drastisch.</p>
+        </div>
+
+        <!-- 2. Combat Rotation -->
+        <div class="guide-chapter">
+          <h3>❄️ Exakter Kampf-Ablauf & Kiting</h3>
+          <div class="card">
+            <h4>Solo Einzelziel-Rotation (Sicher & Schnell):</h4>
+            <p>1. <strong>Max-Range Frostblitz (Frostbolt):</strong> Auf maximale Distanz (35m) 2–3 Mal durchcasten.<br>
+            2. <strong>Frostnova:</strong> Sobald der Mob auf ca. 10m herankommt, Nova drücken.<br>
+            3. <strong>Zurückweichen:</strong> 3–4 Schritte nach hinten gehen (nicht wegdrehen, rückwärts strafen).<br>
+            4. <strong>Zertrümmern-Burst:</strong> Frostblitz auf das eingefrorene Ziel casten (+50% Crit durch Talent!) $\rightarrow$ direkt <strong>Feuerschlag (Fire Blast)</strong> hinterherwerfen.<br>
+            5. <strong>Finisher:</strong> Kältekegel (Cone of Cold) oder Zauberstab zum Mülleimern ohne Manakosten.</p>
+          </div>
+        </div>
+
+        <!-- 3. Talents -->
+        <div class="guide-chapter">
+          <h3>🌳 Punkt-für-Punkt Talent-Fahrplan (10–60 Frost)</h3>
+          <table class="detailed-talent-table">
+            <thead>
+              <tr>
+                <th>Stufe</th>
+                <th>Talent & Punkte</th>
+                <th>Baum</th>
+                <th>Effekt & Nutzen</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>10 – 14</strong></td>
+                <td><span class="point-tag">5/5</span> Verbesserter Frostblitz</td>
+                <td>Frost</td>
+                <td>Senkt die Zauberzeit von Frostblitz um 0.5s – schnellere Geschosse vor dem ersten Gegnerschlag.</td>
+              </tr>
+              <tr>
+                <td><strong>15 – 17</strong></td>
+                <td><span class="point-tag">3/3</span> Elementare Präzision</td>
+                <td>Frost</td>
+                <td>Verringert die Zauber-Widerstandschance der Mobs um 6% (wichtig gegen orangene Quests).</td>
+              </tr>
+              <tr>
+                <td><strong>18 – 19</strong></td>
+                <td><span class="point-tag">2/5</span> Eissplitter (Ice Shards)</td>
+                <td>Frost</td>
+                <td>Erhöht den kritischen Schadensbonus von Frostzaubern um 40%.</td>
+              </tr>
+              <tr>
+                <td><strong>20</strong></td>
+                <td><span class="point-tag">1/1</span> Kälteeinbruch (Cold Snap)</td>
+                <td>Frost</td>
+                <td>Setzt die Abklingzeit aller Frostzauber (Frostnova, Eisblock, Eisbarriere) sofort zurück!</td>
+              </tr>
+              <tr>
+                <td><strong>21 – 23</strong></td>
+                <td><span class="point-tag">3/3</span> Erfrierung (Frostbite)</td>
+                <td>Frost</td>
+                <td>Gibt Kälteeffekten eine 15% Chance, das Ziel 5 Sek. lang komplett einzufrieren.</td>
+              </tr>
+              <tr>
+                <td><strong>24 – 26</strong></td>
+                <td><span class="point-tag">3/3</span> Stechendes Eis (Piercing Ice)</td>
+                <td>Frost</td>
+                <td>+6% Flat Frostschaden auf all deine Kernzauber.</td>
+              </tr>
+              <tr class="highlight-row">
+                <td><strong>27 – 31</strong></td>
+                <td><span class="point-tag">5/5</span> Zertrümmern (Shatter)</td>
+                <td>Frost</td>
+                <td><strong>+50% Kritische Trefferchance</strong> gegen alle eingefrorenen Ziele. Verdoppelt deinen Schaden!</td>
+              </tr>
+              <tr>
+                <td><strong>32 – 33</strong></td>
+                <td><span class="point-tag">2/2</span> Arktische Reichweite</td>
+                <td>Frost</td>
+                <td>+20% Reichweite für Frostblitz und Blizzard – Mobs sterben, bevor sie dich berühren.</td>
+              </tr>
+              <tr>
+                <td><strong>34 – 39</strong></td>
+                <td><span class="point-tag">Mix</span> Eisrasur & Eissplitter voll</td>
+                <td>Frost</td>
+                <td>Krit-Schaden maximieren und Verlangsamungseffekte verstärken.</td>
+              </tr>
+              <tr class="highlight-row">
+                <td><strong>40</strong></td>
+                <td><span class="point-tag">1/1</span> Eisbarriere (Ice Barrier)</td>
+                <td>Frost</td>
+                <td>Absorbiert hunderte Schadenspunkte und verhindert Zauberzeit-Verzögerung bei Treffern.</td>
+              </tr>
+              <tr>
+                <td><strong>41 – 50</strong></td>
+                <td><span class="point-tag">Arkan</span> Hellsicht & Arkane Konzentration</td>
+                <td>Arkan</td>
+                <td>10% Chance auf Freizaubern (Clearcasting = kostenloser Frostblitz!).</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 4. Weapon Milestones -->
+        <div class="guide-chapter">
+          <h3>🪄 Stab- & Zauberstab-Upgrades</h3>
+          <div class="table-card">
+            <table class="simple-table">
+              <thead>
+                <tr>
+                  <th>Stufe</th>
+                  <th>Gegenstand</th>
+                  <th>Quelle</th>
+                  <th>Nutzen</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="highlight-row">
+                  <td><strong>5</strong></td>
+                  <td><strong>Geringer Magiezauberstab</strong></td>
+                  <td><strong>Verzauberkunst (Skill 10) / AH</strong></td>
+                  <td><strong>11.3 DPS – Tötet Mobs im Startgebiet ohne 1 Tropfen Mana!</strong></td>
+                </tr>
+                <tr class="highlight-row">
+                  <td><strong>18+</strong></td>
+                  <td><strong>Mondsichel-Stab (Crescent Staff)</strong></td>
+                  <td><strong>Höhlen des Wehklagens (WC) Quest</strong></td>
+                  <td><strong>+7 Ausdauer, +7 Intelligenz, +7 Willenskraft</strong></td>
+                </tr>
+                <tr>
+                  <td>30+</td>
+                  <td>Stab der lodernden Flamme / Magierstab</td>
+                  <td>Klassenquest im Schlingendorntal / Düstermarschen</td>
+                  <td>Starker Int/Spell-Boost</td>
+                </tr>
+                <tr>
+                  <td>45+</td>
+                  <td>Zul'Farrak Magierstäbe</td>
+                  <td>Zum'rah Drop in ZF</td>
+                  <td>Reiner Zauberschaden</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- 5. Macros -->
+        <div class="guide-chapter">
+          <h3>⚙️ Unverzichtbare Magier-Makros</h3>
+          <div class="macro-grid">
+            <div class="macro-box">
+              <div class="macro-title">
+                <span>Notfall Stopcasting & Blinzeln (Blink)</span>
+                <button class="copy-pill" onclick="copyMacro(this)">Kopieren</button>
+              </div>
+              <div class="macro-code">#showtooltip Blink
+/stopcasting
+/cast Blink</div>
+            </div>
+
+            <div class="macro-box">
+              <div class="macro-title">
+                <span>Mouseover Zauberraub / Gegenzauber (Counterspell)</span>
+                <button class="copy-pill" onclick="copyMacro(this)">Kopieren</button>
+              </div>
+              <div class="macro-code">#showtooltip Counterspell
+/stopcasting
+/cast [@mouseover,harm,nodead][@target,harm,nodead] Counterspell</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= 8. WARLOCK ================= -->
+      <section id="tab-warlock" class="tab-pane">
+        <div class="pane-header">
+          <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_warlock.jpg" class="wow-icon large" alt="Warlock"> Hexenmeister (Warlock) – Umfassender Leitfaden (1–60)</h2>
+          <p class="pane-subtitle">Drain-Tanking Engine: Verwandelt Leben in Mana und Mana in Mob-Kills. Null Pausen.</p>
+        </div>
+
+        <!-- 1. Stat Priority -->
+        <div class="guide-chapter">
+          <h3>📊 Attributs-Gewichtung (Stat Priority)</h3>
+          <div class="stat-prio-bar">
+            <span class="stat-chip">Schattenschaden (Shadow Power)</span>
+            <span class="stat-arrow">&gt;</span>
+            <span class="stat-chip">Ausdauer (Stamina)</span>
+            <span class="stat-arrow">&gt;</span>
+            <span class="stat-chip">Intelligenz (Intellect)</span>
+            <span class="stat-arrow">&gt;</span>
+            <span class="stat-chip">Willenskraft (Spirit)</span>
+          </div>
+          <p class="card-desc">Ausdauer ist für den Hexenmeister gleichbedeutend mit Mana, da <em>Aderlass</em> dein Leben in Mana umwandelt!</p>
+        </div>
+
+        <!-- 2. Combat Rotation -->
+        <div class="guide-chapter">
+          <h3>🔮 Exakter Kampf-Ablauf (Drain-Tanking)</h3>
+          <div class="card">
+            <h4>Multi-DoT & Drain-Loop:</h4>
+            <p>1. <strong>Dämon schicken:</strong> Leerwandler auf Ziel 1 schicken (Folter auf Autocast).<br>
+            2. <strong>Fluch der Pein (Curse of Agony)</strong> auf Ziel 1 setzen.<br>
+            3. <strong>Verderbnis (Corruption)</strong> im Laufen auftragen (dank Talent ein Spontanzauber!).<br>
+            4. <strong>Lebensentzug (Siphon Life):</strong> Setzen, um konstante Selbstheilung zu erzeugen.<br>
+            5. <strong>Blutsauger (Drain Life)</strong> kanalisieren: Heilt dich aktiv gegen und verursacht Schattenschaden.<br>
+            6. <strong>Aderlass (Life Tap):</strong> Bei 80%+ Leben 1–2 Mal drücken, um Mana nachzufüllen, bevor der Mob stirbt.<br>
+            7. <strong>Zauberstab:</strong> Bei niedrigen Mob-HP den Wand nutzen, um Manaregeneration zu starten.</p>
+          </div>
+        </div>
+
+        <!-- 3. Talents -->
+        <div class="guide-chapter">
+          <h3>🌳 Punkt-für-Punkt Talent-Fahrplan (10–60 Gebrechen)</h3>
+          <table class="detailed-talent-table">
+            <thead>
+              <tr>
+                <th>Stufe</th>
+                <th>Talent & Punkte</th>
+                <th>Baum</th>
+                <th>Effekt & Nutzen</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="highlight-row">
+                <td><strong>10 – 14</strong></td>
+                <td><span class="point-tag">5/5</span> Verbesserte Verderbnis</td>
+                <td>Gebrechen</td>
+                <td>Macht Verderbnis zum <strong>Spontanzauber (Instant Cast)</strong>. Lässt dich im Laufen Mobs taggen!</td>
+              </tr>
+              <tr>
+                <td><strong>15 – 16</strong></td>
+                <td><span class="point-tag">2/2</span> Verb. Fluch der Pein</td>
+                <td>Gebrechen</td>
+                <td>+8% DoT-Schaden für deinen Hauptfluch.</td>
+              </tr>
+              <tr>
+                <td><strong>17 – 19</strong></td>
+                <td><span class="point-tag">3/5</span> Unterdrückung (Suppression)</td>
+                <td>Gebrechen</td>
+                <td>Reduziert Zauber-Widerstände gegen höherstufige Gegner.</td>
+              </tr>
+              <tr>
+                <td><strong>20 – 21</strong></td>
+                <td><span class="point-tag">2/2</span> Verbesserter Aderlass</td>
+                <td>Gebrechen</td>
+                <td>Gewährt +20% mehr Mana pro Aderlass – spart enorm viele Tastendrücke.</td>
+              </tr>
+              <tr class="highlight-row">
+                <td><strong>22 – 26</strong></td>
+                <td><span class="point-tag">5/5</span> Teufelskonzentration</td>
+                <td>Gebrechen</td>
+                <td><strong>70% Chance</strong>, dass Blutsauger und Seelendieb durch Treffer NICHT unterbrochen werden!</td>
+              </tr>
+              <tr>
+                <td><strong>27 – 28</strong></td>
+                <td><span class="point-tag">2/2</span> Einbruch der Nacht (Nightfall)</td>
+                <td>Gebrechen</td>
+                <td>Chance auf spontane, kostenlose Schattenblitze (Instant Shadow Bolt Procs).</td>
+              </tr>
+              <tr class="highlight-row">
+                <td><strong>30</strong></td>
+                <td><span class="point-tag">1/1</span> Lebensentzug (Siphon Life)</td>
+                <td>Gebrechen</td>
+                <td>Dritter DoT, der dich jede Sekunde heilt. Macht dich fast unsterblich beim Leveln.</td>
+              </tr>
+              <tr>
+                <td><strong>31 – 35</strong></td>
+                <td><span class="point-tag">5/5</span> Schattenbeherrschung</td>
+                <td>Gebrechen</td>
+                <td>+10% Flat Schattenschaden auf Verderbnis, Blutsauger und Flüche.</td>
+              </tr>
+              <tr>
+                <td><strong>36 – 40</strong></td>
+                <td><span class="point-tag">Dämo</span> Dämonische Umarmung</td>
+                <td>Dämonologie</td>
+                <td>+15% maximale Ausdauer (mehr Leben = mehr Mana via Aderlass).</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 4. Weapon Milestones -->
+        <div class="guide-chapter">
+          <h3>🪄 Wichtige Zauberstab-Upgrades für Hexer</h3>
+          <div class="table-card">
+            <table class="simple-table">
+              <thead>
+                <tr>
+                  <th>Stufe</th>
+                  <th>Gegenstand</th>
+                  <th>Quelle</th>
+                  <th>Nutzen</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="highlight-row">
+                  <td><strong>5</strong></td>
+                  <td><strong>Geringer Magiezauberstab</strong></td>
+                  <td><strong>Verzauberkunst (Skill 10) / AH</strong></td>
+                  <td><strong>Muss ab Stufe 5 im Inventar sein! Finisht Mobs ohne Mana.</strong></td>
+                </tr>
+                <tr class="highlight-row">
+                  <td><strong>18+</strong></td>
+                  <td><strong>Grabsteinszepter (Gravestone Scepter)</strong></td>
+                  <td><strong>Tiefschwarze Grotte (BFD) Quest</strong></td>
+                  <td><strong>29.0 DPS Schattenschaden – Unglaublicher Schadenssprung!</strong></td>
+                </tr>
+                <tr>
+                  <td>30+</td>
+                  <td>Sense der Seelen / Klassenquest-Waffen</td>
+                  <td>Hexenmeister-Klassenquest</td>
+                  <td>Ausdauer & Schattenschaden</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- 5. Macros -->
+        <div class="guide-chapter">
+          <h3>⚙️ Unverzichtbare Hexenmeister-Makros</h3>
+          <div class="macro-grid">
+            <div class="macro-box">
+              <div class="macro-title">
+                <span>Pet Attack & DoT Tag (Sofortige Aggro)</span>
+                <button class="copy-pill" onclick="copyMacro(this)">Kopieren</button>
+              </div>
+              <div class="macro-code">#showtooltip Corruption
+/petattack
+/cast Corruption</div>
+            </div>
+
+            <div class="macro-box">
+              <div class="macro-title">
+                <span>Aderlass ohne Selbstmordgefahr</span>
+                <button class="copy-pill" onclick="copyMacro(this)">Kopieren</button>
+              </div>
+              <div class="macro-code">#showtooltip Life Tap
+/stopmacro [hp<200]
+/cast Life Tap</div>
+            </div>
+          </div>
+        </div>
+      </section>
+            <!-- ================= 9. ROGUE ================= -->
+      <section id="tab-rogue" class="tab-pane">
+        <div class="pane-header">
+          <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_rogue.jpg" class="wow-icon large" alt="Rogue"> Schurke (Rogue) – Umfassender Leitfaden (1–60)</h2>
+          <p class="pane-subtitle">Konstanter Nahkampfschaden und PvP-Dominanz. Massiv abhängig von einer langsamen Haupthandwaffe.</p>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>📊 Attributs-Gewichtung (Stat Priority)</h3>
+          <div class="stat-prio-bar">
+            <span class="stat-chip">Trefferchance (Hit Cap ~5%)</span>
+            <span class="stat-arrow">&gt;</span>
+            <span class="stat-chip">Beweglichkeit (Agility)</span>
+            <span class="stat-arrow">&gt;</span>
+            <span class="stat-chip">Stärke (Strength)</span>
+            <span class="stat-arrow">&gt;</span>
+            <span class="stat-chip">Ausdauer (Stamina)</span>
+            <span class="stat-arrow">&gt;</span>
+            <span class="stat-chip">Willenskraft (Spirit)</span>
+          </div>
+          <p class="card-desc">Trefferwertung verhindert verfehlte Schläge im Dual-Wield. Beweglichkeit liefert Angriffskraft, Crit und Ausweichen.</p>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>🗡️ Exakter Kampf-Ablauf (Combat Swords)</h3>
+          <div class="card">
+            <h4>Solo Pull & DPS-Rotation:</h4>
+            <p>1. <strong>Eröffnung:</strong> Aus der Verstohlenheit mit <strong>Fieser Trick (Cheap Shot)</strong> eröffnen (gibt 2 Kombopunkte + 4s Stun).<br>
+            2. <strong>Zerhäckseln (Slice and Dice):</strong> Sofort mit 1–2 Kombopunkten aktivieren! (+30% Angriffsgeschwindigkeit muss immer aktiv sein!).<br>
+            3. <strong>Kombopunkte sammeln:</strong> <strong>Finsterer Stoß (Sinister Strike)</strong> durchdrücken.<br>
+            4. <strong>Riposte nutzen:</strong> Sobald du parierst, SOFORT Riposte drücken (kostet nur 10 Energie, entwaffnet und macht hohen Schaden).<br>
+            5. <strong>Finisher:</strong> Bei 4–5 Punkten <strong>Ausweiden (Eviscerate)</strong>.<br>
+            6. <strong>Gifte ab Stufe 20:</strong> Sofortwirkendes Gift auf Haupthand, Tödliches Gift oder Verkrüppelndes Gift auf Nebenhand.</p>
+          </div>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>🌳 Punkt-für-Punkt Talent-Fahrplan (10–60 Kampf)</h3>
+          <table class="detailed-talent-table">
+            <thead>
+              <tr>
+                <th>Stufe</th>
+                <th>Talent & Punkte</th>
+                <th>Baum</th>
+                <th>Effekt & Nutzen</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>10 – 11</strong></td>
+                <td><span class="point-tag">2/2</span> Verb. Finsterer Stoß</td>
+                <td>Kampf</td>
+                <td>Senkt die Energiekosten von Finsterer Stoß um 5 – mehr Schläge pro Kampf.</td>
+              </tr>
+              <tr>
+                <td><strong>12 – 14</strong></td>
+                <td><span class="point-tag">3/3</span> Blitzartige Reflexe</td>
+                <td>Kampf</td>
+                <td>+3% Ausweichchance für weniger erlittenen Schaden.</td>
+              </tr>
+              <tr>
+                <td><strong>15 – 19</strong></td>
+                <td><span class="point-tag">5/5</span> Abwehr (Deflection)</td>
+                <td>Kampf</td>
+                <td><strong>+5% Parierchance!</strong> Schaltet die mächtige Riposte frei.</td>
+              </tr>
+              <tr class="highlight-row">
+                <td><strong>20</strong></td>
+                <td><span class="point-tag">1/1</span> Riposte</td>
+                <td>Kampf</td>
+                <td>Reaktions-Schlag: Verursacht 150% Waffenschaden und entwaffnet den Mob 6 Sek. lang für nur 10 Energie!</td>
+              </tr>
+              <tr class="highlight-row">
+                <td><strong>21 – 25</strong></td>
+                <td><span class="point-tag">5/5</span> Präzision (Precision)</td>
+                <td>Kampf</td>
+                <td><strong>+5% Nahkampf-Trefferchance!</strong> Beseitigt die hohe Verfehl-Chance beim Tragen von zwei Waffen.</td>
+              </tr>
+              <tr>
+                <td><strong>26 – 29</strong></td>
+                <td><span class="point-tag">4/5</span> Beidhändigkeits-Spezialisierung</td>
+                <td>Kampf</td>
+                <td>Erhöht den Schaden deiner Nebenhandwaffe massiv.</td>
+              </tr>
+              <tr class="highlight-row">
+                <td><strong>30</strong></td>
+                <td><span class="point-tag">1/1</span> Klingenwirbel (Blade Flurry)</td>
+                <td>Kampf</td>
+                <td>Erhöht Angriffstempo um 20% und trifft einen zweiten Gegner in der Nähe. Pflicht für Doppel-Pulls!</td>
+              </tr>
+              <tr>
+                <td><strong>31 – 35</strong></td>
+                <td><span class="point-tag">5/5</span> Schwert-Spezialisierung</td>
+                <td>Kampf</td>
+                <td>5% Chance auf einen sofortigen kostenlosen Extraschlag bei jedem Schwertangriff.</td>
+              </tr>
+              <tr>
+                <td><strong>36 – 39</strong></td>
+                <td><span class="point-tag">4/5</span> Aggression</td>
+                <td>Kampf</td>
+                <td>Erhöht den Schaden von Finsterer Stoß und Ausweiden um 4%.</td>
+              </tr>
+              <tr class="highlight-row">
+                <td><strong>40</strong></td>
+                <td><span class="point-tag">1/1</span> Adrenalinrausch (Adrenaline Rush)</td>
+                <td>Kampf</td>
+                <td>Verdoppelt deine Energieregeneration für 15 Sekunden. Zerschneidet Bosse in Sekunden!</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>🗡️ Waffen-Roadmap (Langsame Haupthand = Hoher Schaden)</h3>
+          <div class="table-card">
+            <table class="simple-table">
+              <thead>
+                <tr>
+                  <th>Stufe</th>
+                  <th>Waffe & Typ</th>
+                  <th>Quelle & Fundort</th>
+                  <th>Tempo / Besonderheit</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>10–17</td>
+                  <td>Holzfällerbeil / Glänzender Dolch</td>
+                  <td>Startgebiet Quests / Händler</td>
+                  <td>Basis-DPS</td>
+                </tr>
+                <tr class="highlight-row">
+                  <td><strong>18+</strong></td>
+                  <td><strong>Grausamer Widerhaken (Cruel Barb)</strong></td>
+                  <td><strong>Todesminen (VanCleef Drop)</strong></td>
+                  <td><strong>Tempo 2.8 – Legendäres Schwert für Finsteren Stoß!</strong></td>
+                </tr>
+                <tr class="highlight-row">
+                  <td><strong>29+</strong></td>
+                  <td><strong>Schlächterschwert / Räuberklinge</strong></td>
+                  <td><strong>Kral von Razorfen / Burg Schattenfang</strong></td>
+                  <td><strong>Tempo 2.7 – Gewaltiger Schadenssprung</strong></td>
+                </tr>
+                <tr class="highlight-row">
+                  <td><strong>38+</strong></td>
+                  <td><strong>Erobererschwert (Vanquisher's Sword)</strong></td>
+                  <td><strong>Hügel von Razorfen Questbelohnung</strong></td>
+                  <td><strong>Bestes Schwert vor Stufe 50!</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>⚙️ Unverzichtbare Schurken-Makros</h3>
+          <div class="macro-grid">
+            <div class="macro-box">
+              <div class="macro-title">
+                <span>Startattack & Finsterer Stoß (Immer Auto-Hit)</span>
+                <button class="copy-pill" onclick="copyMacro(this)">Kopieren</button>
+              </div>
+              <div class="macro-code">#showtooltip Sinister Strike
+/startattack
+/cast Sinister Strike</div>
+            </div>
+
+            <div class="macro-box">
+              <div class="macro-title">
+                <span>Riposte / Finsterer Stoß Kombi-Taste</span>
+                <button class="copy-pill" onclick="copyMacro(this)">Kopieren</button>
+              </div>
+              <div class="macro-code">#showtooltip Riposte
+/cast Riposte
+/cast Sinister Strike</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= 10. WARRIOR ================= -->
+      <section id="tab-warrior" class="tab-pane">
+        <div class="pane-header">
+          <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_warrior.jpg" class="wow-icon large" alt="Warrior"> Krieger (Warrior) – Umfassender Leitfaden (1–60)</h2>
+          <p class="pane-subtitle">Solo die härteste Klasse im Spiel, in Begleitung eine Naturgewalt. Waffen-Upgrades entscheiden alles.</p>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>📊 Attributs-Gewichtung (Stat Priority)</h3>
+          <div class="stat-prio-bar">
+            <span class="stat-chip">Waffen-Grundschaden (Top-End Dmg)</span>
+            <span class="stat-arrow">&gt;</span>
+            <span class="stat-chip">Stärke (Strength)</span>
+            <span class="stat-arrow">&gt;</span>
+            <span class="stat-chip">Ausdauer (Stamina)</span>
+            <span class="stat-arrow">&gt;</span>
+            <span class="stat-chip">Beweglichkeit (Agility)</span>
+            <span class="stat-arrow">&gt;</span>
+            <span class="stat-chip">Willenskraft (Spirit)</span>
+          </div>
+          <p class="card-desc">Ein hoher oberer Waffenschaden (z.B. 120-180) maximiert den Schaden von <em>Überwältigen</em> und <em>Tödlicher Stoß</em>. Willenskraft hilft bei der Lebensregeneration zwischen Mobs.</p>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>🪓 Exakter Kampf-Ablauf (Waffen-Krieger)</h3>
+          <div class="card">
+            <h4>Solo Pull & Kampf-Rotation:</h4>
+            <p>1. <strong>Sturmangriff (Charge):</strong> Aus Kampfhaltung pullen für kostenlose 15 Wut.<br>
+            2. <strong>Blutrausch (Bloodrage):</strong> Zünden, um Wutverlust zu verhindern und mehr Wut aufzubauen.<br>
+            3. <strong>Verwunden (Rend):</strong> Genau 1x auftragen für konstanten Blutungsschaden.<br>
+            4. <strong>Überwältigen (Overpower):</strong> Sobald der Mob ausweicht (Dodge) – sofort drücken! Kann nicht pariert/ausgewichen werden und trifft fast immer kritisch.<br>
+            5. <strong>Tödlicher Stoß (Mortal Strike):</strong> Ab Stufe 40 immer auf Cooldown halten.<br>
+            6. <strong>Hinrichten (Execute):</strong> Sobald der Mob unter 20% Gesundheit fällt, Kampf mit Hinrichten beenden.<br>
+            7. <strong>Erste Hilfe:</strong> Nach jedem 2. Mob sofort bandagieren!</p>
+          </div>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>🌳 Punkt-für-Punkt Talent-Fahrplan (10–60 Waffen)</h3>
+          <table class="detailed-talent-table">
+            <thead>
+              <tr>
+                <th>Stufe</th>
+                <th>Talent & Punkte</th>
+                <th>Baum</th>
+                <th>Effekt & Nutzen</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>10 – 12</strong></td>
+                <td><span class="point-tag">3/3</span> Verb. Heldenhafter Stoß</td>
+                <td>Waffen</td>
+                <td>Reduziert Wutkosten um 3 – wichtig für die ersten Stufen.</td>
+              </tr>
+              <tr>
+                <td><strong>13 – 14</strong></td>
+                <td><span class="point-tag">2/5</span> Abbiegen (Deflection)</td>
+                <td>Waffen</td>
+                <td>Erhöht Parierchance um 2%.</td>
+              </tr>
+              <tr class="highlight-row">
+                <td><strong>15 – 19</strong></td>
+                <td><span class="point-tag">5/5</span> Taktische Meisterschaft</td>
+                <td>Waffen</td>
+                <td><strong>Das wichtigste Krieger-Talent überhaupt!</strong> Behält bis zu 25 Wut beim Wechsel zwischen Kampf-, Verteidigungs- und Berserkerhaltung.</td>
+              </tr>
+              <tr>
+                <td><strong>20</strong></td>
+                <td><span class="point-tag">1/1</span> Wutanfall (Anger Management)</td>
+                <td>Waffen</td>
+                <td>Verlangsamt Wutverfall außerhalb des Kampfes (generiert passiv 1 Wut alle 3s).</td>
+              </tr>
+              <tr>
+                <td><strong>21 – 23</strong></td>
+                <td><span class="point-tag">3/3</span> Tiefe Wunden (Deep Wounds)</td>
+                <td>Waffen</td>
+                <td>Kritische Treffer lassen den Gegner 60% deines Nahkampf-Schadens verbluten.</td>
+              </tr>
+              <tr>
+                <td><strong>24 – 25</strong></td>
+                <td><span class="point-tag">2/2</span> Durchbohren (Impale)</td>
+                <td>Waffen</td>
+                <td>Erhöht den kritischen Schadensbonus von Fähigkeiten um 20%.</td>
+              </tr>
+              <tr class="highlight-row">
+                <td><strong>30</strong></td>
+                <td><span class="point-tag">1/1</span> Weitreichende Stöße (Sweeping Strikes)</td>
+                <td>Waffen</td>
+                <td>Deine nächsten 5 Nahkampfangriffe treffen einen zusätzlichen Gegner in der Nähe!</td>
+              </tr>
+              <tr>
+                <td><strong>31 – 35</strong></td>
+                <td><span class="point-tag">5/5</span> Axt-Spezialisierung</td>
+                <td>Waffen</td>
+                <td>+5% Kritische Trefferchance mit Äxten (synergiert perfekt mit der Wirbelwindaxt!).</td>
+              </tr>
+              <tr class="highlight-row">
+                <td><strong>40</strong></td>
+                <td><span class="point-tag">1/1</span> Tödlicher Stoß (Mortal Strike)</td>
+                <td>Waffen</td>
+                <td>Dein mächtigster Angriff: Verursacht Waffenschaden + 85 und reduziert gegnerische Heilung um 50%.</td>
+              </tr>
+              <tr>
+                <td><strong>41 – 45</strong></td>
+                <td><span class="point-tag">5/5</span> Grausamkeit (Cruelty)</td>
+                <td>Furor</td>
+                <td>+5% Kritische Trefferchance auf alle Angriffe.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>🪓 Zweihandwaffen-Roadmap (Dein Überleben hängt hieran!)</h3>
+          <div class="table-card">
+            <table class="simple-table">
+              <thead>
+                <tr>
+                  <th>Stufe</th>
+                  <th>Waffe & Typ</th>
+                  <th>Quelle & Fundort</th>
+                  <th>DPS / Schaden</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>10–17</td>
+                  <td>Kupferner Claymore / Große Holzaxt</td>
+                  <td>Schmiedekunst oder Waffen-Händler</td>
+                  <td>Basis-Zweihänder</td>
+                </tr>
+                <tr class="highlight-row">
+                  <td><strong>18+</strong></td>
+                  <td><strong>Mondsichelstab / Felsspalter</strong></td>
+                  <td><strong>Höhlen des Wehklagens (WC) Quest</strong></td>
+                  <td><strong>Tempo 2.9 – Gigantischer Sprung gegenüber Startwaffen!</strong></td>
+                </tr>
+                <tr class="highlight-row">
+                  <td><strong>29+</strong></td>
+                  <td><strong>Leichenmacher (Corpsemaker)</strong></td>
+                  <td><strong>Kral von Razorfen (Ramtusk Drop)</strong></td>
+                  <td><strong>Tempo 3.8 – 28.9 DPS (Unglaublicher Waffenschwung!)</strong></td>
+                </tr>
+                <tr class="highlight-row">
+                  <td><strong>30+</strong></td>
+                  <td><strong>Wirbelwindaxt (Whirlwind Axe)</strong></td>
+                  <td><strong>Stufe 30 Klassenquest (Mit Gilde machen!)</strong></td>
+                  <td><strong>Tempo 3.6 – 35.3 DPS (Macht dich bis Stufe 45 unbesiegbar)</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>⚙️ Unverzichtbare Krieger-Makros</h3>
+          <div class="macro-grid">
+            <div class="macro-box">
+              <div class="macro-title">
+                <span>Stance Dance: Überwältigen (Overpower)</span>
+                <button class="copy-pill" onclick="copyMacro(this)">Kopieren</button>
+              </div>
+              <div class="macro-code">#showtooltip Overpower
+/cast [nostance:1] Battle Stance
+/cast Overpower</div>
+            </div>
+
+            <div class="macro-box">
+              <div class="macro-title">
+                <span>Notfall Schildwall / Schildblock</span>
+                <button class="copy-pill" onclick="copyMacro(this)">Kopieren</button>
+              </div>
+              <div class="macro-code">#showtooltip Shield Wall
+/cast [nostance:2] Defensive Stance
+/equip [noequipped:Shields] 1H_Waffenname
+/equip [noequipped:Shields] Schildname
+/cast Shield Wall</div>
+            </div>
+          </div>
+        </div>
+      </section>
+            <!-- ================= 11. DRUID ================= -->
+      <section id="tab-druid" class="tab-pane">
+        <div class="pane-header">
+          <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_druid.jpg" class="wow-icon large" alt="Druid"> Druide (Druid) – Umfassender Leitfaden (1–60)</h2>
+          <p class="pane-subtitle">Wird ab Katze (Stufe 20) und Reisegestalt (Stufe 30) zur schnellsten und unabhängigsten Hybrid-Klasse.</p>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>📊 Attributs-Gewichtung (Stat Priority)</h3>
+          <div class="stat-prio-bar">
+            <span class="stat-chip">Beweglichkeit (Agility)</span>
+            <span class="stat-arrow">&gt;</span>
+            <span class="stat-chip">Stärke (Strength)</span>
+            <span class="stat-arrow">&gt;</span>
+            <span class="stat-chip">Ausdauer (Stamina)</span>
+            <span class="stat-arrow">&gt;</span>
+            <span class="stat-chip">Intelligenz (Intellect)</span>
+            <span class="stat-arrow">&gt;</span>
+            <span class="stat-chip">Willenskraft (Spirit)</span>
+          </div>
+          <p class="card-desc">1 Punkt Stärke liefert 2 Angriffskraft in Katzengestalt. Beweglichkeit erhöht Crit, Angriffskraft und Rüstung. Waffen-DPS zählt in Gestalt NICHT – nur die Attribute auf der Waffe!</p>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>🐾 Exakter Kampf-Ablauf (Feral Cat & Bear)</h3>
+          <div class="card">
+            <h4>Solo Pull & Kampf-Rotation:</h4>
+            <p>1. <strong>Stufe 1 bis 9:</strong> Aus der Ferne mit <em>Zorn (Wrath)</em> pullen, <em>Mondfeuer</em> drauf, mit Stab zuschlagen.<br>
+            2. <strong>Stufe 10 bis 19 (Bär):</strong> Mit Mondfeuer pullen $\rightarrow$ in <strong>Bärengestalt</strong> gehen $\rightarrow$ <em>Zermalmen (Maul)</em> und <em>Demoralisierendes Gebrüll</em> nutzen.<br>
+            3. <strong>Stufe 20+ (Katze):</strong> Aus Verstohlenheit mit <strong>Anspringen (Pounce)</strong> oder <strong>Krallenhieb (Rake)</strong> eröffnen.<br>
+            4. <strong>Kombopunkte sammeln:</strong> <strong>Klaue (Claw)</strong> durchdrücken.<br>
+            5. <strong>Finisher:</strong> Bei 4–5 Punkten <strong>Wilder Biss (Ferocious Bite)</strong>.<br>
+            6. <strong>Zero-Downtime Shifting:</strong> Nach dem Mob kurz rausshiften $\rightarrow$ <em>Verjüngung</em> oder <em>Nachwachsen</em> aufsetzen $\rightarrow$ sofort wieder in Katze shiften und zum nächsten Mob laufen (währenddessen regeneriert Mana!).</p>
+          </div>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>🌳 Punkt-für-Punkt Talent-Fahrplan (10–60 Wilder Kampf)</h3>
+          <table class="detailed-talent-table">
+            <thead>
+              <tr>
+                <th>Stufe</th>
+                <th>Talent & Punkte</th>
+                <th>Baum</th>
+                <th>Effekt & Nutzen</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>10 – 14</strong></td>
+                <td><span class="point-tag">5/5</span> Ferizität (Ferocity)</td>
+                <td>Wilder Kampf</td>
+                <td>Senkt die Kosten von Klaue und Zermalmen um 5 Wut/Energie – spürbar mehr Angriffe.</td>
+              </tr>
+              <tr>
+                <td><strong>15 – 19</strong></td>
+                <td><span class="point-tag">5/5</span> Wilde Aggression</td>
+                <td>Wilder Kampf</td>
+                <td>Erhöht den Schaden von Wilder Biss um 15%.</td>
+              </tr>
+              <tr class="highlight-row">
+                <td><strong>20 – 21</strong></td>
+                <td><span class="point-tag">2/2</span> Katzenschnelligkeit</td>
+                <td>Wilder Kampf</td>
+                <td><strong>+30% Lauftempo im Freien in Katzengestalt!</strong> Macht dich extrem schnell beim Reisen.</td>
+              </tr>
+              <tr>
+                <td><strong>22 – 26</strong></td>
+                <td><span class="point-tag">5/5</span> Dickfell (Thick Hide)</td>
+                <td>Wilder Kampf</td>
+                <td>+10% Rüstung durch Gegenstände (macht Bärengestalt zum Panzer).</td>
+              </tr>
+              <tr>
+                <td><strong>27 – 29</strong></td>
+                <td><span class="point-tag">3/3</span> Schärfen der Krallen</td>
+                <td>Wilder Kampf</td>
+                <td>+6% Kritische Trefferchance in Katzen- und Bärengestalt.</td>
+              </tr>
+              <tr class="highlight-row">
+                <td><strong>30</strong></td>
+                <td><span class="point-tag">1/1</span> Feenfeuer (Tiergestalt)</td>
+                <td>Wilder Kampf</td>
+                <td>Senkt die Rüstung des Mobs um hunderte Punkte und verhindert Verstohlenheit (auch Fernkampf-Puller!).</td>
+              </tr>
+              <tr>
+                <td><strong>31 – 35</strong></td>
+                <td><span class="point-tag">5/5</span> Herz der Wildnis (Heart of the Wild)</td>
+                <td>Wilder Kampf</td>
+                <td>+20% Stärke in Katzengestalt und +20% Ausdauer in Bärengestalt – gigantischer Stat-Boost.</td>
+              </tr>
+              <tr class="highlight-row">
+                <td><strong>40</strong></td>
+                <td><span class="point-tag">1/1</span> Rudelführer (Leader of the Pack)</td>
+                <td>Wilder Kampf</td>
+                <td>Aura: Erhöht die Nahkampf- und Distanz-Critchance aller Gruppenmitglieder um 3%!</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>🐾 Wichtige Stat-Stäbe (Waffen-DPS zählt NICHT in Gestalt!)</h3>
+          <div class="table-card">
+            <table class="simple-table">
+              <thead>
+                <tr>
+                  <th>Stufe</th>
+                  <th>Gegenstand</th>
+                  <th>Quelle & Fundort</th>
+                  <th>Attribute</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="highlight-row">
+                  <td><strong>18+</strong></td>
+                  <td><strong>Mondsichel-Stab (Crescent Staff)</strong></td>
+                  <td><strong>Höhlen des Wehklagens (WC) Quest</strong></td>
+                  <td><strong>+7 Ausdauer, +7 Intelligenz, +7 Willenskraft</strong></td>
+                </tr>
+                <tr class="highlight-row">
+                  <td><strong>29+</strong></td>
+                  <td><strong>Handbetriebener Puzzler (Manual Crowd Pummeler)</strong></td>
+                  <td><strong>Gnomeregan – Crowd Pummeler 9-60</strong></td>
+                  <td><strong>+50% Angriffs-Speed Aktivierbar! (Bester Druidenstab)</strong></td>
+                </tr>
+                <tr>
+                  <td>43+</td>
+                  <td>Felsenhauer / Warden Staff</td>
+                  <td>World Drop oder Questbelohnungen</td>
+                  <td>Reine Rüstung & Ausdauer</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>⚙️ Unverzichtbare Druiden-Makros</h3>
+          <div class="macro-grid">
+            <div class="macro-box">
+              <div class="macro-title">
+                <span>Power-Shifting Katze (Entfernt Roots/Slows)</span>
+                <button class="copy-pill" onclick="copyMacro(this)">Kopieren</button>
+              </div>
+              <div class="macro-code">#showtooltip Cat Form
+/cancelform [noform:3]
+/cast !Cat Form</div>
+            </div>
+
+            <div class="macro-box">
+              <div class="macro-title">
+                <span>Notfall Heilung aus Gestalt (1 Klick)</span>
+                <button class="copy-pill" onclick="copyMacro(this)">Kopieren</button>
+              </div>
+              <div class="macro-code">#showtooltip Healing Touch
+/cancelform
+/cast [@player] Healing Touch</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= 12. SHAMAN ================= -->
+      <section id="tab-shaman" class="tab-pane">
+        <div class="pane-header">
+          <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_shaman.jpg" class="wow-icon large" alt="Shaman"> Schamane (Shaman) – Umfassender Leitfaden (1–60)</h2>
+          <p class="pane-subtitle">Geisterwolf ab Stufe 20 für schnelles Reisen, mächtige Totems und gigantische Windzorn-Bursts ab Stufe 30.</p>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>📊 Attributs-Gewichtung (Stat Priority)</h3>
+          <div class="stat-prio-bar">
+            <span class="stat-chip">Stärke (Strength)</span>
+            <span class="stat-arrow">&gt;</span>
+            <span class="stat-chip">Beweglichkeit (Agility)</span>
+            <span class="stat-arrow">&gt;</span>
+            <span class="stat-chip">Ausdauer (Stamina)</span>
+            <span class="stat-arrow">&gt;</span>
+            <span class="stat-chip">Intelligenz (Intellect)</span>
+            <span class="stat-arrow">&gt;</span>
+            <span class="stat-chip">Willenskraft (Spirit)</span>
+          </div>
+          <p class="card-desc">Stärke erhöht die Nahkampf-Angriffskraft direkt. Beweglichkeit sorgt für kritische Treffer, die deinen <em>Schlaghagel (Flurry)</em> dauerhaft auslösen.</p>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>⚡ Exakter Kampf-Ablauf (Verstärkung)</h3>
+          <div class="card">
+            <h4>Solo Pull & Totem-Rotation:</h4>
+            <p>1. <strong>Waffen-Verzauberung prüfen:</strong> Bis Stufe 29 immer <strong>Felsbeißer (Rockbiter)</strong> auf der Waffe halten. Ab Stufe 30 sofort auf <strong>Waffe des Windzorns (Windfury)</strong> wechseln!<br>
+            2. <strong>Pull:</strong> <em>Blitzschlag (Lightning Bolt)</em> auf maximale Distanz casten $\rightarrow$ <em>Flammenschock</em> setzen.<br>
+            3. <strong>Totems stellen:</strong> <em>Totem der Erdstärke</em> (+Stärke) und <em>Totem der Verbrennung</em> (Zusatz-Feuerschaden) direkt vor deine Füße stellen.<br>
+            4. <strong>Nahkampf:</strong> Mit langsamer Zweihandwaffe draufhauen. <em>Erdschock</em> bereit halten, um gefährliche Zauber der Mobs sofort zu kicken.<br>
+            5. <strong>Geisterwolf:</strong> Beim Reisen im Freien immer sofort in den Geisterwolf wechseln (+40% Tempo).</p>
+          </div>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>🌳 Punkt-für-Punkt Talent-Fahrplan (10–60 Verstärkung)</h3>
+          <table class="detailed-talent-table">
+            <thead>
+              <tr>
+                <th>Stufe</th>
+                <th>Talent & Punkte</th>
+                <th>Baum</th>
+                <th>Effekt & Nutzen</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>10 – 14</strong></td>
+                <td><span class="point-tag">5/5</span> Wissen der Ahnen</td>
+                <td>Verstärkung</td>
+                <td>+5% maximales Mana – wichtig für Totems und Schockzauber.</td>
+              </tr>
+              <tr class="highlight-row">
+                <td><strong>15 – 19</strong></td>
+                <td><span class="point-tag">5/5</span> Donnernde Stöße</td>
+                <td>Verstärkung</td>
+                <td><strong>+5% Nahkampf-Critchance!</strong> Grundvoraussetzung, um Schlaghagel auszulösen.</td>
+              </tr>
+              <tr>
+                <td><strong>20 – 21</strong></td>
+                <td><span class="point-tag">2/2</span> Verbesserter Geisterwolf</td>
+                <td>Verstärkung</td>
+                <td>Reduziert die Zauberzeit des Geisterwolfs um 2 Sekunden – fast Spontanzauber im Laufen!</td>
+              </tr>
+              <tr class="highlight-row">
+                <td><strong>22 – 26</strong></td>
+                <td><span class="point-tag">5/5</span> Schlaghagel (Flurry)</td>
+                <td>Verstärkung</td>
+                <td><strong>+30% Angriffsgeschwindigkeit</strong> für die nächsten 3 Schläge nach einem kritischen Treffer!</td>
+              </tr>
+              <tr>
+                <td><strong>27 – 29</strong></td>
+                <td><span class="point-tag">3/3</span> Elementarwaffen</td>
+                <td>Verstärkung</td>
+                <td>Bufft den Angriffskraft-Bonus von Felsbeißer um 20% und Windfury um 40%.</td>
+              </tr>
+              <tr class="highlight-row">
+                <td><strong>30</strong></td>
+                <td><span class="point-tag">1/1</span> Zweihandäxte und Zweihandkolben</td>
+                <td>Verstärkung</td>
+                <td>Erlaubt das Tragen mächtiger Zweihandwaffen (ab hier explodieren Windzorn-Crits!).</td>
+              </tr>
+              <tr>
+                <td><strong>31 – 35</strong></td>
+                <td><span class="point-tag">5/5</span> Zähigkeit (Toughness)</td>
+                <td>Verstärkung</td>
+                <td>+10% Rüstungswert durch Gegenstände.</td>
+              </tr>
+              <tr class="highlight-row">
+                <td><strong>40</strong></td>
+                <td><span class="point-tag">1/1</span> Sturmschlag (Stormstrike)</td>
+                <td>Verstärkung</td>
+                <td>Sofortiger Waffenschlag mit beiden Händen + gewährt 20% mehr Naturschaden für den nächsten Schock.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>⚡ Langsame 2-Hand-Waffen (Maximiert Windfury-One-Shots!)</h3>
+          <div class="table-card">
+            <table class="simple-table">
+              <thead>
+                <tr>
+                  <th>Stufe</th>
+                  <th>Waffe & Typ</th>
+                  <th>Quelle & Fundort</th>
+                  <th>Tempo / Besonderheit</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>10–17</td>
+                  <td>Kupferne Streitaxt / Händler-Kolben</td>
+                  <td>Startgebiet Quests / Schmied</td>
+                  <td>Basis-Waffen</td>
+                </tr>
+                <tr class="highlight-row">
+                  <td><strong>18+</strong></td>
+                  <td><strong>Mondsichel-Stab / Felsspalter</strong></td>
+                  <td><strong>Höhlen des Wehklagens Quest</strong></td>
+                  <td><strong>Tempo 2.9 – Hervorragender Schadensanstieg</strong></td>
+                </tr>
+                <tr class="highlight-row">
+                  <td><strong>29+</strong></td>
+                  <td><strong>Leichenmacher (Corpsemaker)</strong></td>
+                  <td><strong>Kral von Razorfen (Ramtusk Drop)</strong></td>
+                  <td><strong>Tempo 3.8 – Die legendäre Schamanenwaffe für den Stufe-30-Windfury-Powerspike!</strong></td>
+                </tr>
+                <tr>
+                  <td>40+</td>
+                  <td>Kopfloser Kolben / Schlingendorntal Äxte</td>
+                  <td>Dungeon-Drops / STV Quests</td>
+                  <td>Hoher Waffengrundschaden</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>⚙️ Unverzichtbare Schamanen-Makros</h3>
+          <div class="macro-grid">
+            <div class="macro-box">
+              <div class="macro-title">
+                <span>Startattack & Erdschock (Kick-Ready)</span>
+                <button class="copy-pill" onclick="copyMacro(this)">Kopieren</button>
+              </div>
+              <div class="macro-code">#showtooltip Earth Shock
+/startattack
+/cast Earth Shock</div>
+            </div>
+
+            <div class="macro-box">
+              <div class="macro-title">
+                <span>Totem-Recall / Zerstören (Verhindert Adds)</span>
+                <button class="copy-pill" onclick="copyMacro(this)">Kopieren</button>
+              </div>
+              <div class="macro-code">/petfollow
+/cast [@player] Healing Stream Totem</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
