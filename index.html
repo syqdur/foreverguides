@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=9">
+  <link rel="stylesheet" href="style.css?v=10">
 </head>
 <body class="dark-theme">
 
@@ -42,7 +42,7 @@
     <div class="top-announcement-content">
       <div class="announcement-left">
         <span class="announcement-icon">⚠️</span>
-        <span class="announcement-text"><strong>Beta- & Launch-Hinweis:</strong> Inhalte bis Stufe 30 verbindlich bestätigt (31–60 laufend aktualisiert).</span>
+        <span class="announcement-text"><strong>Launch- & Patch-Status:</strong> Globaler Release am 5. Nov (00:00 CET). Alle Level-Guides, Zelt-Mechaniken & Pre-Launch Balance-Patches aktualisiert.</span>
       </div>
       <div class="announcement-right">
         <span class="rxp-pill-tag">🗺️ In-Game Levelguide</span>
@@ -434,6 +434,42 @@
 
             <div style="background: rgba(212, 163, 71, 0.1); border: 1px solid rgba(212, 163, 71, 0.3); padding: 0.75rem 1rem; border-radius: 6px; font-size: 0.88rem;">
               <strong>Speedrunner-Tipp mit RestedXP (RXP):</strong> Nutze das Addon <strong>RXPGuides</strong> (<a href="https://github.com/syqdur/foreverguides/blob/main/RXPGuides.zip" target="_blank" class="accent-link">Download oben</a>). Das Addon erkennt deinen Rested-XP-Status automatisch und berechnet, ob du Mobs auf dem Weg grinden solltest, um zeitraubende Umwege zu skippen!
+            </div>
+          </div>
+        </div>
+
+        <!-- Hotfix & Patch-Stand (Aktuelle Beta-Änderungen) -->
+        <div class="guide-chapter" style="margin-top: 1.5rem;">
+          <div class="card highlight-border" style="background: rgba(18, 25, 40, 0.95); border: 1px solid rgba(212, 163, 71, 0.5);">
+            <div style="display: flex; align-items: center; gap: 0.65rem; margin-bottom: 0.75rem;">
+              <span style="font-size: 1.4rem;">🔥</span>
+              <h3 style="color: #fcd34d; margin: 0; font-family: var(--font-heading);">Neueste Patch- & Balance-Änderungen (Pre-Launch Build)</h3>
+            </div>
+            
+            <p style="font-size: 0.92rem; line-height: 1.6; color: var(--text-main); margin-bottom: 1rem;">
+              Blizzard hat in den finalen Beta-Patches vor dem Launch wesentliche Anpassungen an Rassenfähigkeiten und Klassen-Tuning vorgenommen, um Bottlenecks zu vermeiden:
+            </p>
+
+            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 1rem;">
+              <div style="background: rgba(0,0,0,0.45); padding: 1rem; border-radius: 6px; border-left: 3px solid #fca5a5;">
+                <h4 style="color: #fca5a5; margin-top: 0;">Rassen-Balance (Keine Waffen-Specs)</h4>
+                <ul style="font-size: 0.84rem; color: var(--text-muted); padding-left: 1.15rem; line-height: 1.55;">
+                  <li><strong>Keine Waffen-Zwänge mehr:</strong> Frühere Waffenboni (wie Axt/Schwert-Kunde) wurden entfernt, damit Klassen nicht mehr an einen Waffentyp gefesselt sind.</li>
+                  <li><strong>Orcs:</strong> <em>Befehlsgewalt</em> (+5% Pet-Schaden für Jäger/Hexer) ist zurück. <em>Kochendes Blut</em> Cooldown auf 2 Min gesenkt.</li>
+                  <li><strong>Tauren:</strong> <em>Durchhaltevermögen</em> gewährt saubere +5% Basis-Gesundheit. <em>Ebenenlauf</em> stackt bis 60% Lauftempo.</li>
+                  <li><strong>Untote:</strong> <em>Berührung des Grabes</em> interner Cooldown auf 15s reduziert.</li>
+                </ul>
+              </div>
+
+              <div style="background: rgba(0,0,0,0.45); padding: 1rem; border-radius: 6px; border-left: 3px solid #67e8f9;">
+                <h4 style="color: #67e8f9; margin-top: 0;">Klassen-Tuning & Leveling-Buffs</h4>
+                <ul style="font-size: 0.84rem; color: var(--text-muted); padding-left: 1.15rem; line-height: 1.55;">
+                  <li><strong>Schamane:</strong> <em>Wasserschild</em> procct nun bei allen kritischen Treffern (auch Zauber/Damage). Früherer Zugriff auf <em>Lavaeruption</em>.</li>
+                  <li><strong>Druide:</strong> Feral-Schaden pauschal um +5% angehoben; Burst-Heilung (Nachwachsen +10%, Rasche Heilung +40%) spürbar verstärkt.</li>
+                  <li><strong>Hexenmeister:</strong> <em>Instabiles Gebrechen</em> und <em>Feuerregen</em> um +20% Schaden gebufft.</li>
+                  <li><strong>Jäger:</strong> Flächenschaden (Mehrfachschuss / Salve) verstärkt (+10% Schaden).</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -3150,7 +3186,7 @@
     <span class="fab-text">Leitfäden</span>
   </button>
 
-  <script src="script.js?v=9"></script>
+  <script src="script.js?v=10"></script>
 </body>
 </html>
 
