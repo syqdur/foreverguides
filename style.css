@@ -1027,7 +1027,9 @@ tr.highlight-row td:first-child { box-shadow: inset 4px 0 0 var(--gold); }
 /* =================== AUF DIESER SEITE =================== */
 .page-toc { display: none; }
 @media (min-width: 1500px) {
-  .tab-pane { margin: 0 280px 0 auto; }
+  /* Platz für die Inhaltsliste rechts reservieren, Inhalt bleibt zentriert */
+  body.has-toc .content-panel { padding-right: 300px; }
+  .tab-pane, .app-global-footer { max-width: 1200px; }
   .page-toc.show {
     display: flex; flex-direction: column; gap: 0.15rem;
     position: fixed; right: 1.25rem; top: 92px; width: 240px;

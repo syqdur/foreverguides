@@ -187,9 +187,9 @@ function initToc() {
   function build() {
     const pane = document.querySelector('.tab-pane.active');
     toc.textContent = '';
-    if (!pane) return;
+    if (!pane) { document.body.classList.remove('has-toc'); return; }
     const heads = [...pane.querySelectorAll('.guide-chapter > h3')].filter(visible);
-    if (heads.length < 3) { toc.classList.remove('show'); return; }
+    if (heads.length < 3) { toc.classList.remove('show'); document.body.classList.remove('has-toc'); return; }
     const title = document.createElement('span');
     title.className = 'page-toc-title';
     title.textContent = 'Auf dieser Seite';
@@ -205,6 +205,7 @@ function initToc() {
       toc.appendChild(a);
     });
     toc.classList.add('show');
+    document.body.classList.add('has-toc');
   }
 
   document.addEventListener('pagechange', build);
