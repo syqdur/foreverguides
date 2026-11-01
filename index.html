@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Pixelify+Sans:wght@500;600;700&family=Inter:wght@400;500;600;700&family=VT323&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=14">
+  <link rel="stylesheet" href="style.css?v=15">
 </head>
 <body class="dark-theme">
 
@@ -38,122 +38,62 @@
       </div>
     </div>
   </header>
-  <!-- Unified Sleek Top Bar: Beta Disclaimer + Levelguide Download -->
-  <div class="top-announcement-bar">
-    <div class="top-announcement-content">
-      <div class="announcement-left">
-        <span class="announcement-icon">⚠️</span>
-        <span class="announcement-text"><strong>Stand 1. Nov 2026:</strong> Launch am 5. Nov um 00:00 Uhr MEZ. Ranking & Patch-Stand inkl. ausgelesener Launch-Hotfixes vom 30. Okt.</span>
-      </div>
-      <div class="announcement-right">
-        <span class="rxp-pill-tag">🗺️ In-Game Levelguide</span>
-        <a href="https://github.com/syqdur/foreverguides/blob/main/RXPGuides.zip" target="_blank" class="rxp-download-pill">
-          <span>📥</span> RXPGuides.zip (GitHub) ↗
-        </a>
-      </div>
-    </div>
-  </div>
-
   <!-- Main Container: Sidebar + Content -->
   <div class="layout-wrapper">
-    <!-- Left Navigation Sidebar -->
     <aside class="sidebar" id="sidebarNav">
-      <div class="sidebar-scrollable">
-        <div class="nav-group">
-          <span class="nav-heading">Start</span>
-          <button class="nav-tab active" data-target="tab-home">
-            <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_book_11.jpg" class="wow-icon" alt=""> Vorwort & Launch
-          </button>
-          <button class="nav-tab" data-target="tab-ranking">
-            <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_trophy_argent.jpg" class="wow-icon" alt=""> Klassen-Ranking <span class="nav-new">NEU</span>
-          </button>
-          <button class="nav-tab" data-target="tab-news">
-            <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_scroll_03.jpg" class="wow-icon" alt=""> Was ist neu & Patch-Stand
-          </button>
-          <button class="nav-tab" data-target="tab-patchnotes">
-            <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_pocketwatch_01.jpg" class="wow-icon" alt=""> Live-Patchnotes <span class="nav-new">LIVE</span>
-          </button>
-        </div>
-
-        <div class="nav-group">
-          <span class="nav-heading">Allgemeine Planung</span>
-          <button class="nav-tab" data-target="tab-timeline">
-            <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_map02.jpg" class="wow-icon" alt="Map"> Stufen-Fahrplan (1–60)
-          </button>
-          <button class="nav-tab" data-target="tab-questing">
-            <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_book_09.jpg" class="wow-icon" alt="Quests"> Questing-Route (1–30)
-          </button>
-          <button class="nav-tab" data-target="tab-gold">
-            <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_coin_02.jpg" class="wow-icon" alt="Gold"> Mount-Gold Guide (Stufe 40)
-          </button>
-          <button class="nav-tab" data-target="tab-rules">
-            <img src="https://wow.zamimg.com/images/wow/icons/medium/spell_lightning_lightningbolt01.jpg" class="wow-icon" alt="Rules"> Wichtige Grundlagen
-          </button>
-          <button class="nav-tab" data-target="tab-addons">
-            <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_enggizmos_17.jpg" class="wow-icon" alt="Addons"> Addons & UI-Codes
-          </button>
-          <button class="nav-tab" data-target="tab-sleepingbag">
-            <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_bag_10.jpg" class="wow-icon" alt="Bag"> Schlafsack-Route (Lv 14)
-          </button>
-          <button class="nav-tab" data-target="tab-buffs">
-            <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_food_15.jpg" class="wow-icon" alt="Food"> Buff-Food, Zelte & Camps
-          </button>
-          <button class="nav-tab" data-target="tab-changelog">
-            <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_note_01.jpg" class="wow-icon" alt="Changelog"> Changelog & Version
-          </button>
-        </div>
-
-        <div class="nav-group">
-          <span class="nav-heading">Klassen-Leitfäden (Leveling)</span>
-          <button class="nav-tab" data-target="tab-priest">
-            <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_priest.jpg" class="wow-icon" alt="Priest"> Priester (Priest)
-          </button>
-          <button class="nav-tab" data-target="tab-hunter">
-            <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_hunter.jpg" class="wow-icon" alt="Hunter"> Jäger (Hunter)
-          </button>
-          <button class="nav-tab" data-target="tab-mage">
-            <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_mage.jpg" class="wow-icon" alt="Mage"> Magier (Mage)
-          </button>
-          <button class="nav-tab" data-target="tab-warlock">
-            <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_warlock.jpg" class="wow-icon" alt="Warlock"> Hexenmeister (Warlock)
-          </button>
-          <button class="nav-tab" data-target="tab-rogue">
-            <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_rogue.jpg" class="wow-icon" alt="Rogue"> Schurke (Rogue)
-          </button>
-          <button class="nav-tab" data-target="tab-warrior">
-            <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_warrior.jpg" class="wow-icon" alt="Warrior"> Krieger (Warrior)
-          </button>
-          <button class="nav-tab" data-target="tab-druid">
-            <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_druid.jpg" class="wow-icon" alt="Druid"> Druide (Druid)
-          </button>
-          <button class="nav-tab" data-target="tab-shaman">
-            <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_shaman.jpg" class="wow-icon" alt="Shaman"> Schamane (Shaman)
-          </button>
-          <button class="nav-tab" data-target="tab-paladin">
-            <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_paladin.jpg" class="wow-icon" alt="Paladin"> Paladin (Untot) <span class="nav-new">NEU</span>
-          </button>
-        </div>
+      <div class="sidebar-search">
+        <input id="siteSearch" type="search" placeholder="Suchen …  (Strg+K)" autocomplete="off" aria-label="Guides durchsuchen">
+        <div class="search-results" id="searchResults" hidden></div>
       </div>
-
-      <!-- Sidebar Bottom: Fixed Discord Guild Box (Unten Links) -->
-      <div class="sidebar-footer">
-        <div class="sidebar-discord-box">
-          <div class="discord-box-header">
-            <div class="discord-icon-badge">
-              <svg class="discord-svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
-              </svg>
-            </div>
-            <div class="discord-info">
-              <span class="discord-guild-tag">&lt;TEH CVLT&gt;</span>
-              <span class="discord-headline">Gilde beitreten</span>
-            </div>
+      <div class="sidebar-scrollable">
+        <nav class="nav-areas" aria-label="Bereiche">
+        <div class="nav-area single" data-area="start">
+          <button class="nav-area-btn" data-area-target="tab-home"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_book_11.jpg" class="wow-icon" alt=""> <span>Start</span></button>
+          <div class="nav-sub">
+            <button class="nav-tab" data-target="tab-home"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_book_11.jpg" class="wow-icon" alt=""> Vorwort & Launch</button>
           </div>
-          <a href="https://discord.gg/tehcvlt" target="_blank" rel="noopener noreferrer" class="discord-cta-btn" title="Gilden-Discord beitreten">
-            <span>discord.gg/tehcvlt</span>
-            <span class="arrow">↗</span>
-          </a>
         </div>
+        <div class="nav-area single" data-area="leveling">
+          <button class="nav-area-btn" data-area-target="tab-leveling"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_map02.jpg" class="wow-icon" alt=""> <span>Leveling 1–60</span></button>
+          <div class="nav-sub">
+            <button class="nav-tab" data-target="tab-leveling"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_map02.jpg" class="wow-icon" alt=""> Fahrplan & Route</button>
+          </div>
+        </div>
+        <div class="nav-area" data-area="classes">
+          <button class="nav-area-btn" data-area-target="tab-classes"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_trophy_argent.jpg" class="wow-icon" alt=""> <span>Klassen</span><span class=nav-caret>▸</span></button>
+          <div class="nav-sub">
+            <button class="nav-tab" data-target="tab-classes"><img src="https://wow.zamimg.com/images/wow/icons/medium/achievement_general.jpg" class="wow-icon" alt=""> Alle Klassen</button>
+            <button class="nav-tab" data-target="tab-ranking"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_trophy_argent.jpg" class="wow-icon" alt=""> Ranking</button>
+            <button class="nav-tab" data-target="tab-hunter"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_hunter.jpg" class="wow-icon" alt=""> Jäger</button>
+            <button class="nav-tab" data-target="tab-warlock"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_warlock.jpg" class="wow-icon" alt=""> Hexenmeister</button>
+            <button class="nav-tab" data-target="tab-paladin"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_paladin.jpg" class="wow-icon" alt=""> Paladin</button>
+            <button class="nav-tab" data-target="tab-mage"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_mage.jpg" class="wow-icon" alt=""> Magier</button>
+            <button class="nav-tab" data-target="tab-shaman"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_shaman.jpg" class="wow-icon" alt=""> Schamane</button>
+            <button class="nav-tab" data-target="tab-druid"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_druid.jpg" class="wow-icon" alt=""> Druide</button>
+            <button class="nav-tab" data-target="tab-rogue"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_rogue.jpg" class="wow-icon" alt=""> Schurke</button>
+            <button class="nav-tab" data-target="tab-priest"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_priest.jpg" class="wow-icon" alt=""> Priester</button>
+            <button class="nav-tab" data-target="tab-warrior"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_warrior.jpg" class="wow-icon" alt=""> Krieger</button>
+          </div>
+        </div>
+        <div class="nav-area" data-area="wissen">
+          <button class="nav-area-btn" data-area-target="tab-rules"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_book_09.jpg" class="wow-icon" alt=""> <span>Wissen</span><span class=nav-caret>▸</span></button>
+          <div class="nav-sub">
+            <button class="nav-tab" data-target="tab-rules"><img src="https://wow.zamimg.com/images/wow/icons/medium/spell_lightning_lightningbolt01.jpg" class="wow-icon" alt=""> Grundlagen</button>
+            <button class="nav-tab" data-target="tab-buffs"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_food_15.jpg" class="wow-icon" alt=""> Camps & Buffs</button>
+            <button class="nav-tab" data-target="tab-sleepingbag"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_bag_10.jpg" class="wow-icon" alt=""> Schlafsack (ab 14)</button>
+            <button class="nav-tab" data-target="tab-gold"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_coin_02.jpg" class="wow-icon" alt=""> Reit-Gold (100 G)</button>
+            <button class="nav-tab" data-target="tab-addons"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_enggizmos_17.jpg" class="wow-icon" alt=""> Addons & UI</button>
+          </div>
+        </div>
+        <div class="nav-area" data-area="patches">
+          <button class="nav-area-btn" data-area-target="tab-patchnotes"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_pocketwatch_01.jpg" class="wow-icon" alt=""> <span>Patches</span><span class=nav-caret>▸</span></button>
+          <div class="nav-sub">
+            <button class="nav-tab" data-target="tab-patchnotes"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_pocketwatch_01.jpg" class="wow-icon" alt=""> Live-Patchnotes <span class="nav-new">LIVE</span></button>
+            <button class="nav-tab" data-target="tab-news"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_scroll_03.jpg" class="wow-icon" alt=""> Was ist neu</button>
+            <button class="nav-tab" data-target="tab-changelog"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_note_01.jpg" class="wow-icon" alt=""> Seiten-Changelog</button>
+          </div>
+        </div>
+        </nav>
       </div>
     </aside>
 
@@ -201,13 +141,112 @@
         <div class="guide-chapter">
           <h3>Schnellstart</h3>
           <div class="quick-links">
-            <button class="quick-link" data-goto="tab-ranking"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_trophy_argent.jpg" class="wow-icon" alt=""> Welche Klasse spielen?</button>
-            <button class="quick-link" data-goto="tab-timeline"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_map02.jpg" class="wow-icon" alt=""> Fahrplan 1–60</button>
-            <button class="quick-link" data-goto="tab-questing"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_book_09.jpg" class="wow-icon" alt=""> Questing-Route 1–30</button>
+            <button class="quick-link" data-goto="tab-classes"><img src="https://wow.zamimg.com/images/wow/icons/medium/achievement_general.jpg" class="wow-icon" alt=""> Welche Klasse spielen?</button>
+            <button class="quick-link" data-goto="tab-leveling"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_map02.jpg" class="wow-icon" alt=""> Leveling 1–60</button>
             <button class="quick-link" data-goto="tab-buffs"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_food_15.jpg" class="wow-icon" alt=""> Camp- & XP-Routine</button>
             <button class="quick-link" data-goto="tab-gold"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_coin_02.jpg" class="wow-icon" alt=""> 100 Gold fürs Reittier</button>
-            <button class="quick-link" data-goto="tab-news"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_scroll_03.jpg" class="wow-icon" alt=""> Patch-Stand lesen</button>
+            <button class="quick-link" data-goto="tab-patchnotes"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_pocketwatch_01.jpg" class="wow-icon" alt=""> Live-Patchnotes</button>
           </div>
+        </div>
+      </section>
+
+      <!-- ================= KLASSEN-ÜBERSICHT ================= -->
+      <section id="tab-classes" class="tab-pane">
+        <div class="pane-header">
+          <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/achievement_general.jpg" class="wow-icon large" alt=""> Alle Klassen</h2>
+          <p class="pane-subtitle">Sortiert nach Leveling-Tier (Stand 1. Nov 2026). Klick auf eine Klasse öffnet ihren Guide. Begründungen stehen im <a href="#" class="accent-link" data-goto="tab-ranking">Ranking</a>.</p>
+        </div>
+        <div class="class-grid">
+          <button class="class-card" data-goto="tab-hunter">
+            <span class="class-card-tier t-s">S</span>
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_hunter.jpg" alt="">
+            <span class="class-card-body">
+              <b class="c-hunter">Jäger</b>
+              <small class="class-card-roles">Schaden</small>
+              <small>Pet tankt ab 10, kaum Pausen. Der sicherste Weg auf 60.</small>
+              <small class="class-card-races">Horde: Orc, Troll, Tauren, Untot, Skyborne</small>
+            </span>
+          </button>
+          <button class="class-card" data-goto="tab-warlock">
+            <span class="class-card-tier t-a">A</span>
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_warlock.jpg" alt="">
+            <span class="class-card-body">
+              <b class="c-warlock">Hexenmeister</b>
+              <small class="class-card-roles">Schaden</small>
+              <small>Leerwandler und DoTs, sehr sicher. Langsamer Start bis 10.</small>
+              <small class="class-card-races">Horde: Orc, Untot, Troll (neu)</small>
+            </span>
+          </button>
+          <button class="class-card" data-goto="tab-paladin">
+            <span class="class-card-tier t-a">A</span>
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_paladin.jpg" alt="">
+            <span class="class-card-body">
+              <b class="c-paladin">Paladin</b>
+              <small class="class-card-roles">Tank · Heiler · Schaden</small>
+              <small>Platte und Selbstheilung. Auf 60 einer der gefragtesten Tanks.</small>
+              <small class="class-card-races">Horde: nur Untot (neu)</small>
+            </span>
+          </button>
+          <button class="class-card" data-goto="tab-mage">
+            <span class="class-card-tier t-a">A</span>
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_mage.jpg" alt="">
+            <span class="class-card-body">
+              <b class="c-mage">Magier</b>
+              <small class="class-card-roles">Schaden</small>
+              <small>Schnellste AoE-Kills, aber Manaprobleme um Stufe 30.</small>
+              <small class="class-card-races">Horde: Troll, Untot, Orc (neu)</small>
+            </span>
+          </button>
+          <button class="class-card" data-goto="tab-shaman">
+            <span class="class-card-tier t-a">A</span>
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_shaman.jpg" alt="">
+            <span class="class-card-body">
+              <b class="c-shaman">Schamane</b>
+              <small class="class-card-roles">Heiler · Schaden · Tank</small>
+              <small>Allrounder mit Geisterwolf und Selbstheilung.</small>
+              <small class="class-card-races">Horde: Orc, Tauren, Troll, Skyborne</small>
+            </span>
+          </button>
+          <button class="class-card" data-goto="tab-druid">
+            <span class="class-card-tier t-b">B</span>
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_druid.jpg" alt="">
+            <span class="class-card-body">
+              <b class="c-druid">Druide</b>
+              <small class="class-card-roles">Alle Rollen</small>
+              <small>Zäher Start, ab Katze (20) sehr flüssig. Top-Heiler auf 60.</small>
+              <small class="class-card-races">Horde: Tauren, Skyborne</small>
+            </span>
+          </button>
+          <button class="class-card" data-goto="tab-rogue">
+            <span class="class-card-tier t-b">B</span>
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_rogue.jpg" alt="">
+            <span class="class-card-body">
+              <b class="c-rogue">Schurke</b>
+              <small class="class-card-roles">Schaden</small>
+              <small>Stealth und PvP-Stärke, stark abhängig von der Ausrüstung.</small>
+              <small class="class-card-races">Horde: Orc, Untot, Troll, Skyborne</small>
+            </span>
+          </button>
+          <button class="class-card" data-goto="tab-priest">
+            <span class="class-card-tier t-b">B</span>
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_priest.jpg" alt="">
+            <span class="class-card-body">
+              <b class="c-priest">Priester</b>
+              <small class="class-card-roles">Heiler · Schaden</small>
+              <small>Sicherste Klasse, langsame Kills. Auf 60 S-Tier-Heiler.</small>
+              <small class="class-card-races">Horde: Untot, Troll</small>
+            </span>
+          </button>
+          <button class="class-card" data-goto="tab-warrior">
+            <span class="class-card-tier t-c">C</span>
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_warrior.jpg" alt="">
+            <span class="class-card-body">
+              <b class="c-warrior">Krieger</b>
+              <small class="class-card-roles">Tank · Schaden</small>
+              <small>Solo am härtesten, in der Gruppe und auf 60 sehr stark.</small>
+              <small class="class-card-races">Horde: Orc, Tauren, Troll, Untot, Skyborne</small>
+            </span>
+          </button>
         </div>
       </section>
 
@@ -219,7 +258,7 @@
         </div>
 
         <div class="notice gold">
-          <h3>⚠ Wie belastbar ist das?</h3>
+          <h3>Wie belastbar ist das?</h3>
           <p>Die Beta war bis <strong>Stufe 30</strong> offen. Das <strong>Leveling-Ranking</strong> ist deshalb recht verlässlich. <strong>Endgame und PvP</strong> sind eine Prognose: Niemand hat bisher öffentlich auf 60 geraidet. Raids öffnen am 9. Dezember. Spiel, was dir Spaß macht, denn ein Tier Unterschied kostet beim Leveln Stunden, nicht Tage.</p>
         </div>
 
@@ -345,14 +384,14 @@
         <div class="guide-chapter">
           <h3>Die großen Systeme</h3>
           <div class="card-grid">
-            <div class="card"><h4>🏕️ Camping</h4><p>Ab etwa Stufe 5 über Quests wie <em>„The Great Outdoors“</em>. Bis zu 3 Spieler legen je ein hergestelltes Objekt an ein Lagerfeuer. Alle Camp-Funktionen teilen sich <strong>1 Stunde Abklingzeit</strong>. Berufs-Buffs ab Skill 20. Das <strong>Abenteurer-Zelt</strong> ist laut Build vom 30. Okt wieder rein kosmetisch.</p></div>
-            <div class="card"><h4>💤 Gemütlicher Schlafsack</h4><p>Ab Stufe 14 per Schnitzeljagd (Start im Brachland oder in Westfall). Stapelnder XP-Buff plus Erholung beim Ausloggen. <a href="#" class="accent-link" data-goto="tab-sleepingbag">Route ansehen</a>.</p></div>
-            <div class="card"><h4>🐎 Reiten</h4><p>Wie in TBC: Mit dem Reitskill bekommst du das Reittier. <strong>Stufe 40: 100 Gold</strong> (60 %), <strong>Stufe 60: 1.000 Gold</strong>. Kein Fliegen. Neue Schiffsrouten, z. B. Gadgetzan ↔ Powderfuse Port (Riverglades).</p></div>
-            <div class="card"><h4>🔁 Dual-Spec & Umskillen</h4><p>Doppelte Spezialisierung ab <strong>Stufe 40 für 10 Gold</strong>. Umskillen wird mit der Zeit wieder günstiger, bis runter auf 1 Gold. Ideal: Leveln in Schaden, auf 60 heilen oder tanken.</p></div>
-            <div class="card"><h4>🏆 Legacy-System</h4><p>Account-weite Herausforderungen: eine Klasse auf <strong>25 / 40 / 60</strong> leveln. Gibt Legacy-Punkte (insgesamt 65, max. 16 pro Charakter) für Boni wie <em>Gut erholt</em> (+4 % Erholungs-XP pro Rang) und Belohnungen bis zum Spektralbär-Reittier.</p></div>
-            <div class="card"><h4>⚔️ Talente & Werte</h4><p>Alle Bäume überarbeitet, neuer 1-Punkt-Meilenstein bei 16 Punkten. <strong>Trefferwertung</strong> (Zauber, Nah- und Fernkampf) ist zusammengelegt, ebenso Crit. Göttlicher Willen, Segen der Könige und Verb. Mal der Wildnis sind jetzt Grundfähigkeiten.</p></div>
-            <div class="card"><h4>📚 Bibliotheksbücher</h4><p>Für alle Klassen offen. Abgaben bei 10, 20 und 25 Büchern. Lohnt sich unterwegs mitzunehmen.</p></div>
-            <div class="card"><h4>🧪 Berufe</h4><p>Viele neue Rezepte (Azeroth Commerce Authority / Durotar Supply). <em>Überstunden</em> erhöht die Skill-Chance um 4–20 %. Geringer Heiltrank wandert von Alchemie zu Erster Hilfe.</p></div>
+            <div class="card"><h4>Camping</h4><p>Ab etwa Stufe 5 über Quests wie <em>„The Great Outdoors“</em>. Bis zu 3 Spieler legen je ein hergestelltes Objekt an ein Lagerfeuer. Alle Camp-Funktionen teilen sich <strong>1 Stunde Abklingzeit</strong>. Berufs-Buffs ab Skill 20. Das <strong>Abenteurer-Zelt</strong> ist laut Build vom 30. Okt wieder rein kosmetisch.</p></div>
+            <div class="card"><h4>Gemütlicher Schlafsack</h4><p>Ab Stufe 14 per Schnitzeljagd (Start im Brachland oder in Westfall). Stapelnder XP-Buff plus Erholung beim Ausloggen. <a href="#" class="accent-link" data-goto="tab-sleepingbag">Route ansehen</a>.</p></div>
+            <div class="card"><h4>Reiten</h4><p>Wie in TBC: Mit dem Reitskill bekommst du das Reittier. <strong>Stufe 40: 100 Gold</strong> (60 %), <strong>Stufe 60: 1.000 Gold</strong>. Kein Fliegen. Neue Schiffsrouten, z. B. Gadgetzan ↔ Powderfuse Port (Riverglades).</p></div>
+            <div class="card"><h4>Dual-Spec & Umskillen</h4><p>Doppelte Spezialisierung ab <strong>Stufe 40 für 10 Gold</strong>. Umskillen wird mit der Zeit wieder günstiger, bis runter auf 1 Gold. Ideal: Leveln in Schaden, auf 60 heilen oder tanken.</p></div>
+            <div class="card"><h4>Legacy-System</h4><p>Account-weite Herausforderungen: eine Klasse auf <strong>25 / 40 / 60</strong> leveln. Gibt Legacy-Punkte (insgesamt 65, max. 16 pro Charakter) für Boni wie <em>Gut erholt</em> (+4 % Erholungs-XP pro Rang) und Belohnungen bis zum Spektralbär-Reittier.</p></div>
+            <div class="card"><h4>Talente & Werte</h4><p>Alle Bäume überarbeitet, neuer 1-Punkt-Meilenstein bei 16 Punkten. <strong>Trefferwertung</strong> (Zauber, Nah- und Fernkampf) ist zusammengelegt, ebenso Crit. Göttlicher Willen, Segen der Könige und Verb. Mal der Wildnis sind jetzt Grundfähigkeiten.</p></div>
+            <div class="card"><h4>Bibliotheksbücher</h4><p>Für alle Klassen offen. Abgaben bei 10, 20 und 25 Büchern. Lohnt sich unterwegs mitzunehmen.</p></div>
+            <div class="card"><h4>Berufe</h4><p>Viele neue Rezepte (Azeroth Commerce Authority / Durotar Supply). <em>Überstunden</em> erhöht die Skill-Chance um 4–20 %. Geringer Heiltrank wandert von Alchemie zu Erster Hilfe.</p></div>
           </div>
         </div>
 
@@ -460,17 +499,31 @@
         <p class="src-list" style="margin-top:1.5rem">Quelle: <a href="https://foreverchanges.pro/de/patch-notes" target="_blank" rel="noopener">ForeverChanges – Patchnotes</a>. Dort stehen auch alle Details Klasse für Klasse. Maschinell übersetzte Einträge sind mit <span class="pn-badge mt">ÜBERSETZT</span> markiert.</p>
       </section>
 
-      <!-- ================= 0. LEVEL ROADMAP (1-60) ================= -->
-      <section id="tab-timeline" class="tab-pane">
+      <!-- ================= LEVELING 1-60 (Fahrplan + Route) ================= -->
+      <section id="tab-leveling" class="tab-pane">
         <div class="pane-header">
-          <h2>Stufen-Fahrplan (Wann du was tun musst)</h2>
-          <p class="pane-subtitle">Die chronologische Checkliste von Stufe 1 bis 60 für alle Klassen.</p>
+          <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_map02.jpg" class="wow-icon large" alt=""> Leveling 1–60</h2>
+          <p class="pane-subtitle">Fahrplan und Horde-Questing-Route in einem. Wähle deinen Stufenbereich: oben die Checkliste, darunter die Route.</p>
         </div>
 
-        <div class="live-changes" data-live-topic="timeline"></div>
+        <div class="live-changes" data-live-topic="leveling"></div>
 
-        <div class="timeline-container">
-          
+        <div class="notice gold">
+          <p><strong>Grundregel:</strong> In Classic/Forever laufen Quests in Stufenbändern. Wer stur in einer Zone bleibt, quält sich ab Stufe 16 mit orangenen/roten Mobs herum. Das Geheimnis von Speedrunnern: <strong>Mehrfacher Zonenwechsel zum perfekten Level-Zeitpunkt</strong>, damit dein Questlog immer grün bis gelb bleibt.</p>
+        </div>
+
+        <div class="subtabs" role="tablist" aria-label="Stufenbereich">
+          <button class="subtab-btn active" data-subtab="1-12">Stufe 1–12</button>
+          <button class="subtab-btn" data-subtab="12-20">Stufe 12–20</button>
+          <button class="subtab-btn" data-subtab="20-30">Stufe 20–30</button>
+          <button class="subtab-btn" data-subtab="30-40">Stufe 30–40</button>
+          <button class="subtab-btn" data-subtab="40-60">Stufe 40–60</button>
+        </div>
+
+        <div class="subtab-panel active" data-subtab="1-12">
+          <div class="guide-chapter">
+            <h3>Checkliste Stufe 1–12</h3>
+            <div class="timeline-container">
           <div class="timeline-block">
             <div class="level-indicator">Stufe 1 – 5</div>
             <div class="timeline-body">
@@ -505,96 +558,9 @@
               </ul>
             </div>
           </div>
-
-          <div class="timeline-block">
-            <div class="level-indicator">Stufe 13 – 15</div>
-            <div class="timeline-body">
-              <h4>Brachland-Wechsel & erster neuer Dungeon</h4>
-              <ul>
-                <li><strong>Neue Dungeons:</strong> <em>Hall of Thanes</em> (13–18) und <em>Ruinen von Lordaeron</em> (15–22) einmal mit allen Quests mitnehmen.</li>
-                <li><strong>Zonenwechsel:</strong> Übergang ins Brachland (The Barrens) oder Silberwald. Heimatstein (Hearthstone) direkt im <em>Wegekreuz (Crossroads)</em> binden!</li>
-              </ul>
             </div>
           </div>
 
-          <div class="timeline-block highlight-block">
-            <div class="level-indicator">Stufe 14 – 16</div>
-            <div class="timeline-body">
-              <h4>Cozy Sleeping Bag (Schlafsack) Questreihe</h4>
-              <p>Der ideale Zeitpunkt für den Schlafsack-Ausflug:</p>
-              <ul>
-                <li><strong>Start im Brachland:</strong> Am abgebrannten Turm südlich von Camp Taurajo (<code>/way 46 74</code>).</li>
-                <li><strong>Dabei einsacken:</strong> <strong>12-Slot Tasche (Old Toolbox)</strong> in Stonetalon + <strong>5x Student Fodder</strong> + <strong>Schlafsack (+3% Dauer-XP)</strong>.</li>
-                <li><strong>Flugpunkte mitnehmen:</strong> Unterwegs in Booty Bay, Grom'gol, Tarren Mill die Flugpunkte einsammeln!</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="timeline-block">
-            <div class="level-indicator">Stufe 18 – 24</div>
-            <div class="timeline-body">
-              <h4>Erste Instanz-Quests</h4>
-              <ul>
-                <li><strong>Tiefschwarze Grotte (BFD):</strong> Quests sammeln und Instanz <strong>1x</strong> spielen. Seit Beta-Patch 8. Okt geben Dungeon-Mobs +20 % XP, der Quest-Bonus wurde dafür halbiert.</li>
-                <li><strong>Höhlen des Wehklagens (WC) / Burg Schattenfang (SFK):</strong> Vorher alle Quests im Brachland sammeln, einmal durchspielen, Belohnungen abgeben, weiterziehen.</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="timeline-block">
-            <div class="level-indicator">Stufe 30</div>
-            <div class="timeline-body">
-              <h4>Reisegestalten & Wirbelwindaxt</h4>
-              <ul>
-                <li><strong>Druide & Schamane:</strong> Reisegestalt (Druid) und Geisterwolf (Shaman) lernen (+40% Lauftempo).</li>
-                <li><strong>Krieger:</strong> Klassenquest für die <em>Wirbelwindaxt (Whirlwind Axe)</em> mit Hilfe von Gildenmitgliedern abschließen.</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="timeline-block highlight-block">
-            <div class="level-indicator">Stufe 40</div>
-            <div class="timeline-body">
-              <h4>Reittier & Doppelte Spezialisierung</h4>
-              <ul>
-                <li><strong>Reiten:</strong> <strong>100 Gold</strong> beim Reitlehrer deines Volkes, das 60%-Reittier ist inklusive. Kein Fliegen, daher dein größter Temposprung.</li>
-                <li><strong>Dual-Spec (10 Gold):</strong> Beim Klassenlehrer freischalten. Leveln in Schaden, zweite Spec für Dungeons (Heilen/Tanken).</li>
-                <li><strong>Priester:</strong> <em>Schattengestalt</em> mitnehmen, danach levelt der Priester deutlich schneller.</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="timeline-block">
-            <div class="level-indicator">Stufe 40 – 60</div>
-            <div class="timeline-body">
-              <h4>Die Zielgerade & Neue Forever-Zonen</h4>
-              <ul>
-                <li><strong>Riverglades (~35–45):</strong> Neue Zone mit über 150 Quests, neutraler Goblin-Hafen Powderfuse Port (Schiff ab Gadgetzan) und Dungeon <em>Krol'dok Stronghold</em> (40–45). Ideal ab Mitte 30.</li>
-                <li><strong>Danach (Classic-Erfahrung, unter Vorbehalt):</strong> Tanaris → Feralas / Hinterland → Krater von Un'Goro → Östliche Pestländer → Winterquell. Endgame-Zone: <strong>Hyjal</strong>.</li>
-                <li><strong>Instanzen:</strong> Zul'Farrak, Maraudon, BRD und die neuen <em>Alcaz-Gefängnis</em> (48–53) und <em>Blackmaw Hold</em> (55–60) für Quests mitnehmen.</li>
-              </ul>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      
-      <!-- ================= QUESTING LEITFADEN (1-30) ================= -->
-      <section id="tab-questing" class="tab-pane">
-        <div class="pane-header">
-          <h2>Horde Speed-Questing Leitfaden (1–30)</h2>
-          <p class="pane-subtitle">Die mathematisch schnellste Zonen- und Hub-Reihenfolge (basierend auf Joana / RestedXP), optimiert für minimale Laufzeiten.</p>
-        </div>
-
-        <div class="live-changes" data-live-topic="questing"></div>
-
-        <div class="guide-chapter">
-          <h3>📌 Grundregel: Niemals eine Zone zu 100% am Stück leeren</h3>
-          <p class="card-desc">In Classic/Forever laufen Quests in Stufenbändern. Wer stur in einer Zone bleibt, quält sich ab Stufe 16 mit orangenen/roten Mobs herum. Das Geheimnis von Speedrunnern: <strong>Mehrfacher Zonenwechsel zum perfekten Level-Zeitpunkt</strong>, damit dein Questlog immer grün bis gelb bleibt.</p>
-        </div>
-
-                <!-- Skyborne Special Section -->
         <div class="guide-chapter">
           <h3><img src="https://wow.zamimg.com/images/wow/icons/medium/spell_nature_cyclone.jpg" class="wow-icon" alt="Skyborne"> Die neue Skyborne-Route: Zephras Isle (Stufe 1–12)</h3>
           <div class="card highlight-border">
@@ -609,7 +575,6 @@
           </div>
         </div>
 
-        <!-- Phase 1: 1-12 -->
         <div class="guide-chapter">
           <h3>Phase 1: Stufe 1 bis 12 (Die drei klassischen Horde-Startgebiete)</h3>
           <div class="card-grid">
@@ -649,8 +614,38 @@
 
           </div>
         </div>
+        </div>
 
-        <!-- Phase 2: 12-20 -->
+        <div class="subtab-panel" data-subtab="12-20">
+          <div class="guide-chapter">
+            <h3>Checkliste Stufe 12–20</h3>
+            <div class="timeline-container">
+          <div class="timeline-block">
+            <div class="level-indicator">Stufe 13 – 15</div>
+            <div class="timeline-body">
+              <h4>Brachland-Wechsel & erster neuer Dungeon</h4>
+              <ul>
+                <li><strong>Neue Dungeons:</strong> <em>Hall of Thanes</em> (13–18) und <em>Ruinen von Lordaeron</em> (15–22) einmal mit allen Quests mitnehmen.</li>
+                <li><strong>Zonenwechsel:</strong> Übergang ins Brachland (The Barrens) oder Silberwald. Heimatstein (Hearthstone) direkt im <em>Wegekreuz (Crossroads)</em> binden!</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-block highlight-block">
+            <div class="level-indicator">Stufe 14 – 16</div>
+            <div class="timeline-body">
+              <h4>Cozy Sleeping Bag (Schlafsack) Questreihe</h4>
+              <p>Der ideale Zeitpunkt für den Schlafsack-Ausflug:</p>
+              <ul>
+                <li><strong>Start im Brachland:</strong> Am abgebrannten Turm südlich von Camp Taurajo (<code>/way 46 74</code>).</li>
+                <li><strong>Dabei einsacken:</strong> <strong>12-Slot Tasche (Old Toolbox)</strong> in Stonetalon + <strong>5x Student Fodder</strong> + <strong>Schlafsack (+3% Dauer-XP)</strong>.</li>
+                <li><strong>Flugpunkte mitnehmen:</strong> Unterwegs in Booty Bay, Grom'gol, Tarren Mill die Flugpunkte einsammeln!</li>
+              </ul>
+            </div>
+          </div>
+            </div>
+          </div>
+
         <div class="guide-chapter">
           <h3>Phase 2: Stufe 12 bis 20 (Das Brachland & Silberwald-Split)</h3>
           <div class="card">
@@ -663,8 +658,25 @@
             </ul>
           </div>
         </div>
+        </div>
 
-        <!-- Phase 3: 20-25 -->
+        <div class="subtab-panel" data-subtab="20-30">
+          <div class="guide-chapter">
+            <h3>Checkliste Stufe 20–30</h3>
+            <div class="timeline-container">
+          <div class="timeline-block">
+            <div class="level-indicator">Stufe 18 – 24</div>
+            <div class="timeline-body">
+              <h4>Erste Instanz-Quests</h4>
+              <ul>
+                <li><strong>Tiefschwarze Grotte (BFD):</strong> Quests sammeln und Instanz <strong>1x</strong> spielen. Seit Beta-Patch 8. Okt geben Dungeon-Mobs +20 % XP, der Quest-Bonus wurde dafür halbiert.</li>
+                <li><strong>Höhlen des Wehklagens (WC) / Burg Schattenfang (SFK):</strong> Vorher alle Quests im Brachland sammeln, einmal durchspielen, Belohnungen abgeben, weiterziehen.</li>
+              </ul>
+            </div>
+          </div>
+            </div>
+          </div>
+
         <div class="guide-chapter">
           <h3>Phase 3: Stufe 20 bis 25 (Steinkrallengebirge & Eschental)</h3>
           <div class="card">
@@ -677,7 +689,6 @@
           </div>
         </div>
 
-        <!-- Phase 4: 25-30 -->
         <div class="guide-chapter">
           <h3>Phase 4: Stufe 25 bis 30 (Hügelland & Tausend Nadeln)</h3>
           <div class="card">
@@ -689,7 +700,75 @@
             </ul>
           </div>
         </div>
+        </div>
+
+        <div class="subtab-panel" data-subtab="30-40">
+          <div class="guide-chapter">
+            <h3>Checkliste Stufe 30–40</h3>
+            <div class="timeline-container">
+          <div class="timeline-block">
+            <div class="level-indicator">Stufe 30</div>
+            <div class="timeline-body">
+              <h4>Reisegestalten & Wirbelwindaxt</h4>
+              <ul>
+                <li><strong>Druide & Schamane:</strong> Reisegestalt (Druid) und Geisterwolf (Shaman) lernen (+40% Lauftempo).</li>
+                <li><strong>Krieger:</strong> Klassenquest für die <em>Wirbelwindaxt (Whirlwind Axe)</em> mit Hilfe von Gildenmitgliedern abschließen.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-block highlight-block">
+            <div class="level-indicator">Stufe 40</div>
+            <div class="timeline-body">
+              <h4>Reittier & Doppelte Spezialisierung</h4>
+              <ul>
+                <li><strong>Reiten:</strong> <strong>100 Gold</strong> beim Reitlehrer deines Volkes, das 60%-Reittier ist inklusive. Kein Fliegen, daher dein größter Temposprung.</li>
+                <li><strong>Dual-Spec (10 Gold):</strong> Beim Klassenlehrer freischalten. Leveln in Schaden, zweite Spec für Dungeons (Heilen/Tanken).</li>
+                <li><strong>Priester:</strong> <em>Schattengestalt</em> mitnehmen, danach levelt der Priester deutlich schneller.</li>
+              </ul>
+            </div>
+          </div>
+            </div>
+          </div>
+
+        <div class="guide-chapter">
+          <h3>Route 30–40</h3>
+          <div class="card">
+            <p>Für 30–40 gab es noch keine öffentlichen Tests (die Beta endete bei Stufe 30). Bewährt aus Classic: Arathihochland, Desolace, Steinkrallengebirge-Süd, Sümpfe des Elends, Ödland, Schlingendorntal-Nord. Ab Mitte 30 lohnt die neue Zone <strong>Riverglades</strong> (Schiff ab Gadgetzan).</p>
+            <p>Parallel das Reit-Gold sammeln: <a href="#" class="accent-link" data-goto="tab-gold">Gold-Guide mit Grind-Spots 30–40</a>.</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="subtab-panel" data-subtab="40-60">
+          <div class="guide-chapter">
+            <h3>Checkliste Stufe 40–60</h3>
+            <div class="timeline-container">
+          <div class="timeline-block">
+            <div class="level-indicator">Stufe 40 – 60</div>
+            <div class="timeline-body">
+              <h4>Die Zielgerade & Neue Forever-Zonen</h4>
+              <ul>
+                <li><strong>Riverglades (~35–45):</strong> Neue Zone mit über 150 Quests, neutraler Goblin-Hafen Powderfuse Port (Schiff ab Gadgetzan) und Dungeon <em>Krol'dok Stronghold</em> (40–45). Ideal ab Mitte 30.</li>
+                <li><strong>Danach (Classic-Erfahrung, unter Vorbehalt):</strong> Tanaris → Feralas / Hinterland → Krater von Un'Goro → Östliche Pestländer → Winterquell. Endgame-Zone: <strong>Hyjal</strong>.</li>
+                <li><strong>Instanzen:</strong> Zul'Farrak, Maraudon, BRD und die neuen <em>Alcaz-Gefängnis</em> (48–53) und <em>Blackmaw Hold</em> (55–60) für Quests mitnehmen.</li>
+              </ul>
+            </div>
+          </div>
+            </div>
+          </div>
+
+        <div class="guide-chapter">
+          <h3>Route 40–60</h3>
+          <div class="card">
+            <p>Noch ohne öffentliche Tests. Plan: Riverglades fertig machen, dann Tanaris, Feralas / Hinterland, Un'Goro, Östliche Pestländer, Winterquell. Endgame-Zone ist <strong>Hyjal</strong>. Dungeon-Quests für Krol'dok Stronghold, Alcaz-Gefängnis und Blackmaw Hold mitnehmen.</p>
+          </div>
+        </div>
+        </div>
       </section>
+
+      
+      
 
       <!-- ================= 1. GRUNDLAGEN ================= -->
       <section id="tab-rules" class="tab-pane">
@@ -729,7 +808,7 @@
 
         <!-- Deep Dive: Rested XP Mechanik -->
         <div class="guide-chapter" style="margin-top: 2rem;">
-          <h3>💤 Erholungs-XP (Rested) erklärt</h3>
+          <h3>Erholungs-XP (Rested) erklärt</h3>
           <div class="notice blue">
             <p><strong>Was ist das?</strong> In Gasthaus, Hauptstadt oder Camp sammelt dein Charakter Erholung, der XP-Balken wird <strong>blau</strong>.</p>
           </div>
@@ -742,7 +821,7 @@
         </div>
 
         <div class="guide-chapter">
-          <h3>🔥 Patch-Stand</h3>
+          <h3>Patch-Stand</h3>
           <div class="notice gold">
             <p>Alle Balance-Änderungen (Völker, Klassen, Dungeon-XP, Launch-Build-Daten vom 30. Okt) stehen jetzt gesammelt unter <a href="#" class="accent-link" data-goto="tab-news">Was ist neu & Patch-Stand</a>. Klassen-spezifische Änderungen findest du zusätzlich oben auf jeder Klassenseite.</p>
           </div>
@@ -967,7 +1046,7 @@
         <!-- NEW HOTFIX HIGHLIGHT: Adventurer's Tent -->
         <div class="guide-chapter">
           <div class="alert-box">
-            <h3>⛺ Abenteurer-Zelt (Adventurer's Tent)</h3>
+            <h3>Abenteurer-Zelt (Adventurer's Tent)</h3>
             <p>Das Zelt hat vor dem Launch zweimal die Funktion gewechselt. Nach dem <strong>Build vom 30. Okt ist es wieder rein kosmetisch</strong> (Quelle: <a href="#" class="accent-link" data-goto="tab-patchnotes">Live-Patchnotes</a>). Plant <strong>nicht</strong> mit dem 20-%-Erholungsbonus, bis er im Spiel bestätigt ist.</p>
             <div class="card-grid" style="margin-top: 1rem;">
               <div class="sub-box red">
@@ -984,7 +1063,7 @@
 
         <!-- How to use the Camp Trinity -->
         <div class="guide-chapter">
-          <h3>🔥 Die 1-Stunden-Camp-Routine für maximale XP</h3>
+          <h3>Die 1-Stunden-Camp-Routine für maximale XP</h3>
           <div class="card">
             <h4>Schritt-für-Schritt Ablauf am Lagerfeuer:</h4>
             <ol style="margin-left: 1.2rem; line-height: 1.7; font-size: 0.95rem;">
@@ -1001,7 +1080,7 @@
 
         <!-- Buff Food Recipes -->
         <div class="guide-chapter">
-          <h3>🍲 Einfache Kochen-Rezepte für den +5% Kill-XP Buff</h3>
+          <h3>Einfache Kochen-Rezepte für den +5% Kill-XP Buff</h3>
           <div class="clean-grid">
             <div class="card">
               <h3>Stufe 1 bis 10</h3>
@@ -1036,7 +1115,7 @@
         <div class="live-changes" data-live-topic="gold"></div>
 
         <div class="guide-chapter">
-          <h3>📌 Die Kosten & Warum es Priorität #1 ist</h3>
+          <h3>Die Kosten & Warum es Priorität #1 ist</h3>
           <div class="card highlight-border">
             <h4>Die 100-Gold-Hürde</h4>
             <ul>
@@ -1344,7 +1423,7 @@
       <!-- ================= 5. PRIEST ================= -->
       <section id="tab-priest" class="tab-pane">
         <div class="pane-header">
-          <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_priest.jpg" class="wow-icon large" alt="Priest"> Priester (Priest) – Umfassender Leitfaden (1–60)</h2>
+          <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_priest.jpg" class="wow-icon large" alt="Priest"> Priester (Priest)</h2>
           <p class="pane-subtitle">Die sicherste Klasse im Spiel. Langsamer Start, ab Sühne (30) und Schattengestalt (40) richtig stark, auf 60 ein gefragter Heiler.</p>
         </div>
 
@@ -1357,7 +1436,7 @@
         </div>
 
         <div class="class-note">
-          <h4>📜 Patch-Stand 1. Nov 2026: Was für diese Klasse neu ist</h4>
+          <h4>Patch-Stand 1. Nov 2026: Was für diese Klasse neu ist</h4>
           <ul>
             <li><span class="tag-down">▼</span> Zauberstäbe skalieren <strong>nicht mehr mit Zaubermacht</strong> und feuern erst nach 0,5 s Stillstehen. Die „Nur Wand“-Taktik ist schwächer als in Classic.</li>
             <li><span class="tag-info">●</span> <strong>Sühne (Penance)</strong> erst ab Stufe 30, <strong>Schattengestalt</strong> ab 40. Bis dahin sind die Kills langsam, danach zieht der Priester deutlich an.</li>
@@ -1372,7 +1451,7 @@
 
         <!-- 1. Quick-Start Setup -->
         <div class="guide-chapter">
-          <h3>⚡ Einloggen & Loslegen: Charakter-Setup</h3>
+          <h3>Einloggen & Loslegen: Charakter-Setup</h3>
           <div class="card-grid">
             <div class="card highlight-border">
               <h4>Beste Horde-Rasse: Untot (Undead)</h4>
@@ -1387,7 +1466,7 @@
 
         <!-- 2. Stat Priority -->
         <div class="guide-chapter">
-          <h3>📊 Attributs-Gewichtung (Stat Priority)</h3>
+          <h3>Attributs-Gewichtung (Stat Priority)</h3>
           <div class="stat-prio-bar">
             <span class="stat-chip">Willenskraft (Spirit)</span>
             <span class="stat-arrow">&gt;</span>
@@ -1402,7 +1481,7 @@
 
         <!-- 3. Combat Rotation -->
         <div class="guide-chapter">
-          <h3>🪄 Exakter Kampf-Ablauf (Die 5-Sekunden-Regel)</h3>
+          <h3>Exakter Kampf-Ablauf (Die 5-Sekunden-Regel)</h3>
           <div class="card">
             <h4>Solo Pull & Zero-Downtime Rotation:</h4>
             <p>1. <strong>Buffs aktiv halten:</strong> <em>Machtwort: Seelenstärke</em> und <em>Inneres Feuer</em> (aktuelle Ränge für massive Rüstung) müssen immer laufen.<br>
@@ -1416,7 +1495,7 @@
 
         <!-- 4. Weapon Milestones -->
         <div class="guide-chapter">
-          <h3>🪄 Wichtige Zauberstäbe (Wand-Progression)</h3>
+          <h3>Wichtige Zauberstäbe (Wand-Progression)</h3>
           <div class="table-card">
             <table class="simple-table">
               <thead>
@@ -1465,7 +1544,7 @@
 
         <!-- 5. Point by Point Talents -->
         <div class="guide-chapter">
-          <h3>🌳 Punkt-für-Punkt Talent-Fahrplan (10–60)</h3>
+          <h3>Punkt-für-Punkt Talent-Fahrplan (10–60)</h3>
           <table class="detailed-talent-table">
             <thead>
               <tr>
@@ -1560,10 +1639,10 @@
 
         <!-- Trainer Skills to Buy vs Skip -->
         <div class="guide-chapter">
-          <h3>💰 Trainer-Fähigkeiten: Was kaufen, was sparen?</h3>
+          <h3>Trainer-Fähigkeiten: Was kaufen, was sparen?</h3>
           <div class="skill-split-grid">
             <div class="skill-buy-box">
-              <h4>✅ Immer auf Maximalrang kaufen:</h4>
+              <h4>Immer auf Maximalrang kaufen:</h4>
               <ul class="skill-list">
                 <li><strong>Schattenwort: Schmerz (SW:P):</strong> Dein Haupt-DoT für jeden Kill.</li>
                 <li><strong>Machtwort: Seelenstärke:</strong> Pflicht-Ausdauer für dich und Gruppe.</li>
@@ -1574,7 +1653,7 @@
               </ul>
             </div>
             <div class="skill-skip-box">
-              <h4>❌ Nicht kaufen (Spart 35+ Gold fürs Mount):</h4>
+              <h4>Nicht kaufen (Spart 35+ Gold fürs Mount):</h4>
               <ul class="skill-list">
                 <li><strong>Göttliche Pein (Smite) Ränge 3+:</strong> Dein Wand macht mehr Schaden ohne Mana!</li>
                 <li><strong>Gedankenkontrolle:</strong> Teure Spielerei beim Leveln.</li>
@@ -1588,7 +1667,7 @@
 
         <!-- 6. Macros -->
         <div class="guide-chapter">
-          <h3>⚙️ Unverzichtbare Priester-Makros</h3>
+          <h3>Unverzichtbare Priester-Makros</h3>
           <div class="macro-grid">
             <div class="macro-box">
               <div class="macro-title">
@@ -1614,7 +1693,7 @@
             <!-- ================= 6. HUNTER ================= -->
       <section id="tab-hunter" class="tab-pane">
         <div class="pane-header">
-          <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_hunter.jpg" class="wow-icon large" alt="Hunter"> Jäger (Hunter) – Umfassender Leitfaden (1–60)</h2>
+          <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_hunter.jpg" class="wow-icon large" alt="Hunter"> Jäger (Hunter)</h2>
           <p class="pane-subtitle">Unangefochtener König der Solo-Level-Geschwindigkeit. Null Downtime, wenn das Pet tankt.</p>
         </div>
 
@@ -1627,7 +1706,7 @@
         </div>
 
         <div class="class-note">
-          <h4>📜 Patch-Stand 1. Nov 2026: Was für diese Klasse neu ist</h4>
+          <h4>Patch-Stand 1. Nov 2026: Was für diese Klasse neu ist</h4>
           <ul>
             <li><span class="tag-up">▲</span> Begleiter skalieren jetzt mit deiner Ausrüstung und profitieren von Waffenkunde. Das Pet bleibt der Grund für S-Tier.</li>
             <li><span class="tag-down">▼</span> Launch-Build (30. Okt, ausgelesen): Aspekt des Falken 15/22/30/38/47 AP (vorher bis 90), Volltreffer-Aura +15 AP statt +30.</li>
@@ -1642,7 +1721,7 @@
 
         <!-- 1. Quick-Start Setup -->
         <div class="guide-chapter">
-          <h3>⚡ Einloggen & Loslegen: Charakter-Setup</h3>
+          <h3>Einloggen & Loslegen: Charakter-Setup</h3>
           <div class="card-grid">
             <div class="card highlight-border">
               <h4>Beste Horde-Rasse: Ork (PvE/PvP) oder Troll (PvE)</h4>
@@ -1661,7 +1740,7 @@
 
         <!-- 2. Stat Priority -->
         <div class="guide-chapter">
-          <h3>📊 Attributs-Gewichtung (Stat Priority)</h3>
+          <h3>Attributs-Gewichtung (Stat Priority)</h3>
           <div class="stat-prio-bar">
             <span class="stat-chip">Beweglichkeit (Agility)</span>
             <span class="stat-arrow">&gt;</span>
@@ -1678,7 +1757,7 @@
 
         <!-- 2. Combat Rotation -->
         <div class="guide-chapter">
-          <h3>🏹 Exakter Kampf-Ablauf & Schuss-Timing</h3>
+          <h3>Exakter Kampf-Ablauf & Schuss-Timing</h3>
           <div class="card">
             <h4>Solo Pull-Reihenfolge (Zero Downtime):</h4>
             <p>1. <strong>Mal des Jägers (Hunter's Mark):</strong> Auf das Ziel setzen.<br>
@@ -1692,7 +1771,7 @@
 
         <!-- 3. Point by Point Talents -->
         <div class="guide-chapter">
-          <h3>🌳 Punkt-für-Punkt Talent-Fahrplan (10–60 Beast Mastery)</h3>
+          <h3>Punkt-für-Punkt Talent-Fahrplan (10–60 Beast Mastery)</h3>
           <table class="detailed-talent-table">
             <thead>
               <tr>
@@ -1793,7 +1872,7 @@
 
         <!-- 4. Weapon Milestones -->
         <div class="guide-chapter">
-          <h3>🏹 Fernkampfwaffen-Roadmap (Wichtigste Upgrades)</h3>
+          <h3>Fernkampfwaffen-Roadmap (Wichtigste Upgrades)</h3>
           <div class="table-card">
             <table class="simple-table">
               <thead>
@@ -1842,10 +1921,10 @@
 
         <!-- 5. Key Skills to Buy vs Skip -->
         <div class="guide-chapter">
-          <h3>💰 Trainer-Fähigkeiten: Was kaufen, was sparen?</h3>
+          <h3>Trainer-Fähigkeiten: Was kaufen, was sparen?</h3>
           <div class="skill-split-grid">
             <div class="skill-buy-box">
-              <h4>✅ Immer auf Maximalrang kaufen:</h4>
+              <h4>Immer auf Maximalrang kaufen:</h4>
               <ul class="skill-list">
                 <li><strong>Knurren (Growl):</strong> Beim Tiertrainer alle 10 Stufen aktualisieren!</li>
                 <li><strong>Aspekt des Falken (Hawk):</strong> Maximiert Distanz-AP.</li>
@@ -1856,7 +1935,7 @@
               </ul>
             </div>
             <div class="skill-skip-box">
-              <h4>❌ Nicht kaufen (Gold sparen fürs 40er Mount):</h4>
+              <h4>Nicht kaufen (Gold sparen fürs 40er Mount):</h4>
               <ul class="skill-list">
                 <li><strong>Adlerauge (Eagle Eye):</strong> Reine Spielerei beim Leveln.</li>
                 <li><strong>Tier ängstigen (Scare Beast):</strong> Fast nie nützlich im PvE.</li>
@@ -1870,7 +1949,7 @@
 
         <!-- 6. Essential Hunter Macros -->
         <div class="guide-chapter">
-          <h3>⚙️ Unverzichtbare Jäger-Makros</h3>
+          <h3>Unverzichtbare Jäger-Makros</h3>
           <div class="macro-grid">
             <div class="macro-box">
               <div class="macro-title">
@@ -1922,7 +2001,7 @@
             <!-- ================= 7. MAGE ================= -->
       <section id="tab-mage" class="tab-pane">
         <div class="pane-header">
-          <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_mage.jpg" class="wow-icon large" alt="Mage"> Magier (Mage) – Umfassender Leitfaden (1–60)</h2>
+          <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_mage.jpg" class="wow-icon large" alt="Mage"> Magier (Mage)</h2>
           <p class="pane-subtitle">Kostenloses Essen/Wasser, Portale und unerreichte Frost-Sicherheit beim Leveln.</p>
         </div>
 
@@ -1935,7 +2014,7 @@
         </div>
 
         <div class="class-note">
-          <h4>📜 Patch-Stand 1. Nov 2026: Was für diese Klasse neu ist</h4>
+          <h4>Patch-Stand 1. Nov 2026: Was für diese Klasse neu ist</h4>
           <ul>
             <li><span class="tag-info">●</span> Neu für die Horde: <strong>Orc-Magier</strong>. Magier gibt es damit als Orc, Troll und Untot.</li>
             <li><span class="tag-down">▼</span> Launch-Build: <strong>Eislanze 8 s Abklingzeit</strong>, Frostblast nicht mehr erlernbar, Kritische Masse auf 6 % gesenkt.</li>
@@ -1950,7 +2029,7 @@
 
         <!-- 1. Quick-Start Setup -->
         <div class="guide-chapter">
-          <h3>⚡ Einloggen & Loslegen: Charakter-Setup</h3>
+          <h3>Einloggen & Loslegen: Charakter-Setup</h3>
           <div class="card-grid">
             <div class="card highlight-border">
               <h4>Beste Horde-Rasse: Troll (PvE), Untot (PvP) oder neu: Orc</h4>
@@ -1969,7 +2048,7 @@
 
         <!-- 2. Stat Priority -->
         <div class="guide-chapter">
-          <h3>📊 Attributs-Gewichtung (Stat Priority)</h3>
+          <h3>Attributs-Gewichtung (Stat Priority)</h3>
           <div class="stat-prio-bar">
             <span class="stat-chip">Zauberschaden (Spell Power)</span>
             <span class="stat-arrow">&gt;</span>
@@ -1984,7 +2063,7 @@
 
         <!-- 2. Combat Rotation -->
         <div class="guide-chapter">
-          <h3>❄️ Exakter Kampf-Ablauf & Kiting</h3>
+          <h3>Exakter Kampf-Ablauf & Kiting</h3>
           <div class="card">
             <h4>Solo Einzelziel-Rotation (Sicher & Schnell):</h4>
             <p>1. <strong>Max-Range Frostblitz (Frostbolt):</strong> Auf maximale Distanz (35m) 2–3 Mal durchcasten.<br>
@@ -1997,7 +2076,7 @@
 
         <!-- 3. Talents -->
         <div class="guide-chapter">
-          <h3>🌳 Punkt-für-Punkt Talent-Fahrplan (10–60 Frost)</h3>
+          <h3>Punkt-für-Punkt Talent-Fahrplan (10–60 Frost)</h3>
           <table class="detailed-talent-table">
             <thead>
               <tr>
@@ -2104,7 +2183,7 @@
 
         <!-- 4. Weapon Milestones -->
         <div class="guide-chapter">
-          <h3>🪄 Stab- & Zauberstab-Upgrades</h3>
+          <h3>Stab- & Zauberstab-Upgrades</h3>
           <div class="table-card">
             <table class="simple-table">
               <thead>
@@ -2147,10 +2226,10 @@
 
         <!-- Trainer Skills to Buy vs Skip -->
         <div class="guide-chapter">
-          <h3>💰 Trainer-Fähigkeiten: Was kaufen, was sparen?</h3>
+          <h3>Trainer-Fähigkeiten: Was kaufen, was sparen?</h3>
           <div class="skill-split-grid">
             <div class="skill-buy-box">
-              <h4>✅ Immer auf Maximalrang kaufen:</h4>
+              <h4>Immer auf Maximalrang kaufen:</h4>
               <ul class="skill-list">
                 <li><strong>Frostblitz (Frostbolt):</strong> Dein absoluter Hauptangriff – sofort lernen!</li>
                 <li><strong>Frostnova (NUR Rang 1!):</strong> Friert 8s ein, höhere Ränge kosten nur unnötig Mana und Gold.</li>
@@ -2162,7 +2241,7 @@
               </ul>
             </div>
             <div class="skill-skip-box">
-              <h4>❌ Nicht kaufen (Spart 40+ Gold fürs Mount):</h4>
+              <h4>Nicht kaufen (Spart 40+ Gold fürs Mount):</h4>
               <ul class="skill-list">
                 <li><strong>Feuerball ab Stufe 10:</strong> Völlig überflüssig, da du auf Frost geskillt bist.</li>
                 <li><strong>Pyroschlag & Versengen:</strong> Ignorieren beim Frost-Leveln.</li>
@@ -2176,7 +2255,7 @@
 
         <!-- 5. Macros -->
         <div class="guide-chapter">
-          <h3>⚙️ Unverzichtbare Magier-Makros</h3>
+          <h3>Unverzichtbare Magier-Makros</h3>
           <div class="macro-grid">
             <div class="macro-box">
               <div class="macro-title">
@@ -2204,7 +2283,7 @@
       <!-- ================= 8. WARLOCK ================= -->
       <section id="tab-warlock" class="tab-pane">
         <div class="pane-header">
-          <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_warlock.jpg" class="wow-icon large" alt="Warlock"> Hexenmeister (Warlock) – Umfassender Leitfaden (1–60)</h2>
+          <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_warlock.jpg" class="wow-icon large" alt="Warlock"> Hexenmeister (Warlock)</h2>
           <p class="pane-subtitle">Drain-Tanking Engine: Verwandelt Leben in Mana und Mana in Mob-Kills. Null Pausen.</p>
         </div>
 
@@ -2217,7 +2296,7 @@
         </div>
 
         <div class="class-note">
-          <h4>📜 Patch-Stand 1. Nov 2026: Was für diese Klasse neu ist</h4>
+          <h4>Patch-Stand 1. Nov 2026: Was für diese Klasse neu ist</h4>
           <ul>
             <li><span class="tag-info">●</span> Neu für die Horde: <strong>Troll-Hexer</strong> (Berserker jetzt 15 s).</li>
             <li><span class="tag-up">▲</span> DoTs können jetzt <strong>kritisch treffen</strong>. Schattenbeherrschung 2–10 % (vorher 1–5 %).</li>
@@ -2232,7 +2311,7 @@
 
         <!-- 1. Quick-Start Setup -->
         <div class="guide-chapter">
-          <h3>⚡ Einloggen & Loslegen: Charakter-Setup</h3>
+          <h3>Einloggen & Loslegen: Charakter-Setup</h3>
           <div class="card-grid">
             <div class="card highlight-border">
               <h4>Beste Horde-Rasse: Ork (PvE/PvP), Untot (PvP) oder neu: Troll</h4>
@@ -2251,7 +2330,7 @@
 
         <!-- 2. Stat Priority -->
         <div class="guide-chapter">
-          <h3>📊 Attributs-Gewichtung (Stat Priority)</h3>
+          <h3>Attributs-Gewichtung (Stat Priority)</h3>
           <div class="stat-prio-bar">
             <span class="stat-chip">Schattenschaden (Shadow Power)</span>
             <span class="stat-arrow">&gt;</span>
@@ -2266,7 +2345,7 @@
 
         <!-- 2. Combat Rotation -->
         <div class="guide-chapter">
-          <h3>🔮 Exakter Kampf-Ablauf (Drain-Tanking)</h3>
+          <h3>Exakter Kampf-Ablauf (Drain-Tanking)</h3>
           <div class="card">
             <h4>Multi-DoT & Drain-Loop:</h4>
             <p>1. <strong>Dämon schicken:</strong> Leerwandler auf Ziel 1 schicken (Folter auf Autocast).<br>
@@ -2281,7 +2360,7 @@
 
         <!-- 3. Talents -->
         <div class="guide-chapter">
-          <h3>🌳 Punkt-für-Punkt Talent-Fahrplan (10–60 Gebrechen)</h3>
+          <h3>Punkt-für-Punkt Talent-Fahrplan (10–60 Gebrechen)</h3>
           <table class="detailed-talent-table">
             <thead>
               <tr>
@@ -2382,7 +2461,7 @@
 
         <!-- 4. Weapon Milestones -->
         <div class="guide-chapter">
-          <h3>🪄 Wichtige Zauberstab-Upgrades für Hexer</h3>
+          <h3>Wichtige Zauberstab-Upgrades für Hexer</h3>
           <div class="table-card">
             <table class="simple-table">
               <thead>
@@ -2419,10 +2498,10 @@
 
         <!-- Trainer Skills to Buy vs Skip -->
         <div class="guide-chapter">
-          <h3>💰 Trainer-Fähigkeiten: Was kaufen, was sparen?</h3>
+          <h3>Trainer-Fähigkeiten: Was kaufen, was sparen?</h3>
           <div class="skill-split-grid">
             <div class="skill-buy-box">
-              <h4>✅ Immer auf Maximalrang kaufen:</h4>
+              <h4>Immer auf Maximalrang kaufen:</h4>
               <ul class="skill-list">
                 <li><strong>Verderbnis (Corruption):</strong> Dein mächtigster DoT – immer aktuell halten!</li>
                 <li><strong>Fluch der Pein:</strong> Essenzieller Einzelschaden über Zeit.</li>
@@ -2434,7 +2513,7 @@
               </ul>
             </div>
             <div class="skill-skip-box">
-              <h4>❌ Nicht kaufen (Spart 30+ Gold für Gear):</h4>
+              <h4>Nicht kaufen (Spart 30+ Gold für Gear):</h4>
               <ul class="skill-list">
                 <li><strong>Schattenblitz ab Stufe 20:</strong> Drain-Tanking nutzt keine Casts im Nahkampf.</li>
                 <li><strong>Feuerbrand höhere Ränge:</strong> Unterbricht Furcht und frisst zu viel Mana.</li>
@@ -2448,7 +2527,7 @@
 
         <!-- 5. Macros -->
         <div class="guide-chapter">
-          <h3>⚙️ Unverzichtbare Hexenmeister-Makros</h3>
+          <h3>Unverzichtbare Hexenmeister-Makros</h3>
           <div class="macro-grid">
             <div class="macro-box">
               <div class="macro-title">
@@ -2475,7 +2554,7 @@
             <!-- ================= 9. ROGUE ================= -->
       <section id="tab-rogue" class="tab-pane">
         <div class="pane-header">
-          <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_rogue.jpg" class="wow-icon large" alt="Rogue"> Schurke (Rogue) – Umfassender Leitfaden (1–60)</h2>
+          <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_rogue.jpg" class="wow-icon large" alt="Rogue"> Schurke (Rogue)</h2>
           <p class="pane-subtitle">Konstanter Nahkampfschaden und PvP-Dominanz. Massiv abhängig von einer langsamen Haupthandwaffe.</p>
         </div>
 
@@ -2488,7 +2567,7 @@
         </div>
 
         <div class="class-note">
-          <h4>📜 Patch-Stand 1. Nov 2026: Was für diese Klasse neu ist</h4>
+          <h4>Patch-Stand 1. Nov 2026: Was für diese Klasse neu ist</h4>
           <ul>
             <li><span class="tag-up">▲</span> Energie regeneriert jetzt <strong>durchgehend</strong> statt in Ticks. Spürbar flüssiger.</li>
             <li><span class="tag-up">▲</span> Schurken dürfen <strong>Äxte</strong> tragen.</li>
@@ -2503,7 +2582,7 @@
 
         <!-- 1. Quick-Start Setup -->
         <div class="guide-chapter">
-          <h3>⚡ Einloggen & Loslegen: Charakter-Setup</h3>
+          <h3>Einloggen & Loslegen: Charakter-Setup</h3>
           <div class="card-grid">
             <div class="card highlight-border">
               <h4>Beste Horde-Rasse: Ork (PvE/PvP) oder Untot (PvP)</h4>
@@ -2521,7 +2600,7 @@
         </div>
 
         <div class="guide-chapter">
-          <h3>📊 Attributs-Gewichtung (Stat Priority)</h3>
+          <h3>Attributs-Gewichtung (Stat Priority)</h3>
           <div class="stat-prio-bar">
             <span class="stat-chip">Trefferchance (Hit Cap ~5%)</span>
             <span class="stat-arrow">&gt;</span>
@@ -2537,7 +2616,7 @@
         </div>
 
         <div class="guide-chapter">
-          <h3>🗡️ Exakter Kampf-Ablauf (Combat Swords)</h3>
+          <h3>Exakter Kampf-Ablauf (Combat Swords)</h3>
           <div class="card">
             <h4>Solo Pull & DPS-Rotation:</h4>
             <p>1. <strong>Eröffnung:</strong> Aus der Verstohlenheit mit <strong>Fieser Trick (Cheap Shot)</strong> eröffnen (gibt 2 Kombopunkte + 4s Stun).<br>
@@ -2550,7 +2629,7 @@
         </div>
 
         <div class="guide-chapter">
-          <h3>🌳 Punkt-für-Punkt Talent-Fahrplan (10–60 Kampf)</h3>
+          <h3>Punkt-für-Punkt Talent-Fahrplan (10–60 Kampf)</h3>
           <table class="detailed-talent-table">
             <thead>
               <tr>
@@ -2656,7 +2735,7 @@
         </div>
 
         <div class="guide-chapter">
-          <h3>🗡️ Waffen-Roadmap (Langsame Haupthand = Hoher Schaden)</h3>
+          <h3>Waffen-Roadmap (Langsame Haupthand = Hoher Schaden)</h3>
           <div class="table-card">
             <table class="simple-table">
               <thead>
@@ -2699,10 +2778,10 @@
 
         <!-- Trainer Skills to Buy vs Skip -->
         <div class="guide-chapter">
-          <h3>💰 Trainer-Fähigkeiten: Was kaufen, was sparen?</h3>
+          <h3>Trainer-Fähigkeiten: Was kaufen, was sparen?</h3>
           <div class="skill-split-grid">
             <div class="skill-buy-box">
-              <h4>✅ Immer auf Maximalrang kaufen:</h4>
+              <h4>Immer auf Maximalrang kaufen:</h4>
               <ul class="skill-list">
                 <li><strong>Finsterer Stoß (Sinister Strike):</strong> 90% deines Schadens – immer aktuellen Rang kaufen!</li>
                 <li><strong>Zerhäckseln (Slice and Dice):</strong> Rang 1 & 2 für permanentes Angriffstempo.</li>
@@ -2713,7 +2792,7 @@
               </ul>
             </div>
             <div class="skill-skip-box">
-              <h4>❌ Nicht kaufen (Spart 30+ Gold fürs Mount):</h4>
+              <h4>Nicht kaufen (Spart 30+ Gold fürs Mount):</h4>
               <ul class="skill-list">
                 <li><strong>Meucheln & Hinterhalt:</strong> Du levelst mit Schwertern und Kampf, nicht mit Dolchen!</li>
                 <li><strong>Tritt Ränge 2+:</strong> Rang 1 kickt Zauber genauso zu 100%!</li>
@@ -2726,7 +2805,7 @@
         </div>
 
         <div class="guide-chapter">
-          <h3>⚙️ Unverzichtbare Schurken-Makros</h3>
+          <h3>Unverzichtbare Schurken-Makros</h3>
           <div class="macro-grid">
             <div class="macro-box">
               <div class="macro-title">
@@ -2754,7 +2833,7 @@
       <!-- ================= 10. WARRIOR ================= -->
       <section id="tab-warrior" class="tab-pane">
         <div class="pane-header">
-          <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_warrior.jpg" class="wow-icon large" alt="Warrior"> Krieger (Warrior) – Umfassender Leitfaden (1–60)</h2>
+          <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_warrior.jpg" class="wow-icon large" alt="Warrior"> Krieger (Warrior)</h2>
           <p class="pane-subtitle">Solo die härteste Klasse im Spiel, in Begleitung eine Naturgewalt. Waffen-Upgrades entscheiden alles.</p>
         </div>
 
@@ -2767,7 +2846,7 @@
         </div>
 
         <div class="class-note">
-          <h4>📜 Patch-Stand 1. Nov 2026: Was für diese Klasse neu ist</h4>
+          <h4>Patch-Stand 1. Nov 2026: Was für diese Klasse neu ist</h4>
           <ul>
             <li><span class="tag-up">▲</span> Wut komplett überarbeitet (8. Okt): Wut aus erlittenem Schaden richtet sich nach dem Gegner, nicht nach dir, um 20–40 % pro Stufe neu balanciert. Crit-Wut erhöht.</li>
             <li><span class="tag-up">▲</span> Launch-Build: <strong>Siegesrausch</strong> und <strong>Rache</strong> skalieren jetzt mit Angriffskraft.</li>
@@ -2782,7 +2861,7 @@
 
         <!-- 1. Quick-Start Setup -->
         <div class="guide-chapter">
-          <h3>⚡ Einloggen & Loslegen: Charakter-Setup</h3>
+          <h3>Einloggen & Loslegen: Charakter-Setup</h3>
           <div class="card-grid">
             <div class="card highlight-border">
               <h4>Beste Horde-Rasse: Ork (PvE/PvP) oder Taure (Tank/PvP)</h4>
@@ -2800,7 +2879,7 @@
         </div>
 
         <div class="guide-chapter">
-          <h3>📊 Attributs-Gewichtung (Stat Priority)</h3>
+          <h3>Attributs-Gewichtung (Stat Priority)</h3>
           <div class="stat-prio-bar">
             <span class="stat-chip">Waffen-Grundschaden (Top-End Dmg)</span>
             <span class="stat-arrow">&gt;</span>
@@ -2816,7 +2895,7 @@
         </div>
 
         <div class="guide-chapter">
-          <h3>🪓 Exakter Kampf-Ablauf (Waffen-Krieger)</h3>
+          <h3>Exakter Kampf-Ablauf (Waffen-Krieger)</h3>
           <div class="card">
             <h4>Solo Pull & Kampf-Rotation:</h4>
             <p>1. <strong>Sturmangriff (Charge):</strong> Aus Kampfhaltung pullen für kostenlose 15 Wut.<br>
@@ -2830,7 +2909,7 @@
         </div>
 
         <div class="guide-chapter">
-          <h3>🌳 Punkt-für-Punkt Talent-Fahrplan (10–60 Waffen)</h3>
+          <h3>Punkt-für-Punkt Talent-Fahrplan (10–60 Waffen)</h3>
           <table class="detailed-talent-table">
             <thead>
               <tr>
@@ -2924,7 +3003,7 @@
         </div>
 
         <div class="guide-chapter">
-          <h3>🪓 Zweihandwaffen-Roadmap (Dein Überleben hängt hieran!)</h3>
+          <h3>Zweihandwaffen-Roadmap (Dein Überleben hängt hieran!)</h3>
           <div class="table-card">
             <table class="simple-table">
               <thead>
@@ -2967,10 +3046,10 @@
 
         <!-- Trainer Skills to Buy vs Skip -->
         <div class="guide-chapter">
-          <h3>💰 Trainer-Fähigkeiten: Was kaufen, was sparen?</h3>
+          <h3>Trainer-Fähigkeiten: Was kaufen, was sparen?</h3>
           <div class="skill-split-grid">
             <div class="skill-buy-box">
-              <h4>✅ Immer auf Maximalrang kaufen:</h4>
+              <h4>Immer auf Maximalrang kaufen:</h4>
               <ul class="skill-list">
                 <li><strong>Schlachtruf (Battle Shout):</strong> Massiver AP-Buff – immer aktiv halten!</li>
                 <li><strong>Sturmangriff & Abfangen:</strong> Essenzieller Gap-Closer und Wut-Erzeuger.</li>
@@ -2981,7 +3060,7 @@
               </ul>
             </div>
             <div class="skill-skip-box">
-              <h4>❌ Nicht kaufen (Spart 35+ Gold fürs Mount):</h4>
+              <h4>Nicht kaufen (Spart 35+ Gold fürs Mount):</h4>
               <ul class="skill-list">
                 <li><strong>Donnerknall Ränge 2+:</strong> Zu hohe Wutkosten beim Solo-Leveln.</li>
                 <li><strong>Spott Ränge:</strong> Spott hat keine Ränge, kostet nur Gold.</li>
@@ -2994,7 +3073,7 @@
         </div>
 
         <div class="guide-chapter">
-          <h3>⚙️ Unverzichtbare Krieger-Makros</h3>
+          <h3>Unverzichtbare Krieger-Makros</h3>
           <div class="macro-grid">
             <div class="macro-box">
               <div class="macro-title">
@@ -3023,7 +3102,7 @@
             <!-- ================= 11. DRUID ================= -->
       <section id="tab-druid" class="tab-pane">
         <div class="pane-header">
-          <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_druid.jpg" class="wow-icon large" alt="Druid"> Druide (Druid) – Umfassender Leitfaden (1–60)</h2>
+          <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_druid.jpg" class="wow-icon large" alt="Druid"> Druide (Druid)</h2>
           <p class="pane-subtitle">Wird ab Katze (Stufe 20) und Reisegestalt (Stufe 30) zur schnellsten und unabhängigsten Hybrid-Klasse.</p>
         </div>
 
@@ -3036,7 +3115,7 @@
         </div>
 
         <div class="class-note">
-          <h4>📜 Patch-Stand 1. Nov 2026: Was für diese Klasse neu ist</h4>
+          <h4>Patch-Stand 1. Nov 2026: Was für diese Klasse neu ist</h4>
           <ul>
             <li><span class="tag-down">▼</span> <strong>Tigerfuror entfernt</strong> (26. Okt). Neues Talent <em>Shifting Power</em>, nicht bei voller Energie nutzbar.</li>
             <li><span class="tag-up">▲</span> <strong>Zerfetzen</strong> schon ab Stufe 20 (vorher 22). Manatränke in Katzen- und Bärengestalt nutzbar.</li>
@@ -3051,7 +3130,7 @@
 
         <!-- 1. Quick-Start Setup -->
         <div class="guide-chapter">
-          <h3>⚡ Einloggen & Loslegen: Charakter-Setup</h3>
+          <h3>Einloggen & Loslegen: Charakter-Setup</h3>
           <div class="card-grid">
             <div class="card highlight-border">
               <h4>Beste Horde-Rasse: Taure (oder Skyborne)</h4>
@@ -3069,7 +3148,7 @@
         </div>
 
         <div class="guide-chapter">
-          <h3>📊 Attributs-Gewichtung (Stat Priority)</h3>
+          <h3>Attributs-Gewichtung (Stat Priority)</h3>
           <div class="stat-prio-bar">
             <span class="stat-chip">Beweglichkeit (Agility)</span>
             <span class="stat-arrow">&gt;</span>
@@ -3085,7 +3164,7 @@
         </div>
 
         <div class="guide-chapter">
-          <h3>🐾 Exakter Kampf-Ablauf (Feral Cat & Bear)</h3>
+          <h3>Exakter Kampf-Ablauf (Feral Cat & Bear)</h3>
           <div class="card">
             <h4>Solo Pull & Kampf-Rotation:</h4>
             <p>1. <strong>Stufe 1 bis 9:</strong> Aus der Ferne mit <em>Zorn (Wrath)</em> pullen, <em>Mondfeuer</em> drauf, mit Stab zuschlagen.<br>
@@ -3098,7 +3177,7 @@
         </div>
 
         <div class="guide-chapter">
-          <h3>🌳 Punkt-für-Punkt Talent-Fahrplan (10–60 Wilder Kampf)</h3>
+          <h3>Punkt-für-Punkt Talent-Fahrplan (10–60 Wilder Kampf)</h3>
           <table class="detailed-talent-table">
             <thead>
               <tr>
@@ -3192,7 +3271,7 @@
         </div>
 
         <div class="guide-chapter">
-          <h3>🐾 Wichtige Stat-Stäbe (Waffen-DPS zählt NICHT in Gestalt!)</h3>
+          <h3>Wichtige Stat-Stäbe (Waffen-DPS zählt NICHT in Gestalt!)</h3>
           <div class="table-card">
             <table class="simple-table">
               <thead>
@@ -3229,10 +3308,10 @@
 
         <!-- Trainer Skills to Buy vs Skip -->
         <div class="guide-chapter">
-          <h3>💰 Trainer-Fähigkeiten: Was kaufen, was sparen?</h3>
+          <h3>Trainer-Fähigkeiten: Was kaufen, was sparen?</h3>
           <div class="skill-split-grid">
             <div class="skill-buy-box">
-              <h4>✅ Immer auf Maximalrang kaufen:</h4>
+              <h4>Immer auf Maximalrang kaufen:</h4>
               <ul class="skill-list">
                 <li><strong>Bärengestalt & Zermalmen:</strong> Unverzichtbar für Stufe 10 bis 19 und Notfall-Tanken.</li>
                 <li><strong>Katzengestalt, Klaue & Wilder Biss:</strong> Deine Haupt-DPS ab Stufe 20.</li>
@@ -3243,7 +3322,7 @@
               </ul>
             </div>
             <div class="skill-skip-box">
-              <h4>❌ Nicht kaufen (Spart 35+ Gold fürs Mount):</h4>
+              <h4>Nicht kaufen (Spart 35+ Gold fürs Mount):</h4>
               <ul class="skill-list">
                 <li><strong>Zorn & Mondfeuer ab Stufe 20:</strong> Du kämpfst als Katze/Bär – reine Goldverschwendung.</li>
                 <li><strong>Sternenfeuer & Hurrikan:</strong> Nicht benötigt beim Feral-Leveln.</li>
@@ -3256,7 +3335,7 @@
         </div>
 
         <div class="guide-chapter">
-          <h3>⚙️ Unverzichtbare Druiden-Makros</h3>
+          <h3>Unverzichtbare Druiden-Makros</h3>
           <div class="macro-grid">
             <div class="macro-box">
               <div class="macro-title">
@@ -3284,7 +3363,7 @@
       <!-- ================= 12. SHAMAN ================= -->
       <section id="tab-shaman" class="tab-pane">
         <div class="pane-header">
-          <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_shaman.jpg" class="wow-icon large" alt="Shaman"> Schamane (Shaman) – Umfassender Leitfaden (1–60)</h2>
+          <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_shaman.jpg" class="wow-icon large" alt="Shaman"> Schamane (Shaman)</h2>
           <p class="pane-subtitle">Geisterwolf ab Stufe 20 für schnelles Reisen, mächtige Totems und gigantische Windzorn-Bursts ab Stufe 30.</p>
         </div>
 
@@ -3297,7 +3376,7 @@
         </div>
 
         <div class="class-note">
-          <h4>📜 Patch-Stand 1. Nov 2026: Was für diese Klasse neu ist</h4>
+          <h4>Patch-Stand 1. Nov 2026: Was für diese Klasse neu ist</h4>
           <ul>
             <li><span class="tag-up">▲</span> Kettenblitz kostet ~35 % weniger Mana. Wasserschild greift bei jedem kritischen Zauber.</li>
             <li><span class="tag-info">●</span> Elementar: <strong>Elementarbeherrschung</strong> zurück als 31-Punkte-Talent, Lavaeruption in Reihe 5 (21 Punkte).</li>
@@ -3312,7 +3391,7 @@
 
         <!-- 1. Quick-Start Setup -->
         <div class="guide-chapter">
-          <h3>⚡ Einloggen & Loslegen: Charakter-Setup</h3>
+          <h3>Einloggen & Loslegen: Charakter-Setup</h3>
           <div class="card-grid">
             <div class="card highlight-border">
               <h4>Beste Horde-Rasse: Ork (PvE/PvP) oder Taure (Survival)</h4>
@@ -3330,7 +3409,7 @@
         </div>
 
         <div class="guide-chapter">
-          <h3>📊 Attributs-Gewichtung (Stat Priority)</h3>
+          <h3>Attributs-Gewichtung (Stat Priority)</h3>
           <div class="stat-prio-bar">
             <span class="stat-chip">Stärke (Strength)</span>
             <span class="stat-arrow">&gt;</span>
@@ -3346,7 +3425,7 @@
         </div>
 
         <div class="guide-chapter">
-          <h3>⚡ Exakter Kampf-Ablauf (Verstärkung)</h3>
+          <h3>Exakter Kampf-Ablauf (Verstärkung)</h3>
           <div class="card">
             <h4>Solo Pull & Totem-Rotation:</h4>
             <p>1. <strong>Waffen-Verzauberung prüfen:</strong> Bis Stufe 29 immer <strong>Felsbeißer (Rockbiter)</strong> auf der Waffe halten. Ab Stufe 30 sofort auf <strong>Waffe des Windzorns (Windfury)</strong> wechseln!<br>
@@ -3358,7 +3437,7 @@
         </div>
 
         <div class="guide-chapter">
-          <h3>🌳 Punkt-für-Punkt Talent-Fahrplan (10–60 Verstärkung)</h3>
+          <h3>Punkt-für-Punkt Talent-Fahrplan (10–60 Verstärkung)</h3>
           <table class="detailed-talent-table">
             <thead>
               <tr>
@@ -3446,7 +3525,7 @@
         </div>
 
         <div class="guide-chapter">
-          <h3>⚡ Langsame 2-Hand-Waffen (Maximiert Windfury-One-Shots!)</h3>
+          <h3>Langsame 2-Hand-Waffen (Maximiert Windfury-One-Shots!)</h3>
           <div class="table-card">
             <table class="simple-table">
               <thead>
@@ -3489,10 +3568,10 @@
 
         <!-- Trainer Skills to Buy vs Skip -->
         <div class="guide-chapter">
-          <h3>💰 Trainer-Fähigkeiten: Was kaufen, was sparen?</h3>
+          <h3>Trainer-Fähigkeiten: Was kaufen, was sparen?</h3>
           <div class="skill-split-grid">
             <div class="skill-buy-box">
-              <h4>✅ Immer auf Maximalrang kaufen:</h4>
+              <h4>Immer auf Maximalrang kaufen:</h4>
               <ul class="skill-list">
                 <li><strong>Waffe des Felsbeißers (Rockbiter):</strong> Ränge 1 bis 4 bis Stufe 29 für konstante AP.</li>
                 <li><strong>Waffe des Windzorns (Windfury):</strong> Ab Stufe 30 sofort jeden Rang kaufen!</li>
@@ -3504,7 +3583,7 @@
               </ul>
             </div>
             <div class="skill-skip-box">
-              <h4>❌ Nicht kaufen (Spart 35+ Gold fürs Mount):</h4>
+              <h4>Nicht kaufen (Spart 35+ Gold fürs Mount):</h4>
               <ul class="skill-list">
                 <li><strong>Blitzschlag & Kettenblitz ab Stufe 20:</strong> Du bist Verstärker und schlägst im Nahkampf zu!</li>
                 <li><strong>Frostschock Ränge 2+:</strong> Rang 1 verlangsamt das Ziel bereits zu 100%.</li>
@@ -3517,7 +3596,7 @@
         </div>
 
         <div class="guide-chapter">
-          <h3>⚙️ Unverzichtbare Schamanen-Makros</h3>
+          <h3>Unverzichtbare Schamanen-Makros</h3>
           <div class="macro-grid">
             <div class="macro-box">
               <div class="macro-title">
@@ -3543,7 +3622,7 @@
       <!-- ================= PALADIN (UNTOT) ================= -->
       <section id="tab-paladin" class="tab-pane">
         <div class="pane-header">
-          <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_paladin.jpg" class="wow-icon large" alt="Paladin"> Paladin (Untot) – Kompakt-Leitfaden</h2>
+          <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_paladin.jpg" class="wow-icon large" alt="Paladin"> Paladin (Untot)</h2>
           <p class="pane-subtitle">Zum ersten Mal Paladine bei der Horde, und zwar nur als Untote. Sehr sicher beim Leveln, auf 60 einer der gefragtesten Tanks.</p>
         </div>
 
@@ -3555,7 +3634,7 @@
         </div>
 
         <div class="class-note">
-          <h4>📜 Patch-Stand 1. Nov 2026: Was für diese Klasse neu ist</h4>
+          <h4>Patch-Stand 1. Nov 2026: Was für diese Klasse neu ist</h4>
           <ul>
             <li><span class="tag-info">●</span> Neue Volk-Klassen-Kombination: <strong>Untoter Paladin</strong>. Das ist die einzige Horde-Option.</li>
             <li><span class="tag-info">●</span> <strong>Siegel der Wut</strong> macht den Paladin zum vollwertigen Tank. Richturteil spottet aus 10 m und <strong>verbraucht das Siegel nicht mehr</strong>.</li>
@@ -3570,11 +3649,11 @@
         <div class="live-changes" data-live-group="paladin"></div>
 
         <div class="guide-chapter">
-          <h3>⚡ Einloggen & Loslegen: Charakter-Setup</h3>
+          <h3>Einloggen & Loslegen: Charakter-Setup</h3>
           <div class="card-grid">
             <div class="card highlight-border">
               <h4>Volk: Untot (alternativlos)</h4>
-              <p><strong>Wille der Verlassenen</strong> bricht Furcht, Bezauberung und Schlaf. <strong>Berührung des Grabes</strong> (jetzt alle 15 s) heilt dich im Nahkampf nebenbei. Start in Tirisfal: Route siehe <a href="#" class="accent-link" data-goto="tab-questing">Questing 1–30</a>.</p>
+              <p><strong>Wille der Verlassenen</strong> bricht Furcht, Bezauberung und Schlaf. <strong>Berührung des Grabes</strong> (jetzt alle 15 s) heilt dich im Nahkampf nebenbei. Start in Tirisfal: Route siehe <a href="#" class="accent-link" data-goto="tab-leveling">Questing 1–30</a>.</p>
             </div>
             <div class="card highlight-border">
               <h4>Berufe: Bergbau & Schmiedekunst</h4>
@@ -3584,7 +3663,7 @@
         </div>
 
         <div class="guide-chapter">
-          <h3>📊 Attributs-Gewichtung (Vergeltung, Leveln)</h3>
+          <h3>Attributs-Gewichtung (Vergeltung, Leveln)</h3>
           <div class="stat-prio-bar">
             <span class="stat-chip">Waffen-DPS</span>
             <span class="stat-arrow">&gt;</span>
@@ -3598,7 +3677,7 @@
         </div>
 
         <div class="guide-chapter">
-          <h3>⚔️ Kampf-Ablauf (Vergeltung)</h3>
+          <h3>Kampf-Ablauf (Vergeltung)</h3>
           <div class="card">
             <p>1. <strong>Buffs:</strong> Segen der Macht und Aura (Vergeltungsaura beim Questen) aktiv halten.<br>
             2. <strong>Siegel setzen</strong> (Siegel der Rechtschaffenheit), dann mit <strong>Richturteil</strong> eröffnen. Das Siegel bleibt aktiv.<br>
@@ -3610,7 +3689,7 @@
         </div>
 
         <div class="guide-chapter">
-          <h3>🌳 Talent-Schwerpunkte</h3>
+          <h3>Talent-Schwerpunkte</h3>
           <div class="card-grid">
             <div class="sub-box orange"><h4>Leveln: Vergeltung</h4><p>Alles, was Zweihand-Schaden, Crit und Siegel-Schaden erhöht. Waffenschaden bleibt König.</p></div>
             <div class="sub-box blue"><h4>Dungeons/60: Schutz</h4><p>Siegel der Wut + Zorn der Gerechtigkeit. Mit Dual-Spec ab 40 (10 Gold) parallel zur Vergeltung nutzbar.</p></div>
@@ -3619,7 +3698,7 @@
         </div>
 
         <div class="guide-chapter">
-          <h3>⚙️ Nützliche Paladin-Makros</h3>
+          <h3>Nützliche Paladin-Makros</h3>
           <div class="macro-grid">
             <div class="macro-box">
               <div class="macro-title">
@@ -3651,6 +3730,20 @@
 
         <div class="timeline-container">
           <div class="timeline-block highlight-block">
+            <div class="level-indicator">v3.1.0<br><span>1. Nov 2026</span></div>
+            <div class="timeline-body">
+              <h4>Übersichtlicher: neue Navigation & Unter-Reiter</h4>
+              <ul>
+                <li><strong>5 Bereiche statt 24 Menüpunkte:</strong> Start, Leveling, Klassen, Wissen, Patches.</li>
+                <li><strong>Leveling 1–60:</strong> Fahrplan und Questing-Route zusammengelegt, mit Stufen-Reitern.</li>
+                <li><strong>Klassen-Übersicht</strong> mit Tier, Rollen und Völkern. Klassenseiten mit Unter-Reitern (Überblick, Kampf, Talente, Ausrüstung, Trainer, Makros, Patches).</li>
+                <li><strong>Patch-Hinweise</strong> als einzeilige, aufklappbare Zeile. <strong>Suche</strong> mit Strg+K. „Auf dieser Seite“-Liste auf breiten Bildschirmen.</li>
+                <li>Ruhigere Optik, weniger Emojis, doppelte Buttons und Ankündigungsleiste entfernt.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-block">
             <div class="level-indicator">v3.0.0<br><span>1. Nov 2026</span></div>
             <div class="timeline-body">
               <h4>Komplett-Update vor dem Launch: 16-Bit-Design, Ranking & Patch-Stand</h4>
@@ -3708,14 +3801,14 @@
       <footer class="app-global-footer">
         <div class="footer-content">
           <div class="footer-left">
-            <span class="footer-version-tag">v3.0.0</span>
+            <span class="footer-version-tag">v3.1.0</span>
             <span class="footer-dot">•</span>
             <span class="footer-timestamp">Stand: 1. November 2026</span>
             <span class="footer-dot">•</span>
             <span class="footer-guild">&lt;TEH CVLT&gt;</span>
           </div>
           <div class="footer-right">
-            <span class="footer-changes">Letzte Änderung: 16-Bit-Design, Klassen-Ranking, Patch-Stand & Paladin</span>
+            <span class="footer-changes">Letzte Änderung: neue Navigation, Leveling-Seite, Klassen-Reiter & Suche</span>
             <a href="https://discord.gg/tehcvlt" target="_blank" rel="noopener noreferrer" class="footer-discord-link">discord.gg/tehcvlt ↗</a>
           </div>
         </div>
@@ -3723,20 +3816,10 @@
     </main>
   </div>
 
-  <!-- Mobile Backdrop & Floating Action Buttons -->
+  <!-- Mobile Backdrop -->
   <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
-  <a href="https://discord.gg/tehcvlt" target="_blank" rel="noopener noreferrer" class="mobile-discord-fab" aria-label="Join Guild Discord">
-    <svg class="discord-svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-      <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
-    </svg>
-    <span>discord.gg/tehcvlt</span>
-  </a>
-  <button class="mobile-nav-fab" id="mobileNavFab" aria-label="Kategorie öffnen">
-    <span class="fab-icon">📖</span>
-    <span class="fab-text">Leitfäden</span>
-  </button>
 
-  <script src="script.js?v=13"></script>
+  <script src="script.js?v=16"></script>
 </body>
 </html>
 

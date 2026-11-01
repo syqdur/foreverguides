@@ -1,4 +1,10 @@
-// Tab Switching Logic
+// Alte Direktlinks auf zusammengelegte Seiten umleiten
+const PANE_ALIASES = { 'tab-timeline': 'tab-leveling', 'tab-questing': 'tab-leveling' };
+
+// Wird von Navigation, Suche und Links genutzt (in initTabs gesetzt)
+let showTab = () => {};
+
+// Seiten- und Bereichs-Navigation
 function initTabs() {
   const tabs = document.querySelectorAll('.nav-tab');
   const panes = document.querySelectorAll('.tab-pane');
@@ -7,35 +13,57 @@ function initTabs() {
   const menuBtn = document.getElementById('mobileMenuBtn');
   const contentPanel = document.querySelector('.content-panel');
 
-  function showTab(targetId, updateHash) {
-    const targetPane = document.getElementById(targetId);
+  // Bereich aufklappen, zu dem die Seite gehört
+  function openAreaFor(targetId) {
+    document.querySelectorAll('.nav-area').forEach(area => {
+      const owns = !!area.querySelector(`.nav-tab[data-target="${targetId}"]`);
+      area.classList.toggle('open', owns);
+      area.classList.toggle('current', owns);
+    });
+  }
+
+  showTab = function (targetId, updateHash, keepScroll) {
+    const [paneId, subId] = (targetId || '').split(':');
+    const resolved = PANE_ALIASES[paneId] || paneId;
+    const targetPane = document.getElementById(resolved);
     if (!targetPane || !targetPane.classList.contains('tab-pane')) return;
 
-    // Deactivate all, activate target
-    tabs.forEach(t => t.classList.toggle('active', t.getAttribute('data-target') === targetId));
+    tabs.forEach(t => t.classList.toggle('active', t.getAttribute('data-target') === resolved));
     panes.forEach(p => p.classList.remove('active'));
     targetPane.classList.add('active');
+    openAreaFor(resolved);
+    if (subId) activateSubtab(targetPane, subId);
 
-    if (updateHash) history.replaceState(null, '', '#' + targetId);
+    if (updateHash) history.replaceState(null, '', '#' + resolved + (subId ? ':' + subId : ''));
 
-    // Close mobile drawer if open
+    // Mobile-Menü schließen
     if (sidebar && sidebar.classList.contains('open')) {
       sidebar.classList.remove('open');
       if (backdrop) backdrop.classList.remove('open');
       if (menuBtn) menuBtn.classList.remove('open');
     }
 
-    // Scroll to top of content on mobile / desktop
-    if (contentPanel) {
-      contentPanel.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  }
+    if (contentPanel && !keepScroll) contentPanel.scrollTo({ top: 0, behavior: 'smooth' });
+    document.dispatchEvent(new CustomEvent('pagechange'));
+  };
 
   tabs.forEach(tab => {
     tab.addEventListener('click', () => showTab(tab.getAttribute('data-target'), true));
   });
 
-  // Quick-Links & Inline-Links auf andere Reiter
+  // Bereichs-Button: aufklappen und erste Seite des Bereichs öffnen
+  document.querySelectorAll('.nav-area-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const area = btn.closest('.nav-area');
+      if (area.classList.contains('current') && !area.classList.contains('single')) {
+        area.classList.toggle('open');
+        return;
+      }
+      showTab(btn.dataset.areaTarget, true);
+    });
+  });
+
+  // Quick-Links & Inline-Links auf andere Seiten
   document.addEventListener('click', e => {
     const link = e.target.closest('[data-goto]');
     if (!link) return;
@@ -43,9 +71,225 @@ function initTabs() {
     showTab(link.getAttribute('data-goto'), true);
   });
 
-  // Direktlinks wie #tab-ranking
-  if (location.hash.length > 1) showTab(location.hash.slice(1), false);
+  // Direktlinks wie #tab-ranking oder #tab-mage:talents
+  const initial = location.hash.length > 1 ? location.hash.slice(1) : (document.querySelector('.tab-pane.active') || {}).id;
+  showTab(initial, false, true);
   window.addEventListener('hashchange', () => showTab(location.hash.slice(1), false));
+}
+
+// Unter-Reiter innerhalb einer Seite (Leveling-Stufen, Klassen-Abschnitte)
+function activateSubtab(pane, subId) {
+  const btn = pane.querySelector(`.subtab-btn[data-subtab="${subId}"]`);
+  if (!btn) return;
+  pane.querySelectorAll('.subtab-btn').forEach(b => b.classList.toggle('active', b === btn));
+  pane.querySelectorAll('.subtab-panel').forEach(p => p.classList.toggle('active', p.dataset.subtab === subId));
+}
+
+function initSubtabs() {
+  document.addEventListener('click', e => {
+    const btn = e.target.closest('.subtab-btn');
+    if (!btn) return;
+    const pane = btn.closest('.tab-pane');
+    activateSubtab(pane, btn.dataset.subtab);
+    history.replaceState(null, '', '#' + pane.id + ':' + btn.dataset.subtab);
+    document.dispatchEvent(new CustomEvent('pagechange'));
+  });
+}
+
+// Klassenseiten in Unter-Reiter gliedern: Überblick, Kampf, Talente, Ausrüstung, Trainer, Makros, Patches
+const CLASS_SECTIONS = [
+  ['overview', 'Überblick'],
+  ['combat', 'Kampf'],
+  ['talents', 'Talente'],
+  ['gear', 'Ausrüstung'],
+  ['trainer', 'Trainer'],
+  ['macros', 'Makros'],
+  ['patches', 'Patches'],
+];
+
+function classSectionFor(heading) {
+  if (/trainer/i.test(heading)) return 'trainer';
+  if (/makro/i.test(heading)) return 'macros';
+  if (/talent/i.test(heading)) return 'talents';
+  if (/zauberst|stäbe|stab-|waffe|fernkampf|2-hand|zweihand|ausrüstung/i.test(heading)) return 'gear';
+  if (/kampf/i.test(heading)) return 'combat';
+  return 'overview';
+}
+
+function initClassSubtabs() {
+  document.querySelectorAll('.tab-pane').forEach(pane => {
+    if (!pane.querySelector('.class-meta-rating')) return;
+
+    const buckets = {};
+    CLASS_SECTIONS.forEach(([id]) => { buckets[id] = []; });
+    [...pane.children].forEach(child => {
+      if (child.classList.contains('guide-chapter')) {
+        const h3 = child.querySelector('h3');
+        buckets[classSectionFor(h3 ? h3.textContent : '')].push(child);
+      } else if (child.classList.contains('class-note') || child.classList.contains('live-changes')) {
+        buckets.patches.push(child);
+      }
+    });
+
+    const bar = document.createElement('div');
+    bar.className = 'subtabs';
+    bar.setAttribute('role', 'tablist');
+    pane.querySelector('.class-meta-rating').after(bar);
+
+    let first = true;
+    let anchor = bar;
+    CLASS_SECTIONS.forEach(([id, label]) => {
+      if (!buckets[id].length) return;
+      const btn = document.createElement('button');
+      btn.className = 'subtab-btn' + (first ? ' active' : '');
+      btn.dataset.subtab = id;
+      btn.textContent = label;
+      bar.appendChild(btn);
+
+      const panel = document.createElement('div');
+      panel.className = 'subtab-panel' + (first ? ' active' : '');
+      panel.dataset.subtab = id;
+      buckets[id].forEach(node => panel.appendChild(node));
+      anchor.after(panel);
+      anchor = panel;
+      first = false;
+    });
+  });
+}
+
+// "Auf dieser Seite": Überschriften der sichtbaren Seite als Sprungliste (nur breite Bildschirme)
+function initToc() {
+  const toc = document.createElement('nav');
+  toc.className = 'page-toc';
+  toc.setAttribute('aria-label', 'Auf dieser Seite');
+  document.body.appendChild(toc);
+
+  function visible(el) {
+    return !el.closest('.subtab-panel:not(.active)') && !el.closest('details:not([open])');
+  }
+
+  function build() {
+    const pane = document.querySelector('.tab-pane.active');
+    toc.textContent = '';
+    if (!pane) return;
+    const heads = [...pane.querySelectorAll('.guide-chapter > h3')].filter(visible);
+    if (heads.length < 3) { toc.classList.remove('show'); return; }
+    const title = document.createElement('span');
+    title.className = 'page-toc-title';
+    title.textContent = 'Auf dieser Seite';
+    toc.appendChild(title);
+    heads.forEach(h => {
+      const a = document.createElement('a');
+      a.href = '#';
+      a.textContent = h.textContent.trim();
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        h.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+      toc.appendChild(a);
+    });
+    toc.classList.add('show');
+  }
+
+  document.addEventListener('pagechange', build);
+  build();
+}
+
+// Suche über alle Seiten (Strg+K)
+function initSearch() {
+  const input = document.getElementById('siteSearch');
+  const box = document.getElementById('searchResults');
+  if (!input || !box) return;
+
+  const paneTitle = pane => {
+    const nav = document.querySelector(`.nav-tab[data-target="${pane.id}"]`);
+    return nav ? nav.textContent.replace(/LIVE|NEU/g, '').trim() : '';
+  };
+
+  // Index: Überschriften und Karten-Titel, jeweils mit dem Text des umgebenden Blocks
+  const index = [];
+  document.querySelectorAll('.tab-pane').forEach(pane => {
+    pane.querySelectorAll('.pane-header h2, h3, h4, .tier-chip b, .route-info h4, td:first-child strong').forEach(el => {
+      const label = el.textContent.trim();
+      if (!label || el.closest('.live-changes')) return;
+      const block = el.closest('.card, .guide-chapter, .tier-chip, tr, .timeline-block, .route-item, .sub-box') || el;
+      index.push({ label, text: (label + ' ' + block.textContent).toLowerCase(), el, pane, where: paneTitle(pane), isPage: el.tagName === 'H2' });
+    });
+  });
+
+  let results = [];
+  let cursor = 0;
+
+  function go(hit) {
+    const sub = hit.el.closest('.subtab-panel');
+    showTab(hit.pane.id + (sub ? ':' + sub.dataset.subtab : ''), true, true);
+    setTimeout(() => {
+      hit.el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      hit.el.classList.add('search-flash');
+      setTimeout(() => hit.el.classList.remove('search-flash'), 1800);
+    }, 60);
+    input.value = '';
+    box.hidden = true;
+  }
+
+  function render() {
+    box.textContent = '';
+    if (!results.length) {
+      const empty = document.createElement('div');
+      empty.className = 'search-empty';
+      empty.textContent = 'Keine Treffer';
+      box.appendChild(empty);
+    }
+    results.forEach((hit, i) => {
+      const row = document.createElement('button');
+      row.className = 'search-hit' + (i === cursor ? ' active' : '');
+      const b = document.createElement('b');
+      b.textContent = hit.label;
+      const s = document.createElement('small');
+      s.textContent = hit.where;
+      row.append(b, s);
+      row.addEventListener('mousedown', e => { e.preventDefault(); go(hit); });
+      box.appendChild(row);
+    });
+    box.hidden = false;
+  }
+
+  input.addEventListener('input', () => {
+    const terms = input.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
+    if (!terms.length) { box.hidden = true; return; }
+    const seen = new Set();
+    results = index
+      .filter(h => terms.every(t => h.text.includes(t)))
+      // Seitentitel zuerst, dann Treffer im Titel, dann Treffer im Text
+      .map(h => ({ h, score: (terms.every(t => h.label.toLowerCase().includes(t)) ? 2 : 0) + (h.isPage ? 1 : 0) }))
+      .sort((a, b) => b.score - a.score)
+      .map(x => x.h)
+      .filter(h => { const k = h.label + h.where; if (seen.has(k)) return false; seen.add(k); return true; })
+      .slice(0, 12);
+    cursor = 0;
+    render();
+  });
+
+  input.addEventListener('keydown', e => {
+    if (box.hidden) return;
+    if (e.key === 'ArrowDown') { cursor = Math.min(cursor + 1, results.length - 1); render(); e.preventDefault(); }
+    if (e.key === 'ArrowUp') { cursor = Math.max(cursor - 1, 0); render(); e.preventDefault(); }
+    if (e.key === 'Enter' && results[cursor]) { go(results[cursor]); e.preventDefault(); }
+    if (e.key === 'Escape') { box.hidden = true; input.blur(); }
+  });
+  input.addEventListener('blur', () => setTimeout(() => { box.hidden = true; }, 150));
+
+  document.addEventListener('keydown', e => {
+    if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+      e.preventDefault();
+      const sidebar = document.getElementById('sidebarNav');
+      if (window.innerWidth <= 900 && sidebar && !sidebar.classList.contains('open')) {
+        document.getElementById('mobileMenuBtn').click();
+      }
+      input.focus();
+      input.select();
+    }
+  });
 }
 
 // Copy Code Box
@@ -202,7 +446,7 @@ function initPatchnotes() {
 
       const panel = el('div', 'live-panel');
       const head = el('div', 'live-head');
-      head.appendChild(el('h4', null, '⚡ Live-Änderungen' + (box.dataset.liveTitle ? ': ' + box.dataset.liveTitle : '')));
+      head.appendChild(el('h4', null, 'Live-Änderungen' + (box.dataset.liveTitle ? ': ' + box.dataset.liveTitle : '')));
       head.appendChild(el('span', 'live-stamp', 'automatisch übernommen · Stand ' + fetchedAt));
       panel.appendChild(head);
 
@@ -224,13 +468,19 @@ function initPatchnotes() {
       more.dataset.goto = 'tab-patchnotes';
       panel.appendChild(more);
       box.appendChild(panel);
+
+      // Abzeichen am Reiter "Patches" der Klassenseite: Anzahl im neuesten Build
+      const tab = box.closest('.tab-pane') && box.closest('.tab-pane').querySelector('.subtab-btn[data-subtab="patches"]');
+      if (tab && !tab.querySelector('.subtab-badge')) {
+        tab.appendChild(el('span', 'subtab-badge', String(relevant[0].changes.length)));
+        tab.title = `${relevant[0].changes.length} Änderungen im neuesten Build (${fmtDate(relevant[0].item.date)})`;
+      }
     });
   }
 
   // Patch-Hinweise für die allgemeinen Guides: Stichwortsuche in den Build-Zusammenfassungen
   const TOPICS = {
-    questing:    { title: 'Questing-Route', re: /\bquest|erfahrung|respawn|startgebiet|zephras|brachland|durotar|mulgore|tirisfal|wegekreuz|höchststufe/i },
-    timeline:    { title: 'Stufen-Fahrplan', re: /erfahrung|höchststufe|dungeon|\breiten\b|reitfertigkeit|doppelte spezialisierung/i },
+    leveling:    { title: 'Leveling', re: /\bquest|erfahrung|respawn|startgebiet|zephras|brachland|durotar|mulgore|tirisfal|wegekreuz|höchststufe|dungeon|\breiten\b|reitfertigkeit|doppelte spezialisierung/i },
     rules:       { title: 'Grundlagen', re: /erfahrung|erholung|dungeon|questlog|briefkasten|\bpost\b|umskill/i },
     buffs:       { title: 'Buffs & Camps', re: /zelt|lagerfeuer|\bcamp|schlafsack|erholung|\bkochen\b|kochkunst|elixier/i },
     sleepingbag: { title: 'Schlafsack', re: /schlafsack|sleeping bag/i },
@@ -253,12 +503,18 @@ function initPatchnotes() {
       });
       if (!hits.length) return;
 
-      const panel = el('div', 'live-panel topic-panel');
-      const head = el('div', 'live-head');
-      head.appendChild(el('h4', null, `📯 Patch-Hinweise: ${topic.title}`));
-      head.appendChild(el('span', 'live-stamp', 'automatisch erkannt · Stand ' + fetchedAt));
-      panel.appendChild(head);
-      panel.appendChild(el('p', 'topic-note', 'Diese Einträge aus den Patchnotes betreffen vermutlich diesen Guide. Der Guide-Text selbst wird von Hand nachgezogen.'));
+      // Eingeklappt als eine Zeile: "📯 3 Patch-Hinweise seit 30. Okt. 2026 – anzeigen"
+      const panel = el('details', 'topic-line');
+      const line = el('summary', null);
+      line.appendChild(el('span', 'topic-horn', '📯'));
+      line.appendChild(document.createTextNode(
+        ` ${hits.length} Patch-Hinweis${hits.length === 1 ? '' : 'e'} seit ${hits[hits.length - 1].item.date ? fmtDate(hits[hits.length - 1].item.date) : '–'}`));
+      line.appendChild(el('span', 'topic-latest', ' · neuester: ' + (hits[0].item.date ? fmtDate(hits[0].item.date) : '–')));
+      line.appendChild(el('span', 'topic-open', 'anzeigen'));
+      panel.appendChild(line);
+      const inner = el('div', 'topic-body');
+      panel.appendChild(inner);
+      inner.appendChild(el('p', 'topic-note', `Automatisch erkannt (Stand ${fetchedAt}). Betrifft vermutlich diesen Guide, der Text selbst wird von Hand nachgezogen.`));
 
       hits.slice(0, 4).forEach(({ item, sentences }, idx) => {
         const title = item.title.replace(/,\s*\d{1,2}\.\s+\S+\s+\d{4}$/, '');
@@ -278,14 +534,14 @@ function initPatchnotes() {
           ul.appendChild(li);
         });
         wrap.appendChild(ul);
-        panel.appendChild(wrap);
+        inner.appendChild(wrap);
       });
 
-      if (hits.length > 4) panel.appendChild(el('p', 'topic-note', `+ ${hits.length - 4} ältere Treffer in den Patchnotes`));
+      if (hits.length > 4) inner.appendChild(el('p', 'topic-note', `+ ${hits.length - 4} ältere Treffer in den Patchnotes`));
       const more = el('a', 'accent-link pn-more', 'Alle Patchnotes ansehen');
       more.href = '#tab-patchnotes';
       more.dataset.goto = 'tab-patchnotes';
-      panel.appendChild(more);
+      inner.appendChild(more);
       box.appendChild(panel);
     });
   }
@@ -364,10 +620,14 @@ function initPatchnotes() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  initClassSubtabs();
+  initSubtabs();
   initTabs();
   initCountdown();
   initMobileMenu();
   initPatchnotes();
+  initToc();
+  initSearch();
 });
 // Function to copy text from macro blocks
 function copyMacro(btn) {
