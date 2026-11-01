@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Pixelify+Sans:wght@500;600;700&family=Inter:wght@400;500;600;700&family=VT323&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=15">
+  <link rel="stylesheet" href="style.css?v=17">
 </head>
 <body class="dark-theme">
 
@@ -73,6 +73,19 @@
             <button class="nav-tab" data-target="tab-rogue"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_rogue.jpg" class="wow-icon" alt=""> Schurke</button>
             <button class="nav-tab" data-target="tab-priest"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_priest.jpg" class="wow-icon" alt=""> Priester</button>
             <button class="nav-tab" data-target="tab-warrior"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_warrior.jpg" class="wow-icon" alt=""> Krieger</button>
+          </div>
+        </div>
+        <div class="nav-area" data-area="forever">
+          <button class="nav-area-btn" data-area-target="tab-forever"><img src="https://wow.zamimg.com/images/wow/icons/medium/spell_nature_cyclone.jpg" class="wow-icon" alt=""> <span>Neu in Forever</span><span class=nav-caret>▸</span></button>
+          <div class="nav-sub">
+            <button class="nav-tab" data-target="tab-forever:overview"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_book_11.jpg" class="wow-icon" alt=""> Überblick</button>
+            <button class="nav-tab" data-target="tab-forever:zones"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_map02.jpg" class="wow-icon" alt=""> Zonen & Reisen</button>
+            <button class="nav-tab" data-target="tab-forever:dungeons"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_head_dragon_black.jpg" class="wow-icon" alt=""> Dungeons & Raids</button>
+            <button class="nav-tab" data-target="tab-forever:races"><img src="https://wow.zamimg.com/images/wow/icons/medium/achievement_character_orc_male.jpg" class="wow-icon" alt=""> Völker</button>
+            <button class="nav-tab" data-target="tab-forever:classes"><img src="https://wow.zamimg.com/images/wow/icons/medium/achievement_general.jpg" class="wow-icon" alt=""> Klassen</button>
+            <button class="nav-tab" data-target="tab-forever:quests"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_axe_09.jpg" class="wow-icon" alt=""> Klassenquests</button>
+            <button class="nav-tab" data-target="tab-forever:systems"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_gear_01.jpg" class="wow-icon" alt=""> Systeme & Berufe</button>
+            <button class="nav-tab" data-target="tab-forever:pvp"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_bannerpvp_01.jpg" class="wow-icon" alt=""> PvP</button>
           </div>
         </div>
         <div class="nav-area" data-area="wissen">
@@ -499,6 +512,98 @@
         <p class="src-list" style="margin-top:1.5rem">Quelle: <a href="https://foreverchanges.pro/de/patch-notes" target="_blank" rel="noopener">ForeverChanges – Patchnotes</a>. Dort stehen auch alle Details Klasse für Klasse. Maschinell übersetzte Einträge sind mit <span class="pn-badge mt">ÜBERSETZT</span> markiert.</p>
       </section>
 
+      <!-- ================= NEU IN FOREVER ================= -->
+      <section id="tab-forever" class="tab-pane">
+        <div class="pane-header">
+          <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/spell_nature_cyclone.jpg" class="wow-icon large" alt=""> Neu in Forever</h2>
+          <p class="pane-subtitle">Alles, was sich gegenüber Classic geändert hat oder neu dazukommt, an einem Ort. Neue Patches erscheinen automatisch unter <a href="#" class="accent-link" data-goto="tab-patchnotes">Live-Patchnotes</a>.</p>
+        </div>
+
+        <div class="subtabs" role="tablist" aria-label="Themen">
+          <button class="subtab-btn active" data-subtab="overview">Überblick</button>
+          <button class="subtab-btn" data-subtab="zones">Zonen & Reisen</button>
+          <button class="subtab-btn" data-subtab="dungeons">Dungeons & Raids</button>
+          <button class="subtab-btn" data-subtab="races">Völker</button>
+          <button class="subtab-btn" data-subtab="classes">Klassen</button>
+          <button class="subtab-btn" data-subtab="quests">Klassenquests</button>
+          <button class="subtab-btn" data-subtab="systems">Systeme & Berufe</button>
+          <button class="subtab-btn" data-subtab="pvp">PvP</button>
+        </div>
+
+        <div class="subtab-panel active" data-subtab="overview">
+
+        <p class="card-desc">Stand 1. Nov 2026, Beta- und Launch-Build-Daten. Was noch nicht bestätigt ist, steht ausdrücklich dabei.</p>
+        <div class="fact-grid">
+          <div class="fact-tile"><span class="fact-label">Neue Quests</span><span class="fact-value">1.000+</span><span class="fact-sub">über Stufe 1–60 verteilt</span></div>
+          <div class="fact-tile"><span class="fact-label">Neue Zonen</span><span class="fact-value">4 + Dalaran</span><span class="fact-sub">Zephras, Riverglades, Shen'dralas, Hyjal</span></div>
+          <div class="fact-tile"><span class="fact-label">Neue Dungeons</span><span class="fact-value">9</span><span class="fact-sub">von 13–18 bis 58–60</span></div>
+          <div class="fact-tile"><span class="fact-label">Neue Raids</span><span class="fact-value">2 + Onyxia</span><span class="fact-sub">ab 9. Dezember</span></div>
+          <div class="fact-tile"><span class="fact-label">Neues Volk</span><span class="fact-value">Skyborne</span><span class="fact-sub">Horde: Windformer</span></div>
+          <div class="fact-tile"><span class="fact-label">Neue Kombis (Horde)</span><span class="fact-value">3</span><span class="fact-sub">Orc-Magier, Troll-Hexer, Untoter Paladin</span></div>
+          <div class="fact-tile"><span class="fact-label">Neues Schlachtfeld</span><span class="fact-value">Dunkelspeer-Inseln</span><span class="fact-sub">15 gegen 15, ab 30</span></div>
+          <div class="fact-tile"><span class="fact-label">Neue Systeme</span><span class="fact-value">Camping, Legacy</span><span class="fact-sub">dazu Dual-Spec, Sammlungen, Berufs-Fraktionen</span></div>
+        </div>
+        <div class="card"><h4>Was bleibt wie in Classic?</h4><ul><li>Stufengrenze 60, <strong>für immer</strong>: keine Erhöhungen geplant</li><li>Alle 12 Berufe mit Obergrenze 300</li><li>Kein Fliegen, kein Dungeon-Finder (Blizzard setzt auf Gemeinschaft statt Matchmaking)</li><li>Horde und Allianz können nicht zusammen gruppieren</li><li>Völker ab Burning Crusade (Blutelfen usw.) gibt es nicht</li></ul></div>
+        </div>
+
+        <div class="subtab-panel" data-subtab="zones">
+
+        <div class="table-card"><table class="simple-table"><thead><tr><th>Zone</th><th>Stufe</th><th>Wo / Zugang</th><th>Was dort ist</th></tr></thead><tbody><tr><td><strong>Zephras Isle</strong></td><td>1–12</td><td>Schwebende Insel, Himmelsboot ab Valanaar Skydocks (beide Fraktionen)</td><td>Startgebiet der Skyborne, U-förmige Route, mit 12 per Himmelsboot nach Kalimdor</td></tr><tr><td><strong>Riverglades</strong></td><td>~35–45</td><td>Schiff Gadgetzan (Tanaris) ↔ Powderfuse Port</td><td>150+ Quests, neutraler Goblin-Hafen, Powderfuse-Goblins, Schattenhammer, Bruderschaft des Pferdes, Gnolle, Oger. Dungeon <em>Krol'dok Stronghold</em></td></tr><tr><td><strong>Shen'dralas</strong></td><td>unbestätigt (40–53 genannt)</td><td>Ruinen zwischen Mulgore, Desolace und Feralas</td><td>Hochelfen-/Highborne-Ruinen, Details zum Launch</td></tr><tr><td><strong>Hyjal</strong></td><td>55–60 / Endgame</td><td>Darkwhisper-Schlucht im südlichen Winterquell</td><td>Endgame-Zone für beide Fraktionen, Raid <em>Hyjal-Gipfel</em></td></tr><tr><td><strong>Dalaran</strong></td><td>~28–33</td><td>Alteracgebirge</td><td>Erweiterte Stadt, Dungeon <em>Stadt Dalaran</em>, Kirin-Tor-Ruf (auch Horde)</td></tr></tbody></table></div>
+        <div class="card-grid" style="margin-top:1.2rem">
+          <div class="card"><h4>Neue Reiserouten</h4><ul><li>Gadgetzan ↔ Powderfuse Port (Riverglades)</li><li>Valanaar Skydocks ↔ Zephras Isle (beide Fraktionen)</li><li>Sturmwind ↔ Auberdun und Süderstade ↔ Auberdun (Allianz)</li><li>Kein Fliegen: Reiten mit 40 (100 G) und 60 (1.000 G)</li></ul></div>
+          <div class="card"><h4>Alte Zonen</h4><ul><li>Viele Classic-Zonen erweitert und mit neuen Quests gefüllt</li><li>Neue Grafik und Beleuchtung, SD/HD-Modelle umschaltbar</li><li>Gegner regenerieren außerhalb des Kampfes Leben</li><li>Ziel: ein normaler Mob stirbt solo in ca. 10–15 s</li></ul></div>
+        </div>
+        </div>
+
+        <div class="subtab-panel" data-subtab="dungeons">
+
+        <div class="table-card"><table class="simple-table"><thead><tr><th>Dungeon</th><th>Stufe</th><th>Ort</th><th>Bekannt</th></tr></thead><tbody><tr><td><strong>Hall of Thanes</strong></td><td>13–18</td><td>Unter Eisenschmiede (Dun Morogh)</td><td>4 Bosse, Endboss Durgen Dirgehammer. Für die Horde weiter Weg ins Allianz-Gebiet.</td></tr><tr><td><strong>Ruinen von Lordaeron</strong></td><td>15–20</td><td>Über Unterstadt (Tirisfal)</td><td>6–7 Bosse, Endboss Rath'mael. Für die Horde direkt vor der Haustür.</td></tr><tr><td><strong>Ausgrabungsstätte: Sumpfland</strong></td><td>26–31</td><td>Sumpfland</td><td>seit Beta 1. Okt spielbar</td></tr><tr><td><strong>Stadt Dalaran</strong></td><td>28–33</td><td>Alteracgebirge</td><td>seit Beta 8. Okt spielbar</td></tr><tr><td><strong>The Drowned City</strong></td><td>35–40</td><td>Vor der Küste des Schlingendorntals, westlich von Grom'gol</td><td>Bosse unbestätigt (u. a. Zul'Alai, Min'loth)</td></tr><tr><td><strong>Krol'dok Stronghold</strong></td><td>40–45</td><td>Riverglades</td><td>Oger-Clans</td></tr><tr><td><strong>Alcaz-Gefängnis</strong></td><td>48–53</td><td>Insel Alcaz, Düstermarschen</td><td></td></tr><tr><td><strong>Blackmaw Hold</strong></td><td>55–60</td><td>Nord-Azshara, hinter den Furbolg-Toren</td><td>Bosse noch unbekannt</td></tr><tr><td><strong>Shaper's Terrace</strong></td><td>58–60</td><td>Nördliche Hügel des Krater von Un'Goro</td><td></td></tr></tbody></table></div>
+        <div class="card-grid" style="margin-top:1.2rem">
+          <div class="card"><h4>Raids (ab 9. Dezember)</h4><ul><li><strong>Barrow Deeps</strong>: 10 Spieler, neu</li><li><strong>Hyjal-Gipfel</strong>: 20 Spieler, neu</li><li><strong>Onyxias Hort</strong>: 40 Spieler, Düstermarschen</li><li>Frühling 2027: 2 weitere Raids, Sommer 2027: ein überarbeiteter Klassiker + ein neuer</li></ul></div>
+          <div class="card"><h4>Dungeon-Regeln</h4><ul><li>Dungeon-Quests: Bonus-XP halbiert (1. Okt)</li><li>Dungeon-Mobs: +20 % XP (8. Okt)</li><li>Gruppen-XP-Malus wieder nach eigenem Level</li><li>Weltbuffs werden in Dungeons und Raids entfernt</li><li>Kral der Klingenhauer-Hügel (25+) und Uldaman (30+) seit Beta offen</li></ul></div>
+        </div>
+        </div>
+
+        <div class="subtab-panel" data-subtab="races">
+
+        <p class="card-desc">Jedes Volk hat jetzt 4 Fähigkeiten (2 aktiv, 2 passiv). Die alten Waffen-Spezialisierungen sind weg. Neu spielbar: <strong>Orc-Magier, Troll-Hexer, Untoter Paladin</strong> und <strong>Skyborne</strong> (Horde: Krieger, Jäger, Schurke, Schamane, Druide). Bewertung siehe <a href="#" class="accent-link" data-goto="tab-ranking">Ranking</a>.</p>
+        <div class="table-card"><table class="simple-table"><thead><tr><th>Volk</th><th>Fähigkeit</th><th>Effekt</th><th>Status</th></tr></thead><tbody><tr><td><strong>Orc</strong></td><td>Befehlsgewalt</td><td>+5 % Schaden für Jäger- und Hexer-Begleiter</td><td>neu</td></tr><tr><td></td><td>Kochendes Blut</td><td>+10 Angriffskraft und Zaubermacht für 15 s, 2 Min. Abklingzeit</td><td>geändert</td></tr><tr><td></td><td>Fluch brechen</td><td>Entfernt Omen und Flüche, −5 % Magieschaden für 8 s</td><td>neu</td></tr><tr><td></td><td>Zähigkeit</td><td>Betäubungen 20 % kürzer</td><td>geändert</td></tr><tr><td><strong>Untot</strong></td><td>Wille der Verlassenen</td><td>Entfernt Bezauberung, Furcht, Schlaf</td><td>geändert</td></tr><tr><td></td><td>Kannibalismus</td><td>Heilt jetzt auch 7 % Mana pro Tick</td><td>geändert</td></tr><tr><td></td><td>Berührung des Grabes</td><td>20–30 % Chance auf Lebensentzug (bis 5 % max. HP), alle 15 s</td><td>neu</td></tr><tr><td></td><td>Unterwasseratmung</td><td>300 % länger</td><td>unverändert</td></tr><tr><td><strong>Tauren</strong></td><td>Grüner Daumen</td><td>Dupliziert ein Kraut, das jeder ernten kann</td><td>geändert</td></tr><tr><td></td><td>Kriegsdonner</td><td>Betäubt bis zu 5 Gegner 2 s, 90 s Abklingzeit</td><td>geändert</td></tr><tr><td></td><td>Ebenenlaufen</td><td>+2 % Lauftempo alle 5 s Bewegung, bis 60 % (nicht beritten)</td><td>neu</td></tr><tr><td></td><td>Durchhaltevermögen</td><td>+5 % maximale Gesundheit</td><td>geändert</td></tr><tr><td><strong>Troll</strong></td><td>Berserker</td><td>+10 % Zauber- und Angriffstempo für 15 s</td><td>geändert</td></tr><tr><td></td><td>Rasche Regeneration</td><td>50 % HP über 6 s (bricht bei Aktion)</td><td>neu</td></tr><tr><td></td><td>Regeneration</td><td>+20 % Lebensreg., 20 % davon im Kampf</td><td>geändert</td></tr><tr><td></td><td>Wildtierschlächter</td><td>+5 % Schaden gegen Wildtiere</td><td>unverändert</td></tr><tr><td><strong>Skyborne (Windformer)</strong></td><td>Luftwandeln</td><td>10 s nach unten gleiten</td><td>neu</td></tr><tr><td></td><td>Himmelssicht</td><td>+15 % Lauf- und Reittempo, an Elementarkonvergenz „Charged“: 30 % für 1 h</td><td>neu</td></tr><tr><td></td><td>Windgesegnet</td><td>+2 % Nah-, Fern- und Zaubertempo</td><td>neu</td></tr><tr><td></td><td>Elementareinblick</td><td>+5 % Schaden gegen Elementare</td><td>neu</td></tr></tbody></table></div>
+        </div>
+
+        <div class="subtab-panel" data-subtab="classes">
+
+        <p class="card-desc">Alle 9 Klassen haben neue Fähigkeiten und überarbeitete Talentbäume, mit einem neuen Meilenstein bei 16 Punkten. Treffer- und Crit-Wertungen sind zusammengelegt. Göttlicher Willen, Segen der Könige und Verb. Mal der Wildnis sind Grundfähigkeiten. Die Details stehen auf jeder Klassenseite im Reiter <em>Neu in Forever</em>.</p>
+        <div class="card-grid"><div class="card"><h4><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_warrior.jpg" class="wow-icon" alt=""> <span class="c-warrior">Krieger</span></h4><ul><li><strong>Siegesrausch</strong> und Schlachtruf-Bonus sind Grundfähigkeiten, Schlachtruf wirkt raidweit</li><li>Waffen: <em>Weaponmaster</em> ersetzt vier Waffen-Talente (Axt/Stangenwaffe Crit, Kolben/Stab Rüstung ignorieren, Schwert Extra-Angriff)</li><li>Neu: <em>Spearing Strike</em> (+80 % gegen Riesen, Drachkin, Berittene)</li><li>Wutanfall durch jeden Treffer (30 %), nicht nur Crits</li></ul><a href="#" class="accent-link" data-goto="tab-warrior:forever">Alles zum Krieger →</a></div><div class="card"><h4><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_paladin.jpg" class="wow-icon" alt=""> <span class="c-paladin">Paladin</span></h4><ul><li><strong>Neu für die Horde</strong> (nur Untote)</li><li><strong>Heiliger Stoß</strong> ab 6, <strong>Weihe</strong> ab 20 als Grundfähigkeit, Segen der Könige für alle</li><li>Neues <strong>Siegel der Wut</strong>: Tank-Siegel, Richturteil spottet aus 10 m und verbraucht das Siegel nicht</li><li>Heiliger Schock schon bei 20 Punkten, neue 30er: <em>Twist of Light</em> (Vergeltung), <em>Light's Vigil</em> (Heilig)</li></ul><a href="#" class="accent-link" data-goto="tab-paladin:forever">Alles zum Paladin →</a></div><div class="card"><h4><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_hunter.jpg" class="wow-icon" alt=""> <span class="c-hunter">Jäger</span></h4><ul><li><strong>Gezielter Schuss</strong> für alle Specs</li><li><strong>Begleiter skalieren mit deiner Ausrüstung</strong></li><li>Treffsicherheit: <em>Lone Wolf</em> (+20 % ohne Begleiter), <em>Sniper Shot</em> (4 s, 35 m)</li><li>Tierherrschaft: <em>Summon Hawk</em>, <em>Deadly Aspects</em> (Aspekte als Tempo-Procs)</li></ul><a href="#" class="accent-link" data-goto="tab-hunter:forever">Alles zum Jäger →</a></div><div class="card"><h4><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_rogue.jpg" class="wow-icon" alt=""> <span class="c-rogue">Schurke</span></h4><ul><li><strong>Verstümmeln</strong> (20 Pkt.) und <strong>Venom</strong> (30 Pkt.) in Meucheln</li><li>Energie regeneriert durchgehend, Äxte erlaubt</li><li>Ziele unter Nierenhieb nehmen 10 % mehr Gift-/Angriffsschaden</li><li>Kampf: vier Waffen-Talente durch ein anpassendes ersetzt</li></ul><a href="#" class="accent-link" data-goto="tab-rogue:forever">Alles zum Schurke →</a></div><div class="card"><h4><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_priest.jpg" class="wow-icon" alt=""> <span class="c-priest">Priester</span></h4><ul><li><strong>Sühne</strong> (Disziplin, 20 Pkt.) offensiv und heilend</li><li><strong>Göttliche Aegis</strong>, <strong>Gebet der Besserung</strong> (Heilig, 30 Pkt.)</li><li>Schattengestalt: halbe Schatten-Manakosten, −15 % physischer Schaden, Schattenschaden heilt die Gruppe</li><li>Furchtschutz & Verschlingende Seuche für alle Priester (20), Göttlicher Willen Grundfähigkeit (30)</li></ul><a href="#" class="accent-link" data-goto="tab-priest:forever">Alles zum Priester →</a></div><div class="card"><h4><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_shaman.jpg" class="wow-icon" alt=""> <span class="c-shaman">Schamane</span></h4><ul><li><strong>Lavaeruption</strong> (Elementar, 21 Pkt.), <strong>Springflut</strong> (Wiederherstellung, 30 Pkt.), <strong>Mahlstromwaffe</strong> (Verstärkung, 25 Pkt.)</li><li>Elementarbeherrschung zurück als 31-Punkte-Talent</li><li>Totems zurückrufen (Teil-Mana zurück) oder verschieben, Gnade der Luft/Stärke der Erde/Windzorn/Flammenzunge raidweit</li><li>Erdbindungstotem wurzelt beim Aufstellen 5 s</li></ul><a href="#" class="accent-link" data-goto="tab-shaman:forever">Alles zum Schamane →</a></div><div class="card"><h4><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_mage.jpg" class="wow-icon" alt=""> <span class="c-mage">Magier</span></h4><ul><li><strong>Frostfeuerblitz</strong> als Grundzauber für alle</li><li>Jeder Baum hat einen Proc: <em>Arkanschlag</em>, <em>Heating Up</em> (Feuer), <em>Fingers of Frost</em> (Frost)</li><li>Eislanze mit 8 s Abklingzeit (Launch-Build), Frostblast nicht mehr erlernbar</li><li>Verb. Gegenzauber: erster Punkt = sichere 2 s Stille</li></ul><a href="#" class="accent-link" data-goto="tab-mage:forever">Alles zum Magier →</a></div><div class="card"><h4><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_warlock.jpg" class="wow-icon" alt=""> <span class="c-warlock">Hexenmeister</span></h4><ul><li>Fluch der Pein wird <strong>Bann der Pein</strong>, Banne haben ein eigenes Limit neben Flüchen</li><li>22 neue Talente, 20 entfernt, DoTs können kritisch treffen</li><li>Gebrechen: <em>Wrack</em> (30 Pkt.), <em>Suppression</em> (+5 % Treffer, −20 % Bedrohung)</li><li>Dämonologie: <em>Demonic Pact</em> (zweiter Dämon), <em>Decimation</em> (Seelenfeuer unter 35 %)</li></ul><a href="#" class="accent-link" data-goto="tab-warlock:forever">Alles zum Hexenmeister →</a></div><div class="card"><h4><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_druid.jpg" class="wow-icon" alt=""> <span class="c-druid">Druide</span></h4><ul><li>Omen der Klarheit, Mal der Wildnis-Bonus und <strong>Wiederbeleben außerhalb des Kampfes</strong> für alle</li><li>17 neue Talente, <strong>Tigerfuror entfernt</strong> → <em>Shifting Power</em> (Mana zu Energie)</li><li>Gleichgewicht: <em>Eclipse</em> (Zorn beschleunigt Sternenfeuer), Insektenschwarm wandert zu Gleichgewicht</li><li>Wilder Kampf: <em>Mangle</em> (Bär), <em>Berserk</em> (30 Pkt.), Katzengestalt +30 % Tempo per Talent</li></ul><a href="#" class="accent-link" data-goto="tab-druid:forever">Alles zum Druide →</a></div></div>
+        </div>
+
+        <div class="subtab-panel" data-subtab="quests">
+
+        <p class="card-desc">Alle Klassen-Waffenquests bis 60 im Überblick. Der komplette Ablauf steht jeweils auf der Klassenseite im Reiter <em>Klassenquest</em>.</p>
+        <div class="table-card"><table class="simple-table"><thead><tr><th>Klasse</th><th>Stufe</th><th>Quest</th><th>Belohnung</th><th>Status</th><th></th></tr></thead><tbody><tr><td><span class='c-paladin'>Paladin (Untot)</span></td><td>18–25</td><td>Wolfsbann</td><td>Zweihandschwert, ×3 gegen Wölfe/Worgen</td><td><span class="pn-badge hotfix">NEU</span></td><td><a href="#" class="accent-link" data-goto="tab-paladin:quest">Details</a></td></tr><tr><td><span class='c-warlock'>Hexenmeister</span></td><td>20</td><td>Kugel von Soran'ruk</td><td>Stab jetzt selten: +34 Feuer/Schatten</td><td><span class="pn-badge build">GEÄNDERT</span></td><td><a href="#" class="accent-link" data-goto="tab-warlock:quest">Details</a></td></tr><tr><td><span class='c-mage'>Magier</span></td><td>21</td><td>Kaltflammensäbel (geheim)</td><td>+32 Zauberschaden, Bonus gegen Eingefrorene</td><td><span class="pn-badge hotfix">NEU</span></td><td><a href="#" class="accent-link" data-goto="tab-mage:quest">Details</a></td></tr><tr><td><span class='c-rogue'>Schurke</span></td><td>~30</td><td>Das Auge von Bhossca</td><td>Rubinbesetzte Klinge (Einhand)</td><td><span class="pn-badge hotfix">NEU</span></td><td><a href="#" class="accent-link" data-goto="tab-rogue:quest">Details</a></td></tr><tr><td><span class='c-shaman'>Schamane</span></td><td>30–40</td><td>Die Waffen des Sturms</td><td>3 Waffen nach Spec</td><td><span class="pn-badge hotfix">NEU</span></td><td><a href="#" class="accent-link" data-goto="tab-shaman:quest">Details</a></td></tr><tr><td><span class='c-mage'>Magier</span></td><td>30</td><td>Magierstab</td><td>3 Zauberstäbe</td><td><span class="pn-badge build">CLASSIC</span></td><td><a href="#" class="accent-link" data-goto="tab-mage:quest">Details</a></td></tr><tr><td><span class='c-warrior'>Krieger</span></td><td>30</td><td>Wirbelwindwaffe</td><td>Axt/Schwert/Hammer</td><td><span class="pn-badge build">CLASSIC</span></td><td><a href="#" class="accent-link" data-goto="tab-warrior:quest">Details</a></td></tr><tr><td><span class='c-druid'>Druide</span></td><td>10–30</td><td>Gestalt-Quests</td><td>Bär, Katze, Wasser</td><td><span class="pn-badge hotfix">NEU</span></td><td><a href="#" class="accent-link" data-goto="tab-druid:quest">Details</a></td></tr><tr><td><span class='c-priest'>Priester</span></td><td>4–20</td><td>80 neue Priester-Quests</td><td>keine Waffe</td><td><span class="pn-badge hotfix">NEU</span></td><td><a href="#" class="accent-link" data-goto="tab-priest:quest">Details</a></td></tr><tr><td><span class='c-hunter'>Jäger</span></td><td>60</td><td>nur Bogenquest auf 60</td><td></td><td><span class="pn-badge build">CLASSIC</span></td><td><a href="#" class="accent-link" data-goto="tab-hunter:quest">Details</a></td></tr></tbody></table></div>
+        </div>
+
+        <div class="subtab-panel" data-subtab="systems">
+
+        <div class="card-grid">
+          <div class="card"><h4>Camping</h4><ul><li>Freischaltung ab etwa Stufe 5 (<em>The Great Outdoors</em>)</li><li>Bis zu 3 Spieler legen je ein Camp-Objekt ans Lagerfeuer</li><li>Jeder Beruf hat 3 Camp-Objekte, erste ab Skill 20, bessere per Blaupause von Dungeon-Bossen</li><li>Alle Camp-Funktionen teilen sich 1 h Abklingzeit</li><li>Abenteurer-Zelt laut Build 30. Okt nur kosmetisch</li></ul></div>
+          <div class="card"><h4>Legacy-System</h4><ul><li>65 Herausforderungen pro Account: Klassen 27, Berufe 18, PvP 12, Dungeons 3, Raids 3, Abenteuer 2</li><li>Je 1 Punkt, gilt für alle Charaktere, max. <strong>16 Punkte pro Charakter</strong> zum Start</li><li>3 Bäume: Berufe, Abenteuer, Einfallsreichtum</li><li>Beispiele: <em>Gut erholt</em> (+4 % Erholung pro Rang), <em>Überstunden</em> (+4–20 % Skill-Chance)</li><li>Belohnungen bis zum Spektralbär-Reittier (55 Punkte)</li></ul></div>
+          <div class="card"><h4>Berufe</h4><ul><li>Neue Berufs-Fraktion: <strong>Durotar Supply and Logistics</strong> (Horde) / Azeroth Commerce Authority (Allianz)</li><li>Lieferkisten abgeben bringt <strong>Merchant's Favor</strong> → Rezepte und Ruf</li><li>600+ neue Rezepte, Obergrenze bleibt 300</li><li>Geringer Heiltrank wandert zu Erster Hilfe</li><li>Viele Händlerpreise für Berufsmaterial gesenkt</li></ul></div>
+          <div class="card"><h4>Charakter & Komfort</h4><ul><li><strong>Dual-Spec</strong> ab 40 für 10 G, Umskillen wird mit der Zeit wieder günstig (bis 1 G)</li><li><strong>Reiten</strong> wie TBC: 40 = 100 G inkl. Reittier, 60 = 1.000 G</li><li>Account-weite <strong>Sammlungen</strong>: Transmog (Opt-in), Reittiere, Haustiere</li><li>Vor- und Nachnamen, SD/HD-Modelle umschaltbar</li><li>Cooldown Manager, Gamepad-Unterstützung</li><li>Bibliotheksbücher für alle Klassen (10/20/25 Bücher)</li></ul></div>
+          <div class="card"><h4>Realms & Regeln</h4><ul><li>Ein Mega-Realm pro Regelwerk und Region: Normal, PvP, RP, RP-PvP</li><li>Hardcore folgt im Winter 2026/27</li><li>Chronoboon-Verdränger nur in der offenen Welt</li><li>Horde- und Allianz-Charakter auf demselben PvP-Regelwerk wird blockiert (Launch-Build)</li></ul></div>
+          <div class="card"><h4>Fahrplan 2027</h4><ul><li>Frühling: 2 Raids, 2 Dungeons, neues Gebiet, legendäre Questreihe, PvP-Saison</li><li>Sommer: überarbeiteter Klassiker-Raid, neuer Raid, mehr Weltinhalte, 2 Dungeons, Berufs- und Legacy-Updates</li></ul></div>
+        </div>
+        </div>
+
+        <div class="subtab-panel" data-subtab="pvp">
+
+        <div class="card-grid">
+          <div class="card"><h4>Neues Schlachtfeld: Dunkelspeer-Inseln</h4><ul><li>15 gegen 15, ab Stufe 30 (bis 60)</li><li>Vor der Küste der Düstermarschen</li><li>Basen halten und Flagge abliefern, wer zuerst 2.000 Punkte hat, gewinnt</li><li>Ruf: <strong>Darkspear Raiders</strong> (Horde) / Theramore Expeditionary Force (Allianz) → Rüstung, Waffen, Wappenröcke</li></ul></div>
+          <div class="card"><h4>Ehre & Rang neu</h4><ul><li>Ehre und Rang sind getrennt: <strong>Ehre</strong> ist Währung für Ausrüstung, <strong>Rangpunkte</strong> mit Wochenlimit</li><li>Ehre-Raten zwischen Schlachtfeldern angeglichen, kein AV-Zwang mehr</li><li>Feiertags-Schlachtfeld gibt weiter Bonus</li><li>PvP-Ausrüstung für ca. 50 % mehr Ehre, Obergrenze 25.000</li><li>Ehrenabzeichen stapeln bis 30</li></ul></div>
+          <div class="card"><h4>Zum Start</h4><ul><li>Kriegshymnenschlucht, Arathibecken, Alteractal und Dunkelspeer-Inseln ab Launch</li><li>Keine Arenen angekündigt</li><li>Crits gegen Spieler nicht mehr reduziert</li><li>12 Legacy-Herausforderungen im PvP</li></ul></div>
+        </div>
+        </div>
+      </section>
+
       <!-- ================= LEVELING 1-60 (Fahrplan + Route) ================= -->
       <section id="tab-leveling" class="tab-pane">
         <div class="pane-header">
@@ -533,6 +638,13 @@
                 <li><strong>Kochen lernen (Stufe 1):</strong> Sobald du bei den ersten Händlern bist, Kochen lernen. Fleisch von Ebern/Wölfen nicht verkaufen, sondern braten → <strong>+5% Kill-XP Buff aktivieren!</strong></li>
                 <li><strong>Bank-Alt erstellen:</strong> Vorab oder kurz ausloggen und einen Level-1-Charakter in Orgrimmar/Donnerfels zwischen Bank, Briefkasten und AH parken.</li>
               </ul>
+          <div class="timeline-block">
+            <div class="level-indicator">Stufe 10 – 16</div>
+            <div class="timeline-body">
+              <h4>Klassenquests (neu)</h4>
+              <ul><li><strong>Druide:</strong> Bärengestalt (10), Katze, Wassergestalt (16): <a href="#" class="accent-link" data-goto="tab-druid:quest">Ablauf</a></li><li><strong>Priester:</strong> neue Priester-Questreihen von 4 bis 20: <a href="#" class="accent-link" data-goto="tab-priest:quest">mehr</a></li></ul>
+            </div>
+          </div>
             </div>
           </div>
 
@@ -672,6 +784,13 @@
                 <li><strong>Tiefschwarze Grotte (BFD):</strong> Quests sammeln und Instanz <strong>1x</strong> spielen. Seit Beta-Patch 8. Okt geben Dungeon-Mobs +20 % XP, der Quest-Bonus wurde dafür halbiert.</li>
                 <li><strong>Höhlen des Wehklagens (WC) / Burg Schattenfang (SFK):</strong> Vorher alle Quests im Brachland sammeln, einmal durchspielen, Belohnungen abgeben, weiterziehen.</li>
               </ul>
+          <div class="timeline-block highlight-block">
+            <div class="level-indicator">Stufe 18 – 25</div>
+            <div class="timeline-body">
+              <h4>Klassen-Waffenquests</h4>
+              <ul><li><strong>Paladin (Untot):</strong> <em>Wolfsbann</em> ab 18, braucht Todesminen, Burg Schattenfang, Tiefschwarze Grotte: <a href="#" class="accent-link" data-goto="tab-paladin:quest">Ablauf</a></li><li><strong>Hexenmeister:</strong> <em>Kugel von Soran'ruk</em> ab 20 (Grotte + Burg Schattenfang): <a href="#" class="accent-link" data-goto="tab-warlock:quest">Ablauf</a></li><li><strong>Magier:</strong> geheimer <em>Kaltflammensäbel</em> ab 21 (Baron Silberlein, Burg Schattenfang): <a href="#" class="accent-link" data-goto="tab-mage:quest">Ablauf</a></li></ul>
+            </div>
+          </div>
             </div>
           </div>
             </div>
@@ -714,6 +833,13 @@
                 <li><strong>Druide & Schamane:</strong> Reisegestalt (Druid) und Geisterwolf (Shaman) lernen (+40% Lauftempo).</li>
                 <li><strong>Krieger:</strong> Klassenquest für die <em>Wirbelwindaxt (Whirlwind Axe)</em> mit Hilfe von Gildenmitgliedern abschließen.</li>
               </ul>
+          <div class="timeline-block highlight-block">
+            <div class="level-indicator">Stufe 30 – 40</div>
+            <div class="timeline-body">
+              <h4>Klassen-Waffenquests</h4>
+              <ul><li><strong>Schamane:</strong> <em>Die Waffen des Sturms</em> (neu, Elite-Event mit 40): <a href="#" class="accent-link" data-goto="tab-shaman:quest">Ablauf</a></li><li><strong>Schurke:</strong> <em>Das Auge von Bhossca</em> (neu, solo, Scharlachrotes Kloster): <a href="#" class="accent-link" data-goto="tab-rogue:quest">Ablauf</a></li><li><strong>Krieger:</strong> Wirbelwindwaffe · <strong>Magier:</strong> Magierstab: <a href="#" class="accent-link" data-goto="tab-forever:quests">alle Klassenquests</a></li></ul>
+            </div>
+          </div>
             </div>
           </div>
 
@@ -1688,6 +1814,17 @@
             </div>
           </div>
         </div>
+        <div class="guide-chapter">
+          <h3>Neu in Forever</h3>
+          <div class="card"><ul><li><strong>Sühne</strong> (Disziplin, 20 Pkt.) offensiv und heilend</li><li><strong>Göttliche Aegis</strong>, <strong>Gebet der Besserung</strong> (Heilig, 30 Pkt.)</li><li>Schattengestalt: halbe Schatten-Manakosten, −15 % physischer Schaden, Schattenschaden heilt die Gruppe</li><li>Furchtschutz & Verschlingende Seuche für alle Priester (20), Göttlicher Willen Grundfähigkeit (30)</li><li>Zauberstäbe skalieren nicht mehr mit Zaubermacht</li></ul></div>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>Klassenquest: Neue Priester-Quests (4–20)</h3>
+
+          <div class="card"><p><strong>Keine Waffenquest.</strong> Dafür gibt es rund <strong>80 neue Priester-Quests</strong> von Stufe 4 bis 20. Furchtschutz und Verschlingende Seuche bekommt jetzt <strong>jeder Priester mit 20</strong>, unabhängig vom Volk. Göttlicher Willen ist ab 30 Grundfähigkeit, Schattenwort: Tod kommt mit 32.</p></div>
+        </div>
+
       </section>
 
             <!-- ================= 6. HUNTER ================= -->
@@ -1996,6 +2133,18 @@
           </div>
         </div>
 
+        <div class="guide-chapter">
+          <h3>Neu in Forever</h3>
+          <div class="card"><ul><li><strong>Gezielter Schuss</strong> für alle Specs</li><li><strong>Begleiter skalieren mit deiner Ausrüstung</strong></li><li>Treffsicherheit: <em>Lone Wolf</em> (+20 % ohne Begleiter), <em>Sniper Shot</em> (4 s, 35 m)</li><li>Tierherrschaft: <em>Summon Hawk</em>, <em>Deadly Aspects</em> (Aspekte als Tempo-Procs)</li><li><strong>Überleben wird Nahkampf-Spec</strong>: Kick, Blutung, +50 % Schildhand-Schaden, <em>Lacerating Strikes</em></li><li>Fallen billiger, schneller, im Kampf nutzbar, wurzeln ein</li></ul></div>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>Klassenquest: Keine Waffenquest vor 60</h3>
+
+          <div class="card"><p>Für Jäger gibt es in Forever <strong>keine Klassen-Waffenquest vor Stufe 60</strong>. Die Bogenquest kommt erst auf 60. Die Klassenquests drehen sich um das Zähmen (ab 10).</p>
+          <p>Wichtiger sind die neuen Systeme: <strong>Begleiter skalieren mit deiner Ausrüstung</strong>, und Gezielter Schuss ist für alle Specs eine Grundfähigkeit.</p></div>
+        </div>
+
       </section>
 
             <!-- ================= 7. MAGE ================= -->
@@ -2278,6 +2427,23 @@
             </div>
           </div>
         </div>
+        <div class="guide-chapter">
+          <h3>Neu in Forever</h3>
+          <div class="card"><ul><li><strong>Frostfeuerblitz</strong> als Grundzauber für alle</li><li>Jeder Baum hat einen Proc: <em>Arkanschlag</em>, <em>Heating Up</em> (Feuer), <em>Fingers of Frost</em> (Frost)</li><li>Eislanze mit 8 s Abklingzeit (Launch-Build), Frostblast nicht mehr erlernbar</li><li>Verb. Gegenzauber: erster Punkt = sichere 2 s Stille</li><li><strong>Orc-Magier</strong> neu für die Horde</li><li>Geheimer <em>Kaltflammensäbel</em> ab 21 (siehe Reiter Klassenquest)</li></ul></div>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>Klassenquest: Magierstab (ab 30) + geheimer Kaltflammensäbel (ab 21)</h3>
+
+          <div class="notice gold"><p><strong>Neu in Forever: der geheime Kaltflammensäbel</strong> (ohne Quest). Dazu die klassische Zauberstab-Reihe ab 30.</p></div>
+          <h4>Kaltflammensäbel (geheim, ab 21)</h4>
+          <div class="table-card"><table class="simple-table"><thead><tr><th>Teil</th><th>Quelle</th></tr></thead><tbody><tr><td>Schriftrolle des Säbels</td><td>Zufälliges Ergebnis beim Entziffern von Magier-Forschungsrollen</td></tr><tr><td>Klinge von Silberlein</td><td>Baron Silberlein, Burg Schattenfang (unter 2 % Dropchance)</td></tr><tr><td>Herstellen</td><td>Schriftrolle auf die Klinge anwenden</td></tr></tbody></table></div>
+          <div class="table-card"><table class="simple-table"><thead><tr><th>Belohnung</th><th>Werte</th></tr></thead><tbody><tr><td><strong>Kaltflammensäbel</strong> (Haupthand-Schwert, Gegenstandsstufe 29)</td><td>+7 Int., +32 Zauberschaden. Nahkampf trifft eingefrorene Ziele mit +98 Feuerschaden</td></tr></tbody></table></div>
+          <h4 style="margin-top:1.2rem">Magierstab-Reihe (Classic, unverändert, ab 30)</h4>
+          <div class="table-card"><table class="simple-table"><thead><tr><th>#</th><th>Schritt</th><th>Ort</th><th>Details</th></tr></thead><tbody><tr><td>1</td><td>Reise in die Marschen</td><td>Magierlehrer, dann Tabetha (westlich von Theramore, Düstermarschen)</td><td></td></tr><tr><td>2</td><td>Gegenstände der Macht</td><td>AH / Arathihochland</td><td>1 Jade, Blitzgeladener Dornbusch, 10 Witherbark-Totemstäbe (Trolle Arathi)</td></tr><tr><td>3</td><td>Verborgene Geheimnisse / Get the Scoop</td><td>Magus Tirth, Schimmernde Ebene</td><td>Verkleideten Gehilfen an der Rennbahn finden, Kiste öffnen</td></tr><tr><td>4</td><td>Rituale der Macht</td><td>Bibliothek, Scharlachrotes Kloster</td><td>Buch holen (Gruppe)</td></tr><tr><td>5</td><td>Abgabe</td><td>Tabetha</td><td>Zauberstab wählen</td></tr></tbody></table></div>
+          <div class="table-card"><table class="simple-table"><thead><tr><th>Belohnung (Gegenstandsstufe 40)</th><th>Werte</th></tr></thead><tbody><tr><td>Eiszorn-Zauberstab (Frost) · Netherkraft-Zauberstab (Arkan) · Wutfeuer-Zauberstab (Feuer)</td><td>+3 Int., bis +9 Schaden der jeweiligen Schule, ca. 37 DPS</td></tr></tbody></table></div>
+        </div>
+
       </section>
 
       <!-- ================= 8. WARLOCK ================= -->
@@ -2550,6 +2716,19 @@
             </div>
           </div>
         </div>
+        <div class="guide-chapter">
+          <h3>Neu in Forever</h3>
+          <div class="card"><ul><li>Fluch der Pein wird <strong>Bann der Pein</strong>, Banne haben ein eigenes Limit neben Flüchen</li><li>22 neue Talente, 20 entfernt, DoTs können kritisch treffen</li><li>Gebrechen: <em>Wrack</em> (30 Pkt.), <em>Suppression</em> (+5 % Treffer, −20 % Bedrohung)</li><li>Dämonologie: <em>Demonic Pact</em> (zweiter Dämon), <em>Decimation</em> (Seelenfeuer unter 35 %)</li><li>Zerstörung: <em>Verbrennen</em> als 30er, <em>Bann der Verwüstung</em></li><li><strong>Troll-Hexer</strong> neu für die Horde</li></ul></div>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>Klassenquest: Kugel von Soran'ruk (ab 20)</h3>
+
+          <div class="notice gold"><p><strong>Classic-Quest mit stärkerer Belohnung.</strong> Der Stab ist jetzt <em>selten</em> (blau).</p></div>
+          <div class="table-card"><table class="simple-table"><thead><tr><th>#</th><th>Schritt</th><th>Ort</th><th>Details</th></tr></thead><tbody><tr><td>1</td><td>Die Kugel von Soran'ruk</td><td>Doan Karhan, Brachland <code>/way 49.3 57.2</code> (bei Camp Taurajo)</td><td>Ab Stufe 20</td></tr><tr><td>2</td><td>3 Soran'ruk-Fragmente</td><td>Tiefschwarze Grotte</td><td>Gegner des Schattenhammers</td></tr><tr><td>3</td><td>1 großes Soran'ruk-Fragment</td><td>Burg Schattenfang</td><td>Shadowfang Darksouls</td></tr><tr><td>4</td><td>Abgabe</td><td>Doan Karhan</td><td>Belohnung wählen</td></tr></tbody></table></div>
+          <div class="table-card"><table class="simple-table"><thead><tr><th>Belohnung</th><th>Werte</th></tr></thead><tbody><tr><td><strong>Stab von Soran'ruk</strong> (Zweihand)</td><td>+14 Ausd., bis +34 Feuer- und +34 Schattenschaden</td></tr><tr><td><strong>Kugel von Soran'ruk</strong> (Schildhand)</td><td>Feuer-/Schattenbonus und Selbstheilung (Werte nicht veröffentlicht)</td></tr></tbody></table></div>
+        </div>
+
       </section>
             <!-- ================= 9. ROGUE ================= -->
       <section id="tab-rogue" class="tab-pane">
@@ -2828,6 +3007,19 @@
             </div>
           </div>
         </div>
+        <div class="guide-chapter">
+          <h3>Neu in Forever</h3>
+          <div class="card"><ul><li><strong>Verstümmeln</strong> (20 Pkt.) und <strong>Venom</strong> (30 Pkt.) in Meucheln</li><li>Energie regeneriert durchgehend, Äxte erlaubt</li><li>Ziele unter Nierenhieb nehmen 10 % mehr Gift-/Angriffsschaden</li><li>Kampf: vier Waffen-Talente durch ein anpassendes ersetzt</li><li>Täuschung: <em>Cutthroat</em> (Meucheln aus dem Kampf heraus), günstigere Kopfnuss/Blenden</li></ul></div>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>Klassenquest: Das Auge von Bhossca (ab ~30)</h3>
+
+          <div class="notice gold"><p><strong>Neue Belohnung, nur solo.</strong> Laut Datenbank ab 25, in der Beta kam der Brief meist erst mit 30.</p></div>
+          <div class="table-card"><table class="simple-table"><thead><tr><th>#</th><th>Schritt</th><th>Ort</th><th>Details</th></tr></thead><tbody><tr><td>1</td><td>Das Horn von Xelthos (Vorquest)</td><td>Burg Schattenfang, solo</td><td>Ab 23, gibt den <em>Siegelring von Pyrewood</em></td></tr><tr><td>2</td><td>Brief von „C“</td><td>kommt nach Erreichen der Stufe und Besuch einer Hauptstadt</td><td>Führt zum toten Briefkasten</td></tr><tr><td>3</td><td>Toter Briefkasten</td><td>Dorf Pyrewood, Silberwald <code>/way 47.1 71.1</code></td><td></td></tr><tr><td>4</td><td>Rekrutenuniform des Scharlachroten Kreuzzugs</td><td>Ställe hinter dem Kloster <code>/way 81.2 32.1</code></td><td>Aus dem Vorratsschrank nehmen</td></tr><tr><td>5</td><td>Kloster infiltrieren</td><td>Scharlachrotes Kloster</td><td>Auf dem Friedhof einem <em>Scarlet Scryer</em> den Schlüssel stehlen, Brief in der Bibliothek lesen. Auf beide Friedhofsbänke setzen, um die Steinkiste zu öffnen. Manchmal bewacht ein Elite-Geist sie: ablenken, Schlüssel schnappen, rennen.</td></tr><tr><td>6</td><td>Das Auge von Bhossca</td><td>Reliquienschrein, Bibliothek</td><td>Mit dem Reliquienschlüssel öffnen</td></tr><tr><td>7</td><td>Abgabe</td><td>Toter Briefkasten Pyrewood, dann Hauptstadt besuchen, zurückkehren</td><td>Schwert abholen</td></tr></tbody></table></div>
+          <div class="table-card"><table class="simple-table"><thead><tr><th>Belohnung</th><th>Werte</th></tr></thead><tbody><tr><td><strong>Rubinbesetzte Klinge</strong> (Einhandschwert, Gegenstandsstufe 36)</td><td>Tempo 2,30, 23,9 DPS, +3 Bew., +8 Ausd.</td></tr></tbody></table></div>
+        </div>
+
       </section>
 
       <!-- ================= 10. WARRIOR ================= -->
@@ -3098,6 +3290,19 @@
             </div>
           </div>
         </div>
+        <div class="guide-chapter">
+          <h3>Neu in Forever</h3>
+          <div class="card"><ul><li><strong>Siegesrausch</strong> und Schlachtruf-Bonus sind Grundfähigkeiten, Schlachtruf wirkt raidweit</li><li>Waffen: <em>Weaponmaster</em> ersetzt vier Waffen-Talente (Axt/Stangenwaffe Crit, Kolben/Stab Rüstung ignorieren, Schwert Extra-Angriff)</li><li>Neu: <em>Spearing Strike</em> (+80 % gegen Riesen, Drachkin, Berittene)</li><li>Wutanfall durch jeden Treffer (30 %), nicht nur Crits</li><li>Schutz: <em>Vanguard</em> erlaubt Sturmangriff in Verteidigungshaltung, Ausweichen/Parieren mit Schild gibt Wut</li><li>Wut-System überarbeitet, Siegesrausch und Rache skalieren mit Angriffskraft</li></ul></div>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>Klassenquest: Wirbelwindwaffe (ab 30)</h3>
+
+          <div class="notice gold"><p><strong>Classic-Reihe, unverändert.</strong> Bringt die Berserkerhaltung und eine starke Zweihandwaffe.</p></div>
+          <div class="table-card"><table class="simple-table"><thead><tr><th>#</th><th>Schritt</th><th>Ort</th><th>Details</th></tr></thead><tbody><tr><td>1</td><td>Der Inselbewohner</td><td>Kriegerlehrer, dann Klannoc Macleod (Insel Fray, Brachland)</td><td></td></tr><tr><td>2</td><td>Die Schlägerei</td><td>Insel Fray</td><td>10-Minuten-Arenaevent, lehrt <strong>Berserkerhaltung</strong></td></tr><tr><td>3</td><td>Bath'rah der Windwächter</td><td>Alteracgebirge</td><td>8 Lebenswurz, 30 Blutskalp-Hauer (Trolle Schlingendorntal, 33–37), Essenz der Verbannten (Elementar-Amulette, Arathi, handelbar)</td></tr><tr><td>4</td><td>Die Beschwörung</td><td>Alteracgebirge</td><td><strong>Cyclonian</strong>, Elite-Luftelementar Stufe 40, Gruppe!</td></tr><tr><td>5</td><td>Abgabe</td><td>Bath'rah</td><td>Wirbelwindherz abgeben</td></tr></tbody></table></div>
+          <div class="table-card"><table class="simple-table"><thead><tr><th>Belohnung (Gegenstandsstufe 40)</th><th>Werte</th></tr></thead><tbody><tr><td>Wirbelwindaxt · Wirbelwindschwert · Wirbelwindhammer</td><td>+16 Stärke, +15 Ausdauer</td></tr></tbody></table></div>
+        </div>
+
       </section>
             <!-- ================= 11. DRUID ================= -->
       <section id="tab-druid" class="tab-pane">
@@ -3358,6 +3563,19 @@
             </div>
           </div>
         </div>
+        <div class="guide-chapter">
+          <h3>Neu in Forever</h3>
+          <div class="card"><ul><li>Omen der Klarheit, Mal der Wildnis-Bonus und <strong>Wiederbeleben außerhalb des Kampfes</strong> für alle</li><li>17 neue Talente, <strong>Tigerfuror entfernt</strong> → <em>Shifting Power</em> (Mana zu Energie)</li><li>Gleichgewicht: <em>Eclipse</em> (Zorn beschleunigt Sternenfeuer), Insektenschwarm wandert zu Gleichgewicht</li><li>Wilder Kampf: <em>Mangle</em> (Bär), <em>Berserk</em> (30 Pkt.), Katzengestalt +30 % Tempo per Talent</li><li>Wiederherstellung: <em>Wildwuchs</em> (30 Pkt.)</li><li><strong>Skyborne-Druiden</strong> (Horde) mit himmelblauen Gestalten</li></ul></div>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>Klassenquest: Gestalt-Quests (Bär, Katze, Wasser)</h3>
+
+          <div class="notice gold"><p><strong>Keine Waffenquest</strong>, dafür neue Gestalt-Questreihen (über 50 Druiden-Quests von 10 bis 20).</p></div>
+          <div class="table-card"><table class="simple-table"><thead><tr><th>Gestalt</th><th>Stufe</th><th>Wie</th></tr></thead><tbody><tr><td>Bärengestalt</td><td>10</td><td>Questreihe, startet bei jedem Druidenlehrer</td></tr><tr><td>Katzengestalt</td><td>10 oder 20 (Quellen uneinig)</td><td>Questreihe im Süden der Mondlichtung</td></tr><tr><td>Wassergestalt</td><td>16</td><td>Questreihe im Norden der Mondlichtung</td></tr><tr><td>Reisegestalt</td><td>30</td><td>Beim Lehrer, ohne Quest</td></tr></tbody></table></div>
+          <p class="card-desc" style="margin-top:.6rem">Skyborne-Druiden haben himmelblaue Gestalten.</p>
+        </div>
+
       </section>
 
       <!-- ================= 12. SHAMAN ================= -->
@@ -3618,6 +3836,23 @@
             </div>
           </div>
         </div>
+        <div class="guide-chapter">
+          <h3>Neu in Forever</h3>
+          <div class="card"><ul><li><strong>Lavaeruption</strong> (Elementar, 21 Pkt.), <strong>Springflut</strong> (Wiederherstellung, 30 Pkt.), <strong>Mahlstromwaffe</strong> (Verstärkung, 25 Pkt.)</li><li>Elementarbeherrschung zurück als 31-Punkte-Talent</li><li>Totems zurückrufen (Teil-Mana zurück) oder verschieben, Gnade der Luft/Stärke der Erde/Windzorn/Flammenzunge raidweit</li><li>Erdbindungstotem wurzelt beim Aufstellen 5 s</li><li>Verstärkung wandelt Int. in Angriffskraft, Parieren per Talent</li><li>Neue Waffenquest ab 30 (siehe Reiter Klassenquest)</li></ul></div>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>Klassenquest: Die Waffen des Sturms (ab 30)</h3>
+
+          <div class="notice gold"><p><strong>Neu in Forever.</strong> Stufe 30–40, endet mit einer Waffe nach Wahl für Verstärkung, Elementar oder Wiederherstellung. Gruppe empfohlen.</p></div>
+          <div class="table-card"><table class="simple-table"><thead><tr><th>#</th><th>Quest</th><th>Ort / NPC</th><th>Aufgabe</th></tr></thead><tbody><tr><td>1</td><td>Ruf der Luft <small>(Call of Air)</small></td><td>Prate Cloudseer, Tausend Nadeln</td><td>Lufttotem-Quest auf Stufe 30, startet die Reihe</td></tr><tr><td>2</td><td>Elementare Hilfe <small>(Elemental Aid)</small></td><td>Kral der Klingenhauer</td><td>Endboss Charlga Razorflank töten, <em>zerfledderte Notiz</em> looten. Jeder braucht eine eigene, Horde-Version nicht teilbar.</td></tr><tr><td>3</td><td>Augen am Himmel <small>(Eyes on the Sky)</small></td><td>Prate Cloudseer, Tausend Nadeln</td><td>Nur Horde</td></tr><tr><td>4</td><td>Sturm, Erde und Feuer</td><td>4 Zonen, siehe unten</td><td>Je 5 verdrehte Totems pro Element (20 gesamt). Quest muss im Log sein!</td></tr><tr><td>5</td><td>Höre meinen Ruf <small>(Heed My Call)</small> · <strong>Elite</strong></td><td>Dampfquellen, Tausend Nadeln</td><td>Verderbte Totems auf dem Runenkreis benutzen, 3 Elementar-Wellen, dann Elite-Stacheleber + Elite <em>Verwüstender Sturm</em> (38–40, großer Flächenschaden). Jeder Schamane bekommt ein <em>Auge des Sturms</em>.</td></tr><tr><td>6</td><td>Die Waffen des Sturms</td><td>Bath'rah der Windwächter, Alteracgebirge <code>/way 80.4 66.8</code></td><td>Auge abgeben, Waffe wählen</td></tr></tbody></table></div>
+          <h4 style="margin-top:1.2rem">Totem-Farm</h4>
+          <div class="table-card"><table class="simple-table"><thead><tr><th>Totem</th><th>Zone</th><th>Gegner</th><th>Stufe</th></tr></thead><tbody><tr><td>Wasser</td><td>Düstermarschen</td><td>Mirefin-Murlocs, Nordostküste</td><td>35–38</td></tr><tr><td>Luft</td><td>Desolace</td><td>Maraudine (Mauler, Wrangler, Windchaser, Stormer, Scouts)</td><td>37–40</td></tr><tr><td>Erde</td><td>Sümpfe des Elends</td><td>Verlorene, Rares Lost One Chieftain & Ongeku</td><td>34–39</td></tr><tr><td>Feuer</td><td>Ödland</td><td>Dustbelcher-Oger (leichter), Stonevault-Troggs, Rare Murdaloc</td><td>35–42</td></tr></tbody></table></div>
+          <h4 style="margin-top:1.2rem">Belohnung (eine wählen, Gegenstandsstufe 40, beim Aufheben gebunden)</h4>
+          <div class="table-card"><table class="simple-table"><thead><tr><th>Waffe</th><th>Typ</th><th>Werte</th><th>Für</th></tr></thead><tbody><tr><td><strong>Wut des Sturms</strong></td><td>Zweihand-Streitkolben</td><td>91–137, Tempo 3,20 (35,6 DPS), +15 Ausd., +12 Int., <strong>Sturmschlag +10 % Schaden</strong></td><td>Verstärkung</td></tr><tr><td><strong>Blitzgriff</strong></td><td>Haupthand-Faust</td><td>28–52, Tempo 2,20, +6 Int., bis +46 Zauberschaden, +1 % Crit Blitzschlag</td><td>Elementar</td></tr><tr><td><strong>Gezeitenbringerklaue</strong></td><td>Haupthand-Faust</td><td>30–57, Tempo 2,40, +5 Ausd., bis +86 Heilung / +28 Zauberschaden, +2 % Crit Welle der Heilung</td><td>Wiederherstellung</td></tr></tbody></table></div>
+          <p class="card-desc" style="margin-top:.8rem">Wut des Sturms wurde in der Beta zweimal abgeschwächt (Tempo 3,60 → 3,30 → 3,20, Int. 16 → 12). Zusatzbelohnung Horde laut Beta-Daten: <em>Rune des Sturms</em> (lehrt Mahlstromwaffe), vermutlich veraltet, im Belohnungsfenster prüfen.</p>
+        </div>
+
       </section>
       <!-- ================= PALADIN (UNTOT) ================= -->
       <section id="tab-paladin" class="tab-pane">
@@ -3719,6 +3954,20 @@
             </div>
           </div>
         </div>
+        <div class="guide-chapter">
+          <h3>Neu in Forever</h3>
+          <div class="card"><ul><li><strong>Neu für die Horde</strong> (nur Untote)</li><li><strong>Heiliger Stoß</strong> ab 6, <strong>Weihe</strong> ab 20 als Grundfähigkeit, Segen der Könige für alle</li><li>Neues <strong>Siegel der Wut</strong>: Tank-Siegel, Richturteil spottet aus 10 m und verbraucht das Siegel nicht</li><li>Heiliger Schock schon bei 20 Punkten, neue 30er: <em>Twist of Light</em> (Vergeltung), <em>Light's Vigil</em> (Heilig)</li><li>Schutz: <em>Templar's Bulwark</em> (Schild 100 % HP), <em>Swift Judgement</em>, <em>Iron Creed</em></li><li>Rettung wird zu <em>Salvation</em> (kein Segensplatz)</li></ul></div>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>Klassenquest: Wolfsbann (ab 18)</h3>
+
+          <div class="notice gold"><p><strong>Neu in Forever, nur für untote Paladine.</strong> Start mit 18, Belohnung um 20–25. Führt durch drei Dungeons der Allianz- und Horde-Seite.</p></div>
+          <div class="table-card"><table class="simple-table"><thead><tr><th>#</th><th>Schritt</th><th>Ort</th><th>Details</th></tr></thead><tbody><tr><td>1</td><td>Diplomatischer Zwischenfall <small>(Diplomatic Incident)</small></td><td>Danitha Morr, Bandarion-Feste, West-Tirisfal</td><td>Startet die Reihe (ab 18)</td></tr><tr><td>2</td><td>Windformer-Geschichte</td><td>Grabmal, Silberwald</td><td>Lumina Windsinger auf der Insel Fenris befreien</td></tr><tr><td>3</td><td>Eine mondgeküsste Klinge <small>(A Moon-Kissed Blade)</small></td><td>Trevan Rol</td><td>Drei Materialien besorgen:</td></tr><tr><td></td><td>· Weißsteineichen-Holz</td><td>Todesminen</td><td>Goblin-Holzschnitzer (Allianz-Gebiet Westfall!)</td></tr><tr><td></td><td>· Verzauberter Silberbarren</td><td>Burg Schattenfang</td><td></td></tr><tr><td></td><td>· Gereinigter Kor-Edelstein</td><td>Tiefschwarze Grotte (Naga)</td><td>Vorher <em>Seeking the Kor Gem</em> bei Ulric Frostveil (Eschental) annehmen, sonst droppt er nicht</td></tr><tr><td>4</td><td>Mondsilberklinge schmieden</td><td>Ott, Schmied in Tarrens Mühle</td><td>Zwischenwaffe, behalten!</td></tr><tr><td>5</td><td>Old Fire-Eye</td><td>südlich des Grabmals, nahe dem Tor nach Gilneas</td><td>Elite-Worgen Stufe 25. Erster Treffer mit der Mondsilberklinge bricht seinen Schutz. Mit 25 solo machbar.</td></tr></tbody></table></div>
+          <h4 style="margin-top:1.2rem">Belohnung</h4>
+          <div class="table-card"><table class="simple-table"><thead><tr><th>Waffe</th><th>Werte</th></tr></thead><tbody><tr><td><strong>Wolfsbann</strong> (Zweihandschwert, Gegenstandsstufe 31)</td><td>25,6 DPS, +9 Ausd., +10 Int. Treffer-Effekt <em>Blazewind Blast</em>: 39–59 Heiligsturm-Schaden, <strong>dreifach gegen Wölfe und Worgen</strong></td></tr></tbody></table></div>
+        </div>
+
       </section>
 
       <!-- ================= CHANGELOG & VERSION ================= -->
@@ -3730,6 +3979,18 @@
 
         <div class="timeline-container">
           <div class="timeline-block highlight-block">
+            <div class="level-indicator">v3.2.0<br><span>1. Nov 2026</span></div>
+            <div class="timeline-body">
+              <h4>Neu in Forever: alles Neue im Spiel an einem Ort</h4>
+              <ul>
+                <li><strong>Neuer Bereich „Neu in Forever“</strong>: Überblick, Zonen & Reisen, Dungeons & Raids, Völker (alle Horde-Fähigkeiten), Klassen, Klassenquests, Systeme & Berufe, PvP.</li>
+                <li><strong>Klassenseiten</strong> mit neuen Reitern „Neu in Forever“ und „Klassenquest“, inkl. kompletter Abläufe: Waffen des Sturms (Schamane), Wolfsbann (Paladin), Auge von Bhossca (Schurke), Kaltflammensäbel (Magier), Soran'ruk, Wirbelwind, Druiden-Gestalten.</li>
+                <li><strong>Leveling-Fahrplan</strong> zeigt die Klassenquests bei der passenden Stufe.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-block">
             <div class="level-indicator">v3.1.0<br><span>1. Nov 2026</span></div>
             <div class="timeline-body">
               <h4>Übersichtlicher: neue Navigation & Unter-Reiter</h4>
@@ -3801,14 +4062,14 @@
       <footer class="app-global-footer">
         <div class="footer-content">
           <div class="footer-left">
-            <span class="footer-version-tag">v3.1.0</span>
+            <span class="footer-version-tag">v3.2.0</span>
             <span class="footer-dot">•</span>
             <span class="footer-timestamp">Stand: 1. November 2026</span>
             <span class="footer-dot">•</span>
             <span class="footer-guild">&lt;TEH CVLT&gt;</span>
           </div>
           <div class="footer-right">
-            <span class="footer-changes">Letzte Änderung: neue Navigation, Leveling-Seite, Klassen-Reiter & Suche</span>
+            <span class="footer-changes">Letzte Änderung: Bereich „Neu in Forever“ & Klassenquests aller Klassen</span>
             <a href="https://discord.gg/tehcvlt" target="_blank" rel="noopener noreferrer" class="footer-discord-link">discord.gg/tehcvlt ↗</a>
           </div>
         </div>
@@ -3819,7 +4080,7 @@
   <!-- Mobile Backdrop -->
   <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
 
-  <script src="script.js?v=16"></script>
+  <script src="script.js?v=17"></script>
 </body>
 </html>
 

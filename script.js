@@ -16,7 +16,7 @@ function initTabs() {
   // Bereich aufklappen, zu dem die Seite gehört
   function openAreaFor(targetId) {
     document.querySelectorAll('.nav-area').forEach(area => {
-      const owns = !!area.querySelector(`.nav-tab[data-target="${targetId}"]`);
+      const owns = [...area.querySelectorAll('.nav-tab')].some(t => t.dataset.target.split(':')[0] === targetId);
       area.classList.toggle('open', owns);
       area.classList.toggle('current', owns);
     });
@@ -28,11 +28,11 @@ function initTabs() {
     const targetPane = document.getElementById(resolved);
     if (!targetPane || !targetPane.classList.contains('tab-pane')) return;
 
-    tabs.forEach(t => t.classList.toggle('active', t.getAttribute('data-target') === resolved));
     panes.forEach(p => p.classList.remove('active'));
     targetPane.classList.add('active');
     openAreaFor(resolved);
     if (subId) activateSubtab(targetPane, subId);
+    syncNav();
 
     if (updateHash) history.replaceState(null, '', '#' + resolved + (subId ? ':' + subId : ''));
 
@@ -77,6 +77,17 @@ function initTabs() {
   window.addEventListener('hashchange', () => showTab(location.hash.slice(1), false));
 }
 
+// Menü-Markierung: Seite oder Seite:Unter-Reiter (z. B. tab-forever:zones)
+function syncNav() {
+  const pane = document.querySelector('.tab-pane.active');
+  if (!pane) return;
+  const activeSub = pane.querySelector('.subtab-btn.active');
+  const full = pane.id + (activeSub ? ':' + activeSub.dataset.subtab : '');
+  const tabs = [...document.querySelectorAll('.nav-tab')];
+  const exact = tabs.some(t => t.dataset.target === full);
+  tabs.forEach(t => t.classList.toggle('active', exact ? t.dataset.target === full : t.dataset.target === pane.id));
+}
+
 // Unter-Reiter innerhalb einer Seite (Leveling-Stufen, Klassen-Abschnitte)
 function activateSubtab(pane, subId) {
   const btn = pane.querySelector(`.subtab-btn[data-subtab="${subId}"]`);
@@ -91,6 +102,7 @@ function initSubtabs() {
     if (!btn) return;
     const pane = btn.closest('.tab-pane');
     activateSubtab(pane, btn.dataset.subtab);
+    syncNav();
     history.replaceState(null, '', '#' + pane.id + ':' + btn.dataset.subtab);
     document.dispatchEvent(new CustomEvent('pagechange'));
   });
@@ -99,6 +111,8 @@ function initSubtabs() {
 // Klassenseiten in Unter-Reiter gliedern: Überblick, Kampf, Talente, Ausrüstung, Trainer, Makros, Patches
 const CLASS_SECTIONS = [
   ['overview', 'Überblick'],
+  ['forever', 'Neu in Forever'],
+  ['quest', 'Klassenquest'],
   ['combat', 'Kampf'],
   ['talents', 'Talente'],
   ['gear', 'Ausrüstung'],
@@ -108,6 +122,8 @@ const CLASS_SECTIONS = [
 ];
 
 function classSectionFor(heading) {
+  if (/^\s*neu in forever/i.test(heading)) return 'forever';
+  if (/^\s*klassenquest/i.test(heading)) return 'quest';
   if (/trainer/i.test(heading)) return 'trainer';
   if (/makro/i.test(heading)) return 'macros';
   if (/talent/i.test(heading)) return 'talents';
@@ -203,7 +219,8 @@ function initSearch() {
 
   const paneTitle = pane => {
     const nav = document.querySelector(`.nav-tab[data-target="${pane.id}"]`);
-    return nav ? nav.textContent.replace(/LIVE|NEU/g, '').trim() : '';
+    const h2 = pane.querySelector('.pane-header h2');
+    return nav ? nav.textContent.replace(/LIVE|NEU/g, '').trim() : (h2 ? h2.textContent.trim() : '');
   };
 
   // Index: Überschriften und Karten-Titel, jeweils mit dem Text des umgebenden Blocks
