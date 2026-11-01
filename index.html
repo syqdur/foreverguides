@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TEH CVLT – Mauros Guides für WoW Forever</title>
+  <meta name="description" content="Horde-Levelguides, Klassen-Ranking und Patch-Stand für World of Warcraft: Forever – von der Gilde TEH CVLT.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=10">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen&family=Pixelify+Sans:wght@400;600;700&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=13">
 </head>
 <body class="dark-theme">
 
@@ -42,7 +43,7 @@
     <div class="top-announcement-content">
       <div class="announcement-left">
         <span class="announcement-icon">⚠️</span>
-        <span class="announcement-text"><strong>Launch- & Patch-Status:</strong> Globaler Release am 5. Nov (00:00 CET). Alle Level-Guides, Zelt-Mechaniken & Pre-Launch Balance-Patches aktualisiert.</span>
+        <span class="announcement-text"><strong>Stand 1. Nov 2026:</strong> Launch am 5. Nov um 00:00 Uhr MEZ. Ranking & Patch-Stand inkl. ausgelesener Launch-Hotfixes vom 30. Okt.</span>
       </div>
       <div class="announcement-right">
         <span class="rxp-pill-tag">🗺️ In-Game Levelguide</span>
@@ -59,8 +60,24 @@
     <aside class="sidebar" id="sidebarNav">
       <div class="sidebar-scrollable">
         <div class="nav-group">
+          <span class="nav-heading">Start</span>
+          <button class="nav-tab active" data-target="tab-home">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_book_11.jpg" class="wow-icon" alt=""> Vorwort & Launch
+          </button>
+          <button class="nav-tab" data-target="tab-ranking">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_trophy_argent.jpg" class="wow-icon" alt=""> Klassen-Ranking <span class="nav-new">NEU</span>
+          </button>
+          <button class="nav-tab" data-target="tab-news">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_scroll_03.jpg" class="wow-icon" alt=""> Was ist neu & Patch-Stand
+          </button>
+          <button class="nav-tab" data-target="tab-patchnotes">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_pocketwatch_01.jpg" class="wow-icon" alt=""> Live-Patchnotes <span class="nav-new">LIVE</span>
+          </button>
+        </div>
+
+        <div class="nav-group">
           <span class="nav-heading">Allgemeine Planung</span>
-          <button class="nav-tab active" data-target="tab-timeline">
+          <button class="nav-tab" data-target="tab-timeline">
             <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_map02.jpg" class="wow-icon" alt="Map"> Stufen-Fahrplan (1–60)
           </button>
           <button class="nav-tab" data-target="tab-questing">
@@ -112,6 +129,9 @@
           <button class="nav-tab" data-target="tab-shaman">
             <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_shaman.jpg" class="wow-icon" alt="Shaman"> Schamane (Shaman)
           </button>
+          <button class="nav-tab" data-target="tab-paladin">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_paladin.jpg" class="wow-icon" alt="Paladin"> Paladin (Untot) <span class="nav-new">NEU</span>
+          </button>
         </div>
       </div>
 
@@ -140,12 +160,314 @@
     <!-- Main Content Area -->
     <main class="content-panel">
 
+      <!-- ================= START: VORWORT & LAUNCH ================= -->
+      <section id="tab-home" class="tab-pane active">
+        <div class="hero-panel">
+          <div class="hero-kicker">&gt; TEH CVLT PRÄSENTIERT_</div>
+          <h2 class="hero-title">World of Warcraft: Forever<small>Mauros Horde-Guides · Stufe 1–60</small></h2>
+          <div class="hero-countdown" id="heroCountdown" aria-live="polite">
+            <div class="cd-cell"><span class="cd-num" data-cd="d">--</span><span class="cd-lbl">Tage</span></div>
+            <div class="cd-cell"><span class="cd-num" data-cd="h">--</span><span class="cd-lbl">Std</span></div>
+            <div class="cd-cell"><span class="cd-num" data-cd="m">--</span><span class="cd-lbl">Min</span></div>
+            <div class="cd-cell"><span class="cd-num" data-cd="s">--</span><span class="cd-lbl">Sek</span></div>
+          </div>
+          <p class="hero-meta">Launch: <strong>Mi 4. Nov, 15:00 PST</strong> = <strong>Do 5. Nov, 00:00 Uhr MEZ</strong> · Raids öffnen am 9. Dezember</p>
+        </div>
+
+        <div class="scroll-panel">
+          <h3>Vorwort</h3>
+          <p>Hallo zusammen – in ein paar Tagen geht's los. <strong>World of Warcraft: Forever</strong> ist kein Classic-Neustart, wie wir ihn kennen: ein überarbeitetes Azeroth mit über 1.000 neuen Quests, neuen Zonen wie den <em>Riverglades</em> und dem <em>Hyjal</em>, umgebauten Talentbäumen, den <em>Skyborne</em> als neuem Volk und einer Stufengrenze, die für immer bei 60 bleibt.</p>
+          <p>Diese Seite ist der Spickzettel unserer Gilde. Ein Wiki ersetzt sie nicht. Sie soll beim Leveln die Fragen beantworten, die man sich wirklich stellt: <strong>Welche Klasse? Welche Route? Wann das Reittier? Was lohnt sich, was ist Zeitverschwendung?</strong> Alles ist auf die Horde ausgerichtet und so kurz wie möglich gehalten.</p>
+          <p>Ganz ehrlich vorweg: Alles hier ist auf dem <strong>Stand vom 1. November 2026</strong>, also <em>vor</em> dem Launch. Grundlage sind die Beta (offen bis Stufe 30), Blizzards Entwicklernotizen bis 27. Oktober und die Daten aus dem Launch-Build vom 30. Oktober. Für Stufe 30–60 gab es noch keine öffentlichen Tests. Dort stützen sich die Tipps auf Classic-Erfahrung und gelten deshalb nur unter Vorbehalt. Die Tier-Lists sind Momentaufnahmen und werden sich in der ersten Woche verschieben.</p>
+          <p>Wenn ihr im Spiel etwas anderes erlebt, eine Quest anders läuft oder ein Wert nicht stimmt: <strong>Sagt Bescheid im Discord.</strong> Ich pflege das laufend nach.</p>
+          <p>Wir sehen uns im Wegekreuz. Lok'tar ogar!</p>
+          <p class="signature">— Mauro &lt;TEH CVLT&gt;</p>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>Forever auf einen Blick</h3>
+          <div class="fact-grid">
+            <div class="fact-tile"><span class="fact-label">Stufengrenze</span><span class="fact-value">60 – dauerhaft</span><span class="fact-sub">Keine Erhöhungen geplant</span></div>
+            <div class="fact-tile"><span class="fact-label">Neues Volk</span><span class="fact-value">Skyborne</span><span class="fact-sub">Start: Zephras Isle (1–12) · benötigt Heroic/Epic Pack</span></div>
+            <div class="fact-tile"><span class="fact-label">Klassen</span><span class="fact-value">Alle 9</span><span class="fact-sub">Neu für Horde: Orc-Magier, Troll-Hexer, Untoter Paladin</span></div>
+            <div class="fact-tile"><span class="fact-label">Reiten</span><span class="fact-value">Stufe 40 · 100 G</span><span class="fact-sub">Reittier inklusive · Stufe 60: 1.000 G · kein Fliegen</span></div>
+            <div class="fact-tile"><span class="fact-label">Doppelte Spezialisierung</span><span class="fact-value">Stufe 40 · 10 G</span><span class="fact-sub">Beim Klassenlehrer, frei wechselbar</span></div>
+            <div class="fact-tile"><span class="fact-label">Realms</span><span class="fact-value">1 Mega-Realm</span><span class="fact-sub">pro Regelwerk: Normal, PvP, RP, RP-PvP · Hardcore folgt</span></div>
+            <div class="fact-tile"><span class="fact-label">Neue Zonen</span><span class="fact-value">4</span><span class="fact-sub">Zephras Isle, Riverglades (~35–45), Shen'dralas, Hyjal</span></div>
+            <div class="fact-tile"><span class="fact-label">Raids (ab 9. Dez)</span><span class="fact-value">3</span><span class="fact-sub">Barrow Deeps (10), Hyjal-Gipfel (20), Onyxia (40)</span></div>
+          </div>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>Schnellstart</h3>
+          <div class="quick-links">
+            <button class="quick-link" data-goto="tab-ranking"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_trophy_argent.jpg" class="wow-icon" alt=""> Welche Klasse spielen?</button>
+            <button class="quick-link" data-goto="tab-timeline"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_map02.jpg" class="wow-icon" alt=""> Fahrplan 1–60</button>
+            <button class="quick-link" data-goto="tab-questing"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_book_09.jpg" class="wow-icon" alt=""> Questing-Route 1–30</button>
+            <button class="quick-link" data-goto="tab-buffs"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_food_15.jpg" class="wow-icon" alt=""> Camp- & XP-Routine</button>
+            <button class="quick-link" data-goto="tab-gold"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_coin_02.jpg" class="wow-icon" alt=""> 100 Gold fürs Reittier</button>
+            <button class="quick-link" data-goto="tab-news"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_scroll_03.jpg" class="wow-icon" alt=""> Patch-Stand lesen</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= KLASSEN-RANKING ================= -->
+      <section id="tab-ranking" class="tab-pane">
+        <div class="pane-header">
+          <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_trophy_argent.jpg" class="wow-icon large" alt=""> Klassen-Ranking</h2>
+          <p class="pane-subtitle">Stand 1. November 2026. Konsens aus den öffentlichen Beta-Tier-Lists (ConquestCapped, Gamer-Guides, wowforevertierlist, wowforever.co), gewichtet mit den Entwicklernotizen bis 27. Okt und den Launch-Build-Daten vom 30. Okt.</p>
+        </div>
+
+        <div class="notice gold">
+          <h3>⚠ Wie belastbar ist das?</h3>
+          <p>Die Beta war bis <strong>Stufe 30</strong> offen. Das <strong>Leveling-Ranking</strong> ist deshalb recht verlässlich. <strong>Endgame und PvP</strong> sind eine Prognose: Niemand hat bisher öffentlich auf 60 geraidet. Raids öffnen am 9. Dezember. Spiel, was dir Spaß macht, denn ein Tier Unterschied kostet beim Leveln Stunden, nicht Tage.</p>
+        </div>
+
+        <div class="legend-row">
+          <span><b class="s-tier">S</b> = herausragend</span>
+          <span><b class="a-tier">A</b> = stark</span>
+          <span><b class="b-tier">B</b> = solide</span>
+          <span><b class="c-tier">C</b> = spürbar langsamer</span>
+          <span><b class="tag-down">▼</b> = Nerf im Launch-Build</span>
+          <span><b class="tag-up">▲</b> = Buff im Launch-Build</span>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>Leveling 1–60 (Solo-Questen)</h3>
+          <div class="tier-board">
+            <div class="tier-board-head"><h4>Leveling-Tempo & Komfort</h4><span>Geschwindigkeit · Downtime · Sicherheit · Gear-Abhängigkeit</span></div>
+            <div class="tier-row t-s"><div class="tier-label">S</div><div class="tier-items">
+              <div class="tier-chip"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_hunter.jpg" alt=""><div><b class="c-hunter">Jäger · Tierherrschaft <span class="trend tag-down">▼</span></b><small>Pet tankt ab Stufe 10 und skaliert jetzt mit deiner Ausrüstung. Kaum Downtime, sehr sicher. Der Nerf an Aspekt des Falken und Volltreffer-Aura trifft vor allem Treffsicherheit, Tierherrschaft bleibt vorn.</small></div></div>
+            </div></div>
+            <div class="tier-row t-a"><div class="tier-label">A</div><div class="tier-items">
+              <div class="tier-chip"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_warlock.jpg" alt=""><div><b class="c-warlock">Hexenmeister · Gebrechen</b><small>DoTs können jetzt kritisch treffen, Leerwandler tankt. Sehr sicher, aber langsamer Start (1–10) und kein Tempo-Zauber.</small></div></div>
+              <div class="tier-chip"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_paladin.jpg" alt=""><div><b class="c-paladin">Paladin · Vergeltung</b><small>Für die Horde neu über Untote. Plattenrüstung, Selbstheilung, Heiliger Stoß ab 6 und Weihe ab 20. In der Beta leicht abgeschwächt. Das Tempo hängt an Waffen-Upgrades.</small></div></div>
+              <div class="tier-chip"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_mage.jpg" alt=""><div><b class="c-mage">Magier · Frost <span class="trend tag-down">▼</span></b><small>Schnellste AoE-Kills, eigenes Essen und Wasser. Aber: Eislanze hat jetzt 8 s Abklingzeit, Frostblast ist nicht mehr erlernbar und um Stufe 30 gibt es Manaprobleme. Für Horde: Orc, Troll, Untot.</small></div></div>
+              <div class="tier-chip"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_shaman.jpg" alt=""><div><b class="c-shaman">Schamane · Verstärkung <span class="trend tag-up">▲</span></b><small>Selbstheilung, Geisterwolf, kann Dungeons tanken. Vor 30 etwas zäh. Wasserschild greift bei jedem kritischen Zauber, Kettenblitz kostet ~35 % weniger Mana.</small></div></div>
+            </div></div>
+            <div class="tier-row t-b"><div class="tier-label">B</div><div class="tier-items">
+              <div class="tier-chip"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_druid.jpg" alt=""><div><b class="c-druid">Druide · Wilder Kampf</b><small>Zäher Start, ab Katze (20) und Reisegestalt (30) sehr wenig Downtime. Tigerfuror wurde entfernt, Zerfetzen kommt schon mit 20.</small></div></div>
+              <div class="tier-chip"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_rogue.jpg" alt=""><div><b class="c-rogue">Schurke · Kampf</b><small>Schneller als in Classic: Energie regeneriert jetzt durchgehend, Äxte sind erlaubt. Keine Heilung, stark abhängig von der Ausrüstung und schwach gegen Gruppen.</small></div></div>
+              <div class="tier-chip"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_priest.jpg" alt=""><div><b class="c-priest">Priester · Disziplin → Schatten</b><small>Die sicherste Klasse, aber die langsamsten Kills. Zauberstäbe skalieren nicht mehr mit Zaubermacht. Sühne kommt mit 30, Schattengestalt mit 40, danach wird es deutlich besser.</small></div></div>
+            </div></div>
+            <div class="tier-row t-c"><div class="tier-label">C</div><div class="tier-items">
+              <div class="tier-chip"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_warrior.jpg" alt=""><div><b class="c-warrior">Krieger · Waffen / Furor <span class="trend tag-up">▲</span></b><small>Härtester Start, braucht Essen, Verbände und gute Waffen. Die Wut wurde überarbeitet, Siegesrausch und Rache skalieren jetzt mit Angriffskraft. In der Gruppe sehr stark, solo am langsamsten.</small></div></div>
+            </div></div>
+          </div>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>Endgame-Prognose (Stufe 60, Dungeons & Raids)</h3>
+          <div class="card-grid">
+            <div class="tier-board">
+              <div class="tier-board-head"><h4>Tanks</h4></div>
+              <div class="tier-row t-s"><div class="tier-label">S</div><div class="tier-items"><div class="tier-chip"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_paladin.jpg" alt=""><div><b class="c-paladin">Paladin · Schutz</b><small>Siegel der Wut, Richturteil spottet aus 10 m, Zorn der Gerechtigkeit schon ab 10.</small></div></div></div></div>
+              <div class="tier-row t-a"><div class="tier-label">A</div><div class="tier-items"><div class="tier-chip"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_warrior.jpg" alt=""><div><b class="c-warrior">Krieger · Schutz</b><small>Rache skaliert jetzt mit Angriffskraft.</small></div></div></div></div>
+              <div class="tier-row t-b"><div class="tier-label">B</div><div class="tier-items"><div class="tier-chip"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_druid.jpg" alt=""><div><b class="c-druid">Druide · Wächter</b><small>Bärenbedrohung auf +50 % erhöht.</small></div></div><div class="tier-chip"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_shaman.jpg" alt=""><div><b class="c-shaman">Schamane · Verstärkung</b><small>Reicht für Level-Dungeons.</small></div></div></div></div>
+            </div>
+            <div class="tier-board">
+              <div class="tier-board-head"><h4>Heiler</h4></div>
+              <div class="tier-row t-s"><div class="tier-label">S</div><div class="tier-items"><div class="tier-chip"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_priest.jpg" alt=""><div><b class="c-priest">Priester · Disziplin</b><small>Sühne, Göttliche Aegis, Schilde.</small></div></div><div class="tier-chip"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_druid.jpg" alt=""><div><b class="c-druid">Druide · Wiederherstellung</b><small>Wildwuchs, kürzere globale Abklingzeit bei HoTs.</small></div></div></div></div>
+              <div class="tier-row t-a"><div class="tier-label">A</div><div class="tier-items"><div class="tier-chip"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_shaman.jpg" alt=""><div><b class="c-shaman">Schamane · Wiederherstellung</b><small>Springflut, Kettenheilung, raidweite Totems.</small></div></div><div class="tier-chip"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_paladin.jpg" alt=""><div><b class="c-paladin">Paladin · Heilig</b><small>Licht-Wacht erlaubt doppelten Heiligen Schock.</small></div></div></div></div>
+              <div class="tier-row t-b"><div class="tier-label">B</div><div class="tier-items"><div class="tier-chip"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_priest.jpg" alt=""><div><b class="c-priest">Priester · Heilig</b><small>Im Raid stark (Gebet der Besserung), sonst Disziplin.</small></div></div></div></div>
+            </div>
+          </div>
+
+          <div class="tier-board" style="margin-top:1.35rem">
+            <div class="tier-board-head"><h4>Schadensverursacher (PvE)</h4><span>Prognose, noch ohne Raid-Daten</span></div>
+            <div class="tier-row t-s"><div class="tier-label">S</div><div class="tier-items">
+              <div class="tier-chip"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_mage.jpg" alt=""><div><b class="c-mage">Magier · Arkan</b><small>Die einzige Spec, die jede Quelle oben sieht. Arkanschlag wurde komplett umgebaut.</small></div></div>
+              <div class="tier-chip"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_warlock.jpg" alt=""><div><b class="c-warlock">Hexenmeister · Gebrechen</b><small>DoT-Crits, Schattenbeherrschung jetzt 2–10 %.</small></div></div>
+            </div></div>
+            <div class="tier-row t-a"><div class="tier-label">A</div><div class="tier-items">
+              <div class="tier-chip"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_shaman.jpg" alt=""><div><b class="c-shaman">Schamane · Elementar</b><small>Elementarbeherrschung ist zurück (31 Punkte).</small></div></div>
+              <div class="tier-chip"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_warrior.jpg" alt=""><div><b class="c-warrior">Krieger · Furor</b><small>Auf 60 deutlich stärker als beim Leveln.</small></div></div>
+              <div class="tier-chip"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_rogue.jpg" alt=""><div><b class="c-rogue">Schurke · Meucheln</b><small>Verstümmeln, Blutungen gegen Rüstung.</small></div></div>
+              <div class="tier-chip"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_hunter.jpg" alt=""><div><b class="c-hunter">Jäger · Tierherrschaft / Überleben <span class="trend tag-down">▼</span></b><small>Raid-Buff Volltreffer-Aura halbiert.</small></div></div>
+            </div></div>
+            <div class="tier-row t-b"><div class="tier-label">B</div><div class="tier-items">
+              <div class="tier-chip"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_priest.jpg" alt=""><div><b class="c-priest">Priester · Schatten</b><small>Verschlingende Seuche 24 s, Vampirumarmung 30 s.</small></div></div>
+              <div class="tier-chip"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_druid.jpg" alt=""><div><b class="c-druid">Druide · Gleichgewicht / Wilder Kampf</b><small>Mondkin-Aura jetzt raidweit (nur Crit).</small></div></div>
+            </div></div>
+            <div class="tier-row t-c"><div class="tier-label">C</div><div class="tier-items">
+              <div class="tier-chip"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_paladin.jpg" alt=""><div><b class="c-paladin">Paladin · Vergeltung</b><small>Von allen Listen unten gesehen. Talentbaum am 30. Okt nochmal umgebaut, Bewertung offen.</small></div></div>
+            </div></div>
+          </div>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>Horde-Völker (Stand Launch-Build)</h3>
+          <div class="tier-board">
+            <div class="tier-row t-s"><div class="tier-label">S</div><div class="tier-items">
+              <div class="tier-chip"><img src="https://wow.zamimg.com/images/wow/icons/medium/racial_orc_berserkerstrength.jpg" alt=""><div><b>Orc <span class="trend tag-up">▲</span></b><small>Kochendes Blut wieder 2 Min. Befehlsgewalt (+5 % Pet-Schaden) ist zurück. Top für Jäger und Hexer.</small></div></div>
+              <div class="tier-chip"><img src="https://wow.zamimg.com/images/wow/icons/medium/racial_troll_berserk.jpg" alt=""><div><b>Troll <span class="trend tag-up">▲</span></b><small>Berserker jetzt 15 s (war 10 s), Regeneration +20 %. Für jede Schadensklasse stark.</small></div></div>
+            </div></div>
+            <div class="tier-row t-a"><div class="tier-label">A</div><div class="tier-items">
+              <div class="tier-chip"><img src="https://wow.zamimg.com/images/wow/icons/medium/spell_shadow_raisedead.jpg" alt=""><div><b>Untot <span class="trend tag-up">▲</span></b><small>Berührung des Grabes alle 15 s (war 25 s). Wille der Verlassenen. Einziger Horde-Paladin.</small></div></div>
+              <div class="tier-chip"><img src="https://wow.zamimg.com/images/wow/icons/medium/ability_warstomp.jpg" alt=""><div><b>Tauren</b><small>+5 % Gesundheit. Steppenlauf stapelt bis 60 % Tempo (nicht beritten). Kriegsdonner 90 s.</small></div></div>
+            </div></div>
+            <div class="tier-row t-b"><div class="tier-label">B</div><div class="tier-items">
+              <div class="tier-chip"><img src="https://wow.zamimg.com/images/wow/icons/medium/spell_nature_cyclone.jpg" alt=""><div><b>Skyborne (Windformer) <span class="trend tag-down">▼</span></b><small>Windgesegnet nur noch 2 % Tempo. Himmelssicht +15 % Laufen. Klassen: Krieger, Jäger, Schurke, Druide, Schamane. Kostenpflichtig.</small></div></div>
+            </div></div>
+          </div>
+          <div class="live-changes" data-live-group="orc,troll,undead,tauren,skyborne" data-live-title="Horde-Völker"></div>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>Meine Empfehlung nach Spielertyp</h3>
+          <div class="card-grid">
+            <div class="card highlight-border"><h4>„Ich will schnell auf 60“</h4><p><strong class="c-hunter">Orc-Jäger</strong> (Tierherrschaft). Am wenigsten Fehlerpotenzial, Pet-Bonus vom Orc, kaum Pausen.</p></div>
+            <div class="card highlight-border"><h4>„Ich will in jede Gruppe“</h4><p><strong class="c-paladin">Untoter Paladin</strong> (Schutz/Heilig) oder <strong class="c-priest">Troll-Priester</strong> (Disziplin). Tanks und Heiler sind ab Tag 1 Mangelware.</p></div>
+            <div class="card highlight-border"><h4>„Ich will Raid-Schaden“</h4><p><strong class="c-mage">Troll- oder Orc-Magier</strong> (Arkan) oder <strong class="c-warlock">Orc-Hexer</strong> (Gebrechen). Zum Leveln Frost bzw. Gebrechen nutzen und auf 60 per Dual-Spec wechseln.</p></div>
+            <div class="card highlight-border"><h4>„Ich will PvP“</h4><p><strong class="c-warlock">Hexer</strong>, <strong class="c-rogue">Schurke</strong> und <strong class="c-priest">Disziplin-Priester</strong> führen die Beta-PvP-Listen an. Untot für Wille der Verlassenen.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= WAS IST NEU & PATCH-STAND ================= -->
+      <section id="tab-news" class="tab-pane">
+        <div class="pane-header">
+          <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_scroll_03.jpg" class="wow-icon large" alt=""> Was ist neu & Patch-Stand</h2>
+          <p class="pane-subtitle">Die wichtigsten Systeme von Forever und alle Änderungen, die fürs Leveln zählen. Stand 1. November 2026.</p>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>Termine</h3>
+          <div class="news-list">
+            <div class="news-item"><div class="news-date">27. Okt</div><div class="card"><p><strong>Namensreservierung</strong> offen: bis zu 3 Charaktere pro Account (läuft bis 3. Nov).</p></div></div>
+            <div class="news-item"><div class="news-date">5. Nov<br>00:00</div><div class="card highlight-border"><p><strong>Launch</strong> weltweit (4. Nov, 15:00 PST / 23:00 UTC). Ein Mega-Realm pro Regelwerk und Region.</p></div></div>
+            <div class="news-item"><div class="news-date">9. Dez</div><div class="card"><p><strong>Raids öffnen:</strong> Barrow Deeps (10er), Hyjal-Gipfel (20er), Onyxias Hort (40er).</p></div></div>
+            <div class="news-item"><div class="news-date">Winter</div><div class="card"><p><strong>Hardcore-Regelwerk</strong>, Termin noch offen.</p></div></div>
+            <div class="news-item"><div class="news-date">Frühling '27</div><div class="card"><p>2 neue Raids, 2 neue Dungeons, neues Gebiet, legendäre Questreihe, PvP-Saison.</p></div></div>
+          </div>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>Die großen Systeme</h3>
+          <div class="card-grid">
+            <div class="card"><h4>🏕️ Camping</h4><p>Ab etwa Stufe 5 über Quests wie <em>„The Great Outdoors“</em>. Bis zu 3 Spieler legen je ein hergestelltes Objekt an ein Lagerfeuer. Alle Camp-Funktionen teilen sich <strong>1 Stunde Abklingzeit</strong>. Berufs-Buffs ab Skill 20. Das <strong>Abenteurer-Zelt</strong> ist laut Build vom 30. Okt wieder rein kosmetisch.</p></div>
+            <div class="card"><h4>💤 Gemütlicher Schlafsack</h4><p>Ab Stufe 14 per Schnitzeljagd (Start im Brachland oder in Westfall). Stapelnder XP-Buff plus Erholung beim Ausloggen. <a href="#" class="accent-link" data-goto="tab-sleepingbag">Route ansehen</a>.</p></div>
+            <div class="card"><h4>🐎 Reiten</h4><p>Wie in TBC: Mit dem Reitskill bekommst du das Reittier. <strong>Stufe 40: 100 Gold</strong> (60 %), <strong>Stufe 60: 1.000 Gold</strong>. Kein Fliegen. Neue Schiffsrouten, z. B. Gadgetzan ↔ Powderfuse Port (Riverglades).</p></div>
+            <div class="card"><h4>🔁 Dual-Spec & Umskillen</h4><p>Doppelte Spezialisierung ab <strong>Stufe 40 für 10 Gold</strong>. Umskillen wird mit der Zeit wieder günstiger, bis runter auf 1 Gold. Ideal: Leveln in Schaden, auf 60 heilen oder tanken.</p></div>
+            <div class="card"><h4>🏆 Legacy-System</h4><p>Account-weite Herausforderungen: eine Klasse auf <strong>25 / 40 / 60</strong> leveln. Gibt Legacy-Punkte (insgesamt 65, max. 16 pro Charakter) für Boni wie <em>Gut erholt</em> (+4 % Erholungs-XP pro Rang) und Belohnungen bis zum Spektralbär-Reittier.</p></div>
+            <div class="card"><h4>⚔️ Talente & Werte</h4><p>Alle Bäume überarbeitet, neuer 1-Punkt-Meilenstein bei 16 Punkten. <strong>Trefferwertung</strong> (Zauber, Nah- und Fernkampf) ist zusammengelegt, ebenso Crit. Göttlicher Willen, Segen der Könige und Verb. Mal der Wildnis sind jetzt Grundfähigkeiten.</p></div>
+            <div class="card"><h4>📚 Bibliotheksbücher</h4><p>Für alle Klassen offen. Abgaben bei 10, 20 und 25 Büchern. Lohnt sich unterwegs mitzunehmen.</p></div>
+            <div class="card"><h4>🧪 Berufe</h4><p>Viele neue Rezepte (Azeroth Commerce Authority / Durotar Supply). <em>Überstunden</em> erhöht die Skill-Chance um 4–20 %. Geringer Heiltrank wandert von Alchemie zu Erster Hilfe.</p></div>
+          </div>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>Neue Dungeons (Stufe 10–60)</h3>
+          <div class="table-card">
+            <table class="simple-table">
+              <thead><tr><th>Dungeon</th><th>Stufe</th><th>Hinweis</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Hall of Thanes</strong></td><td>13–18</td><td>Erster neuer Dungeon</td></tr>
+                <tr><td><strong>Ruinen von Lordaeron</strong></td><td>15–22</td><td>Horde-nah (Tirisfal)</td></tr>
+                <tr><td><strong>Ausgrabungsstätte: Sumpfland</strong></td><td>26–31</td><td>Seit Beta 1. Okt</td></tr>
+                <tr><td><strong>Stadt Dalaran</strong></td><td>28–33</td><td>Seit Beta 8. Okt</td></tr>
+                <tr><td><strong>The Drowned City</strong></td><td>35–40</td><td></td></tr>
+                <tr class="highlight-row"><td><strong>Krol'dok Stronghold</strong></td><td>40–45</td><td>In den Riverglades</td></tr>
+                <tr><td><strong>Alcaz-Gefängnis</strong></td><td>48–53</td><td></td></tr>
+                <tr><td><strong>Blackmaw Hold</strong></td><td>55–60</td><td></td></tr>
+                <tr><td><strong>Shaper's Terrace</strong></td><td>58–60</td><td></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>Fürs Leveln entscheidende Beta-Änderungen</h3>
+          <div class="card-grid">
+            <div class="sub-box orange"><h4>1. Okt · Dungeon-Quests</h4><p>Der Bonus-XP von Dungeon-Quests wurde <span class="tag-down">halbiert</span>. Dungeons lohnen sich weiterhin, sind aber kein Pflicht-Abstecher mehr.</p></div>
+            <div class="sub-box green"><h4>8. Okt · Dungeon-Mobs</h4><p>Mob-XP in Dungeons <span class="tag-up">+20 %</span>. Der Gruppen-XP-Malus richtet sich wieder nach deinem eigenen Level, nicht nach dem höchsten in der Gruppe.</p></div>
+            <div class="sub-box red"><h4>16. Okt · Zauberstäbe & Autoschuss</h4><p>Beide feuern erst nach <strong>0,5 s Stillstehen</strong>. Zauberstäbe skalieren seit 24. Sep <span class="tag-down">nicht mehr</span> mit Zaubermacht.</p></div>
+            <div class="sub-box blue"><h4>16. Okt · Waffen-Völkerboni weg</h4><p>Axt-, Schwert- und Streitkolben-Spezialisierungen der Völker sind ersetzt. Du bist an keinen Waffentyp mehr gebunden.</p></div>
+            <div class="sub-box cyan"><h4>Seit Beta · Mob-Tempo</h4><p>Blizzards Ziel: ein normaler Mob stirbt solo in <strong>ca. 10–15 Sekunden</strong>. Gegner regenerieren außerhalb des Kampfes Leben.</p></div>
+            <div class="sub-box"><h4>Questlog & Welt</h4><p>Viele Quest-Respawns und Belohnungen angepasst. Einige Dungeon-Belohnungen von Rare auf Uncommon gesenkt. Einige Quests in Desolace verlangen jetzt Stufe 35.</p></div>
+          </div>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>Launch-Build (ausgelesen am 30. Okt)</h3>
+          <div class="notice blue">
+            <h3>ℹ Noch nicht offiziell</h3>
+            <p>Diese Werte stammen aus den Spieldateien des Launch-Builds und sind noch nicht von Blizzard angekündigt. Bestätigt ist nur Kochendes Blut (2 Min). Alles andere kann sich bis zum Launch noch ändern.</p>
+          </div>
+          <div class="card-grid">
+            <div class="card"><h4 class="c-hunter">Jäger</h4><ul>
+              <li><span class="tag-down">▼</span> Aspekt des Falken: 15/22/30/38/47 AP (vorher 20/35/50/70/90)</li>
+              <li><span class="tag-down">▼</span> Volltreffer-Aura: +15 AP statt +30</li>
+              <li><span class="tag-up">▲</span> Mal des Jägers Rang 4: 143 AP für Angreifer (vorher 71)</li>
+              <li>Tier verängstigen: 30 s Abklingzeit, Ränge auf 14/30/46</li>
+            </ul></div>
+            <div class="card"><h4 class="c-mage">Magier</h4><ul>
+              <li><span class="tag-down">▼</span> Eislanze: neu 8 s Abklingzeit</li>
+              <li><span class="tag-down">▼</span> Frostblast nicht mehr erlernbar</li>
+              <li><span class="tag-down">▼</span> Kritische Masse: 6 % (vorher 10 %)</li>
+              <li><span class="tag-up">▲</span> Einäscherung: +10 % Crit (vorher 6 %)</li>
+              <li>Arkan-Baum umgebaut, Verb. Feuerball heißt jetzt <em>Accelerant</em>, Präzision gilt für alle Zauber</li>
+            </ul></div>
+            <div class="card"><h4 class="c-warrior">Krieger · <span class="c-paladin">Paladin</span> · <span class="c-shaman">Schamane</span></h4><ul>
+              <li><span class="tag-up">▲</span> Siegesrausch und Rache skalieren mit Angriffskraft</li>
+              <li><span class="tag-up">▲</span> Zorn der Gerechtigkeit schon ab Stufe 10 (vorher 16)</li>
+              <li>Lavaeruption Rang 3: Flammenschock-Bonus skaliert nicht mehr mit Stufe</li>
+              <li>Wurzel-Effekte (Frostbiss, Verb. Kniesehne, Fallen) teilen sich jetzt Diminishing Returns</li>
+            </ul></div>
+            <div class="card"><h4>Völker (offiziell, 26.–27. Okt)</h4><ul>
+              <li><span class="tag-up">▲</span> Orc: Kochendes Blut 2 Min, Befehlsgewalt zurück</li>
+              <li><span class="tag-up">▲</span> Troll: Berserker 15 s</li>
+              <li><span class="tag-up">▲</span> Untot: Berührung des Grabes 15 s</li>
+              <li>Tauren: Steppenlauf bis 60 %, gilt nicht beritten</li>
+              <li><span class="tag-down">▼</span> Skyborne: Windgesegnet 2 %, Leylinie lesen 50 %</li>
+            </ul></div>
+          </div>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>Quellen</h3>
+          <ul class="src-list">
+            <li><a href="https://warcraft.wiki.gg/wiki/World_of_Warcraft:_Forever" target="_blank" rel="noopener">Warcraft Wiki – World of Warcraft: Forever</a></li>
+            <li><a href="https://www.bluetracker.gg/wow/topic/us-en/2360696-wow-forever-beta-development-notes-updated-october-26/" target="_blank" rel="noopener">Blizzard – Beta Development Notes (bis 27. Okt)</a></li>
+            <li><a href="https://playfulls.com/patch-notes/2026-10-30-datamined-hotfixes-before-launch" target="_blank" rel="noopener">Datamined Launch-Hotfixes (30. Okt)</a></li>
+            <li><a href="https://conquestcapped.com/guides/wow-forever/wow-forever-best-leveling-class/" target="_blank" rel="noopener">ConquestCapped – Leveling-Ranking (22. Okt)</a></li>
+            <li><a href="https://wowforevertierlist.com/tier-list/leveling" target="_blank" rel="noopener">wowforevertierlist.com – Leveling (18. Okt)</a></li>
+            <li><a href="https://gamer-guides.com/warcraft-forever/tier-list-beta/" target="_blank" rel="noopener">Gamer-Guides – Tier List (18. Okt)</a></li>
+            <li><a href="https://wowforever.co/tier-list/" target="_blank" rel="noopener">wowforever.co – Ranking-Vergleich (30. Okt)</a></li>
+            <li><a href="https://conquestcapped.com/guides/wow-forever/wow-forever-overview/" target="_blank" rel="noopener">ConquestCapped – Forever-Überblick</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ================= LIVE-PATCHNOTES (foreverchanges.pro) ================= -->
+      <section id="tab-patchnotes" class="tab-pane">
+        <div class="pane-header">
+          <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_pocketwatch_01.jpg" class="wow-icon large" alt=""> Live-Patchnotes</h2>
+          <p class="pane-subtitle">Jeder Build und Hotfix, automatisch stündlich von <a href="https://foreverchanges.pro/de/patch-notes" target="_blank" rel="noopener" class="accent-link">foreverchanges.pro</a> übernommen. Englische Einträge werden automatisch ins Deutsche übersetzt.</p>
+        </div>
+
+        <div class="pn-toolbar">
+          <div class="pn-filters" role="group" aria-label="Filter">
+            <button class="pn-filter active" data-pn-filter="all">Alle</button>
+            <button class="pn-filter" data-pn-filter="build">Builds</button>
+            <button class="pn-filter" data-pn-filter="hotfix">Hotfixes</button>
+          </div>
+          <span class="pn-status" id="pnStatus">Lade Patchnotes …</span>
+        </div>
+
+        <div class="news-list" id="pnList"></div>
+
+        <p class="src-list" style="margin-top:1.5rem">Quelle: <a href="https://foreverchanges.pro/de/patch-notes" target="_blank" rel="noopener">ForeverChanges – Patchnotes</a>. Dort stehen auch alle Details Klasse für Klasse. Maschinell übersetzte Einträge sind mit <span class="pn-badge mt">ÜBERSETZT</span> markiert.</p>
+      </section>
+
       <!-- ================= 0. LEVEL ROADMAP (1-60) ================= -->
-      <section id="tab-timeline" class="tab-pane active">
+      <section id="tab-timeline" class="tab-pane">
         <div class="pane-header">
           <h2>Stufen-Fahrplan (Wann du was tun musst)</h2>
           <p class="pane-subtitle">Die chronologische Checkliste von Stufe 1 bis 60 für alle Klassen.</p>
         </div>
+
+        <div class="live-changes" data-live-topic="timeline"></div>
 
         <div class="timeline-container">
           
@@ -164,11 +486,10 @@
           <div class="timeline-block highlight-block">
             <div class="level-indicator">Stufe 5</div>
             <div class="timeline-body">
-              <h4>Der Zauberstab-Powerspike für Caster (Priester, Hexer, Magier)</h4>
-              <p>Für Caster ist das der wichtigste Moment des gesamten Frühspiels:</p>
+              <h4>Zauberstab & Camping freischalten</h4>
               <ul>
-                <li><strong>Eigenbau via Verzauberkunst (Skill 10):</strong> Grüne Items aus Quests entzaubern → <em>Seltsamer Staub</em> & <em>Geringe Magieessenz</em> gewinnen. Zusammen mit einfachem Holz beim Lehrer den <strong>Geringen Magiezauberstab (11.3 DPS)</strong> herstellen.</li>
-                <li><strong>Oder Auktionshaus / Gilde:</strong> Direkt im Gildenchat oder AH nachfragen. Der Wand verdreifacht deinen Schaden sofort und kostet fast nichts!</li>
+                <li><strong>Zauberstab für Caster:</strong> Per Verzauberkunst (Skill 10) den <strong>Geringen Magiezauberstab</strong> herstellen oder im AH/Gildenchat holen. Wichtig in Forever: Stäbe skalieren <strong>nicht mehr mit Zaubermacht</strong> und feuern erst nach <strong>0,5 s Stillstehen</strong>. Sie sind gut für Mana-Pausen, aber kein Ersatz für Zauber mehr.</li>
+                <li><strong>Camping:</strong> Ab etwa Stufe 5 die Quest <em>„The Great Outdoors“</em> machen, damit schaltest du Lagerfeuer und Camp-Buffs frei.</li>
               </ul>
             </div>
           </div>
@@ -188,9 +509,9 @@
           <div class="timeline-block">
             <div class="level-indicator">Stufe 13 – 15</div>
             <div class="timeline-body">
-              <h4>Großer Magiezauberstab & Brachland-Wechsel</h4>
+              <h4>Brachland-Wechsel & erster neuer Dungeon</h4>
               <ul>
-                <li><strong>Wand-Upgrade (Stufe 13):</strong> <em>Großer Magiezauberstab (17.5 DPS)</em> via Verzauberkunst (Skill 75) herstellen oder kaufen.</li>
+                <li><strong>Neue Dungeons:</strong> <em>Hall of Thanes</em> (13–18) und <em>Ruinen von Lordaeron</em> (15–22) einmal mit allen Quests mitnehmen.</li>
                 <li><strong>Zonenwechsel:</strong> Übergang ins Brachland (The Barrens) oder Silberwald. Heimatstein (Hearthstone) direkt im <em>Wegekreuz (Crossroads)</em> binden!</li>
               </ul>
             </div>
@@ -212,9 +533,9 @@
           <div class="timeline-block">
             <div class="level-indicator">Stufe 18 – 24</div>
             <div class="timeline-body">
-              <h4>Erste Instanz-Quests & Grabsteinszepter</h4>
+              <h4>Erste Instanz-Quests</h4>
               <ul>
-                <li><strong>Tiefschwarze Grotte (BFD):</strong> Klassenquest annehmen und Instanz <strong>genau 1x</strong> für die Quests spielen. Belohnung: <strong>Grabsteinszepter (29.0 DPS Wand)</strong> – trägt dich bis Stufe 35+!</li>
+                <li><strong>Tiefschwarze Grotte (BFD):</strong> Quests sammeln und Instanz <strong>1x</strong> spielen. Seit Beta-Patch 8. Okt geben Dungeon-Mobs +20 % XP, der Quest-Bonus wurde dafür halbiert.</li>
                 <li><strong>Höhlen des Wehklagens (WC) / Burg Schattenfang (SFK):</strong> Vorher alle Quests im Brachland sammeln, einmal durchspielen, Belohnungen abgeben, weiterziehen.</li>
               </ul>
             </div>
@@ -234,10 +555,11 @@
           <div class="timeline-block highlight-block">
             <div class="level-indicator">Stufe 40</div>
             <div class="timeline-body">
-              <h4>Reittier & Klassen-Respec</h4>
+              <h4>Reittier & Doppelte Spezialisierung</h4>
               <ul>
-                <li><strong>Reittier kaufen:</strong> ca. 90 Gold für Reitskill + 60% Mount bereithalten. Da es kein Fliegen gibt, ist das dein größter Temposprung. (Hexer bekommen ihr Pferd kostenlos!).</li>
-                <li><strong>Priester Shadowform:</strong> Auf volle <em>Schattengestalt</em> umskillen (+15% Schattenschaden, Gedankenschinden).</li>
+                <li><strong>Reiten:</strong> <strong>100 Gold</strong> beim Reitlehrer deines Volkes, das 60%-Reittier ist inklusive. Kein Fliegen, daher dein größter Temposprung.</li>
+                <li><strong>Dual-Spec (10 Gold):</strong> Beim Klassenlehrer freischalten. Leveln in Schaden, zweite Spec für Dungeons (Heilen/Tanken).</li>
+                <li><strong>Priester:</strong> <em>Schattengestalt</em> mitnehmen, danach levelt der Priester deutlich schneller.</li>
               </ul>
             </div>
           </div>
@@ -247,8 +569,9 @@
             <div class="timeline-body">
               <h4>Die Zielgerade & Neue Forever-Zonen</h4>
               <ul>
-                <li><strong>Zonen-Pfad:</strong> Schlingendorntal $\rightarrow$ Tanaris $\rightarrow$ Hinterland $\rightarrow$ <strong>Riverglades (Neue Forever-Zone)</strong> $\rightarrow$ Krater von Un'Goro $\rightarrow$ Östliche Pestländer $\rightarrow$ Winterspring.</li>
-                <li><strong>Instanzen:</strong> Zul'Farrak, Maraudon und BRD jeweils 1x für die Quests mitnehmen.</li>
+                <li><strong>Riverglades (~35–45):</strong> Neue Zone mit über 150 Quests, neutraler Goblin-Hafen Powderfuse Port (Schiff ab Gadgetzan) und Dungeon <em>Krol'dok Stronghold</em> (40–45). Ideal ab Mitte 30.</li>
+                <li><strong>Danach (Classic-Erfahrung, unter Vorbehalt):</strong> Tanaris → Feralas / Hinterland → Krater von Un'Goro → Östliche Pestländer → Winterquell. Endgame-Zone: <strong>Hyjal</strong>.</li>
+                <li><strong>Instanzen:</strong> Zul'Farrak, Maraudon, BRD und die neuen <em>Alcaz-Gefängnis</em> (48–53) und <em>Blackmaw Hold</em> (55–60) für Quests mitnehmen.</li>
               </ul>
             </div>
           </div>
@@ -263,6 +586,8 @@
           <h2>Horde Speed-Questing Leitfaden (1–30)</h2>
           <p class="pane-subtitle">Die mathematisch schnellste Zonen- und Hub-Reihenfolge (basierend auf Joana / RestedXP), optimiert für minimale Laufzeiten.</p>
         </div>
+
+        <div class="live-changes" data-live-topic="questing"></div>
 
         <div class="guide-chapter">
           <h3>📌 Grundregel: Niemals eine Zone zu 100% am Stück leeren</h3>
@@ -306,8 +631,8 @@
               <ul>
                 <li><strong>Stufe 1–6 (Todesend / Deathknell):</strong> Start in der Gruft. Alle Quests kreisförmig um die Kapelle abräumen (Zombies, Nachtweber-Spinnen, Scharlachroter Kreuzzug). Mit Stufe 6 Kochen & Erste Hilfe lernen und nach Brill laufen.</li>
                 <li><strong>Stufe 6–10 (Brill & Umgebung):</strong> Heimatstein im Gasthaus Brill binden. Quests bündeln: Agamand-Mühlen (Schädel sammeln), Garrenspuk (Kürbisse), Scharlachroter Wachturm & Sollidens Bauernhof. Mit Stufe 10 Klassenquests in Brill oder Unterstadt abschließen.</li>
-                <li><strong>Stufe 10–12 (Bollwerk & Zeppelin-Transit):</strong> Letzte Quests am Bollwerk abgreifen. Ab Stufe 11–12 zum <strong>Zeppelinturm vor Unterstadt</strong> laufen $\rightarrow$ Zeppelin nach <strong>Orgrimmar / Durotar</strong> nehmen!</li>
-                <li class="highlight-row"><strong>Übergang zu Stufe 12:</strong> Flugpunkt Orgrimmar holen $\rightarrow$ westlich ins Brachland laufen und direkt ins <strong>Wegekreuz (Crossroads)</strong> einsteigen!</li>
+                <li><strong>Stufe 10–12 (Bollwerk & Zeppelin-Transit):</strong> Letzte Quests am Bollwerk abgreifen. Ab Stufe 11–12 zum <strong>Zeppelinturm vor Unterstadt</strong> laufen → Zeppelin nach <strong>Orgrimmar / Durotar</strong> nehmen!</li>
+                <li class="highlight-row"><strong>Übergang zu Stufe 12:</strong> Flugpunkt Orgrimmar holen → westlich ins Brachland laufen und direkt ins <strong>Wegekreuz (Crossroads)</strong> einsteigen!</li>
               </ul>
             </div>
 
@@ -347,7 +672,7 @@
             <ul>
               <li><strong>Stufe 20–22:</strong> Vom Brachland nach Sonnenfels (Sun Rock Retreat) reiten. Flugpunkt holen! Quests am Scherenkamm und bei den Spinnen abräumen.</li>
               <li><strong>Stufe 22–24:</strong> Übergang nach Splitterholzposten (Ashenvale). Aufträge an den Zoram-Strand mitnehmen (Tiefschwarze Grotte Questvorbereitung).</li>
-              <li><strong>Stufe 24–25 (Tiefschwarze Grotte BFD):</strong> Instanz 1x für alle Quests spielen $\rightarrow$ Belohnung: <strong>Grabsteinszepter (29.0 DPS Wand)</strong>!</li>
+              <li><strong>Stufe 24–25 (Tiefschwarze Grotte BFD):</strong> Instanz 1x für alle Quests spielen → Belohnung: <strong>Grabsteinszepter (29.0 DPS Wand)</strong>!</li>
             </ul>
           </div>
         </div>
@@ -373,15 +698,17 @@
           <p class="pane-subtitle">Die wichtigsten Mechaniken, damit du von Stufe 1 an keine unnötige Zeit verlierst.</p>
         </div>
 
+        <div class="live-changes" data-live-topic="rules"></div>
+
         <div class="clean-grid">
           <div class="card">
-            <h3>1. Dungeons: Nur 1x für Quests durchlaufen</h3>
-            <p>Mob-Kill-Erfahrung in Instanzen wurde in Forever spürbar gesenkt. Die XP steckt komplett in den <strong>Dungeon-Quests</strong>. Vor dem Betreten alle Quests einsammeln, einmal durchspielen, Belohnungen abgeben und sofort wieder in die offene Welt zurückkehren. Dungeons zu wiederholen lohnt sich nicht.</p>
+            <h3>1. Dungeons: 1x mit allen Quests</h3>
+            <p>Seit den Beta-Patches im Oktober geben Dungeon-Quests nur noch <strong>halb so viel Bonus-XP</strong>, Dungeon-Mobs dafür <strong>+20 % XP</strong>. Am besten: alle Quests einsammeln, einmal sauber durchspielen, abgeben und zurück in die Welt. Wiederholen lohnt sich nur mit einer eingespielten Gruppe.</p>
           </div>
 
           <div class="card">
-            <h3>2. Dreifache XP-Verstärker: Food + Schlafsack + Zelt</h3>
-            <p>In Forever kombinierst du drei mächtige Quellen: <strong>+5% Kill-XP</strong> durch gekochtes Essen (15 Min), <strong>+3% XP</strong> durch den Gemütlichen Schlafsack (2 Std) und <strong>bis zu 20% Rested XP pro Stunde</strong> durch das neu überarbeitete <em>Abenteurer-Zelt (Adventurer's Tent)</em> am Lagerfeuer!</p>
+            <h3>2. XP-Verstärker: Essen + Schlafsack + Erholung</h3>
+            <p>In Forever kombinierst du drei mächtige Quellen: <strong>+5% Kill-XP</strong> durch gekochtes Essen (15 Min), <strong>+3% XP</strong> durch den Gemütlichen Schlafsack (2 Std) dazu Erholungs-XP aus Gasthaus und Schlafsack. Das <em>Abenteurer-Zelt</em> gibt laut Build vom 30. Okt <strong>keine</strong> Erholung mehr.</p>
           </div>
 
           <div class="card">
@@ -391,7 +718,7 @@
 
           <div class="card">
             <h3>4. Reiten ab Stufe 40 hat höchste Priorität</h3>
-            <p>In Forever gibt es keine Flugreittiere. Das Reittier ab Stufe 40 (ca. 90 Gold) ist dein größter Tempovorteil. Sammelberufe (Kürschnerei/Bergbau) in Woche 1 nutzen, um Materialien direkt im Auktionshaus zu Geld zu machen.</p>
+            <p>In Forever gibt es keine Flugreittiere. Reiten auf Stufe 40 (100 Gold, Reittier inklusive) ist dein größter Tempovorteil. Sammelberufe (Kürschnerei/Bergbau) in Woche 1 nutzen, um Materialien direkt im Auktionshaus zu Geld zu machen.</p>
           </div>
 
           <div class="card">
@@ -401,79 +728,23 @@
         </div>
 
         <!-- Deep Dive: Rested XP Mechanik -->
-        <div class="guide-chapter" style="margin-top: 1.5rem;">
-          <div class="card highlight-border" style="background: rgba(13, 20, 36, 0.85); border: 1px solid rgba(59, 130, 246, 0.4);">
-            <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem;">
-              <span style="font-size: 1.5rem;">💤</span>
-              <h3 style="color: #60a5fa; margin: 0; font-family: var(--font-heading);">Rested XP (Erholungs-Erfahrung) im Detail erklärt</h3>
-            </div>
-            
-            <p style="font-size: 0.95rem; line-height: 1.6; color: var(--text-main);">
-              <strong>Was ist Rested XP?</strong> Wenn du dich in einem Gasthaus, einer Hauptstadt oder am neuen <em>Abenteurer-Zelt</em> aufhältst, sammelt dein Charakter Erholungs-Erfahrung. Dein Erfahrungsbalken färbt sich <strong>blau</strong>.
-            </p>
-
-            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1rem 0;">
-              <div style="background: rgba(0,0,0,0.4); padding: 1rem; border-radius: 6px; border-left: 3px solid #60a5fa;">
-                <h4 style="color: #93c5fd; margin-top: 0;">1. Doppelte Monster-Erfahrung (+100%)</h4>
-                <p style="font-size: 0.88rem; color: var(--text-muted); margin: 0;">
-                  Solange dein Balken blau ist, bringt jeder getötete Mob <strong>exakt 200% EP</strong> (normale Kill-XP + 100% Rested-Bonus). Mobs sterben, und dein XP-Balken rast im doppelten Tempo vorwärts!
-                </p>
-              </div>
-
-              <div style="background: rgba(0,0,0,0.4); padding: 1rem; border-radius: 6px; border-left: 3px solid #34d399;">
-                <h4 style="color: #6ee7b7; margin-top: 0;">2. Quests verbrauchen KEINE Rested XP!</h4>
-                <p style="font-size: 0.88rem; color: var(--text-muted); margin: 0;">
-                  Ein riesiger Vorteil: Wenn du eine Quest abgibst (z.B. 3.000 XP), wird <strong>kein einziger Punkt Rested XP verbraucht</strong>. Der Rested-Bonus wird rein für Monster-Kills aufgebraucht.
-                </p>
-              </div>
-
-              <div style="background: rgba(0,0,0,0.4); padding: 1rem; border-radius: 6px; border-left: 3px solid #f59e0b;">
-                <h4 style="color: #fcd34d; margin-top: 0;">3. Das Zelt-Wunder in Forever</h4>
-                <p style="font-size: 0.88rem; color: var(--text-muted); margin: 0;">
-                  Normalerweise dauert es <strong>10 Tage</strong> im Gasthaus, um das Maximum von 150% Rested XP aufzubauen. Das <em>Abenteurer-Zelt (Adventurer's Tent)</em> lädt deinen Balken <strong>jede Stunde sofort auf 20% eines Levels</strong> auf – mitten in der offenen Welt!
-                </p>
-              </div>
-            </div>
-
-            <div style="background: rgba(212, 163, 71, 0.1); border: 1px solid rgba(212, 163, 71, 0.3); padding: 0.75rem 1rem; border-radius: 6px; font-size: 0.88rem;">
-              <strong>Speedrunner-Tipp mit RestedXP (RXP):</strong> Nutze das Addon <strong>RXPGuides</strong> (<a href="https://github.com/syqdur/foreverguides/blob/main/RXPGuides.zip" target="_blank" class="accent-link">Download oben</a>). Das Addon erkennt deinen Rested-XP-Status automatisch und berechnet, ob du Mobs auf dem Weg grinden solltest, um zeitraubende Umwege zu skippen!
-            </div>
+        <div class="guide-chapter" style="margin-top: 2rem;">
+          <h3>💤 Erholungs-XP (Rested) erklärt</h3>
+          <div class="notice blue">
+            <p><strong>Was ist das?</strong> In Gasthaus, Hauptstadt oder Camp sammelt dein Charakter Erholung, der XP-Balken wird <strong>blau</strong>.</p>
           </div>
+          <div class="card-grid">
+            <div class="sub-box blue"><h4>Doppelte Mob-XP</h4><p>Solange der Balken blau ist, gibt jeder Kill <strong>200 % XP</strong>. Der Bonus wird dabei aufgebraucht.</p></div>
+            <div class="sub-box green"><h4>Quests verbrauchen nichts</h4><p>Quest-Abgaben fressen <strong>keine</strong> Erholung. Sie bleibt komplett für Mob-Kills.</p></div>
+            <div class="sub-box orange"><h4>Camp & Legacy</h4><p>Der Schlafsack gibt Erholung beim Ausloggen in der Welt. Das <em>Abenteurer-Zelt</em> ist nach aktuellem Stand nur kosmetisch. Der Legacy-Bonus <em>Gut erholt</em> erhöht Erholungs-XP und Obergrenze um je 4 % pro Rang (max. 5).</p></div>
+          </div>
+          <p class="card-desc" style="margin-top:1rem"><strong>Tipp:</strong> Das Addon <strong>RXPGuides</strong> (<a href="https://github.com/syqdur/foreverguides/blob/main/RXPGuides.zip" target="_blank" class="accent-link">Download</a>) zeigt dir, wann sich Mobs auf dem Weg lohnen.</p>
         </div>
 
-        <!-- Hotfix & Patch-Stand (Aktuelle Beta-Änderungen) -->
-        <div class="guide-chapter" style="margin-top: 1.5rem;">
-          <div class="card highlight-border" style="background: rgba(18, 25, 40, 0.95); border: 1px solid rgba(212, 163, 71, 0.5);">
-            <div style="display: flex; align-items: center; gap: 0.65rem; margin-bottom: 0.75rem;">
-              <span style="font-size: 1.4rem;">🔥</span>
-              <h3 style="color: #fcd34d; margin: 0; font-family: var(--font-heading);">Neueste Patch- & Balance-Änderungen (Pre-Launch Build)</h3>
-            </div>
-            
-            <p style="font-size: 0.92rem; line-height: 1.6; color: var(--text-main); margin-bottom: 1rem;">
-              Blizzard hat in den finalen Beta-Patches vor dem Launch wesentliche Anpassungen an Rassenfähigkeiten und Klassen-Tuning vorgenommen, um Bottlenecks zu vermeiden:
-            </p>
-
-            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 1rem;">
-              <div style="background: rgba(0,0,0,0.45); padding: 1rem; border-radius: 6px; border-left: 3px solid #fca5a5;">
-                <h4 style="color: #fca5a5; margin-top: 0;">Rassen-Balance (Keine Waffen-Specs)</h4>
-                <ul style="font-size: 0.84rem; color: var(--text-muted); padding-left: 1.15rem; line-height: 1.55;">
-                  <li><strong>Keine Waffen-Zwänge mehr:</strong> Frühere Waffenboni (wie Axt/Schwert-Kunde) wurden entfernt, damit Klassen nicht mehr an einen Waffentyp gefesselt sind.</li>
-                  <li><strong>Orcs:</strong> <em>Befehlsgewalt</em> (+5% Pet-Schaden für Jäger/Hexer) ist zurück. <em>Kochendes Blut</em> Cooldown auf 2 Min gesenkt.</li>
-                  <li><strong>Tauren:</strong> <em>Durchhaltevermögen</em> gewährt saubere +5% Basis-Gesundheit. <em>Ebenenlauf</em> stackt bis 60% Lauftempo.</li>
-                  <li><strong>Untote:</strong> <em>Berührung des Grabes</em> interner Cooldown auf 15s reduziert.</li>
-                </ul>
-              </div>
-
-              <div style="background: rgba(0,0,0,0.45); padding: 1rem; border-radius: 6px; border-left: 3px solid #67e8f9;">
-                <h4 style="color: #67e8f9; margin-top: 0;">Klassen-Tuning & Leveling-Buffs</h4>
-                <ul style="font-size: 0.84rem; color: var(--text-muted); padding-left: 1.15rem; line-height: 1.55;">
-                  <li><strong>Schamane:</strong> <em>Wasserschild</em> procct nun bei allen kritischen Treffern (auch Zauber/Damage). Früherer Zugriff auf <em>Lavaeruption</em>.</li>
-                  <li><strong>Druide:</strong> Feral-Schaden pauschal um +5% angehoben; Burst-Heilung (Nachwachsen +10%, Rasche Heilung +40%) spürbar verstärkt.</li>
-                  <li><strong>Hexenmeister:</strong> <em>Instabiles Gebrechen</em> und <em>Feuerregen</em> um +20% Schaden gebufft.</li>
-                  <li><strong>Jäger:</strong> Flächenschaden (Mehrfachschuss / Salve) verstärkt (+10% Schaden).</li>
-                </ul>
-              </div>
-            </div>
+        <div class="guide-chapter">
+          <h3>🔥 Patch-Stand</h3>
+          <div class="notice gold">
+            <p>Alle Balance-Änderungen (Völker, Klassen, Dungeon-XP, Launch-Build-Daten vom 30. Okt) stehen jetzt gesammelt unter <a href="#" class="accent-link" data-goto="tab-news">Was ist neu & Patch-Stand</a>. Klassen-spezifische Änderungen findest du zusätzlich oben auf jeder Klassenseite.</p>
           </div>
         </div>
       </section>
@@ -485,6 +756,8 @@
           <p class="pane-subtitle">Getestete Addons für den Forever-Client und Dissonances fertige Profile.</p>
         </div>
 
+        <div class="live-changes" data-live-topic="addons"></div>
+
         <div class="table-card">
           <table class="simple-table">
             <thead>
@@ -495,23 +768,23 @@
             </thead>
             <tbody>
               <tr class="highlight-row">
-                <td><strong>RXPGuides (In-Game Levelguide 1–60)</strong><br><a href="https://github.com/syqdur/foreverguides/blob/main/RXPGuides.zip" target="_blank" class="accent-link">📥 RXPGuides.zip (Direktdownload) ↗</a></td>
+                <td><strong>RXPGuides (In-Game Levelguide 1–60)</strong><br><a href="https://github.com/syqdur/foreverguides/blob/main/RXPGuides.zip" target="_blank" class="accent-link">📥 RXPGuides.zip (Direktdownload) ↗</a> <a href="https://www.curseforge.com/wow/addons/restedxp-guide" target="_blank" rel="noopener" class="cf-link">CurseForge ↗</a></td>
                 <td><strong>Das führende In-Game Levelguide-Addon:</strong> Zeigt dir mit einem dynamischen 3D-Richtungspfeil und interaktiver Quest-Checkliste direkt im Spiel sekundengenau, welche Quests du annehmen, wo du langlaufen und welche Mobs du töten sollst. Nie wieder Questtexte lesen oder auf der Weltkarte suchen! Enthält alle optimierten Horde-Routen (1–60) für WoW Forever. <em>Einfach die ZIP in deinen <code>World of Warcraft/_forever_/Interface/AddOns</code> Ordner entpacken.</em></td>
               </tr>
               <tr>
-                <td><strong>Polestar (Leveling Guide)</strong><br><a href="https://github.com/fitzforge/polestar" target="_blank" class="accent-link">GitHub ↗</a></td>
-                <td>Das Open-Source In-Game Speed-Leveling Addon speziell für WoW Forever! Enthält simulierte 1–60 Routen, Waypoint-Navigationspfeil, Travel-Planner und Datenbanken. Unterstützt Deutsch out-of-the-box.</td>
+                <td><strong>Polestar (Leveling Guide)</strong><br><a href="https://www.curseforge.com/wow/addons/polestar-guides" target="_blank" rel="noopener" class="cf-link">CurseForge ↗</a> <a href="https://github.com/fitzforge/polestar" target="_blank" class="accent-link">GitHub ↗</a></td>
+                <td>Das Open-Source In-Game Speed-Leveling Addon speziell für WoW Forever! Enthält simulierte 1–60 Routen, Waypoint-Navigationspfeil, Travel-Planner und Datenbanken. Unterstützt Deutsch out-of-the-box. Kann Routen an <em>Shortest Path Forever</em> übergeben.</td>
               </tr>
               <tr>
                 <td><strong>WowHandbook</strong><br><a href="https://github.com/Arcaneology/WowHandbookAddon" target="_blank" class="accent-link">GitHub ↗</a></td>
                 <td>All-in-One Dungeon & Quest Begleiter für WoW Forever: In-Game Dungeon Guide mit allen Instanz-Quests und Vorquests (für One-and-Done Runs), Boss-Lootfilter nach Klasse und automatische Quest-Annahme/-Abgabe.</td>
               </tr>
               <tr>
-                <td><strong>Shortest Path Forever</strong><br><a href="https://github.com/cjber/shortest-path-forever" target="_blank" class="accent-link">GitHub ↗</a></td>
+                <td><strong>Shortest Path Forever</strong><br><a href="https://www.curseforge.com/wow/addons/shortest-path-forever" target="_blank" rel="noopener" class="cf-link">CurseForge ↗</a> <a href="https://github.com/cjber/shortest-path-forever" target="_blank" class="accent-link">GitHub ↗</a></td>
                 <td>Navigations-Addon wie in OSRS: Shift-Klick auf die Karte berechnet automatisch die schnellste Route über Zeppeline, Flugpunkte und Laufwege inkl. Abfahrts-Timern. Befehl: <code>/path</code></td>
               </tr>
               <tr>
-                <td><strong>BetterBlizzPlates</strong><br><a href="https://github.com/Bodify/BetterBlizzPlates" target="_blank" class="accent-link">GitHub ↗</a></td>
+                <td><strong>BetterBlizzPlates</strong><br><a href="https://www.curseforge.com/wow/addons/betterblizzplates" target="_blank" rel="noopener" class="cf-link">CurseForge ↗</a> <a href="https://github.com/Bodify/BetterBlizzPlates" target="_blank" class="accent-link">GitHub ↗</a></td>
                 <td>Gegnerbalken, Zauberbalken und CC sauber direkt über den Gegner-Namensplaketten (Dissonance Profil-Import unten verfügbar).</td>
               </tr>
               <tr>
@@ -519,19 +792,19 @@
                 <td>Das offizielle Simulations-Framework für World of Warcraft: Forever. Webbasierte DPS- und Stat-Simulationen für alle Klassen und Skillungen.</td>
               </tr>
               <tr>
-                <td><strong>ForeverAuras</strong></td>
+                <td><strong>ForeverAuras</strong><br><a href="https://www.curseforge.com/wow/addons/foreverauras" target="_blank" rel="noopener" class="cf-link">CurseForge ↗</a></td>
                 <td>Funktionierender WeakAuras-Ersatz für den Forever-Client zum Anzeigen von Procs und Abklingzeiten.</td>
               </tr>
               <tr>
-                <td><strong>LootOptimizer Forever</strong></td>
+                <td><strong>LootOptimizer Forever</strong><br><span class="cf-none">kein CurseForge-Eintrag</span></td>
                 <td>Schnelle Übersicht bei vollen Taschen: zeigt das günstigste Item zum Wegwerfen an und vergleicht Ausrüstung.</td>
               </tr>
               <tr>
-                <td><strong>ForeverLootSparkles</strong></td>
+                <td><strong>Forever Loot Sparkles</strong><br><a href="https://www.curseforge.com/wow/addons/forever-loot-sparkles" target="_blank" rel="noopener" class="cf-link">CurseForge ↗</a></td>
                 <td>Lässt Quest-Gegenstände, Kräuter und Erzadern immer deutlich glitzern.</td>
               </tr>
               <tr>
-                <td><strong>Whisper Messenger</strong></td>
+                <td><strong>Whisper Messenger</strong><br><a href="https://www.curseforge.com/wow/addons/whisper-messenger" target="_blank" rel="noopener" class="cf-link">CurseForge ↗</a></td>
                 <td>Übersichtliches Flüstern im Discord-Stil mit Tabs und Nachrichtenverlauf.</td>
               </tr>
               <tr>
@@ -623,6 +896,8 @@
           <p class="pane-subtitle">Ab Stufe 14 freischaltbar. Bringt +3% XP (2h Buff), portables Gasthaus und eine 12er Tasche.</p>
         </div>
 
+        <div class="live-changes" data-live-topic="sleepingbag"></div>
+
         <div class="route-list">
           <div class="route-item">
             <div class="route-badge">Schritt 1 (Ab Stufe 14)</div>
@@ -684,46 +959,24 @@
       <section id="tab-buffs" class="tab-pane">
         <div class="pane-header">
           <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_food_15.jpg" class="wow-icon large" alt="Buffs"> Buff-Food, Zelte (Adventurer's Tent) & Camp-System</h2>
-          <p class="pane-subtitle">Die 3-Pfeiler-XP-Kombination in Forever: +5% Food-XP, +3% Schlafsack-XP und jetzt 20% Rested XP pro Stunde durch das neue Abenteurer-Zelt!</p>
+          <p class="pane-subtitle">XP-Buffs in Forever: +5 % Kill-XP durch Essen, +3 % durch den Schlafsack, dazu Lagerfeuer-Buffs. Und der aktuelle Stand zum Abenteurer-Zelt.</p>
         </div>
+
+        <div class="live-changes" data-live-topic="buffs"></div>
 
         <!-- NEW HOTFIX HIGHLIGHT: Adventurer's Tent -->
         <div class="guide-chapter">
-          <div class="alert-box" style="background: rgba(46, 204, 113, 0.1); border-left: 4px solid #2ecc71; padding: 1.25rem; border-radius: 6px; margin-bottom: 1.5rem;">
-            <h3 style="color: #2ecc71; margin-top: 0; display: flex; align-items: center; gap: 0.5rem; font-size: 1.2rem;">
-              <span>⛺</span> Brandneuer Launch-Hotfix: Das Abenteurer-Zelt (Adventurer's Tent)
-            </h3>
-            <p style="margin-bottom: 0.8rem; font-size: 0.95rem; color: var(--text-main);">
-              Blizzard hat kurz vor dem Launch die Funktionalität des <strong>Adventurer's Tent</strong> komplett überarbeitet! Aus einem rein kosmetischen Spielzeug wurde ein <strong>mächtiges Leveling-Werkzeug für dich und deine gesamte Gruppe</strong>:
-            </p>
-
-            <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-top: 1rem;">
-              <!-- Before -->
-              <div class="card" style="border: 1px solid rgba(231, 76, 60, 0.4); background: rgba(0,0,0,0.5);">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-                  <strong style="color: #e74c3c; font-size: 0.85rem; text-transform: uppercase;">Vorher (Beta)</strong>
-                  <span class="point-tag" style="background: rgba(231,76,60,0.2); color: #e74c3c;">Kosmetisch</span>
-                </div>
-                <h4 style="margin: 0.2rem 0; color: #fff;">Adventurer's Tent</h4>
-                <p style="font-size: 0.82rem; color: var(--text-muted); margin: 0.2rem 0;">Gegenstandsstufe 1 • Beim Aufheben gebunden</p>
-                <p style="font-size: 0.85rem; color: #e74c3c; margin-top: 0.5rem; line-height: 1.4;">
-                  <strong>Benutzen:</strong> Beschwört ein Miniatur-Zelt für 15 Min. Gesetzte Camp-Zelte haben währenddessen das Aussehen des Abenteurer-Zeltes. (15 Min Abklingzeit).
-                </p>
+          <div class="alert-box">
+            <h3>⛺ Abenteurer-Zelt (Adventurer's Tent)</h3>
+            <p>Das Zelt hat vor dem Launch zweimal die Funktion gewechselt. Nach dem <strong>Build vom 30. Okt ist es wieder rein kosmetisch</strong> (Quelle: <a href="#" class="accent-link" data-goto="tab-patchnotes">Live-Patchnotes</a>). Plant <strong>nicht</strong> mit dem 20-%-Erholungsbonus, bis er im Spiel bestätigt ist.</p>
+            <div class="card-grid" style="margin-top: 1rem;">
+              <div class="sub-box red">
+                <h4>Aktuell (Build 30. Okt)</h4>
+                <p>Kosmetisch: beschwört 15 Min. ein Miniatur-Zelt und ändert das Aussehen deiner Camp-Zelte. 15 Min. Abklingzeit. Kein XP-Effekt.</p>
               </div>
-
-              <!-- Now -->
-              <div class="card highlight-border" style="border: 1px solid rgba(46, 204, 113, 0.6); background: rgba(15, 25, 18, 0.6);">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-                  <strong style="color: #2ecc71; font-size: 0.85rem; text-transform: uppercase;">Jetzt (Launch-Stand)</strong>
-                  <span class="point-tag" style="background: rgba(46,204,113,0.2); color: #2ecc71;">+20% Rested XP</span>
-                </div>
-                <h4 style="margin: 0.2rem 0; color: #fff;">Adventurer's Tent</h4>
-                <p style="font-size: 0.82rem; color: var(--text-muted); margin: 0.2rem 0;">Gegenstandsstufe 1 • Beim Aufheben gebunden</p>
-                <p style="font-size: 0.85rem; color: #2ecc71; margin-top: 0.5rem; line-height: 1.4;">
-                  <strong>Benutzen:</strong> Baut ein Zelt auf, das dir und Gruppenmitgliedern in der Nähe erlaubt, die <strong>Erholungs-Erfahrung (Rested XP) sofort auf bis zu 20% einer Stufe zu steigern!</strong> Kein Effekt, wenn Rested XP diesen Wert bereits überschreitet.<br>
-                  <strong style="color: #f1c40f;">Voraussetzung:</strong> Benötigt ein <strong>Lagerfeuer (Campfire)</strong> in unmittelbarer Nähe.<br>
-                  <strong style="color: var(--text-muted);">Abklingzeit:</strong> 1 Stunde Cooldown.
-                </p>
+              <div class="sub-box green">
+                <h4>Zwischenzeitlich (Hotfix-Stand, verworfen?)</h4>
+                <p>Baut ein Zelt auf, das dir und Gruppenmitgliedern in der Nähe die <strong>Erholungs-XP auf bis zu 20 % einer Stufe</strong> auffüllt. Kein Effekt, wenn du schon mehr hast. <strong>Benötigt ein Lagerfeuer</strong> in der Nähe. <strong>1 Stunde</strong> Abklingzeit, geteilt mit allen Camp-Funktionen.</p>
               </div>
             </div>
           </div>
@@ -736,12 +989,12 @@
             <h4>Schritt-für-Schritt Ablauf am Lagerfeuer:</h4>
             <ol style="margin-left: 1.2rem; line-height: 1.7; font-size: 0.95rem;">
               <li><strong>1. Lagerfeuer aufstellen:</strong> Nutze <em>Einfaches Lagerfeuer</em> (Herstellung: 1x Einfaches Holz + 1x Feuerstein & Zunder beim Gemischtwarenhändler).</li>
-              <li><strong>2. Abenteurer-Zelt platzieren:</strong> Zelt direkt neben das Feuer stellen. Die gesamte Gruppe setzt sich mit <code>/sit</code> hinein $\rightarrow$ <strong>dein Erholungsbalken füllt sich sofort auf 20% Rested XP!</strong> (Doppelte Kill-Erfahrung für das nächste Fünftel deiner Stufe).</li>
-              <li><strong>3. Gemütlichen Schlafsack ausrollen:</strong> Kurz in den Schlafsack legen $\rightarrow$ <strong>+3% XP-Buff für 2 Stunden</strong> aktivieren.</li>
-              <li><strong>4. Gekochtes Fleisch snacken:</strong> Vor dem Weiterlaufen 1 Happen Buff-Food essen $\rightarrow$ <strong>+5% Kill-XP für 15 Minuten</strong> aktivieren.</li>
+              <li><strong>2. Am Feuer sitzen:</strong> Gruppe setzt sich mit <code>/sit</code> ans Feuer, bis der Lagerfeuer-Buff kommt. Bis zu 3 Spieler können je ein Camp-Objekt dazulegen (Berufs-Buffs ab Skill 20). <em>Abenteurer-Zelt: aktuell nur kosmetisch.</em></li>
+              <li><strong>3. Gemütlichen Schlafsack ausrollen:</strong> Kurz in den Schlafsack legen → <strong>+3% XP-Buff für 2 Stunden</strong> aktivieren.</li>
+              <li><strong>4. Gekochtes Fleisch snacken:</strong> Vor dem Weiterlaufen 1 Happen Buff-Food essen → <strong>+5% Kill-XP für 15 Minuten</strong> aktivieren.</li>
             </ol>
             <p class="highlight-row" style="margin-top: 1rem; padding: 0.6rem 0.8rem; border-radius: 4px;">
-              <strong>Ergebnis:</strong> +8% permanenter XP-Multiplikator <strong>PLUS 20% Rested XP pro Stunde</strong>! Wiederhole dieses 1-Minuten-Camp einmal jede Stunde beim Questen.
+              <strong>Ergebnis:</strong> +8 % XP-Multiplikator plus Camp-Buffs. Alle Camp-Funktionen teilen sich 1 Stunde Abklingzeit, also einmal pro Stunde wiederholen.
             </p>
           </div>
         </div>
@@ -767,7 +1020,7 @@
 
             <div class="card">
               <h3>Lagerfeuer-Nebenbuff</h3>
-              <p>Wenn du dich etwa eine Minute an ein Lagerfeuer setzt (<code>/sit</code>), erhältst du zusätzlich einen 1-stündigen Willenskraft- und Ausdauer-Buff. Zusammen mit dem Zelt ist jedes Camp ein riesiger Boost!</p>
+              <p>Wenn du dich etwa eine Minute an ein Lagerfeuer setzt (<code>/sit</code>), erhältst du zusätzlich einen 1-stündigen Willenskraft- und Ausdauer-Buff. Lohnt sich bei jedem Camp.</p>
             </div>
           </div>
         </div>
@@ -776,18 +1029,20 @@
       <!-- ================= MOUNT-GOLD GUIDE (STUFE 40) ================= -->
       <section id="tab-gold" class="tab-pane">
         <div class="pane-header">
-          <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_coin_02.jpg" class="wow-icon large" alt="Gold"> Mount-Gold Guide: Mit Stufe 40 garantiert 90–100 Gold</h2>
+          <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_coin_02.jpg" class="wow-icon large" alt="Gold"> Mount-Gold Guide: 100 Gold bis Stufe 40</h2>
           <p class="pane-subtitle">Das Reittier auf Stufe 40 ist dein größter Temposprung im gesamten Spiel (+60% Tempo). Ohne Fliegen in WoW Forever halbiert es deine Levelzeit. Mit dieser Strategie hast du das Gold pünktlich im Beutel.</p>
         </div>
+
+        <div class="live-changes" data-live-topic="gold"></div>
 
         <div class="guide-chapter">
           <h3>📌 Die Kosten & Warum es Priorität #1 ist</h3>
           <div class="card highlight-border">
-            <h4>Die 90-Gold-Hürde</h4>
+            <h4>Die 100-Gold-Hürde</h4>
             <ul>
-              <li><strong>Gesamtkosten:</strong> Reitskill (ca. 18–20 Gold) + 60%-Reittier (ca. 72–80 Gold). Mit 10% Rabatt (Wohlwollend / Honored bei deiner Heimatfraktion Orgrimmar/Donnerfels/Unterstadt) zahlst du exakt <strong>90 Gold</strong>.</li>
+              <li><strong>Gesamtkosten:</strong> Forever nutzt das TBC-Modell: Du kaufst <strong>Lehrling-Reiten für 100 Gold</strong> beim Reitlehrer deines Volkes und bekommst das 60%-Reittier dazu. Ob Ruf-Rabatte greifen, ist noch nicht bestätigt, also mit vollen 100 Gold planen. Für Stufe 60 (Geselle, 100 %) schon mal <strong>1.000 Gold</strong> im Hinterkopf behalten.</li>
               <li><strong>Kein Fliegen:</strong> In <em>WoW: Forever</em> gibt es keine Flugmounts. Die Zonen ab Stufe 40 (Schlingendorntal, Tanaris, Feralas, Ödland, Un'Goro) haben gigantische Laufwege. Wer mit Stufe 40 zu Fuß läuft, verliert täglich Stunden!</li>
-              <li class="highlight-row"><strong>Hexenmeister-Ausnahme:</strong> Hexer erhalten ihr 60%-Mount (<em>Teufelsross</em>) mit Stufe 40 über eine kurze Klassenquest nahezu <strong>kostenlos</strong>! Das gesparte Gold fließt direkt in Berufe oder Gear.</li>
+              <li class="highlight-row"><strong>Hexer & Paladine:</strong> In Classic gab es das Klassen-Reittier (Teufelsross / Schlachtross) günstig per Klassenquest. Ob und wie das in Forever mit dem neuen Reitsystem zusammenspielt, ist vor dem Launch nicht bestätigt. Plant trotzdem die 100 Gold ein.</li>
             </ul>
           </div>
         </div>
@@ -1045,8 +1300,8 @@
               <h4><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_druid.jpg" class="wow-icon" alt="Druid"> Druide (Druid)</h4>
               <p><strong>KAUFEN (Must-Haves):</strong></p>
               <ul>
-                <li><em>Bärengestalt</em> (Lv 10) $\rightarrow$ <em>Zermalmen</em>, <em>Prankenhieb</em></li>
-                <li><em>Katzengestalt</em> (Lv 20) $\rightarrow$ <em>Klaue</em>, <em>Zerfetzen</em>, <em>Wilder Biss</em></li>
+                <li><em>Bärengestalt</em> (Lv 10) → <em>Zermalmen</em>, <em>Prankenhieb</em></li>
+                <li><em>Katzengestalt</em> (Lv 20) → <em>Klaue</em>, <em>Zerfetzen</em>, <em>Wilder Biss</em></li>
                 <li><em>Reisegestalt (Travel Form)</em> – auf Lv 30 (+40% Tempo, spart Zeit bis zum Mount!)</li>
                 <li><em>Mal der Wildnis (Mark of the Wild)</em> – aktuelle Ränge</li>
                 <li><em>Verjüngung & Heilende Berührung</em> – Basis-Heilung zwischen Kämpfen</li>
@@ -1090,16 +1345,30 @@
       <section id="tab-priest" class="tab-pane">
         <div class="pane-header">
           <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_priest.jpg" class="wow-icon large" alt="Priest"> Priester (Priest) – Umfassender Leitfaden (1–60)</h2>
-          <p class="pane-subtitle">S-Tier Ausdauer durch Willensentzug. Mit Zauberstab-Spezialisierung levelst du von 1 bis 60 mit nahezu null Manapausen.</p>
+          <p class="pane-subtitle">Die sicherste Klasse im Spiel. Langsamer Start, ab Sühne (30) und Schattengestalt (40) richtig stark, auf 60 ein gefragter Heiler.</p>
         </div>
 
         <!-- Meta Scoreboard -->
         <div class="class-meta-rating">
-          <div class="meta-pill"><span class="meta-label">Level-Speed:</span> <span class="meta-val a-tier">A-Tier (Konstant)</span></div>
-          <div class="meta-pill"><span class="meta-label">Solo & Überleben:</span> <span class="meta-val s-tier">S-Tier (Schild & Heal)</span></div>
-          <div class="meta-pill"><span class="meta-label">Downtime (Trinken):</span> <span class="meta-val s-tier">Nahezu Null (Wand)</span></div>
-          <div class="meta-pill"><span class="meta-label">Dungeon-Bedarf:</span> <span class="meta-val s-tier">S-Tier (Immer gesucht)</span></div>
+          <div class="meta-pill"><span class="meta-label">Leveling-Ranking:</span> <span class="meta-val b-tier">B-Tier (sicher, aber langsam)</span></div>
+          <div class="meta-pill"><span class="meta-label">Solo & Überleben:</span> <span class="meta-val s-tier">S-Tier (Schild & Heilung)</span></div>
+          <div class="meta-pill"><span class="meta-label">Downtime:</span> <span class="meta-val a-tier">Gering (Willensentzug)</span></div>
+          <div class="meta-pill"><span class="meta-label">Endgame:</span> <span class="meta-val s-tier">S-Tier Heiler (Disziplin)</span></div>
         </div>
+
+        <div class="class-note">
+          <h4>📜 Patch-Stand 1. Nov 2026: Was für diese Klasse neu ist</h4>
+          <ul>
+            <li><span class="tag-down">▼</span> Zauberstäbe skalieren <strong>nicht mehr mit Zaubermacht</strong> und feuern erst nach 0,5 s Stillstehen. Die „Nur Wand“-Taktik ist schwächer als in Classic.</li>
+            <li><span class="tag-info">●</span> <strong>Sühne (Penance)</strong> erst ab Stufe 30, <strong>Schattengestalt</strong> ab 40. Bis dahin sind die Kills langsam, danach zieht der Priester deutlich an.</li>
+            <li><span class="tag-up">▲</span> Verschlingende Seuche: 24 s Abklingzeit (vorher 1 Min.). Vampirumarmung: 30 s und nicht widerstehbar.</li>
+            <li><span class="tag-down">▼</span> Schattenwort: Tod jetzt 18 s Abklingzeit (vorher 12 s).</li>
+            <li><span class="tag-info">●</span> Göttlicher Willen ist jetzt Grundfähigkeit. Neues Schatten-Talent <em>Dark Inspiration</em> in Reihe 4.</li>
+            <li><span class="tag-info">●</span> Der Talent-Fahrplan unten stammt aus der Beta. In Forever wurden alle Bäume umgebaut (neuer Meilenstein bei 16 Punkten). Talentnamen und Reihen im Spiel gegenprüfen.</li>
+          </ul>
+        </div>
+
+        <div class="live-changes" data-live-group="priest"></div>
 
         <!-- 1. Quick-Start Setup -->
         <div class="guide-chapter">
@@ -1107,7 +1376,7 @@
           <div class="card-grid">
             <div class="card highlight-border">
               <h4>Beste Horde-Rasse: Untot (Undead)</h4>
-              <p><strong>Warum:</strong> <em>Wille der Verlassenen</em> bricht Furcht, Bezauberung und Schlaf (unumgänglich im PvP). Priester-Spezifisch: <strong>Verschlingende Seuche (Devouring Plague)</strong> liefert einen gewaltigen 24s-Schattenschaden-DoT, der dich heilt, und <em>Schattenwache</em> proct zusätzliche Schatten-Treffer. (Troll ist solide für Berserker, aber Untot ist S-Tier).</p>
+              <p><strong>Warum:</strong> <em>Wille der Verlassenen</em> bricht Furcht, Bezauberung und Schlaf (unumgänglich im PvP). <em>Berührung des Grabes</em> (jetzt alle 15 s) heilt dich nebenbei. <strong>Troll</strong> ist die starke Alternative: Berserker 15 s und +20 % Regeneration.</p>
             </div>
             <div class="card highlight-border">
               <h4>Beste Berufe: Schneiderei & Verzauberkunst</h4>
@@ -1139,9 +1408,9 @@
             <p>1. <strong>Buffs aktiv halten:</strong> <em>Machtwort: Seelenstärke</em> und <em>Inneres Feuer</em> (aktuelle Ränge für massive Rüstung) müssen immer laufen.<br>
             2. <strong>Eröffnung (Max-Range):</strong> <strong>Heiliges Feuer (Holy Fire)</strong> casten (langer Cast – während du zauberst, verlierst du noch kein Mana!).<br>
             3. <strong>DoT setzen:</strong> <strong>Schattenwort: Schmerz (SW:P)</strong> sofort hinterherwerfen.<br>
-            4. <strong>Burst:</strong> <strong>Penance (Sühne)</strong> offensiv auf den Mob kanalisieren (3 schnelle Heilig-Treffer).<br>
+            4. <strong>Burst (ab Stufe 30):</strong> <strong>Penance (Sühne)</strong> offensiv auf den Mob kanalisieren.<br>
             5. <strong>Schild & 5-Sekunden-Regel:</strong> <em>Machtwort: Schild</em> nur setzen, wenn du Schläge einsteckst. Ab ca. 60% Mob-HP <strong>keine Zauber mehr wirken!</strong><br>
-            6. <strong>Zauberstab (Wand):</strong> Den Mob mit dem Zauberstab niederschießen. Nach 5 Sekunden greift die natürliche Manaregeneration $\rightarrow$ Mob stirbt $\rightarrow$ <em>Willensentzug</em> triggert und dein Mana ist wieder voll!</p>
+            6. <strong>Zauberstab (Wand):</strong> Stehen bleiben (0,5 s) und den Mob mit dem Zauberstab niederschießen. Nach 5 Sekunden greift die natürliche Manaregeneration → Mob stirbt → <em>Willensentzug</em> triggert und dein Mana ist wieder voll!</p>
           </div>
         </div>
 
@@ -1351,11 +1620,25 @@
 
         <!-- Meta Scoreboard -->
         <div class="class-meta-rating">
-          <div class="meta-pill"><span class="meta-label">Level-Speed:</span> <span class="meta-val s-tier">S-Tier (Unangefochten #1)</span></div>
-          <div class="meta-pill"><span class="meta-label">Solo & Überleben:</span> <span class="meta-val s-tier">S-Tier (Pet tankt alles)</span></div>
-          <div class="meta-pill"><span class="meta-label">Downtime (Trinken):</span> <span class="meta-val s-tier">Null (Auto-Shot)</span></div>
-          <div class="meta-pill"><span class="meta-label">Dungeon-Bedarf:</span> <span class="meta-val a-tier">A-Tier (Solide DPS & Pulls)</span></div>
+          <div class="meta-pill"><span class="meta-label">Leveling-Ranking:</span> <span class="meta-val s-tier">S-Tier (#1 in fast allen Listen)</span></div>
+          <div class="meta-pill"><span class="meta-label">Solo & Überleben:</span> <span class="meta-val s-tier">S-Tier (Pet tankt)</span></div>
+          <div class="meta-pill"><span class="meta-label">Downtime:</span> <span class="meta-val a-tier">Gering (Mana ist die Bremse)</span></div>
+          <div class="meta-pill"><span class="meta-label">Endgame:</span> <span class="meta-val a-tier">A-Tier DPS</span></div>
         </div>
+
+        <div class="class-note">
+          <h4>📜 Patch-Stand 1. Nov 2026: Was für diese Klasse neu ist</h4>
+          <ul>
+            <li><span class="tag-up">▲</span> Begleiter skalieren jetzt mit deiner Ausrüstung und profitieren von Waffenkunde. Das Pet bleibt der Grund für S-Tier.</li>
+            <li><span class="tag-down">▼</span> Launch-Build (30. Okt, ausgelesen): Aspekt des Falken 15/22/30/38/47 AP (vorher bis 90), Volltreffer-Aura +15 AP statt +30.</li>
+            <li><span class="tag-up">▲</span> Mal des Jägers Rang 4: 143 AP für Angreifer (vorher 71). Gut für Gruppen.</li>
+            <li><span class="tag-info">●</span> Autoschuss feuert erst nach 0,5 s Stillstehen. Neue Option für automatischen Autoschuss. Ein Feuer- und ein Eisfallen-Typ gleichzeitig möglich, Feuerfallen skalieren mit AP.</li>
+            <li><span class="tag-up">▲</span> Orc: Befehlsgewalt (+5 % Pet-Schaden) ist zurück. Beste Horde-Rasse für Jäger.</li>
+            <li><span class="tag-info">●</span> Der Talent-Fahrplan unten stammt aus der Beta. In Forever wurden alle Bäume umgebaut (neuer Meilenstein bei 16 Punkten). Talentnamen und Reihen im Spiel gegenprüfen.</li>
+          </ul>
+        </div>
+
+        <div class="live-changes" data-live-group="hunter"></div>
 
         <!-- 1. Quick-Start Setup -->
         <div class="guide-chapter">
@@ -1645,19 +1928,33 @@
 
         <!-- Meta Scoreboard -->
         <div class="class-meta-rating">
-          <div class="meta-pill"><span class="meta-label">Level-Speed:</span> <span class="meta-val s-tier">S-Tier (AoE/Single)</span></div>
-          <div class="meta-pill"><span class="meta-label">Solo & Überleben:</span> <span class="meta-val a-tier">A-Tier (Nova, Slow, Blink)</span></div>
-          <div class="meta-pill"><span class="meta-label">Downtime (Trinken):</span> <span class="meta-val b-tier">Mittel (Aber Essen gratis!)</span></div>
-          <div class="meta-pill"><span class="meta-label">Dungeon-Bedarf:</span> <span class="meta-val s-tier">S-Tier (Wasser & Portale)</span></div>
+          <div class="meta-pill"><span class="meta-label">Leveling-Ranking:</span> <span class="meta-val a-tier">A-Tier (Frost)</span></div>
+          <div class="meta-pill"><span class="meta-label">Solo & Überleben:</span> <span class="meta-val b-tier">B-Tier (Stoff, kein Pet)</span></div>
+          <div class="meta-pill"><span class="meta-label">Downtime:</span> <span class="meta-val b-tier">Mittel (Manaprobleme ~30)</span></div>
+          <div class="meta-pill"><span class="meta-label">Endgame:</span> <span class="meta-val s-tier">S-Tier DPS (Arkan)</span></div>
         </div>
+
+        <div class="class-note">
+          <h4>📜 Patch-Stand 1. Nov 2026: Was für diese Klasse neu ist</h4>
+          <ul>
+            <li><span class="tag-info">●</span> Neu für die Horde: <strong>Orc-Magier</strong>. Magier gibt es damit als Orc, Troll und Untot.</li>
+            <li><span class="tag-down">▼</span> Launch-Build: <strong>Eislanze 8 s Abklingzeit</strong>, Frostblast nicht mehr erlernbar, Kritische Masse auf 6 % gesenkt.</li>
+            <li><span class="tag-up">▲</span> Einäscherung: +10 % Crit für Feuerschlag, Eislanze, Arkanschlag und Versengen. Präzision gilt jetzt für alle Schulen.</li>
+            <li><span class="tag-info">●</span> Arkanschlag umgebaut: 1,5 s Zauber, stapelt bis 4x Zaubermacht aus Intelligenz. Arkan ist die Endgame-Spec, Frost zum Leveln.</li>
+            <li><span class="tag-down">▼</span> Beta-Tester melden starke Manaprobleme um Stufe 30 in allen Specs. Wasser hamstern!</li>
+            <li><span class="tag-info">●</span> Der Talent-Fahrplan unten stammt aus der Beta. In Forever wurden alle Bäume umgebaut (neuer Meilenstein bei 16 Punkten). Talentnamen und Reihen im Spiel gegenprüfen.</li>
+          </ul>
+        </div>
+
+        <div class="live-changes" data-live-group="mage"></div>
 
         <!-- 1. Quick-Start Setup -->
         <div class="guide-chapter">
           <h3>⚡ Einloggen & Loslegen: Charakter-Setup</h3>
           <div class="card-grid">
             <div class="card highlight-border">
-              <h4>Beste Horde-Rasse: Troll (PvE) oder Untot (PvP)</h4>
-              <p><strong>Troll (S-Tier PvE):</strong> <em>Berserker</em> gewährt bis zu +30% Zaubertempo – der mächtigste DPS-Cooldown für Caster im gesamten Spiel!<br><strong>Untot (S-Tier PvP):</strong> <em>Wille der Verlassenen</em> bricht Furcht-Effekte von Hexern und Priestern sofort.</p>
+              <h4>Beste Horde-Rasse: Troll (PvE), Untot (PvP) oder neu: Orc</h4>
+              <p><strong>Troll (S-Tier PvE):</strong> <em>Berserker</em> (jetzt 15 s) ist der stärkste Tempo-Cooldown für Caster. <strong>Orc</strong> ist in Forever neu als Magier spielbar (Kochendes Blut 2 Min.).<br><strong>Untot (S-Tier PvP):</strong> <em>Wille der Verlassenen</em> bricht Furcht-Effekte von Hexern und Priestern sofort.</p>
             </div>
             <div class="card highlight-border">
               <h4>Beste Berufe: Schneiderei & Verzauberkunst</h4>
@@ -1693,7 +1990,7 @@
             <p>1. <strong>Max-Range Frostblitz (Frostbolt):</strong> Auf maximale Distanz (35m) 2–3 Mal durchcasten.<br>
             2. <strong>Frostnova:</strong> Sobald der Mob auf ca. 10m herankommt, Nova drücken.<br>
             3. <strong>Zurückweichen:</strong> 3–4 Schritte nach hinten gehen (nicht wegdrehen, rückwärts strafen).<br>
-            4. <strong>Zertrümmern-Burst:</strong> Frostblitz auf das eingefrorene Ziel casten (+50% Crit durch Talent!) $\rightarrow$ direkt <strong>Feuerschlag (Fire Blast)</strong> hinterherwerfen.<br>
+            4. <strong>Zertrümmern-Burst:</strong> Frostblitz auf das eingefrorene Ziel casten (+50% Crit durch Talent!) → direkt <strong>Feuerschlag (Fire Blast)</strong> hinterherwerfen.<br>
             5. <strong>Finisher:</strong> Kältekegel (Cone of Cold) oder Zauberstab zum Mülleimern ohne Manakosten.</p>
           </div>
         </div>
@@ -1913,18 +2210,32 @@
 
         <!-- Meta Scoreboard -->
         <div class="class-meta-rating">
-          <div class="meta-pill"><span class="meta-label">Level-Speed:</span> <span class="meta-val s-tier">S-Tier (Drain-Tanking)</span></div>
-          <div class="meta-pill"><span class="meta-label">Solo & Überleben:</span> <span class="meta-val s-tier">S-Tier (Leerwandler & Drain)</span></div>
-          <div class="meta-pill"><span class="meta-label">Downtime (Trinken):</span> <span class="meta-val s-tier">Null (Aderlass)</span></div>
-          <div class="meta-pill"><span class="meta-label">40er Mount:</span> <span class="meta-val s-tier">0 Gold (Kostenlos!)</span></div>
+          <div class="meta-pill"><span class="meta-label">Leveling-Ranking:</span> <span class="meta-val a-tier">A-Tier (Gebrechen)</span></div>
+          <div class="meta-pill"><span class="meta-label">Solo & Überleben:</span> <span class="meta-val s-tier">S-Tier (Leerwandler)</span></div>
+          <div class="meta-pill"><span class="meta-label">Downtime:</span> <span class="meta-val s-tier">Sehr gering (Aderlass)</span></div>
+          <div class="meta-pill"><span class="meta-label">Endgame:</span> <span class="meta-val s-tier">S-Tier DPS & PvP</span></div>
         </div>
+
+        <div class="class-note">
+          <h4>📜 Patch-Stand 1. Nov 2026: Was für diese Klasse neu ist</h4>
+          <ul>
+            <li><span class="tag-info">●</span> Neu für die Horde: <strong>Troll-Hexer</strong> (Berserker jetzt 15 s).</li>
+            <li><span class="tag-up">▲</span> DoTs können jetzt <strong>kritisch treffen</strong>. Schattenbeherrschung 2–10 % (vorher 1–5 %).</li>
+            <li><span class="tag-info">●</span> <em>Grim Reach</em> (+10/20 % Reichweite Gebrechen) ersetzt Malediction, <em>Destructive Reach</em> analog für Zerstörung.</li>
+            <li><span class="tag-info">●</span> Langsamer Start bis 10, Seelensplitter und teure Grimoires, kein Tempo-Zauber. Ab Leerwandler sehr entspannt.</li>
+            <li><span class="tag-info">●</span> Kostenloses Klassen-Reittier: in Forever vor dem Launch nicht bestätigt. Plane die 100 Gold trotzdem ein.</li>
+            <li><span class="tag-info">●</span> Der Talent-Fahrplan unten stammt aus der Beta. In Forever wurden alle Bäume umgebaut (neuer Meilenstein bei 16 Punkten). Talentnamen und Reihen im Spiel gegenprüfen.</li>
+          </ul>
+        </div>
+
+        <div class="live-changes" data-live-group="warlock"></div>
 
         <!-- 1. Quick-Start Setup -->
         <div class="guide-chapter">
           <h3>⚡ Einloggen & Loslegen: Charakter-Setup</h3>
           <div class="card-grid">
             <div class="card highlight-border">
-              <h4>Beste Horde-Rasse: Ork (PvE/PvP) oder Untot (PvP)</h4>
+              <h4>Beste Horde-Rasse: Ork (PvE/PvP), Untot (PvP) oder neu: Troll</h4>
               <p><strong>Ork (S-Tier):</strong> <em>Befehlsgewalt</em> bufft den Schaden deiner Dämonen um +5% und <em>Zähigkeit</em> liefert 25% Betäubungs-Resistenz gegen Schurken.<br><strong>Untot:</strong> <em>Wille der Verlassenen</em> verhindert, dass gegnerische Hexer oder Priester dich in Furcht halten.</p>
             </div>
             <div class="card highlight-border">
@@ -2170,11 +2481,25 @@
 
         <!-- Meta Scoreboard -->
         <div class="class-meta-rating">
-          <div class="meta-pill"><span class="meta-label">Level-Speed:</span> <span class="meta-val a-tier">A-Tier (Sehr stark)</span></div>
-          <div class="meta-pill"><span class="meta-label">Solo & Überleben:</span> <span class="meta-val a-tier">A-Tier (Verschwinden & Stuns)</span></div>
-          <div class="meta-pill"><span class="meta-label">Downtime (Essen):</span> <span class="meta-val b-tier">Mittel (Bandagen wichtig)</span></div>
-          <div class="meta-pill"><span class="meta-label">PvP / Ganking:</span> <span class="meta-val s-tier">S-Tier (König der Open World)</span></div>
+          <div class="meta-pill"><span class="meta-label">Leveling-Ranking:</span> <span class="meta-val b-tier">B-Tier (Kampf)</span></div>
+          <div class="meta-pill"><span class="meta-label">Solo & Überleben:</span> <span class="meta-val a-tier">A-Tier (Verstohlenheit)</span></div>
+          <div class="meta-pill"><span class="meta-label">Downtime:</span> <span class="meta-val b-tier">Mittel (Essen, Verbände)</span></div>
+          <div class="meta-pill"><span class="meta-label">PvP:</span> <span class="meta-val s-tier">S-Tier</span></div>
         </div>
+
+        <div class="class-note">
+          <h4>📜 Patch-Stand 1. Nov 2026: Was für diese Klasse neu ist</h4>
+          <ul>
+            <li><span class="tag-up">▲</span> Energie regeneriert jetzt <strong>durchgehend</strong> statt in Ticks. Spürbar flüssiger.</li>
+            <li><span class="tag-up">▲</span> Schurken dürfen <strong>Äxte</strong> tragen.</li>
+            <li><span class="tag-down">▼</span> Gifte lösen gegen angreifende Ziele nicht mehr aus, Kopfnuss löst keine Waffen-Procs mehr aus.</li>
+            <li><span class="tag-info">●</span> Waffen-Völkerboni (Orc-Axt, Mensch-Schwert) wurden entfernt. Waffe frei nach Werten wählen.</li>
+            <li><span class="tag-info">●</span> Neue Völker-Option: Skyborne (Windformer) können Schurken sein.</li>
+            <li><span class="tag-info">●</span> Der Talent-Fahrplan unten stammt aus der Beta. In Forever wurden alle Bäume umgebaut (neuer Meilenstein bei 16 Punkten). Talentnamen und Reihen im Spiel gegenprüfen.</li>
+          </ul>
+        </div>
+
+        <div class="live-changes" data-live-group="rogue"></div>
 
         <!-- 1. Quick-Start Setup -->
         <div class="guide-chapter">
@@ -2435,11 +2760,25 @@
 
         <!-- Meta Scoreboard -->
         <div class="class-meta-rating">
-          <div class="meta-pill"><span class="meta-label">Level-Speed:</span> <span class="meta-val b-tier">B-Tier (Solo langsam, Duo S-Tier)</span></div>
-          <div class="meta-pill"><span class="meta-label">Solo & Überleben:</span> <span class="meta-val b-tier">B-Tier (Sehr zäh, Bandagen Pflicht)</span></div>
-          <div class="meta-pill"><span class="meta-label">Waffen-Abhängigkeit:</span> <span class="meta-val s-tier">Extrem Hoch (Wirbelwindaxt!)</span></div>
-          <div class="meta-pill"><span class="meta-label">Dungeon-Bedarf:</span> <span class="meta-val s-tier">S-Tier (Jede Gruppe sucht Tanks)</span></div>
+          <div class="meta-pill"><span class="meta-label">Leveling-Ranking:</span> <span class="meta-val c-tier">C-Tier solo · stark im Duo</span></div>
+          <div class="meta-pill"><span class="meta-label">Solo & Überleben:</span> <span class="meta-val b-tier">B-Tier (Verbände Pflicht)</span></div>
+          <div class="meta-pill"><span class="meta-label">Waffen-Abhängigkeit:</span> <span class="meta-val s-tier">Extrem hoch</span></div>
+          <div class="meta-pill"><span class="meta-label">Endgame:</span> <span class="meta-val a-tier">A-Tier (Furor & Schutz)</span></div>
         </div>
+
+        <div class="class-note">
+          <h4>📜 Patch-Stand 1. Nov 2026: Was für diese Klasse neu ist</h4>
+          <ul>
+            <li><span class="tag-up">▲</span> Wut komplett überarbeitet (8. Okt): Wut aus erlittenem Schaden richtet sich nach dem Gegner, nicht nach dir, um 20–40 % pro Stufe neu balanciert. Crit-Wut erhöht.</li>
+            <li><span class="tag-up">▲</span> Launch-Build: <strong>Siegesrausch</strong> und <strong>Rache</strong> skalieren jetzt mit Angriffskraft.</li>
+            <li><span class="tag-info">●</span> Schlachtruf wirkt raidweit. Zerschmettern wird nicht mehr durch Treffer unterbrochen.</li>
+            <li><span class="tag-down">▼</span> Orc-Axt-Spezialisierung entfernt. Zweihänder frei nach DPS wählen, nicht nach Waffentyp.</li>
+            <li><span class="tag-info">●</span> Verb. Kniesehne teilt sich jetzt Diminishing Returns mit Magier- und Jäger-Wurzeln.</li>
+            <li><span class="tag-info">●</span> Der Talent-Fahrplan unten stammt aus der Beta. In Forever wurden alle Bäume umgebaut (neuer Meilenstein bei 16 Punkten). Talentnamen und Reihen im Spiel gegenprüfen.</li>
+          </ul>
+        </div>
+
+        <div class="live-changes" data-live-group="warrior"></div>
 
         <!-- 1. Quick-Start Setup -->
         <div class="guide-chapter">
@@ -2447,7 +2786,7 @@
           <div class="card-grid">
             <div class="card highlight-border">
               <h4>Beste Horde-Rasse: Ork (PvE/PvP) oder Taure (Tank/PvP)</h4>
-              <p><strong>Ork (S-Tier PvE):</strong> <em>Axt-Spezialisierung</em> (+5 Axt-Skill) senkt die Chance auf Streifschläge (Glancing Blows) im Raid massiv! <em>Kochendes Blut</em> für +AP und 25% Stun-Resistenz.<br><strong>Taure:</strong> +5% Gesamtausdauer und <em>Kriegsstampfen</em> (2s AoE-Stun) für Bandagen-Heilung.</p>
+              <p><strong>Ork (S-Tier PvE):</strong> <em>Kochendes Blut</em> (wieder 2 Min.) für Angriffskraft. Die alte Axt-Spezialisierung gibt es in Forever nicht mehr.<br><strong>Taure:</strong> +5% Gesamtausdauer und <em>Kriegsstampfen</em> (2s AoE-Stun) für Bandagen-Heilung.</p>
             </div>
             <div class="card highlight-border">
               <h4>Beste Berufe: Bergbau & Schmiedekunst (oder Kürschner)</h4>
@@ -2690,19 +3029,33 @@
 
         <!-- Meta Scoreboard -->
         <div class="class-meta-rating">
-          <div class="meta-pill"><span class="meta-label">Level-Speed:</span> <span class="meta-val a-tier">A-Tier (Ab Lv 20 extrem schnell)</span></div>
-          <div class="meta-pill"><span class="meta-label">Solo & Überleben:</span> <span class="meta-val s-tier">S-Tier (Heilung & Bären-Tank)</span></div>
-          <div class="meta-pill"><span class="meta-label">Downtime (Trinken):</span> <span class="meta-val s-tier">Null (Mana regeneriert in Gestalt)</span></div>
-          <div class="meta-pill"><span class="meta-label">Flexibilität:</span> <span class="meta-val s-tier">S-Tier (Tank, Heal, DPS in einem)</span></div>
+          <div class="meta-pill"><span class="meta-label">Leveling-Ranking:</span> <span class="meta-val b-tier">B-Tier (ab 20 schnell)</span></div>
+          <div class="meta-pill"><span class="meta-label">Solo & Überleben:</span> <span class="meta-val a-tier">A-Tier (Heilung & Bär)</span></div>
+          <div class="meta-pill"><span class="meta-label">Downtime:</span> <span class="meta-val a-tier">Gering ab Katze</span></div>
+          <div class="meta-pill"><span class="meta-label">Endgame:</span> <span class="meta-val s-tier">S-Tier Heiler (Wiederherst.)</span></div>
         </div>
+
+        <div class="class-note">
+          <h4>📜 Patch-Stand 1. Nov 2026: Was für diese Klasse neu ist</h4>
+          <ul>
+            <li><span class="tag-down">▼</span> <strong>Tigerfuror entfernt</strong> (26. Okt). Neues Talent <em>Shifting Power</em>, nicht bei voller Energie nutzbar.</li>
+            <li><span class="tag-up">▲</span> <strong>Zerfetzen</strong> schon ab Stufe 20 (vorher 22). Manatränke in Katzen- und Bärengestalt nutzbar.</li>
+            <li><span class="tag-up">▲</span> Bärenbedrohung +50 % (vorher 30 %). Wut aus Crits 100 %. Gestalten immun gegen Entwaffnen.</li>
+            <li><span class="tag-info">●</span> Rudelführer (nur Crit) und Mondkin-Aura (nur Crit) wirken jetzt raidweit.</li>
+            <li><span class="tag-info">●</span> Druiden gibt es bei der Horde als <strong>Tauren und Skyborne</strong> (himmelblaue Gestalten).</li>
+            <li><span class="tag-info">●</span> Der Talent-Fahrplan unten stammt aus der Beta. In Forever wurden alle Bäume umgebaut (neuer Meilenstein bei 16 Punkten). Talentnamen und Reihen im Spiel gegenprüfen.</li>
+          </ul>
+        </div>
+
+        <div class="live-changes" data-live-group="druid"></div>
 
         <!-- 1. Quick-Start Setup -->
         <div class="guide-chapter">
           <h3>⚡ Einloggen & Loslegen: Charakter-Setup</h3>
           <div class="card-grid">
             <div class="card highlight-border">
-              <h4>Beste Horde-Rasse: Taure (Einzige Option!)</h4>
-              <p><strong>Rassen-Vorteile:</strong> <em>Kriegsstampfen (War Stomp)</em> betäubt Gegner 2 Sekunden lang – genau genug Zeit, um aus der Tiergestalt zu shiften und eine <em>Heilende Berührung</em> durchzucasten! <em>Durchhaltevermögen</em> gibt +5% maximale Basisgesundheit.</p>
+              <h4>Beste Horde-Rasse: Taure (oder Skyborne)</h4>
+              <p><strong>Rassen-Vorteile:</strong> <em>Kriegsstampfen (War Stomp)</em> betäubt Gegner 2 Sekunden lang – genau genug Zeit, um aus der Tiergestalt zu shiften und eine <em>Heilende Berührung</em> durchzucasten! <em>Durchhaltevermögen</em> gibt +5% maximale Basisgesundheit. Alternative: <strong>Skyborne</strong> (Windformer) mit himmelblauen Gestalten und Himmelssicht (+15 % Lauftempo).</p>
             </div>
             <div class="card highlight-border">
               <h4>Beste Berufe: Kürschnerei & Lederverarbeitung (oder Kräuter/Alchi)</h4>
@@ -2736,11 +3089,11 @@
           <div class="card">
             <h4>Solo Pull & Kampf-Rotation:</h4>
             <p>1. <strong>Stufe 1 bis 9:</strong> Aus der Ferne mit <em>Zorn (Wrath)</em> pullen, <em>Mondfeuer</em> drauf, mit Stab zuschlagen.<br>
-            2. <strong>Stufe 10 bis 19 (Bär):</strong> Mit Mondfeuer pullen $\rightarrow$ in <strong>Bärengestalt</strong> gehen $\rightarrow$ <em>Zermalmen (Maul)</em> und <em>Demoralisierendes Gebrüll</em> nutzen.<br>
+            2. <strong>Stufe 10 bis 19 (Bär):</strong> Mit Mondfeuer pullen → in <strong>Bärengestalt</strong> gehen → <em>Zermalmen (Maul)</em> und <em>Demoralisierendes Gebrüll</em> nutzen.<br>
             3. <strong>Stufe 20+ (Katze):</strong> Aus Verstohlenheit mit <strong>Anspringen (Pounce)</strong> oder <strong>Krallenhieb (Rake)</strong> eröffnen.<br>
             4. <strong>Kombopunkte sammeln:</strong> <strong>Klaue (Claw)</strong> durchdrücken.<br>
             5. <strong>Finisher:</strong> Bei 4–5 Punkten <strong>Wilder Biss (Ferocious Bite)</strong>.<br>
-            6. <strong>Zero-Downtime Shifting:</strong> Nach dem Mob kurz rausshiften $\rightarrow$ <em>Verjüngung</em> oder <em>Nachwachsen</em> aufsetzen $\rightarrow$ sofort wieder in Katze shiften und zum nächsten Mob laufen (währenddessen regeneriert Mana!).</p>
+            6. <strong>Zero-Downtime Shifting:</strong> Nach dem Mob kurz rausshiften → <em>Verjüngung</em> oder <em>Nachwachsen</em> aufsetzen → sofort wieder in Katze shiften und zum nächsten Mob laufen (währenddessen regeneriert Mana!).</p>
           </div>
         </div>
 
@@ -2937,11 +3290,25 @@
 
         <!-- Meta Scoreboard -->
         <div class="class-meta-rating">
-          <div class="meta-pill"><span class="meta-label">Level-Speed:</span> <span class="meta-val a-tier">A-Tier (Ab Lv 20 Geisterwolf)</span></div>
-          <div class="meta-pill"><span class="meta-label">Solo & Überleben:</span> <span class="meta-val a-tier">A-Tier (Erdelementar, Heal)</span></div>
-          <div class="meta-pill"><span class="meta-label">Downtime (Trinken):</span> <span class="meta-val b-tier">Mittel (Totems bewusst setzen)</span></div>
-          <div class="meta-pill"><span class="meta-label">Burst-Schaden:</span> <span class="meta-val s-tier">S-Tier (Windfury One-Shots!)</span></div>
+          <div class="meta-pill"><span class="meta-label">Leveling-Ranking:</span> <span class="meta-val a-tier">A-Tier (Verstärkung)</span></div>
+          <div class="meta-pill"><span class="meta-label">Solo & Überleben:</span> <span class="meta-val a-tier">A-Tier (Heilung, Wolf)</span></div>
+          <div class="meta-pill"><span class="meta-label">Downtime:</span> <span class="meta-val b-tier">Mittel vor 30</span></div>
+          <div class="meta-pill"><span class="meta-label">Endgame:</span> <span class="meta-val a-tier">A-Tier (Elementar & Heilung)</span></div>
         </div>
+
+        <div class="class-note">
+          <h4>📜 Patch-Stand 1. Nov 2026: Was für diese Klasse neu ist</h4>
+          <ul>
+            <li><span class="tag-up">▲</span> Kettenblitz kostet ~35 % weniger Mana. Wasserschild greift bei jedem kritischen Zauber.</li>
+            <li><span class="tag-info">●</span> Elementar: <strong>Elementarbeherrschung</strong> zurück als 31-Punkte-Talent, Lavaeruption in Reihe 5 (21 Punkte).</li>
+            <li><span class="tag-info">●</span> Verstärkung: Sturmschlag kostet 8 % Grundmana. Debuff wird bei Verfehlen nicht verbraucht. Viele Tester nennen die Spec noch „unfertig“.</li>
+            <li><span class="tag-down">▼</span> Feuernova-Koeffizient gesenkt (0,143 statt 0,214). Totemruf kostet nur noch 22 Silber.</li>
+            <li><span class="tag-info">●</span> Neue Völker-Option: Skyborne (Windformer) sind bei der Horde Schamanen.</li>
+            <li><span class="tag-info">●</span> Der Talent-Fahrplan unten stammt aus der Beta. In Forever wurden alle Bäume umgebaut (neuer Meilenstein bei 16 Punkten). Talentnamen und Reihen im Spiel gegenprüfen.</li>
+          </ul>
+        </div>
+
+        <div class="live-changes" data-live-group="shaman"></div>
 
         <!-- 1. Quick-Start Setup -->
         <div class="guide-chapter">
@@ -2949,7 +3316,7 @@
           <div class="card-grid">
             <div class="card highlight-border">
               <h4>Beste Horde-Rasse: Ork (PvE/PvP) oder Taure (Survival)</h4>
-              <p><strong>Ork (S-Tier PvE):</strong> <em>Axt-Spezialisierung</em> (+5 Axt-Skill) maximiert deine 2-Hand-Axt-Treffer ab Stufe 30! <em>Kochendes Blut</em> bringt extra AP und 25% Stun-Resistenz.<br><strong>Taure:</strong> <em>Kriegsstampfen</em> (2s AoE-Stun) schenkt dir die lebensrettende Zeit für eine freie <em>Welle der Heilung</em>!</p>
+              <p><strong>Ork (S-Tier PvE):</strong> <em>Kochendes Blut</em> (wieder 2 Min.) bringt Angriffskraft für Windfury-Bursts. Die alte Axt-Spezialisierung gibt es in Forever nicht mehr.<br><strong>Taure:</strong> <em>Kriegsstampfen</em> (2s AoE-Stun) schenkt dir die lebensrettende Zeit für eine freie <em>Welle der Heilung</em>!</p>
             </div>
             <div class="card highlight-border">
               <h4>Beste Berufe: Kürschnerei & Lederverarbeitung</h4>
@@ -2983,7 +3350,7 @@
           <div class="card">
             <h4>Solo Pull & Totem-Rotation:</h4>
             <p>1. <strong>Waffen-Verzauberung prüfen:</strong> Bis Stufe 29 immer <strong>Felsbeißer (Rockbiter)</strong> auf der Waffe halten. Ab Stufe 30 sofort auf <strong>Waffe des Windzorns (Windfury)</strong> wechseln!<br>
-            2. <strong>Pull:</strong> <em>Blitzschlag (Lightning Bolt)</em> auf maximale Distanz casten $\rightarrow$ <em>Flammenschock</em> setzen.<br>
+            2. <strong>Pull:</strong> <em>Blitzschlag (Lightning Bolt)</em> auf maximale Distanz casten → <em>Flammenschock</em> setzen.<br>
             3. <strong>Totems stellen:</strong> <em>Totem der Erdstärke</em> (+Stärke) und <em>Totem der Verbrennung</em> (Zusatz-Feuerschaden) direkt vor deine Füße stellen.<br>
             4. <strong>Nahkampf:</strong> Mit langsamer Zweihandwaffe draufhauen. <em>Erdschock</em> bereit halten, um gefährliche Zauber der Mobs sofort zu kicken.<br>
             5. <strong>Geisterwolf:</strong> Beim Reisen im Freien immer sofort in den Geisterwolf wechseln (+40% Tempo).</p>
@@ -3173,6 +3540,108 @@
           </div>
         </div>
       </section>
+      <!-- ================= PALADIN (UNTOT) ================= -->
+      <section id="tab-paladin" class="tab-pane">
+        <div class="pane-header">
+          <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_paladin.jpg" class="wow-icon large" alt="Paladin"> Paladin (Untot) – Kompakt-Leitfaden</h2>
+          <p class="pane-subtitle">Zum ersten Mal Paladine bei der Horde, und zwar nur als Untote. Sehr sicher beim Leveln, auf 60 einer der gefragtesten Tanks.</p>
+        </div>
+
+        <div class="class-meta-rating">
+          <div class="meta-pill"><span class="meta-label">Leveling-Ranking:</span> <span class="meta-val a-tier">A-Tier (Vergeltung)</span></div>
+          <div class="meta-pill"><span class="meta-label">Solo & Überleben:</span> <span class="meta-val s-tier">S-Tier (Platte & Heilung)</span></div>
+          <div class="meta-pill"><span class="meta-label">Downtime:</span> <span class="meta-val b-tier">Mittel (Mana ohne Heil-Gear)</span></div>
+          <div class="meta-pill"><span class="meta-label">Endgame:</span> <span class="meta-val s-tier">S-Tier Tank (Schutz)</span></div>
+        </div>
+
+        <div class="class-note">
+          <h4>📜 Patch-Stand 1. Nov 2026: Was für diese Klasse neu ist</h4>
+          <ul>
+            <li><span class="tag-info">●</span> Neue Volk-Klassen-Kombination: <strong>Untoter Paladin</strong>. Das ist die einzige Horde-Option.</li>
+            <li><span class="tag-info">●</span> <strong>Siegel der Wut</strong> macht den Paladin zum vollwertigen Tank. Richturteil spottet aus 10 m und <strong>verbraucht das Siegel nicht mehr</strong>.</li>
+            <li><span class="tag-up">▲</span> Launch-Build: <strong>Zorn der Gerechtigkeit ab Stufe 10</strong> (vorher 16), Bedrohung 90 %. Vergeltung hält bis zu 4 Aufladungen.</li>
+            <li><span class="tag-down">▼</span> Weihe-Koeffizient gesenkt (0,042 statt 0,095), Vergeltungsaura auf Vanilla-Werte (~33 % weniger). Champion des Lichts wurde kurz halbiert, per Hotfix am 16. Okt aber wieder auf 20/40/60 % der Int gesetzt.</li>
+            <li><span class="tag-info">●</span> <strong>Hotfix 30. Okt:</strong> Die Talentbäume von Paladin und Druide wurden erneut umgebaut, Details in den <a href="#" class="accent-link" data-goto="tab-patchnotes">Live-Patchnotes</a>.</li>
+            <li><span class="tag-info">●</span> Heiliger Schock liegt jetzt auf dem 21-Punkte-Talent. Segen der Könige ist Grundfähigkeit. Segen der Rettung wurde durch <em>Salvation / Mass Salvation</em> ersetzt.</li>
+            <li><span class="tag-info">●</span> Talentbäume sind komplett neu. Diese Seite nennt daher Schwerpunkte statt eines Punkt-für-Punkt-Plans, bis wir auf Live-Servern getestet haben.</li>
+          </ul>
+        </div>
+
+        <div class="live-changes" data-live-group="paladin"></div>
+
+        <div class="guide-chapter">
+          <h3>⚡ Einloggen & Loslegen: Charakter-Setup</h3>
+          <div class="card-grid">
+            <div class="card highlight-border">
+              <h4>Volk: Untot (alternativlos)</h4>
+              <p><strong>Wille der Verlassenen</strong> bricht Furcht, Bezauberung und Schlaf. <strong>Berührung des Grabes</strong> (jetzt alle 15 s) heilt dich im Nahkampf nebenbei. Start in Tirisfal: Route siehe <a href="#" class="accent-link" data-goto="tab-questing">Questing 1–30</a>.</p>
+            </div>
+            <div class="card highlight-border">
+              <h4>Berufe: Bergbau & Schmiedekunst</h4>
+              <p>Waffen-Upgrades entscheiden über dein Leveltempo als Vergelter. Schmiedekunst baut dir Zweihänder und Platte. Alternativ Kürschnerei + Bergbau fürs Reit-Gold.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>📊 Attributs-Gewichtung (Vergeltung, Leveln)</h3>
+          <div class="stat-prio-bar">
+            <span class="stat-chip">Waffen-DPS</span>
+            <span class="stat-arrow">&gt;</span>
+            <span class="stat-chip">Stärke</span>
+            <span class="stat-arrow">&gt;</span>
+            <span class="stat-chip">Ausdauer</span>
+            <span class="stat-arrow">&gt;</span>
+            <span class="stat-chip">Intelligenz</span>
+          </div>
+          <p class="card-desc">Ein langsamer Zweihänder mit hohem Schaden ist alles. Intelligenz hilft gegen die Manapausen, weil Selbstheilung ohne Heil-Ausrüstung schwach ist.</p>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>⚔️ Kampf-Ablauf (Vergeltung)</h3>
+          <div class="card">
+            <p>1. <strong>Buffs:</strong> Segen der Macht und Aura (Vergeltungsaura beim Questen) aktiv halten.<br>
+            2. <strong>Siegel setzen</strong> (Siegel der Rechtschaffenheit), dann mit <strong>Richturteil</strong> eröffnen. Das Siegel bleibt aktiv.<br>
+            3. <strong>Heiliger Stoß</strong> (ab Stufe 6) auf Abklingzeit nutzen.<br>
+            4. Ab Stufe 20 bei 2+ Gegnern <strong>Weihe</strong>, sparsam wegen Mana.<br>
+            5. <strong>Hammer der Gerechtigkeit</strong> als Notbremse bzw. Ersatz-Unterbrechung (keine echte Unterbrechung).<br>
+            6. Unter 40 % Leben: <strong>Lichtblitz</strong> oder Gottesschild + Heilung. Zwischen den Kämpfen kurz essen und trinken.</p>
+          </div>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>🌳 Talent-Schwerpunkte</h3>
+          <div class="card-grid">
+            <div class="sub-box orange"><h4>Leveln: Vergeltung</h4><p>Alles, was Zweihand-Schaden, Crit und Siegel-Schaden erhöht. Waffenschaden bleibt König.</p></div>
+            <div class="sub-box blue"><h4>Dungeons/60: Schutz</h4><p>Siegel der Wut + Zorn der Gerechtigkeit. Mit Dual-Spec ab 40 (10 Gold) parallel zur Vergeltung nutzbar.</p></div>
+            <div class="sub-box green"><h4>Heilen: Heilig</h4><p>Licht-Wacht erlaubt doppelten Heiligen Schock. Im PvP und in Dungeons stark (A-Tier).</p></div>
+          </div>
+        </div>
+
+        <div class="guide-chapter">
+          <h3>⚙️ Nützliche Paladin-Makros</h3>
+          <div class="macro-grid">
+            <div class="macro-box">
+              <div class="macro-title">
+                <span>Mouseover Lichtblitz (sonst selbst)</span>
+                <button class="copy-pill" onclick="copyMacro(this)">Kopieren</button>
+              </div>
+              <div class="macro-code">#showtooltip Flash of Light
+/cast [@mouseover,help,nodead][@player] Flash of Light</div>
+            </div>
+            <div class="macro-box">
+              <div class="macro-title">
+                <span>Angriff starten + Richturteil</span>
+                <button class="copy-pill" onclick="copyMacro(this)">Kopieren</button>
+              </div>
+              <div class="macro-code">#showtooltip Judgement
+/startattack
+/cast Judgement</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- ================= CHANGELOG & VERSION ================= -->
       <section id="tab-changelog" class="tab-pane">
         <div class="pane-header">
@@ -3181,44 +3650,54 @@
         </div>
 
         <div class="timeline-container">
-          <div class="timeline-block">
-            <div class="level-indicator" style="background: linear-gradient(135deg, rgba(34, 197, 94, 0.15) 0%, rgba(0, 0, 0, 0.4) 100%); color: #4ade80;">
-              v2.4.0<br><span style="font-size: 0.72rem; color: #94a3b8; font-weight: normal;">30. Okt 2026<br>11:55 CET</span>
-            </div>
+          <div class="timeline-block highlight-block">
+            <div class="level-indicator">v3.0.0<br><span>1. Nov 2026</span></div>
             <div class="timeline-body">
-              <h4>Pre-Launch Patch-Update & UI-Perfektion</h4>
+              <h4>Komplett-Update vor dem Launch: 16-Bit-Design, Ranking & Patch-Stand</h4>
               <ul>
-                <li><strong>Pre-Launch Balance integriert:</strong> Rassen-Waffen-Specs-Entfall, Orc-Pet-Bonus, Tauren-HP & Schamanen-Wasserschild-Änderungen hinzugefügt.</li>
-                <li><strong>Gilden-Discord prominent platziert:</strong> Dauerhafter Direktzugriff oben rechts im Header, fixiert am Fuß der linken Navigation und als mobiler Floating Quick-Button.</li>
-                <li><strong>Desktop- & Mobile-Layout:</strong> Scrollbalken dezent auf Obsidian-Dark getrimmt, Header-Elemente exakt bündig ausgerichtet und Leisten-Höhen gestrafft.</li>
-                <li><strong>RXP Levelguide:</strong> Direkte Einbindung von <code>RXPGuides.zip</code> im Header und Top-Banner.</li>
+                <li><strong>Neues Design:</strong> Retro-Look im 16-Bit-Stil mit Pixel-Schrift, Tooltip-Rahmen, Quest-Schriftrolle und WoW-Qualitätsfarben für die Tiers.</li>
+                <li><strong>Neue Startseite:</strong> Vorwort neu geschrieben, Launch-Countdown, Forever-Fakten auf einen Blick, Schnellstart.</li>
+                <li><strong>Klassen-Ranking:</strong> Leveling, Tanks, Heiler, DPS und Horde-Völker, Konsens aus vier Beta-Listen plus Launch-Build-Daten.</li>
+                <li><strong>Was ist neu & Patch-Stand:</strong> Termine, Systeme (Camping, Reiten, Dual-Spec, Legacy), neue Dungeons, Beta-Änderungen bis 27. Okt und ausgelesene Hotfixes vom 30. Okt.</li>
+                <li><strong>Neue Klassenseite:</strong> Paladin (Untot) für die Horde.</li>
+                <li><strong>Korrekturen:</strong> Reiten 100 Gold (statt ~90), Zauberstäbe ohne Zaubermacht-Skalierung und mit 0,5 s Stillstehen, Dungeon-XP-Änderungen, Riverglades-Stufen, Waffen-Völkerboni entfernt. Jede Klassenseite hat jetzt einen Kasten zum Patch-Stand.</li>
+                <li><strong>Komfort:</strong> Direktlinks auf einzelne Seiten (z. B. <code>#tab-ranking</code>).</li>
+                <li><strong>Live-Patchnotes:</strong> Neuer Reiter, der stündlich per GitHub Action von foreverchanges.pro übernimmt und englische Einträge automatisch übersetzt.</li>
+                <li><strong>Live-Änderungen in den Guides:</strong> Jede Klassenseite und das Völker-Ranking zeigen automatisch die neuesten Änderungen mit Datum, Buff/Nerf und „vorher → jetzt“.</li>
+                <li><strong>Patch-Hinweise in allen Guides:</strong> Questing, Fahrplan, Grundlagen, Camps, Schlafsack, Gold und Addons zeigen automatisch passende Einträge aus den Patchnotes (Stichwortsuche, mit Datum).</li>
+                <li><strong>Übersetzung:</strong> DeepL (Du-Form) statt Google, wenn das Secret <code>DEEPL_API_KEY</code> gesetzt ist.</li>
+                <li><strong>Addons:</strong> CurseForge-Links ergänzt (RestedXP, Polestar, Shortest Path Forever, BetterBlizzPlates, ForeverAuras, Forever Loot Sparkles, Whisper Messenger).</li>
+                <li><strong>Korrektur:</strong> Abenteurer-Zelt laut Build vom 30. Okt wieder kosmetisch. Champion des Lichts wurde per Hotfix zurückgedreht.</li>
               </ul>
             </div>
           </div>
 
           <div class="timeline-block">
-            <div class="level-indicator">
-              v2.3.0<br><span style="font-size: 0.72rem; color: #94a3b8; font-weight: normal;">29. Okt 2026<br>18:30 CET</span>
-            </div>
+            <div class="level-indicator">v2.4.0<br><span>30. Okt 2026</span></div>
             <div class="timeline-body">
-              <h4>Rested-XP Deep-Dive & Zelt-Mechaniken</h4>
+              <h4>Pre-Launch Patch-Update & UI</h4>
               <ul>
-                <li><strong>Abenteurer-Zelt (Adventurer's Tent):</strong> Sofortiger 20% Rested-XP-Boost am Lagerfeuer (1h Cooldown) detailliert aufgeschlüsselt.</li>
-                <li><strong>XP-Multiplikatoren:</strong> Kombination aus gekochtem Essen (+5%), Gemütlichem Schlafsack (+3%) und Rested-XP (200% Mob-XP).</li>
-                <li><strong>Quest-Verbrauch:</strong> Klarstellung, dass Quest-Abgaben keine Rested XP aufbrauchen.</li>
+                <li>Pre-Launch-Balance der Völker eingepflegt, Gilden-Discord prominent platziert, RXPGuides.zip eingebunden.</li>
               </ul>
             </div>
           </div>
 
           <div class="timeline-block">
-            <div class="level-indicator">
-              v2.2.0<br><span style="font-size: 0.72rem; color: #94a3b8; font-weight: normal;">28. Okt 2026<br>14:15 CET</span>
-            </div>
+            <div class="level-indicator">v2.3.0<br><span>29. Okt 2026</span></div>
             <div class="timeline-body">
-              <h4>Klassen-Leitfäden Komplettierung</h4>
+              <h4>Erholungs-XP & Zelt-Mechaniken</h4>
               <ul>
-                <li>Alle 8 Klassen (Priester, Jäger, Magier, Hexenmeister, Schurke, Krieger, Druide, Schamane) mit Kern-Spells, Talent-Tabellen, Makros und Wand-Spikes ausgestattet.</li>
-                <li>Startzonen-Routen für Tauren (Mulgore) und Untote (Tirisfal) in die 1–30 Questing-Route integriert.</li>
+                <li>Abenteurer-Zelt, XP-Multiplikatoren und Erholungs-XP erklärt.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-block">
+            <div class="level-indicator">v2.2.0<br><span>28. Okt 2026</span></div>
+            <div class="timeline-body">
+              <h4>Klassen-Leitfäden</h4>
+              <ul>
+                <li>Acht Klassen mit Talenten, Makros und Trainer-Tipps. Startzonen für Tauren und Untote ergänzt.</li>
               </ul>
             </div>
           </div>
@@ -3229,14 +3708,14 @@
       <footer class="app-global-footer">
         <div class="footer-content">
           <div class="footer-left">
-            <span class="footer-version-tag">Version 2.4.0</span>
+            <span class="footer-version-tag">v3.0.0</span>
             <span class="footer-dot">•</span>
-            <span class="footer-timestamp">Stand: 30. Oktober 2026 – 11:55 Uhr CET</span>
+            <span class="footer-timestamp">Stand: 1. November 2026</span>
             <span class="footer-dot">•</span>
             <span class="footer-guild">&lt;TEH CVLT&gt;</span>
           </div>
           <div class="footer-right">
-            <span class="footer-changes">Letzte Änderung: Pre-Launch Patch-Stand, Discord-Direktlink & Obsidian-UI</span>
+            <span class="footer-changes">Letzte Änderung: 16-Bit-Design, Klassen-Ranking, Patch-Stand & Paladin</span>
             <a href="https://discord.gg/tehcvlt" target="_blank" rel="noopener noreferrer" class="footer-discord-link">discord.gg/tehcvlt ↗</a>
           </div>
         </div>
@@ -3257,7 +3736,7 @@
     <span class="fab-text">Leitfäden</span>
   </button>
 
-  <script src="script.js?v=10"></script>
+  <script src="script.js?v=13"></script>
 </body>
 </html>
 
