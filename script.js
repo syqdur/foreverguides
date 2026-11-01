@@ -111,6 +111,7 @@ function initSubtabs() {
 // Klassenseiten in Unter-Reiter gliedern: Überblick, Kampf, Talente, Ausrüstung, Trainer, Makros, Patches
 const CLASS_SECTIONS = [
   ['overview', 'Überblick'],
+  ['specs', 'Specs & Level-Weg'],
   ['forever', 'Neu in Forever'],
   ['quest', 'Klassenquest'],
   ['combat', 'Kampf'],
@@ -122,6 +123,7 @@ const CLASS_SECTIONS = [
 ];
 
 function classSectionFor(heading) {
+  if (/^\s*specs/i.test(heading)) return 'specs';
   if (/^\s*neu in forever/i.test(heading)) return 'forever';
   if (/^\s*klassenquest/i.test(heading)) return 'quest';
   if (/trainer/i.test(heading)) return 'trainer';

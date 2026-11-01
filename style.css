@@ -1042,6 +1042,56 @@ tr.highlight-row td:first-child { box-shadow: inset 4px 0 0 var(--gold); }
   .page-toc a:hover { color: #fff; border-left-color: var(--gold); }
 }
 
+/* =================== SPECS & LEVEL-WEG =================== */
+.level-path { display: flex; flex-direction: column; border: 2px solid #000; box-shadow: 0 0 0 1px var(--stone); }
+.path-row {
+  display: grid; grid-template-columns: 90px 230px 1fr; gap: 0.8rem; align-items: center;
+  padding: 0.6rem 0.85rem; background: var(--panel); border-top: 1px solid #ffffff10;
+}
+.path-row:first-child { border-top: 0; }
+.path-row:nth-child(even) { background: var(--panel-2); }
+.path-lvl {
+  font-family: var(--font-ui); font-weight: 700; color: #000; background: var(--parchment);
+  border: 2px solid #000; text-align: center; padding: 0.15rem 0.3rem; font-size: 0.9rem;
+}
+.path-spec { font-family: var(--font-ui); font-weight: 700; color: var(--gold); font-size: 1rem; }
+.path-note { font-size: 0.95rem; color: var(--text); }
+
+.spec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.1rem; }
+.spec-card {
+  display: flex; flex-direction: column; gap: 0.55rem;
+  padding: 1rem 1.1rem;
+  background: linear-gradient(180deg, var(--panel-2) 0%, var(--panel) 100%);
+  border: var(--px) solid #000;
+  box-shadow: inset 2px 2px 0 #ffffff12, 0 0 0 1px var(--stone), 5px 5px 0 #00000088;
+}
+.spec-head { display: flex; gap: 0.7rem; align-items: center; }
+.spec-head img { width: 40px; height: 40px; border: 2px solid #000; box-shadow: 0 0 0 1px var(--gold-dark); }
+.spec-head b { display: block; font-family: var(--font-ui); font-size: 1.2rem; color: #fff; }
+.spec-head small { color: var(--gold); font-weight: 600; font-size: 0.88rem; }
+.spec-tiers { display: flex; gap: 1rem; font-size: 0.9rem; color: var(--muted); }
+.spec-tier {
+  display: inline-grid; place-items: center; width: 1.6rem; height: 1.6rem; margin-left: 0.3rem;
+  font-family: var(--font-pixel); font-size: 0.7rem; color: #000; border: 2px solid #000;
+}
+.spec-tier.t-s { background: var(--q-legendary); }
+.spec-tier.t-a { background: var(--q-epic); }
+.spec-tier.t-b { background: var(--q-rare); }
+.spec-tier.t-c { background: var(--q-uncommon); }
+.spec-tier.t-d { background: var(--q-poor); }
+.spec-card h5 { font-family: var(--font-ui); font-size: 0.9rem; color: var(--cyan); margin-top: 0.2rem; }
+.spec-card ul { list-style: none; }
+.spec-card li { position: relative; padding-left: 1rem; margin-bottom: 0.3rem; font-size: 0.93rem; }
+.spec-card li::before { content: ''; position: absolute; left: 0; top: 0.6em; width: 5px; height: 5px; background: var(--gold-dark); }
+.spec-card .stat-prio-bar { margin: 0; gap: 0.3rem; }
+.spec-card .stat-chip { font-size: 0.8rem; padding: 0.15rem 0.45rem; }
+.spec-card .stat-arrow { font-size: 0.85rem; }
+.spec-pick { margin-top: auto; padding-top: 0.5rem; border-top: 1px dashed var(--stone); font-size: 0.92rem; }
+@media (max-width: 900px) {
+  .path-row { grid-template-columns: 1fr; gap: 0.3rem; }
+  .path-lvl { justify-self: start; }
+}
+
 /* =================== RUHIGERE OPTIK =================== */
 /* Gold-Rahmen nur noch für Wichtiges; normale Karten schlicht */
 .card.highlight-border {
