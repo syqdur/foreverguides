@@ -53,7 +53,7 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-html { overflow-x: hidden; width: 100%; }
+html, body { overflow-x: hidden; width: 100%; max-width: 100%; }
 
 ::selection { background: var(--gold); color: #000; }
 
@@ -223,7 +223,7 @@ code {
 .rxp-download-pill { font-size: 0.62rem; padding: 0.35rem 0.6rem; }
 
 /* =================== LAYOUT =================== */
-.layout-wrapper { flex: 1; display: flex; min-height: 0; }
+.layout-wrapper { flex: 1; display: flex; min-height: 0; overflow: hidden; }
 
 .sidebar {
   width: 290px;
@@ -281,14 +281,41 @@ code {
   border-bottom: 5px solid transparent;
   margin-right: -2px;
 }
-.nav-tab .nav-new {
+.nav-tab .nav-new,
+.nav-area-btn .nav-new {
   margin-left: auto;
-  font-family: var(--font-pixel);
-  font-size: 0.45rem;
+  font-family: var(--font-ui);
+  font-weight: 700;
+  font-size: 0.65rem;
+  line-height: 1;
   color: #000;
   background: var(--q-uncommon);
-  padding: 3px 4px;
-  border: 2px solid #000;
+  padding: 2px 5px;
+  border: 1px solid #000;
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.6);
+  border-radius: 2px;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+}
+.nav-area-btn .nav-new {
+  margin-right: 0.35rem;
+}
+.nav-area-btn .nav-new + .nav-caret {
+  margin-left: 0;
+}
+.nav-new.badge-green { background: #2ed573; color: #000; }
+.nav-new.badge-gold { background: var(--gold); color: #000; }
+.nav-new.badge-orange { background: var(--q-legendary); color: #000; }
+.nav-new.badge-red { background: #ff4757; color: #fff; text-shadow: 1px 1px 0 #000; }
+.nav-new.badge-blue { background: #1e90ff; color: #fff; text-shadow: 1px 1px 0 #000; }
+.nav-new.badge-pulse { animation: badgeGlow 2.2s infinite ease-in-out; }
+
+@keyframes badgeGlow {
+  0%, 100% { box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.6); }
+  50% { box-shadow: 0 0 6px var(--gold), 1px 1px 0 #000; }
 }
 
 .wow-icon {
@@ -1108,7 +1135,7 @@ tr.highlight-row td:first-child { box-shadow: inset 4px 0 0 var(--gold); }
 /* Kleine Labels und Zwischenüberschriften: lesbare Pixel-Schrift statt Press Start 2P */
 .nav-heading, .guide-chapter > h3, .group-title, .card h3, .notice h3, .alert-box h3,
 .level-indicator, .route-badge, .news-date, .tier-board-head h4, .pn-group,
-.footer-version-tag, .discord-guild-tag, .hero-kicker, .nav-tab .nav-new, .point-tag,
+.footer-version-tag, .discord-guild-tag, .hero-kicker, .nav-tab .nav-new, .nav-area-btn .nav-new, .point-tag,
 .pn-badge, .tier-chip .trend, .legend-row span b, .fact-tile .fact-value,
 .scroll-panel .signature, .stat-arrow, .guild-badge {
   font-family: var(--font-ui);
@@ -1124,7 +1151,7 @@ tr.highlight-row td:first-child { box-shadow: inset 4px 0 0 var(--gold); }
 .pn-group { font-size: 0.95rem; }
 .footer-version-tag, .discord-guild-tag, .guild-badge { font-size: 0.85rem; }
 .hero-kicker { font-size: 0.9rem; }
-.nav-tab .nav-new, .point-tag, .pn-badge { font-size: 0.75rem; padding: 1px 5px; }
+.nav-tab .nav-new, .nav-area-btn .nav-new, .point-tag, .pn-badge { font-size: 0.75rem; padding: 1px 5px; }
 .tier-chip .trend { font-size: 0.85rem; }
 .legend-row span b { font-size: 0.95rem; }
 .fact-tile .fact-value { font-size: 1.15rem; line-height: 1.35; }

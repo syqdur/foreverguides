@@ -44,6 +44,9 @@ function initTabs() {
     }
 
     if (contentPanel && !keepScroll) contentPanel.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo(0, 0);
+    document.body.scrollLeft = 0;
+    document.documentElement.scrollLeft = 0;
     document.dispatchEvent(new CustomEvent('pagechange'));
   };
 
@@ -223,7 +226,12 @@ function initSearch() {
   const paneTitle = pane => {
     const nav = document.querySelector(`.nav-tab[data-target="${pane.id}"]`);
     const h2 = pane.querySelector('.pane-header h2');
-    return nav ? nav.textContent.replace(/LIVE|NEU/g, '').trim() : (h2 ? h2.textContent.trim() : '');
+    if (nav) {
+      const clone = nav.cloneNode(true);
+      clone.querySelectorAll('.nav-new').forEach(b => b.remove());
+      return clone.textContent.trim();
+    }
+    return h2 ? h2.textContent.trim() : '';
   };
 
   // Index: Überschriften und Karten-Titel, jeweils mit dem Text des umgebenden Blocks
