@@ -106,7 +106,70 @@
       "translated": false,
       "engine": null,
       "link": "https://foreverchanges.pro/de/patch-notes#1.60.1.70753",
-      "changes": []
+      "changes": [
+        {
+          "group": "paladin",
+          "group_de": "Paladin",
+          "spec": "Allgemein",
+          "type": "change",
+          "spell": "Heiliger Schild",
+          "source": "Sein Rang 4, 221 Schaden pro Block, wird jetzt auf Stufe 60 für 240 Mana mit 10 Sek. Abklingzeit erlernt. Der Hotfix gab ihm weder Stufe noch Kosten noch Abklingzeit.",
+          "text": "Sein Rang 4, 221 Schaden pro Block, wird jetzt auf Stufe 60 für 240 Mana mit 10 Sek. Abklingzeit erlernt. Der Hotfix gab ihm weder Stufe noch Kosten noch Abklingzeit.",
+          "translated": false
+        },
+        {
+          "group": "rogue",
+          "group_de": "Schurke",
+          "spec": "Täuschung",
+          "type": "buff",
+          "spell": "Bereitschaft",
+          "source": "Neue passive Fähigkeit, erlernt auf Stufe 18: Solange du volle Energie hast und dich außerhalb des Kampfes befindest, kostet deine nächste Fähigkeit 10 Energie weniger. Im Spiel noch nicht übersetzt.",
+          "text": "Neue passive Fähigkeit, erlernt auf Stufe 18: Solange du volle Energie hast und dich außerhalb des Kampfes befindest, kostet deine nächste Fähigkeit 10 Energie weniger. Im Spiel noch nicht übersetzt.",
+          "translated": false
+        },
+        {
+          "group": "druid",
+          "group_de": "Druide",
+          "spec": "Wilder Kampf",
+          "type": "buff",
+          "spell": "Bereitschaft",
+          "source": "Neue passive Fähigkeit, erlernt auf Stufe 32: Solange du volle Energie hast und dich außerhalb des Kampfes befindest, kostet deine nächste Fähigkeit 10 Energie weniger. Im Spiel noch nicht übersetzt.",
+          "text": "Neue passive Fähigkeit, erlernt auf Stufe 32: Solange du volle Energie hast und dich außerhalb des Kampfes befindest, kostet deine nächste Fähigkeit 10 Energie weniger. Im Spiel noch nicht übersetzt.",
+          "translated": false
+        },
+        {
+          "group": "orc",
+          "group_de": "Orc",
+          "spec": "Allgemein",
+          "type": "change",
+          "spell": "Befehlsgewalt",
+          "source": "Jetzt eine passive Fähigkeit mit eigenem Symbol im Client. Der Hotfix führte sie als Sofortzauber ohne Symbol.",
+          "text": "Jetzt eine passive Fähigkeit mit eigenem Symbol im Client. Der Hotfix führte sie als Sofortzauber ohne Symbol.",
+          "translated": false
+        },
+        {
+          "group": "skyborne",
+          "group_de": "Skyborne",
+          "spec": "Allgemein",
+          "type": "buff",
+          "spell": "Leylinie lesen",
+          "source": "Attuned hält jetzt 1 Std. statt 15 Min., wie zum Start angekündigt.",
+          "text": "Attuned hält jetzt 1 Std. statt 15 Min., wie zum Start angekündigt.",
+          "translated": true,
+          "engine": "google"
+        },
+        {
+          "group": "skyborne",
+          "group_de": "Skyborne",
+          "spec": "Allgemein",
+          "type": "buff",
+          "spell": "Himmelssicht",
+          "source": "Charged hält jetzt 1 Std. statt 15 Min., wie zum Start angekündigt.",
+          "text": "Aufgeladen hält jetzt 1 Std. statt 15 Min., wie zum Start angekündigt.",
+          "translated": true,
+          "engine": "google"
+        }
+      ]
     },
     {
       "id": "foreverchanges-hotfix-2026-10-30",
@@ -200,6 +263,17 @@
           "group": "paladin",
           "group_de": "Paladin",
           "spec": "Heilig",
+          "type": "buff",
+          "spell": "Stimme der Wahrheit",
+          "source": "Leaves the talent tree: trainers teach it at level 20 instead.",
+          "text": "Wird aus dem Talentbaum entfernt: Trainer vermitteln diese Fähigkeit stattdessen ab Stufe 20.",
+          "translated": true,
+          "engine": "deepl"
+        },
+        {
+          "group": "paladin",
+          "group_de": "Paladin",
+          "spec": "Heilig",
           "type": "nerf",
           "spell": "Spiritueller Fokus",
           "source": "Has 5 ranks instead of 2, for the same 70% at the last rank. Moves to row 1.",
@@ -215,17 +289,6 @@
           "spell": "Verbesserte Siegel",
           "source": "Has 5 ranks instead of 3, for the same 15% at the last rank.",
           "text": "Hat 5 Ränge statt 3, wobei der letzte Rang ebenfalls 15 % beträgt.",
-          "translated": true,
-          "engine": "deepl"
-        },
-        {
-          "group": "paladin",
-          "group_de": "Paladin",
-          "spec": "Heilig",
-          "type": "change",
-          "spell": "Stimme der Wahrheit",
-          "source": "Leaves the talent tree: trainers teach it at level 20 instead.",
-          "text": "Wird aus dem Talentbaum entfernt: Trainer vermitteln diese Fähigkeit stattdessen ab Stufe 20.",
           "translated": true,
           "engine": "deepl"
         },
@@ -748,7 +811,7 @@
           "group": "priest",
           "group_de": "Priester",
           "spec": "Heilig",
-          "type": "change",
+          "type": "buff",
           "spell": "Verbindende Heilung",
           "source": "Leaves the talent tree: trainers teach rank 1 at level 25 (236 to 284, 155 Mana), and ranks 2 to 6 as before.",
           "text": "Wird aus dem Talentbaum entfernt: Trainer unterrichten Rang 1 ab Stufe 25 (236 bis 284, 155 Mana) und die Ränge 2 bis 6 wie bisher.",
@@ -4636,5 +4699,5 @@
       "changes": []
     }
   ],
-  "fetched_at": "2026-11-03T06:42:52+00:00"
+  "fetched_at": "2026-11-03T15:04:10+00:00"
 }
