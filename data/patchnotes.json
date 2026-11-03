@@ -1,8 +1,113 @@
 {
   "source": "https://foreverchanges.pro/de/patch-notes",
   "feed": "https://foreverchanges.pro/de/patch-notes/feed.xml",
-  "last_build": "Fri, 30 Oct 2026 12:00:00 GMT",
+  "last_build": "Tue, 03 Nov 2026 12:00:00 GMT",
   "items": [
+    {
+      "id": "foreverchanges-hotfix-2026-11-03",
+      "title": "Hotfix, 3. November 2026",
+      "date": "2026-11-03",
+      "kind": "hotfix",
+      "summary": "Ein Hotfix zum Build vom 2. November, erstmals am 3. November im Cache gesehen, den die Startrealms senden, und zu dem Blizzard keine Notizen veröffentlicht hat. Er erhöht den Schaden des Jägers: Aspekt des Falken bekommt die Distanzangriffskraft zurück, die der Hotfix vom 28. Oktober ihm genommen hatte, Aura des Volltreffers gibt bis zu doppelt so viel, Sperrfeuer und Blitzartige Reflexe sind wieder auf den Werten von Classic, und Gezielter Schuss, Arkaner Schuss, Schlangenbiss und Heckenschützenschuss verursachen mehr Schaden.",
+      "source_summary": "Ein Hotfix zum Build vom 2. November, erstmals am 3. November im Cache gesehen, den die Startrealms senden, und zu dem Blizzard keine Notizen veröffentlicht hat. Er erhöht den Schaden des Jägers: Aspekt des Falken bekommt die Distanzangriffskraft zurück, die der Hotfix vom 28. Oktober ihm genommen hatte, Aura des Volltreffers gibt bis zu doppelt so viel, Sperrfeuer und Blitzartige Reflexe sind wieder auf den Werten von Classic, und Gezielter Schuss, Arkaner Schuss, Schlangenbiss und Heckenschützenschuss verursachen mehr Schaden.",
+      "translated": false,
+      "engine": null,
+      "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-11-03",
+      "changes": [
+        {
+          "group": "hunter",
+          "group_de": "Jäger",
+          "spec": "Tierherrschaft",
+          "type": "buff",
+          "spell": "Aspekt des Falken",
+          "source": "Gibt je nach Rang 20, 35, 50, 70, 90 und 110 Distanzangriffskraft statt 15, 22, 30, 38, 47 und 55, wie in Classic. Rang 7 gibt weiterhin 120.",
+          "text": "Gibt je nach Rang 20, 35, 50, 70, 90 und 110 Distanzangriffskraft statt 15, 22, 30, 38, 47 und 55, wie in Classic. Rang 7 gibt weiterhin 120.",
+          "translated": false
+        },
+        {
+          "group": "hunter",
+          "group_de": "Jäger",
+          "spec": "Treffsicherheit",
+          "type": "buff",
+          "spell": "Aura des Volltreffers",
+          "source": "Gibt Gruppen- und Schlachtzugsmitgliedern je nach Rang 20, 35, 50, 75 und 100 Distanzangriffskraft statt 15, 22, 30, 40 und 50.",
+          "text": "Gibt Gruppen- und Schlachtzugsmitgliedern je nach Rang 20, 35, 50, 75 und 100 Distanzangriffskraft statt 15, 22, 30, 40 und 50.",
+          "translated": false
+        },
+        {
+          "group": "hunter",
+          "group_de": "Jäger",
+          "spec": "Treffsicherheit",
+          "type": "buff",
+          "spell": "Sperrfeuer",
+          "source": "Erhöht den Schaden von Mehrfachschuss, Gezielter Schuss und Salve je nach Rang um 5, 10 und 15 % statt 3, 7 und 10 %, wie in Classic.",
+          "text": "Erhöht den Schaden von Mehrfachschuss, Gezielter Schuss und Salve je nach Rang um 5, 10 und 15 % statt 3, 7 und 10 %, wie in Classic.",
+          "translated": false
+        },
+        {
+          "group": "hunter",
+          "group_de": "Jäger",
+          "spec": "Treffsicherheit",
+          "type": "buff",
+          "spell": "Heckenschützenschuss",
+          "source": "Verursacht Distanzschaden plus 320, 450 und 590 je nach Rang statt 160, 225 und 295.",
+          "text": "Verursacht Distanzschaden plus 320, 450 und 590 je nach Rang statt 160, 225 und 295.",
+          "translated": false
+        },
+        {
+          "group": "hunter",
+          "group_de": "Jäger",
+          "spec": "Treffsicherheit",
+          "type": "buff",
+          "spell": "Gezielter Schuss",
+          "source": "Erhöht den Distanzschaden je nach Rang um 40, 70, 115, 185, 260 und 350 statt 20, 34, 55, 89, 125 und 166.",
+          "text": "Erhöht den Distanzschaden je nach Rang um 40, 70, 115, 185, 260 und 350 statt 20, 34, 55, 89, 125 und 166.",
+          "translated": false
+        },
+        {
+          "group": "hunter",
+          "group_de": "Jäger",
+          "spec": "Treffsicherheit",
+          "type": "buff",
+          "spell": "Arkaner Schuss",
+          "source": "Verursacht je nach Rang 25, 35, 50, 85, 120, 175, 220 und 280 Arkanschaden statt 20, 26, 39, 65, 94, 134, 170 und 217.",
+          "text": "Verursacht je nach Rang 25, 35, 50, 85, 120, 175, 220 und 280 Arkanschaden statt 20, 26, 39, 65, 94, 134, 170 und 217.",
+          "translated": false
+        },
+        {
+          "group": "hunter",
+          "group_de": "Jäger",
+          "spec": "Treffsicherheit",
+          "type": "buff",
+          "spell": "Schlangenbiss",
+          "source": "Verursacht je nach Rang 15, 35, 70, 130, 200, 290, 375, 500 und 675 Naturschaden über 15 Sek. statt 10, 30, 60, 110, 170, 240, 320, 415 und 555.",
+          "text": "Verursacht je nach Rang 15, 35, 70, 130, 200, 290, 375, 500 und 675 Naturschaden über 15 Sek. statt 10, 30, 60, 110, 170, 240, 320, 415 und 555.",
+          "translated": false
+        },
+        {
+          "group": "hunter",
+          "group_de": "Jäger",
+          "spec": "Überleben",
+          "type": "buff",
+          "spell": "Blitzartige Reflexe",
+          "source": "Erhöht deine Beweglichkeit je nach Rang um 3, 6, 9, 12 und 15 % statt 2, 4, 6, 8 und 10 %, wie in Classic.",
+          "text": "Erhöht deine Beweglichkeit je nach Rang um 3, 6, 9, 12 und 15 % statt 2, 4, 6, 8 und 10 %, wie in Classic.",
+          "translated": false
+        }
+      ]
+    },
+    {
+      "id": "foreverchanges-1.60.1.70753",
+      "title": "Build 1.60.1.70753, 2. November 2026",
+      "date": "2026-11-02",
+      "kind": "build",
+      "summary": "Der Build vom 2. November schreibt den Hotfix vom 30. Oktober in die Clientdateien: Die Überarbeitung der Druiden- und Paladinbäume, die Überarbeitung der Volksfähigkeiten und die Änderungen an Magier, Priester, Hexenmeister und Jäger werden jetzt in jeder Sprache aus dem Client gelesen. Neu darin: Bereitschaft, eine passive Fähigkeit für Schurken auf Stufe 18 und Druiden auf Stufe 32, die deiner ersten Fähigkeit 10 Energie abzieht, wenn du einen Kampf mit voller Energie beginnst; Attuned und Charged der Himmelsgeborenen halten 1 Std. statt 15 Min., wie von Blizzard angekündigt; der letzte Rang von Heiliger Schild bekommt seine Stufe, seine Kosten und seine Abklingzeit; und der Beutel mit violettem Staub, ein Gegenstand für die Startfeier. Nichts davon ist bestätigt: Der Build kam, während die Realms vor dem Start geschlossen sind, Blizzard hat keine Notizen dazu veröffentlicht, und im Spiel lässt sich noch nichts prüfen.",
+      "source_summary": "Der Build vom 2. November schreibt den Hotfix vom 30. Oktober in die Clientdateien: Die Überarbeitung der Druiden- und Paladinbäume, die Überarbeitung der Volksfähigkeiten und die Änderungen an Magier, Priester, Hexenmeister und Jäger werden jetzt in jeder Sprache aus dem Client gelesen. Neu darin: Bereitschaft, eine passive Fähigkeit für Schurken auf Stufe 18 und Druiden auf Stufe 32, die deiner ersten Fähigkeit 10 Energie abzieht, wenn du einen Kampf mit voller Energie beginnst; Attuned und Charged der Himmelsgeborenen halten 1 Std. statt 15 Min., wie von Blizzard angekündigt; der letzte Rang von Heiliger Schild bekommt seine Stufe, seine Kosten und seine Abklingzeit; und der Beutel mit violettem Staub, ein Gegenstand für die Startfeier. Nichts davon ist bestätigt: Der Build kam, während die Realms vor dem Start geschlossen sind, Blizzard hat keine Notizen dazu veröffentlicht, und im Spiel lässt sich noch nichts prüfen.",
+      "translated": false,
+      "engine": null,
+      "link": "https://foreverchanges.pro/de/patch-notes#1.60.1.70753",
+      "changes": []
+    },
     {
       "id": "foreverchanges-hotfix-2026-10-30",
       "title": "Hotfix, 30. Oktober 2026",
@@ -28,18 +133,7 @@
         {
           "group": "paladin",
           "group_de": "Paladin",
-          "spec": "Heilig",
-          "type": "buff",
-          "spell": "Andacht",
-          "source": "Has 2 ranks instead of 3, for the same 30% at the last rank. Moves to row 2.",
-          "text": "Hat 2 Ränge statt 3, wobei der letzte Rang ebenfalls 30 % beträgt. Wechselt in Zeile 2.",
-          "translated": true,
-          "engine": "deepl"
-        },
-        {
-          "group": "paladin",
-          "group_de": "Paladin",
-          "spec": "Heilig",
+          "spec": "Allgemein",
           "type": "nerf",
           "spell": "Segen des Lichts",
           "source": "No longer taught by trainers.",
@@ -50,11 +144,55 @@
         {
           "group": "paladin",
           "group_de": "Paladin",
-          "spec": "Heilig",
+          "spec": "Allgemein",
           "type": "nerf",
           "spell": "Großer Segen des Lichts",
           "source": "No longer taught by trainers.",
           "text": "Wird nicht mehr von Trainern unterrichtet.",
+          "translated": true,
+          "engine": "deepl"
+        },
+        {
+          "group": "paladin",
+          "group_de": "Paladin",
+          "spec": "Allgemein",
+          "type": "nerf",
+          "spell": "Rettung",
+          "source": "No longer taught by trainers.",
+          "text": "Wird nicht mehr von Trainern unterrichtet.",
+          "translated": true,
+          "engine": "deepl"
+        },
+        {
+          "group": "paladin",
+          "group_de": "Paladin",
+          "spec": "Allgemein",
+          "type": "nerf",
+          "spell": "Massenrettung",
+          "source": "No longer taught by trainers.",
+          "text": "Wird nicht mehr von Trainern unterrichtet.",
+          "translated": true,
+          "engine": "deepl"
+        },
+        {
+          "group": "paladin",
+          "group_de": "Paladin",
+          "spec": "Allgemein",
+          "type": "nerf",
+          "spell": "Widerrufen",
+          "source": "No longer taught by trainers.",
+          "text": "Wird nicht mehr von Trainern unterrichtet.",
+          "translated": true,
+          "engine": "deepl"
+        },
+        {
+          "group": "paladin",
+          "group_de": "Paladin",
+          "spec": "Heilig",
+          "type": "buff",
+          "spell": "Andacht",
+          "source": "Has 2 ranks instead of 3, for the same 30% at the last rank. Moves to row 2.",
+          "text": "Hat 2 Ränge statt 3, wobei der letzte Rang ebenfalls 30 % beträgt. Wechselt in Zeile 2.",
           "translated": true,
           "engine": "deepl"
         },
@@ -275,39 +413,6 @@
           "spell": "Siegel des Furors",
           "source": "Its Judgement taunts the target for 3 sec instead of 4.",
           "text": "Sein „Urteil“ verspottet das Ziel 3 Sekunden lang statt 4.",
-          "translated": true,
-          "engine": "deepl"
-        },
-        {
-          "group": "paladin",
-          "group_de": "Paladin",
-          "spec": "Schutz",
-          "type": "nerf",
-          "spell": "Rettung",
-          "source": "No longer taught by trainers.",
-          "text": "Wird nicht mehr von Trainern unterrichtet.",
-          "translated": true,
-          "engine": "deepl"
-        },
-        {
-          "group": "paladin",
-          "group_de": "Paladin",
-          "spec": "Schutz",
-          "type": "nerf",
-          "spell": "Massenrettung",
-          "source": "No longer taught by trainers.",
-          "text": "Wird nicht mehr von Trainern unterrichtet.",
-          "translated": true,
-          "engine": "deepl"
-        },
-        {
-          "group": "paladin",
-          "group_de": "Paladin",
-          "spec": "Schutz",
-          "type": "nerf",
-          "spell": "Widerrufen",
-          "source": "No longer taught by trainers.",
-          "text": "Wird nicht mehr von Trainern unterrichtet.",
           "translated": true,
           "engine": "deepl"
         },
@@ -763,6 +868,28 @@
         {
           "group": "druid",
           "group_de": "Druide",
+          "spec": "Allgemein",
+          "type": "nerf",
+          "spell": "Berserker",
+          "source": "entfernt: Removed from the talent tree: Primal Bite takes its place in row 7.",
+          "text": "entfernt: Aus dem Talentbaum entfernt: „Primal Bite“ nimmt nun seinen Platz in Reihe 7 ein.",
+          "translated": true,
+          "engine": "deepl"
+        },
+        {
+          "group": "druid",
+          "group_de": "Druide",
+          "spec": "Allgemein",
+          "type": "change",
+          "spell": "Verbesserte Machtverschiebung",
+          "source": "entfernt: Removed from the talent tree: it took 4 or 8 sec off the cooldown of Shifting Power, which is now 8 sec.",
+          "text": "entfernt: Aus dem Talentbaum entfernt: Die Abklingzeit von „Shifting Power“ wurde um 4 oder 8 Sekunden verkürzt; sie beträgt nun 8 Sekunden.",
+          "translated": true,
+          "engine": "deepl"
+        },
+        {
+          "group": "druid",
+          "group_de": "Druide",
           "spec": "Gleichgewicht",
           "type": "buff",
           "spell": "Genesis",
@@ -823,28 +950,6 @@
           "spell": "Predatory Discipline",
           "source": "neues Talent: New talent in row 4, third column: Ferocious Bite no longer spends your extra Energy, but still deals extra damage for it. Not yet translated in the game.",
           "text": "neues Talent: Neues Talent in Zeile 4, dritte Spalte: „Ferocious Bite“ verbraucht deine zusätzliche Energie nicht mehr, verursacht dafür aber weiterhin zusätzlichen Schaden. Im Spiel noch nicht übersetzt.",
-          "translated": true,
-          "engine": "deepl"
-        },
-        {
-          "group": "druid",
-          "group_de": "Druide",
-          "spec": "Wilder Kampf",
-          "type": "nerf",
-          "spell": "Berserker",
-          "source": "entfernt: Removed from the talent tree: Primal Bite takes its place in row 7.",
-          "text": "entfernt: Aus dem Talentbaum entfernt: „Primal Bite“ nimmt nun seinen Platz in Reihe 7 ein.",
-          "translated": true,
-          "engine": "deepl"
-        },
-        {
-          "group": "druid",
-          "group_de": "Druide",
-          "spec": "Wilder Kampf",
-          "type": "change",
-          "spell": "Verbesserte Machtverschiebung",
-          "source": "entfernt: Removed from the talent tree: it took 4 or 8 sec off the cooldown of Shifting Power, which is now 8 sec.",
-          "text": "entfernt: Aus dem Talentbaum entfernt: Die Abklingzeit von „Shifting Power“ wurde um 4 oder 8 Sekunden verkürzt; sie beträgt nun 8 Sekunden.",
           "translated": true,
           "engine": "deepl"
         },
@@ -1135,7 +1240,18 @@
       "translated": false,
       "engine": null,
       "link": "https://foreverchanges.pro/de/patch-notes#1.60.1.70707",
-      "changes": []
+      "changes": [
+        {
+          "group": "warrior",
+          "group_de": "Krieger",
+          "spec": "Schutz",
+          "type": "buff",
+          "spell": "Rache",
+          "source": "Verursacht auf Rang 6 zwischen (138 + 22.5 % der Angriffskraft) und (168 + 22.5 % der Angriffskraft) Schaden statt 138 bis 168, und jeder Rang erhält 22.5 % der Angriffskraft dazu.",
+          "text": "Verursacht auf Rang 6 zwischen (138 + 22.5 % der Angriffskraft) und (168 + 22.5 % der Angriffskraft) Schaden statt 138 bis 168, und jeder Rang erhält 22.5 % der Angriffskraft dazu.",
+          "translated": false
+        }
+      ]
     },
     {
       "id": "foreverchanges-1.60.1.70685",
@@ -1711,6 +1827,16 @@
           "group_de": "Paladin",
           "spec": "Allgemein",
           "type": "change",
+          "spell": "Rettung",
+          "source": "Ersetzt Segen der Rettung, und Massenrettung ersetzt Großer Segen der Rettung: Sie werden gleich gewirkt, belegen aber keinen Segensplatz mehr. Du lernst außerdem Widerrufen, das sie von einem Gruppen- oder Schlachtzugsmitglied entfernt.",
+          "text": "Ersetzt Segen der Rettung, und Massenrettung ersetzt Großer Segen der Rettung: Sie werden gleich gewirkt, belegen aber keinen Segensplatz mehr. Du lernst außerdem Widerrufen, das sie von einem Gruppen- oder Schlachtzugsmitglied entfernt.",
+          "translated": false
+        },
+        {
+          "group": "paladin",
+          "group_de": "Paladin",
+          "spec": "Allgemein",
+          "type": "change",
           "spell": "Untote spüren",
           "source": "Ist nicht mehr im Zauberbuch.Nicht in Blizzards Notizen, im Spiel gefunden.",
           "text": "Ist nicht mehr im Zauberbuch.Nicht in Blizzards Notizen, im Spiel gefunden.",
@@ -1766,16 +1892,6 @@
           "text": "Stellt 4 % Mana wieder her (vorher 6 %), weiterhin höchstens alle 3 Sek.",
           "translated": true,
           "engine": "deepl"
-        },
-        {
-          "group": "paladin",
-          "group_de": "Paladin",
-          "spec": "Schutz",
-          "type": "change",
-          "spell": "Rettung",
-          "source": "Ersetzt Segen der Rettung, und Massenrettung ersetzt Großer Segen der Rettung: Sie werden gleich gewirkt, belegen aber keinen Segensplatz mehr. Du lernst außerdem Widerrufen, das sie von einem Gruppen- oder Schlachtzugsmitglied entfernt.",
-          "text": "Ersetzt Segen der Rettung, und Massenrettung ersetzt Großer Segen der Rettung: Sie werden gleich gewirkt, belegen aber keinen Segensplatz mehr. Du lernst außerdem Widerrufen, das sie von einem Gruppen- oder Schlachtzugsmitglied entfernt.",
-          "translated": false
         },
         {
           "group": "paladin",
@@ -3637,7 +3753,7 @@
         {
           "group": "paladin",
           "group_de": "Paladin",
-          "spec": "Schutz",
+          "spec": "Allgemein",
           "type": "buff",
           "spell": "Heiliger Schild",
           "source": "30 % Blockchance statt 20 %.",
@@ -3869,6 +3985,16 @@
           "group_de": "Druide",
           "spec": "Allgemein",
           "type": "change",
+          "spell": "Improved Shifting Power",
+          "source": "neues Talent: Neues Talent in Reihe 5, nach Shifting Power: 4 oder 8 Sek. weniger Abklingzeit. Im Spiel noch nicht übersetzt.",
+          "text": "neues Talent: Neues Talent in Reihe 5, nach Shifting Power: 4 oder 8 Sek. weniger Abklingzeit. Im Spiel noch nicht übersetzt.",
+          "translated": false
+        },
+        {
+          "group": "druid",
+          "group_de": "Druide",
+          "spec": "Allgemein",
+          "type": "change",
           "spell": "Tigerfuror",
           "source": "entfernt: Aus dem Spiel entfernt.",
           "text": "entfernt: Aus dem Spiel entfernt.",
@@ -3943,16 +4069,6 @@
           "spell": "Shifting Power",
           "source": "neues Talent: Neues Talent in Reihe 4, nach Schreddernde Angriffe. Nur in Katzengestalt, 16 Sek. Abklingzeit: wandelt 55 % deines Grundmanas in 40 Energie um, zu denselben Manakosten wie die Katzengestalt. Im Spiel noch nicht übersetzt.",
           "text": "neues Talent: Neues Talent in Reihe 4, nach Schreddernde Angriffe. Nur in Katzengestalt, 16 Sek. Abklingzeit: wandelt 55 % deines Grundmanas in 40 Energie um, zu denselben Manakosten wie die Katzengestalt. Im Spiel noch nicht übersetzt.",
-          "translated": false
-        },
-        {
-          "group": "druid",
-          "group_de": "Druide",
-          "spec": "Wilder Kampf",
-          "type": "change",
-          "spell": "Improved Shifting Power",
-          "source": "neues Talent: Neues Talent in Reihe 5, nach Shifting Power: 4 oder 8 Sek. weniger Abklingzeit. Im Spiel noch nicht übersetzt.",
-          "text": "neues Talent: Neues Talent in Reihe 5, nach Shifting Power: 4 oder 8 Sek. weniger Abklingzeit. Im Spiel noch nicht übersetzt.",
           "translated": false
         },
         {
@@ -4518,31 +4634,7 @@
       "engine": null,
       "link": "https://foreverchanges.pro/de/patch-notes#1.60.1.69913",
       "changes": []
-    },
-    {
-      "id": "foreverchanges-1.60.1.69893",
-      "title": "Build 1.60.1.69893, 16. September 2026",
-      "date": "2026-09-16",
-      "kind": "build",
-      "summary": "Am Tag vor dem Start der Beta online gestellt, mit vielen Änderungen gegenüber der BlizzCon-Demo: Die Zauberbücher gehen bis Stufe 60, Zermürben (Hexenmeister) und Perfekte Ausführung (Schurke) sind neue Talente, Vitalität, Drain Hope, Ruhlose Klingen und Naturgleichgewicht sind weg, und mehrere Talente haben ihren Platz oder ihre Voraussetzungen geändert.",
-      "source_summary": "Am Tag vor dem Start der Beta online gestellt, mit vielen Änderungen gegenüber der BlizzCon-Demo: Die Zauberbücher gehen bis Stufe 60, Zermürben (Hexenmeister) und Perfekte Ausführung (Schurke) sind neue Talente, Vitalität, Drain Hope, Ruhlose Klingen und Naturgleichgewicht sind weg, und mehrere Talente haben ihren Platz oder ihre Voraussetzungen geändert.",
-      "translated": false,
-      "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes#1.60.1.69893",
-      "changes": []
-    },
-    {
-      "id": "foreverchanges-hotfix-2026-09-12",
-      "title": "BlizzCon-Demo, 12. September 2026",
-      "date": "2026-09-12",
-      "kind": "build",
-      "summary": "Die auf der BlizzCon gezeigte Version, gespielt auf Stufe 38. Bis der Beta-Client erschien, wurden die Talente und Zauber dieser Seite aus ihren Videos abgelesen.",
-      "source_summary": "Die auf der BlizzCon gezeigte Version, gespielt auf Stufe 38. Bis der Beta-Client erschien, wurden die Talente und Zauber dieser Seite aus ihren Videos abgelesen.",
-      "translated": false,
-      "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-09-12",
-      "changes": []
     }
   ],
-  "fetched_at": "2026-11-01T07:10:34+00:00"
+  "fetched_at": "2026-11-03T06:42:52+00:00"
 }
