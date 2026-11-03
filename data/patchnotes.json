@@ -4,6 +4,18 @@
   "last_build": "Tue, 03 Nov 2026 12:00:00 GMT",
   "items": [
     {
+      "id": "foreverchanges-1.60.1.70755",
+      "title": "Build 1.60.1.70755, 3. November 2026",
+      "date": "2026-11-03",
+      "kind": "build",
+      "summary": "A technical build: its game data is the same as the 2026-11-02 build's (1.60.1.70753). Talents, spells and items did not change.",
+      "source_summary": "A technical build: its game data is the same as the 2026-11-02 build's (1.60.1.70753). Talents, spells and items did not change.",
+      "translated": false,
+      "engine": null,
+      "link": "https://foreverchanges.pro/de/patch-notes#1.60.1.70755",
+      "changes": []
+    },
+    {
       "id": "foreverchanges-hotfix-2026-11-03",
       "title": "Hotfix, 3. November 2026",
       "date": "2026-11-03",
@@ -4685,19 +4697,7 @@
       "engine": null,
       "link": "https://foreverchanges.pro/de/patch-notes#1.60.1.69977",
       "changes": []
-    },
-    {
-      "id": "foreverchanges-1.60.1.69913",
-      "title": "Build 1.60.1.69913, 18. September 2026",
-      "date": "2026-09-18",
-      "kind": "build",
-      "summary": "Ein kleiner Fix: Launcher, Absturzberichte und einige Grafikdateien. Talente, Zauber und Gegenstände haben sich nicht geändert.",
-      "source_summary": "Ein kleiner Fix: Launcher, Absturzberichte und einige Grafikdateien. Talente, Zauber und Gegenstände haben sich nicht geändert.",
-      "translated": false,
-      "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes#1.60.1.69913",
-      "changes": []
     }
   ],
-  "fetched_at": "2026-11-03T15:04:10+00:00"
+  "fetched_at": "2026-11-03T20:58:26+00:00"
 }
