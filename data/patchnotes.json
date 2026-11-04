@@ -122,7 +122,7 @@
         {
           "group": "paladin",
           "group_de": "Paladin",
-          "spec": "Allgemein",
+          "spec": "Schutz",
           "type": "change",
           "spell": "Heiliger Schild",
           "source": "Sein Rang 4, 221 Schaden pro Block, wird jetzt auf Stufe 60 für 240 Mana mit 10 Sek. Abklingzeit erlernt. Der Hotfix gab ihm weder Stufe noch Kosten noch Abklingzeit.",
@@ -789,6 +789,17 @@
         {
           "group": "priest",
           "group_de": "Priester",
+          "spec": "Allgemein",
+          "type": "buff",
+          "spell": "Verbindende Heilung",
+          "source": "Leaves the talent tree: trainers teach rank 1 at level 25 (236 to 284, 155 Mana), and ranks 2 to 6 as before.",
+          "text": "Wird aus dem Talentbaum entfernt: Trainer unterrichten Rang 1 ab Stufe 25 (236 bis 284, 155 Mana) und die Ränge 2 bis 6 wie bisher.",
+          "translated": true,
+          "engine": "deepl"
+        },
+        {
+          "group": "priest",
+          "group_de": "Priester",
           "spec": "Disziplin",
           "type": "change",
           "spell": "Erneuerte Hoffnung",
@@ -816,17 +827,6 @@
           "spell": "Krankheit aufheben",
           "source": "Can now be cast in Shadowform.",
           "text": "Kann jetzt in Schattenform gewirkt werden.",
-          "translated": true,
-          "engine": "deepl"
-        },
-        {
-          "group": "priest",
-          "group_de": "Priester",
-          "spec": "Heilig",
-          "type": "buff",
-          "spell": "Verbindende Heilung",
-          "source": "Leaves the talent tree: trainers teach rank 1 at level 25 (236 to 284, 155 Mana), and ranks 2 to 6 as before.",
-          "text": "Wird aus dem Talentbaum entfernt: Trainer unterrichten Rang 1 ab Stufe 25 (236 bis 284, 155 Mana) und die Ränge 2 bis 6 wie bisher.",
           "translated": true,
           "engine": "deepl"
         },
@@ -1652,7 +1652,7 @@
         {
           "group": "shaman",
           "group_de": "Schamane",
-          "spec": "Elementarkampf",
+          "spec": "Allgemein",
           "type": "nerf",
           "spell": "Lavaeruption",
           "source": "Rang 3 verursacht an einem Ziel mit Flammenschock 20 % mehr Schaden statt 54 %, wie die anderen Ränge.",
@@ -2347,6 +2347,26 @@
         {
           "group": "shaman",
           "group_de": "Schamane",
+          "spec": "Allgemein",
+          "type": "change",
+          "spell": "Lavaeruption",
+          "source": "Der erste Rang wird auf Stufe 30 erlernt (vorher 40) und kostet 135 Mana (vorher 165), für 114 bis 145 Schaden (vorher 150 bis 192).Nicht in Blizzards Notizen, im Spiel gefunden.",
+          "text": "Der erste Rang wird auf Stufe 30 erlernt (vorher 40) und kostet 135 Mana (vorher 165), für 114 bis 145 Schaden (vorher 150 bis 192).Nicht in Blizzards Notizen, im Spiel gefunden.",
+          "translated": false
+        },
+        {
+          "group": "shaman",
+          "group_de": "Schamane",
+          "spec": "Allgemein",
+          "type": "change",
+          "spell": "Lavaeruption",
+          "source": "verschoben: Rückt von Reihe 7 in Reihe 5, als Goldmedaillen-Talent für 21 Punkte, ohne Voraussetzung und mit einem neuen Rang 4.",
+          "text": "verschoben: Rückt von Reihe 7 in Reihe 5, als Goldmedaillen-Talent für 21 Punkte, ohne Voraussetzung und mit einem neuen Rang 4.",
+          "translated": false
+        },
+        {
+          "group": "shaman",
+          "group_de": "Schamane",
           "spec": "Elementarkampf",
           "type": "buff",
           "spell": "Kettenblitzschlag",
@@ -2402,26 +2422,6 @@
           "spell": "Elementarfuror",
           "source": "Benötigt Blitzschlag-Überladung, die Elementare Geschwindigkeit benötigt. Elementare Geschwindigkeit rückt in Reihe 2, Schutz der Elemente in Reihe 3, Erdgebunden wird das Goldmedaillen-Talent für 16 Punkte in Reihe 4, und Ruf des Donners entfällt.",
           "text": "Benötigt Blitzschlag-Überladung, die Elementare Geschwindigkeit benötigt. Elementare Geschwindigkeit rückt in Reihe 2, Schutz der Elemente in Reihe 3, Erdgebunden wird das Goldmedaillen-Talent für 16 Punkte in Reihe 4, und Ruf des Donners entfällt.",
-          "translated": false
-        },
-        {
-          "group": "shaman",
-          "group_de": "Schamane",
-          "spec": "Elementarkampf",
-          "type": "change",
-          "spell": "Lavaeruption",
-          "source": "Der erste Rang wird auf Stufe 30 erlernt (vorher 40) und kostet 135 Mana (vorher 165), für 114 bis 145 Schaden (vorher 150 bis 192).Nicht in Blizzards Notizen, im Spiel gefunden.",
-          "text": "Der erste Rang wird auf Stufe 30 erlernt (vorher 40) und kostet 135 Mana (vorher 165), für 114 bis 145 Schaden (vorher 150 bis 192).Nicht in Blizzards Notizen, im Spiel gefunden.",
-          "translated": false
-        },
-        {
-          "group": "shaman",
-          "group_de": "Schamane",
-          "spec": "Elementarkampf",
-          "type": "change",
-          "spell": "Lavaeruption",
-          "source": "verschoben: Rückt von Reihe 7 in Reihe 5, als Goldmedaillen-Talent für 21 Punkte, ohne Voraussetzung und mit einem neuen Rang 4.",
-          "text": "verschoben: Rückt von Reihe 7 in Reihe 5, als Goldmedaillen-Talent für 21 Punkte, ohne Voraussetzung und mit einem neuen Rang 4.",
           "translated": false
         },
         {
@@ -3538,6 +3538,16 @@
         {
           "group": "warrior",
           "group_de": "Krieger",
+          "spec": "Allgemein",
+          "type": "buff",
+          "spell": "Wütende Schläge",
+          "source": "Senkt die Wutkosten von Wirbelwind wie von Spalten, um 3 statt 2. Wirbelwind trifft jetzt auch ohne dieses Talent mit beiden Waffen.",
+          "text": "Senkt die Wutkosten von Wirbelwind wie von Spalten, um 3 statt 2. Wirbelwind trifft jetzt auch ohne dieses Talent mit beiden Waffen.",
+          "translated": false
+        },
+        {
+          "group": "warrior",
+          "group_de": "Krieger",
           "spec": "Waffen",
           "type": "buff",
           "spell": "Verwunden",
@@ -3603,16 +3613,6 @@
           "spell": "Wirbelwind",
           "source": "Trifft jetzt mit beiden Waffen, auch ohne Wütende Schläge.",
           "text": "Trifft jetzt mit beiden Waffen, auch ohne Wütende Schläge.",
-          "translated": false
-        },
-        {
-          "group": "warrior",
-          "group_de": "Krieger",
-          "spec": "Furor",
-          "type": "buff",
-          "spell": "Wütende Schläge",
-          "source": "Senkt die Wutkosten von Wirbelwind wie von Spalten, um 3 statt 2. Wirbelwind trifft jetzt auch ohne dieses Talent mit beiden Waffen.",
-          "text": "Senkt die Wutkosten von Wirbelwind wie von Spalten, um 3 statt 2. Wirbelwind trifft jetzt auch ohne dieses Talent mit beiden Waffen.",
           "translated": false
         },
         {
@@ -3828,7 +3828,7 @@
         {
           "group": "paladin",
           "group_de": "Paladin",
-          "spec": "Allgemein",
+          "spec": "Schutz",
           "type": "buff",
           "spell": "Heiliger Schild",
           "source": "30 % Blockchance statt 20 %.",
@@ -4442,7 +4442,7 @@
         {
           "group": "shaman",
           "group_de": "Schamane",
-          "spec": "Elementarkampf",
+          "spec": "Allgemein",
           "type": "buff",
           "spell": "Lavaeruption",
           "source": "Mehr Schaden auf beiden Rängen.",
@@ -4699,5 +4699,5 @@
       "changes": []
     }
   ],
-  "fetched_at": "2026-11-04T01:19:04+00:00"
+  "fetched_at": "2026-11-04T09:06:13+00:00"
 }
