@@ -8,10 +8,10 @@
       "title": "Build 1.60.1.70755, 3. November 2026",
       "date": "2026-11-03",
       "kind": "build",
-      "summary": "A technical build: its game data is the same as the 2026-11-02 build's (1.60.1.70753). Talents, spells and items did not change.",
+      "summary": "Ein technischer Build: Seine Spieldaten sind die gleichen wie die des Builds vom 02.11.2026 (1.60.1.70753). Talente, Zauber und Gegenstände haben sich nicht geändert.",
       "source_summary": "A technical build: its game data is the same as the 2026-11-02 build's (1.60.1.70753). Talents, spells and items did not change.",
-      "translated": false,
-      "engine": null,
+      "translated": true,
+      "engine": "google",
       "link": "https://foreverchanges.pro/de/patch-notes#1.60.1.70755",
       "changes": []
     },
@@ -4699,5 +4699,5 @@
       "changes": []
     }
   ],
-  "fetched_at": "2026-11-03T20:58:26+00:00"
+  "fetched_at": "2026-11-04T01:19:04+00:00"
 }
