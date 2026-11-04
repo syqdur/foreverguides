@@ -1,3 +1,17 @@
+// Sicheres Scrollen innerhalb von .content-panel ohne window-Verschiebung
+function scrollElementIntoPanel(el, block = 'start') {
+  const panel = document.querySelector('.content-panel');
+  if (!panel || !el) return;
+  const panelRect = panel.getBoundingClientRect();
+  const elRect = el.getBoundingClientRect();
+  let targetTop = panel.scrollTop + (elRect.top - panelRect.top);
+  if (block === 'center') {
+    targetTop -= (panel.clientHeight / 2) - (el.clientHeight / 2);
+  } else {
+    targetTop -= 25; // Etwas Luft nach oben
+  }
+  panel.scrollTo({ top: Math.max(0, targetTop), behavior: 'smooth' });
+}
 // Alte Direktlinks auf zusammengelegte Seiten umleiten
 const PANE_ALIASES = { 'tab-timeline': 'tab-leveling', 'tab-questing': 'tab-leveling' };
 
@@ -43,8 +57,10 @@ function initTabs() {
       if (menuBtn) menuBtn.classList.remove('open');
     }
 
-    if (contentPanel && !keepScroll) contentPanel.scrollTo({ top: 0, behavior: 'smooth' });
+    if (contentPanel && !keepScroll) contentPanel.scrollTo({ top: 0, behavior: 'auto' });
     window.scrollTo(0, 0);
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
     document.body.scrollLeft = 0;
     document.documentElement.scrollLeft = 0;
     document.dispatchEvent(new CustomEvent('pagechange'));
@@ -77,7 +93,15 @@ function initTabs() {
   // Direktlinks wie #tab-ranking oder #tab-mage:talents
   const initial = location.hash.length > 1 ? location.hash.slice(1) : (document.querySelector('.tab-pane.active') || {}).id;
   showTab(initial, false, true);
-  window.addEventListener('hashchange', () => showTab(location.hash.slice(1), false));
+  window.addEventListener('hashchange', () => {
+    showTab(location.hash.slice(1), false);
+    window.scrollTo(0, 0);
+    document.documentElement.scrollTop = 0;
+  });
+  window.addEventListener('load', () => {
+    window.scrollTo(0, 0);
+    document.documentElement.scrollTop = 0;
+  });
 }
 
 // Menü-Markierung: Seite oder Seite:Unter-Reiter (z. B. tab-forever:zones)
@@ -205,7 +229,7 @@ function initToc() {
       a.textContent = h.textContent.trim();
       a.addEventListener('click', e => {
         e.preventDefault();
-        h.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        scrollElementIntoPanel(h, 'start');
       });
       toc.appendChild(a);
     });
@@ -252,7 +276,7 @@ function initSearch() {
     const sub = hit.el.closest('.subtab-panel');
     showTab(hit.pane.id + (sub ? ':' + sub.dataset.subtab : ''), true, true);
     setTimeout(() => {
-      hit.el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      scrollElementIntoPanel(hit.el, 'center');
       hit.el.classList.add('search-flash');
       setTimeout(() => hit.el.classList.remove('search-flash'), 1800);
     }, 60);
