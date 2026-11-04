@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Pixelify+Sans:wght@500;600;700&family=Inter:wght@400;500;600;700&family=VT323&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=21">
+  <link rel="stylesheet" href="style.css?v=22">
 </head>
 <body class="dark-theme">
 
@@ -38,78 +38,158 @@
       </div>
     </div>
   </header>
+  <!-- Top Announcement Bar: Beta Disclaimer + Levelguide Download -->
+  <div class="top-announcement-bar">
+    <div class="top-announcement-content">
+      <div class="announcement-left">
+        <span class="announcement-icon">&#9888;&#65039;</span>
+        <span class="announcement-text"><strong>Launch- &amp; Patch-Status:</strong> Globaler Release am 5. Nov (00:00 CET). Alle Level-Guides, Zelt-Mechaniken &amp; Pre-Launch Balance-Patches aktualisiert.</span>
+      </div>
+      <div class="announcement-right">
+        <span class="rxp-pill-tag">&#128506;&#65039; In-Game Levelguide</span>
+        <a href="https://github.com/syqdur/foreverguides/blob/main/RXPGuides.zip" target="_blank" class="rxp-download-pill">
+          <span>&#128229;</span> RXPGuides.zip (GitHub) &#8599;
+        </a>
+      </div>
+    </div>
+  </div>
+
   <!-- Main Container: Sidebar + Content -->
   <div class="layout-wrapper">
     <aside class="sidebar" id="sidebarNav">
       <div class="sidebar-search">
-        <input id="siteSearch" type="search" placeholder="Suchen …  (Strg+K)" autocomplete="off" aria-label="Guides durchsuchen">
+        <input id="siteSearch" type="search" placeholder="Suchen &hellip; (Strg+K)" autocomplete="off" aria-label="Guides durchsuchen">
         <div class="search-results" id="searchResults" hidden></div>
       </div>
       <div class="sidebar-scrollable">
-        <nav class="nav-areas" aria-label="Bereiche">
-        <div class="nav-area single" data-area="start">
-          <button class="nav-area-btn" data-area-target="tab-home"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_book_11.jpg" class="wow-icon" alt=""> <span>Start</span></button>
-          <div class="nav-sub">
-            <button class="nav-tab" data-target="tab-home"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_book_11.jpg" class="wow-icon" alt=""> Vorwort & Launch</button>
-          </div>
+        <div class="nav-group">
+          <span class="nav-heading">Allgemeine Planung</span>
+          <button class="nav-tab active" data-target="tab-home">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_book_11.jpg" class="wow-icon" alt=""> Start (Launch-Info)
+          </button>
+          <button class="nav-tab" data-target="tab-leveling">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_map02.jpg" class="wow-icon" alt=""> Stufen-Fahrplan (1&ndash;60)
+          </button>
+          <button class="nav-tab" data-target="tab-fomo">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/spell_holy_blessingofprotection.jpg" class="wow-icon" alt=""> Anti-FOMO Guide <span class="nav-new badge-green">NEU</span>
+          </button>
+          <button class="nav-tab" data-target="tab-gold">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_coin_02.jpg" class="wow-icon" alt=""> Mount-Gold Guide (Stufe 40)
+          </button>
+          <button class="nav-tab" data-target="tab-rules">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/spell_lightning_lightningbolt01.jpg" class="wow-icon" alt=""> Wichtige Grundlagen
+          </button>
+          <button class="nav-tab" data-target="tab-addons">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_enggizmos_17.jpg" class="wow-icon" alt=""> Addons &amp; UI-Codes
+          </button>
+          <button class="nav-tab" data-target="tab-sleepingbag">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_bag_10.jpg" class="wow-icon" alt=""> Schlafsack-Route (Lv 14) <span class="nav-new badge-green">RESTED</span>
+          </button>
+          <button class="nav-tab" data-target="tab-buffs">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_food_15.jpg" class="wow-icon" alt=""> Buff-Food, Zelte &amp; Camps
+          </button>
         </div>
-        <div class="nav-area single" data-area="leveling">
-          <button class="nav-area-btn" data-area-target="tab-leveling"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_map02.jpg" class="wow-icon" alt=""> <span>Leveling 1–60</span></button>
-          <div class="nav-sub">
-            <button class="nav-tab" data-target="tab-leveling"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_map02.jpg" class="wow-icon" alt=""> Fahrplan & Route</button>
-          </div>
+
+        <div class="nav-group">
+          <span class="nav-heading">Neu in WoW Forever</span>
+          <button class="nav-tab" data-target="tab-forever:overview">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/spell_nature_cyclone.jpg" class="wow-icon" alt=""> &Uuml;berblick <span class="nav-new badge-green">NEU</span>
+          </button>
+          <button class="nav-tab" data-target="tab-forever:zones">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_map02.jpg" class="wow-icon" alt=""> Zonen &amp; Reisen <span class="nav-new badge-green">NEU</span>
+          </button>
+          <button class="nav-tab" data-target="tab-forever:dungeons">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_head_dragon_black.jpg" class="wow-icon" alt=""> Dungeons &amp; Raids
+          </button>
+          <button class="nav-tab" data-target="tab-forever:races">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/achievement_character_orc_male.jpg" class="wow-icon" alt=""> V&ouml;lker (Skyborne) <span class="nav-new badge-green">NEU</span>
+          </button>
+          <button class="nav-tab" data-target="tab-forever:classes">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/achievement_general.jpg" class="wow-icon" alt=""> Klassen-Anpassungen
+          </button>
+          <button class="nav-tab" data-target="tab-forever:quests">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_axe_09.jpg" class="wow-icon" alt=""> Klassenquests <span class="nav-new badge-green">NEU</span>
+          </button>
+          <button class="nav-tab" data-target="tab-forever:systems">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_gear_01.jpg" class="wow-icon" alt=""> Systeme &amp; Berufe
+          </button>
+          <button class="nav-tab" data-target="tab-forever:pvp">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_bannerpvp_01.jpg" class="wow-icon" alt=""> PvP
+          </button>
         </div>
-        <div class="nav-area" data-area="classes">
-          <button class="nav-area-btn" data-area-target="tab-classes"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_trophy_argent.jpg" class="wow-icon" alt=""> <span>Klassen</span><span class=nav-caret>▸</span></button>
-          <div class="nav-sub">
-            <button class="nav-tab" data-target="tab-classes"><img src="https://wow.zamimg.com/images/wow/icons/medium/achievement_general.jpg" class="wow-icon" alt=""> Alle Klassen</button>
-            <button class="nav-tab" data-target="tab-ranking"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_trophy_argent.jpg" class="wow-icon" alt=""> Ranking <span class="nav-new badge-gold">TIERLIST</span></button>
-            <button class="nav-tab" data-target="tab-hunter"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_hunter.jpg" class="wow-icon" alt=""> Jäger</button>
-            <button class="nav-tab" data-target="tab-warlock"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_warlock.jpg" class="wow-icon" alt=""> Hexenmeister</button>
-            <button class="nav-tab" data-target="tab-paladin"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_paladin.jpg" class="wow-icon" alt=""> Paladin <span class="nav-new badge-green">NEU</span></button>
-            <button class="nav-tab" data-target="tab-mage"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_mage.jpg" class="wow-icon" alt=""> Magier</button>
-            <button class="nav-tab" data-target="tab-shaman"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_shaman.jpg" class="wow-icon" alt=""> Schamane</button>
-            <button class="nav-tab" data-target="tab-druid"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_druid.jpg" class="wow-icon" alt=""> Druide</button>
-            <button class="nav-tab" data-target="tab-rogue"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_rogue.jpg" class="wow-icon" alt=""> Schurke</button>
-            <button class="nav-tab" data-target="tab-priest"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_priest.jpg" class="wow-icon" alt=""> Priester</button>
-            <button class="nav-tab" data-target="tab-warrior"><img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_warrior.jpg" class="wow-icon" alt=""> Krieger</button>
-          </div>
+
+        <div class="nav-group">
+          <span class="nav-heading">Klassen-Leitf&auml;den (Leveling)</span>
+          <button class="nav-tab" data-target="tab-ranking">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_trophy_argent.jpg" class="wow-icon" alt=""> Ranking &amp; Tier-List <span class="nav-new badge-gold">TIERLIST</span>
+          </button>
+          <button class="nav-tab" data-target="tab-classes">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/achievement_general.jpg" class="wow-icon" alt=""> Alle Klassen (&Uuml;bersicht)
+          </button>
+          <button class="nav-tab" data-target="tab-paladin">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_paladin.jpg" class="wow-icon" alt=""> Paladin (Untot) <span class="nav-new badge-green">NEU</span>
+          </button>
+          <button class="nav-tab" data-target="tab-hunter">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_hunter.jpg" class="wow-icon" alt=""> J&auml;ger (Hunter)
+          </button>
+          <button class="nav-tab" data-target="tab-warlock">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_warlock.jpg" class="wow-icon" alt=""> Hexenmeister (Warlock)
+          </button>
+          <button class="nav-tab" data-target="tab-mage">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_mage.jpg" class="wow-icon" alt=""> Magier (Mage)
+          </button>
+          <button class="nav-tab" data-target="tab-shaman">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_shaman.jpg" class="wow-icon" alt=""> Schamane (Shaman)
+          </button>
+          <button class="nav-tab" data-target="tab-druid">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_druid.jpg" class="wow-icon" alt=""> Druide (Druid)
+          </button>
+          <button class="nav-tab" data-target="tab-rogue">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_rogue.jpg" class="wow-icon" alt=""> Schurke (Rogue)
+          </button>
+          <button class="nav-tab" data-target="tab-priest">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_priest.jpg" class="wow-icon" alt=""> Priester (Priest)
+          </button>
+          <button class="nav-tab" data-target="tab-warrior">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/classicon_warrior.jpg" class="wow-icon" alt=""> Krieger (Warrior)
+          </button>
         </div>
-        <div class="nav-area" data-area="forever">
-          <button class="nav-area-btn" data-area-target="tab-forever"><img src="https://wow.zamimg.com/images/wow/icons/medium/spell_nature_cyclone.jpg" class="wow-icon" alt=""> <span>Neu in Forever</span><span class="nav-new badge-green">NEU</span><span class=nav-caret>▸</span></button>
-          <div class="nav-sub">
-            <button class="nav-tab" data-target="tab-forever:overview"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_book_11.jpg" class="wow-icon" alt=""> Überblick <span class="nav-new badge-green">NEU</span></button>
-            <button class="nav-tab" data-target="tab-forever:zones"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_map02.jpg" class="wow-icon" alt=""> Zonen & Reisen</button>
-            <button class="nav-tab" data-target="tab-forever:dungeons"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_head_dragon_black.jpg" class="wow-icon" alt=""> Dungeons & Raids</button>
-            <button class="nav-tab" data-target="tab-forever:races"><img src="https://wow.zamimg.com/images/wow/icons/medium/achievement_character_orc_male.jpg" class="wow-icon" alt=""> Völker <span class="nav-new badge-green">NEU</span></button>
-            <button class="nav-tab" data-target="tab-forever:classes"><img src="https://wow.zamimg.com/images/wow/icons/medium/achievement_general.jpg" class="wow-icon" alt=""> Klassen</button>
-            <button class="nav-tab" data-target="tab-forever:quests"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_axe_09.jpg" class="wow-icon" alt=""> Klassenquests <span class="nav-new badge-green">NEU</span></button>
-            <button class="nav-tab" data-target="tab-forever:systems"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_gear_01.jpg" class="wow-icon" alt=""> Systeme & Berufe</button>
-            <button class="nav-tab" data-target="tab-forever:pvp"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_bannerpvp_01.jpg" class="wow-icon" alt=""> PvP</button>
-          </div>
+
+        <div class="nav-group">
+          <span class="nav-heading">Patches &amp; Changelog</span>
+          <button class="nav-tab" data-target="tab-news">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_scroll_03.jpg" class="wow-icon" alt=""> Was ist neu (Launch-Patches) <span class="nav-new badge-green">2. NOV</span>
+          </button>
+          <button class="nav-tab" data-target="tab-patchnotes">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_pocketwatch_01.jpg" class="wow-icon" alt=""> Live-Patchnotes <span class="nav-new badge-red">LIVE</span>
+          </button>
+          <button class="nav-tab" data-target="tab-changelog">
+            <img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_note_01.jpg" class="wow-icon" alt=""> Seiten-Changelog <span class="nav-new badge-gold">v3.5</span>
+          </button>
         </div>
-        <div class="nav-area" data-area="wissen">
-          <button class="nav-area-btn" data-area-target="tab-rules"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_book_09.jpg" class="wow-icon" alt=""> <span>Wissen</span><span class=nav-caret>▸</span></button>
-          <div class="nav-sub">
-            <button class="nav-tab" data-target="tab-rules"><img src="https://wow.zamimg.com/images/wow/icons/medium/spell_lightning_lightningbolt01.jpg" class="wow-icon" alt=""> Grundlagen</button>
-            <button class="nav-tab" data-target="tab-buffs"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_food_15.jpg" class="wow-icon" alt=""> Camps & Buffs</button>
-            <button class="nav-tab" data-target="tab-sleepingbag"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_bag_10.jpg" class="wow-icon" alt=""> Schlafsack (ab 14) <span class="nav-new badge-green">RESTED</span></button>
-            <button class="nav-tab" data-target="tab-gold"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_coin_02.jpg" class="wow-icon" alt=""> Reit-Gold (100 G)</button>
-            <button class="nav-tab" data-target="tab-addons"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_enggizmos_17.jpg" class="wow-icon" alt=""> Addons & UI</button>
+      </div>
+
+      <!-- Sidebar Bottom: Fixed Discord Guild Box (Unten Links) -->
+      <div class="sidebar-footer">
+        <div class="sidebar-discord-box">
+          <div class="discord-box-header">
+            <div class="discord-icon-badge">
+              <svg class="discord-svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+              </svg>
+            </div>
+            <div class="discord-info">
+              <span class="discord-guild-tag">&lt;TEH CVLT&gt;</span>
+              <span class="discord-headline">Gilde beitreten</span>
+            </div>
           </div>
+          <a href="https://discord.gg/tehcvlt" target="_blank" rel="noopener noreferrer" class="discord-cta-btn" title="Gilden-Discord beitreten">
+            <span>discord.gg/tehcvlt</span>
+            <span class="arrow">&#8599;</span>
+          </a>
         </div>
-        <div class="nav-area" data-area="patches">
-          <button class="nav-area-btn" data-area-target="tab-patchnotes"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_pocketwatch_01.jpg" class="wow-icon" alt=""> <span>Patches</span><span class="nav-new badge-orange badge-pulse">UPDATE</span><span class=nav-caret>▸</span></button>
-          <div class="nav-sub">
-            <button class="nav-tab" data-target="tab-patchnotes"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_pocketwatch_01.jpg" class="wow-icon" alt=""> Live-Patchnotes <span class="nav-new badge-red">LIVE</span></button>
-            <button class="nav-tab" data-target="tab-news"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_scroll_03.jpg" class="wow-icon" alt=""> Was ist neu <span class="nav-new badge-green">2. NOV</span></button>
-            <button class="nav-tab" data-target="tab-changelog"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_note_01.jpg" class="wow-icon" alt=""> Seiten-Changelog <span class="nav-new badge-gold">v3.4</span></button>
-          </div>
-        </div>
-        </nav>
       </div>
     </aside>
-
     <!-- Main Content Area -->
     <main class="content-panel">
 
@@ -155,6 +235,7 @@
           <h3>Schnellstart</h3>
           <div class="quick-links">
             <button class="quick-link" data-goto="tab-classes"><img src="https://wow.zamimg.com/images/wow/icons/medium/achievement_general.jpg" class="wow-icon" alt=""> Welche Klasse spielen?</button>
+                        <button class="quick-link" data-goto="tab-fomo"><img src="https://wow.zamimg.com/images/wow/icons/medium/spell_holy_blessingofprotection.jpg" class="wow-icon" alt=""> Anti-FOMO: Kein Stress</button>
             <button class="quick-link" data-goto="tab-leveling"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_map02.jpg" class="wow-icon" alt=""> Leveling 1–60</button>
             <button class="quick-link" data-goto="tab-buffs"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_food_15.jpg" class="wow-icon" alt=""> Camp- & XP-Routine</button>
             <button class="quick-link" data-goto="tab-gold"><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_coin_02.jpg" class="wow-icon" alt=""> 100 Gold fürs Reittier</button>
@@ -1251,7 +1332,209 @@
         </div>
       </section>
 
-      <!-- ================= MOUNT-GOLD GUIDE (STUFE 40) ================= -->
+              <!-- ================= ANTI-FOMO & CHILL-GUIDE ================= -->
+        <section id="tab-fomo" class="tab-pane">
+          <div class="pane-header">
+            <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/spell_holy_blessingofprotection.jpg" class="wow-icon large" alt="Anti-FOMO"> Anti-FOMO &amp; Chill-Guide: Entspannt durch den Launch</h2>
+            <p class="pane-subtitle">Warum du absolut nichts verpasst, warum Schlaf mehr EP bringt als Grind und wie du den WoW Forever Serverstart mit maximalem Spa&szlig; und null Stress erlebst.</p>
+          </div>
+
+          <!-- Hero Highlight Card -->
+          <div class="card highlight-border" style="margin-bottom: 2rem;">
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; flex-wrap: wrap;">
+              <span class="nav-new badge-green" style="font-size: 0.85rem; padding: 4px 8px;">LEITFADEN F&Uuml;R DEN KOPF</span>
+              <span style="color: var(--gold); font-family: var(--font-pixel); font-size: 0.85rem;">KEIN STRESS &bull; KEIN GRIND-ZWANG &bull; 100% GILDEN-CHILL</span>
+            </div>
+            <h3 style="color: var(--gold); margin-bottom: 0.75rem;">Atme tief durch: Du bist nicht zu sp&auml;t. Du verpasst gar nichts.</h3>
+            <p>Jeder Classic- und Fresh-Launch l&ouml;st denselben psychologischen Reflex aus: Twitch-Streamer streamen 24 Stunden am St&uuml;ck, im Discord prahlen die ersten Leute mit Stufe 25 nach der ersten Nacht, und pl&ouml;tzlich schleicht sich dieses nagende Gef&uuml;hl ein: <em>&bdquo;Ich falle zur&uuml;ck. Wenn ich jetzt schlafe oder zur Arbeit gehe, verliere ich den Anschluss.&ldquo;</em></p>
+            <p><strong>Die Wahrheit: Das ist eine v&ouml;llige Illusion.</strong> World of Warcraft: Forever ist kein 100-Meter-Sprint, sondern eine Langstrecke &uuml;ber viele Monate und Jahre. Nach vier Wochen fragt kein Mensch mehr, wer am Launch-Dienstag um 04:00 Uhr morgens auf Stufe 14 war. Wer sich stresst, brennt in Woche 2 v&ouml;llig aus. Wer entspannt spielt, hat Spa&szlig;, erreicht Stufe 60 und raidet monatelang mit Freunden.</p>
+          </div>
+
+          <!-- Kapitel 1: Die 6 gro&szlig;en FOMO-Mythen -->
+          <div class="guide-chapter">
+            <h3>Die 6 gro&szlig;en Launch-Mythen im Reality-Check</h3>
+            <div class="clean-grid">
+              <div class="card">
+                <h4 style="color: #ff6b6b; margin-bottom: 0.5rem;">&#10060; Mythos 1: &bdquo;Ich muss First Wave 60 sein, um raiden zu k&ouml;nnen.&ldquo;</h4>
+                <div class="notice green" style="padding: 0.75rem; margin-bottom: 0.75rem;">
+                  <strong>&#9989; Die Realit&auml;t:</strong> Phase 1 l&auml;uft monatelang. Molten Core und Onyxia werden jede Woche zur&uuml;ckgesetzt.
+                </div>
+                <p>Selbst die schnellsten Gilden k&ouml;nnen Raid-Instanzen nur einmal pro ID leeren. Auch &lt;TEH CVLT&gt; baut den Raid-Kader &uuml;ber 4 bis 8 Wochen kontinuierlich auf. Wenn du mit 3&ndash;5 Wochen Verz&ouml;gerung 60 wirst, profitierst du von eingespielten Gruppen, g&uuml;nstigeren Verzauberungen und wirst mit offenen Armen empfangen.</p>
+              </div>
+
+              <div class="card">
+                <h4 style="color: #ff6b6b; margin-bottom: 0.5rem;">&#10060; Mythos 2: &bdquo;Die Launch-Nacht durchmachen spart Zeit.&ldquo;</h4>
+                <div class="notice green" style="padding: 0.75rem; margin-bottom: 0.75rem;">
+                  <strong>&#9989; Die Realit&auml;t:</strong> Schlafentzug kostet mehr Zeit, als er bringt.
+                </div>
+                <p>Zwischen 00:00 und 05:00 Uhr morgens k&auml;mpfst du mit Server-Warteschlangen, m&ouml;glichen Hotfixes, Lag und 40 Spielern, die sich um dieselben Start-Eber kloppen. Wer sich um 23:00 Uhr ins Bett legt, 8 Stunden schl&auml;ft und morgens um 08:00 Uhr mit Kaffee einloggt, findet leere Zonen vor, klickt Quests in Sekunden weg und levelt mit vollen Kr&auml;ften doppelt so schnell.</p>
+              </div>
+
+              <div class="card">
+                <h4 style="color: #ff6b6b; margin-bottom: 0.5rem;">&#10060; Mythos 3: &bdquo;Die Wirtschaft rennt mir davon und ich werde arm.&ldquo;</h4>
+                <div class="notice green" style="padding: 0.75rem; margin-bottom: 0.75rem;">
+                  <strong>&#9989; Die Realit&auml;t:</strong> In den ersten 10 Tagen hat niemand Gold.
+                </div>
+                <p>Am Anfang hat kein Spieler fl&uuml;ssiges Gold. Seltene Rezepte und Materialien werden im Auktionshaus f&uuml;r ein paar Silber verramscht. Der echte Goldfluss beginnt erst in Woche 3 und 4, wenn die ersten 60er &Uuml;berschuss haben und Alchemie-Tr&auml;nke, Erze und Leder f&uuml;r Raids aufkaufen. Dein gesammeltes Kupfer, Zinn und Leder ist sp&auml;ter viel mehr wert!</p>
+              </div>
+
+              <div class="card">
+                <h4 style="color: #ff6b6b; margin-bottom: 0.5rem;">&#10060; Mythos 4: &bdquo;Ich muss jede Quest optimieren (Speedrun-Zwang).&ldquo;</h4>
+                <div class="notice green" style="padding: 0.75rem; margin-bottom: 0.75rem;">
+                  <strong>&#9989; Die Realit&auml;t:</strong> Guides sind Kompasse, keine Gef&auml;ngnisse.
+                </div>
+                <p>Levelguide-Addons wie RXP Guides zeigen den theoretisch schnellsten Pfad. Wenn aber 15 Leute vor einem Boss-Mob warten oder eine Quest dich nervt: <strong>Brich sie sofort ab!</strong> Drei Mobs am Wegesrand t&ouml;ten bringt genau so viel Erfahrung wie 20 Minuten Warten auf einen Quest-Respawn.</p>
+              </div>
+
+              <div class="card">
+                <h4 style="color: #ff6b6b; margin-bottom: 0.5rem;">&#10060; Mythos 5: &bdquo;Dungeon-Spamming ist Pflicht.&ldquo;</h4>
+                <div class="notice green" style="padding: 0.75rem; margin-bottom: 0.75rem;">
+                  <strong>&#9989; Die Realit&auml;t:</strong> In WoW Forever wurden Dungeon-Quests um 50% XP generft.
+                </div>
+                <p>Seit den Beta-Anpassungen geben Dungeon-Quests nur noch die H&auml;lfte der fr&uuml;heren Bonus-XP. Jede Instanz <strong>einmal</strong> f&uuml;r alle Quests und blaue Waffen zu besuchen ist genial &ndash; stundenlanges Spammen ist mental erm&uuml;dend und &uuml;berhaupt nicht n&ouml;tig.</p>
+              </div>
+
+              <div class="card">
+                <h4 style="color: #ff6b6b; margin-bottom: 0.5rem;">&#10060; Mythos 6: &bdquo;Wenn ich auslogge, verliere ich meinen Fortschritt.&ldquo;</h4>
+                <div class="notice green" style="padding: 0.75rem; margin-bottom: 0.75rem;">
+                  <strong>&#9989; Die Realit&auml;t:</strong> Rested XP l&auml;dt sich w&auml;hrenddessen kontinuierlich auf!
+                </div>
+                <p>Wer ausloggt, verliert keine Zeit, sondern sammelt wertvolle <strong>200% Erholungs-XP</strong>. Das Spiel belohnt deine Auszeit direkt bei deinem n&auml;chsten Login mit doppelten Kill-Erfahrungspunkten.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kapitel 2: Mechaniken, die FÃœR dich arbeiten -->
+          <div class="guide-chapter">
+            <h3>Die 3 Spielmechaniken, die f&uuml;r dein Wohlbefinden arbeiten</h3>
+            <div class="timeline-container">
+
+              <div class="timeline-block highlight-block">
+                <div class="level-indicator" style="background:#1b4332; border-color:#2d6a4f; color:#74c69d;">
+                  RESTED XP<br><span>+100% Kill-Bonus</span>
+                </div>
+                <div class="timeline-body">
+                  <h4 style="color: #74c69d;">1. Der eingebaute Aufhol-Mechanismus: Erholungs-XP</h4>
+                  <p>WoW hat das Erholungssystem genau f&uuml;r Berufst&auml;tige und Gelegenheitsspieler entwickelt. Wenn du deinen Charakter in einem Gasthaus, einer Hauptstadt oder mit dem Gem&uuml;tlichen Schlafsack ausloggst, f&uuml;llt sich der XP-Balken blau.</p>
+                  <ul>
+                    <li><strong>Der Effekt:</strong> F&uuml;r jeden Mob-Kill erh&auml;ltst du <strong>doppelte Erfahrung (200%)</strong>.</li>
+                    <li><strong>Die Mathematik:</strong> 1 Tag Auszeit = ca. 1 bis 1,5 Stunden Leveln mit maximalem Doppel-Tempo. Du holst die Pause beim n&auml;chsten Einloggen in Rekordzeit wieder auf!</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="timeline-block highlight-block">
+                <div class="level-indicator" style="background:#2b1d42; border-color:#5c3d8d; color:#c77dff;">
+                  ANTI-STAU<br><span>Freie Zonen</span>
+                </div>
+                <div class="timeline-body">
+                  <h4 style="color: #c77dff;">2. Der &bdquo;Gegen-den-Strom&ldquo;-Effekt</h4>
+                  <p>Die sogenannte &bdquo;Leveling-Welle&ldquo; w&auml;lzt sich wie ein Heuschreckenschwarm &uuml;ber die Server: Am Tag 1 im Brachland und Silberwald, an Tag 3 im Steinkrallengebirge, an Tag 5 im Schlingendorntal (Stranglethorn).</p>
+                  <ul>
+                    <li>Wenn du 2&ndash;3 Tage versetzt oder in gem&auml;chlichem Tempo l&auml;ufst, sind die Startgebiete und Quest-Spots <strong>v&ouml;llig frei</strong>.</li>
+                    <li>Kein Tag-Kampf, keine Respawn-Wartezeiten, keine Ganker im Schlingendorntal. Deine reale Spielzeit pro Level halbiert sich oft, weil du ungest&ouml;rt durchziehen kannst.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="timeline-block highlight-block">
+                <div class="level-indicator" style="background:#4a3800; border-color:#806000; color:#ffd166;">
+                  INSTANT-POST<br><span>Null Inventar-Stress</span>
+                </div>
+                <div class="timeline-body">
+                  <h4 style="color: #ffd166;">3. Sofortige Bankpost in WoW Forever</h4>
+                  <p>In Forever kommt Post zwischen eigenen Charakteren <strong>sofort ohne eine Minute Wartezeit</strong> an. Das eliminiert den gr&ouml;&szlig;ten Alltags-Frustfaktor beim Leveln: das st&auml;ndig volle Inventar.</p>
+                  <ul>
+                    <li>Stelle direkt auf Level 1 einen Bank-Alt in Orgrimmar oder Donnerfels zwischen Bank, Briefkasten und AH ab.</li>
+                    <li>Sobald deine Taschen voll sind: Zum n&auml;chsten Briefkasten laufen, alles (Erze, Kr&auml;uter, Stoffe, Greens) an deinen Bank-Twink mailen und sofort ohne Taschen-Mikromanagement weiterziehen.</li>
+                    <li>Kein st&auml;ndiges Gr&uuml;beln: <em>&bdquo;Was werfe ich jetzt weg?&ldquo;</em> &ndash; Dein Kopf bleibt v&ouml;llig frei.</li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Kapitel 3: Die konkreten Anti-Stress-Taktiken -->
+          <div class="guide-chapter">
+            <h3>Konkrete Taktiken f&uuml;r eine entspannte Launch-Woche</h3>
+            <div class="clean-grid">
+
+              <div class="card">
+                <h4>1. Die 60/5-Regel f&uuml;r K&ouml;rper &amp; Geist</h4>
+                <p>Stelle dir einen leisen Wecker oder Timer: Nach jeweils 60 Minuten stehst du f&uuml;r 5 Minuten auf. Geh ans Fenster, atme tief durch, trink ein gro&szlig;es Glas Wasser und dehne Schultern und Nacken. Du wirst merken, dass du nach Stunden noch viel wacher bist und weniger dumme Fehler (Mob-Pulls, Tode) machst.</p>
+              </div>
+
+              <div class="card">
+                <h4>2. Die &bdquo;3-Minuten-Spawn-Regel&ldquo;</h4>
+                <p>Kommst du an eine Quest und siehst 8 Spieler um den Spawn-Punkt eines Bosses stehen? <strong>Warte maximal 3 Minuten!</strong> Schlie&szlig;e dich kurz zur Gruppe zusammen. Klappt es nicht sofort: Quest abbrechen, weiterreiten. Zeit ist zu wertvoll, um sie mit Frust &uuml;ber Spawn-Camper zu vergeuden.</p>
+              </div>
+
+              <div class="card">
+                <h4>3. Schalte toxische Channels stumm</h4>
+                <p>Der globale <code>/allgemein</code> oder <code>/world</code> Chat zum Launch ist voll von Hektik, &bdquo;LFM GO GO GO&ldquo;, DPS-Meter-Geschrei und Spam. Geh in die Chat-Optionen und deaktiviere diese Kan&auml;le einfach f&uuml;r die ersten Tage. Konzentriere dich auf deinen Gilden-Chat und den Sprachkanal im Discord.</p>
+              </div>
+
+              <div class="card">
+                <h4>4. Kein Vergleich mit Fulltime-Streamern</h4>
+                <p>Twitch-Streamer spielen 16 bis 20 Stunden t&auml;glich, weil sie daf&uuml;r bezahlt werden &ndash; es ist ihr Vollzeit-Beruf mit Sponsoren und Zuschauern. Dein WoW-Account ist deine Freizeit, dein Ausgleich und dein Hobby. Wer Freizeit wie einen Job behandelt, verliert den Spa&szlig;.</p>
+              </div>
+
+              <div class="card">
+                <h4>5. Schlaf ist der st&auml;rkste Buff im Spiel</h4>
+                <p>Kein Trank, kein Fl&auml;schchen und kein Food-Buff &uuml;bertrifft 7 bis 8 Stunden erholsamen Schlaf. Nach einer durchgemachten Nacht sinkt deine Reaktionszeit um 50%, du verl&auml;ufst dich, stirbst an unn&ouml;tigen Mobs und verlierst die Geduld. Geh ins Bett, wenn du m&uuml;de bist!</p>
+              </div>
+
+              <div class="card">
+                <h4>6. Genie&szlig;e die Reise (Der Classic-Spirit)</h4>
+                <p>Classic zeichnet sich durch die lebendige Welt aus: Die Atmosph&auml;re im Silberwald, der Sonnenuntergang im Brachland, das gemeinsame &Uuml;berleben mit fremden Spielern am Wegesrand. Leveln ist kein l&auml;stiges &Uuml;bel vor dem &bdquo;echten Spiel&ldquo; &ndash; <strong>das Leveln IST das Spiel!</strong></p>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Kapitel 4: Die TEH CVLT Gilden-Charta -->
+          <div class="guide-chapter">
+            <h3>Die &lt;TEH CVLT&gt; Gilden-Philosophie (Unser Versprechen)</h3>
+            <div class="card highlight-border" style="background: rgba(88, 101, 242, 0.08); border-color: #5865f2;">
+              <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                <div style="font-size: 2.2rem; line-height: 1;">&#128737;&#65039;</div>
+                <div>
+                  <h4 style="color: #8ea1e1; margin-bottom: 0.5rem;">Du bist bei uns sicher: Kein Leistungsdruck, kein Rauswurf, keine Hektik</h4>
+                  <p>In der Gilde <strong>&lt;TEH CVLT&gt;</strong> haben wir eine glasklare Haltung zum Server-Start von WoW Forever:</p>
+                  <ul style="margin-top: 0.75rem;">
+                    <li><strong>Kein Level-Druck:</strong> Niemand wird gefragt, warum er nach 2 Wochen noch Stufe 28 ist. Jeder hat Familie, Beruf, Studium und ein reales Leben.</li>
+                    <li><strong>Dungeons mit Spa&szlig;:</strong> Wir laufen Instanzen gemeinsam, erkl&auml;ren Neulingen die Boss-Mechaniken und lassen uns Zeit f&uuml;r Quests und Loot &ndash; ohne toxische &bdquo;Gogo-Mentalit&auml;t&ldquo;.</li>
+                    <li><strong>Gegenseitige Hilfe:</strong> Brauchst du Hilfe bei deiner Hexenmeister-, Schamanen-, Paladin- oder Krieger-Klassenquest? Im Gilden-Chat und auf Discord findet sich immer jemand, der gerne mit anpackt.</li>
+                    <li><strong>Gemeinsam auf 60:</strong> Auch wer erst sp&auml;ter Stufe 60 erreicht, wird voll in die Raid-Vorbereitung (Onyxia-Pre-Quest, Dungeons, Berufe) integriert.</li>
+                  </ul>
+                  <div style="margin-top: 1rem;">
+                    <a href="https://discord.gg/tehcvlt" target="_blank" rel="noopener noreferrer" class="discord-cta-btn" style="display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; padding: 8px 16px;">
+                      <span>Tritt unserem Discord bei: discord.gg/tehcvlt</span>
+                      <span class="arrow">&#8599;</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kapitel 5: Notfall-Checkliste -->
+          <div class="guide-chapter">
+            <h3>Notfall-Checkliste: Was tun, wenn dich doch die Hektik packt?</h3>
+            <div class="notice amber" style="margin-bottom: 1.5rem;">
+              <h4 style="margin-top: 0; color: #ffd166;">&#9888;&#65039; 4-Schritte-Reset f&uuml;r deinen Kopf:</h4>
+              <ol style="margin-bottom: 0; padding-left: 1.25rem;">
+                <li style="margin-bottom: 0.5rem;"><strong>Ruhestein dr&uuml;cken:</strong> Teleportiere dich sofort ins n&auml;chste Gasthaus.</li>
+                <li style="margin-bottom: 0.5rem;"><strong>Charakter ausloggen:</strong> Schlie&szlig;e das Spiel. Der Erholungsbalken beginnt ab der ersten Sekunde f&uuml;r dich zu arbeiten.</li>
+                <li style="margin-bottom: 0.5rem;"><strong>15 Minuten Abstand:</strong> Mach das Fenster auf, trink etwas Frisches, schnapp frische Luft oder geh kurz spazieren.</li>
+                <li style="margin-bottom: 0;"><strong>Mit neuem Fokus zur&uuml;ckkehren:</strong> Du spielst, weil es dir Freude bereitet &ndash; nicht um jemandem etwas zu beweisen.</li>
+              </ol>
+            </div>
+          </div>
+
+        </section>
+<!-- ================= MOUNT-GOLD GUIDE (STUFE 40) ================= -->
       <section id="tab-gold" class="tab-pane">
         <div class="pane-header">
           <h2><img src="https://wow.zamimg.com/images/wow/icons/medium/inv_misc_coin_02.jpg" class="wow-icon large" alt="Gold"> Mount-Gold Guide: 100 Gold bis Stufe 40</h2>
@@ -4385,7 +4668,19 @@
         </div>
 
         <div class="timeline-container">
-          <div class="timeline-block highlight-block">
+                      <div class="timeline-block highlight-block">
+              <div class="level-indicator">v3.5.0<br><span>4. Nov 2026</span></div>
+              <div class="timeline-body">
+                <h4>Ausf&uuml;hrlicher Anti-FOMO &amp; Chill-Guide (Stand 4. Nov)</h4>
+                <ul>
+                  <li><strong>Neuer Leitfaden &bdquo;Anti-FOMO &amp; Chill-Guide&ldquo;:</strong> Psychologie hinter dem Launch-Stress, Reality-Check der 6 gro&szlig;en FOMO-Mythen und warum niemand den Anschluss verpasst.</li>
+                  <li><strong>Mechaniken f&uuml;r Entspannung:</strong> Mathematischer Rested-XP-Vorteil (+100% Kill-XP nach Pausen), Anti-Stau-Wellen und Instant-Post f&uuml;r stressfreies Inventar.</li>
+                  <li><strong>Launch-Taktiken &amp; Gesundheit:</strong> 60/5-Regel, 3-Minuten-Spawn-Regel, Schlaf als st&auml;rkster Buff und die offizielle &lt;TEH CVLT&gt; No-Stress Gilden-Charta.</li>
+                  <li><strong>Quick-Links &amp; Navigation:</strong> Neuer Schnellzugriff direkt auf der Startseite und in der Hauptnavigation unter &bdquo;Allgemeine Planung&ldquo; verankert.</li>
+                </ul>
+              </div>
+            </div>
+<div class="timeline-block highlight-block">
             <div class="level-indicator">v3.4.0<br><span>3. Nov 2026</span></div>
             <div class="timeline-body">
               <h4>Finale Launch-Patchnotes & Pre-Launch Tuning (Stand 3. Nov)</h4>
@@ -4494,14 +4789,14 @@
       <footer class="app-global-footer">
         <div class="footer-content">
           <div class="footer-left">
-            <span class="footer-version-tag">v3.4.0</span>
+            <span class="footer-version-tag">v3.5.0</span>
             <span class="footer-dot">•</span>
-            <span class="footer-timestamp">Stand: 3. November 2026 – 09:15 Uhr CET</span>
+            <span class="footer-timestamp">Stand: 4. November 2026 &ndash; 08:30 Uhr CET</span>
             <span class="footer-dot">•</span>
             <span class="footer-guild">&lt;TEH CVLT&gt;</span>
           </div>
           <div class="footer-right">
-            <span class="footer-changes">Letzte Änderung: Finale Launch-Patchnotes (2. Nov), Völker-Tuning & Power-Budget</span>
+            <span class="footer-changes">Letzte &Auml;nderung: Ausf&uuml;hrlicher Anti-FOMO &amp; Chill-Guide, Rested-XP-Vorteil &amp; No-Stress-Charta</span>
             <a href="https://discord.gg/tehcvlt" target="_blank" rel="noopener noreferrer" class="footer-discord-link">discord.gg/tehcvlt ↗</a>
           </div>
         </div>
@@ -4512,7 +4807,7 @@
   <!-- Mobile Backdrop -->
   <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
 
-  <script src="script.js?v=21"></script>
+  <script src="script.js?v=22"></script>
 </body>
 </html>
 

@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+<iframe id="testIframe" src="index.html" style="width:1400px; height:1050px;"></iframe>
+<script>
+window.addEventListener('load', () => {
+    const ifr = document.getElementById('testIframe');
+    ifr.onload = () => {
+        const doc = ifr.contentDocument;
+        const win = ifr.contentWindow;
+        
+        const logs = [];
+        win.onerror = (msg, url, line, col, err) => {
+            logs.push('ERROR: ' + msg + ' at ' + line + ':' + col);
+        };
+        
+        // 1. Check initial state
+        const areas = [...doc.querySelectorAll('.nav-area')].map(a => ({
+            area: a.dataset.area,
+            open: a.classList.contains('open'),
+            current: a.classList.contains('current')
+        }));
+        
+        // 2. Try clicking Klassen area button
+        const klassenBtn = doc.querySelector('.nav-area[data-area="classes"] .nav-area-btn');
+        if (klassenBtn) {
+            klassenBtn.click();
+        }
+        
+        const afterClickKlassen = [...doc.querySelectorAll('.nav-area')].map(a => ({
+            area: a.dataset.area,
+            open: a.classList.contains('open'),
+            current: a.classList.contains('current')
+        }));
+        
+        // 3. Try clicking Paladin tab
+        const paladinTab = doc.querySelector('.nav-tab[data-target="tab-paladin"]');
+        if (paladinTab) {
+            paladinTab.click();
+        }
+        
+        const afterClickPaladin = [...doc.querySelectorAll('.nav-area')].map(a => ({
+            area: a.dataset.area,
+            open: a.classList.contains('open'),
+            current: a.classList.contains('current')
+        }));
+        
+        const activePane = doc.querySelector('.tab-pane.active') ? doc.querySelector('.tab-pane.active').id : 'none';
+        
+        const out = document.createElement('pre');
+        out.id = 'test-results';
+        out.textContent = JSON.stringify({
+            initialAreas: areas,
+            afterClickKlassen: afterClickKlassen,
+            afterClickPaladin: afterClickPaladin,
+            activePane: activePane,
+            logs: logs
+        }, null, 2);
+        document.body.appendChild(out);
+    };
+});
+</script>
+</body>
+</html>
