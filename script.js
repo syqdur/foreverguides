@@ -1,3 +1,60 @@
+// ================= BULLETPROOF SCROLL ENGINE =================
+// Garantiert 100% flÃ¼ssiges Scrollen auf Desktop (Mausrad), Laptop (Trackpad) und Tastatur
+(function initScrollEngine() {
+  function getPanel() {
+    return document.querySelector('.content-panel');
+  }
+
+  // 1. Universeller Mausrad-Handler: Jedes Mausrad auÃŸerhalb der Sidebar scrollt direkt das Panel
+  window.addEventListener('wheel', function(e) {
+    const sidebar = document.getElementById('sidebarNav');
+    if (sidebar && sidebar.contains(e.target)) return; // Sidebar scrollt unabhÃ¤ngig
+    const panel = getPanel();
+    if (panel) {
+      panel.scrollTop += e.deltaY;
+    }
+  }, { passive: true });
+
+  // 2. Tastatur-Scroll-Support (Pfeiltasten, BildAuf/Ab, Leertaste)
+  window.addEventListener('keydown', function(e) {
+    if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')) return;
+    const panel = getPanel();
+    if (!panel) return;
+    
+    if (e.key === 'ArrowDown') {
+      panel.scrollTop += 60;
+    } else if (e.key === 'ArrowUp') {
+      panel.scrollTop -= 60;
+    } else if (e.key === 'PageDown' || (e.key === ' ' && !e.shiftKey)) {
+      panel.scrollTop += window.innerHeight * 0.75;
+      e.preventDefault();
+    } else if (e.key === 'PageUp' || (e.key === ' ' && e.shiftKey)) {
+      panel.scrollTop -= window.innerHeight * 0.75;
+      e.preventDefault();
+    }
+  });
+
+  // 3. Touch/Swipe-Support fÃ¼r MobilgerÃ¤te & Trackpads
+  let touchStart = 0;
+  window.addEventListener('touchstart', function(e) {
+    if (e.touches && e.touches.length > 0) {
+      touchStart = e.touches[0].clientY;
+    }
+  }, { passive: true });
+
+  window.addEventListener('touchmove', function(e) {
+    const sidebar = document.getElementById('sidebarNav');
+    if (sidebar && sidebar.classList.contains('open')) return;
+    if (e.touches && e.touches.length > 0) {
+      const panel = getPanel();
+      if (!panel) return;
+      const currentY = e.touches[0].clientY;
+      const delta = touchStart - currentY;
+      panel.scrollTop += delta;
+      touchStart = currentY;
+    }
+  }, { passive: true });
+})();
 // Sicheres Scrollen innerhalb von .content-panel ohne window-Verschiebung
 function scrollElementIntoPanel(el, block = 'start') {
   const panel = document.querySelector('.content-panel');

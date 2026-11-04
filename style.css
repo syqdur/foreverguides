@@ -354,13 +354,32 @@ code {
 .content-panel {
   flex: 1;
   height: 100%;
+  max-height: 100%;
   min-height: 0;
-  overflow-y: auto !important;
+  overflow-y: scroll !important;
   overflow-x: hidden;
-  padding: 2rem 2.25rem 3rem;
+  padding: 2rem 2.25rem 4rem;
   min-width: 0;
   -webkit-overflow-scrolling: touch;
   overscroll-behavior-y: contain;
+}
+
+/* Scrollbar immer gut sichtbar und bedienbar machen */
+.content-panel::-webkit-scrollbar {
+  width: 16px !important;
+}
+.content-panel::-webkit-scrollbar-track {
+  background: #080a14 !important;
+  border-left: 2px solid #3a3f5c !important;
+}
+.content-panel::-webkit-scrollbar-thumb {
+  background: #ffd100 !important;
+  border: 3px solid #080a14 !important;
+  border-radius: 4px !important;
+  box-shadow: inset 1px 1px 0 #ffffff80, 0 0 4px rgba(0,0,0,0.8) !important;
+}
+.content-panel::-webkit-scrollbar-thumb:hover {
+  background: #ffe66d !important;
 }
 
 /* Sichtbarer, edler Retro-Scrollbalken fÃ¼r das Content-Panel */
@@ -1097,7 +1116,7 @@ tr.highlight-row td:first-child { box-shadow: inset 4px 0 0 var(--gold); }
   .page-toc.show {
     display: flex; flex-direction: column; gap: 0.15rem;
     position: fixed; right: 1.25rem; top: 92px; width: 240px;
-    max-height: calc(100vh - 120px); overflow-y: auto;
+    max-height: calc(100vh - 120px); overflow-y: visible; pointer-events: none;
     padding: 0.8rem; background: #0d0f20cc; border: 2px solid #000; box-shadow: 0 0 0 1px var(--stone);
     z-index: 15;
   }
