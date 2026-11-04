@@ -1,8 +1,63 @@
 {
   "source": "https://foreverchanges.pro/de/patch-notes",
   "feed": "https://foreverchanges.pro/de/patch-notes/feed.xml",
-  "last_build": "Tue, 03 Nov 2026 12:00:00 GMT",
+  "last_build": "Wed, 04 Nov 2026 12:00:00 GMT",
   "items": [
+    {
+      "id": "foreverchanges-hotfix-2026-11-04",
+      "title": "Hotfix, 4. November 2026",
+      "date": "2026-11-04",
+      "kind": "hotfix",
+      "summary": "Ein Hotfix für den Client zum Start, zuerst am 4. November im Cache gesehen, den die Realms zum Start senden. Er bringt drei Zeilen aus Blizzards Patchnotes zum Start, die die Client-Dateien nicht enthalten: Trotz, Verteidigungshaltung und Kettenblitzschlag entsprechen jetzt den Notes.",
+      "source_summary": "Ein Hotfix für den Client zum Start, zuerst am 4. November im Cache gesehen, den die Realms zum Start senden. Er bringt drei Zeilen aus Blizzards Patchnotes zum Start, die die Client-Dateien nicht enthalten: Trotz, Verteidigungshaltung und Kettenblitzschlag entsprechen jetzt den Notes.",
+      "translated": false,
+      "engine": null,
+      "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-11-04",
+      "changes": [
+        {
+          "group": "warrior",
+          "group_de": "Krieger",
+          "spec": "Schutz",
+          "type": "buff",
+          "spell": "Trotz",
+          "source": "Erhöht die Bedrohung in Verteidigungshaltung je nach Rang um 7, 13 und 20 %, solange ein Schild angelegt ist, statt um 5, 10 und 15 %.",
+          "text": "Erhöht die Bedrohung in Verteidigungshaltung je nach Rang um 7, 13 und 20 %, solange ein Schild angelegt ist, statt um 5, 10 und 15 %.",
+          "translated": false
+        },
+        {
+          "group": "warrior",
+          "group_de": "Krieger",
+          "spec": "Schutz",
+          "type": "buff",
+          "spell": "Verteidigungshaltung",
+          "source": "Erhöht die gesamte erzeugte Bedrohung um 80 % statt um 30 %.",
+          "text": "Erhöht die gesamte erzeugte Bedrohung um 80 % statt um 30 %.",
+          "translated": false
+        },
+        {
+          "group": "shaman",
+          "group_de": "Schamane",
+          "spec": "Elementarkampf",
+          "type": "buff",
+          "spell": "Kettenblitzschlag",
+          "source": "Die Zauberzeit beträgt auf jedem Rang 2 Sek. statt 2,5 Sek.",
+          "text": "Die Zauberzeit beträgt auf jedem Rang 2 Sek. statt 2,5 Sek.",
+          "translated": false
+        }
+      ]
+    },
+    {
+      "id": "foreverchanges-1.60.1.70790",
+      "title": "Build 1.60.1.70790, 4. November 2026",
+      "date": "2026-11-04",
+      "kind": "build",
+      "summary": "Der Client zum Start, erschienen am 4. November. Er schreibt die Hotfixes vom 3. November in die Client-Dateien: Die Klassenänderungen aus Blizzards Patchnotes zum Start kommen jetzt in jeder Sprache aus dem Client. Gegenstände haben sich nicht geändert.",
+      "source_summary": "Der Client zum Start, erschienen am 4. November. Er schreibt die Hotfixes vom 3. November in die Client-Dateien: Die Klassenänderungen aus Blizzards Patchnotes zum Start kommen jetzt in jeder Sprache aus dem Client. Gegenstände haben sich nicht geändert.",
+      "translated": false,
+      "engine": null,
+      "link": "https://foreverchanges.pro/de/patch-notes#1.60.1.70790",
+      "changes": []
+    },
     {
       "id": "foreverchanges-1.60.1.70755",
       "title": "Build 1.60.1.70755, 3. November 2026",
@@ -4211,493 +4266,7 @@
       "engine": null,
       "link": "https://foreverchanges.pro/de/patch-notes#1.60.1.70058",
       "changes": []
-    },
-    {
-      "id": "foreverchanges-1.60.1.70009",
-      "title": "Build 1.60.1.70009, 24. September 2026",
-      "date": "2026-09-24",
-      "kind": "build",
-      "summary": "Die ersten Balance-Änderungen der Beta, eingespielt während der Wartung am 24. September, dazu der Cooldown Manager, ein Statistik-Reiter, Discord-Sprachchat und neue Gamepad-Optionen. Außerdem in Blizzards Patchnotes: Zauberstäbe profitieren nicht mehr von Zaubermacht, Zauberöle kehren zu ihren Classic-Werten zurück, das Wutgeheul der Begleiter gibt 40 % weniger Angriffskraft, und Umskillen kostet vorerst 1 Silber.",
-      "source_summary": "Die ersten Balance-Änderungen der Beta, eingespielt während der Wartung am 24. September, dazu der Cooldown Manager, ein Statistik-Reiter, Discord-Sprachchat und neue Gamepad-Optionen. Außerdem in Blizzards Patchnotes: Zauberstäbe profitieren nicht mehr von Zaubermacht, Zauberöle kehren zu ihren Classic-Werten zurück, das Wutgeheul der Begleiter gibt 40 % weniger Angriffskraft, und Umskillen kostet vorerst 1 Silber.",
-      "translated": false,
-      "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes#1.60.1.70009",
-      "changes": [
-        {
-          "group": "warrior",
-          "group_de": "Krieger",
-          "spec": "Waffen",
-          "type": "buff",
-          "spell": "Verbessertes Zerschmettern",
-          "source": "Senkt zusätzlich die Abklingzeit von Zerschmettern um 1,5 Sek. pro Rang, und Zerschmettern verzögert deinen Schlag nicht mehr.",
-          "text": "Senkt zusätzlich die Abklingzeit von Zerschmettern um 1,5 Sek. pro Rang, und Zerschmettern verzögert deinen Schlag nicht mehr.",
-          "translated": false
-        },
-        {
-          "group": "warrior",
-          "group_de": "Krieger",
-          "spec": "Waffen",
-          "type": "buff",
-          "spell": "Rausch des Blutes",
-          "source": "Doppelte Chance, Überwältigen freizuschalten (bis zu 20 %), nur mit Angriffen der Waffenhand.",
-          "text": "Doppelte Chance, Überwältigen freizuschalten (bis zu 20 %), nur mit Angriffen der Waffenhand.",
-          "translated": false
-        },
-        {
-          "group": "warrior",
-          "group_de": "Krieger",
-          "spec": "Furor",
-          "type": "nerf",
-          "spell": "Zerschmettern",
-          "source": "Abklingzeit 18 Sek. statt 15.",
-          "text": "Abklingzeit 18 Sek. statt 15.",
-          "translated": true,
-          "engine": "deepl"
-        },
-        {
-          "group": "warrior",
-          "group_de": "Krieger",
-          "spec": "Schutz",
-          "type": "buff",
-          "spell": "Rüstung zerreißen",
-          "source": "Mehr Bedrohung auf jedem Rang, dazu etwas mehr durch Angriffskraft.",
-          "text": "Mehr Bedrohung auf jedem Rang, dazu etwas mehr durch Angriffskraft.",
-          "translated": false
-        },
-        {
-          "group": "warrior",
-          "group_de": "Krieger",
-          "spec": "Schutz",
-          "type": "change",
-          "spell": "Bastion",
-          "source": "Blizzard tauscht es mit Fokussierte Wut (Reihe 5 und 6).",
-          "text": "Blizzard tauscht es mit Fokussierte Wut (Reihe 5 und 6).",
-          "translated": false
-        },
-        {
-          "group": "paladin",
-          "group_de": "Paladin",
-          "spec": "Heilig",
-          "type": "buff",
-          "spell": "Heilige Macht",
-          "source": "Der kritische Bonus für Heiliger Schock gilt jetzt auch für Heiliger Stoß.",
-          "text": "Der kritische Bonus für Heiliger Schock gilt jetzt auch für Heiliger Stoß.",
-          "translated": false
-        },
-        {
-          "group": "paladin",
-          "group_de": "Paladin",
-          "spec": "Heilig",
-          "type": "change",
-          "spell": "Weihe",
-          "source": "Mehrere Korrekturen: Sie trifft jetzt alle Ziele und zieht keine Gegner mehr über oder unter dir an.",
-          "text": "Mehrere Korrekturen: Sie trifft jetzt alle Ziele und zieht keine Gegner mehr über oder unter dir an.",
-          "translated": false
-        },
-        {
-          "group": "paladin",
-          "group_de": "Paladin",
-          "spec": "Heilig",
-          "type": "change",
-          "spell": "Verbesserter heiliger Stoß",
-          "source": "entfernt: Aus dem Heilig-Baum entfernt: Die Abklingzeit von Heiliger Stoß sinkt für alle Paladine auf 10 Sek.",
-          "text": "entfernt: Aus dem Heilig-Baum entfernt: Die Abklingzeit von Heiliger Stoß sinkt für alle Paladine auf 10 Sek.",
-          "translated": false
-        },
-        {
-          "group": "paladin",
-          "group_de": "Paladin",
-          "spec": "Schutz",
-          "type": "nerf",
-          "spell": "Zorn der Gerechtigkeit",
-          "source": "Erhöht die Bedrohung deiner Heiligangriffe um 60 % statt 90 %.",
-          "text": "Erhöht die Bedrohung deiner Heiligangriffe um 60 % statt 90 %.",
-          "translated": false
-        },
-        {
-          "group": "paladin",
-          "group_de": "Paladin",
-          "spec": "Vergeltung",
-          "type": "buff",
-          "spell": "Heiliger Stoß",
-          "source": "Abklingzeit 10 Sek. statt 12, dazu mehr Schaden auf den meisten Rängen.",
-          "text": "Abklingzeit 10 Sek. statt 12, dazu mehr Schaden auf den meisten Rängen.",
-          "translated": false
-        },
-        {
-          "group": "paladin",
-          "group_de": "Paladin",
-          "spec": "Vergeltung",
-          "type": "buff",
-          "spell": "Heiliger Richter",
-          "source": "Heiliger Stoß macht 20 % statt 10 % mehr Schaden.",
-          "text": "Heiliger Stoß macht 20 % statt 10 % mehr Schaden.",
-          "translated": true,
-          "engine": "deepl"
-        },
-        {
-          "group": "paladin",
-          "group_de": "Paladin",
-          "spec": "Vergeltung",
-          "type": "buff",
-          "spell": "Wendung des Lichts",
-          "source": "Senkt zusätzlich die Manakosten deiner Siegel um 20 %.",
-          "text": "Senkt zusätzlich die Manakosten deiner Siegel um 20 %.",
-          "translated": false
-        },
-        {
-          "group": "paladin",
-          "group_de": "Paladin",
-          "spec": "Vergeltung",
-          "type": "buff",
-          "spell": "Aura der Vergeltung",
-          "source": "Skaliert jetzt mit deiner Zaubermacht.",
-          "text": "Skaliert jetzt mit deiner Zaubermacht.",
-          "translated": false
-        },
-        {
-          "group": "paladin",
-          "group_de": "Paladin",
-          "spec": "Vergeltung",
-          "type": "nerf",
-          "spell": "Zweihandwaffen-Spezialisierung",
-          "source": "2 % mehr Schaden pro Rang statt 3 %.",
-          "text": "2 % mehr Schaden pro Rang statt 3 %.",
-          "translated": true,
-          "engine": "deepl"
-        },
-        {
-          "group": "paladin",
-          "group_de": "Paladin",
-          "spec": "Vergeltung",
-          "type": "nerf",
-          "spell": "Rache",
-          "source": "Stapelt sich bis zu 3-mal statt 5-mal, und regelmäßiger Schaden löst es nicht mehr aus.",
-          "text": "Stapelt sich bis zu 3-mal statt 5-mal, und regelmäßiger Schaden löst es nicht mehr aus.",
-          "translated": false
-        },
-        {
-          "group": "paladin",
-          "group_de": "Paladin",
-          "spec": "Vergeltung",
-          "type": "change",
-          "spell": "Kreuzzug",
-          "source": "Im Spielclient nicht mehr im Vergeltung-Baum. Blizzards Patchnotes erwähnen es nicht.",
-          "text": "Im Spielclient nicht mehr im Vergeltung-Baum. Blizzards Patchnotes erwähnen es nicht.",
-          "translated": false
-        },
-        {
-          "group": "hunter",
-          "group_de": "Jäger",
-          "spec": "Tierherrschaft",
-          "type": "nerf",
-          "spell": "Wildtier zähmen",
-          "source": "Wirkt nicht mehr auf Wildtiere über deiner Stufe.",
-          "text": "Wirkt nicht mehr auf Wildtiere über deiner Stufe.",
-          "translated": false
-        },
-        {
-          "group": "hunter",
-          "group_de": "Jäger",
-          "spec": "Überleben",
-          "type": "buff",
-          "spell": "Streichertritt",
-          "source": "Erhöht zusätzlich 3 Sek. lang dein Bewegungstempo um 30 %.",
-          "text": "Erhöht zusätzlich 3 Sek. lang dein Bewegungstempo um 30 %.",
-          "translated": true,
-          "engine": "deepl"
-        },
-        {
-          "group": "hunter",
-          "group_de": "Jäger",
-          "spec": "Überleben",
-          "type": "buff",
-          "spell": "Aufschlitzende Schläge",
-          "source": "Kann jetzt kritisch treffen.",
-          "text": "Kann jetzt kritisch treffen.",
-          "translated": true,
-          "engine": "deepl"
-        },
-        {
-          "group": "priest",
-          "group_de": "Priester",
-          "spec": "Disziplin",
-          "type": "change",
-          "spell": "Machtwort: Schild",
-          "source": "Kann jetzt einen vorhandenen Schild auf einem Ziel ohne Geschwächte Seele ersetzen.",
-          "text": "Kann jetzt einen vorhandenen Schild auf einem Ziel ohne Geschwächte Seele ersetzen.",
-          "translated": false
-        },
-        {
-          "group": "priest",
-          "group_de": "Priester",
-          "spec": "Heilig",
-          "type": "buff",
-          "spell": "Erneuerung",
-          "source": "Kann jetzt kritisch treffen.",
-          "text": "Kann jetzt kritisch treffen.",
-          "translated": true,
-          "engine": "deepl"
-        },
-        {
-          "group": "shaman",
-          "group_de": "Schamane",
-          "spec": "Allgemein",
-          "type": "buff",
-          "spell": "Lavaeruption",
-          "source": "Mehr Schaden auf beiden Rängen.",
-          "text": "Mehr Schaden auf beiden Rängen.",
-          "translated": false
-        },
-        {
-          "group": "shaman",
-          "group_de": "Schamane",
-          "spec": "Elementarkampf",
-          "type": "buff",
-          "spell": "Blitzschlag",
-          "source": "Rang 3 und 4 machen mehr Schaden.",
-          "text": "Rang 3 und 4 machen mehr Schaden.",
-          "translated": false
-        },
-        {
-          "group": "shaman",
-          "group_de": "Schamane",
-          "spec": "Elementarkampf",
-          "type": "change",
-          "spell": "Ruf des Donners",
-          "source": "Braucht jetzt Elementare Geschwindigkeit statt Elementarfuror.",
-          "text": "Braucht jetzt Elementare Geschwindigkeit statt Elementarfuror.",
-          "translated": true,
-          "engine": "deepl"
-        },
-        {
-          "group": "shaman",
-          "group_de": "Schamane",
-          "spec": "Elementarkampf",
-          "type": "change",
-          "spell": "Elementare Geschwindigkeit",
-          "source": "verschoben: Rückt in Reihe 3 vor und braucht Ruf des Donners nicht mehr.",
-          "text": "verschoben: Rückt in Reihe 3 vor und braucht Ruf des Donners nicht mehr.",
-          "translated": false
-        },
-        {
-          "group": "shaman",
-          "group_de": "Schamane",
-          "spec": "Elementarkampf",
-          "type": "change",
-          "spell": "Elementarfuror",
-          "source": "verschoben: Rückt in Reihe 6 zurück und braucht jetzt Ruf des Donners.",
-          "text": "verschoben: Rückt in Reihe 6 zurück und braucht jetzt Ruf des Donners.",
-          "translated": false
-        },
-        {
-          "group": "shaman",
-          "group_de": "Schamane",
-          "spec": "Verstärk",
-          "type": "nerf",
-          "spell": "Zorn des Scharfsehers",
-          "source": "Beschleunigt dein Zauberwirken nicht mehr.",
-          "text": "Beschleunigt dein Zauberwirken nicht mehr.",
-          "translated": false
-        },
-        {
-          "group": "shaman",
-          "group_de": "Schamane",
-          "spec": "Verstärk",
-          "type": "nerf",
-          "spell": "Totem der Flammenzunge",
-          "source": "Stapelt sich nicht mehr mit sich selbst, mit Waffe der Flammenzunge oder mit Totem des Windzorns.",
-          "text": "Stapelt sich nicht mehr mit sich selbst, mit Waffe der Flammenzunge oder mit Totem des Windzorns.",
-          "translated": false
-        },
-        {
-          "group": "shaman",
-          "group_de": "Schamane",
-          "spec": "Verstärk",
-          "type": "nerf",
-          "spell": "Totem des Windzorns",
-          "source": "Stapelt sich nicht mehr mit Totem der luftgleichen Anmut oder den anderen Lufttotems, auch nicht von verschiedenen Schamanen.",
-          "text": "Stapelt sich nicht mehr mit Totem der luftgleichen Anmut oder den anderen Lufttotems, auch nicht von verschiedenen Schamanen.",
-          "translated": false
-        },
-        {
-          "group": "shaman",
-          "group_de": "Schamane",
-          "spec": "Wiederherst",
-          "type": "buff",
-          "spell": "Springflut",
-          "source": "Kann jetzt kritisch treffen.",
-          "text": "Kann jetzt kritisch treffen.",
-          "translated": true,
-          "engine": "deepl"
-        },
-        {
-          "group": "mage",
-          "group_de": "Magier",
-          "spec": "Arkan",
-          "type": "buff",
-          "spell": "Arkane Geschosse",
-          "source": "Die Sichtlinie wird nur zu Beginn der Kanalisierung geprüft: Ein Ziel, das aus der Sicht läuft, wird weiter getroffen.",
-          "text": "Die Sichtlinie wird nur zu Beginn der Kanalisierung geprüft: Ein Ziel, das aus der Sicht läuft, wird weiter getroffen.",
-          "translated": false
-        },
-        {
-          "group": "mage",
-          "group_de": "Magier",
-          "spec": "Feuer",
-          "type": "buff",
-          "spell": "Kampfeshitze",
-          "source": "Hält 20 Sek. statt 15 an.",
-          "text": "Hält 20 Sek. statt 15 an.",
-          "translated": true,
-          "engine": "deepl"
-        },
-        {
-          "group": "mage",
-          "group_de": "Magier",
-          "spec": "Feuer",
-          "type": "buff",
-          "spell": "Feuersog",
-          "source": "Der Bonus auf deinen nächsten Feuerschlag hält 30 Sek. statt 20 an.",
-          "text": "Der Bonus auf deinen nächsten Feuerschlag hält 30 Sek. statt 20 an.",
-          "translated": false
-        },
-        {
-          "group": "mage",
-          "group_de": "Magier",
-          "spec": "Feuer",
-          "type": "nerf",
-          "spell": "Entzünden",
-          "source": "Zählt Schadensboni nicht mehr doppelt.",
-          "text": "Zählt Schadensboni nicht mehr doppelt.",
-          "translated": false
-        },
-        {
-          "group": "druid",
-          "group_de": "Druide",
-          "spec": "Gleichgewicht",
-          "type": "buff",
-          "spell": "Zorn",
-          "source": "Rund 50 % mehr Schaden auf jedem Rang.",
-          "text": "Rund 50 % mehr Schaden auf jedem Rang.",
-          "translated": false
-        },
-        {
-          "group": "druid",
-          "group_de": "Druide",
-          "spec": "Gleichgewicht",
-          "type": "buff",
-          "spell": "Dornen",
-          "source": "Skaliert jetzt mit deiner Zaubermacht.",
-          "text": "Skaliert jetzt mit deiner Zaubermacht.",
-          "translated": false
-        },
-        {
-          "group": "druid",
-          "group_de": "Druide",
-          "spec": "Wilder Kampf",
-          "type": "change",
-          "spell": "Primal Bite",
-          "source": "Der neue Name von Zerfleischen, das seinen Schwächungseffekt verliert. Im Spiel noch nicht übersetzt.",
-          "text": "Der neue Name von Zerfleischen, das seinen Schwächungseffekt verliert. Im Spiel noch nicht übersetzt.",
-          "translated": false
-        },
-        {
-          "group": "druid",
-          "group_de": "Druide",
-          "spec": "Wilder Kampf",
-          "type": "change",
-          "spell": "Blood Frenzy",
-          "source": "Der neue Name von Urfuror, gleiche Wirkung. Im Spiel noch nicht übersetzt.",
-          "text": "Der neue Name von Urfuror, gleiche Wirkung. Im Spiel noch nicht übersetzt.",
-          "translated": false
-        },
-        {
-          "group": "druid",
-          "group_de": "Druide",
-          "spec": "Wiederherst",
-          "type": "buff",
-          "spell": "Verjüngung",
-          "source": "Kann jetzt kritisch treffen, ebenso wie Gelassenheit und Wildwuchs.",
-          "text": "Kann jetzt kritisch treffen, ebenso wie Gelassenheit und Wildwuchs.",
-          "translated": false
-        },
-        {
-          "group": "night-elf",
-          "group_de": "Nachtelf",
-          "spec": "Allgemein",
-          "type": "buff",
-          "spell": "Sternensplitter",
-          "source": "Zwielichtfokus schützt ihn jetzt wie vorgesehen vor Zauberrückschlag.",
-          "text": "Zwielichtfokus schützt ihn jetzt wie vorgesehen vor Zauberrückschlag.",
-          "translated": true,
-          "engine": "deepl"
-        },
-        {
-          "group": "undead",
-          "group_de": "Untot",
-          "spec": "Allgemein",
-          "type": "change",
-          "spell": "Berührung des Grabes",
-          "source": "Bricht keine Kontrolleffekte mehr und löst nur noch durch Zauber und Fähigkeiten aus, die Schaden verursachen: Schattenwort: Schmerz beim Wirken, aber nicht bei jedem Tick, nie Ablenken oder Taschendiebstahl.",
-          "text": "Bricht keine Kontrolleffekte mehr und löst nur noch durch Zauber und Fähigkeiten aus, die Schaden verursachen: Schattenwort: Schmerz beim Wirken, aber nicht bei jedem Tick, nie Ablenken oder Taschendiebstahl.",
-          "translated": false
-        },
-        {
-          "group": "undead",
-          "group_de": "Untot",
-          "spec": "Allgemein",
-          "type": "change",
-          "spell": "Dunkles Opfer",
-          "source": "Bricht keine Kontrolleffekte mehr, die bei Schaden enden. Der Tooltip nennt jetzt die Skalierung mit Willenskraft, die es schon gab.",
-          "text": "Bricht keine Kontrolleffekte mehr, die bei Schaden enden. Der Tooltip nennt jetzt die Skalierung mit Willenskraft, die es schon gab.",
-          "translated": false
-        },
-        {
-          "group": "tauren",
-          "group_de": "Tauren",
-          "spec": "Allgemein",
-          "type": "nerf",
-          "spell": "Grüner Daumen",
-          "source": "Verlangt jetzt eine Charakterstufe: die Kräuterkundefertigkeit des Krauts geteilt durch 5, und Stufe 60 für Kräuter über 300.",
-          "text": "Verlangt jetzt eine Charakterstufe: die Kräuterkundefertigkeit des Krauts geteilt durch 5, und Stufe 60 für Kräuter über 300.",
-          "translated": false
-        },
-        {
-          "group": "gnome",
-          "group_de": "Gnom",
-          "spec": "Allgemein",
-          "type": "buff",
-          "spell": "Notfallplan",
-          "source": "Kann jetzt kritisch treffen.",
-          "text": "Kann jetzt kritisch treffen.",
-          "translated": true,
-          "engine": "deepl"
-        },
-        {
-          "group": "gnome",
-          "group_de": "Gnom",
-          "spec": "Allgemein",
-          "type": "nerf",
-          "spell": "Heureka!",
-          "source": "Deine nächsten 3 Fähigkeiten kosten jetzt für jede Klasse 10 % weniger. Vorher waren es 50 % für Magier und Hexenmeister, 40 % für Krieger, 20 % für Schurken und 15 % für Priester. Der Schadensbonus von 10 % bleibt gleich.",
-          "text": "Deine nächsten 3 Fähigkeiten kosten jetzt für jede Klasse 10 % weniger. Vorher waren es 50 % für Magier und Hexenmeister, 40 % für Krieger, 20 % für Schurken und 15 % für Priester. Der Schadensbonus von 10 % bleibt gleich.",
-          "translated": false
-        }
-      ]
-    },
-    {
-      "id": "foreverchanges-1.60.1.69977",
-      "title": "Build 1.60.1.69977, 23. September 2026",
-      "date": "2026-09-23",
-      "kind": "build",
-      "summary": "Korrekturen für Mac (Anzeige und Stabilität) und für Gamepads: der Charakterauswahlbildschirm und Gegenstände, die eine Quest starten. Talente, Zauber und Gegenstände haben sich nicht geändert.",
-      "source_summary": "Korrekturen für Mac (Anzeige und Stabilität) und für Gamepads: der Charakterauswahlbildschirm und Gegenstände, die eine Quest starten. Talente, Zauber und Gegenstände haben sich nicht geändert.",
-      "translated": false,
-      "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes#1.60.1.69977",
-      "changes": []
     }
   ],
-  "fetched_at": "2026-11-04T09:06:13+00:00"
+  "fetched_at": "2026-11-04T22:36:32+00:00"
 }
