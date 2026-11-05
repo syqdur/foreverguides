@@ -8,8 +8,8 @@
       "title": "Hotfix, 4. November 2026",
       "date": "2026-11-04",
       "kind": "hotfix",
-      "summary": "Ein Hotfix für den Client zum Start, zuerst am 4. November im Cache gesehen, den die Realms zum Start senden. Er bringt drei Zeilen aus Blizzards Patchnotes zum Start, die die Client-Dateien nicht enthalten: Trotz, Verteidigungshaltung und Kettenblitzschlag entsprechen jetzt den Notes.",
-      "source_summary": "Ein Hotfix für den Client zum Start, zuerst am 4. November im Cache gesehen, den die Realms zum Start senden. Er bringt drei Zeilen aus Blizzards Patchnotes zum Start, die die Client-Dateien nicht enthalten: Trotz, Verteidigungshaltung und Kettenblitzschlag entsprechen jetzt den Notes.",
+      "summary": "Ein Hotfix für den Client zum Start, zuerst am 4. November im Cache gesehen, den die Realms zum Start senden. Er bringt zwei Zeilen aus Blizzards Patchnotes zum Start, die die Client-Dateien nicht enthalten: Trotz und Verteidigungshaltung entsprechen jetzt den Notes. Kettenblitzschlag behält die 2,5 Sek. Zauberzeit des Clients: Die Realms zum Start senden die 2 Sek. der Notes nicht.",
+      "source_summary": "Ein Hotfix für den Client zum Start, zuerst am 4. November im Cache gesehen, den die Realms zum Start senden. Er bringt zwei Zeilen aus Blizzards Patchnotes zum Start, die die Client-Dateien nicht enthalten: Trotz und Verteidigungshaltung entsprechen jetzt den Notes. Kettenblitzschlag behält die 2,5 Sek. Zauberzeit des Clients: Die Realms zum Start senden die 2 Sek. der Notes nicht.",
       "translated": false,
       "engine": null,
       "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-11-04",
@@ -32,16 +32,6 @@
           "spell": "Verteidigungshaltung",
           "source": "Erhöht die gesamte erzeugte Bedrohung um 80 % statt um 30 %.",
           "text": "Erhöht die gesamte erzeugte Bedrohung um 80 % statt um 30 %.",
-          "translated": false
-        },
-        {
-          "group": "shaman",
-          "group_de": "Schamane",
-          "spec": "Elementarkampf",
-          "type": "buff",
-          "spell": "Kettenblitzschlag",
-          "source": "Die Zauberzeit beträgt auf jedem Rang 2 Sek. statt 2,5 Sek.",
-          "text": "Die Zauberzeit beträgt auf jedem Rang 2 Sek. statt 2,5 Sek.",
           "translated": false
         }
       ]
@@ -1790,5 +1780,5 @@
       "changes": []
     }
   ],
-  "fetched_at": "2026-11-05T03:29:01+00:00"
+  "fetched_at": "2026-11-05T19:58:23+00:00"
 }
