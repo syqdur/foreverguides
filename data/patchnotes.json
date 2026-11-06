@@ -1,8 +1,20 @@
 {
   "source": "https://foreverchanges.pro/de/patch-notes",
   "feed": "https://foreverchanges.pro/de/patch-notes/feed.xml",
-  "last_build": "Wed, 04 Nov 2026 12:00:00 GMT",
+  "last_build": "Thu, 05 Nov 2026 12:00:00 GMT",
   "items": [
+    {
+      "id": "foreverchanges-hotfix-2026-11-05",
+      "title": "Hotfix, 5. November 2026",
+      "date": "2026-11-05",
+      "kind": "hotfix",
+      "summary": "Blizzards Hotfixes vom 5. November: das Erscheinen einiger Kreaturen, ein Druidenlehrer und Berufstaschen auf der Insel Zephras, der Verkaufspreis von Milde Gewürze, Ebenenlaufen auf Schlachtfeldern und zwei Quests.",
+      "source_summary": "Blizzards Hotfixes vom 5. November: das Erscheinen einiger Kreaturen, ein Druidenlehrer und Berufstaschen auf der Insel Zephras, der Verkaufspreis von Milde Gewürze, Ebenenlaufen auf Schlachtfeldern und zwei Quests.",
+      "translated": false,
+      "engine": null,
+      "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-11-05",
+      "changes": []
+    },
     {
       "id": "foreverchanges-hotfix-2026-11-04",
       "title": "Hotfix, 4. November 2026",
@@ -1536,7 +1548,7 @@
       "source_summary": "Ein Build vom 28. Oktober, der nur Modelldateien ändert: 2 von 137 Tabellen unterscheiden sich vom Build vom 27. Oktober, beide Kreaturenmodelle, und nichts, was eine Seite liest. Blizzard hat keine Notizen dazu veröffentlicht. Die ersten Hotfixes der Startrealms, in derselben Nacht gesehen, stehen unten.",
       "translated": false,
       "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes#1.60.1.70658",
+      "link": "https://foreverchanges.pro/de/patch-notes/page/2#1.60.1.70658",
       "changes": []
     },
     {
@@ -1656,7 +1668,7 @@
       "source_summary": "Eight of the nine classes get balance changes, Shamans, Mages and Priests most of all, and several racial traits change.",
       "translated": true,
       "engine": "deepl",
-      "link": "https://foreverchanges.pro/de/patch-notes/page/2#1.60.1.70425",
+      "link": "https://foreverchanges.pro/de/patch-notes/page/3#1.60.1.70425",
       "changes": []
     },
     {
@@ -1766,19 +1778,7 @@
       "engine": null,
       "link": "https://foreverchanges.pro/de/patch-notes/page/3#1.60.1.70124",
       "changes": []
-    },
-    {
-      "id": "foreverchanges-1.60.1.70058",
-      "title": "Build 1.60.1.70058, 29. September 2026",
-      "date": "2026-09-29",
-      "kind": "build",
-      "summary": "Korrekturen für das Spielen mit Gamepad: die Weltkarte (der Cursor, seine Koordinaten und die Zonennamen darunter), die Aktionsleisten, Tooltips und die Seiten von Büchern und Briefen. Talente, Zauber und Gegenstände haben sich nicht geändert.",
-      "source_summary": "Korrekturen für das Spielen mit Gamepad: die Weltkarte (der Cursor, seine Koordinaten und die Zonennamen darunter), die Aktionsleisten, Tooltips und die Seiten von Büchern und Briefen. Talente, Zauber und Gegenstände haben sich nicht geändert.",
-      "translated": false,
-      "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes/page/3#1.60.1.70058",
-      "changes": []
     }
   ],
-  "fetched_at": "2026-11-05T19:58:23+00:00"
+  "fetched_at": "2026-11-06T07:54:16+00:00"
 }
