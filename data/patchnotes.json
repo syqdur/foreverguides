@@ -1,8 +1,51 @@
 {
   "source": "https://foreverchanges.pro/de/patch-notes",
   "feed": "https://foreverchanges.pro/de/patch-notes/feed.xml",
-  "last_build": "Thu, 05 Nov 2026 12:00:00 GMT",
+  "last_build": "Fri, 06 Nov 2026 12:00:00 GMT",
   "items": [
+    {
+      "id": "foreverchanges-hotfix-2026-11-06",
+      "title": "Hotfix, 6. November 2026",
+      "date": "2026-11-06",
+      "kind": "hotfix",
+      "summary": "Ein Hotfix zum Startclient, erstmals am 6. November im Cache gesehen, den die Startrealms senden, und zu dem Blizzard keine Notizen veröffentlicht hat. Tollkühne Schwünge löst jetzt Blutgier aus, der Tooltip von Bärengestalt nennt die Gesundheit aus Classic, und der von Verheeren zeigt weniger Bonusschaden.",
+      "source_summary": "Ein Hotfix zum Startclient, erstmals am 6. November im Cache gesehen, den die Startrealms senden, und zu dem Blizzard keine Notizen veröffentlicht hat. Tollkühne Schwünge löst jetzt Blutgier aus, der Tooltip von Bärengestalt nennt die Gesundheit aus Classic, und der von Verheeren zeigt weniger Bonusschaden.",
+      "translated": false,
+      "engine": null,
+      "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-11-06",
+      "changes": [
+        {
+          "group": "warrior",
+          "group_de": "Krieger",
+          "spec": "Furor",
+          "type": "buff",
+          "spell": "Blutgier",
+          "source": "Jetzt löst auch Tollkühne Schwünge den Effekt aus, nicht mehr nur Wutanfall, Berserkerwut, Blutrausch, Todeswunsch und Blutdurst: deine nächsten 3 Nahkampfangriffe stellen je nach Rang wie bisher 0,5 oder 1 % deiner maximalen Gesundheit wieder her.",
+          "text": "Jetzt löst auch Tollkühne Schwünge den Effekt aus, nicht mehr nur Wutanfall, Berserkerwut, Blutrausch, Todeswunsch und Blutdurst: deine nächsten 3 Nahkampfangriffe stellen je nach Rang wie bisher 0,5 oder 1 % deiner maximalen Gesundheit wieder her.",
+          "translated": false
+        },
+        {
+          "group": "druid",
+          "group_de": "Druide",
+          "spec": "Wilder Kampf",
+          "type": "change",
+          "spell": "Verheeren",
+          "source": "Nennt jetzt je nach Rang 435 % Waffenschaden plus 42, 62, 78 und 98 statt plus 147, 217, 273 und 343.",
+          "text": "Nennt jetzt je nach Rang 435 % Waffenschaden plus 42, 62, 78 und 98 statt plus 147, 217, 273 und 343.",
+          "translated": false
+        },
+        {
+          "group": "druid",
+          "group_de": "Druide",
+          "spec": "Wilder Kampf",
+          "type": "change",
+          "spell": "Bärengestalt",
+          "source": "Der Tooltip nennt 560 Gesundheit statt 180, wie in Classic.",
+          "text": "Der Tooltip nennt 560 Gesundheit statt 180, wie in Classic.",
+          "translated": false
+        }
+      ]
+    },
     {
       "id": "foreverchanges-hotfix-2026-11-05",
       "title": "Hotfix, 5. November 2026",
@@ -1331,120 +1374,8 @@
       "source_summary": "Nichts davon ist bestätigt: Der Build kam, während die Realms vor dem Start geschlossen sind, Blizzard hat keine Notizen dazu veröffentlicht, und im Spiel lässt sich noch nichts prüfen.",
       "translated": false,
       "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes#1.60.1.70685",
-      "changes": [
-        {
-          "group": "mage",
-          "group_de": "Magier",
-          "spec": "Allgemein",
-          "type": "nerf",
-          "spell": "Frostschlag",
-          "source": "entfernt: Aus dem Zauberbuch entfernt. Der Zauber ist technisch noch im Spiel, kann aber nicht mehr erlernt werden. Diese Änderung ist mit Vorsicht zu genießen.",
-          "text": "entfernt: Aus dem Zauberbuch entfernt. Der Zauber ist technisch noch im Spiel, kann aber nicht mehr erlernt werden. Diese Änderung ist mit Vorsicht zu genießen.",
-          "translated": false
-        },
-        {
-          "group": "mage",
-          "group_de": "Magier",
-          "spec": "Arkan",
-          "type": "nerf",
-          "spell": "Arkaner Fokus",
-          "source": "entfernt: Aus dem Arkan-Baum entfernt: Er gab 1 bis 5 % Trefferchance mit Arkanzaubern. Precision im Frost-Baum gibt jetzt Trefferchance mit allen Zaubern.",
-          "text": "entfernt: Aus dem Arkan-Baum entfernt: Er gab 1 bis 5 % Trefferchance mit Arkanzaubern. Precision im Frost-Baum gibt jetzt Trefferchance mit allen Zaubern.",
-          "translated": false
-        },
-        {
-          "group": "mage",
-          "group_de": "Magier",
-          "spec": "Arkan",
-          "type": "change",
-          "spell": "Arkane Widerstandsfähigkeit",
-          "source": "verschoben: Rückt von Reihe 2 in Reihe 1, in Spalte 3.",
-          "text": "verschoben: Rückt von Reihe 2 in Reihe 1, in Spalte 3.",
-          "translated": false
-        },
-        {
-          "group": "mage",
-          "group_de": "Magier",
-          "spec": "Arkan",
-          "type": "change",
-          "spell": "Geschosssalve",
-          "source": "verschoben: Rückt von Reihe 1 in Reihe 2.",
-          "text": "verschoben: Rückt von Reihe 1 in Reihe 2.",
-          "translated": false
-        },
-        {
-          "group": "mage",
-          "group_de": "Magier",
-          "spec": "Arkan",
-          "type": "change",
-          "spell": "Verbesserte Kanalisierung",
-          "source": "verschoben: Rückt in Reihe 1 von Spalte 3 in Spalte 2.",
-          "text": "verschoben: Rückt in Reihe 1 von Spalte 3 in Spalte 2.",
-          "translated": false
-        },
-        {
-          "group": "mage",
-          "group_de": "Magier",
-          "spec": "Feuer",
-          "type": "buff",
-          "spell": "Accelerant",
-          "source": "War Verbesserter Feuerball und verkürzt jetzt auch die Zauberzeit von Arkaner Zorn um 0,1 bis 0,5 Sek., wie bei Feuerball und Frostfeuerblitz.",
-          "text": "War Verbesserter Feuerball und verkürzt jetzt auch die Zauberzeit von Arkaner Zorn um 0,1 bis 0,5 Sek., wie bei Feuerball und Frostfeuerblitz.",
-          "translated": false
-        },
-        {
-          "group": "mage",
-          "group_de": "Magier",
-          "spec": "Feuer",
-          "type": "buff",
-          "spell": "Verbrennung",
-          "source": "Hat 5 Ränge statt 3: bis zu 10 % mehr kritische Trefferchance für Feuerschlag, Eislanze, Arkanschlag und Versengen (vorher 6 %).",
-          "text": "Hat 5 Ränge statt 3: bis zu 10 % mehr kritische Trefferchance für Feuerschlag, Eislanze, Arkanschlag und Versengen (vorher 6 %).",
-          "translated": false
-        },
-        {
-          "group": "mage",
-          "group_de": "Magier",
-          "spec": "Feuer",
-          "type": "nerf",
-          "spell": "Kritische Masse",
-          "source": "Hat 3 Ränge statt 5: bis zu 6 % mehr kritische Trefferchance für Feuerzauber (vorher 10 %).",
-          "text": "Hat 3 Ränge statt 5: bis zu 6 % mehr kritische Trefferchance für Feuerzauber (vorher 10 %).",
-          "translated": false
-        },
-        {
-          "group": "mage",
-          "group_de": "Magier",
-          "spec": "Feuer",
-          "type": "change",
-          "spell": "Verbesserter Feuerschlag",
-          "source": "verschoben: Rückt von Reihe 1 in Reihe 3, in Spalte 4.",
-          "text": "verschoben: Rückt von Reihe 1 in Reihe 3, in Spalte 4.",
-          "translated": false
-        },
-        {
-          "group": "mage",
-          "group_de": "Magier",
-          "spec": "Frost",
-          "type": "buff",
-          "spell": "Precision",
-          "source": "War Elementare Präzision: Die 2/4/6 % Trefferchance gelten jetzt für alle Zauber, nicht nur für Frost- und Feuerzauber.",
-          "text": "War Elementare Präzision: Die 2/4/6 % Trefferchance gelten jetzt für alle Zauber, nicht nur für Frost- und Feuerzauber.",
-          "translated": false
-        },
-        {
-          "group": "mage",
-          "group_de": "Magier",
-          "spec": "Frost",
-          "type": "nerf",
-          "spell": "Eislanze",
-          "source": "Hat jetzt 8 Sek. Abklingzeit.",
-          "text": "Hat jetzt 8 Sek. Abklingzeit.",
-          "translated": true,
-          "engine": "deepl"
-        }
-      ]
+      "link": "https://foreverchanges.pro/de/patch-notes/page/2#1.60.1.70685",
+      "changes": []
     },
     {
       "id": "foreverchanges-hotfix-2026-10-28",
@@ -1455,89 +1386,8 @@
       "source_summary": "Ein Hotfix zum Build vom 28. Oktober, erstmals am 28. Oktober im Cache gesehen, den die Startrealms senden, und den Blizzards Notizen nicht erwähnen: Aspekt des Falken und Aura des Volltreffers geben etwa halb so viel Distanzangriffskraft, die für den Start angekündigte Abklingzeit von 2 Min. für Kochendes Blut steht in den Serverdaten, die Bewegungsunfähigkeit von Einfangen, Gegenangriff, Verbessertes Zurechtstutzen, Verbesserte Kniesehne und Erfrierung teilt sich eine Gruppe abnehmender Wirkung, und Paladine lernen Zorn der Gerechtigkeit weiterhin auf Stufe 10. Dieselben Daten tragen die Zauber des Zombieseuchen-Events von 2008, die Infektion, die Fähigkeiten der Zombies und das Heilmittel, ohne dass ein Event angekündigt wäre.",
       "translated": false,
       "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-10-28",
-      "changes": [
-        {
-          "group": "warrior",
-          "group_de": "Krieger",
-          "spec": "Waffen",
-          "type": "change",
-          "spell": "Verbesserte Kniesehne",
-          "source": "Seine Bewegungsunfähigkeit teilt sich jetzt eine Gruppe abnehmender Wirkung mit den anderen Talenten, die bewegungsunfähig machen: Einfangen, Gegenangriff, Verbessertes Zurechtstutzen, Verbesserte Kniesehne und Erfrierung.",
-          "text": "Seine Bewegungsunfähigkeit teilt sich jetzt eine Gruppe abnehmender Wirkung mit den anderen Talenten, die bewegungsunfähig machen: Einfangen, Gegenangriff, Verbessertes Zurechtstutzen, Verbesserte Kniesehne und Erfrierung.",
-          "translated": false
-        },
-        {
-          "group": "hunter",
-          "group_de": "Jäger",
-          "spec": "Tierherrschaft",
-          "type": "nerf",
-          "spell": "Aspekt des Falken",
-          "source": "Gibt je Rang 15, 22, 30, 38 und 47 Distanzangriffskraft statt 20, 35, 50, 70 und 90.",
-          "text": "Gibt je Rang 15, 22, 30, 38 und 47 Distanzangriffskraft statt 20, 35, 50, 70 und 90.",
-          "translated": false
-        },
-        {
-          "group": "hunter",
-          "group_de": "Jäger",
-          "spec": "Treffsicherheit",
-          "type": "nerf",
-          "spell": "Aura des Volltreffers",
-          "source": "Gibt je Rang 15, 22, 30 und 40 Distanzangriffskraft statt 30, 40, 50 und 75.",
-          "text": "Gibt je Rang 15, 22, 30 und 40 Distanzangriffskraft statt 30, 40, 50 und 75.",
-          "translated": false
-        },
-        {
-          "group": "hunter",
-          "group_de": "Jäger",
-          "spec": "Überleben",
-          "type": "change",
-          "spell": "Gegenangriff",
-          "source": "Seine Bewegungsunfähigkeit teilt sich jetzt eine Gruppe abnehmender Wirkung mit den anderen Talenten, die bewegungsunfähig machen: Einfangen, Gegenangriff, Verbessertes Zurechtstutzen, Verbesserte Kniesehne und Erfrierung.",
-          "text": "Seine Bewegungsunfähigkeit teilt sich jetzt eine Gruppe abnehmender Wirkung mit den anderen Talenten, die bewegungsunfähig machen: Einfangen, Gegenangriff, Verbessertes Zurechtstutzen, Verbesserte Kniesehne und Erfrierung.",
-          "translated": false
-        },
-        {
-          "group": "hunter",
-          "group_de": "Jäger",
-          "spec": "Überleben",
-          "type": "change",
-          "spell": "Einfangen",
-          "source": "Seine Bewegungsunfähigkeit teilt sich jetzt eine Gruppe abnehmender Wirkung mit den anderen Talenten, die bewegungsunfähig machen: Einfangen, Gegenangriff, Verbessertes Zurechtstutzen, Verbesserte Kniesehne und Erfrierung.",
-          "text": "Seine Bewegungsunfähigkeit teilt sich jetzt eine Gruppe abnehmender Wirkung mit den anderen Talenten, die bewegungsunfähig machen: Einfangen, Gegenangriff, Verbessertes Zurechtstutzen, Verbesserte Kniesehne und Erfrierung.",
-          "translated": false
-        },
-        {
-          "group": "hunter",
-          "group_de": "Jäger",
-          "spec": "Überleben",
-          "type": "change",
-          "spell": "Verbessertes Zurechtstutzen",
-          "source": "Seine Bewegungsunfähigkeit teilt sich jetzt eine Gruppe abnehmender Wirkung mit den anderen Talenten, die bewegungsunfähig machen: Einfangen, Gegenangriff, Verbessertes Zurechtstutzen, Verbesserte Kniesehne und Erfrierung.",
-          "text": "Seine Bewegungsunfähigkeit teilt sich jetzt eine Gruppe abnehmender Wirkung mit den anderen Talenten, die bewegungsunfähig machen: Einfangen, Gegenangriff, Verbessertes Zurechtstutzen, Verbesserte Kniesehne und Erfrierung.",
-          "translated": false
-        },
-        {
-          "group": "mage",
-          "group_de": "Magier",
-          "spec": "Frost",
-          "type": "change",
-          "spell": "Erfrierung",
-          "source": "Seine Bewegungsunfähigkeit teilt sich jetzt eine Gruppe abnehmender Wirkung mit den anderen Talenten, die bewegungsunfähig machen: Einfangen, Gegenangriff, Verbessertes Zurechtstutzen, Verbesserte Kniesehne und Erfrierung.",
-          "text": "Seine Bewegungsunfähigkeit teilt sich jetzt eine Gruppe abnehmender Wirkung mit den anderen Talenten, die bewegungsunfähig machen: Einfangen, Gegenangriff, Verbessertes Zurechtstutzen, Verbesserte Kniesehne und Erfrierung.",
-          "translated": false
-        },
-        {
-          "group": "orc",
-          "group_de": "Orc",
-          "spec": "Allgemein",
-          "type": "buff",
-          "spell": "Kochendes Blut",
-          "source": "Die Abklingzeit beträgt 2 Min. statt 3 Min.: Der Server sendet den am 27. Oktober für den Start angekündigten Wert.",
-          "text": "Die Abklingzeit beträgt 2 Min. statt 3 Min.: Der Server sendet den am 27. Oktober für den Start angekündigten Wert.",
-          "translated": false
-        }
-      ]
+      "link": "https://foreverchanges.pro/de/patch-notes/page/2#hotfix-2026-10-28",
+      "changes": []
     },
     {
       "id": "foreverchanges-1.60.1.70658",
@@ -1644,7 +1494,7 @@
       "source_summary": "Ein kleines Client-Update. Es fügt nur kosmetische Gegenstände hinzu, deren Herkunft Blizzard noch nicht genannt hat: drei Reittiere (Tiefgrüne Meeresschildkröte, Purpurroter Hahn, Spektralwolfrudel), drei Haustiere (Blühendes Urtum, Gill’el, Pinky), zwei Transmogrifikationssets (Güldene Rüstung des Klingenmeisters, Gewand des Stillwasserfischers) und Abenteurerzelt, ein Spielzeug, das das Aussehen deines Lagerzelts ändert. Talente, Zauber und die übrigen Gegenstände haben sich nicht geändert.",
       "translated": false,
       "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes/page/2#1.60.1.70450",
+      "link": "https://foreverchanges.pro/de/patch-notes/page/3#1.60.1.70450",
       "changes": []
     },
     {
@@ -1656,7 +1506,7 @@
       "source_summary": "Ein Hotfix für den Build vom 15. Oktober, am 16. Oktober mit der Korrektur der Relikte für Katzengestalt verschickt, den Blizzards Notizen nicht erwähnen: Champion des Lichts gibt wieder 20/40/60 % der Intelligenz, Frostschlag kann Geschosssalve auslösen, und Fluch verstärken verstärkt Fluch der Erschöpfung um 20 % statt 50 %.",
       "translated": false,
       "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes/page/2#hotfix-2026-10-16",
+      "link": "https://foreverchanges.pro/de/patch-notes/page/3#hotfix-2026-10-16",
       "changes": []
     },
     {
@@ -1766,19 +1616,7 @@
       "engine": null,
       "link": "https://foreverchanges.pro/de/patch-notes/page/3#1.60.1.70170",
       "changes": []
-    },
-    {
-      "id": "foreverchanges-1.60.1.70124",
-      "title": "Build 1.60.1.70124, 30. September 2026",
-      "date": "2026-09-30",
-      "kind": "build",
-      "summary": "Ein kleiner Fix: Absturzberichte, der Loader des Spiels und ein neues Gegenstandssymbol. Talente, Zauber und Gegenstände haben sich nicht geändert.",
-      "source_summary": "Ein kleiner Fix: Absturzberichte, der Loader des Spiels und ein neues Gegenstandssymbol. Talente, Zauber und Gegenstände haben sich nicht geändert.",
-      "translated": false,
-      "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes/page/3#1.60.1.70124",
-      "changes": []
     }
   ],
-  "fetched_at": "2026-11-06T07:54:16+00:00"
+  "fetched_at": "2026-11-06T21:28:09+00:00"
 }
