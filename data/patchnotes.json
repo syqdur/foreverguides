@@ -1,15 +1,27 @@
 {
   "source": "https://foreverchanges.pro/de/patch-notes",
   "feed": "https://foreverchanges.pro/de/patch-notes/feed.xml",
-  "last_build": "Fri, 06 Nov 2026 12:00:00 GMT",
+  "last_build": "Sat, 07 Nov 2026 12:00:00 GMT",
   "items": [
+    {
+      "id": "foreverchanges-1.60.1.70862",
+      "title": "Build 1.60.1.70862, 7. November 2026",
+      "date": "2026-11-07",
+      "kind": "build",
+      "summary": "Der Client vom 7. November, aus seinen Dateien gelesen: Blizzard hat keine Notizen dazu veröffentlicht. Das Abenteurerzelt gibt wieder Ruhebonus, Rock on Stick und Bigger Rock on Bigger Stick zeigen ihre Blutung, vier Questgegenstände bekommen eine Benutzen-Zeile, und der Client enthält jetzt fünf der neuen Dungeons mit ihren Begegnungen. Der Rest holt die Hotfixes des Servers nach, die die Seite schon zeigt, darunter Blutgier, Bärengestalt, Verheeren und die Fläschchen für Hyjal.",
+      "source_summary": "Der Client vom 7. November, aus seinen Dateien gelesen: Blizzard hat keine Notizen dazu veröffentlicht. Das Abenteurerzelt gibt wieder Ruhebonus, Rock on Stick und Bigger Rock on Bigger Stick zeigen ihre Blutung, vier Questgegenstände bekommen eine Benutzen-Zeile, und der Client enthält jetzt fünf der neuen Dungeons mit ihren Begegnungen. Der Rest holt die Hotfixes des Servers nach, die die Seite schon zeigt, darunter Blutgier, Bärengestalt, Verheeren und die Fläschchen für Hyjal.",
+      "translated": false,
+      "engine": null,
+      "link": "https://foreverchanges.pro/de/patch-notes#1.60.1.70862",
+      "changes": []
+    },
     {
       "id": "foreverchanges-hotfix-2026-11-06",
       "title": "Hotfix, 6. November 2026",
       "date": "2026-11-06",
       "kind": "hotfix",
-      "summary": "Ein Hotfix zum Startclient, erstmals am 6. November im Cache gesehen, den die Startrealms senden, und zu dem Blizzard keine Notizen veröffentlicht hat. Tollkühne Schwünge löst jetzt Blutgier aus, der Tooltip von Bärengestalt nennt die Gesundheit aus Classic, und der von Verheeren zeigt weniger Bonusschaden.",
-      "source_summary": "Ein Hotfix zum Startclient, erstmals am 6. November im Cache gesehen, den die Startrealms senden, und zu dem Blizzard keine Notizen veröffentlicht hat. Tollkühne Schwünge löst jetzt Blutgier aus, der Tooltip von Bärengestalt nennt die Gesundheit aus Classic, und der von Verheeren zeigt weniger Bonusschaden.",
+      "summary": "Ein Hotfix für den Launch-Client, den Blizzards Patchnotes vom 6. November beschreiben. Im Client korrigiert er drei Tooltips: Blutgier nennt Tollkühne Schwünge, Bärengestalt gibt die Gesundheit von Classic an, und Verheeren zeigt seinen echten Bonusschaden. Was die Zauber tun, hat sich nicht geändert.",
+      "source_summary": "Ein Hotfix für den Launch-Client, den Blizzards Patchnotes vom 6. November beschreiben. Im Client korrigiert er drei Tooltips: Blutgier nennt Tollkühne Schwünge, Bärengestalt gibt die Gesundheit von Classic an, und Verheeren zeigt seinen echten Bonusschaden. Was die Zauber tun, hat sich nicht geändert.",
       "translated": false,
       "engine": null,
       "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-11-06",
@@ -18,10 +30,10 @@
           "group": "warrior",
           "group_de": "Krieger",
           "spec": "Furor",
-          "type": "buff",
+          "type": "change",
           "spell": "Blutgier",
-          "source": "Jetzt löst auch Tollkühne Schwünge den Effekt aus, nicht mehr nur Wutanfall, Berserkerwut, Blutrausch, Todeswunsch und Blutdurst: deine nächsten 3 Nahkampfangriffe stellen je nach Rang wie bisher 0,5 oder 1 % deiner maximalen Gesundheit wieder her.",
-          "text": "Jetzt löst auch Tollkühne Schwünge den Effekt aus, nicht mehr nur Wutanfall, Berserkerwut, Blutrausch, Todeswunsch und Blutdurst: deine nächsten 3 Nahkampfangriffe stellen je nach Rang wie bisher 0,5 oder 1 % deiner maximalen Gesundheit wieder her.",
+          "source": "Sein Tooltip nennt jetzt Tollkühne Schwünge unter den Fähigkeiten, die es auslösen. Blizzards Notes sprechen von einer Tooltip-Korrektur: Tollkühne Schwünge hat es schon vorher ausgelöst.",
+          "text": "Sein Tooltip nennt jetzt Tollkühne Schwünge unter den Fähigkeiten, die es auslösen. Blizzards Notes sprechen von einer Tooltip-Korrektur: Tollkühne Schwünge hat es schon vorher ausgelöst.",
           "translated": false
         },
         {
@@ -218,7 +230,70 @@
       "translated": false,
       "engine": null,
       "link": "https://foreverchanges.pro/de/patch-notes#1.60.1.70753",
-      "changes": []
+      "changes": [
+        {
+          "group": "paladin",
+          "group_de": "Paladin",
+          "spec": "Schutz",
+          "type": "change",
+          "spell": "Heiliger Schild",
+          "source": "Sein Rang 4, 221 Schaden pro Block, wird jetzt auf Stufe 60 für 240 Mana mit 10 Sek. Abklingzeit erlernt. Der Hotfix gab ihm weder Stufe noch Kosten noch Abklingzeit.",
+          "text": "Sein Rang 4, 221 Schaden pro Block, wird jetzt auf Stufe 60 für 240 Mana mit 10 Sek. Abklingzeit erlernt. Der Hotfix gab ihm weder Stufe noch Kosten noch Abklingzeit.",
+          "translated": false
+        },
+        {
+          "group": "rogue",
+          "group_de": "Schurke",
+          "spec": "Täuschung",
+          "type": "buff",
+          "spell": "Bereitschaft",
+          "source": "Neue passive Fähigkeit, erlernt auf Stufe 18: Solange du volle Energie hast und dich außerhalb des Kampfes befindest, kostet deine nächste Fähigkeit 10 Energie weniger. Im Spiel noch nicht übersetzt.",
+          "text": "Neue passive Fähigkeit, erlernt auf Stufe 18: Solange du volle Energie hast und dich außerhalb des Kampfes befindest, kostet deine nächste Fähigkeit 10 Energie weniger. Im Spiel noch nicht übersetzt.",
+          "translated": false
+        },
+        {
+          "group": "druid",
+          "group_de": "Druide",
+          "spec": "Wilder Kampf",
+          "type": "buff",
+          "spell": "Bereitschaft",
+          "source": "Neue passive Fähigkeit, erlernt auf Stufe 32: Solange du volle Energie hast und dich außerhalb des Kampfes befindest, kostet deine nächste Fähigkeit 10 Energie weniger. Im Spiel noch nicht übersetzt.",
+          "text": "Neue passive Fähigkeit, erlernt auf Stufe 32: Solange du volle Energie hast und dich außerhalb des Kampfes befindest, kostet deine nächste Fähigkeit 10 Energie weniger. Im Spiel noch nicht übersetzt.",
+          "translated": false
+        },
+        {
+          "group": "orc",
+          "group_de": "Orc",
+          "spec": "Allgemein",
+          "type": "change",
+          "spell": "Befehlsgewalt",
+          "source": "Jetzt eine passive Fähigkeit mit eigenem Symbol im Client. Der Hotfix führte sie als Sofortzauber ohne Symbol.",
+          "text": "Jetzt eine passive Fähigkeit mit eigenem Symbol im Client. Der Hotfix führte sie als Sofortzauber ohne Symbol.",
+          "translated": false
+        },
+        {
+          "group": "skyborne",
+          "group_de": "Skyborne",
+          "spec": "Allgemein",
+          "type": "buff",
+          "spell": "Leylinie lesen",
+          "source": "Attuned hält jetzt 1 Std. statt 15 Min., wie zum Start angekündigt.",
+          "text": "Attuned hält jetzt 1 Std. statt 15 Min., wie zum Start angekündigt.",
+          "translated": true,
+          "engine": "google"
+        },
+        {
+          "group": "skyborne",
+          "group_de": "Skyborne",
+          "spec": "Allgemein",
+          "type": "buff",
+          "spell": "Himmelssicht",
+          "source": "Charged hält jetzt 1 Std. statt 15 Min., wie zum Start angekündigt.",
+          "text": "Charged hält jetzt 1 Std. statt 15 Min., wie zum Start angekündigt.",
+          "translated": true,
+          "engine": "google"
+        }
+      ]
     },
     {
       "id": "foreverchanges-hotfix-2026-10-30",
@@ -1351,19 +1426,8 @@
       "source_summary": "Der Build vom 30. Oktober übernimmt die Server-Hotfixes vom 27. bis 29. Oktober in die Clientdateien: die Überarbeitung der Magierbäume, 8 Sek. Abklingzeit für Eislanze, 2 Min. Abklingzeit für Kochendes Blut und die Angriffskraft von Rache. Das Abenteurerzelt ist wieder kosmetisch. Nichts davon ist bestätigt: Der Build kam, während die Realms vor dem Start geschlossen sind, Blizzard hat keine Notizen dazu veröffentlicht, und im Spiel lässt sich noch nichts prüfen.",
       "translated": false,
       "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes#1.60.1.70707",
-      "changes": [
-        {
-          "group": "warrior",
-          "group_de": "Krieger",
-          "spec": "Schutz",
-          "type": "buff",
-          "spell": "Rache",
-          "source": "Verursacht auf Rang 6 zwischen (138 + 22.5 % der Angriffskraft) und (168 + 22.5 % der Angriffskraft) Schaden statt 138 bis 168, und jeder Rang erhält 22.5 % der Angriffskraft dazu.",
-          "text": "Verursacht auf Rang 6 zwischen (138 + 22.5 % der Angriffskraft) und (168 + 22.5 % der Angriffskraft) Schaden statt 138 bis 168, und jeder Rang erhält 22.5 % der Angriffskraft dazu.",
-          "translated": false
-        }
-      ]
+      "link": "https://foreverchanges.pro/de/patch-notes/page/2#1.60.1.70707",
+      "changes": []
     },
     {
       "id": "foreverchanges-1.60.1.70685",
@@ -1482,7 +1546,7 @@
       "source_summary": "Ein Hotfix für den Build vom 16. Oktober, spätestens am 18. Oktober im Spiel, den Blizzards Notizen nicht erwähnen: Der erste Rang von Heiliges Feuer verursacht etwas weniger Schaden.",
       "translated": false,
       "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes/page/2#hotfix-2026-10-18",
+      "link": "https://foreverchanges.pro/de/patch-notes/page/3#hotfix-2026-10-18",
       "changes": []
     },
     {
@@ -1604,19 +1668,7 @@
       "engine": null,
       "link": "https://foreverchanges.pro/de/patch-notes/page/3#1.60.1.70205",
       "changes": []
-    },
-    {
-      "id": "foreverchanges-1.60.1.70170",
-      "title": "Build 1.60.1.70170, 1. Oktober 2026",
-      "date": "2026-10-01",
-      "kind": "build",
-      "summary": "Die Höchststufe steigt auf 30. Die Ausgrabungsstätte öffnet im Sumpfland (Stufe 26 bis 31), und die Hügel von Razorfen (25+) und Uldaman (30+) kommen zu den schon offenen Dungeons hinzu. Blizzards Patchnotes kündigen außerdem an: halb so viel Bonuserfahrung aus Dungeonquests, PvP-Ausrüstung für etwa 50 % mehr Ehre, mit einer auf 25.000 angehobenen Obergrenze, 100 % mehr Wut aus kritischen Treffern für Krieger (75 % für Bären), den aggressiven Modus wieder für die Begleiter von Jägern und Hexenmeistern, und Barbiere in Darnassus und Donnerfels. Schließlich kann ein beim Anlegen gebundener Gegenstand, dessen Aussehen du nicht gesammelt hast, nach dem Verkauf an einen Händler nicht mehr an deine anderen Charaktere gehen.",
-      "source_summary": "Die Höchststufe steigt auf 30. Die Ausgrabungsstätte öffnet im Sumpfland (Stufe 26 bis 31), und die Hügel von Razorfen (25+) und Uldaman (30+) kommen zu den schon offenen Dungeons hinzu. Blizzards Patchnotes kündigen außerdem an: halb so viel Bonuserfahrung aus Dungeonquests, PvP-Ausrüstung für etwa 50 % mehr Ehre, mit einer auf 25.000 angehobenen Obergrenze, 100 % mehr Wut aus kritischen Treffern für Krieger (75 % für Bären), den aggressiven Modus wieder für die Begleiter von Jägern und Hexenmeistern, und Barbiere in Darnassus und Donnerfels. Schließlich kann ein beim Anlegen gebundener Gegenstand, dessen Aussehen du nicht gesammelt hast, nach dem Verkauf an einen Händler nicht mehr an deine anderen Charaktere gehen.",
-      "translated": false,
-      "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes/page/3#1.60.1.70170",
-      "changes": []
     }
   ],
-  "fetched_at": "2026-11-06T21:28:09+00:00"
+  "fetched_at": "2026-11-07T08:43:16+00:00"
 }
