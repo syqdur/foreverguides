@@ -1,8 +1,20 @@
 {
   "source": "https://foreverchanges.pro/de/patch-notes",
   "feed": "https://foreverchanges.pro/de/patch-notes/feed.xml",
-  "last_build": "Sat, 07 Nov 2026 12:00:00 GMT",
+  "last_build": "Sun, 08 Nov 2026 12:00:00 GMT",
   "items": [
+    {
+      "id": "foreverchanges-hotfix-2026-11-08",
+      "title": "Hotfix, 8. November 2026",
+      "date": "2026-11-08",
+      "kind": "hotfix",
+      "summary": "Blizzards Hotfix vom 8. November, live seit etwa 19:05 Uhr UTC: Gegner in Dungeons geben 50 % mehr Erfahrung, wenn du sie tötest.",
+      "source_summary": "Blizzards Hotfix vom 8. November, live seit etwa 19:05 Uhr UTC: Gegner in Dungeons geben 50 % mehr Erfahrung, wenn du sie tötest.",
+      "translated": false,
+      "engine": null,
+      "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-11-08",
+      "changes": []
+    },
     {
       "id": "foreverchanges-hotfix-2026-11-07",
       "title": "Hotfix, 7. November 2026",
@@ -241,71 +253,8 @@
       "source_summary": "Der Build vom 2. November schreibt den Hotfix vom 30. Oktober in die Clientdateien: Die Überarbeitung der Druiden- und Paladinbäume, die Überarbeitung der Volksfähigkeiten und die Änderungen an Magier, Priester, Hexenmeister und Jäger werden jetzt in jeder Sprache aus dem Client gelesen. Neu darin: Bereitschaft, eine passive Fähigkeit für Schurken auf Stufe 18 und Druiden auf Stufe 32, die deiner ersten Fähigkeit 10 Energie abzieht, wenn du einen Kampf mit voller Energie beginnst; Attuned und Charged der Himmelsgeborenen halten 1 Std. statt 15 Min., wie von Blizzard angekündigt; der letzte Rang von Heiliger Schild bekommt seine Stufe, seine Kosten und seine Abklingzeit; und der Beutel mit violettem Staub, ein Gegenstand für die Startfeier. Nichts davon ist bestätigt: Der Build kam, während die Realms vor dem Start geschlossen sind, Blizzard hat keine Notizen dazu veröffentlicht, und im Spiel lässt sich noch nichts prüfen.",
       "translated": false,
       "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes#1.60.1.70753",
-      "changes": [
-        {
-          "group": "paladin",
-          "group_de": "Paladin",
-          "spec": "Schutz",
-          "type": "change",
-          "spell": "Heiliger Schild",
-          "source": "Sein Rang 4, 221 Schaden pro Block, wird jetzt auf Stufe 60 für 240 Mana mit 10 Sek. Abklingzeit erlernt. Der Hotfix gab ihm weder Stufe noch Kosten noch Abklingzeit.",
-          "text": "Sein Rang 4, 221 Schaden pro Block, wird jetzt auf Stufe 60 für 240 Mana mit 10 Sek. Abklingzeit erlernt. Der Hotfix gab ihm weder Stufe noch Kosten noch Abklingzeit.",
-          "translated": false
-        },
-        {
-          "group": "rogue",
-          "group_de": "Schurke",
-          "spec": "Täuschung",
-          "type": "buff",
-          "spell": "Bereitschaft",
-          "source": "Neue passive Fähigkeit, erlernt auf Stufe 18: Solange du volle Energie hast und dich außerhalb des Kampfes befindest, kostet deine nächste Fähigkeit 10 Energie weniger. Im Spiel noch nicht übersetzt.",
-          "text": "Neue passive Fähigkeit, erlernt auf Stufe 18: Solange du volle Energie hast und dich außerhalb des Kampfes befindest, kostet deine nächste Fähigkeit 10 Energie weniger. Im Spiel noch nicht übersetzt.",
-          "translated": false
-        },
-        {
-          "group": "druid",
-          "group_de": "Druide",
-          "spec": "Wilder Kampf",
-          "type": "buff",
-          "spell": "Bereitschaft",
-          "source": "Neue passive Fähigkeit, erlernt auf Stufe 32: Solange du volle Energie hast und dich außerhalb des Kampfes befindest, kostet deine nächste Fähigkeit 10 Energie weniger. Im Spiel noch nicht übersetzt.",
-          "text": "Neue passive Fähigkeit, erlernt auf Stufe 32: Solange du volle Energie hast und dich außerhalb des Kampfes befindest, kostet deine nächste Fähigkeit 10 Energie weniger. Im Spiel noch nicht übersetzt.",
-          "translated": false
-        },
-        {
-          "group": "orc",
-          "group_de": "Orc",
-          "spec": "Allgemein",
-          "type": "change",
-          "spell": "Befehlsgewalt",
-          "source": "Jetzt eine passive Fähigkeit mit eigenem Symbol im Client. Der Hotfix führte sie als Sofortzauber ohne Symbol.",
-          "text": "Jetzt eine passive Fähigkeit mit eigenem Symbol im Client. Der Hotfix führte sie als Sofortzauber ohne Symbol.",
-          "translated": false
-        },
-        {
-          "group": "skyborne",
-          "group_de": "Skyborne",
-          "spec": "Allgemein",
-          "type": "buff",
-          "spell": "Leylinie lesen",
-          "source": "Attuned hält jetzt 1 Std. statt 15 Min., wie zum Start angekündigt.",
-          "text": "Attuned hält jetzt 1 Std. statt 15 Min., wie zum Start angekündigt.",
-          "translated": true,
-          "engine": "google"
-        },
-        {
-          "group": "skyborne",
-          "group_de": "Skyborne",
-          "spec": "Allgemein",
-          "type": "buff",
-          "spell": "Himmelssicht",
-          "source": "Charged hält jetzt 1 Std. statt 15 Min., wie zum Start angekündigt.",
-          "text": "Charged hält jetzt 1 Std. statt 15 Min., wie zum Start angekündigt.",
-          "translated": true,
-          "engine": "google"
-        }
-      ]
+      "link": "https://foreverchanges.pro/de/patch-notes/page/2#1.60.1.70753",
+      "changes": []
     },
     {
       "id": "foreverchanges-hotfix-2026-10-30",
@@ -424,7 +373,7 @@
       "source_summary": "Ein Hotfix für den Build vom 16. Oktober, zuerst am 21. Oktober gesehen, den Blizzards Notizen nicht erwähnen: Rang 4 von Mal des Jägers gibt doppelt so viel Distanzangriffskraft, und Rang 3 von Lavaeruption erhält durch Flammenschock 20 %, wie die anderen Ränge.",
       "translated": false,
       "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes/page/2#hotfix-2026-10-21",
+      "link": "https://foreverchanges.pro/de/patch-notes/page/3#hotfix-2026-10-21",
       "changes": []
     },
     {
@@ -546,19 +495,7 @@
       "engine": null,
       "link": "https://foreverchanges.pro/de/patch-notes/page/3#1.60.1.70245",
       "changes": []
-    },
-    {
-      "id": "foreverchanges-1.60.1.70235",
-      "title": "Build 1.60.1.70235, 5. Oktober 2026",
-      "date": "2026-10-05",
-      "kind": "build",
-      "summary": "Blizzard hat die Realms neu gestartet, „um einige Fehler zu beheben“, ohne zu sagen, welche. Laut Spielern funktioniert das Auktionshaus des Realms PvP 2, das seit dem 4. Oktober geschlossen war, wieder, und die Freundesliste sieht anders aus, mit neuen Reitern. Der Client selbst aktualisiert nur die Absturzberichte und den Loader des Spiels. Talente, Zauber und Gegenstände haben sich nicht geändert.",
-      "source_summary": "Blizzard hat die Realms neu gestartet, „um einige Fehler zu beheben“, ohne zu sagen, welche. Laut Spielern funktioniert das Auktionshaus des Realms PvP 2, das seit dem 4. Oktober geschlossen war, wieder, und die Freundesliste sieht anders aus, mit neuen Reitern. Der Client selbst aktualisiert nur die Absturzberichte und den Loader des Spiels. Talente, Zauber und Gegenstände haben sich nicht geändert.",
-      "translated": false,
-      "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes/page/3#1.60.1.70235",
-      "changes": []
     }
   ],
-  "fetched_at": "2026-11-07T23:38:07+00:00"
+  "fetched_at": "2026-11-08T22:52:13+00:00"
 }
