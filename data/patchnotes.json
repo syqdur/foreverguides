@@ -1,8 +1,113 @@
 {
   "source": "https://foreverchanges.pro/de/patch-notes",
   "feed": "https://foreverchanges.pro/de/patch-notes/feed.xml",
-  "last_build": "Mon, 09 Nov 2026 12:00:00 GMT",
+  "last_build": "Tue, 10 Nov 2026 12:00:00 GMT",
   "items": [
+    {
+      "id": "foreverchanges-hotfix-2026-11-10",
+      "title": "Hotfix, 10. November 2026",
+      "date": "2026-11-10",
+      "kind": "hotfix",
+      "summary": "Ein Hotfix für den Client vom 10. November, zuerst am 10. November um 16:51 Uhr UTC im ersten Cache dieses Clients gesehen, den die Realms zum Start senden. Blizzard hat keine Notes dazu veröffentlicht. Arkaner Schuss und Falke beschwören kosten jetzt einen Anteil des Grundmanas des Jägers statt eines festen Betrags pro Rang, Große Ausdauer erhöht jetzt die Gesundheit des Begleiters statt seiner Ausdauer, und Schnelligkeit der Natur wirkt jetzt auf Wildwuchs. Um 19:12 Uhr UTC hat ein zweiter Push Gebrechen-Hexenmeister und den Wichtel geändert: Zermürben beschleunigt jetzt Lebensentzug, Verderbnis und Omen der Pein, solange du es kanalisierst, statt ihren Schaden zu erhöhen, und der Feuerblitz des Wichtels trifft auf Rang 1 bis 4 härter. Wut des Sturms, ein Zweihandstreitkolben für Verstärkungsschamanen, gibt jetzt +16 Stärke statt +12 Intelligenz bei Tempo 3,60 statt 3,20, mit gleichem Schaden pro Sekunde.",
+      "source_summary": "Ein Hotfix für den Client vom 10. November, zuerst am 10. November um 16:51 Uhr UTC im ersten Cache dieses Clients gesehen, den die Realms zum Start senden. Blizzard hat keine Notes dazu veröffentlicht. Arkaner Schuss und Falke beschwören kosten jetzt einen Anteil des Grundmanas des Jägers statt eines festen Betrags pro Rang, Große Ausdauer erhöht jetzt die Gesundheit des Begleiters statt seiner Ausdauer, und Schnelligkeit der Natur wirkt jetzt auf Wildwuchs. Um 19:12 Uhr UTC hat ein zweiter Push Gebrechen-Hexenmeister und den Wichtel geändert: Zermürben beschleunigt jetzt Lebensentzug, Verderbnis und Omen der Pein, solange du es kanalisierst, statt ihren Schaden zu erhöhen, und der Feuerblitz des Wichtels trifft auf Rang 1 bis 4 härter. Wut des Sturms, ein Zweihandstreitkolben für Verstärkungsschamanen, gibt jetzt +16 Stärke statt +12 Intelligenz bei Tempo 3,60 statt 3,20, mit gleichem Schaden pro Sekunde.",
+      "translated": false,
+      "engine": null,
+      "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-11-10",
+      "changes": [
+        {
+          "group": "hunter",
+          "group_de": "Jäger",
+          "spec": "Allgemein",
+          "type": "change",
+          "spell": "Große Ausdauer",
+          "source": "Erhöht jetzt die Gesundheit deines Begleiters um 30 auf Rang 1 bis 400 auf Rang 10, statt seine Ausdauer um 3 bis 40.",
+          "text": "Erhöht jetzt die Gesundheit deines Begleiters um 30 auf Rang 1 bis 400 auf Rang 10, statt seine Ausdauer um 3 bis 40.",
+          "translated": false
+        },
+        {
+          "group": "hunter",
+          "group_de": "Jäger",
+          "spec": "Tierherrschaft",
+          "type": "nerf",
+          "spell": "Falke beschwören",
+          "source": "Kostet auf jedem Rang 11% des Grundmanas statt 80 Mana auf Rang 1 bis 190 Mana auf Rang 4. Die Kosten richten sich jetzt nach deiner Stufe, nicht nach dem Rang: etwa 85 auf Stufe 30 statt 80 für Rang 1 und etwa 189 auf Stufe 60 statt 190 für Rang 4.",
+          "text": "Kostet auf jedem Rang 11% des Grundmanas statt 80 Mana auf Rang 1 bis 190 Mana auf Rang 4. Die Kosten richten sich jetzt nach deiner Stufe, nicht nach dem Rang: etwa 85 auf Stufe 30 statt 80 für Rang 1 und etwa 189 auf Stufe 60 statt 190 für Rang 4.",
+          "translated": false
+        },
+        {
+          "group": "hunter",
+          "group_de": "Jäger",
+          "spec": "Treffsicherheit",
+          "type": "nerf",
+          "spell": "Arkaner Schuss",
+          "source": "Kostet auf jedem Rang 11% des Grundmanas statt 25 Mana auf Rang 1 bis 190 Mana auf Rang 8. Die Kosten richten sich jetzt nach deiner Stufe, nicht nach dem Rang: etwa 85 auf Stufe 30 statt 80 für Rang 4 und etwa 189 auf Stufe 60 statt 190 für Rang 8. Niedrigere Ränge kosten nicht mehr weniger.",
+          "text": "Kostet auf jedem Rang 11% des Grundmanas statt 25 Mana auf Rang 1 bis 190 Mana auf Rang 8. Die Kosten richten sich jetzt nach deiner Stufe, nicht nach dem Rang: etwa 85 auf Stufe 30 statt 80 für Rang 4 und etwa 189 auf Stufe 60 statt 190 für Rang 8. Niedrigere Ränge kosten nicht mehr weniger.",
+          "translated": false
+        },
+        {
+          "group": "warlock",
+          "group_de": "Hexenmeister",
+          "spec": "Allgemein",
+          "type": "buff",
+          "spell": "Feuerblitz",
+          "source": "Der Feuerblitz des Wichtels verursacht auf Rang 1 bis 4 mehr Schaden: 6 bis 8 statt 4 bis 5 auf Rang 1, bis 18 bis 22 statt 18 bis 19 auf Rang 4.",
+          "text": "Der Feuerblitz des Wichtels verursacht auf Rang 1 bis 4 mehr Schaden: 6 bis 8 statt 4 bis 5 auf Rang 1, bis 18 bis 22 statt 18 bis 19 auf Rang 4.",
+          "translated": false
+        },
+        {
+          "group": "warlock",
+          "group_de": "Hexenmeister",
+          "spec": "Gebrechen",
+          "type": "change",
+          "spell": "Zermürben",
+          "source": "Erhöht nicht mehr den Schaden deiner anderen regelmäßigen Schattenschadenseffekte am Ziel um 10 %. Stattdessen verursachen dein Lebensentzug, deine Verderbnis und dein Omen der Pein auf dem Ziel ihren Schaden 100 % schneller, solange du es kanalisierst. Sein eigener Schaden sinkt um 30 %: 60 statt 86 pro Sekunde.",
+          "text": "Erhöht nicht mehr den Schaden deiner anderen regelmäßigen Schattenschadenseffekte am Ziel um 10 %. Stattdessen verursachen dein Lebensentzug, deine Verderbnis und dein Omen der Pein auf dem Ziel ihren Schaden 100 % schneller, solange du es kanalisierst. Sein eigener Schaden sinkt um 30 %: 60 statt 86 pro Sekunde.",
+          "translated": false
+        },
+        {
+          "group": "warlock",
+          "group_de": "Hexenmeister",
+          "spec": "Gebrechen",
+          "type": "change",
+          "spell": "Seelenentzug",
+          "source": "Zählt jetzt nur noch deine Verderbnis, deinen Lebensentzug und dein Omen der Pein auf dem Ziel statt aller deiner anderen Gebrechenseffekte.",
+          "text": "Zählt jetzt nur noch deine Verderbnis, deinen Lebensentzug und dein Omen der Pein auf dem Ziel statt aller deiner anderen Gebrechenseffekte.",
+          "translated": false
+        },
+        {
+          "group": "warlock",
+          "group_de": "Hexenmeister",
+          "spec": "Zerstörung",
+          "type": "nerf",
+          "spell": "Omen der Verwüstung",
+          "source": "Löst jetzt die globale Abklingzeit von 1,5 Sek. aus.",
+          "text": "Löst jetzt die globale Abklingzeit von 1,5 Sek. aus.",
+          "translated": false
+        },
+        {
+          "group": "druid",
+          "group_de": "Druide",
+          "spec": "Wiederherst",
+          "type": "buff",
+          "spell": "Schnelligkeit der Natur",
+          "source": "Wirkt jetzt auch auf Wildwuchs, das damit sofort statt in 3 Sek. gewirkt wird.",
+          "text": "Wirkt jetzt auch auf Wildwuchs, das damit sofort statt in 3 Sek. gewirkt wird.",
+          "translated": false
+        }
+      ]
+    },
+    {
+      "id": "foreverchanges-1.60.1.70888",
+      "title": "Build 1.60.1.70888, 10. November 2026",
+      "date": "2026-11-10",
+      "kind": "build",
+      "summary": "Der Client vom 10. November. Er enthält die Server-Hotfixes vom 7. bis 9. November und eine Änderung, die Spieler sehen: Furchtzauberschutz kann jetzt in Schattengestalt gewirkt werden. Die von Blizzard für den 10. November angekündigten Klassenanpassungen sind nicht darin.",
+      "source_summary": "Der Client vom 10. November. Er enthält die Server-Hotfixes vom 7. bis 9. November und eine Änderung, die Spieler sehen: Furchtzauberschutz kann jetzt in Schattengestalt gewirkt werden. Die von Blizzard für den 10. November angekündigten Klassenanpassungen sind nicht darin.",
+      "translated": false,
+      "engine": null,
+      "link": "https://foreverchanges.pro/de/patch-notes#1.60.1.70888",
+      "changes": []
+    },
     {
       "id": "foreverchanges-hotfix-2026-11-09",
       "title": "Hotfix, 9. November 2026",
@@ -60,7 +165,18 @@
       "translated": false,
       "engine": null,
       "link": "https://foreverchanges.pro/de/patch-notes#1.60.1.70862",
-      "changes": []
+      "changes": [
+        {
+          "group": "hunter",
+          "group_de": "Jäger",
+          "spec": "Allgemein",
+          "type": "change",
+          "spell": "Große Ausdauer",
+          "source": "Sein Tooltip sagt auf Rang 9 und 10 Gesundheit um 32 und 40 erhöht statt Ausdauer. Der Zauber erhöht weiter die Ausdauer deines Begleiters, wie es die Ränge 1 bis 8 sagen.Nicht in Blizzards Notizen, im Spiel gefunden.",
+          "text": "Sein Tooltip sagt auf Rang 9 und 10 Gesundheit um 32 und 40 erhöht statt Ausdauer. Der Zauber erhöht weiter die Ausdauer deines Begleiters, wie es die Ränge 1 bis 8 sagen.Nicht in Blizzards Notizen, im Spiel gefunden.",
+          "translated": false
+        }
+      ]
     },
     {
       "id": "foreverchanges-hotfix-2026-11-06",
@@ -171,7 +287,7 @@
       "source_summary": "A technical build: its game data is the same as the 2026-11-02 build's (1.60.1.70753). Talents, spells and items did not change.",
       "translated": true,
       "engine": "google",
-      "link": "https://foreverchanges.pro/de/patch-notes#1.60.1.70755",
+      "link": "https://foreverchanges.pro/de/patch-notes/page/2#1.60.1.70755",
       "changes": []
     },
     {
@@ -279,7 +395,7 @@
       "source_summary": "Ein Hotfix für den Build vom 22. Oktober, zuerst am 23. Oktober gesehen, den Blizzards Notizen nicht erwähnen: Paladine lernen Zorn der Gerechtigkeit mit Stufe 10 statt 16.",
       "translated": false,
       "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes/page/2#hotfix-2026-10-23",
+      "link": "https://foreverchanges.pro/de/patch-notes/page/3#hotfix-2026-10-23",
       "changes": []
     },
     {
@@ -291,7 +407,7 @@
       "source_summary": "Die Beta ist auf den Build gewechselt, den der Stresstest des fertigen Spiels am 21. Oktober genutzt hat. Seine Spieldaten sind dieselben wie die des Builds vom 16. Oktober: Talente, Zauber und Gegenstände haben sich nicht geändert.",
       "translated": false,
       "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes/page/2#1.60.1.70532",
+      "link": "https://foreverchanges.pro/de/patch-notes/page/3#1.60.1.70532",
       "changes": []
     },
     {
@@ -401,31 +517,7 @@
       "engine": null,
       "link": "https://foreverchanges.pro/de/patch-notes/page/3#1.60.1.70338",
       "changes": []
-    },
-    {
-      "id": "foreverchanges-1.60.1.70334",
-      "title": "Build 1.60.1.70334, 9. Oktober 2026",
-      "date": "2026-10-09",
-      "kind": "build",
-      "summary": "Blizzard hat die Realms am Abend des 9. Oktober neu gestartet, nur mit einem Hinweis im Spiel, für etwa 40 Minuten. Der Client aktualisiert nur die Absturzberichte, den Loader des Spiels und Grafikdateien. Talente, Zauber und Gegenstände haben sich nicht geändert. Seitdem melden Tester einen Fehler mit WowB_loader.dll, der verschwindet, sobald die Datei umbenannt ist und der Launcher sie neu herunterlädt. Der Knopf zum Sortieren der Taschen, seit dem 8. Oktober verschwunden, fehlt weiterhin: /click BagItemAutoSortButton im Chat sortiert die Taschen.",
-      "source_summary": "Blizzard hat die Realms am Abend des 9. Oktober neu gestartet, nur mit einem Hinweis im Spiel, für etwa 40 Minuten. Der Client aktualisiert nur die Absturzberichte, den Loader des Spiels und Grafikdateien. Talente, Zauber und Gegenstände haben sich nicht geändert. Seitdem melden Tester einen Fehler mit WowB_loader.dll, der verschwindet, sobald die Datei umbenannt ist und der Launcher sie neu herunterlädt. Der Knopf zum Sortieren der Taschen, seit dem 8. Oktober verschwunden, fehlt weiterhin: /click BagItemAutoSortButton im Chat sortiert die Taschen.",
-      "translated": false,
-      "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes/page/3#1.60.1.70334",
-      "changes": []
-    },
-    {
-      "id": "foreverchanges-1.60.1.70291",
-      "title": "Build 1.60.1.70291, 8. Oktober 2026",
-      "date": "2026-10-08",
-      "kind": "build",
-      "summary": "Der Dungeon Dalaran öffnet, Monster in Dungeons geben etwa 20 % mehr Erfahrung, und acht der neun Klassen erhalten Balance-Änderungen.",
-      "source_summary": "Der Dungeon Dalaran öffnet, Monster in Dungeons geben etwa 20 % mehr Erfahrung, und acht der neun Klassen erhalten Balance-Änderungen.",
-      "translated": false,
-      "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes/page/3#1.60.1.70291",
-      "changes": []
     }
   ],
-  "fetched_at": "2026-11-10T13:26:32+00:00"
+  "fetched_at": "2026-11-10T20:47:22+00:00"
 }
