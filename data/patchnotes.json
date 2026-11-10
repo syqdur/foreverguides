@@ -8,8 +8,8 @@
       "title": "Hotfix, 9. November 2026",
       "date": "2026-11-09",
       "kind": "hotfix",
-      "summary": "Ein Hotfix für den Client vom 7. November, zuerst am 9. November zwischen 19:26 und 21:43 Uhr UTC im Cache gesehen, den die Realms zum Start senden. Blizzard hat keine Notes dazu veröffentlicht: Er bringt die Tooltip-Korrektur von Rasche Heilung in den Client, die Blizzards Notes vom 6. November nannten.",
-      "source_summary": "Ein Hotfix für den Client vom 7. November, zuerst am 9. November zwischen 19:26 und 21:43 Uhr UTC im Cache gesehen, den die Realms zum Start senden. Blizzard hat keine Notes dazu veröffentlicht: Er bringt die Tooltip-Korrektur von Rasche Heilung in den Client, die Blizzards Notes vom 6. November nannten.",
+      "summary": "Ein Hotfix für den Client vom 7. November, zuerst am 9. November zwischen 19:26 und 21:43 Uhr UTC im Cache gesehen, den die Realms zum Start senden. Blizzards Notes vom 9. November, veröffentlicht am 10. November, beschreiben ihn. Im Client bringt er die Tooltip-Korrektur von Rasche Heilung, die Blizzards Notes vom 6. November nannten.",
+      "source_summary": "Ein Hotfix für den Client vom 7. November, zuerst am 9. November zwischen 19:26 und 21:43 Uhr UTC im Cache gesehen, den die Realms zum Start senden. Blizzards Notes vom 9. November, veröffentlicht am 10. November, beschreiben ihn. Im Client bringt er die Tooltip-Korrektur von Rasche Heilung, die Blizzards Notes vom 6. November nannten.",
       "translated": false,
       "engine": null,
       "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-11-09",
@@ -427,5 +427,5 @@
       "changes": []
     }
   ],
-  "fetched_at": "2026-11-10T04:37:07+00:00"
+  "fetched_at": "2026-11-10T13:26:32+00:00"
 }
