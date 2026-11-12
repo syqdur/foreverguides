@@ -20,8 +20,8 @@
       "title": "Hotfix, 10. November 2026",
       "date": "2026-11-10",
       "kind": "hotfix",
-      "summary": "Hotfixes für den Client vom 10. November, gesendet ab 16:51 Uhr UTC am 10. November bis in die Nacht. Blizzards Notes vom 10. November, veröffentlicht am 11. November um 03:27 Uhr UTC, beschreiben sie. Verstärkungsschamanen rücken wieder näher an Windzorn: Sturmschlag verursacht 100 % Waffenschaden, Geistige Gewandtheit und Waffe des Mahlstroms geben weniger, und Wut des Sturms gibt jetzt Stärke. Zermürben beschleunigt jetzt Verderbnis, Lebensentzug und Omen der Pein, solange du es kanalisierst, Begleiter von Jägern sinken auf 115 % Gesundheit, während Dämonen von Hexenmeistern etwa 15 % mehr bekommen, und die meisten Quests ab Stufe 48 geben jetzt Gold.",
-      "source_summary": "Hotfixes für den Client vom 10. November, gesendet ab 16:51 Uhr UTC am 10. November bis in die Nacht. Blizzards Notes vom 10. November, veröffentlicht am 11. November um 03:27 Uhr UTC, beschreiben sie. Verstärkungsschamanen rücken wieder näher an Windzorn: Sturmschlag verursacht 100 % Waffenschaden, Geistige Gewandtheit und Waffe des Mahlstroms geben weniger, und Wut des Sturms gibt jetzt Stärke. Zermürben beschleunigt jetzt Verderbnis, Lebensentzug und Omen der Pein, solange du es kanalisierst, Begleiter von Jägern sinken auf 115 % Gesundheit, während Dämonen von Hexenmeistern etwa 15 % mehr bekommen, und die meisten Quests ab Stufe 48 geben jetzt Gold.",
+      "summary": "Hotfixes für den Client vom 10. November, gesendet ab 16:51 Uhr UTC am 10. November bis in die Nacht. Blizzards Notes vom 10. November, veröffentlicht am 11. November um 03:27 Uhr UTC, beschreiben sie. Wut des Sturms gibt jetzt Stärke, Zermürben beschleunigt jetzt Verderbnis, Lebensentzug und Omen der Pein, solange du es kanalisierst, Begleiter von Jägern sinken auf 115 % Gesundheit, während Dämonen von Hexenmeistern etwa 15 % mehr bekommen, und die meisten Quests ab Stufe 48 geben jetzt Gold. Die Notes kündigen außerdem Änderungen an, die noch nicht im Spiel sind: Verstärkungsschamanen rücken wieder näher an Windzorn (Sturmschlag, Geistige Gewandtheit und Waffe des Mahlstroms geben weniger), und die Änderungen am Auktionshaus kommen mit den Wartungsarbeiten am 17. November.",
+      "source_summary": "Hotfixes für den Client vom 10. November, gesendet ab 16:51 Uhr UTC am 10. November bis in die Nacht. Blizzards Notes vom 10. November, veröffentlicht am 11. November um 03:27 Uhr UTC, beschreiben sie. Wut des Sturms gibt jetzt Stärke, Zermürben beschleunigt jetzt Verderbnis, Lebensentzug und Omen der Pein, solange du es kanalisierst, Begleiter von Jägern sinken auf 115 % Gesundheit, während Dämonen von Hexenmeistern etwa 15 % mehr bekommen, und die meisten Quests ab Stufe 48 geben jetzt Gold. Die Notes kündigen außerdem Änderungen an, die noch nicht im Spiel sind: Verstärkungsschamanen rücken wieder näher an Windzorn (Sturmschlag, Geistige Gewandtheit und Waffe des Mahlstroms geben weniger), und die Änderungen am Auktionshaus kommen mit den Wartungsarbeiten am 17. November.",
       "translated": false,
       "engine": null,
       "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-11-10",
@@ -519,5 +519,5 @@
       "changes": []
     }
   ],
-  "fetched_at": "2026-11-12T03:47:11+00:00"
+  "fetched_at": "2026-11-12T12:38:29+00:00"
 }
