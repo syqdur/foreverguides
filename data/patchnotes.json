@@ -1,8 +1,20 @@
 {
   "source": "https://foreverchanges.pro/de/patch-notes",
   "feed": "https://foreverchanges.pro/de/patch-notes/feed.xml",
-  "last_build": "Wed, 11 Nov 2026 12:00:00 GMT",
+  "last_build": "Thu, 12 Nov 2026 12:00:00 GMT",
   "items": [
+    {
+      "id": "foreverchanges-hotfix-2026-11-12",
+      "title": "Hotfix, 12. November 2026",
+      "date": "2026-11-12",
+      "kind": "hotfix",
+      "summary": "Die Schamanen-Änderungen aus Blizzards Patchnotes vom 10. November kamen verspätet. Laut Blizzard sind sie seit dem 12. November um 18:45 UTC in allen Regionen live.",
+      "source_summary": "Die Schamanen-Änderungen aus Blizzards Patchnotes vom 10. November kamen verspätet. Laut Blizzard sind sie seit dem 12. November um 18:45 UTC in allen Regionen live.",
+      "translated": false,
+      "engine": null,
+      "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-11-12",
+      "changes": []
+    },
     {
       "id": "foreverchanges-hotfix-2026-11-11",
       "title": "Hotfix, 11. November 2026",
@@ -254,29 +266,8 @@
       "source_summary": "Ein Hotfix für den Client zum Start, zuerst am 4. November im Cache gesehen, den die Realms zum Start senden. Er bringt zwei Zeilen aus Blizzards Patchnotes zum Start, die die Client-Dateien nicht enthalten: Trotz und Verteidigungshaltung entsprechen jetzt den Notes. Kettenblitzschlag behält die 2,5 Sek. Zauberzeit des Clients: Die Realms zum Start senden die 2 Sek. der Notes nicht.",
       "translated": false,
       "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-11-04",
-      "changes": [
-        {
-          "group": "warrior",
-          "group_de": "Krieger",
-          "spec": "Schutz",
-          "type": "buff",
-          "spell": "Trotz",
-          "source": "Erhöht die Bedrohung in Verteidigungshaltung je nach Rang um 7, 13 und 20 %, solange ein Schild angelegt ist, statt um 5, 10 und 15 %.",
-          "text": "Erhöht die Bedrohung in Verteidigungshaltung je nach Rang um 7, 13 und 20 %, solange ein Schild angelegt ist, statt um 5, 10 und 15 %.",
-          "translated": false
-        },
-        {
-          "group": "warrior",
-          "group_de": "Krieger",
-          "spec": "Schutz",
-          "type": "buff",
-          "spell": "Verteidigungshaltung",
-          "source": "Erhöht die gesamte erzeugte Bedrohung um 80 % statt um 30 %.",
-          "text": "Erhöht die gesamte erzeugte Bedrohung um 80 % statt um 30 %.",
-          "translated": false
-        }
-      ]
+      "link": "https://foreverchanges.pro/de/patch-notes/page/2#hotfix-2026-11-04",
+      "changes": []
     },
     {
       "id": "foreverchanges-1.60.1.70790",
@@ -395,7 +386,7 @@
       "source_summary": "Aus dem Client gelesen, da Blizzard keine Notizen dazu veröffentlicht hat: Die Server-Hotfixes vom 16. bis 23. Oktober stecken jetzt im Client selbst, die Beschreibung von Heureka! nennt jetzt seine 8 Sek., und kein Talent, Klassenzauber oder Gegenstand liest sich anders. Die zum Start angekündigte Überarbeitung der Volksfähigkeiten ist nicht enthalten.",
       "translated": false,
       "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes/page/2#1.60.1.70634",
+      "link": "https://foreverchanges.pro/de/patch-notes/page/3#1.60.1.70634",
       "changes": []
     },
     {
@@ -505,19 +496,7 @@
       "engine": "deepl",
       "link": "https://foreverchanges.pro/de/patch-notes/page/3#1.60.1.70425",
       "changes": []
-    },
-    {
-      "id": "foreverchanges-1.60.1.70374",
-      "title": "Build 1.60.1.70374, 14. Oktober 2026",
-      "date": "2026-10-14",
-      "kind": "build",
-      "summary": "Ein kleines Client-Update, gefolgt von einer knapp zweistündigen Wartung für interne Tests, ohne Liste der Änderungen. Der Client aktualisiert nur Sound- und Grafikdateien, den Loader des Spiels und die Absturzberichte. Talente, Zauber und Gegenstände haben sich nicht geändert.",
-      "source_summary": "Ein kleines Client-Update, gefolgt von einer knapp zweistündigen Wartung für interne Tests, ohne Liste der Änderungen. Der Client aktualisiert nur Sound- und Grafikdateien, den Loader des Spiels und die Absturzberichte. Talente, Zauber und Gegenstände haben sich nicht geändert.",
-      "translated": false,
-      "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes/page/3#1.60.1.70374",
-      "changes": []
     }
   ],
-  "fetched_at": "2026-11-12T12:38:29+00:00"
+  "fetched_at": "2026-11-12T20:47:04+00:00"
 }
