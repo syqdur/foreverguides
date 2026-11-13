@@ -1,8 +1,20 @@
 {
   "source": "https://foreverchanges.pro/de/patch-notes",
   "feed": "https://foreverchanges.pro/de/patch-notes/feed.xml",
-  "last_build": "Thu, 12 Nov 2026 12:00:00 GMT",
+  "last_build": "Fri, 13 Nov 2026 12:00:00 GMT",
   "items": [
+    {
+      "id": "foreverchanges-1.60.1.70938",
+      "title": "Build 1.60.1.70938, 13. November 2026",
+      "date": "2026-11-13",
+      "kind": "build",
+      "summary": "Der Client vom 13. November, aus seinen Dateien gelesen: Blizzard hat keine Notizen dazu veröffentlicht. Er schreibt die Hotfixes des Servers vom 10. und 11. November in den Client selbst, und kein Talent, Klassenzauber, Volksfähigkeit oder Gegenstand liest sich anders. Eine Zahl unterscheidet sich zwischen Client und Server: der Heilungsbonus von Wildwuchs.",
+      "source_summary": "Der Client vom 13. November, aus seinen Dateien gelesen: Blizzard hat keine Notizen dazu veröffentlicht. Er schreibt die Hotfixes des Servers vom 10. und 11. November in den Client selbst, und kein Talent, Klassenzauber, Volksfähigkeit oder Gegenstand liest sich anders. Eine Zahl unterscheidet sich zwischen Client und Server: der Heilungsbonus von Wildwuchs.",
+      "translated": false,
+      "engine": null,
+      "link": "https://foreverchanges.pro/de/patch-notes#1.60.1.70938",
+      "changes": []
+    },
     {
       "id": "foreverchanges-hotfix-2026-11-12",
       "title": "Hotfix, 12. November 2026",
@@ -254,7 +266,7 @@
       "source_summary": "Blizzards Hotfixes vom 5. November: das Erscheinen einiger Kreaturen, ein Druidenlehrer und Berufstaschen auf der Insel Zephras, der Verkaufspreis von Milde Gewürze, Ebenenlaufen auf Schlachtfeldern und zwei Quests.",
       "translated": false,
       "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-11-05",
+      "link": "https://foreverchanges.pro/de/patch-notes/page/2#hotfix-2026-11-05",
       "changes": []
     },
     {
@@ -374,7 +386,7 @@
       "source_summary": "Ein Build vom 28. Oktober, der nur Modelldateien ändert: 2 von 137 Tabellen unterscheiden sich vom Build vom 27. Oktober, beide Kreaturenmodelle, und nichts, was eine Seite liest. Blizzard hat keine Notizen dazu veröffentlicht. Die ersten Hotfixes der Startrealms, in derselben Nacht gesehen, stehen unten.",
       "translated": false,
       "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes/page/2#1.60.1.70658",
+      "link": "https://foreverchanges.pro/de/patch-notes/page/3#1.60.1.70658",
       "changes": []
     },
     {
@@ -484,19 +496,7 @@
       "engine": null,
       "link": "https://foreverchanges.pro/de/patch-notes/page/3#hotfix-2026-10-16",
       "changes": []
-    },
-    {
-      "id": "foreverchanges-1.60.1.70425",
-      "title": "Build 1.60.1.70425, 15. Oktober 2026",
-      "date": "2026-10-15",
-      "kind": "build",
-      "summary": "Acht der neun Klassen erhalten Balance-Änderungen, vor allem Schamanen, Magier und Priester, und mehrere Rassenmerkmale ändern sich.",
-      "source_summary": "Eight of the nine classes get balance changes, Shamans, Mages and Priests most of all, and several racial traits change.",
-      "translated": true,
-      "engine": "deepl",
-      "link": "https://foreverchanges.pro/de/patch-notes/page/3#1.60.1.70425",
-      "changes": []
     }
   ],
-  "fetched_at": "2026-11-12T20:47:04+00:00"
+  "fetched_at": "2026-11-13T09:27:59+00:00"
 }
