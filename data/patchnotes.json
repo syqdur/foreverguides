@@ -4,6 +4,18 @@
   "last_build": "Fri, 13 Nov 2026 12:00:00 GMT",
   "items": [
     {
+      "id": "foreverchanges-hotfix-2026-11-13",
+      "title": "Hotfix, 13. November 2026",
+      "date": "2026-11-13",
+      "kind": "hotfix",
+      "summary": "Ein Hotfix für den Client vom 13. November, zuerst am 13. November um 19:57 Uhr UTC in einem Cache gesehen, den Spieler senden. Blizzard hat keine Notes dazu veröffentlicht. Die drei Ränge von Wildwuchs teilen sich jetzt eine Abklingzeit. Um 20:20 Uhr UTC hat ein zweiter Push die Manaregeneration zweier Rufringe angeglichen und Böser Hut sowie Souvenirmuschel abgeschwächt.",
+      "source_summary": "Ein Hotfix für den Client vom 13. November, zuerst am 13. November um 19:57 Uhr UTC in einem Cache gesehen, den Spieler senden. Blizzard hat keine Notes dazu veröffentlicht. Die drei Ränge von Wildwuchs teilen sich jetzt eine Abklingzeit. Um 20:20 Uhr UTC hat ein zweiter Push die Manaregeneration zweier Rufringe angeglichen und Böser Hut sowie Souvenirmuschel abgeschwächt.",
+      "translated": false,
+      "engine": null,
+      "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-11-13",
+      "changes": []
+    },
+    {
       "id": "foreverchanges-1.60.1.70938",
       "title": "Build 1.60.1.70938, 13. November 2026",
       "date": "2026-11-13",
@@ -223,39 +235,8 @@
       "source_summary": "Ein Hotfix für den Launch-Client, den Blizzards Patchnotes vom 6. November beschreiben. Im Client korrigiert er drei Tooltips: Blutgier nennt Tollkühne Schwünge, Bärengestalt gibt die Gesundheit von Classic an, und Verheeren zeigt seinen echten Bonusschaden. Was die Zauber tun, hat sich nicht geändert.",
       "translated": false,
       "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-11-06",
-      "changes": [
-        {
-          "group": "warrior",
-          "group_de": "Krieger",
-          "spec": "Furor",
-          "type": "change",
-          "spell": "Blutgier",
-          "source": "Sein Tooltip nennt jetzt Tollkühne Schwünge unter den Fähigkeiten, die es auslösen. Blizzards Notes sprechen von einer Tooltip-Korrektur: Tollkühne Schwünge hat es schon vorher ausgelöst.",
-          "text": "Sein Tooltip nennt jetzt Tollkühne Schwünge unter den Fähigkeiten, die es auslösen. Blizzards Notes sprechen von einer Tooltip-Korrektur: Tollkühne Schwünge hat es schon vorher ausgelöst.",
-          "translated": false
-        },
-        {
-          "group": "druid",
-          "group_de": "Druide",
-          "spec": "Wilder Kampf",
-          "type": "change",
-          "spell": "Verheeren",
-          "source": "Nennt jetzt je nach Rang 435 % Waffenschaden plus 42, 62, 78 und 98 statt plus 147, 217, 273 und 343.",
-          "text": "Nennt jetzt je nach Rang 435 % Waffenschaden plus 42, 62, 78 und 98 statt plus 147, 217, 273 und 343.",
-          "translated": false
-        },
-        {
-          "group": "druid",
-          "group_de": "Druide",
-          "spec": "Wilder Kampf",
-          "type": "change",
-          "spell": "Bärengestalt",
-          "source": "Der Tooltip nennt 560 Gesundheit statt 180, wie in Classic.",
-          "text": "Der Tooltip nennt 560 Gesundheit statt 180, wie in Classic.",
-          "translated": false
-        }
-      ]
+      "link": "https://foreverchanges.pro/de/patch-notes/page/2#hotfix-2026-11-06",
+      "changes": []
     },
     {
       "id": "foreverchanges-hotfix-2026-11-05",
@@ -374,7 +355,7 @@
       "source_summary": "Ein Hotfix zum Build vom 28. Oktober, erstmals am 28. Oktober im Cache gesehen, den die Startrealms senden, und den Blizzards Notizen nicht erwähnen: Aspekt des Falken und Aura des Volltreffers geben etwa halb so viel Distanzangriffskraft, die für den Start angekündigte Abklingzeit von 2 Min. für Kochendes Blut steht in den Serverdaten, die Bewegungsunfähigkeit von Einfangen, Gegenangriff, Verbessertes Zurechtstutzen, Verbesserte Kniesehne und Erfrierung teilt sich eine Gruppe abnehmender Wirkung, und Paladine lernen Zorn der Gerechtigkeit weiterhin auf Stufe 10. Dieselben Daten tragen die Zauber des Zombieseuchen-Events von 2008, die Infektion, die Fähigkeiten der Zombies und das Heilmittel, ohne dass ein Event angekündigt wäre.",
       "translated": false,
       "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes/page/2#hotfix-2026-10-28",
+      "link": "https://foreverchanges.pro/de/patch-notes/page/3#hotfix-2026-10-28",
       "changes": []
     },
     {
@@ -484,19 +465,7 @@
       "engine": null,
       "link": "https://foreverchanges.pro/de/patch-notes/page/3#1.60.1.70450",
       "changes": []
-    },
-    {
-      "id": "foreverchanges-hotfix-2026-10-16",
-      "title": "Hotfix, 16. Oktober 2026",
-      "date": "2026-10-16",
-      "kind": "hotfix",
-      "summary": "Ein Hotfix für den Build vom 15. Oktober, am 16. Oktober mit der Korrektur der Relikte für Katzengestalt verschickt, den Blizzards Notizen nicht erwähnen: Champion des Lichts gibt wieder 20/40/60 % der Intelligenz, Frostschlag kann Geschosssalve auslösen, und Fluch verstärken verstärkt Fluch der Erschöpfung um 20 % statt 50 %.",
-      "source_summary": "Ein Hotfix für den Build vom 15. Oktober, am 16. Oktober mit der Korrektur der Relikte für Katzengestalt verschickt, den Blizzards Notizen nicht erwähnen: Champion des Lichts gibt wieder 20/40/60 % der Intelligenz, Frostschlag kann Geschosssalve auslösen, und Fluch verstärken verstärkt Fluch der Erschöpfung um 20 % statt 50 %.",
-      "translated": false,
-      "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes/page/3#hotfix-2026-10-16",
-      "changes": []
     }
   ],
-  "fetched_at": "2026-11-13T09:27:59+00:00"
+  "fetched_at": "2026-11-13T23:30:05+00:00"
 }
