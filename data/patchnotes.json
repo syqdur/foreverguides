@@ -8,8 +8,8 @@
       "title": "Hotfix, 13. November 2026",
       "date": "2026-11-13",
       "kind": "hotfix",
-      "summary": "Ein Hotfix für den Client vom 13. November, zuerst am 13. November um 19:57 Uhr UTC in einem Cache gesehen, den Spieler senden. Blizzard hat keine Notes dazu veröffentlicht. Die drei Ränge von Wildwuchs teilen sich jetzt eine Abklingzeit. Um 20:20 Uhr UTC hat ein zweiter Push die Manaregeneration zweier Rufringe angeglichen und Böser Hut sowie Souvenirmuschel abgeschwächt.",
-      "source_summary": "Ein Hotfix für den Client vom 13. November, zuerst am 13. November um 19:57 Uhr UTC in einem Cache gesehen, den Spieler senden. Blizzard hat keine Notes dazu veröffentlicht. Die drei Ränge von Wildwuchs teilen sich jetzt eine Abklingzeit. Um 20:20 Uhr UTC hat ein zweiter Push die Manaregeneration zweier Rufringe angeglichen und Böser Hut sowie Souvenirmuschel abgeschwächt.",
+      "summary": "Blizzards Patchnotes vom 13. November, veröffentlicht am 14. November um 1:54 Uhr UTC, beschreiben die Hotfixes dieses Tages: Fehlerbehebungen für acht Klassen, abnehmende Wirkung bei Betäubungen zwischen Spielern und Kreaturen, Richturteil des Befehls wieder als Nahkampfangriff, korrigierte Gegenstandswerte, keine Erfahrung mehr für triviale Gegner in Dungeons und viele Questkorrekturen. Die Hotfix-Daten zeigen zwei weitere Änderungen, die in den Patchnotes fehlen: Die drei Ränge von Wildwuchs teilen sich eine Abklingzeit, und der Bonus der Rüstung des Wildpirschers wirkt jetzt auf Mehrfachschuss.",
+      "source_summary": "Blizzards Patchnotes vom 13. November, veröffentlicht am 14. November um 1:54 Uhr UTC, beschreiben die Hotfixes dieses Tages: Fehlerbehebungen für acht Klassen, abnehmende Wirkung bei Betäubungen zwischen Spielern und Kreaturen, Richturteil des Befehls wieder als Nahkampfangriff, korrigierte Gegenstandswerte, keine Erfahrung mehr für triviale Gegner in Dungeons und viele Questkorrekturen. Die Hotfix-Daten zeigen zwei weitere Änderungen, die in den Patchnotes fehlen: Die drei Ränge von Wildwuchs teilen sich eine Abklingzeit, und der Bonus der Rüstung des Wildpirschers wirkt jetzt auf Mehrfachschuss.",
       "translated": false,
       "engine": null,
       "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-11-13",
@@ -467,5 +467,5 @@
       "changes": []
     }
   ],
-  "fetched_at": "2026-11-13T23:30:05+00:00"
+  "fetched_at": "2026-11-14T06:13:16+00:00"
 }
