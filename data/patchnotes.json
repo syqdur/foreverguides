@@ -1,8 +1,20 @@
 {
   "source": "https://foreverchanges.pro/de/patch-notes",
   "feed": "https://foreverchanges.pro/de/patch-notes/feed.xml",
-  "last_build": "Sat, 14 Nov 2026 12:00:00 GMT",
+  "last_build": "Mon, 16 Nov 2026 12:00:00 GMT",
   "items": [
+    {
+      "id": "foreverchanges-hotfix-2026-11-16",
+      "title": "Hotfix, 16. November 2026",
+      "date": "2026-11-16",
+      "kind": "hotfix",
+      "summary": "Ein Hotfix vom 16. November, zuerst um 17:57 Uhr UTC in den Hotfix-Daten gesehen, den Blizzards Patchnotes nicht erwähnen: Der 4-Teile-Bonus der Schlachtrüstung von Krol'Dok, eine Heilung beim Blocken, kann jetzt höchstens einmal pro Sekunde auslösen.",
+      "source_summary": "Ein Hotfix vom 16. November, zuerst um 17:57 Uhr UTC in den Hotfix-Daten gesehen, den Blizzards Patchnotes nicht erwähnen: Der 4-Teile-Bonus der Schlachtrüstung von Krol'Dok, eine Heilung beim Blocken, kann jetzt höchstens einmal pro Sekunde auslösen.",
+      "translated": false,
+      "engine": null,
+      "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-11-16",
+      "changes": []
+    },
     {
       "id": "foreverchanges-hotfix-2026-11-14",
       "title": "Hotfix, 14. November 2026",
@@ -224,19 +236,8 @@
       "source_summary": "Der Client vom 7. November, aus seinen Dateien gelesen: Blizzard hat keine Notizen dazu veröffentlicht. Das Abenteurerzelt gibt wieder Ruhebonus, Rock on Stick und Bigger Rock on Bigger Stick zeigen ihre Blutung, vier Questgegenstände bekommen eine Benutzen-Zeile, und der Client enthält jetzt fünf der neuen Dungeons mit ihren Begegnungen. Der Rest holt die Hotfixes des Servers nach, die die Seite schon zeigt, darunter Blutgier, Bärengestalt, Verheeren und die Fläschchen für Hyjal.",
       "translated": false,
       "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes#1.60.1.70862",
-      "changes": [
-        {
-          "group": "hunter",
-          "group_de": "Jäger",
-          "spec": "Allgemein",
-          "type": "change",
-          "spell": "Große Ausdauer",
-          "source": "Sein Tooltip sagt auf Rang 9 und 10 Gesundheit um 32 und 40 erhöht statt Ausdauer. Der Zauber erhöht weiter die Ausdauer deines Begleiters, wie es die Ränge 1 bis 8 sagen.Nicht in Blizzards Notizen, im Spiel gefunden.",
-          "text": "Sein Tooltip sagt auf Rang 9 und 10 Gesundheit um 32 und 40 erhöht statt Ausdauer. Der Zauber erhöht weiter die Ausdauer deines Begleiters, wie es die Ränge 1 bis 8 sagen.Nicht in Blizzards Notizen, im Spiel gefunden.",
-          "translated": false
-        }
-      ]
+      "link": "https://foreverchanges.pro/de/patch-notes/page/2#1.60.1.70862",
+      "changes": []
     },
     {
       "id": "foreverchanges-hotfix-2026-11-06",
@@ -343,7 +344,7 @@
       "source_summary": "Der Build vom 30. Oktober übernimmt die Server-Hotfixes vom 27. bis 29. Oktober in die Clientdateien: die Überarbeitung der Magierbäume, 8 Sek. Abklingzeit für Eislanze, 2 Min. Abklingzeit für Kochendes Blut und die Angriffskraft von Rache. Das Abenteurerzelt ist wieder kosmetisch. Nichts davon ist bestätigt: Der Build kam, während die Realms vor dem Start geschlossen sind, Blizzard hat keine Notizen dazu veröffentlicht, und im Spiel lässt sich noch nichts prüfen.",
       "translated": false,
       "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes/page/2#1.60.1.70707",
+      "link": "https://foreverchanges.pro/de/patch-notes/page/3#1.60.1.70707",
       "changes": []
     },
     {
@@ -453,19 +454,7 @@
       "engine": null,
       "link": "https://foreverchanges.pro/de/patch-notes/page/3#hotfix-2026-10-20",
       "changes": []
-    },
-    {
-      "id": "foreverchanges-hotfix-2026-10-18",
-      "title": "Hotfix, 18. Oktober 2026",
-      "date": "2026-10-18",
-      "kind": "hotfix",
-      "summary": "Ein Hotfix für den Build vom 16. Oktober, spätestens am 18. Oktober im Spiel, den Blizzards Notizen nicht erwähnen: Der erste Rang von Heiliges Feuer verursacht etwas weniger Schaden.",
-      "source_summary": "Ein Hotfix für den Build vom 16. Oktober, spätestens am 18. Oktober im Spiel, den Blizzards Notizen nicht erwähnen: Der erste Rang von Heiliges Feuer verursacht etwas weniger Schaden.",
-      "translated": false,
-      "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes/page/3#hotfix-2026-10-18",
-      "changes": []
     }
   ],
-  "fetched_at": "2026-11-15T02:37:37+00:00"
+  "fetched_at": "2026-11-16T20:59:22+00:00"
 }
