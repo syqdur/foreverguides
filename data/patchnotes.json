@@ -1,8 +1,32 @@
 {
   "source": "https://foreverchanges.pro/de/patch-notes",
   "feed": "https://foreverchanges.pro/de/patch-notes/feed.xml",
-  "last_build": "Mon, 16 Nov 2026 12:00:00 GMT",
+  "last_build": "Tue, 17 Nov 2026 12:00:00 GMT",
   "items": [
+    {
+      "id": "foreverchanges-hotfix-2026-11-17",
+      "title": "Hotfix, 17. November 2026",
+      "date": "2026-11-17",
+      "kind": "hotfix",
+      "summary": "Hotfixes für den Client vom 17. November, zuerst am 17. November zwischen 19:19 und 19:45 Uhr UTC in den Caches gesehen, die die Realms zum Start senden. Blizzard hat dazu keine Notizen veröffentlicht. Blendstab und Knisterstab, die Stäbe aus dem Alteractal, haben jetzt dieselben Werte, und Erschöpftes Kristallherz fällt für jedes Gruppenmitglied.",
+      "source_summary": "Hotfixes für den Client vom 17. November, zuerst am 17. November zwischen 19:19 und 19:45 Uhr UTC in den Caches gesehen, die die Realms zum Start senden. Blizzard hat dazu keine Notizen veröffentlicht. Blendstab und Knisterstab, die Stäbe aus dem Alteractal, haben jetzt dieselben Werte, und Erschöpftes Kristallherz fällt für jedes Gruppenmitglied.",
+      "translated": false,
+      "engine": null,
+      "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-11-17",
+      "changes": []
+    },
+    {
+      "id": "foreverchanges-1.60.1.70959",
+      "title": "Build 1.60.1.70959, 17. November 2026",
+      "date": "2026-11-17",
+      "kind": "build",
+      "summary": "Der Client vom 17. November, aus seinen Dateien gelesen: Blizzard hat keine Patchnotes dazu veröffentlicht. Er schreibt die Server-Hotfixes vom 13. und 16. November in den Client selbst, und kein Talent, Klassenzauber, Volksbonus oder Gegenstand liest sich anders.",
+      "source_summary": "Der Client vom 17. November, aus seinen Dateien gelesen: Blizzard hat keine Patchnotes dazu veröffentlicht. Er schreibt die Server-Hotfixes vom 13. und 16. November in den Client selbst, und kein Talent, Klassenzauber, Volksbonus oder Gegenstand liest sich anders.",
+      "translated": false,
+      "engine": null,
+      "link": "https://foreverchanges.pro/de/patch-notes#1.60.1.70959",
+      "changes": []
+    },
     {
       "id": "foreverchanges-hotfix-2026-11-16",
       "title": "Hotfix, 16. November 2026",
@@ -212,7 +236,7 @@
       "source_summary": "Blizzards Hotfix vom 8. November, live seit etwa 19:05 Uhr UTC: Gegner in Dungeons geben 50 % mehr Erfahrung, wenn du sie tötest.",
       "translated": false,
       "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-11-08",
+      "link": "https://foreverchanges.pro/de/patch-notes/page/2#hotfix-2026-11-08",
       "changes": []
     },
     {
@@ -224,7 +248,7 @@
       "source_summary": "Ein Hotfix für den Client vom 7. November, zuerst am 7. November gegen 22:17 Uhr UTC im Cache gesehen, den die Realms zum Start senden. Er machte Furchtzauberschutz nur in Schattengestalt nutzbar, und Blizzard hat das gleich wieder rückgängig gemacht.",
       "translated": false,
       "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-11-07",
+      "link": "https://foreverchanges.pro/de/patch-notes/page/2#hotfix-2026-11-07",
       "changes": []
     },
     {
@@ -320,7 +344,7 @@
       "source_summary": "Der Build vom 2. November schreibt den Hotfix vom 30. Oktober in die Clientdateien: Die Überarbeitung der Druiden- und Paladinbäume, die Überarbeitung der Volksfähigkeiten und die Änderungen an Magier, Priester, Hexenmeister und Jäger werden jetzt in jeder Sprache aus dem Client gelesen. Neu darin: Bereitschaft, eine passive Fähigkeit für Schurken auf Stufe 18 und Druiden auf Stufe 32, die deiner ersten Fähigkeit 10 Energie abzieht, wenn du einen Kampf mit voller Energie beginnst; Attuned und Charged der Himmelsgeborenen halten 1 Std. statt 15 Min., wie von Blizzard angekündigt; der letzte Rang von Heiliger Schild bekommt seine Stufe, seine Kosten und seine Abklingzeit; und der Beutel mit violettem Staub, ein Gegenstand für die Startfeier. Nichts davon ist bestätigt: Der Build kam, während die Realms vor dem Start geschlossen sind, Blizzard hat keine Notizen dazu veröffentlicht, und im Spiel lässt sich noch nichts prüfen.",
       "translated": false,
       "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes/page/2#1.60.1.70753",
+      "link": "https://foreverchanges.pro/de/patch-notes/page/3#1.60.1.70753",
       "changes": []
     },
     {
@@ -332,7 +356,7 @@
       "source_summary": "A hotfix to the October 30 build, first seen on October 30 in the cache the launch realms send, which Blizzard has posted no notes for. It reworks the druid and paladin talent trees and brings in the racial pass announced on October 26. Values that flip between hotfixes can come from differences between the NA and EU realms: in that case this page follows the newer hotfix.",
       "translated": true,
       "engine": "deepl",
-      "link": "https://foreverchanges.pro/de/patch-notes/page/2#hotfix-2026-10-30",
+      "link": "https://foreverchanges.pro/de/patch-notes/page/3#hotfix-2026-10-30",
       "changes": []
     },
     {
@@ -430,31 +454,7 @@
       "engine": null,
       "link": "https://foreverchanges.pro/de/patch-notes/page/3#hotfix-2026-10-22",
       "changes": []
-    },
-    {
-      "id": "foreverchanges-hotfix-2026-10-21",
-      "title": "Hotfix, 21. Oktober 2026",
-      "date": "2026-10-21",
-      "kind": "hotfix",
-      "summary": "Ein Hotfix für den Build vom 16. Oktober, zuerst am 21. Oktober gesehen, den Blizzards Notizen nicht erwähnen: Rang 4 von Mal des Jägers gibt doppelt so viel Distanzangriffskraft, und Rang 3 von Lavaeruption erhält durch Flammenschock 20 %, wie die anderen Ränge.",
-      "source_summary": "Ein Hotfix für den Build vom 16. Oktober, zuerst am 21. Oktober gesehen, den Blizzards Notizen nicht erwähnen: Rang 4 von Mal des Jägers gibt doppelt so viel Distanzangriffskraft, und Rang 3 von Lavaeruption erhält durch Flammenschock 20 %, wie die anderen Ränge.",
-      "translated": false,
-      "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes/page/3#hotfix-2026-10-21",
-      "changes": []
-    },
-    {
-      "id": "foreverchanges-hotfix-2026-10-20",
-      "title": "Hotfix, 20. Oktober 2026",
-      "date": "2026-10-20",
-      "kind": "hotfix",
-      "summary": "Ein Hotfix für den Build vom 16. Oktober, zuerst am 20. Oktober gesehen, den Blizzards Notizen nicht erwähnen: Der Magier verliert Stechendes Eis, Elementare Präzision gibt 2 % Trefferchance pro Rang, und Eisbarriere, Frostzauberschutz und Schutz des Frostes werden stärker.",
-      "source_summary": "Ein Hotfix für den Build vom 16. Oktober, zuerst am 20. Oktober gesehen, den Blizzards Notizen nicht erwähnen: Der Magier verliert Stechendes Eis, Elementare Präzision gibt 2 % Trefferchance pro Rang, und Eisbarriere, Frostzauberschutz und Schutz des Frostes werden stärker.",
-      "translated": false,
-      "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes/page/3#hotfix-2026-10-20",
-      "changes": []
     }
   ],
-  "fetched_at": "2026-11-17T03:48:13+00:00"
+  "fetched_at": "2026-11-17T21:47:33+00:00"
 }
