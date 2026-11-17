@@ -8,8 +8,8 @@
       "title": "Hotfix, 16. November 2026",
       "date": "2026-11-16",
       "kind": "hotfix",
-      "summary": "Ein Hotfix vom 16. November, zuerst um 17:57 Uhr UTC in den Hotfix-Daten gesehen, den Blizzards Patchnotes nicht erwähnen: Der 4-Teile-Bonus der Schlachtrüstung von Krol'Dok, eine Heilung beim Blocken, kann jetzt höchstens einmal pro Sekunde auslösen.",
-      "source_summary": "Ein Hotfix vom 16. November, zuerst um 17:57 Uhr UTC in den Hotfix-Daten gesehen, den Blizzards Patchnotes nicht erwähnen: Der 4-Teile-Bonus der Schlachtrüstung von Krol'Dok, eine Heilung beim Blocken, kann jetzt höchstens einmal pro Sekunde auslösen.",
+      "summary": "Blizzards Patchnotes vom 16. November, veröffentlicht am 17. November um 02:17 Uhr UTC, beschreiben die Hotfixes dieses Tages: Köder für alle vom Angelständer, Korrekturen am Totem des Windzorns, Spalten und Heldenhafter Stoß für Entfesselter Zorn, Schlaghagel und Tollkühne Schwünge, Korrekturen in Die Versunkene Stadt und im Versunkenen Tempel sowie Questkorrekturen. Vampirumarmung ändert sich mit der wöchentlichen Wartung am 17. November. Die Hotfix-Daten zeigen weitere Änderungen, die die Patchnotes nicht erwähnen: Weltbuffs gehen beim Tod verloren, und drei Dunkelmond-Karten, der Talisman mit Onyxiablut, die Schlachtrüstung von Krol'Dok, die Grimmstichrüstung und Escape Plan ändern sich.",
+      "source_summary": "Blizzards Patchnotes vom 16. November, veröffentlicht am 17. November um 02:17 Uhr UTC, beschreiben die Hotfixes dieses Tages: Köder für alle vom Angelständer, Korrekturen am Totem des Windzorns, Spalten und Heldenhafter Stoß für Entfesselter Zorn, Schlaghagel und Tollkühne Schwünge, Korrekturen in Die Versunkene Stadt und im Versunkenen Tempel sowie Questkorrekturen. Vampirumarmung ändert sich mit der wöchentlichen Wartung am 17. November. Die Hotfix-Daten zeigen weitere Änderungen, die die Patchnotes nicht erwähnen: Weltbuffs gehen beim Tod verloren, und drei Dunkelmond-Karten, der Talisman mit Onyxiablut, die Schlachtrüstung von Krol'Dok, die Grimmstichrüstung und Escape Plan ändern sich.",
       "translated": false,
       "engine": null,
       "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-11-16",
@@ -456,5 +456,5 @@
       "changes": []
     }
   ],
-  "fetched_at": "2026-11-16T20:59:22+00:00"
+  "fetched_at": "2026-11-17T03:48:13+00:00"
 }
