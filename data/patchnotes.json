@@ -8,8 +8,8 @@
       "title": "Hotfix, 17. November 2026",
       "date": "2026-11-17",
       "kind": "hotfix",
-      "summary": "Hotfixes für den Client vom 17. November, zuerst am 17. November zwischen 19:19 und 19:45 Uhr UTC in den Caches gesehen, die die Realms zum Start senden. Blizzard hat dazu keine Notizen veröffentlicht. Blendstab und Knisterstab, die Stäbe aus dem Alteractal, haben jetzt dieselben Werte, und Erschöpftes Kristallherz fällt für jedes Gruppenmitglied.",
-      "source_summary": "Hotfixes für den Client vom 17. November, zuerst am 17. November zwischen 19:19 und 19:45 Uhr UTC in den Caches gesehen, die die Realms zum Start senden. Blizzard hat dazu keine Notizen veröffentlicht. Blendstab und Knisterstab, die Stäbe aus dem Alteractal, haben jetzt dieselben Werte, und Erschöpftes Kristallherz fällt für jedes Gruppenmitglied.",
+      "summary": "Blizzards Notizen vom 17. November, veröffentlicht am 18. November um 03:24 Uhr UTC: Die Obere Blackrockspitze hat wieder ihre vorgesehene Schwierigkeit, die Rüstung der Seelenschmiede hat Zaubermacht statt Stärke, die Quests der Schlacht um das Alteractal verlangen Stufe 58, Bronzener Streitkolben wird beim Anlegen gebunden, und es gibt Korrekturen am Gemütlichen Schlafsack, an Weltbuffs, Schlaghagel, Berufen und vielen Quests.",
+      "source_summary": "Blizzards Notizen vom 17. November, veröffentlicht am 18. November um 03:24 Uhr UTC: Die Obere Blackrockspitze hat wieder ihre vorgesehene Schwierigkeit, die Rüstung der Seelenschmiede hat Zaubermacht statt Stärke, die Quests der Schlacht um das Alteractal verlangen Stufe 58, Bronzener Streitkolben wird beim Anlegen gebunden, und es gibt Korrekturen am Gemütlichen Schlafsack, an Weltbuffs, Schlaghagel, Berufen und vielen Quests.",
       "translated": false,
       "engine": null,
       "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-11-17",
@@ -456,5 +456,5 @@
       "changes": []
     }
   ],
-  "fetched_at": "2026-11-17T21:47:33+00:00"
+  "fetched_at": "2026-11-18T12:59:23+00:00"
 }
