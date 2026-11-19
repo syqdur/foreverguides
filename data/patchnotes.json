@@ -1,8 +1,20 @@
 {
   "source": "https://foreverchanges.pro/de/patch-notes",
   "feed": "https://foreverchanges.pro/de/patch-notes/feed.xml",
-  "last_build": "Wed, 18 Nov 2026 12:00:00 GMT",
+  "last_build": "Thu, 19 Nov 2026 12:00:00 GMT",
   "items": [
+    {
+      "id": "foreverchanges-hotfix-2026-11-19",
+      "title": "Hotfix, 19. November 2026",
+      "date": "2026-11-19",
+      "kind": "hotfix",
+      "summary": "Hotfixes für den Client vom 17. November, zuerst am 19. November zwischen 19:52 und 20:00 Uhr UTC in den Caches gesehen, die die Realms zum Start senden. Blizzard hat dazu keine Notizen veröffentlicht. Instabiles Magiepartikel wird jetzt beim Aufheben gebunden, Einfaches Kleid und Einfaches schwarzes Kleid sind jetzt Stoffrüstung, und Squall-breakers Potion kann jetzt zerstört werden.",
+      "source_summary": "Hotfixes für den Client vom 17. November, zuerst am 19. November zwischen 19:52 und 20:00 Uhr UTC in den Caches gesehen, die die Realms zum Start senden. Blizzard hat dazu keine Notizen veröffentlicht. Instabiles Magiepartikel wird jetzt beim Aufheben gebunden, Einfaches Kleid und Einfaches schwarzes Kleid sind jetzt Stoffrüstung, und Squall-breakers Potion kann jetzt zerstört werden.",
+      "translated": false,
+      "engine": null,
+      "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-11-19",
+      "changes": []
+    },
     {
       "id": "foreverchanges-hotfix-2026-11-18",
       "title": "Hotfix, 18. November 2026",
@@ -213,7 +225,7 @@
       "source_summary": "Der Client vom 10. November. Er enthält die Server-Hotfixes vom 7. bis 9. November und eine Änderung, die Spieler sehen: Furchtzauberschutz kann jetzt in Schattengestalt gewirkt werden. Die von Blizzard für den 10. November angekündigten Klassenanpassungen sind nicht darin.",
       "translated": false,
       "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes#1.60.1.70888",
+      "link": "https://foreverchanges.pro/de/patch-notes/page/2#1.60.1.70888",
       "changes": []
     },
     {
@@ -431,19 +443,7 @@
       "engine": null,
       "link": "https://foreverchanges.pro/de/patch-notes/page/3#hotfix-2026-10-23",
       "changes": []
-    },
-    {
-      "id": "foreverchanges-1.60.1.70532",
-      "title": "Build 1.60.1.70532, 22. Oktober 2026",
-      "date": "2026-10-22",
-      "kind": "build",
-      "summary": "Die Beta ist auf den Build gewechselt, den der Stresstest des fertigen Spiels am 21. Oktober genutzt hat. Seine Spieldaten sind dieselben wie die des Builds vom 16. Oktober: Talente, Zauber und Gegenstände haben sich nicht geändert.",
-      "source_summary": "Die Beta ist auf den Build gewechselt, den der Stresstest des fertigen Spiels am 21. Oktober genutzt hat. Seine Spieldaten sind dieselben wie die des Builds vom 16. Oktober: Talente, Zauber und Gegenstände haben sich nicht geändert.",
-      "translated": false,
-      "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes/page/3#1.60.1.70532",
-      "changes": []
     }
   ],
-  "fetched_at": "2026-11-19T03:21:14+00:00"
+  "fetched_at": "2026-11-19T21:28:01+00:00"
 }
