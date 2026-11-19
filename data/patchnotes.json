@@ -1,8 +1,20 @@
 {
   "source": "https://foreverchanges.pro/de/patch-notes",
   "feed": "https://foreverchanges.pro/de/patch-notes/feed.xml",
-  "last_build": "Tue, 17 Nov 2026 12:00:00 GMT",
+  "last_build": "Wed, 18 Nov 2026 12:00:00 GMT",
   "items": [
+    {
+      "id": "foreverchanges-hotfix-2026-11-18",
+      "title": "Hotfix, 18. November 2026",
+      "date": "2026-11-18",
+      "kind": "hotfix",
+      "summary": "Hotfixes für den Client vom 17. November, zuerst am 18. November zwischen 20:47 und 20:54 Uhr UTC und am 19. November um 01:23 Uhr UTC in den Caches gesehen, die die Realms zum Start senden. Blizzard hat dazu keine Notizen veröffentlicht. Ruzzgots Lieferung für „The Big Payback“ fällt jetzt für jedes Gruppenmitglied, und das Paladin-Talent Zweihandwaffen-Spezialisierung wirkt jetzt auf deinen gesamten körperlichen und Heiligschaden.",
+      "source_summary": "Hotfixes für den Client vom 17. November, zuerst am 18. November zwischen 20:47 und 20:54 Uhr UTC und am 19. November um 01:23 Uhr UTC in den Caches gesehen, die die Realms zum Start senden. Blizzard hat dazu keine Notizen veröffentlicht. Ruzzgots Lieferung für „The Big Payback“ fällt jetzt für jedes Gruppenmitglied, und das Paladin-Talent Zweihandwaffen-Spezialisierung wirkt jetzt auf deinen gesamten körperlichen und Heiligschaden.",
+      "translated": false,
+      "engine": null,
+      "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-11-18",
+      "changes": []
+    },
     {
       "id": "foreverchanges-hotfix-2026-11-17",
       "title": "Hotfix, 17. November 2026",
@@ -213,19 +225,8 @@
       "source_summary": "Ein Hotfix für den Client vom 7. November, zuerst am 9. November zwischen 19:26 und 21:43 Uhr UTC im Cache gesehen, den die Realms zum Start senden. Blizzards Notes vom 9. November, veröffentlicht am 10. November, beschreiben ihn. Im Client bringt er die Tooltip-Korrektur von Rasche Heilung, die Blizzards Notes vom 6. November nannten.",
       "translated": false,
       "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-11-09",
-      "changes": [
-        {
-          "group": "druid",
-          "group_de": "Druide",
-          "spec": "Wiederherst",
-          "type": "change",
-          "spell": "Rasche Heilung",
-          "source": "Ihr Tooltip sagt nicht mehr, dass sie den Effekt verbraucht: Sie heilt um die volle Dauer des regelmäßigen Effekts, wo er vom regelmäßigen Effekt des verbrauchten Zaubers sprach. Blizzards Notes vom 6. November nennen das eine Tooltip-Korrektur.",
-          "text": "Ihr Tooltip sagt nicht mehr, dass sie den Effekt verbraucht: Sie heilt um die volle Dauer des regelmäßigen Effekts, wo er vom regelmäßigen Effekt des verbrauchten Zaubers sprach. Blizzards Notes vom 6. November nennen das eine Tooltip-Korrektur.",
-          "translated": false
-        }
-      ]
+      "link": "https://foreverchanges.pro/de/patch-notes/page/2#hotfix-2026-11-09",
+      "changes": []
     },
     {
       "id": "foreverchanges-hotfix-2026-11-08",
@@ -332,7 +333,7 @@
       "source_summary": "Ein Hotfix zum Build vom 2. November, erstmals am 3. November im Cache gesehen, den die Startrealms senden, und zu dem Blizzard keine Notizen veröffentlicht hat. Er erhöht den Schaden des Jägers: Aspekt des Falken bekommt die Distanzangriffskraft zurück, die der Hotfix vom 28. Oktober ihm genommen hatte, Aura des Volltreffers gibt bis zu doppelt so viel, Sperrfeuer und Blitzartige Reflexe sind wieder auf den Werten von Classic, und Gezielter Schuss, Arkaner Schuss, Schlangenbiss und Heckenschützenschuss verursachen mehr Schaden.",
       "translated": false,
       "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes/page/2#hotfix-2026-11-03",
+      "link": "https://foreverchanges.pro/de/patch-notes/page/3#hotfix-2026-11-03",
       "changes": []
     },
     {
@@ -442,19 +443,7 @@
       "engine": null,
       "link": "https://foreverchanges.pro/de/patch-notes/page/3#1.60.1.70532",
       "changes": []
-    },
-    {
-      "id": "foreverchanges-hotfix-2026-10-22",
-      "title": "Hotfix, 22. Oktober 2026",
-      "date": "2026-10-22",
-      "kind": "hotfix",
-      "summary": "Ein Hotfix für den Build vom 16. Oktober, zuerst am 22. Oktober gesehen, den Blizzards Notizen nicht erwähnen: 127 Gegenstände nur für die Beta, Kopien der Beute aus dem Geschmolzenen Kern und seiner legendären Waffen mit Gegenstandsstufe 30, die ab Stufe 1 nutzbar sind, die neun Sets von Tier 1 mit den Boni aus Classic, und Elixiere, von denen eines die Erfahrung eine Stunde lang verdreifacht. Über den Geschmolzenen Kern auf den Live-Realms sagen sie nichts. Die Beta wurde am 23. Oktober geschlossen, und laut Blizzard sind sie nach dem Start nicht in WoW Forever.",
-      "source_summary": "Ein Hotfix für den Build vom 16. Oktober, zuerst am 22. Oktober gesehen, den Blizzards Notizen nicht erwähnen: 127 Gegenstände nur für die Beta, Kopien der Beute aus dem Geschmolzenen Kern und seiner legendären Waffen mit Gegenstandsstufe 30, die ab Stufe 1 nutzbar sind, die neun Sets von Tier 1 mit den Boni aus Classic, und Elixiere, von denen eines die Erfahrung eine Stunde lang verdreifacht. Über den Geschmolzenen Kern auf den Live-Realms sagen sie nichts. Die Beta wurde am 23. Oktober geschlossen, und laut Blizzard sind sie nach dem Start nicht in WoW Forever.",
-      "translated": false,
-      "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes/page/3#hotfix-2026-10-22",
-      "changes": []
     }
   ],
-  "fetched_at": "2026-11-18T12:59:23+00:00"
+  "fetched_at": "2026-11-19T03:21:14+00:00"
 }
