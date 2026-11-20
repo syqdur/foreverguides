@@ -8,8 +8,8 @@
       "title": "Hotfix, 19. November 2026",
       "date": "2026-11-19",
       "kind": "hotfix",
-      "summary": "Hotfixes für den Client vom 17. November, zuerst am 19. November zwischen 19:52 und 20:00 Uhr UTC und am 20. November zwischen 01:10 und 01:25 Uhr UTC in den Caches gesehen, die die Realms zum Start senden. Blizzard hat dazu keine Notizen veröffentlicht. Instabiles Magiepartikel wird jetzt beim Aufheben gebunden, Einfaches Kleid und Einfaches schwarzes Kleid sind jetzt Stoffrüstung, Squall-breakers Potion kann jetzt zerstört werden und verschwindet nach 5 Minuten, Ti'iks Kopf fällt jetzt für jedes Gruppenmitglied, und die Schurkenfähigkeit Entbeinen kann jetzt deine Gifte und andere Effekte auslösen.",
-      "source_summary": "Hotfixes für den Client vom 17. November, zuerst am 19. November zwischen 19:52 und 20:00 Uhr UTC und am 20. November zwischen 01:10 und 01:25 Uhr UTC in den Caches gesehen, die die Realms zum Start senden. Blizzard hat dazu keine Notizen veröffentlicht. Instabiles Magiepartikel wird jetzt beim Aufheben gebunden, Einfaches Kleid und Einfaches schwarzes Kleid sind jetzt Stoffrüstung, Squall-breakers Potion kann jetzt zerstört werden und verschwindet nach 5 Minuten, Ti'iks Kopf fällt jetzt für jedes Gruppenmitglied, und die Schurkenfähigkeit Entbeinen kann jetzt deine Gifte und andere Effekte auslösen.",
+      "summary": "Blizzards Notizen vom 19. November, veröffentlicht am 20. November um 04:00 Uhr UTC: Der Saatenkreuzer ist wieder aktiv, mit einer Chance auf Fehlschlag, Zweihandwaffen-Spezialisierung erhöht allen Heiligschaden, Vitrix’ Giftschock verursacht weniger Schaden, Instabile Magiepartikel sind seelengebunden, und es gibt Korrekturen für Grüner Daumen, den Reitrabatt der Himmelsgeborenen und mehrere Quests. Die Spieldaten zeigen außerdem, dass Entbeinen Effekte auslöst, Ti'iks Kopf für die ganze Gruppe fällt und Squall-breakers Potion nach 5 Minuten verschwindet.",
+      "source_summary": "Blizzards Notizen vom 19. November, veröffentlicht am 20. November um 04:00 Uhr UTC: Der Saatenkreuzer ist wieder aktiv, mit einer Chance auf Fehlschlag, Zweihandwaffen-Spezialisierung erhöht allen Heiligschaden, Vitrix’ Giftschock verursacht weniger Schaden, Instabile Magiepartikel sind seelengebunden, und es gibt Korrekturen für Grüner Daumen, den Reitrabatt der Himmelsgeborenen und mehrere Quests. Die Spieldaten zeigen außerdem, dass Entbeinen Effekte auslöst, Ti'iks Kopf für die ganze Gruppe fällt und Squall-breakers Potion nach 5 Minuten verschwindet.",
       "translated": false,
       "engine": null,
       "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-11-19",
@@ -20,8 +20,8 @@
       "title": "Hotfix, 18. November 2026",
       "date": "2026-11-18",
       "kind": "hotfix",
-      "summary": "Hotfixes für den Client vom 17. November, zuerst am 18. November zwischen 20:47 und 20:54 Uhr UTC und am 19. November um 01:23 Uhr UTC in den Caches gesehen, die die Realms zum Start senden. Blizzard hat dazu keine Notizen veröffentlicht. Ruzzgots Lieferung für „The Big Payback“ fällt jetzt für jedes Gruppenmitglied, und das Paladin-Talent Zweihandwaffen-Spezialisierung wirkt jetzt auf deinen gesamten körperlichen und Heiligschaden.",
-      "source_summary": "Hotfixes für den Client vom 17. November, zuerst am 18. November zwischen 20:47 und 20:54 Uhr UTC und am 19. November um 01:23 Uhr UTC in den Caches gesehen, die die Realms zum Start senden. Blizzard hat dazu keine Notizen veröffentlicht. Ruzzgots Lieferung für „The Big Payback“ fällt jetzt für jedes Gruppenmitglied, und das Paladin-Talent Zweihandwaffen-Spezialisierung wirkt jetzt auf deinen gesamten körperlichen und Heiligschaden.",
+      "summary": "Hotfixes für den Client vom 17. November, zuerst am 18. November zwischen 20:47 und 20:54 Uhr UTC in den Caches gesehen, die die Realms zum Start senden. Blizzard hat dazu keine Notizen veröffentlicht. Ruzzgots Lieferung für „The Big Payback“ fällt jetzt für jedes Gruppenmitglied.",
+      "source_summary": "Hotfixes für den Client vom 17. November, zuerst am 18. November zwischen 20:47 und 20:54 Uhr UTC in den Caches gesehen, die die Realms zum Start senden. Blizzard hat dazu keine Notizen veröffentlicht. Ruzzgots Lieferung für „The Big Payback“ fällt jetzt für jedes Gruppenmitglied.",
       "translated": false,
       "engine": null,
       "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-11-18",
@@ -445,5 +445,5 @@
       "changes": []
     }
   ],
-  "fetched_at": "2026-11-20T03:07:45+00:00"
+  "fetched_at": "2026-11-20T11:28:18+00:00"
 }
