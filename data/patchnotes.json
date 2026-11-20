@@ -1,8 +1,20 @@
 {
   "source": "https://foreverchanges.pro/de/patch-notes",
   "feed": "https://foreverchanges.pro/de/patch-notes/feed.xml",
-  "last_build": "Thu, 19 Nov 2026 12:00:00 GMT",
+  "last_build": "Fri, 20 Nov 2026 12:00:00 GMT",
   "items": [
+    {
+      "id": "foreverchanges-1.60.1.71037",
+      "title": "Build 1.60.1.71037, 20. November 2026",
+      "date": "2026-11-20",
+      "kind": "build",
+      "summary": "Der Client vom 20. November, aus seinen Dateien gelesen: Blizzard hat keine Patchnotes dazu veröffentlicht. Er schreibt die Server-Hotfixes bis zum 17. November in den Client selbst, und kein Talent, Klassenzauber, Volksbonus oder Gegenstand liest sich anders.",
+      "source_summary": "Der Client vom 20. November, aus seinen Dateien gelesen: Blizzard hat keine Patchnotes dazu veröffentlicht. Er schreibt die Server-Hotfixes bis zum 17. November in den Client selbst, und kein Talent, Klassenzauber, Volksbonus oder Gegenstand liest sich anders.",
+      "translated": false,
+      "engine": null,
+      "link": "https://foreverchanges.pro/de/patch-notes#1.60.1.71037",
+      "changes": []
+    },
     {
       "id": "foreverchanges-hotfix-2026-11-19",
       "title": "Hotfix, 19. November 2026",
@@ -132,89 +144,8 @@
       "source_summary": "Hotfixes für den Client vom 10. November, gesendet ab 16:51 Uhr UTC am 10. November bis in die Nacht. Blizzards Notes vom 10. November, veröffentlicht am 11. November um 03:27 Uhr UTC, beschreiben sie. Wut des Sturms gibt jetzt Stärke, Zermürben beschleunigt jetzt Verderbnis, Lebensentzug und Omen der Pein, solange du es kanalisierst, Begleiter von Jägern sinken auf 115 % Gesundheit, während Dämonen von Hexenmeistern etwa 15 % mehr bekommen, und die meisten Quests ab Stufe 48 geben jetzt Gold. Die Notes kündigen außerdem Änderungen an, die noch nicht im Spiel sind: Verstärkungsschamanen rücken wieder näher an Windzorn (Sturmschlag, Geistige Gewandtheit und Waffe des Mahlstroms geben weniger), und die Änderungen am Auktionshaus kommen mit den Wartungsarbeiten am 17. November.",
       "translated": false,
       "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-11-10",
-      "changes": [
-        {
-          "group": "hunter",
-          "group_de": "Jäger",
-          "spec": "Allgemein",
-          "type": "change",
-          "spell": "Große Ausdauer",
-          "source": "Erhöht jetzt die Gesundheit deines Begleiters um 30 auf Rang 1 bis 400 auf Rang 10, statt seine Ausdauer um 3 bis 40.",
-          "text": "Erhöht jetzt die Gesundheit deines Begleiters um 30 auf Rang 1 bis 400 auf Rang 10, statt seine Ausdauer um 3 bis 40.",
-          "translated": false
-        },
-        {
-          "group": "hunter",
-          "group_de": "Jäger",
-          "spec": "Tierherrschaft",
-          "type": "nerf",
-          "spell": "Falke beschwören",
-          "source": "Kostet auf jedem Rang 11% des Grundmanas statt 80 Mana auf Rang 1 bis 190 Mana auf Rang 4. Die Kosten richten sich jetzt nach deiner Stufe, nicht nach dem Rang: etwa 85 auf Stufe 30 statt 80 für Rang 1 und etwa 189 auf Stufe 60 statt 190 für Rang 4.",
-          "text": "Kostet auf jedem Rang 11% des Grundmanas statt 80 Mana auf Rang 1 bis 190 Mana auf Rang 4. Die Kosten richten sich jetzt nach deiner Stufe, nicht nach dem Rang: etwa 85 auf Stufe 30 statt 80 für Rang 1 und etwa 189 auf Stufe 60 statt 190 für Rang 4.",
-          "translated": false
-        },
-        {
-          "group": "hunter",
-          "group_de": "Jäger",
-          "spec": "Treffsicherheit",
-          "type": "nerf",
-          "spell": "Arkaner Schuss",
-          "source": "Kostet auf jedem Rang 11% des Grundmanas statt 25 Mana auf Rang 1 bis 190 Mana auf Rang 8. Die Kosten richten sich jetzt nach deiner Stufe, nicht nach dem Rang: etwa 85 auf Stufe 30 statt 80 für Rang 4 und etwa 189 auf Stufe 60 statt 190 für Rang 8. Niedrigere Ränge kosten nicht mehr weniger.",
-          "text": "Kostet auf jedem Rang 11% des Grundmanas statt 25 Mana auf Rang 1 bis 190 Mana auf Rang 8. Die Kosten richten sich jetzt nach deiner Stufe, nicht nach dem Rang: etwa 85 auf Stufe 30 statt 80 für Rang 4 und etwa 189 auf Stufe 60 statt 190 für Rang 8. Niedrigere Ränge kosten nicht mehr weniger.",
-          "translated": false
-        },
-        {
-          "group": "warlock",
-          "group_de": "Hexenmeister",
-          "spec": "Allgemein",
-          "type": "buff",
-          "spell": "Feuerblitz",
-          "source": "Der Feuerblitz des Wichtels verursacht auf Rang 1 bis 4 mehr Schaden: 6 bis 8 statt 4 bis 5 auf Rang 1, bis 18 bis 22 statt 18 bis 19 auf Rang 4.",
-          "text": "Der Feuerblitz des Wichtels verursacht auf Rang 1 bis 4 mehr Schaden: 6 bis 8 statt 4 bis 5 auf Rang 1, bis 18 bis 22 statt 18 bis 19 auf Rang 4.",
-          "translated": false
-        },
-        {
-          "group": "warlock",
-          "group_de": "Hexenmeister",
-          "spec": "Gebrechen",
-          "type": "change",
-          "spell": "Zermürben",
-          "source": "Erhöht nicht mehr den Schaden deiner anderen regelmäßigen Schattenschadenseffekte am Ziel um 10 %. Stattdessen verursachen dein Lebensentzug, deine Verderbnis und dein Omen der Pein auf dem Ziel ihren Schaden 100 % schneller, solange du es kanalisierst. Sein eigener Schaden sinkt um 30 %: 60 statt 86 pro Sekunde.",
-          "text": "Erhöht nicht mehr den Schaden deiner anderen regelmäßigen Schattenschadenseffekte am Ziel um 10 %. Stattdessen verursachen dein Lebensentzug, deine Verderbnis und dein Omen der Pein auf dem Ziel ihren Schaden 100 % schneller, solange du es kanalisierst. Sein eigener Schaden sinkt um 30 %: 60 statt 86 pro Sekunde.",
-          "translated": false
-        },
-        {
-          "group": "warlock",
-          "group_de": "Hexenmeister",
-          "spec": "Gebrechen",
-          "type": "change",
-          "spell": "Seelenentzug",
-          "source": "Zählt jetzt nur noch deine Verderbnis, deinen Lebensentzug und dein Omen der Pein auf dem Ziel statt aller deiner anderen Gebrechenseffekte.",
-          "text": "Zählt jetzt nur noch deine Verderbnis, deinen Lebensentzug und dein Omen der Pein auf dem Ziel statt aller deiner anderen Gebrechenseffekte.",
-          "translated": false
-        },
-        {
-          "group": "warlock",
-          "group_de": "Hexenmeister",
-          "spec": "Zerstörung",
-          "type": "nerf",
-          "spell": "Omen der Verwüstung",
-          "source": "Löst jetzt die globale Abklingzeit von 1,5 Sek. aus.",
-          "text": "Löst jetzt die globale Abklingzeit von 1,5 Sek. aus.",
-          "translated": false
-        },
-        {
-          "group": "druid",
-          "group_de": "Druide",
-          "spec": "Wiederherst",
-          "type": "buff",
-          "spell": "Schnelligkeit der Natur",
-          "source": "Wirkt jetzt auch auf Wildwuchs, das damit sofort statt in 3 Sek. gewirkt wird.",
-          "text": "Wirkt jetzt auch auf Wildwuchs, das damit sofort statt in 3 Sek. gewirkt wird.",
-          "translated": false
-        }
-      ]
+      "link": "https://foreverchanges.pro/de/patch-notes/page/2#hotfix-2026-11-10",
+      "changes": []
     },
     {
       "id": "foreverchanges-1.60.1.70888",
@@ -333,7 +264,7 @@
       "source_summary": "A technical build: its game data is the same as the 2026-11-02 build's (1.60.1.70753). Talents, spells and items did not change.",
       "translated": true,
       "engine": "google",
-      "link": "https://foreverchanges.pro/de/patch-notes/page/2#1.60.1.70755",
+      "link": "https://foreverchanges.pro/de/patch-notes/page/3#1.60.1.70755",
       "changes": []
     },
     {
@@ -431,19 +362,7 @@
       "engine": null,
       "link": "https://foreverchanges.pro/de/patch-notes/page/3#1.60.1.70634",
       "changes": []
-    },
-    {
-      "id": "foreverchanges-hotfix-2026-10-23",
-      "title": "Hotfix, 23. Oktober 2026",
-      "date": "2026-10-23",
-      "kind": "hotfix",
-      "summary": "Ein Hotfix für den Build vom 22. Oktober, zuerst am 23. Oktober gesehen, den Blizzards Notizen nicht erwähnen: Paladine lernen Zorn der Gerechtigkeit mit Stufe 10 statt 16.",
-      "source_summary": "Ein Hotfix für den Build vom 22. Oktober, zuerst am 23. Oktober gesehen, den Blizzards Notizen nicht erwähnen: Paladine lernen Zorn der Gerechtigkeit mit Stufe 10 statt 16.",
-      "translated": false,
-      "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes/page/3#hotfix-2026-10-23",
-      "changes": []
     }
   ],
-  "fetched_at": "2026-11-20T11:28:18+00:00"
+  "fetched_at": "2026-11-20T20:07:33+00:00"
 }
