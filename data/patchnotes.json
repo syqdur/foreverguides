@@ -8,8 +8,8 @@
       "title": "Hotfix, 19. November 2026",
       "date": "2026-11-19",
       "kind": "hotfix",
-      "summary": "Hotfixes für den Client vom 17. November, zuerst am 19. November zwischen 19:52 und 20:00 Uhr UTC in den Caches gesehen, die die Realms zum Start senden. Blizzard hat dazu keine Notizen veröffentlicht. Instabiles Magiepartikel wird jetzt beim Aufheben gebunden, Einfaches Kleid und Einfaches schwarzes Kleid sind jetzt Stoffrüstung, und Squall-breakers Potion kann jetzt zerstört werden.",
-      "source_summary": "Hotfixes für den Client vom 17. November, zuerst am 19. November zwischen 19:52 und 20:00 Uhr UTC in den Caches gesehen, die die Realms zum Start senden. Blizzard hat dazu keine Notizen veröffentlicht. Instabiles Magiepartikel wird jetzt beim Aufheben gebunden, Einfaches Kleid und Einfaches schwarzes Kleid sind jetzt Stoffrüstung, und Squall-breakers Potion kann jetzt zerstört werden.",
+      "summary": "Hotfixes für den Client vom 17. November, zuerst am 19. November zwischen 19:52 und 20:00 Uhr UTC und am 20. November zwischen 01:10 und 01:25 Uhr UTC in den Caches gesehen, die die Realms zum Start senden. Blizzard hat dazu keine Notizen veröffentlicht. Instabiles Magiepartikel wird jetzt beim Aufheben gebunden, Einfaches Kleid und Einfaches schwarzes Kleid sind jetzt Stoffrüstung, Squall-breakers Potion kann jetzt zerstört werden und verschwindet nach 5 Minuten, Ti'iks Kopf fällt jetzt für jedes Gruppenmitglied, und die Schurkenfähigkeit Entbeinen kann jetzt deine Gifte und andere Effekte auslösen.",
+      "source_summary": "Hotfixes für den Client vom 17. November, zuerst am 19. November zwischen 19:52 und 20:00 Uhr UTC und am 20. November zwischen 01:10 und 01:25 Uhr UTC in den Caches gesehen, die die Realms zum Start senden. Blizzard hat dazu keine Notizen veröffentlicht. Instabiles Magiepartikel wird jetzt beim Aufheben gebunden, Einfaches Kleid und Einfaches schwarzes Kleid sind jetzt Stoffrüstung, Squall-breakers Potion kann jetzt zerstört werden und verschwindet nach 5 Minuten, Ti'iks Kopf fällt jetzt für jedes Gruppenmitglied, und die Schurkenfähigkeit Entbeinen kann jetzt deine Gifte und andere Effekte auslösen.",
       "translated": false,
       "engine": null,
       "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-11-19",
@@ -445,5 +445,5 @@
       "changes": []
     }
   ],
-  "fetched_at": "2026-11-19T21:28:01+00:00"
+  "fetched_at": "2026-11-20T03:07:45+00:00"
 }
