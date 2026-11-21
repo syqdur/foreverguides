@@ -4,6 +4,18 @@
   "last_build": "Fri, 20 Nov 2026 12:00:00 GMT",
   "items": [
     {
+      "id": "foreverchanges-hotfix-2026-11-20",
+      "title": "Hotfix, 20. November 2026",
+      "date": "2026-11-20",
+      "kind": "hotfix",
+      "summary": "Blizzards Notizen vom 20. November, veröffentlicht am 21. November um 00:18 Uhr UTC: Klingenwirbel lässt Entbeinen jetzt ein weiteres Ziel treffen, Dämonische Ägide bleibt nicht mehr bestehen, wenn du sie verlernst, jeder Dungeon kann 5-mal pro Stunde betreten werden (vorher 10), der 3-Teile-Bonus von Sturmschleier stellt weniger Energie wieder her, und es gibt Korrekturen an der Blackrockspitze, an Toron Rockhoofs Schmiede und an mehreren Quests. Die Spieldaten zeigen außerdem, dass Züchtigung in Schattengestalt funktioniert, dass die Energierückgabe von Ungezähmtes Herz wirklich Energie wiederherstellt, dass Filcher’s Cowl nicht mehr Stufe 50 erfordert und dass 10 Teile der hergestellten Tier-1-Sets für Schamanen und Druiden neue Werte haben.",
+      "source_summary": "Blizzards Notizen vom 20. November, veröffentlicht am 21. November um 00:18 Uhr UTC: Klingenwirbel lässt Entbeinen jetzt ein weiteres Ziel treffen, Dämonische Ägide bleibt nicht mehr bestehen, wenn du sie verlernst, jeder Dungeon kann 5-mal pro Stunde betreten werden (vorher 10), der 3-Teile-Bonus von Sturmschleier stellt weniger Energie wieder her, und es gibt Korrekturen an der Blackrockspitze, an Toron Rockhoofs Schmiede und an mehreren Quests. Die Spieldaten zeigen außerdem, dass Züchtigung in Schattengestalt funktioniert, dass die Energierückgabe von Ungezähmtes Herz wirklich Energie wiederherstellt, dass Filcher’s Cowl nicht mehr Stufe 50 erfordert und dass 10 Teile der hergestellten Tier-1-Sets für Schamanen und Druiden neue Werte haben.",
+      "translated": false,
+      "engine": null,
+      "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-11-20",
+      "changes": []
+    },
+    {
       "id": "foreverchanges-1.60.1.71037",
       "title": "Build 1.60.1.71037, 20. November 2026",
       "date": "2026-11-20",
@@ -132,7 +144,7 @@
       "source_summary": "Hotfixes für den Client vom 10. November, gesendet am 11. November. Blizzards Notizen vom 11. November, veröffentlicht am 12. November um 00:48 Uhr UTC, beschreiben die meisten davon: Korrekturen für fünf Klassen, Richturteil als Distanzangriff, fünf größere Schneiderei-Taschen und leichtere Gegner im Gebiet Flusslande. Die Hotfix-Daten zeigen mehr, als die Notizen nennen, zum ersten Mal am 11. und 12. November gesehen: Zwei Zauberstäbe erhalten ihren Schaden, Siegel der Dämmerung und Rune der Dämmerung ermöglichen das Einsammeln von Geißelsteinen, und Lagerrezepte bringen früher keine Fertigkeitspunkte mehr.",
       "translated": false,
       "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-11-11",
+      "link": "https://foreverchanges.pro/de/patch-notes/page/2#hotfix-2026-11-11",
       "changes": []
     },
     {
@@ -252,7 +264,7 @@
       "source_summary": "Der Client zum Start, erschienen am 4. November. Er schreibt die Hotfixes vom 3. November in die Client-Dateien: Die Klassenänderungen aus Blizzards Patchnotes zum Start kommen jetzt in jeder Sprache aus dem Client. Gegenstände haben sich nicht geändert.",
       "translated": false,
       "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes/page/2#1.60.1.70790",
+      "link": "https://foreverchanges.pro/de/patch-notes/page/3#1.60.1.70790",
       "changes": []
     },
     {
@@ -350,19 +362,7 @@
       "engine": null,
       "link": "https://foreverchanges.pro/de/patch-notes/page/3#1.60.1.70658",
       "changes": []
-    },
-    {
-      "id": "foreverchanges-1.60.1.70634",
-      "title": "Build 1.60.1.70634, 27. Oktober 2026",
-      "date": "2026-10-27",
-      "kind": "build",
-      "summary": "Aus dem Client gelesen, da Blizzard keine Notizen dazu veröffentlicht hat: Die Server-Hotfixes vom 16. bis 23. Oktober stecken jetzt im Client selbst, die Beschreibung von Heureka! nennt jetzt seine 8 Sek., und kein Talent, Klassenzauber oder Gegenstand liest sich anders. Die zum Start angekündigte Überarbeitung der Volksfähigkeiten ist nicht enthalten.",
-      "source_summary": "Aus dem Client gelesen, da Blizzard keine Notizen dazu veröffentlicht hat: Die Server-Hotfixes vom 16. bis 23. Oktober stecken jetzt im Client selbst, die Beschreibung von Heureka! nennt jetzt seine 8 Sek., und kein Talent, Klassenzauber oder Gegenstand liest sich anders. Die zum Start angekündigte Überarbeitung der Volksfähigkeiten ist nicht enthalten.",
-      "translated": false,
-      "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes/page/3#1.60.1.70634",
-      "changes": []
     }
   ],
-  "fetched_at": "2026-11-20T20:07:33+00:00"
+  "fetched_at": "2026-11-21T01:27:55+00:00"
 }
