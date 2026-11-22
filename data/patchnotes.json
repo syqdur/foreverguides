@@ -1,8 +1,20 @@
 {
   "source": "https://foreverchanges.pro/de/patch-notes",
   "feed": "https://foreverchanges.pro/de/patch-notes/feed.xml",
-  "last_build": "Fri, 20 Nov 2026 12:00:00 GMT",
+  "last_build": "Sat, 21 Nov 2026 12:00:00 GMT",
   "items": [
+    {
+      "id": "foreverchanges-hotfix-2026-11-21",
+      "title": "Hotfix, 21. November 2026",
+      "date": "2026-11-21",
+      "kind": "hotfix",
+      "summary": "Hotfixes für den Client vom 20. November, zuerst am 22. November um 03:29 Uhr UTC in den Caches gesehen, die die Realms zum Start senden. Blizzard hat dazu keine Notizen veröffentlicht. Böenbeerensaft kostet beim Händler jetzt 1 Silber 25 Kupfer (vorher 25 Kupfer).",
+      "source_summary": "Hotfixes für den Client vom 20. November, zuerst am 22. November um 03:29 Uhr UTC in den Caches gesehen, die die Realms zum Start senden. Blizzard hat dazu keine Notizen veröffentlicht. Böenbeerensaft kostet beim Händler jetzt 1 Silber 25 Kupfer (vorher 25 Kupfer).",
+      "translated": false,
+      "engine": null,
+      "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-11-21",
+      "changes": []
+    },
     {
       "id": "foreverchanges-hotfix-2026-11-20",
       "title": "Hotfix, 20. November 2026",
@@ -132,7 +144,7 @@
       "source_summary": "Die Schamanen-Änderungen aus Blizzards Patchnotes vom 10. November kamen verspätet. Laut Blizzard sind sie seit dem 12. November um 18:45 UTC in allen Regionen live.",
       "translated": false,
       "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-11-12",
+      "link": "https://foreverchanges.pro/de/patch-notes/page/2#hotfix-2026-11-12",
       "changes": []
     },
     {
@@ -252,7 +264,7 @@
       "source_summary": "Ein Hotfix für den Client zum Start, zuerst am 4. November im Cache gesehen, den die Realms zum Start senden. Er bringt zwei Zeilen aus Blizzards Patchnotes zum Start, die die Client-Dateien nicht enthalten: Trotz und Verteidigungshaltung entsprechen jetzt den Notes. Kettenblitzschlag behält die 2,5 Sek. Zauberzeit des Clients: Die Realms zum Start senden die 2 Sek. der Notes nicht.",
       "translated": false,
       "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes/page/2#hotfix-2026-11-04",
+      "link": "https://foreverchanges.pro/de/patch-notes/page/3#hotfix-2026-11-04",
       "changes": []
     },
     {
@@ -350,19 +362,7 @@
       "engine": null,
       "link": "https://foreverchanges.pro/de/patch-notes/page/3#hotfix-2026-10-28",
       "changes": []
-    },
-    {
-      "id": "foreverchanges-1.60.1.70658",
-      "title": "Build 1.60.1.70658, 28. Oktober 2026",
-      "date": "2026-10-28",
-      "kind": "build",
-      "summary": "Ein Build vom 28. Oktober, der nur Modelldateien ändert: 2 von 137 Tabellen unterscheiden sich vom Build vom 27. Oktober, beide Kreaturenmodelle, und nichts, was eine Seite liest. Blizzard hat keine Notizen dazu veröffentlicht. Die ersten Hotfixes der Startrealms, in derselben Nacht gesehen, stehen unten.",
-      "source_summary": "Ein Build vom 28. Oktober, der nur Modelldateien ändert: 2 von 137 Tabellen unterscheiden sich vom Build vom 27. Oktober, beide Kreaturenmodelle, und nichts, was eine Seite liest. Blizzard hat keine Notizen dazu veröffentlicht. Die ersten Hotfixes der Startrealms, in derselben Nacht gesehen, stehen unten.",
-      "translated": false,
-      "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes/page/3#1.60.1.70658",
-      "changes": []
     }
   ],
-  "fetched_at": "2026-11-21T01:27:55+00:00"
+  "fetched_at": "2026-11-22T11:14:17+00:00"
 }
