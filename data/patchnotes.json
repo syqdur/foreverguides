@@ -1,15 +1,27 @@
 {
   "source": "https://foreverchanges.pro/de/patch-notes",
   "feed": "https://foreverchanges.pro/de/patch-notes/feed.xml",
-  "last_build": "Sun, 22 Nov 2026 12:00:00 GMT",
+  "last_build": "Mon, 23 Nov 2026 12:00:00 GMT",
   "items": [
+    {
+      "id": "foreverchanges-hotfix-2026-11-23",
+      "title": "Hotfix, 23. November 2026",
+      "date": "2026-11-23",
+      "kind": "hotfix",
+      "summary": "Hotfixes für den Client vom 20. November, zuerst am 23. November um 19:07 Uhr UTC in den Caches gesehen, die die Realms zum Start senden. Blizzard hat dazu keine Notizen veröffentlicht. Am 22. November hatte ein Entwickler von Blizzard das Verschwinden der Welt-Stärkungseffekte bei Ladebildschirmen als Fehler bezeichnet. Welt-Stärkungseffekte verschwinden bei Ladebildschirmen nicht mehr und halten in Dungeons und auf dem anderen Kontinent wieder an. Die blauen Gegenstände von Obsidian Sentinel in Uldaman bringen beim Händler nur noch die Hälfte. Zauberschaden und Heilung von Fengus' Wildheit sind halbiert, und Sayges dunkle Schicksale für Attribute erhöhen jetzt deine Gesamtwerte.",
+      "source_summary": "Hotfixes für den Client vom 20. November, zuerst am 23. November um 19:07 Uhr UTC in den Caches gesehen, die die Realms zum Start senden. Blizzard hat dazu keine Notizen veröffentlicht. Am 22. November hatte ein Entwickler von Blizzard das Verschwinden der Welt-Stärkungseffekte bei Ladebildschirmen als Fehler bezeichnet. Welt-Stärkungseffekte verschwinden bei Ladebildschirmen nicht mehr und halten in Dungeons und auf dem anderen Kontinent wieder an. Die blauen Gegenstände von Obsidian Sentinel in Uldaman bringen beim Händler nur noch die Hälfte. Zauberschaden und Heilung von Fengus' Wildheit sind halbiert, und Sayges dunkle Schicksale für Attribute erhöhen jetzt deine Gesamtwerte.",
+      "translated": false,
+      "engine": null,
+      "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-11-23",
+      "changes": []
+    },
     {
       "id": "foreverchanges-hotfix-2026-11-22",
       "title": "Hotfix, 22. November 2026",
       "date": "2026-11-22",
       "kind": "hotfix",
-      "summary": "Hotfixes für den Client vom 20. November, zuerst am 22. November um 18:03 Uhr UTC in den Caches gesehen, die die Realms zum Start senden. Blizzard hat dazu keine Notizen veröffentlicht. Schließkassetten, Plunderkisten und andere Behälter legen ihren Inhalt beim Öffnen jetzt direkt in deine Taschen.",
-      "source_summary": "Hotfixes für den Client vom 20. November, zuerst am 22. November um 18:03 Uhr UTC in den Caches gesehen, die die Realms zum Start senden. Blizzard hat dazu keine Notizen veröffentlicht. Schließkassetten, Plunderkisten und andere Behälter legen ihren Inhalt beim Öffnen jetzt direkt in deine Taschen.",
+      "summary": "Hotfixes für den Client vom 20. November, am 22. November um 9:55 Uhr PST eingespielt, zuerst um 18:03 Uhr UTC in den Caches gesehen, die die Realms zum Start senden, und am 23. November von Blizzard bestätigt. Schließkassetten, Plunderkisten und andere Behälter legen ihren Inhalt beim Öffnen jetzt direkt in deine Taschen, eine vorübergehende Maßnahme, bis Blizzard das Hineinschauen in Schließkassetten wieder erlaubt.",
+      "source_summary": "Hotfixes für den Client vom 20. November, am 22. November um 9:55 Uhr PST eingespielt, zuerst um 18:03 Uhr UTC in den Caches gesehen, die die Realms zum Start senden, und am 23. November von Blizzard bestätigt. Schließkassetten, Plunderkisten und andere Behälter legen ihren Inhalt beim Öffnen jetzt direkt in deine Taschen, eine vorübergehende Maßnahme, bis Blizzard das Hineinschauen in Schließkassetten wieder erlaubt.",
       "translated": false,
       "engine": null,
       "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-11-22",
@@ -132,7 +144,7 @@
       "source_summary": "Blizzards Patchnotes vom 13. November, veröffentlicht am 14. November um 1:54 Uhr UTC, beschreiben die Hotfixes dieses Tages: Fehlerbehebungen für acht Klassen, abnehmende Wirkung bei Betäubungen zwischen Spielern und Kreaturen, Richturteil des Befehls wieder als Nahkampfangriff, korrigierte Gegenstandswerte, keine Erfahrung mehr für triviale Gegner in Dungeons und viele Questkorrekturen. Die Hotfix-Daten zeigen zwei weitere Änderungen, die in den Patchnotes fehlen: Die drei Ränge von Wildwuchs teilen sich eine Abklingzeit, und der Bonus der Rüstung des Wildpirschers wirkt jetzt auf Mehrfachschuss.",
       "translated": false,
       "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-11-13",
+      "link": "https://foreverchanges.pro/de/patch-notes/page/2#hotfix-2026-11-13",
       "changes": []
     },
     {
@@ -252,7 +264,7 @@
       "source_summary": "Ein Hotfix für den Launch-Client, den Blizzards Patchnotes vom 6. November beschreiben. Im Client korrigiert er drei Tooltips: Blutgier nennt Tollkühne Schwünge, Bärengestalt gibt die Gesundheit von Classic an, und Verheeren zeigt seinen echten Bonusschaden. Was die Zauber tun, hat sich nicht geändert.",
       "translated": false,
       "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes/page/2#hotfix-2026-11-06",
+      "link": "https://foreverchanges.pro/de/patch-notes/page/3#hotfix-2026-11-06",
       "changes": []
     },
     {
@@ -350,19 +362,7 @@
       "engine": null,
       "link": "https://foreverchanges.pro/de/patch-notes/page/3#1.60.1.70707",
       "changes": []
-    },
-    {
-      "id": "foreverchanges-1.60.1.70685",
-      "title": "Build 1.60.1.70685, 28. Oktober 2026",
-      "date": "2026-10-28",
-      "kind": "build",
-      "summary": "Nichts davon ist bestätigt: Der Build kam, während die Realms vor dem Start geschlossen sind, Blizzard hat keine Notizen dazu veröffentlicht, und im Spiel lässt sich noch nichts prüfen.",
-      "source_summary": "Nichts davon ist bestätigt: Der Build kam, während die Realms vor dem Start geschlossen sind, Blizzard hat keine Notizen dazu veröffentlicht, und im Spiel lässt sich noch nichts prüfen.",
-      "translated": false,
-      "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes/page/3#1.60.1.70685",
-      "changes": []
     }
   ],
-  "fetched_at": "2026-11-22T18:29:58+00:00"
+  "fetched_at": "2026-11-23T20:08:26+00:00"
 }
