@@ -1,8 +1,32 @@
 {
   "source": "https://foreverchanges.pro/de/patch-notes",
   "feed": "https://foreverchanges.pro/de/patch-notes/feed.xml",
-  "last_build": "Tue, 24 Nov 2026 12:00:00 GMT",
+  "last_build": "Wed, 25 Nov 2026 12:00:00 GMT",
   "items": [
+    {
+      "id": "foreverchanges-1.60.1.71139",
+      "title": "Build 1.60.1.71139, 25. November 2026",
+      "date": "2026-11-25",
+      "kind": "build",
+      "summary": "The November 25 client, read from its files: Blizzard has posted no notes for it. It writes some of the server’s recent hotfixes into the client itself, and no talent, class spell, racial or item reads differently.",
+      "source_summary": "The November 25 client, read from its files: Blizzard has posted no notes for it. It writes some of the server’s recent hotfixes into the client itself, and no talent, class spell, racial or item reads differently.",
+      "translated": false,
+      "engine": null,
+      "link": "https://foreverchanges.pro/de/patch-notes#1.60.1.71139",
+      "changes": []
+    },
+    {
+      "id": "foreverchanges-hotfix-2026-11-25",
+      "title": "Hotfix, 25. November 2026",
+      "date": "2026-11-25",
+      "kind": "hotfix",
+      "summary": "Blizzards Anpassungen für Gleichgewichtsdruiden vom 25. November, um 18:32 Uhr UTC veröffentlicht und live: Sternenfeuer braucht weniger Talentpunkte, Finsternis erhöht die kritische Trefferchance von Zorn, und Moonkingestalt erhöht Arkan- und Naturschaden um 10 %. Hotfixes für den Client vom 24. November, zuerst am 25. November um 16:55 Uhr UTC in den Caches gesehen, die die Realms zum Start senden, lassen außerdem die Fackel des Nachtwächters wieder auf einem Reittier und in Gestaltwandlungsformen benutzen.",
+      "source_summary": "Blizzards Anpassungen für Gleichgewichtsdruiden vom 25. November, um 18:32 Uhr UTC veröffentlicht und live: Sternenfeuer braucht weniger Talentpunkte, Finsternis erhöht die kritische Trefferchance von Zorn, und Moonkingestalt erhöht Arkan- und Naturschaden um 10 %. Hotfixes für den Client vom 24. November, zuerst am 25. November um 16:55 Uhr UTC in den Caches gesehen, die die Realms zum Start senden, lassen außerdem die Fackel des Nachtwächters wieder auf einem Reittier und in Gestaltwandlungsformen benutzen.",
+      "translated": false,
+      "engine": null,
+      "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-11-25",
+      "changes": []
+    },
     {
       "id": "foreverchanges-hotfix-2026-11-24",
       "title": "Hotfix, 24. November 2026",
@@ -120,7 +144,7 @@
       "source_summary": "Blizzards Notizen vom 17. November, veröffentlicht am 18. November um 03:24 Uhr UTC: Die Obere Blackrockspitze hat wieder ihre vorgesehene Schwierigkeit, die Rüstung der Seelenschmiede hat Zaubermacht statt Stärke, die Quests der Schlacht um das Alteractal verlangen Stufe 58, Bronzener Streitkolben wird beim Anlegen gebunden, und es gibt Korrekturen am Gemütlichen Schlafsack, an Weltbuffs, Schlaghagel, Berufen und vielen Quests.",
       "translated": false,
       "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-11-17",
+      "link": "https://foreverchanges.pro/de/patch-notes/page/2#hotfix-2026-11-17",
       "changes": []
     },
     {
@@ -132,7 +156,7 @@
       "source_summary": "Der Client vom 17. November, aus seinen Dateien gelesen: Blizzard hat keine Patchnotes dazu veröffentlicht. Er schreibt die Server-Hotfixes vom 13. und 16. November in den Client selbst, und kein Talent, Klassenzauber, Volksbonus oder Gegenstand liest sich anders.",
       "translated": false,
       "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes#1.60.1.70959",
+      "link": "https://foreverchanges.pro/de/patch-notes/page/2#1.60.1.70959",
       "changes": []
     },
     {
@@ -252,7 +276,7 @@
       "source_summary": "Blizzards Hotfix vom 8. November, live seit etwa 19:05 Uhr UTC: Gegner in Dungeons geben 50 % mehr Erfahrung, wenn du sie tötest.",
       "translated": false,
       "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes/page/2#hotfix-2026-11-08",
+      "link": "https://foreverchanges.pro/de/patch-notes/page/3#hotfix-2026-11-08",
       "changes": []
     },
     {
@@ -264,7 +288,7 @@
       "source_summary": "Ein Hotfix für den Client vom 7. November, zuerst am 7. November gegen 22:17 Uhr UTC im Cache gesehen, den die Realms zum Start senden. Er machte Furchtzauberschutz nur in Schattengestalt nutzbar, und Blizzard hat das gleich wieder rückgängig gemacht.",
       "translated": false,
       "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes/page/2#hotfix-2026-11-07",
+      "link": "https://foreverchanges.pro/de/patch-notes/page/3#hotfix-2026-11-07",
       "changes": []
     },
     {
@@ -338,31 +362,7 @@
       "engine": "google",
       "link": "https://foreverchanges.pro/de/patch-notes/page/3#1.60.1.70755",
       "changes": []
-    },
-    {
-      "id": "foreverchanges-hotfix-2026-11-03",
-      "title": "Hotfix, 3. November 2026",
-      "date": "2026-11-03",
-      "kind": "hotfix",
-      "summary": "Ein Hotfix zum Build vom 2. November, erstmals am 3. November im Cache gesehen, den die Startrealms senden, und zu dem Blizzard keine Notizen veröffentlicht hat. Er erhöht den Schaden des Jägers: Aspekt des Falken bekommt die Distanzangriffskraft zurück, die der Hotfix vom 28. Oktober ihm genommen hatte, Aura des Volltreffers gibt bis zu doppelt so viel, Sperrfeuer und Blitzartige Reflexe sind wieder auf den Werten von Classic, und Gezielter Schuss, Arkaner Schuss, Schlangenbiss und Heckenschützenschuss verursachen mehr Schaden.",
-      "source_summary": "Ein Hotfix zum Build vom 2. November, erstmals am 3. November im Cache gesehen, den die Startrealms senden, und zu dem Blizzard keine Notizen veröffentlicht hat. Er erhöht den Schaden des Jägers: Aspekt des Falken bekommt die Distanzangriffskraft zurück, die der Hotfix vom 28. Oktober ihm genommen hatte, Aura des Volltreffers gibt bis zu doppelt so viel, Sperrfeuer und Blitzartige Reflexe sind wieder auf den Werten von Classic, und Gezielter Schuss, Arkaner Schuss, Schlangenbiss und Heckenschützenschuss verursachen mehr Schaden.",
-      "translated": false,
-      "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes/page/3#hotfix-2026-11-03",
-      "changes": []
-    },
-    {
-      "id": "foreverchanges-1.60.1.70753",
-      "title": "Build 1.60.1.70753, 2. November 2026",
-      "date": "2026-11-02",
-      "kind": "build",
-      "summary": "Der Build vom 2. November schreibt den Hotfix vom 30. Oktober in die Clientdateien: Die Überarbeitung der Druiden- und Paladinbäume, die Überarbeitung der Volksfähigkeiten und die Änderungen an Magier, Priester, Hexenmeister und Jäger werden jetzt in jeder Sprache aus dem Client gelesen. Neu darin: Bereitschaft, eine passive Fähigkeit für Schurken auf Stufe 18 und Druiden auf Stufe 32, die deiner ersten Fähigkeit 10 Energie abzieht, wenn du einen Kampf mit voller Energie beginnst; Attuned und Charged der Himmelsgeborenen halten 1 Std. statt 15 Min., wie von Blizzard angekündigt; der letzte Rang von Heiliger Schild bekommt seine Stufe, seine Kosten und seine Abklingzeit; und der Beutel mit violettem Staub, ein Gegenstand für die Startfeier. Nichts davon ist bestätigt: Der Build kam, während die Realms vor dem Start geschlossen sind, Blizzard hat keine Notizen dazu veröffentlicht, und im Spiel lässt sich noch nichts prüfen.",
-      "source_summary": "Der Build vom 2. November schreibt den Hotfix vom 30. Oktober in die Clientdateien: Die Überarbeitung der Druiden- und Paladinbäume, die Überarbeitung der Volksfähigkeiten und die Änderungen an Magier, Priester, Hexenmeister und Jäger werden jetzt in jeder Sprache aus dem Client gelesen. Neu darin: Bereitschaft, eine passive Fähigkeit für Schurken auf Stufe 18 und Druiden auf Stufe 32, die deiner ersten Fähigkeit 10 Energie abzieht, wenn du einen Kampf mit voller Energie beginnst; Attuned und Charged der Himmelsgeborenen halten 1 Std. statt 15 Min., wie von Blizzard angekündigt; der letzte Rang von Heiliger Schild bekommt seine Stufe, seine Kosten und seine Abklingzeit; und der Beutel mit violettem Staub, ein Gegenstand für die Startfeier. Nichts davon ist bestätigt: Der Build kam, während die Realms vor dem Start geschlossen sind, Blizzard hat keine Notizen dazu veröffentlicht, und im Spiel lässt sich noch nichts prüfen.",
-      "translated": false,
-      "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes/page/3#1.60.1.70753",
-      "changes": []
     }
   ],
-  "fetched_at": "2026-11-25T00:38:48+00:00"
+  "fetched_at": "2026-11-25T19:54:28+00:00"
 }
