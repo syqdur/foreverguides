@@ -1,8 +1,32 @@
 {
   "source": "https://foreverchanges.pro/de/patch-notes",
   "feed": "https://foreverchanges.pro/de/patch-notes/feed.xml",
-  "last_build": "Mon, 23 Nov 2026 12:00:00 GMT",
+  "last_build": "Tue, 24 Nov 2026 12:00:00 GMT",
   "items": [
+    {
+      "id": "foreverchanges-hotfix-2026-11-24",
+      "title": "Hotfix, 24. November 2026",
+      "date": "2026-11-24",
+      "kind": "hotfix",
+      "summary": "Hotfixes für den Client vom 24. November, zuerst am 24. November um 20:30 Uhr UTC in den Caches gesehen, die die Realms zum Start senden. Blizzard hat dazu keine Notizen veröffentlicht. Die epischen Klassenreittiere von Hexenmeister und Paladin bringen dir jetzt beim Erlernen auch Geübtes Reiten bei.",
+      "source_summary": "Hotfixes für den Client vom 24. November, zuerst am 24. November um 20:30 Uhr UTC in den Caches gesehen, die die Realms zum Start senden. Blizzard hat dazu keine Notizen veröffentlicht. Die epischen Klassenreittiere von Hexenmeister und Paladin bringen dir jetzt beim Erlernen auch Geübtes Reiten bei.",
+      "translated": false,
+      "engine": null,
+      "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-11-24",
+      "changes": []
+    },
+    {
+      "id": "foreverchanges-1.60.1.71091",
+      "title": "Build 1.60.1.71091, 24. November 2026",
+      "date": "2026-11-24",
+      "kind": "build",
+      "summary": "Der Client vom 24. November, aus seinen Dateien gelesen: Blizzard hat keine Patchnotes dazu veröffentlicht. Er schreibt einen Teil der jüngsten Server-Hotfixes in den Client selbst, und kein Talent, Klassenzauber, Volksbonus oder Gegenstand liest sich anders.",
+      "source_summary": "Der Client vom 24. November, aus seinen Dateien gelesen: Blizzard hat keine Patchnotes dazu veröffentlicht. Er schreibt einen Teil der jüngsten Server-Hotfixes in den Client selbst, und kein Talent, Klassenzauber, Volksbonus oder Gegenstand liest sich anders.",
+      "translated": false,
+      "engine": null,
+      "link": "https://foreverchanges.pro/de/patch-notes#1.60.1.71091",
+      "changes": []
+    },
     {
       "id": "foreverchanges-hotfix-2026-11-23",
       "title": "Hotfix, 23. November 2026",
@@ -120,7 +144,7 @@
       "source_summary": "Blizzards Patchnotes vom 16. November, veröffentlicht am 17. November um 02:17 Uhr UTC, beschreiben die Hotfixes dieses Tages: Köder für alle vom Angelständer, Korrekturen am Totem des Windzorns, Spalten und Heldenhafter Stoß für Entfesselter Zorn, Schlaghagel und Tollkühne Schwünge, Korrekturen in Die Versunkene Stadt und im Versunkenen Tempel sowie Questkorrekturen. Vampirumarmung ändert sich mit der wöchentlichen Wartung am 17. November. Die Hotfix-Daten zeigen weitere Änderungen, die die Patchnotes nicht erwähnen: Weltbuffs gehen beim Tod verloren, und drei Dunkelmond-Karten, der Talisman mit Onyxiablut, die Schlachtrüstung von Krol'Dok, die Grimmstichrüstung und Escape Plan ändern sich.",
       "translated": false,
       "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-11-16",
+      "link": "https://foreverchanges.pro/de/patch-notes/page/2#hotfix-2026-11-16",
       "changes": []
     },
     {
@@ -132,7 +156,7 @@
       "source_summary": "Blizzards Hotfix vom 14. November, veröffentlicht am 15. November um 1:18 Uhr UTC: Gegner in Dungeons geben erst dann keine Erfahrung mehr, wenn ein Gruppenmitglied mehr als 12 Stufen über ihnen ist, statt schon, wenn sie für eines trivial sind.",
       "translated": false,
       "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-11-14",
+      "link": "https://foreverchanges.pro/de/patch-notes/page/2#hotfix-2026-11-14",
       "changes": []
     },
     {
@@ -252,7 +276,7 @@
       "source_summary": "Der Client vom 7. November, aus seinen Dateien gelesen: Blizzard hat keine Notizen dazu veröffentlicht. Das Abenteurerzelt gibt wieder Ruhebonus, Rock on Stick und Bigger Rock on Bigger Stick zeigen ihre Blutung, vier Questgegenstände bekommen eine Benutzen-Zeile, und der Client enthält jetzt fünf der neuen Dungeons mit ihren Begegnungen. Der Rest holt die Hotfixes des Servers nach, die die Seite schon zeigt, darunter Blutgier, Bärengestalt, Verheeren und die Fläschchen für Hyjal.",
       "translated": false,
       "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes/page/2#1.60.1.70862",
+      "link": "https://foreverchanges.pro/de/patch-notes/page/3#1.60.1.70862",
       "changes": []
     },
     {
@@ -338,31 +362,7 @@
       "engine": null,
       "link": "https://foreverchanges.pro/de/patch-notes/page/3#1.60.1.70753",
       "changes": []
-    },
-    {
-      "id": "foreverchanges-hotfix-2026-10-30",
-      "title": "Hotfix, 30. Oktober 2026",
-      "date": "2026-10-30",
-      "kind": "hotfix",
-      "summary": "Ein Hotfix für den Build vom 30. Oktober, der erstmals am 30. Oktober im Cache der Start-Realms auftauchte und zu dem Blizzard keine Hinweise veröffentlicht hat. Er überarbeitet die Talentbäume von Druiden und Paladinen und führt den am 26. Oktober angekündigten Rassenpass ein. Werte, die sich von Hotfix zu Hotfix ändern, können auf Unterschiede zwischen den NA- und EU-Realms zurückzuführen sein: In diesem Fall orientiert sich diese Seite am neueren Hotfix.",
-      "source_summary": "A hotfix to the October 30 build, first seen on October 30 in the cache the launch realms send, which Blizzard has posted no notes for. It reworks the druid and paladin talent trees and brings in the racial pass announced on October 26. Values that flip between hotfixes can come from differences between the NA and EU realms: in that case this page follows the newer hotfix.",
-      "translated": true,
-      "engine": "deepl",
-      "link": "https://foreverchanges.pro/de/patch-notes/page/3#hotfix-2026-10-30",
-      "changes": []
-    },
-    {
-      "id": "foreverchanges-1.60.1.70707",
-      "title": "Build 1.60.1.70707, 30. Oktober 2026",
-      "date": "2026-10-30",
-      "kind": "build",
-      "summary": "Der Build vom 30. Oktober übernimmt die Server-Hotfixes vom 27. bis 29. Oktober in die Clientdateien: die Überarbeitung der Magierbäume, 8 Sek. Abklingzeit für Eislanze, 2 Min. Abklingzeit für Kochendes Blut und die Angriffskraft von Rache. Das Abenteurerzelt ist wieder kosmetisch. Nichts davon ist bestätigt: Der Build kam, während die Realms vor dem Start geschlossen sind, Blizzard hat keine Notizen dazu veröffentlicht, und im Spiel lässt sich noch nichts prüfen.",
-      "source_summary": "Der Build vom 30. Oktober übernimmt die Server-Hotfixes vom 27. bis 29. Oktober in die Clientdateien: die Überarbeitung der Magierbäume, 8 Sek. Abklingzeit für Eislanze, 2 Min. Abklingzeit für Kochendes Blut und die Angriffskraft von Rache. Das Abenteurerzelt ist wieder kosmetisch. Nichts davon ist bestätigt: Der Build kam, während die Realms vor dem Start geschlossen sind, Blizzard hat keine Notizen dazu veröffentlicht, und im Spiel lässt sich noch nichts prüfen.",
-      "translated": false,
-      "engine": null,
-      "link": "https://foreverchanges.pro/de/patch-notes/page/3#1.60.1.70707",
-      "changes": []
     }
   ],
-  "fetched_at": "2026-11-24T04:44:30+00:00"
+  "fetched_at": "2026-11-25T00:38:48+00:00"
 }
