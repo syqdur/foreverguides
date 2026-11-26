@@ -8,8 +8,8 @@
       "title": "Build 1.60.1.71139, 25. November 2026",
       "date": "2026-11-25",
       "kind": "build",
-      "summary": "The November 25 client, read from its files: Blizzard has posted no notes for it. It writes some of the server’s recent hotfixes into the client itself, and no talent, class spell, racial or item reads differently.",
-      "source_summary": "The November 25 client, read from its files: Blizzard has posted no notes for it. It writes some of the server’s recent hotfixes into the client itself, and no talent, class spell, racial or item reads differently.",
+      "summary": "Der Client vom 25. November, aus seinen Dateien gelesen: Blizzard hat keine Patchnotes dazu veröffentlicht. Er schreibt einen Teil der jüngsten Server-Hotfixes in den Client selbst, und kein Talent, Klassenzauber, Volksbonus oder Gegenstand liest sich anders.",
+      "source_summary": "Der Client vom 25. November, aus seinen Dateien gelesen: Blizzard hat keine Patchnotes dazu veröffentlicht. Er schreibt einen Teil der jüngsten Server-Hotfixes in den Client selbst, und kein Talent, Klassenzauber, Volksbonus oder Gegenstand liest sich anders.",
       "translated": false,
       "engine": null,
       "link": "https://foreverchanges.pro/de/patch-notes#1.60.1.71139",
@@ -20,8 +20,8 @@
       "title": "Hotfix, 25. November 2026",
       "date": "2026-11-25",
       "kind": "hotfix",
-      "summary": "Blizzards Anpassungen für Gleichgewichtsdruiden vom 25. November, um 18:32 Uhr UTC veröffentlicht und live: Sternenfeuer braucht weniger Talentpunkte, Finsternis erhöht die kritische Trefferchance von Zorn, und Moonkingestalt erhöht Arkan- und Naturschaden um 10 %. Hotfixes für den Client vom 24. November, zuerst am 25. November um 16:55 Uhr UTC in den Caches gesehen, die die Realms zum Start senden, lassen außerdem die Fackel des Nachtwächters wieder auf einem Reittier und in Gestaltwandlungsformen benutzen.",
-      "source_summary": "Blizzards Anpassungen für Gleichgewichtsdruiden vom 25. November, um 18:32 Uhr UTC veröffentlicht und live: Sternenfeuer braucht weniger Talentpunkte, Finsternis erhöht die kritische Trefferchance von Zorn, und Moonkingestalt erhöht Arkan- und Naturschaden um 10 %. Hotfixes für den Client vom 24. November, zuerst am 25. November um 16:55 Uhr UTC in den Caches gesehen, die die Realms zum Start senden, lassen außerdem die Fackel des Nachtwächters wieder auf einem Reittier und in Gestaltwandlungsformen benutzen.",
+      "summary": "Blizzards Notizen vom 25. November, um 23:25 Uhr UTC veröffentlicht: Gleichgewichtsdruiden brauchen weniger Talentpunkte für Sternenfeuer, das Alteractal belohnt seine Ziele mehr als das Töten des feindlichen Generals, Begleiter von Jägern und Hexenmeistern können im Nahkampf wieder kritisch treffen, und Paladine und Hexenmeister erhalten Geübtes Reiten über ihre Reittierquests. Das meiste war schon im Lauf des Tages live, und die Fackel des Nachtwächters kann wieder auf einem Reittier benutzt werden.",
+      "source_summary": "Blizzards Notizen vom 25. November, um 23:25 Uhr UTC veröffentlicht: Gleichgewichtsdruiden brauchen weniger Talentpunkte für Sternenfeuer, das Alteractal belohnt seine Ziele mehr als das Töten des feindlichen Generals, Begleiter von Jägern und Hexenmeistern können im Nahkampf wieder kritisch treffen, und Paladine und Hexenmeister erhalten Geübtes Reiten über ihre Reittierquests. Das meiste war schon im Lauf des Tages live, und die Fackel des Nachtwächters kann wieder auf einem Reittier benutzt werden.",
       "translated": false,
       "engine": null,
       "link": "https://foreverchanges.pro/de/patch-notes#hotfix-2026-11-25",
@@ -364,5 +364,5 @@
       "changes": []
     }
   ],
-  "fetched_at": "2026-11-25T19:54:28+00:00"
+  "fetched_at": "2026-11-26T02:48:27+00:00"
 }
